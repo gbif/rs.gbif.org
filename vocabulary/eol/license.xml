@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://www.eol.org/IPT/vocabulary/license" 
+	dc:description="Creative Commons licenses allowed in EOL" 
+	dc:title="Licenses EOL Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">	
+
+    <concept dc:identifier="http://creativecommons.org/licenses/publicdomain/" 
+             dc:URI="http://creativecommons.org/licenses/publicdomain/"    
+             dc:relation="http://creativecommons.org/licenses/publicdomain/"    
+             dc:description="Public Domain Certification">
+        <preferred>
+	        <term dc:title="Public Domain" xml:lang="en"/>
+        </preferred>
+		<alternative></alternative>
+    </concept>
+    
+    <concept dc:identifier="http://creativecommons.org/licenses/by/3.0/" dc:URI="http://creativecommons.org/licenses/by/3.0/" dc:relation="http://creativecommons.org/licenses/by/3.0/" dc:description="Attribution 3.0 Unported">
+      <preferred>
+        <term dc:title="Attribution 3.0 Unported" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc/3.0/" dc:URI="http://creativecommons.org/licenses/by-nc/3.0/" dc:relation="http://creativecommons.org/licenses/by-nc/3.0/" dc:description="Attribution-NonCommercial 3.0 Unported">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial 3.0 Unported" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-sa/3.0/" dc:URI="http://creativecommons.org/licenses/by-sa/3.0/" dc:relation="http://creativecommons.org/licenses/by-sa/3.0/" dc:description="Attribution-ShareAlike 3.0 Unported">
+      <preferred>
+        <term dc:title="Attribution-ShareAlike 3.0 Unported" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc-sa/3.0/" dc:URI="http://creativecommons.org/licenses/by-nc-sa/3.0/" dc:relation="http://creativecommons.org/licenses/by-nc-sa/3.0/" dc:description="Attribution-NonCommercial-ShareAlike 3.0 Unported">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial-ShareAlike 3.0 Unported" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by/2.5/" dc:URI="http://creativecommons.org/licenses/by/2.5/" dc:relation="http://creativecommons.org/licenses/by/2.5/" dc:description="Attribution 2.5 Generic">
+      <preferred>
+        <term dc:title="Attribution 2.5 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc/2.5/" dc:URI="http://creativecommons.org/licenses/by-nc/2.5/" dc:relation="http://creativecommons.org/licenses/by-nc/2.5/" dc:description="Attribution-NonCommercial 2.5 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial 2.5 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-sa/2.5/" dc:URI="http://creativecommons.org/licenses/by-sa/2.5/" dc:relation="http://creativecommons.org/licenses/by-sa/2.5/" dc:description="Attribution-ShareAlike 2.5 Generic">
+      <preferred>
+        <term dc:title="Attribution-ShareAlike 2.5 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc-sa/2.5/" dc:URI="http://creativecommons.org/licenses/by-nc-sa/2.5/" dc:relation="http://creativecommons.org/licenses/by-nc-sa/2.5/" dc:description="Attribution-NonCommercial-ShareAlike 2.5 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial-ShareAlike 2.5 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by/2.0/" dc:URI="http://creativecommons.org/licenses/by/2.0/" dc:relation="http://creativecommons.org/licenses/by/2.0/" dc:description="Attribution 2.0 Generic">
+      <preferred>
+        <term dc:title="Attribution 2.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc/2.0/" dc:URI="http://creativecommons.org/licenses/by-nc/2.0/" dc:relation="http://creativecommons.org/licenses/by-nc/2.0/" dc:description="Attribution-NonCommercial 2.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial 2.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-sa/2.0/" dc:URI="http://creativecommons.org/licenses/by-sa/2.0/" dc:relation="http://creativecommons.org/licenses/by-sa/2.0/" dc:description="Attribution-ShareAlike 2.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-ShareAlike 2.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc-sa/2.0/" dc:URI="http://creativecommons.org/licenses/by-nc-sa/2.0/" dc:relation="http://creativecommons.org/licenses/by-nc-sa/2.0/" dc:description="Attribution-NonCommercial-ShareAlike 2.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial-ShareAlike 2.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by/1.0/" dc:URI="http://creativecommons.org/licenses/by/1.0/" dc:relation="http://creativecommons.org/licenses/by/1.0/" dc:description="Attribution 1.0 Generic">
+      <preferred>
+        <term dc:title="Attribution 1.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc/1.0/" dc:URI="http://creativecommons.org/licenses/by-nc/1.0/" dc:relation="http://creativecommons.org/licenses/by-nc/1.0/" dc:description="Attribution-NonCommercial 1.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial 1.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-sa/1.0/" dc:URI="http://creativecommons.org/licenses/by-sa/1.0/" dc:relation="http://creativecommons.org/licenses/by-sa/1.0/" dc:description="Attribution-ShareAlike 1.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-ShareAlike 1.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://creativecommons.org/licenses/by-nc-sa/1.0/" dc:URI="http://creativecommons.org/licenses/by-nc-sa/1.0/" dc:relation="http://creativecommons.org/licenses/by-nc-sa/1.0/" dc:description="Attribution-NonCommercial-ShareAlike 1.0 Generic">
+      <preferred>
+        <term dc:title="Attribution-NonCommercial-ShareAlike 1.0 Generic" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+
+</thesaurus>

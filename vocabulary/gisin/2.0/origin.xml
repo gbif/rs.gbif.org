@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus dc:URI="http://www.gisinetwork.org/IASProfile/Origin/terms/" 
+ dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=1" 
+ dc:title="GISIN Species Status Origin Vocabulary" 
+ 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+ <concept dc:identifier="Unknown" dc:URI="http://www.gisinetwork.org/IASProfile/Origin/terms/Unknown" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=1" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Unknown" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Indigenous" dc:URI="http://www.gisinetwork.org/IASProfile/Origin/terms/Indigenous" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=1" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Indigenous" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Exotic" dc:URI="http://www.gisinetwork.org/IASProfile/Origin/terms/Exotic" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=1" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Exotic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+</thesaurus>

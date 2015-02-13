@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+ dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/" 
+ dc:description="Describes the syntax of the habitat of a taxon and lists the habitat codes for Systema Naturae 2000. Source document last updated: 14 Aug 2003" 
+ dc:relation="http://sn2000.taxonomy.nl/SyntaxHabitat.htm"
+ dc:title="Systema Naturae 2000 Habitat Vocabulary" 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ 
+  <concept dc:identifier="aq" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq"
+  dc:description="Aquatic">
+  <preferred>
+   <term dc:title="Aquatic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:br" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:br" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:br"
+  dc:description="Brackish">
+  <preferred>
+   <term dc:title="Brackish" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:fw" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw"
+  dc:description="Freshwater">
+  <preferred>
+   <term dc:title="Freshwater" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:fw.ru" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw.ru" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw.ru"
+  dc:description="Running freshwater">
+  <preferred>
+   <term dc:title="Running freshwater" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:fw.st" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw.st" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:fw.st"
+  dc:description="Standing freshwater">
+  <preferred>
+   <term dc:title="Standing freshwater" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:ma" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma"
+  dc:description="Marine">
+  <preferred>
+   <term dc:title="Marine" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:ma.cr" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma.cr" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma.cr"
+  dc:description="Coral reef">
+  <preferred>
+   <term dc:title="Coral reef" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:ma.ds" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma.ds" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:ma.ds"
+  dc:description="Deep sea">
+  <preferred>
+   <term dc:title="Deep sea" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="aq:sa" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:sa" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/aq:sa"
+  dc:description="Saline, e.g. saltmarshes">
+  <preferred>
+   <term dc:title="Saline" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="pa" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/pa" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/pa"
+  dc:description="Parasitic">
+  <preferred>
+   <term dc:title="Parasitic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="pa:ec" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/pa:ec" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/pa:ec"
+  dc:description="Ectoparasite">
+  <preferred>
+   <term dc:title="Ectoparasite" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="pa:en" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/pa:en" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/pa:en"
+  dc:description="Endoparasite">
+  <preferred>
+   <term dc:title="Endoparasite" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te"
+  dc:description="Terrestrial">
+  <preferred>
+   <term dc:title="Terrestrial" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:cv" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:cv" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:cv"
+  dc:description="Cave">
+  <preferred>
+   <term dc:title="Cave" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:ds" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:ds" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:ds"
+  dc:description="Desert">
+  <preferred>
+   <term dc:title="Desert" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:fo" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:fo" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:fo"
+  dc:description="Forest">
+  <preferred>
+   <term dc:title="Forest" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:gr" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr"
+  dc:description="Grassland">
+  <preferred>
+   <term dc:title="Grassland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:gr.pr" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr.pr" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr.pr"
+  dc:description="Prairie">
+  <preferred>
+   <term dc:title="Prairie" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:gr.st" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr.st" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:gr.st"
+  dc:description="Steppe">
+  <preferred>
+   <term dc:title="Steppe" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:mn" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:mn" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:mn"
+  dc:description="Mangroves">
+  <preferred>
+   <term dc:title="Mangroves" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:sa" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:sa" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:sa"
+  dc:description="Savanna">
+  <preferred>
+   <term dc:title="Savanna" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:sh" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:sh" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:sh"
+  dc:description="Shrubland">
+  <preferred>
+   <term dc:title="Shrubland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+  <concept dc:identifier="te:tu" dc:URI="http://rs.gbif.org/vocabulary/sn2000/habitat/te:tu" 
+  dc:relation="http://rs.gbif.org/vocabulary/sn2000/habitat/te:tu"
+  dc:description="Tundra">
+  <preferred>
+   <term dc:title="Tundra" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+
+</thesaurus>

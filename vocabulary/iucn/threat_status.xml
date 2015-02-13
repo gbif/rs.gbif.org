@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/" 
+	dc:description="" 
+	dc:relation="http://www.iucn.org/about/work/programmes/species/red_list/resources/technical_documents/authority_files/"
+	dc:title="IUCN Threat Status Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="LC" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/LC" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/LC"
+        dc:description="A taxon is Least Concern when it has been evaluated against the criteria and does not qualify for Critically Endangered, Endangered, Vulnerable or Near Threatened. Widespread and abundant taxa are included in this category.">
+        <preferred>
+            <term dc:title="Least Concern" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="LC" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="NT" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/NT" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/NT"
+        dc:description="A taxon is Near Threatened when it has been evaluated against the criteria but does not qualify for Critically Endangered, Endangered or Vulnerable now, but is close to qualifying for or is likely to qualify for a threatened category in the near future.">
+        <preferred>
+            <term dc:title="Near Threatened" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="NT" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="VU" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/VU" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/VU"
+        dc:description="A taxon is Vulnerable when the best available evidence indicates that it meets any of the criteria A to E for Vulnerable (see Section V), and it is therefore considered to be facing a high risk of extinction in the wild.">
+        <preferred>
+            <term dc:title="Vulnerable" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="VU" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="EN" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/EN" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/EN"
+        dc:description="A taxon is Endangered when the best available evidence indicates that it meets any of the criteria A to E for Endangered (see Section V), and it is therefore considered to be facing a very high risk of extinction in the wild.">
+        <preferred>
+            <term dc:title="Endangered" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="EN" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="CR" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/CR" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/CR"
+        dc:description="A taxon is Critically Endangered when the best available evidence indicates that it meets any of the criteria A to E for Critically Endangered (see Section V), and it is therefore considered to be facing an extremely high risk of extinction in the wild.">
+        <preferred>
+            <term dc:title="Critically Endangered" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="CR" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="EW" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/EW" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/EW"
+        dc:description="A taxon is Extinct in the Wild when it is known only to survive in cultivation, in captivity or as a naturalized population (or populations) well outside the past range. A taxon is presumed Extinct in the Wild when exhaustive surveys in known and/or expected habitat, at appropriate times (diurnal, seasonal, annual), throughout its historic range have failed to record an individual. Surveys should be over a time frame appropriate to the taxon's life cycle and life form.">
+        <preferred>
+            <term dc:title="Extinct in the Wild" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="EW" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="EX" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/EX" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/EX"
+        dc:description="A taxon is Extinct when there is no reasonable doubt that the last individual has died. A taxon is presumed Extinct when exhaustive surveys in known and/or expected habitat, at appropriate times (diurnal, seasonal, annual), throughout its historic range have failed to record an individual. Surveys should be over a time frame appropriate to the taxon's life cycle and life form.">
+        <preferred>
+            <term dc:title="Extinct" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="EX" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="DD" dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/DD" 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/DD"
+        dc:description="A taxon is Data Deficient when there is inadequate information to make a direct, or indirect, assessment of its risk of extinction based on its distribution and/or population status. A taxon in this category may be well studied, and its biology well known, but appropriate data on abundance and/or distribution are lacking. Data Deficient is therefore not a category of threat. Listing of taxa in this category indicates that more information is required and acknowledges the possibility that future research will show that threatened classification is appropriate. It is important to make positive use of whatever data are available. In many cases great care should be exercised in choosing between DD and a threatened status. If the range of a taxon is suspected to be relatively circumscribed, and a considerable period of time has elapsed since the last record of the taxon, threatened status may well be justified.">
+        <preferred>
+            <term dc:title="Data Deficient" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="DD" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="NE " dc:URI="http://rs.gbif.org/vocabulary/iucn/threat_status/NE " 
+        dc:relation="http://rs.gbif.org/vocabulary/iucn/threat_status/NE "
+        dc:description="A taxon is Not Evaluated when it is has not yet been evaluated against the criteria.">
+        <preferred>
+            <term dc:title="Not Evaluated" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="NE" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+</thesaurus>

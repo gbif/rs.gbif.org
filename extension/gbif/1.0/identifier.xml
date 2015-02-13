@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    name="Identifier" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Identifier"
+    dc:title="Alternative Identifiers" 
+    dc:relation=""
+    dc:subject=""
+    dc:description=""
+    >
+    
+    <property name='identifier' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/identifier' dc:relation='' dc:description='Other known identifier used for the same taxon. Can be a URL pointing to a webpage, an xml or rdf document, a DOI, UUID or any other identifer' examples='urn:lsid:ipni.org:names:692570-1:1.4' required='true'/>
+    <property name='title' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/title' dc:relation='' dc:description='An optional display label for the URL that the publisher may prefer be displayed with the identifier or link' examples='&quot;Danaus plexippus page&quot;, &quot;COL Taxon LSID&quot;' required='false'/>
+    <property name='subject' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/subject' dc:relation='' dc:description='keywords qualifying the identifier' examples='' required='false'/>
+    <property name='format' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/format' dc:relation='' dc:description='mime type of content returned by identifier in case the identifier is resolvable. Plain UUIDs for example do not have a dc:format return type, as they are not resolvable on their own. For a list of MIME types see the list maintained by IANA: http://www.iana.org/assignments/media-types/index.html, in particular the text http://www.iana.org/assignments/media-types/text/ and application http://www.iana.org/assignments/media-types/application/ types. Frequently used values are text/html, text/xml, application/rdf+xml, application/json' examples='application/rdf+xml' required='false'/>
+</extension>

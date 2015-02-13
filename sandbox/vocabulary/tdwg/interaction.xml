@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+
+<thesaurus 
+    dc:identifier="http://rs.gbif.org/sandbox/vocabulary/tdwg/interaction"
+	dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction" 
+	dc:description="This controlled vocabulary is based the TDWG LSID Ontology model for taxon occurrence interactions, developed by Kevin Richards in 2009 and aimed at describing the interactions between TaxonOccurrences, observations, specimens etc. Eg the Interaction class can be expressed a host/parasite relation between two TaxonOccurrences. The TDWG LSID Ontology is again based on earlier developments from 2007 supported in part by the Pollinators Thematic Network of the Inter-American Biodiversity Information Network (IABIN) and by the Pollination Information Management System of the Food and Agriculture Organization of the United Nations (FAO)." 
+	dc:title="Taxon occurrence interactions" 
+	dc:relation="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"
+	xmlns="http://rs.gbif.org/thesaurus/" 
+	xmlns:dc="http://purl.org/dc/terms/" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
+	xml:base="http://rs.gbif.org/sandbox/vocabulary/tdwg/interaction#">
+
+<!-- 
+Draft version created 16 March 2012.
+Dag Endresen (gbif.org), Jogeir Stokland (nhm.uio.no), Antonio Mauro Saraiva (usp.br).
+
+Draft version available at: "http://vocabularies.gbif.org/vocabularies/Interaction"
+and at "http://rs.gbif.org/sandbox/vocabulary/interaction.xml". 
+
+Controlled values for this vocabulary are RE-USED from a new draft SKOS RDF resource 
+available at "http://rs.gbif.org/sandbox/terms/interaction.rdf". The SKOS vovabulary
+provides the definitions for the concepts re-used here in a controlled value vocabulary
+for species interactions. This model allows for multiple controlled value vocabularies 
+to re-use concepts from the same SKOS vocabularies. And each Controlled Value Vocabulary 
+may re-use concepts defined by different SKOS vocabularies.
+
+This controlled vocabulary is based the TDWG LSID Ontology model for taxon occurrence 
+interactions, developed by Kevin Richards in 2007 (Richards, 2007) and aimed at describing 
+the interactions between TaxonOccurrences, observations, specimens etc. Eg the Interaction 
+class can be expressed as a host/parasite relation between two TaxonOccurrences (Richards, 
+2007). The TDWG LSID Ontology is again based on earlier developments from 2007 (De 
+Giovanni, Cartolano, Giannini, Saraiva and Pizzigatti, 2007) supported in part by the 
+Pollinators Thematic Network of the Inter-American Biodiversity Information Network 
+(IABIN) and by the Pollination Information Management System of the Food and Agriculture 
+Organization of the United Nations (FAO).
+
+An update was initiated in March 2012 to update this controlled vocabulary to 
+include concepts to describe species interactions for saproxylic organisms living on 
+decaying wood.
+
+References:
+* De Giovanni, Renato; Etienne Cartolano; Tereza Giannini; Antonio Saraiva; and Pedro 
+Pizzigatti (2007). Interaction Extension. TDWG Biodiversity Information Standards. 
+Published online 16 May 2007. Available at 
+"http://wiki.tdwg.org/twiki/bin/view/DarwinCore/InteractionExtension".
+
+* Richards, Kevin (2007). TDWG Interaction LSID Ontology. TDWG Biodiversity Information 
+Standards. Published online 08 July 2007. Available at 
+"http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction.rdf".
+
+The proposed identifier for this controlled vocabulary is:
+ "http://rs.gbif.org/vocabulary/tdwg/interaction"
+
+The normative URI for the source concepts included in this vocabulary is:
+ "http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"
+Alternatively perhaps establish a new and normative SKOS resource at:
+ "http://rs.gbif.org/terms/tdwg/interaction.rdf"
+
+Examples:
+ http://rs.gbif.org/vocabulary/tdwg/interaction#HasHost (dc:identifier for the controlled vocabulary value)
+ http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#HasHost (dc:URI for the source normative concept)
+ http://vocabularies.gbif.org/vocabularies/Interaction/HasHost (dc:relation)
+-->
+
+
+ <!-- Interaction terms (imported from the TDWG Interaction Ontology) -->
+
+ <concept dc:identifier="HasHost" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#HasHost"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/HasHost"
+     dc:description="Specifies a host organism for the organism.">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="has host" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="HostOf" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#HostOf"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/HostOf"
+     dc:description="Has occurrred with the host organism defined.">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="is host of" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="PreysUpon" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#PreysUpon"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/PreysUpon"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="preys upon" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+ 
+  <concept dc:identifier="PreyedUponBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#PreyedUponBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/PreyedUponBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="preyed upon by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="ParasiteOf" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#ParasiteOf"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/ParasiteOf"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="parasite of" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="PathogenOf" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#PathogenOf"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/PathogenOf"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="pathogen of" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="InfectedBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#InfectedBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/InfectedBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="infected by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="NestedIn" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#NestedIn"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/NestedIn"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="nested in" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="UsedAsNestBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#UsedAsNestBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/UsedAsNestBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="used as nest by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="VisitedFlowerOf" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#VisitedFlowerOf"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/VisitedFlowerOf"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="visited flower of" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="FlowerVisitedBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#FlowerVisitedBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/FlowerVisitedBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="flower visited by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="DispersedSeedOf" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#DispersedSeedOf"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/DispersedSeedOf"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="dispersed seed of" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="SeedDispersedBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#SeedDispersedBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/SeedDispersedBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="seed dispersed by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="ExtractsResinFrom" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#ExtractsResinFrom"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/ExtractsResinFrom"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="extracts resin from" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="ResinExtractedBy" 
+	 dc:URI="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#ResinExtractedBy"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/ResinExtractedBy"
+     dc:description="">
+  <preferred>
+   <term dc:source="TDWG LSID Ontology" dc:title="resin extracted by" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+
+
+ <!-- PROPOSED NEW CONCEPTS for saproxylic taxonOccurrence interactions -->
+
+ <concept dc:identifier="SugarFungus" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#SugarFungus"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/SugarFungus"
+     dc:description="Fungus that live on sugars and carbon compounds simpler than cellulose in the initial decomposition stage.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Sugar fungus" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodDecayer" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodDecayer"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayer"
+     dc:description="Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, unknown which category it belongs to.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood decayer" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodDecayerBrownRot" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodDecayerBrownRot"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerBrownRot"
+     dc:description="Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, brown rot category.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood decayer, brown rot" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodDecayerWhiteRot" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodDecayerWhiteRot"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerWhiteRot"
+     dc:description="Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, white rot category.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood decayer, white rot" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodDecayerSoftRot" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodDecayerSoftRot"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerSoftRot"
+     dc:description="Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, soft rot category.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood decayer, soft rot" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodDecayerResidual" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodDecayerResidual"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerResidual"
+     dc:description="Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, residual category.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood decayer, residual" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsMycoparasite" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsMycoparasite"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMycoparasite"
+     dc:description="Fungus that is a parasite on a live wood decaying fungus.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as mycoparasite" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsMycodecomposer" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsMycodecomposer"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMycodecomposer"
+     dc:description="Fungus that decomposes a dead wood decaying fungus.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as mycodecomposer" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodBoringDetrivore" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodBoringDetrivore"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodBoringDetrivore"
+     dc:description="Make distinct galleries in living or dead bark or wood, with or without fungus mycelium.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood boring detrivore" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="Detrivore" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#Detrivore"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/Detrivore"
+     dc:description="Feeds on woody material (or sap) with or without fungus mycelium. Does not make distinct galleries.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Detrivore" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsMicrobivore" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsMicrobivore"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMicrobivore"
+     dc:description="Filter feeders that feed on bacteria and other food particles dissolved in wet media (typically sap).">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as microbivore" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsAmbrosiaConsumer" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsAmbrosiaConsumer"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsAmbrosiaConsumer"
+     dc:description="Wood boring invertebrate feeding on ambrosia fungus.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as ambrosia consumer" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsFungivore" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsFungivore"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsFungivore"
+     dc:description="Invertebrate feeding on live or dead wood-decaying fungi. Either some or all parts of the fungus (mycelium, fruit body or spores).">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as fungivore" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsScavenger" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsScavenger"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsScavenger"
+     dc:description="Diet is mix of woody debris, mycelium and dead animals, some also feed on bacteria etc. in decaying matter. Includes insects in hollow trees and bird nests.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as scavenger" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsOmnivor" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsOmnivor"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsOmnivor"
+     dc:description="A detrivore or fungivore that also predates (occasionally) on live animals, typically larvae/pupae.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as omnivor" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsPredator" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsPredator"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsPredator"
+     dc:description="Predator, typically on insect larvae but also on nematodes (predatory insects and woodpeckers, ant-eaters, etc.; even predatory fungi).">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as predator" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsParasite" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsParasite"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsParasite"
+     dc:description="Parasite on other saproxylic invertebrates.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as parasite" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsParasitoid" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsParasitoid"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsParasitoid"
+     dc:description="Parasitoid on other saproxylic invertebrates.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as parasitoid" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsHyperparasitoid" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsHyperparasitoid"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsHyperparasitoid"
+     dc:description="Parasitoid on other parasitoids.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as hyperparasitoid" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="OccursAsCleptoparasite" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#OccursAsCleptoparasite"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsCleptoparasite"
+     dc:description="Cleptoparasite on endoxylic species.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Occurs as cleptoparasite" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="AssociatedSpecies" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#AssociatedSpecies"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/AssociatedSpecies"
+     dc:description="Lives in dead wood, but functional role is unknown or unclear.">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Associated species" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="Epixylic" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#Epixylic"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/Epixylic"
+     dc:description="Grows on surface of dead wood or bark, but is not a wood decomposer (lichens, mosses, mycorrhiza fungi).">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Epixylic" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+ <concept dc:identifier="WoodNester" 
+	 dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction#WoodNester"
+     dc:relation="http://vocabularies.gbif.org/vocabularies/Interaction/WoodNester"
+     dc:description="Nest sites inside dead wood, feeding disconnected from wood (many birds and insects).">
+  <preferred>
+   <term dc:source="Interaction Vocabulary" dc:title="Wood nester" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+ </concept>
+
+</thesaurus>

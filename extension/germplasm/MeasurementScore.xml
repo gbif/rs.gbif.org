@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:title="Trait measurement score (v20140515)" 
+    dc:description="Trait measurements or the so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA). The germplasm vocabulary term g.germplasmID is a persistent identifier for the germplasm material (genebank accession, specimen, cultivar, etc that was the subject of the measurement experiment. NB! please report stable and resolvable persistent identifiers for g.germplasmID term when linking the trait measurement score to a germplasm occurrence described in an external Darwin Core archive. When linking to trait measurement descriptors and measurement trials described extenally to the Darwin Core archive, please include stable and resolvable persistent identifiers for g.measurementTraitID and g.measurementTrialID - resolving to information on each entity."
+    dc:relation="http://purl.org/germplasm/germplasmTerm"
+    name="MeasurementScore" 
+    namespace="http://purl.org/germplasm/germplasmTerm#"
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementScore">
+
+
+<!--
+Software application schema for the GBIF IPT data provider software. Application implementation for the Germplasm Vocabulary (Darwin Core extension for genebanks).
+The Germplasm Vocabulary (Darwin Core extension for genebanks) was developed in 2009 for sharing genebank datasets with the GBIF Integrated Publishing Toolkit from the Global Biodiversity Information Facility (GBIF). These terms where developed by the EPGRIS3 group of the European Cooperative Programme for Plant Genetic Resources (ECPGR) in 2009. Most of the terms used in the genebank community are already covered by Darwin Core. Many of the terms listed here are the same as for the Darwin Core Measurement Or Fact extension. 
+Minor update 2014-01-16. This update was to set the rowType different from the Darwin Core MeasurementOrFact rowtype. Using the same rowType for two extensions caused an error in the IPT software that is hopefully resolved with this update. No other modifications, no change to the list of terms or the term names or definitions. Dag Endresen 2014-01-16
+Major update 2014-03-31. This Germplasm Measurement Or Fact extension follows very closely the Darwin Core Measurement Or Fact extension - and some of the Darwin Core were wrongly indicated as mandatory in this extension. Germplasm experiment projects are often made by other institutes than the institutes holding the germplasm material/specimens (genebank accessions). The measurement scores would anyway often be reported in separate data sets mandating a persistent and resolvable identifier linking to the germplasm occurrence that was the subject of the experiment. We also need persistent and resolvable identifiers linking to the measurement method (g.measurementMethodID) and often also to the project description for the measurement experiment (g.measurementExperimentID). Dag Endresen 2014-03-31.
+Minor update: Added terms for linking out to the Occurrence, GermplasmAccession, MeasurementMethod, and MeasurementExperiment, Dag Endresen, Xander van der Sar, Frank Menting, 2014-04-16, 2014-05-15.
+-->
+
+    <property name="measurementID" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementID"
+      dc:description="An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a globally unique identifier or an identifier specific to the data set."
+      type="string" 
+      examples="URI, DOI, LSID or similar" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementID"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementValue" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementValue"
+      dc:description="The value of the measurement, fact, characteristic, or assertion."
+      examples="0.01"
+      type="string" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementValue"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementUnit" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementUnit"
+      dc:description="The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI)."
+      examples="mm; C; km; ha"
+      type="string" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementUnit"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementAccuracy" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementAccuracy"
+      dc:description="The description of the potential error associated with the measurementValue."
+      examples="0.01; normal distribution with variation of 2 m"
+      type="string" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementAccuracy"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementDeterminedDate" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementDeterminedDate"
+      dc:description="The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601_2004(E)."
+      type="string" 
+      examples="2010-06-10" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementDeterminedDate"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementDeterminedBy" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementDeterminedBy"
+      dc:description="A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact."
+      type="string" 
+      examples="Javier de la Torre, Julie Woodruff, Eileen Lacey" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementDeterminedBy"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name='measurementType' 
+      namespace='http://rs.tdwg.org/dwc/terms/'
+      qualName='http://rs.tdwg.org/dwc/terms/measurementType'
+      dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#measurementType'
+      dc:description='The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.' 
+      examples='"tail length", "temperature", "trap line length", "survey area", "trap type"' 
+      group="MeasurementScore" 
+      required='false'/>
+    <property name="measurementMethod" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementMethod" 
+      dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#measurementMethod" 
+      dc:description="A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion." 
+      examples='"minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation' 
+      required="false"/>
+    <property name="measurementRemarks" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementRemarks" 
+      dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#measurementRemarks" 
+      dc:description="Comments or notes accompanying the MeasurementOrFact." 
+      examples="tip of tail missing" 
+      group="MeasurementScore" 
+      required="false"/>
+
+
+<!-- Terms above are the very same as included in the Darwin Core Measurement Or Fact extension. Below are the terms added for this Germplasm Measurement Score extension. The germplasm vocabulary term g.germplasmID is a persistent identifier for the germplasm material (genebank accession/specimen, cultivar, etc that was the subject of the measurement experiment. The g.germplasmID is in particular essential when linking the trait measurement to a germplasm accession described in an external Darwin Core archive. When linking to external trait measurement trait methods and trial experiments the g.measurementTraitID and g.measurementTrialID should be resolvable persistent identifiers resolving to more relevant information on each entity. -->
+
+    <!-- Link to germplasm material/specimen -->
+    <property name="germplasmID" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#germplasmID" 
+      dc:description="A persistent identifier for a germplasm accession maintained as part of an ex situ genebank collection. Best practice is to use a globally unique and persistent identifier (PID)." 
+      type="string" 
+      examples="URI, DOI, LSID or similar; http://data.gbif.org/occurrences/215969415/" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:germplasmID"
+      group="GermplasmAccession" 
+      required="false"/>
+    <property name="germplasmIdentifier" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#germplasmIdentifier"
+      dc:description="Accession name. Either a registered or other formal designation given to the accession."
+      examples="Rheinische Vorgebirgstrauben; Emma; Avlon" 
+      type="string" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:germplasmIdentifier"
+      group="GermplasmAccession" 
+      required="false"/>
+
+    <!-- Link to trait measurement trait method, C and E descriptor -->
+    <property name="measurementTraitID" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitID" 
+      dc:description="Persistent identifier for a trait descriptor used to identify the description of the measurement method."
+      type="string" 
+      examples="URI, DOI, LSID or similar" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:measurementTraitID"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitIdentifier" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitIdentifier" 
+      dc:description="Local identifier for a trait descriptor used to identify the description of the measurement method. This could be the persistent URL to an external ontology where the trait term is declared."
+      type="string" 
+      examples="URI, DOI, LSID or similar" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitIdentifier"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitName" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitName" 
+      dc:description="English name used to identify the trait measurement method."
+      type="string" 
+      examples="stem rust susceptibility; powdery mildew susceptibility; plant height; ear density" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:measurementTraitName"
+      group="MeasurementTrait" 
+      required="false"/>
+
+    <!-- Link to trait measurement trial experiment, C and E experiment -->
+    <property name="measurementTrialID" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTrialID" 
+      dc:description="Persistent identifier used to identify a trait measurement trial."
+      type="string" 
+      examples="URI, DOI, LSID or similar" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:measurementTrialID"
+      group="MeasurementTrial" 
+      required="false"/>
+    <property name="measurementTrialIdentifier" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTrialIdentifier" 
+      dc:description="Unique number in the dataset for the measurement trial."
+      type="string" 
+      examples="Local identifier for the experiment or project activity" 
+      dc:relation="http://terms.gbif.org/wiki/germplasm:measurementTrialIdentifier"
+      group="MeasurementTrial" 
+      required="false"/>
+
+    <!-- Addition for the germplasm trait measurement score value, C and E score -->
+    <property name="measurementByInstituteID" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementByInstituteID"
+      dc:description="Trait observation determined by institute code, INSTCODE. FAO WIEWS institute code for the institute performing the observation/measurement."
+      type="string" 
+      examples="DEU146; NLD037; SWE054; urn:lsid:biocol.org:col:35293" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementByInstituteID"
+      group="MeasurementScore" 
+      required="false"/>
+    <property name="measurementGrowthStage" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementGrowthStage"
+      dc:description="The growth stage of the plant when the trait observation or measurement was made."
+      type="string" 
+      examples="flowering; heading; ripening" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementGrowthStage"
+      group="MeasurementScore" 
+      required="false"/>
+
+</extension>

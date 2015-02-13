@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:title="Trait descriptor (v20140515)" 
+    dc:description="The Germplasm Vocabulary (Darwin Core extension for genebanks) was developed in 2009 for sharing genebank datasets using the GBIF Integrated Publishing Toolkit (IPT) from the Global Biodiversity Information Facility (GBIF). This application schema describes the trait descriptors and methodology used for collecting trait measurements for the so-called Characterization and Evaluation (C and E) data. These terms where in part developed by the EPGRIS3 group of the European Cooperative Programme for Plant Genetic Resources (ECPGR) in 2009."
+    dc:relation="http://purl.org/germplasm/germplasmTerm"
+    name="MeasurementTrait" 
+    namespace="http://purl.org/germplasm/germplasmTerm#"
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrait">
+
+
+<!--
+Software application schema for the GBIF IPT data provider software, Darwin Core extension for genebanks (DwC-germplasm).
+Major update: New version based on PURL germplasm vocabulary, Dag Endresen (GBIF/NordGen), 2012-09-11.
+Minor update: Updated the text, Dag Endresen, 2014-04-16.
+Major update: Renamed from MeasurementMethod to MeasurementTrait, Dag Endresen, 2014-05-08
+-->
+
+    <!-- MeasurementTrait (Trait descriptor) -->
+    <property name="measurementTraitID" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitID" 
+      dc:description="Persistent identifier for a trait descriptor used to identify the description of the measurement method. This could be the persistent URL to an external ontology where the trait term is declared."
+      type="string" 
+      examples="URI, DOI, LSID or similar" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitID"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitIdentifier" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitIdentifier" 
+      dc:description="Local identifier for a trait descriptor used to identify the description of the measurement method. This could be the persistent URL to an external ontology where the trait term is declared."
+      type="string" 
+      examples="STEMRUSTAD, BYDV, PLANTHT, AWNCOLOR" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitIdentifier"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitName" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitName" 
+      dc:description="English name used to identify the trait measurement method."
+      type="string" 
+      examples="stem rust susceptibility; powdery mildew susceptibility; plant height; ear density" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitName"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitCategory" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitCategory" 
+      dc:description="Classification type for the trait descriptor."
+      type="string" 
+      examples="agrobotanical; morphological; chemical; phenological; molecular biology; disease susceptibility/-resistance; tolerance (abiotic); utilization" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitCategory"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitScale" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitScale"
+      dc:description="Measurement scale used to score the measurement values."
+      type="string" 
+      examples="absolute; interval; nominal; ordinal; ratio; relative" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitScale"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitSource" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitSource" 
+      dc:description="Reference to a standard Germplasm Descriptor. For example the UPOV descriptor or the Bioversity Crop Descriptor identifier."
+      type="string" 
+      examples="UPOV TG/198/1 (april 2003)" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitSource"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementTraitRemarks" 
+      namespace="http://purl.org/germplasm/germplasmTerm#" 
+      qualName="http://purl.org/germplasm/germplasmTerm#measurementTraitRemarks" 
+      dc:description="Remarks related to the trait measurement method."
+      type="string" 
+      examples="inflorescences after cutting; measured three days after heading date" 
+      dc:relation="http://terms.tdwg.org/wiki/germplasm:measurementTraitRemarks"
+      group="MeasurementTrait" 
+      required="false"/>
+
+    <property name="measurementType" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementType" 
+      dc:description="The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary."
+      type="string" 
+      examples="tail length, temperature, trap line length, survey area, trap type" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementType"
+      group="MeasurementTrait" 
+      required="false"/>
+    <property name="measurementMethod" 
+      namespace="http://rs.tdwg.org/dwc/terms/" 
+      qualName="http://rs.tdwg.org/dwc/terms/measurementMethod" 
+      dc:description="A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion."
+      type="string" 
+      examples="minimum convex polygon around burrow entrances (for a home range area), barometric altimeter" 
+      dc:relation="http://terms.tdwg.org/wiki/dwc:measurementMethod"
+      group="MeasurementTrait" 
+      required="false"/>
+
+</extension>

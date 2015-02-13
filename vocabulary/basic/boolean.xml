@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus dc:URI="http://rs.gbif.org/vocab/boolean/" dc:description="Boolean values true/false" dc:title="Boolean Vocabulary" xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ <concept dc:identifier="true" dc:URI="http://rs.gbif.org/vocab/boolean/true"  dc:issued="2009-10-02T17:05:00+00:00">
+  <preferred>
+   <term dc:modified="2009-10-02T17:05:00+00:00" dc:source="" dc:title="true" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="1" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="yes" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="t" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="ja" xml:lang="de"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="wahr" xml:lang="de"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="false" dc:URI="http://rs.gbif.org/vocab/boolean/false"  dc:issued="2009-10-02T17:05:00+00:00">
+  <preferred>
+   <term dc:modified="2009-10-02T17:05:00+00:00" dc:source="" dc:title="false" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="0" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="-1" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="no" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="f" xml:lang="en"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="nein" xml:lang="de"  />
+   <term dc:modified="2009-10-02T17:05:00" dc:source="" dc:title="falsch" xml:lang="de"  />
+  </alternative>
+ </concept>
+
+</thesaurus>

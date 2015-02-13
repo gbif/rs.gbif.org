@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType" 
+	dc:description="Vocabulary to categorise paragraphs of a taxon description. The individual terms are selected according to common usage and in some cases are overlapping or broader/narrower terms of others." 
+	dc:title="Description Type GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="general" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/general" 
+        dc:relation=""
+        dc:description="A general taxon description. Either not specific in its topic or covering a complete mix of various topics.">
+        <preferred>
+            <term dc:title="general" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="diagnostic" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/diagnostic" 
+        dc:relation=""
+        dc:description="A purely diagnostic description of the taxon.">
+        <preferred>
+            <term dc:title="diagnostic" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="morphology" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/morphology" 
+        dc:relation=""
+        dc:description="A morphological taxon description.">
+        <preferred>
+            <term dc:title="morphology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="habit" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/habit" 
+        dc:relation=""
+        dc:description="A description of the habit or life form of a taxon.">
+        <preferred>
+            <term dc:title="habit" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="cytology" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/cytology" 
+        dc:relation=""
+        dc:description="A description of the taxons cellular properties">
+        <preferred>
+            <term dc:title="cytology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="physiology" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/physiology" 
+        dc:relation=""
+        dc:description="A description of the taxons physiology">
+        <preferred>
+            <term dc:title="physiology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+
+    <concept dc:identifier="size" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/size" 
+        dc:relation=""
+        dc:description="A description about the size of a species">
+        <preferred>
+            <term dc:title="size" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="weight" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/weight" 
+        dc:relation=""
+        dc:description="A description about the weight of a species">
+        <preferred>
+            <term dc:title="weight" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="lifespan" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/lifespan" 
+        dc:relation=""
+        dc:description="A description about the life expectancy of a species">
+        <preferred>
+            <term dc:title="life expectancy" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="lifespan" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="lifetime" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/lifetime" 
+        dc:relation=""
+        dc:description="A description about the historical time the species is believed to have existed in">
+        <preferred>
+            <term dc:title="life time" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="lifetime" xml:lang="en"/>
+            <term dc:title="living period" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+
+
+
+
+    <concept dc:identifier="biology" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/biology" 
+        dc:relation=""
+        dc:description="A description about the general biology of a species">
+        <preferred>
+            <term dc:title="biology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="ecology" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/ecology" 
+        dc:relation=""
+        dc:description="A description of the taxons ecology">
+        <preferred>
+            <term dc:title="ecology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="habitat" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/habitat" 
+        dc:relation=""
+        dc:description="A description of the taxons habitat.">
+        <preferred>
+            <term dc:title="habitat" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="distribution" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/distribution" 
+        dc:relation=""
+        dc:description="A description of the taxons spatial distribution">
+        <preferred>
+            <term dc:title="distribution" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+
+
+    <concept dc:identifier="reproduction" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/reproduction" 
+        dc:relation=""
+        dc:description="A description of the taxons reproduction biology">
+        <preferred>
+            <term dc:title="reproduction" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+
+
+    <concept dc:identifier="conservation" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/conservation" 
+        dc:relation=""
+        dc:description="A description about the conservation status and efforts for a species">
+        <preferred>
+            <term dc:title="conservation" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="use" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/use" 
+        dc:relation=""
+        dc:description="A description about the economic use of a species">
+        <preferred>
+            <term dc:title="use" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="economic" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="dispersal" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/dispersal" 
+        dc:relation=""
+        dc:description="A description about the dispersal of a species">
+        <preferred>
+            <term dc:title="dispersal" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="cyclicity" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/cyclicity" 
+        dc:relation=""
+        dc:description="A description about the cyclicity of a species">
+        <preferred>
+            <term dc:title="cyclicity" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="lifecycle" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/lifecycle" 
+        dc:relation=""
+        dc:description="A description about the lifecycle of a species">
+        <preferred>
+            <term dc:title="lifecycle" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+
+
+    <concept dc:identifier="migration" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/migration" 
+        dc:relation=""
+        dc:description="A description about the migration (patterns) of a species">
+        <preferred>
+            <term dc:title="migration" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="growth" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/growth" 
+        dc:relation=""
+        dc:description="A description about the growth of a species">
+        <preferred>
+            <term dc:title="growth" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+
+    <concept dc:identifier="genetics" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/genetics" 
+        dc:relation=""
+        dc:description="A description about the genetics of a species">
+        <preferred>
+            <term dc:title="genetics" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="chemistry" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/chemistry" 
+        dc:relation=""
+        dc:description="A description about the (bio)chemistry of a species">
+        <preferred>
+            <term dc:title="chemistry" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="diseases" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/diseases" 
+        dc:relation=""
+        dc:description="A description about the diseases of a species">
+        <preferred>
+            <term dc:title="diseases" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="associations" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/associations" 
+        dc:relation=""
+        dc:description="A description about the associations with other taxa of a species">
+        <preferred>
+            <term dc:title="associations" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="behaviour" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/behaviour" 
+        dc:relation=""
+        dc:description="A description about the behaviour of a species">
+        <preferred>
+            <term dc:title="behaviour" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="population" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/population" 
+        dc:relation=""
+        dc:description="A description about the population biology of a species">
+        <preferred>
+            <term dc:title="population biology" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="management" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/management" 
+        dc:relation=""
+        dc:description="A description about the management of a species, e.g. for pest control">
+        <preferred>
+            <term dc:title="management" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="legislation" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/legislation" 
+        dc:relation=""
+        dc:description="A description about the legislation or legal status of a species">
+        <preferred>
+            <term dc:title="legislation" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="threats" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/threats" 
+        dc:relation=""
+        dc:description="A description about known threats for a species">
+        <preferred>
+            <term dc:title="threats" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="typematerial" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/typematerial" 
+        dc:relation=""
+        dc:description="A description about the type material, e.g. type specimens of a species">
+        <preferred>
+            <term dc:title="type material" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="typelocality" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/typelocality" 
+        dc:relation=""
+        dc:description="A description of the type locality for a taxon">
+        <preferred>
+            <term dc:title="type locality" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="phylogeny" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/phylogeny" 
+        dc:relation=""
+        dc:description="A description about the phylogeny or evolution of a taxon">
+        <preferred>
+            <term dc:title="phylogeny" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="evolution" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="hybrids" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/hybrids" 
+        dc:relation=""
+        dc:description="A description about known hybrids of a taxon">
+        <preferred>
+            <term dc:title="hybrids" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="literature" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/literature" 
+        dc:relation=""
+        dc:description="A listing of relevant literature for a taxon">
+        <preferred>
+            <term dc:title="literature" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+  <concept dc:identifier="culture" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/culture" 
+        dc:relation=""
+        dc:description="A description of the influence of the species to human culture. For example important artwork or cultural depictions">
+        <preferred>
+            <term dc:title="culture" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+  <concept dc:identifier="vernacular" dc:URI="http://rs.gbif.org/vocabulary/gbif/descriptionType/vernacular" 
+        dc:relation=""
+        dc:description="A description of the vernacular names for the taxon">
+        <preferred>
+            <term dc:title="vernacular names" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+</thesaurus>

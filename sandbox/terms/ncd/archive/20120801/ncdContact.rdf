@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Discussion document: version 2012-08-01.
+  Dag Endresen, Global Biodiversity Information Facility (GBIF)
+ This RDF Vocabulary includes terminology for Natural Collections Decriptions (NCD)
+ developed by the TDWG NCD task group. 
+ Terms and term identifiers used by this resource was extracted from the 
+ NCD version 0.9 and the TDWG LSID ontology.
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY tdwgNcd      "http://rs.tdwg.org/ontology/voc/Collection#">
+  <!ENTITY tdwgNcdType  "http://rs.tdwg.org/ontology/voc/CollectionType#">
+  <!ENTITY tdwgVoc      "http://rs.tdwg.org/ontology/voc/">
+  <!ENTITY ncdConcept   "http://rs.gbif.org/terms/ncd/ncdConcept#">
+  <!ENTITY ncdType      "http://rs.gbif.org/terms/ncd/ncdType#">
+  <!ENTITY ncdContact   "http://rs.gbif.org/terms/ncd/ncdContact#">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:ncd="&tdwgNcd;"
+  xmlns:ncdConcept="&ncdConcept;"
+  xmlns:ncdType="&ncdType;"
+  xmlns:ncdContact="&ncdContact;"
+  xml:base="&ncdConcept;"
+>
+
+
+<!-- ### Vocabulary of contacts ### -->
+
+  <skos:ConceptScheme rdf:about="&ncdContact;">
+    <skos:prefLabel xml:lang="en">List of contributors for the Natural Collections Description (NCD) vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural Collections Description (NCD) is a data standard for describing collections of natural history materials at the collection level; one NCD record describes one entire collection. This resource lists the institutions and persons contributing to the development of the NCD vocabulary.</skos:definition>
+    <dcterms:created>2012-08-01</dcterms:created>
+    <dcterms:modified>2012-08-01</dcterms:modified>
+    <dc:creator rdf:resource="&ncdContact;GBIF"/>
+    <dcterms:contributor rdf:resource="&ncdContact;DagEndresen"/>
+    <dcterms:contributor rdf:resource="&ncdContact;TDWG_NCD_IG"/>
+    <dcterms:publisher rdf:resource="&ncdContact;GBIF"/> <!-- who is the publisher ?? -->
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/> <!-- NB! Licence rights...? -->
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Darwin Core extension for genebanks".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&ncdContact;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>ncdContact</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <skos:editorialNote>This list was created to declare organizations and persons contributing to the NCD.</skos:editorialNote>
+    <rdfs:seeAlso rdf:resource="http://kos.gbif.org/wiki/NCD"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/standards/312/"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <owl:versionInfo xml:lang="en">Draft version, not yet published</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </skos:ConceptScheme>
+
+
+
+<!-- ### Agents, Organization and Person ###
+ Providing information about the organization and the persons who contributed
+ to creating or maintaining the Vocabulary of Terms would be a good practice.
+ When using dcterms:creator, contributor, publisher etc these have range dcterms:Agent
+ and will this require the values to be non-literal resources.
+ Germplasm contact entities (foaf:organization and foaf:Person) are described by:
+  foaf:name					(full name, institute or person)
+  foaf:nickname				(reporting institute acronyms here)
+  dcterms:identifier		(from the FAO WIEWS and/or the Biodiversity Collections Index)
+  @rdf:datatype				(datatype property, WIEWS INSTCODE, BCI ID)
+  foaf:homepage				(institute home page, www)
+  foaf:member				(list persons affiliated)
+  foaf:mbox					(mailbox)
+  foaf:mbox_sha1sum			(md5 hash sum based on the mailbox [md5 -s mailbox])
+ -->
+
+  <foaf:Organization rdf:about="&ncdContact;GBIF">
+    <foaf:name>Global Biodiversity Information Facility</foaf:name>
+    <foaf:nickname>GBIF</foaf:nickname>
+    <geo:lat>55.70261</geo:lat>
+    <geo:long>12.55967</geo:long>
+    <geo:alt>13.9</geo:alt>
+    <foaf:homepage rdf:resource="http://www.gbif.org/"/>
+    <foaf:member rdf:resource="&ncdContact;DagEndresen"/>
+    <foaf:member rdf:resource="&ncdContact;MarkusDoring"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&ncdContact;TDWG_NCD_IG">
+    <foaf:name>TDWG Natural Collections Descriptions Interest Group</foaf:name>
+    <foaf:nickname>TDWG NCD IG</foaf:nickname>
+    <foaf:homepage rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <foaf:member rdf:resource="&ncdContact;MarkusDoring"/>
+  </foaf:Organization>
+
+  <foaf:Person rdf:about="&ncdContact;ConstanceRinaldo">
+    <foaf:name>Constance Rinaldo</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource=""/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&ncdContact;DagEndresen">
+    <foaf:name>Dag Endresen</foaf:name>
+    <foaf:homepage rdf:resource="http://community.gbif.org/pg/profile/dag.endresen"/>
+    <foaf:mbox rdf:resource="mailto:dag.endresen@gmail.com"/>
+    <foaf:mbox_sha1sum rdf:resource="a8e8e5b95a36957148199894431c3ab2"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&ncdContact;MarkusDoring">
+    <foaf:name>Markus Döring</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource=""/>
+  </foaf:Person>
+
+</rdf:RDF>

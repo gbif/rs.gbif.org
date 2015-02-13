@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Discussion document: version 2012-08-01.
+  Dag Endresen, Global Biodiversity Information Facility (GBIF)
+ This RDF Vocabulary includes terminology for Natural Collections Decriptions (NCD)
+ developed by the TDWG NCD task group. 
+ Terms and term identifiers used by this resource was extracted from the 
+ NCD version 0.9 and the TDWG LSID ontology.
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY tdwgNcd      "http://rs.tdwg.org/ontology/voc/Collection#">
+  <!ENTITY tdwgNcdType  "http://rs.tdwg.org/ontology/voc/CollectionType#">
+  <!ENTITY tdwgVoc      "http://rs.tdwg.org/ontology/voc/">
+  <!ENTITY ncdConcept   "http://rs.gbif.org/terms/ncd/ncdConcept#">
+  <!ENTITY ncdType      "http://rs.gbif.org/terms/ncd/ncdType#">
+  <!ENTITY ncdContact   "http://rs.gbif.org/terms/ncd/ncdContact#">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:ncd="&tdwgNcd;"
+  xmlns:ncdConcept="&ncdConcept;"
+  xmlns:ncdType="&ncdType;"
+  xmlns:ncdContact="&ncdContact;"
+  xml:base="&ncdConcept;"
+>
+
+
+<!-- ### Vocabulary of term concepts (skos:ConceptScheme) ### -->
+
+  <skos:ConceptScheme rdf:about="&ncdConcept;">
+    <skos:prefLabel xml:lang="en">Natural Collections Description (NCD)</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural Collections Description (NCD) is a data standard for describing collections of natural history materials at the collection level; one NCD record describes one entire collection.</skos:definition>
+    <dcterms:created>2007-03-05</dcterms:created>
+    <dcterms:modified>2012-08-01</dcterms:modified>
+    <dc:creator rdf:resource="&ncdContact;GBIF"/>
+    <dcterms:contributor rdf:resource="&ncdContact;TDWG_NCD_IG"/>
+    <dcterms:contributor rdf:resource="&ncdContact;MarkusDoring"/>
+    <dcterms:contributor rdf:resource="&ncdContact;ConstanceRinaldo"/>
+    <dcterms:contributor rdf:resource="&ncdContact;DagEndresen"/>
+    <dcterms:publisher rdf:resource="&ncdContact;GBIF"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/> <!-- NB! Licence rights...? -->
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Darwin Core extension for genebanks".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&tdwgNcd;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>ncd</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <dcterms:bibliographicCitation>TDWG NCD Interest Group (2009). Natural Collections Descriptions (NCD): A data standard for exchanging data describing natural history collections (Cover Page). Biodiversity Information Standards (TDWG). Available at http://www.tdwg.org/standards/312/, verified 20 June 2012.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation>Thomson N, Hyam R, Rinaldo C, Butler C, Holland D, Mathe B, Waibel B, Addink W, Altenburg R, and Döring M (2009). Natural Collections Description (NCD): A data standard for exchanging data describing natural history collections. Biodiversity Information Standards (TDWG). Available at http://www.tdwg.org/standards/312/, verified 20 June 2012.</dcterms:bibliographicCitation>
+    <skos:note xml:lang="en">Notice that the base URI for the NCD vocabulary is "http://rs.tdwg.org/ontology/voc/Collection". Please make sure that you are only using element identifiers in this namespace, e.g. "http://rs.tdwg.org/ontology/voc/CollectionTERM". There may be copies of the vocabulary file on the Web which can be retrieved from other locations, but those locations should not be used as the basis of identifiers.</skos:note>
+    <skos:editorialNote>Terms and definitions for this vocabulary of terms was extracted from the documentation NCD version 0.9 and from the TDWG Ontology.</skos:editorialNote>
+    <rdfs:seeAlso rdf:resource="http://kos.gbif.org/wiki/NCD"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/standards/312/"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <owl:versionInfo xml:lang="en">Draft version, not yet published</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </skos:ConceptScheme>
+
+
+  <!-- NCD concepts are described by
+   TermURI	
+   skos:prefLabel	
+   dc:description	
+   vann:termGroup	
+   rdf:type	
+   rdfs:isDefinedBy	
+   skos:inScheme	
+   dcterms:modified	
+   skos:example	
+   skos:note	
+   skos:editorialNote	
+  -->
+
+  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
+    <skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+    <dc:description xml:lang="en">Data encoded in a defined structure.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Examples include lists, tables, and databases. A dataset may be useful for direct machine processing.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+    <skos:prefLabel xml:lang="en">Record Source</skos:prefLabel>
+    <dc:description xml:lang="en">Source of the record if not created by the author named in Author.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Test record transferred from NHM Collections Navigator. Originally authored in the NHM Unicorn LMS</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <skos:prefLabel xml:lang="en">Author</skos:prefLabel>
+    <dc:description xml:lang="en">Person that created the record.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Susan Bennett</skos:example>
+    <skos:note>mandatory</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Orgname">
+    <skos:prefLabel xml:lang="en">Corporate Affiliation</skos:prefLabel>
+    <dc:description xml:lang="en">Organisational affiliation of the author.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Natural History Museum, London</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <skos:prefLabel xml:lang="en">Record Created Date</skos:prefLabel>
+    <dc:description xml:lang="en">Date of record creation.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>2002-09-09</skos:example>
+    <skos:note>mandatory</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <skos:prefLabel xml:lang="en">Editor</skos:prefLabel>
+    <dc:description xml:lang="en">Person that last edited the record.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Neil Thomson</skos:example>
+    <skos:note>mandatory</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <skos:prefLabel xml:lang="en">Record Edited Date</skos:prefLabel>
+    <dc:description xml:lang="en">Date the record was last edited.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>2008-07-15</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <skos:prefLabel xml:lang="en">Record Rights</skos:prefLabel>
+    <dc:description xml:lang="en">IPR statement about the record.</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>© 1994 - 2002 The Natural History Museum (London)</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#NOTE">
+    <skos:prefLabel xml:lang="en">Notes</skos:prefLabel>
+    <dc:description xml:lang="en">Notes</dc:description>
+    <vann:termGroup rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Note, vCard uses vcard:NOTE</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#Collection">
+    <skos:prefLabel xml:lang="en">Collection</skos:prefLabel>
+    <dc:description xml:lang="en">A group of specimens or other objects about natural history. This class represents actual collections. For derived collections please use the DerivedCollection subclass.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#DerivedCollection">
+    <skos:prefLabel xml:lang="en">Derived Collection</skos:prefLabel>
+    <dc:description xml:lang="en">A "derived" collection record. The record has been derived from a query on an item-level database e.g. all items from Australia.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NCD 0.9 use ncd:derivedCollection, TDWG ontology: ncd:DerivedCollection</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#collectionId">
+    <skos:prefLabel xml:lang="en">Collection Identifier</skos:prefLabel>
+    <dc:description xml:lang="en">The URI (LSID or URL) of the collection. In RDF, used as URI of the collection resource.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>LSID or URL of the RDF:about record</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#alternativeId">
+    <skos:prefLabel xml:lang="en">Alternative Identifier</skos:prefLabel>
+    <dc:description xml:lang="en">Alternative identifier for the collection with an indication of the source e.g. ISCW.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Museum Number: uls-a352878</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#isPartOfCollection">
+    <skos:prefLabel xml:lang="en">Parent Collection Identifier</skos:prefLabel>
+    <dc:description xml:lang="en">Identifier for the parent collection for this sub-collection. Enables a hierarchy of collections and sub collections to be built.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#acronymOrCoden">
+    <skos:prefLabel xml:lang="en">Acronym or Coden</skos:prefLabel>
+    <dc:description xml:lang="en">Acronym, coden or initialism by which the collection is generally known indicating the source, e.g. Index Herbariorum.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>(this term is missing in the TDWG ontology)</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <skos:prefLabel xml:lang="en">Collection Name</skos:prefLabel>
+    <dc:description xml:lang="en">Official name of the Collection in the local language.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Manuscript Collection of Hugh Whistler (1889-1943)</skos:example>
+    <skos:note>mandatory, repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
+    <skos:prefLabel xml:lang="en">Alternative Name</skos:prefLabel>
+    <dc:description xml:lang="en">Alternative name for the collection. In English language where Collection name is not in English.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#FN">
+    <skos:prefLabel xml:lang="en">Associated Person</skos:prefLabel>
+    <dc:description xml:lang="en">Name(s) of person(s) associated with the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Whistler, Hugh, 1889-1943</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <skos:prefLabel xml:lang="en">Description</skos:prefLabel>
+    <dc:description xml:lang="en">Main description element may be anything from a few words to an essay, suitable for a general audience.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>The manuscript collection of Hugh Whistler (1889-1943) comprises notes on birds collected in 1926 on an expedition into the Shaksgam Valley and the Aghil Range (…)</skos:example>
+    <skos:note>mandatory, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#descriptionForSpecialists">
+    <skos:prefLabel xml:lang="en">Description for Specialists</skos:prefLabel>
+    <dc:description xml:lang="en">Optional additional descriptive text using terms that are more suited to a specialist audience. Attribute indicates the language of the text.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Hugh Whistler (1889-1943), F.Z.S., M.B.O.U., was born at Mablethorpe in Lincolnshire and (…)</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#collectionExtent">
+    <skos:prefLabel xml:lang="en">Extent</skos:prefLabel>
+    <dc:description xml:lang="en">A free-text indication of the size or extent of the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>26 boxes of manuscript notes, 8 volumes, 2 typescripts, 1 manuscript, 2 notebooks, Letters, 2 newspaper cuttings and maps</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#collectionType">
+    <skos:prefLabel xml:lang="en">Collection Type</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword to indicate the typical content or unifying characteristic of the collection. Expected to contain an instance for the Collection Type Term vocabulary.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Manuscripts</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#commonNameCoverage">
+    <skos:prefLabel xml:lang="en">Common Name Coverage</skos:prefLabel>
+    <dc:description xml:lang="en">Common names or group names equivalent to the taxon names, in the local language.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Birds (LCSH)</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#conservationStatus">
+    <skos:prefLabel xml:lang="en">Conservation Status</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword indicating the conservation status of the collection using the McGinley scale. Link to the date of assessment and repeat to show sequence of snapshots.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#conservationStatusDate">
+    <skos:prefLabel xml:lang="en">Conservation Status Date</skos:prefLabel>
+    <dc:description xml:lang="en">The date that the conservation status was assessed.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+    <skos:prefLabel xml:lang="en">Digital Format</skos:prefLabel>
+    <dc:description xml:lang="en">Use for digital collections, recording MIME Types or PUIDs.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/medium">
+    <skos:prefLabel xml:lang="en">Digital Medium</skos:prefLabel>
+    <dc:description xml:lang="en">Use for digital collections, recording the material or physical carrier of the resource e.g. DVD-R.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#developmentStatus">
+    <skos:prefLabel xml:lang="en">Development Status</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword indicating potential for change to the scope of the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Closed</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#expeditionNameCoverage">
+    <skos:prefLabel xml:lang="en">Expedition Name</skos:prefLabel>
+    <dc:description xml:lang="en">Uniform name for an expedition or voyage of discovery during which the material was collected.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#formationPeriod">
+    <skos:prefLabel xml:lang="en">Formation Period</skos:prefLabel>
+    <dc:description xml:lang="en">Text description of the time period during which the collection was assembled e.g. "Victorian", or "1922 - 1932", or "c. 1750". </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>c. 1926</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#geospatialCoverage">
+    <skos:prefLabel xml:lang="en">Place Name Coverage</skos:prefLabel>
+    <dc:description xml:lang="en">Place names from which material in the collection originated.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Shaksgam Valley (local)</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#geospatialCoordinates">
+    <skos:prefLabel xml:lang="en">Geospatial Coordinates</skos:prefLabel>
+    <dc:description xml:lang="en">Decimal latitude(s) and longitude(s) of places of origin of the material in the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#itemLevelAccess">
+    <skos:prefLabel xml:lang="en">Item-Level Access</skos:prefLabel>
+    <dc:description xml:lang="en">URI of an item-level data source. This can be a Web service or a Webpage designed for humans.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#kingdomCoverage">
+    <skos:prefLabel xml:lang="en">Kingdom Coverage</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword to indicate biological kingdom.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Animalia</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#knownToContainTypes">
+    <skos:prefLabel xml:lang="en">Known to Contain Types</skos:prefLabel>
+    <dc:description xml:lang="en">Flag property to indicate that the collection is known to include type specimens</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#livingTimePeriodCoverage">
+    <skos:prefLabel xml:lang="en">Living Time Period</skos:prefLabel>
+    <dc:description xml:lang="en">Time period during which biological material was alive. Includes palaeontological time periods or other text phrases.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Early 20th century</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#physicalLocation">
+    <skos:prefLabel xml:lang="en">Physical Location</skos:prefLabel>
+    <dc:description xml:lang="en">Link to the contact details for the host institution, or person for a private collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Tring Library MSS. WHISTLER 1</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#primaryGroupingPrinciple">
+    <skos:prefLabel xml:lang="en">Primary Grouping Principle</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword to indicate what the collection is about. The intellectual basis for grouping the collection rather than grouping based on physical characteristics. Expected to contain an instance from the Primary Grouping Principle Type Term vocabulary.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#primaryPurpose">
+    <skos:prefLabel xml:lang="en">Primary Purpose</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist key word to indicate the primary reason that the collection was assembled.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Research</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/relation">
+    <skos:prefLabel xml:lang="en">Related Material</skos:prefLabel>
+    <dc:description xml:lang="en">Indicating resources that are related to the collection, such as printed catalogues, finding aids, Websites, obituaries, etc.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Finding aid by Frances E. Warr. Manuscripts and Drawings in the Ornithology and Rothschild Libraries of The Natural History Museum at Tring. Tring, Hertfordshire: British Ornithologists' Club in association with The Natural History Museum, London, 1996.</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#relatedCollection">
+    <skos:prefLabel xml:lang="en">Related Collection</skos:prefLabel>
+    <dc:description xml:lang="en">Short descriptions of related collections, such as for other components of a large collection that has been dispersed.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Whistler's huge collection of 17,000 birds was presented by the Hon. Mrs Whistler to The Natural History Museum (London)</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#specimenPreservationMethod">
+    <skos:prefLabel xml:lang="en">Specimen Preservation Method</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword indicating the process or technique used to prevent physical deterioration of non-living collections. Expected to contain an instance from the Specimen Preservation Method Type Term vocabulary</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#taxonCoverage">
+    <skos:prefLabel xml:lang="en">Taxon Coverage</skos:prefLabel>
+    <dc:description xml:lang="en">Taxon or taxa in the collection at Family level or higher.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Aves</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#temporalCoverage">
+    <skos:prefLabel xml:lang="en">Temporal Coverage</skos:prefLabel>
+    <dc:description xml:lang="en">Time period covered by the materials in the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Early 20th century</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/accessRights">
+    <skos:prefLabel xml:lang="en">Access Conditions</skos:prefLabel>
+    <dc:description xml:lang="en">Terms and conditions under which the collection may be accessed. May be a URL to standard T&amp;C. Default text for an institution may be overwritten for a particular collection if the restrictions are different.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>http://www.nhm.ac.uk/research-curation/collections-library/collections-management/collections-navigator/accessrestrict.jsp</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Collection#usageRestrictions">
+    <skos:prefLabel xml:lang="en">Usage Conditions</skos:prefLabel>
+    <dc:description xml:lang="en">Terms and conditions under which the collection may be used. May be a URL to standard T&amp;C. Default text for an institution may be overwritten for a particular collection if the restrictions are different.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>http://www.nhm.ac.uk/research-curation/collections-library/collections-management/collections-navigator/userestrict.jsp</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/provenance">
+    <skos:prefLabel xml:lang="en">Provenance</skos:prefLabel>
+    <dc:description xml:lang="en">A statement of any changes in ownership and custody of the collection since its creation that are significant for its authenticity, integrity, and interpretation.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <skos:prefLabel xml:lang="en">IPR Statements</skos:prefLabel>
+    <dc:description xml:lang="en">Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Citation: By permission of the Trustees of The Natural History Museum (London).</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Common#note">
+    <skos:prefLabel xml:lang="en">Notes</skos:prefLabel>
+    <dc:description xml:lang="en">Notes</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#Collection"/>
+    <rdf:type rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Common"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+
+  <!-- Institution -->
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#Institution">
+    <skos:prefLabel xml:lang="en">Institution</skos:prefLabel>
+    <dc:description xml:lang="en">A public or private institution</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#institutionId">
+    <skos:prefLabel xml:lang="en">Institution Identifier</skos:prefLabel>
+    <dc:description xml:lang="en">The URI (LSID or URL) of the institution. In RDF this will be used as URI of the institution resource.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Orgname">
+    <skos:prefLabel xml:lang="en">Name</skos:prefLabel>
+    <dc:description xml:lang="en">Official name of the Institution in the local language.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Natural History Museum</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
+    <skos:prefLabel xml:lang="en">Alternative Name</skos:prefLabel>
+    <dc:description xml:lang="en">Alternative name for the institution in English, if the official name is not in English.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Orgunit">
+    <skos:prefLabel xml:lang="en">Unit Name</skos:prefLabel>
+    <dc:description xml:lang="en">Name of a component unit, such as a department.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Department of Ornithology Library</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:OrgUnit, vCard uses vcard:Orgunit</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <skos:prefLabel xml:lang="en">Description</skos:prefLabel>
+    <dc:description xml:lang="en">Description of institution, suitable for a general audience.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Outstation of the Natural History Museum at Tring in Hertfordshire, previously owned by Lionel Walter Rothschild</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+
+  <!-- Institution -->
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#alternativeId">
+    <skos:prefLabel xml:lang="en">Alternative Identifier</skos:prefLabel>
+    <dc:description xml:lang="en">Alternative identifier for the institution.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#hasContact">
+    <skos:prefLabel xml:lang="en">Contact</skos:prefLabel>
+    <dc:description xml:lang="en">Link to Contact details (address, email etc.) to get more information about the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>The Librarian, Natural History Museum, Department of Ornithology</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#institutionType">
+    <skos:prefLabel xml:lang="en">Type</skos:prefLabel>
+    <dc:description xml:lang="en">Picklist keyword describing the primary activity or purpose of an organisation or entity that holds or uses collections.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Research Institute Museum</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/Institution#isPartOfInstitution">
+    <skos:prefLabel xml:lang="en">Parent Institution or Network</skos:prefLabel>
+    <dc:description xml:lang="en">Name, acronym, identifier or coden of parent institution or network(s)</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Institution#Institution"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Institution"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>urn:lsid:biocol.org:col:34665</skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+
+  <!-- Contact details -->
+
+  <rdf:Description rdf:about="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails">
+    <skos:prefLabel xml:lang="en">Contact Details</skos:prefLabel>
+    <dc:description xml:lang="en">Information on how to contact an entity including postal and electronic methods. This class is an attempt to mirror the IETF vCard standard and should be directly mappable to it. </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#FN">
+    <skos:prefLabel xml:lang="en">Name</skos:prefLabel>
+    <dc:description xml:lang="en">Person name, as would appear on a name label.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Family">
+    <skos:prefLabel xml:lang="en">Family Name</skos:prefLabel>
+    <dc:description xml:lang="en">Family name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Given">
+    <skos:prefLabel xml:lang="en">Given Name</skos:prefLabel>
+    <dc:description xml:lang="en">Given name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Other">
+    <skos:prefLabel xml:lang="en">Other Name</skos:prefLabel>
+    <dc:description xml:lang="en">Other name(s).</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Prefix">
+    <skos:prefLabel xml:lang="en">Prefix</skos:prefLabel>
+    <dc:description xml:lang="en">Prefix, e.g. Mr or Dr.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Suffix">
+    <skos:prefLabel xml:lang="en">Suffix</skos:prefLabel>
+    <dc:description xml:lang="en">Suffix e.g. Jr or III.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#TITLE">
+    <skos:prefLabel xml:lang="en">Job Title</skos:prefLabel>
+    <dc:description xml:lang="en">Job title e.g. Curator.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>The Librarian</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Title, vCard uses vcard:TITLE</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#ROLE">
+    <skos:prefLabel xml:lang="en">Role</skos:prefLabel>
+    <dc:description xml:lang="en">Role e.g. Collector or Observer.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable, text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Orgname">
+    <skos:prefLabel xml:lang="en">Institution Name</skos:prefLabel>
+    <dc:description xml:lang="en">Institution name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Natural History Museum</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Orgunit">
+    <skos:prefLabel xml:lang="en">Institution Unit</skos:prefLabel>
+    <dc:description xml:lang="en">Institution unit name, e.g. department name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Department of Ornithology</skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Pobox">
+    <skos:prefLabel xml:lang="en">Post Office Box </skos:prefLabel>
+    <dc:description xml:lang="en">Post Office box no.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Extadd">
+    <skos:prefLabel xml:lang="en">Extended Address</skos:prefLabel>
+    <dc:description xml:lang="en">Extended address.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Street">
+    <skos:prefLabel xml:lang="en">Street Number and Name</skos:prefLabel>
+    <dc:description xml:lang="en">Street number and name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>The Walter Rothschild building , Akeman Street</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Locality">
+    <skos:prefLabel xml:lang="en">Local Area name</skos:prefLabel>
+    <dc:description xml:lang="en">Local area name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Tring</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Region">
+    <skos:prefLabel xml:lang="en">Regional Name</skos:prefLabel>
+    <dc:description xml:lang="en">Regional name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>Hertfordshire</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Pcode">
+    <skos:prefLabel xml:lang="en">Postcode or ZIP code</skos:prefLabel>
+    <dc:description xml:lang="en">Postcode or ZIP code.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>HP23 6AP</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Country">
+    <skos:prefLabel xml:lang="en">Country Name</skos:prefLabel>
+    <dc:description xml:lang="en">Country name.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>United Kingdom</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#TEL">
+    <skos:prefLabel xml:lang="en">Telephone Number</skos:prefLabel>
+    <dc:description xml:lang="en">Telephone number.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>+44 (0)20 7942 6171</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Tel, vCard uses vcard:TEL</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#fax">
+    <skos:prefLabel xml:lang="en">Fax Number</skos:prefLabel>
+    <dc:description xml:lang="en">Fax number.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Fax, vCard uses vcard:fax</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#Email">
+    <skos:prefLabel xml:lang="en">Email Address</skos:prefLabel>
+    <dc:description xml:lang="en">Email address.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Email, vCard uses vcard:EMAIL</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/homepage">
+    <skos:prefLabel xml:lang="en">URL</skos:prefLabel>
+    <dc:description xml:lang="en">URL for person or institution Web page</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="owl:ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example>http://www.nhm.ac.uk</skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:URL, no such term exists, changed here to use foaf:homepage</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#LOGO">
+    <skos:prefLabel xml:lang="en">Logo URL</skos:prefLabel>
+    <dc:description xml:lang="en">URL for a logo.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>repeatable</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Logo, vCard uses vcard:LOGO</skos:editorialNote>	
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/vcard-rdf/3.0#NOTE">
+    <skos:prefLabel xml:lang="en">Notes</skos:prefLabel>
+    <dc:description xml:lang="en">Notes.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/ContactDetails#ContactDetails"/>
+    <rdf:type rdf:resource="rdf:Property"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdConcept.rdf"/>
+    <skos:example></skos:example>
+    <skos:note>text in local language</skos:note>
+    <skos:editorialNote>NCD 0.9 documentation uses term ID vcard:Note, vCard uses vcard:NOTE</skos:editorialNote>	
+  </rdf:Description>
+
+
+</rdf:RDF>

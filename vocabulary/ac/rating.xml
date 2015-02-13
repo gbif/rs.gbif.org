@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+ dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml" 
+ dc:description="The short vocabulary providing values for http://ns.adobe.com/xap/1.0/Rating with -1 defining rejected, 0 unrated, and 1 (worst) to 5 (best)." 
+ dc:title="The Audobon Rating Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+<concept dc:identifier="-1" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#1" 
+ dc:relation=""
+ dc:description="rejected">
+ <preferred>
+  <term dc:title="-1" xml:lang="en"/>
+ </preferred>
+ <alternative>
+  <term dc:title="rejected" xml:lang="en"/>
+ </alternative>
+</concept>
+ <concept dc:identifier="0" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#0" 
+  dc:relation=""
+  dc:description="unrated">
+  <preferred>
+   <term dc:title="0" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="unrated" xml:lang="en"/>
+  </alternative>
+ </concept>
+ <concept dc:identifier="1" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#1" 
+  dc:relation=""
+  dc:description="worst">
+  <preferred>
+   <term dc:title="1" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="worst" xml:lang="en"/>
+  </alternative>
+ </concept>
+ <concept dc:identifier="2" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#2" 
+  dc:relation=""
+  dc:description="">
+  <preferred>
+   <term dc:title="2" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ <concept dc:identifier="3" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#3" 
+  dc:relation=""
+  dc:description="">
+  <preferred>
+   <term dc:title="3" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ <concept dc:identifier="4" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#4" 
+  dc:relation=""
+  dc:description="">
+  <preferred>
+   <term dc:title="4" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ <concept dc:identifier="5" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#5" 
+  dc:relation=""
+  dc:description="best">
+  <preferred>
+   <term dc:title="5" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="best" xml:lang="en"/>
+  </alternative>
+ </concept>
+ 
+</thesaurus>

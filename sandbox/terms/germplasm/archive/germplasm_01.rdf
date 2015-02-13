@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Discussion document: version 2012-04-04.
+  Dag Endresen, Global Biodiversity Information Facility (GBIF).
+
+ This Vocabulary is developed using the GBIF Vocabulary Wiki available at
+  "http://kos.gbif.org/wiki/Germplasm". Input and feedback, in particular using the 
+  Wiki site, is most welcome.
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY dwcg           "http://rs.nordgen.org/dwc/germplasm/0.1/terms/">
+  <!ENTITY germplasm      "http://purl.org/germplasm/terms#">
+  <!ENTITY germplasmBase  "http://purl.org/germplasm/terms">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:dwcg="&dwcg;"
+  xmlns:germplasm="&germplasm;"
+  xml:base="&dwcg;"
+>
+
+<!-- ### Vocabulary of Terms ###
+ The description of the entire vocabulary of terms can be included as follows below.
+ The entire Vocabulary of basic terms as "skos:ConceptScheme" versus "owl:Ontology"?
+ Some Vocabularies simply use "rdf:Description" for all of the RDF "molecules".
+ Because the intention is here to provide a Vocabulary of Basic Terms, limited to 
+ only the very basic relations between terms, without any advanced ontological semantics,
+ then skos:ConceptScheme seems to be most appropriate...?
+
+ The Vocabulary of terms (skos:ConceptScheme) with the following properties:
+  @rdf:about 					(provides the identifier for the vocabulary of terms)
+  rdfs:label 					(human readable label to be used for the vocabulary of terms)
+  rdfs:comment					(description of the entire vocabulary of terms)
+  dcterms:issued 				(date the entire vocabulary was first issued)
+  dcterms:modified 				(date the entire vocabulary was last modified)
+  dcterms:hasVersion 		
+  owl:versionInfo 				(this germplasm vocabulary is still the prototype version 0.1)
+  dcterms:creator 		
+  dcterms:contributor 	
+  dcterms:publisher 	
+  dcterms:license 				(CC0 Public Domain)
+  dcterms:rights 				(the vocabulary is intended as a public good)
+  dcterms:accessRights 			(the vocabulary of terms is intended for free and open public access)
+  vann:preferredNamespaceUri	(namespace URI, here http://rs.nordgen.org/dwc/germplasm/0.1/terms/)
+  vann:preferredNamespacePrefix (prefix, here dwcg)
+  foaf:homepage 				(home page for the vocabulary of terms)
+  skos:editorialNote 			(how to use - and warning that this prototype vocabulary will be deprecated)
+  dcterms:isReplacedBy 			(the current prototype dwcg vocabulary is scheduled to be replaced)
+
+  // Potentially useful
+  dc:subject 					(keywords, when literals are used)
+  dcterms:subject 				(keywords declared as URI referenced resources)
+  dcterms:dateAccepted 			(to be used for the final ratified germplasm vocabulary)
+  dcterms:replaces 				(when the entire vocabulary replaces a previous vocabulary)
+  dcterms:bibliographicCitation	(useful if a citable reference is available for the vocabulary)
+  dcterms:rightsHolder			(if an identifiable entity is managing rights to the vocabulary of terms)
+ -->
+
+  <skos:ConceptScheme rdf:about="http://rs.nordgen.org/dwc/germplasm/0.1/terms">
+    <rdfs:label xml:lang="en">Darwin Core extension for genebanks (0.1)</rdfs:label>
+    <rdfs:comment xml:lang="en">The Darwin Core extension for genebanks (0.1) provides a Vocabulary of Terms for describing and annotating germplasm information resources.</rdfs:comment>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="http://rs.nordgen.org/dwc/germplasm/0.1/terms"/>
+    <owl:versionInfo xml:lang="en">Draft version 0.1, released 24 Aug 2009</owl:versionInfo>
+    <dcterms:creator rdf:resource="&dwcg;institute#NordGen"/>
+    <dcterms:creator rdf:resource="&dwcg;institute#Bioversity"/>
+    <dcterms:creator rdf:resource="&dwcg;institute#GBIF"/>
+    <dcterms:creator rdf:resource="&dwcg;person#DagEndresen"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#HelmutKnupffer"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#TheoVanHintum"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#ElizabethArnaud"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#MilkoSkofic"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#AdrianaAlercia"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#JonasNordling"/>
+    <dcterms:contributor rdf:resource="&dwcg;person#SamyGaiji"/>
+    <dcterms:publisher rdf:resource="&dwcg;institute#NordGen"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Darwin Core extension for genebanks".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&dwcg;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>dwcg</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://code.google.com/p/darwincore-germplasm/"/>
+    <dcterms:bibliographicCitation>Endresen DTF, Gaiji S, Robertson T (2009). DarwinCore Germplasm Extension and deployment in the GBIF infrastructure. Proceedings of TDWG, 2009. Available at "http://www.tdwg.org/proceedings/article/view/464".</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation>Endresen DTF, Knüpffer H (2011) The Darwin Core extension for genebanks opens up new opportunities for sharing genebank datasets. p. 119-142. In: Endresen, DTF, Utilization of Plant Genetic Resources: A Lifeboat to the Gene Pool. PhD Thesis, Department of Agriculture and Ecology, Faculty of Life Sciences, Copenhagen University, Denmark. ISBN: 978-91-628-8268-6. Available at "http://goo.gl/pYa9x".</dcterms:bibliographicCitation>
+    <skos:editorialNote xml:lang="en">Notice that the base URI of the Darwin Core extension for genebanks, draft version 0.1 is "http://rs.nordgen.org/dwc/germplasm/0.1/terms/". Please make sure that you are only using element identifiers in this namespace, e.g. "http://rs.nordgen.org/dwc/germplasm/terms/TERM". There may be copies of the ontology file on the Web which can be retrieved from other locations, but those locations should not be used as the basis of identifiers. This is the first draft germplasm vocabulary scheduled to be deprecated and replaced.</skos:editorialNote>
+    <skos:scopeNote>The germplasm vocabulary of terms is an extension of the Darwin Core terms. Only the established germplasm terms that does not match Darwin Core terms are declared here.</skos:scopeNote>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;"/>
+  </skos:ConceptScheme>
+
+
+<!-- ### Collection of Terms ###
+ Labelled collections can be used to group the terms under this sub-heading.
+
+ Each group of terms (skos:Collection) uses the following properties:
+  @rdf:about 			(provides the identifier for the group of terms)
+  rdfs:label 			(human readable label to be used for the group of terms)
+  rdfs:comment			(description of the group of terms)
+  skos:relatedMatch		(when the grouping concept has a related match to another concept [in another conceptScheme])
+  skos:exactMatch		(when the grouping concept has an exact match to another concept [in another conceptScheme])
+  skos:closeMatch		(when the grouping concept has a close match to another concept [in another conceptScheme])
+  skos:narrowMatch		(when the grouping concept has a narower hierarchal match to another concept [in another conceptScheme])
+  skos:related			(when the grouping concept has a related match to another concept)
+  skos:narrower			(when the grouping concept has a narrower hierarchal match to another concept)
+  skos:member			(list terms to be organized in each group) [on term, here using vann:termGroup]
+ -->
+
+  <skos:Collection rdf:about="&dwcg;Dataset">
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing a dataset.</rdfs:comment>
+    <skos:closeMatch rdf:resource="dcmitype:Dataset"/>
+    <skos:relatedMatch rdf:resource="dcmitype:Collection"/>
+    <skos:member rdf:resource="dwc:datasetID"/>
+    <skos:member rdf:resource="dwc:datasetName"/>
+    <skos:member rdf:resource="dwc:collectionID"/>
+    <skos:member rdf:resource="dwc:collectionCode"/>
+    <skos:member rdf:resource="dwc:institutionID"/>
+    <skos:member rdf:resource="dwc:institutionCode"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;Taxon">
+    <rdfs:label xml:lang="en">Taxon</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing taxonomic names.</rdfs:comment>
+    <skos:exactMatch rdf:resource="dwc:Taxon"/>
+    <skos:member rdf:resource="dwc:scientificName"/>
+    <skos:member rdf:resource="dwc:genus"/>
+    <skos:member rdf:resource="dwc:scientificNameAuthorship"/>
+    <skos:member rdf:resource="dwc:vernacularName"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;GermplasmAccession">
+    <rdfs:label xml:lang="en">Germplasm accession</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing the germplasm material.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:Occurrence"/>
+    <skos:relatedMatch rdf:resource="dcmitype:PhysicalObject"/>
+    <skos:member rdf:resource="&dwcg;GermplasmID"/>
+    <skos:member rdf:resource="&dwcg;GermplasmIdentifier"/>
+    <skos:member rdf:resource="&dwcg;BiologicalStatusOfSample"/>
+    <skos:member rdf:resource="&dwcg;BiologicalStatusOfSampleCode"/>
+    <skos:member rdf:resource="&dwcg;TypeOfStorage"/>
+    <skos:member rdf:resource="dwc:occurrenceID"/>
+    <skos:member rdf:resource="dwc:occurrenceRemarks"/>
+    <skos:member rdf:resource="dwc:catalogNumber"/>
+    <skos:member rdf:resource="dwc:otherCatalogNumbers"/>
+    <skos:member rdf:resource="dwc:occurrenceDetails"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;CollectingEvent">
+    <rdfs:label xml:lang="en">Collecting event</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing the collecting event.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:Event"/>
+    <skos:narrowMatch rdf:resource="dcmitype:Event"/>
+    <skos:relatedMatch rdf:resource="dwc:Occurrence"/>
+    <skos:relatedMatch rdf:resource="dcterms:Location"/>
+    <skos:member rdf:resource="&dwcg;CollectingInstituteCode"/>
+    <skos:member rdf:resource="dwc:eventID"/>
+    <skos:member rdf:resource="dwc:recordNumber"/>
+    <skos:member rdf:resource="dwc:decimalLatitude"/>
+    <skos:member rdf:resource="dwc:decimalLongitude"/>
+    <skos:member rdf:resource="dwc:geodeticDatum"/>
+    <skos:member rdf:resource="dwc:minimumElevationInMeters"/>
+    <skos:member rdf:resource="dwc:eventDate"/>
+    <skos:member rdf:resource="dwc:locality"/>
+    <skos:member rdf:resource="dwc:countryCode"/>
+    <skos:member rdf:resource="dwc:recordedBy"/>
+    <skos:member rdf:resource="dwc:eventRemarks"/>
+    <skos:member rdf:resource="dwc:verbatimLatitude"/>
+    <skos:member rdf:resource="dwc:verbatimLongitude"/>
+    <skos:member rdf:resource="dwc:verbatimCoordinateSystem"/>
+    <skos:member rdf:resource="geo:lat"/>
+    <skos:member rdf:resource="geo:long"/>
+    <skos:member rdf:resource="geo:alt"/>
+    <skos:member rdf:resource="geo:location"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;BreedingEvent">
+    <rdfs:label xml:lang="en">Breeding event</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing the breeding event for germplasm material.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:Event"/>
+    <skos:narrowMatch rdf:resource="dcmitype:Event"/>
+    <skos:relatedMatch rdf:resource="dwc:Occurrence"/>
+    <skos:member rdf:resource="&dwcg;BreedingEventID"/>
+    <skos:member rdf:resource="&dwcg;BreedersSampleIdentifier"/>
+    <skos:member rdf:resource="&dwcg;BreederInstitute"/>
+    <skos:member rdf:resource="&dwcg;BreederInstituteCode"/>
+    <skos:member rdf:resource="&dwcg;BreederPerson"/>
+    <skos:member rdf:resource="&dwcg;BreedingCountry"/>
+    <skos:member rdf:resource="&dwcg;BreedingCountryCode"/>
+    <skos:member rdf:resource="&dwcg;BreedingYear"/>
+    <skos:member rdf:resource="&dwcg;AncestralData"/>
+    <skos:member rdf:resource="&dwcg;PurdyPedigree"/>
+    <skos:member rdf:resource="&dwcg;BreedingEventRemarks"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;AcquisitionEvent">
+    <rdfs:label xml:lang="en">Acquisition event</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing the acquisition or inclusion of germplasm material in a genebank collection.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:Event"/>
+    <skos:narrowMatch rdf:resource="dcmitype:Event"/>
+    <skos:relatedMatch rdf:resource="dwc:Occurrence"/>
+    <skos:member rdf:resource="&dwcg;SampleAcquisitionID"/>
+    <skos:member rdf:resource="&dwcg;DonorInstitute"/>
+    <skos:member rdf:resource="&dwcg;DonorInstituteCode"/>
+    <skos:member rdf:resource="&dwcg;DonorsSampleIdentifier"/>
+    <skos:member rdf:resource="&dwcg;SampleAcquisitionDate"/>
+    <skos:member rdf:resource="&dwcg;SampleAcquisitionSource"/>
+    <skos:member rdf:resource="&dwcg;SampleAcquisitionRemarks"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;SafetyDuplication">
+    <rdfs:label xml:lang="en">Safety duplication</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing the safety duplication of germplasm material.</rdfs:comment>
+    <skos:narrower rdf:resource="dwcg:GermplasmAccession"/>
+    <skos:narrowMatch rdf:resource="dcmitype:Event"/>
+    <skos:narrowMatch rdf:resource="dwc:Event"/>
+    <skos:relatedMatch rdf:resource="dwc:Occurrence"/>
+    <skos:member rdf:resource="&dwcg;SafetyDuplicationID"/>
+    <skos:member rdf:resource="&dwcg;SafetyDuplicationDate"/>
+    <skos:member rdf:resource="&dwcg;SafetyDuplicationInstitute"/>
+    <skos:member rdf:resource="&dwcg;SafetyDuplicationInstituteCode"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;TreatyOrRegulation">
+    <rdfs:label xml:lang="en">Treaty or regulation</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing a treaty or regulation concerning germplasm material and plant genetic resources for food and agriculture.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dcterms:Policy"/>
+    <skos:narrowMatch rdf:resource="dcmitype:Text"/>
+    <skos:narrowMatch rdf:resource="foaf:Document"/>
+    <skos:member rdf:resource="&dwcg;GermplasmRegulationID"/>
+    <skos:member rdf:resource="&dwcg;TreatyOrRegulationName"/>
+    <skos:member rdf:resource="&dwcg;TreatyOrRegulationGoverningBody"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;TraitDescriptor">
+    <rdfs:label xml:lang="en">Trait descriptor</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing descriptors or properties used for the evaluation of trait properties (characterization and evaluation data).</rdfs:comment>
+    <skos:relatedMatch rdf:resource="dcterms:MeasurementOrFact"/>
+    <skos:member rdf:resource="&dwcg;GermplasmTraitID"/>
+    <skos:member rdf:resource="&dwcg;GermplasmTraitClass"/>
+    <skos:member rdf:resource="&dwcg;GermplasmTraitSource"/>
+    <skos:member rdf:resource="&dwcg;GermplasmTraitScale"/>
+    <skos:member rdf:resource="&dwcg;GermplasmTraitRemarks"/>
+    <skos:member rdf:resource="dwc:measurementType"/>
+    <skos:member rdf:resource="dwc:measurementMethod"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;TraitExperiment">
+    <rdfs:label xml:lang="en">Trait experiment</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing experiments conducted to collect evaluation data on trait properties (characterization and evaluation data).</rdfs:comment>
+    <skos:relatedMatch rdf:resource="dcterms:MeasurementOrFact"/>
+    <skos:narrowMatch rdf:resource="foaf:Project"/>
+    <skos:member rdf:resource="&dwcg;GermplasmExperimentID"/>
+    <skos:member rdf:resource="&dwcg;GermplasmExperimentIdentifier"/>
+    <skos:member rdf:resource="&dwcg;GermplasmExperimentReport"/>
+    <skos:member rdf:resource="&dwcg;GermplasmExperimentYear"/>
+    <skos:member rdf:resource="&dwcg;GermplasmExperimentRemarks"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;TraitMeasurement">
+    <rdfs:label xml:lang="en">Trait measurement</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for terms describing experimental values and scores for trait properties (characterization and evaluation data).</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dcterms:MeasurementOrFact"/>
+    <skos:member rdf:resource="&dwcg;MeasurementByInstituteCode"/>
+    <skos:member rdf:resource="&dwcg;MeasurementGrowthStage"/>
+    <skos:member rdf:resource="dwc:measurementID"/>
+    <skos:member rdf:resource="dwc:measurementValue"/>
+    <skos:member rdf:resource="dwc:measurementUnit"/>
+    <skos:member rdf:resource="dwc:measurementAccuracy"/>
+    <skos:member rdf:resource="dwc:measurementDeterminedDate"/>
+    <skos:member rdf:resource="dwc:measurementDeterminedBy"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&dwcg;DatatypeProperty">
+    <rdfs:label xml:lang="en">Datatype property</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for internal datatype properties to type the identifiers and alternative labels.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dcterms:MeasurementOrFact"/>
+    <skos:member rdf:resource="&dwcg;wiewsInstituteID"/>
+    <skos:member rdf:resource="&dwcg;bioColID"/>
+    <skos:member rdf:resource="&dwcg;mcpdTerm"/>
+    <skos:member rdf:resource="&dwcg;euriscoTerm"/>
+    <skos:member rdf:resource="&dwcg;epgrisTerm"/>
+  </skos:Collection>
+
+
+<!-- ### INDIVIDUAL TERMS ###
+ The individual terms are described as "skos:Concept" 
+ Some other term vocabularies simply use "rdf:Description" for all of the RDF "molecules"... 
+ Some other term vocabularies use owl:Class or rdfs:Class.
+ SKOS:Concept seems appropriate because SKOS is designed to express basic terminology and thesauri.
+ SKOS was designed with re-usability in mind, the terms has minimal semantic restrictions declared.
+ And minimum restrictions makes for maximum re-usability... and the rationale for using SKOS here.
+
+ Terms (skos:Concept) are described by the following properties:
+  @rdf:about 			(provides the identifier for the term)
+  skos:prefLabel 		(human readable name or label for the term)
+  skos:definition 		(brief and unambigous definition)
+  skos:example 			(example values are provided for each term)
+  skos:note 			(notes on how to use for each term)
+  skos:scopeNote 		(what the term does and does not cover)
+  rdfs:seeAlso  		(link to Wiki discussion page, link to term documentation resources)
+  dcterms:issued 		(the terms for the draft germplasm extension was issued on 2009-08-24)
+  dcterms:modified 		(modification date 2012-03-27 is when this RDF description was made)
+  vann:termGroup		(used for organizing terms into groups, collection or category of terms)
+  rdfs:isDefinedBy 		(terms are defined by an identifiable vocabulary or resource)
+  skos:inScheme			(terms belong to an identifiable vocabulary of terms)    
+  vs:term_status 		(all terms here are considered "unstable", and scheduled to be deprecated)
+  dcterms:isReplacedBy 	(terms of this draft vocabulary are scheduled to be deprecated and replaced)
+  skos:altLabel 		(for synonym labels such as the MultiCrop Passport Descriptors)
+  dcterms:source 		(link to the source MultiCrop Passport Descriptors or the EPGRS3 descriptors)
+
+  // Cross-walk between terms and concepts in other concept schemes:
+  skos:relatedMatch		(when the term has a related match to another concept [in another conceptScheme])
+  skos:exactMatch		(when the term has an exact match to another concept [in another conceptScheme])
+  skos:closeMatch		(when the term has a close match to another concept [in another conceptScheme])
+  skos:narrowMatch		(when the term has a narower hierarchal match to another concept [in another conceptScheme])
+  skos:broadMatch		(when the term has a broader hierarchal match to another concept [in another conceptScheme])
+  skos:related			(when the term has a related match to another concept)
+  skos:narrower			(when the term has a narrower hierarchal match to another concept)
+  skos:broader			(when the term has a broader hierarchal match to another concept)
+
+  // Datatype annotations
+  @dwcg:mcpdTerm 		(skos:altLabel property for the equivalent term of the MultiCrop Passport Descriptors [MCPD])
+  @dwcg:euriscoTerm 	(skos:altLabel property for the equivalent term of the EURISCO amendment to MCPD)
+  @dwcg:epgrisTerm 		(skos:altLabel property for the equivalent term of the EPGRIS3 trait data workshop in 2009)
+  @dwcg:bioColID 		(dcterms:identifier property for Biodiversity Collections Index [BCI] PIDs)
+  @dwcg:wiewsInstituteID 	(dcterms:identifier property for FAO WIEWS institute codes, INSTCODE)
+
+  // Potentially useful annotation properties:
+  dcterms:replaces 		(can be used if the TERM replaces a previous TERM)
+  dcterms:isPartOf 		(could perhaps be used here for organizing terms into groups, collection or category of terms [?])
+  rdf:type 				(type is here implicit when using skos:Concept for the "RDF molecules")
+  dcterms:hasVersion 	(for this draft germplasm vocabulary all terms together has version 0.1)
+  dcterms:identifier 	(we could also provide other identifiers than the URI here)
+  rdfs:label 			(human readable name for the term, same as skos:prefLabel)
+  rdfs:domain			(defines the resources used as subjects when a concept is used as an annotation property)
+  rdfs:range			(defines the resources used as objects when a concept is used as an annotation property)
+  rdfs:subPropertyOf 	(when the term can be seen as instance of a broader vocabulary term [Property])
+  rdfs:subClassOf 		(when the term can be seen as instance of a broader vocabulary term [Class])
+  owl:equivalentProperty
+-->
+
+
+
+  <skos:Concept rdf:about="&dwcg;SampleAcquisitionID">
+    <skos:prefLabel xml:lang="en">donors accession ID</skos:prefLabel>
+    <skos:definition xml:lang="en">An identifier for the source germplasm material that was included in your genebank collection.</skos:definition>
+    <skos:example xml:lang="en">http://data.gbif.org/occurrences/164390781/; URI; DOI; LSID or similar</skos:example>
+    <skos:note xml:lang="en">Local identifiers used by the donor is best reported using the DonorsSampleIdentifier term.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SampleAcquisitionID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;donorsID"/>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="dwc:otherCatalogNumbers"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;DonorsSampleIdentifier">
+    <skos:prefLabel xml:lang="en">donors accession identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">An identifier for the source accession donated to your genebank collection. Could be an unique and stable identifier specific to the dataset.</skos:definition>
+    <skos:example xml:lang="en">NGB1</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to report using the SampleAcquisitionID term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/DonorsSampleIdentifier"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;donorsIdentifier"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">DONORNUMB</skos:altLabel>
+    <skos:altLabel xml:lang="en">Donor accession number</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <skos:relatedMatch rdf:resource="dwc:otherCatalogNumbers"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SampleAcquisitionSource">
+    <skos:prefLabel xml:lang="en">acquisition source</skos:prefLabel>
+    <skos:definition xml:lang="en">Collecting/acquisition source, COLLSRC. Coded as integer value with defined enumeration (MCPD term 22).</skos:definition>
+    <skos:example xml:lang="en">10, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30, 40, 50, 60, 61, 62, 99</skos:example>
+    <skos:note xml:lang="en">Recommended to use the MCPD coding scheme. Wild habitat (10), Farm or cultivated habitat (20), Market or shop (30), Institute, experimental station, research organization, genebank (40), Seed company (50), Weedy, disturbed or ruderal habitat (60).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SampleAcquisitionSource"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;acquisitionSource"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">COLLSRC</skos:altLabel>
+    <skos:altLabel xml:lang="en">Collecting, acquisition source</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <skos:relatedMatch rdf:resource="dcterms:accrualMethod"/>
+    <skos:relatedMatch rdf:resource="dwc:habitat"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SampleAcquisitionDate">
+    <skos:prefLabel xml:lang="en">acquisition date</skos:prefLabel>
+    <skos:definition xml:lang="en">Acquisition date, ACQDATE. Date when the germplasm sample (accession) entered the genebank collection (MCPD term 12).</skos:definition>
+    <skos:example xml:lang="en">2010-05-10</skos:example>
+    <skos:note xml:lang="en">Accessions can be acquired by a collecting event or from other genebank collections by an acquisition event. For either event this terms describes the date the accession was included into the receiving genebank collection.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SampleAcquisitionDate"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;acquisitionDate"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">ACQDATE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Acquisition date</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <skos:narrowMatch rdf:resource="dwc:eventDate"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;DonorInstituteCode">
+    <skos:prefLabel xml:lang="en">donor institute ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Donor institute code, DONORCODE. FAO WIEWS institute code for the donor institute (MCPD term 23).</skos:definition>
+    <skos:example xml:lang="en">DEU146; NLD037; SWE054; urn:lsid:biocol.org:col:35293</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/DonorInstituteCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;donorInstituteID"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">DONORCODE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Donor institute code</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <rdfs:domain rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;DonorInstitute">
+    <skos:prefLabel xml:lang="en">donor institute</skos:prefLabel>
+    <skos:definition xml:lang="en">Donor institute name. If the FAO WIEWS institute code is available, this term should not be reported (MCPD term 23).</skos:definition>
+    <skos:example xml:lang="en">Nordic Genetic Resources Center (NordGen)</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to report using the DonorInstituteCode term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/DonorInstitute"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;donorInstitute"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;euriscoTerm">DONORDESCR</skos:altLabel>
+    <skos:altLabel xml:lang="en">Donor institute</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"/>
+    <rdfs:domain rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SampleAcquisitionRemarks">
+    <skos:prefLabel xml:lang="en">acquisition remarks</skos:prefLabel>
+    <skos:definition xml:lang="en">Remarks to the acquisition event.</skos:definition>
+    <skos:example xml:lang="en">General remarks related to the acquisition of the germplasm accession.</skos:example>
+    <skos:note xml:lang="en">The acquisition terms relates to the immediate step or the germplasm holder before the accession was included in the genebank collection. Information related to the collecting event and the breeding event are not reported here.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SampleAcquisitionRemarks"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;AcquisitionEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;acquisitionRemarks"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">REMARKS</skos:altLabel>
+    <skos:altLabel xml:lang="en">Remarks</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;BreedingEventID">
+    <skos:prefLabel xml:lang="en">breeders ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Persistent identifier for the source germplasm developed by a plant breeder.</skos:definition>
+    <skos:example xml:lang="en">Persistent identifier (PID) such as a URI, DOI, LSID or similar</skos:example>
+    <skos:note xml:lang="en">Local identifiers used by the breeder is best reported using the BreedersSampleIdentifier term.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreedingEventID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingID"/>
+    <skos:altLabel xml:lang="en">breeders PID</skos:altLabel>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreedersSampleIdentifier">
+    <skos:prefLabel xml:lang="en">breeders identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">The name or accession number used by the plant breeder.</skos:definition>
+    <skos:example xml:lang="en">Could be the breeders catalog number, or the name under which a cultivar was marketed.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to report using the BreedingEventID term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreedersSampleIdentifier"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingIdentifier"/>
+    <skos:altLabel xml:lang="en">breeders accession number</skos:altLabel>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreedingYear">
+    <skos:prefLabel xml:lang="en">breeding year</skos:prefLabel>
+    <skos:definition xml:lang="en">The year a germplasm accession was developed by a plant breeder. Could be the year the cultivar was released.</skos:definition>
+    <skos:example xml:lang="en">2010</skos:example>
+    <skos:note xml:lang="en">The four-digit year in which the breeding event was conducted.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreedingYear"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingYear"/>
+    <skos:narrowMatch rdf:resource="dwc:year"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreederPerson">
+    <skos:prefLabel xml:lang="en">breeder</skos:prefLabel>
+    <skos:definition xml:lang="en">Name of the plant breeder.</skos:definition>
+    <skos:example xml:lang="en">Gregor Mendel; Luther Burbank; Nils Herman Nilsson-Ehle</skos:example>
+    <skos:note xml:lang="en">Name of the person conducting the breeding event.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreederPerson"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingPerson"/>
+    <skos:relatedMatch rdf:resource="foaf:Person"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreederInstituteCode">
+    <skos:prefLabel xml:lang="en">breeder institute ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Breeding institute code (MCPD term 19).</skos:definition>
+    <skos:example xml:lang="en">SWE006; urn:lsid:biocol.org:col:35293</skos:example>
+    <skos:note xml:lang="en">Recommended to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreederInstituteCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breederInstituteID"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">BREDCODE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Breeding institute code</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:narrower rdf:resource="&dwcg;BreederInstitute"/>
+    <skos:relatedMatch rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreederInstitute">
+    <skos:prefLabel xml:lang="en">breeder institute</skos:prefLabel>
+    <skos:definition xml:lang="en">Breeder institute name. If the FAO WIEWS institute code is available, this term should not be reported (MCPD term 19).</skos:definition>
+    <skos:example xml:lang="en">Svalöf Weibull AB Cereal Breeding Department</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is using the BreederInstituteCode term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingInstitute"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;euriscoTerm">BREDDESCR</skos:altLabel>
+    <skos:altLabel xml:lang="en">Decoded breeding institute</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"/>
+    <skos:broader rdf:resource="&dwcg;BreederInstituteCode"/>
+    <rdfs:domain rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreedingCountry">
+    <skos:prefLabel xml:lang="en">breeding country</skos:prefLabel>
+    <skos:definition xml:lang="en">Name of the country in which the breeding event was conducted.</skos:definition>
+    <skos:example xml:lang="en">Denmark; Norway; Sweden</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingCountry"/>
+    <skos:relatedMatch rdf:resource="dwc:country"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreedingCountryCode">
+    <skos:prefLabel xml:lang="en">breeding country code</skos:prefLabel>
+    <skos:definition xml:lang="en">Code for the country in which the breeding event was conducted.</skos:definition>
+    <skos:example xml:lang="en">DNK; FIN; ISL; NOR; SWE</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a controlled vocabulary such or the ISO 3166-1-alpha-3 country codes.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreedingCountryCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingCountryCode"/>
+    <skos:relatedMatch rdf:resource="dwc:countryCode"/>
+    <skos:relatedMatch rdf:resource="dcterms:ISO3166"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;AncestralData">
+    <skos:prefLabel xml:lang="en">ancestral pedigree data</skos:prefLabel>
+    <skos:definition xml:lang="en">Ancestral data, ANCEST. Information about either pedigree or other description of ancestral information (MCPD term 21).</skos:definition>
+    <skos:example xml:lang="en">Hanna/7*Atlas//Turk/8*Atlas; mutation found in Hanna; selection from Irene</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to report using the PurdyPedigree term when possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/AncestralData"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;ancestralData"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">ANCEST</skos:altLabel>
+    <skos:altLabel xml:lang="en">Ancestral data</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;PurdyPedigree">
+    <skos:prefLabel xml:lang="en">Purdy pedigree</skos:prefLabel>
+    <skos:definition xml:lang="en">Ancestral information following the purdy pedigree format (MCPD term 21).</skos:definition>
+    <skos:example xml:lang="en">Hanna/7*Atlas//Turk/8*Atlas</skos:example>
+    <skos:note xml:lang="en">Purdy et al. (1968), Crop Science 8(4):405-406; doi:10.2135/cropsci1968.0011183X000800040002x.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/PurdyPedigree"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;purdyPedigree"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BreedingEventRemarks">
+    <skos:prefLabel xml:lang="en">breeding remarks</skos:prefLabel>
+    <skos:definition xml:lang="en">Remarks to the breeding event.</skos:definition>
+    <skos:example xml:lang="en">Supplementary comments and remarks related to the breeding event</skos:example>
+    <skos:note xml:lang="en">The breeding event is related to the development of germplasm by a breeder or through cultivation by a farmer depending on the biological status of the germplasm accession.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BreedingEventRemarks"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;BreedingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;breedingRemarks"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;CollectingInstituteCode">
+    <skos:prefLabel xml:lang="en">collecting institute ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Collecting institute code (MCPD term 4).</skos:definition>
+    <skos:example xml:lang="en">SWE054; urn:lsid:biocol.org:col:35293; an established institute code for the collecting/gathering institute.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;CollectingEvent"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;collectingInstituteID"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">COLLCODE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Collecting institute code</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="dwc:recordedBy"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;GermplasmID">
+    <skos:prefLabel xml:lang="en">germplasm ID</skos:prefLabel>
+    <skos:definition xml:lang="en">A persistent identifier for a germplasm accession maintained as part of an ex situ genebank collection. Best practice is to use a globally unique and persistent identifier (PID).</skos:definition>
+    <skos:example xml:lang="en">http://data.gbif.org/occurrences/215969415/</skos:example>
+    <skos:note xml:lang="en">Local identifiers such as the catalog number (accessions number) is best reported using the dwc:catalogNumber term.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;GermplasmAccession"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;germplasmID"/>
+    <skos:altLabel xml:lang="en">germplasm PID</skos:altLabel>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:narrowMatch rdf:resource="dwc:occurrenceID"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmIdentifier">
+    <skos:prefLabel xml:lang="en">germplasm identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">Accession name. Either a registered or other formal designation given to the accession (MCPD term 11).</skos:definition>
+    <skos:example xml:lang="en">Rheinische Vorgebirgstrauben; Emma; Avlon</skos:example>
+    <skos:note xml:lang="en">Local identifiers such as the catalog number (accessions number) is best reported using the dwc:catalogNumber term.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmIdentifier"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;GermplasmAccession"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;germplasmIdentifier"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">ACCENAME</skos:altLabel>
+    <skos:altLabel xml:lang="en">Accession name</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:narrowMatch rdf:resource="dwc:catalogNumber"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BiologicalStatusOfSample">
+    <skos:prefLabel xml:lang="en">biological status</skos:prefLabel>
+    <skos:definition xml:lang="en">The biological status for a germplasm accession describes the cultivation status and distinguish wild and primitive cultivars from modern cultivars and breeding lines (material under development) (MCPD term 20).</skos:definition>
+    <skos:example xml:lang="en">Wild; Crop wild relative (CWR); Primitive; Traditional cultivar; Landrace; Breeding line; Genetic stock; Modern cultivar; 100; 110; 120; 200; 300; 400; 410; 411; 412; 413; 414; 415; 420; 500; 999</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to follow a controlled vocabulary, such as the code list defined by the MCPD term 20, SAMPSTAT.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSample"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;GermplasmAccession"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;biologicalStatus"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">SAMPSTAT</skos:altLabel>
+    <skos:altLabel xml:lang="en">biological status of sample</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <skos:narrowMatch rdf:resource="dwc:basisOfRecord"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;BiologicalStatusOfSampleCode">
+    <skos:prefLabel xml:lang="en">biological status code</skos:prefLabel>
+    <skos:definition xml:lang="en">The biological status codes for germplasm accessions describes the cultivation status and distinguish wild and primitive cultivars from modern cultivars and breeding lines (material under development). A numeric code system defined by the MultiCrop Passport Descriptors (MCPD term 20).</skos:definition>
+    <skos:example xml:lang="en">100; 110; 120; 200; 300; 400; 410; 411; 412; 413; 414; 415; 420; 500; 999</skos:example>
+    <skos:note xml:lang="en">Please follow the controlled vocabulary defined by the MCPD term 20, SAMPSTAT.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;GermplasmAccession"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>archaic</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;biologicalStatus"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">SAMPSTAT</skos:altLabel>
+    <skos:altLabel xml:lang="en">biological status of sample</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <skos:narrower rdf:resource="dwcg:BiologicalStatusOfSample"/>
+    <skos:narrowMatch rdf:resource="dwc:basisOfRecord"/>
+    <skos:narrowMatch rdf:resource="dcterms:type"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;TypeOfStorage">
+    <skos:prefLabel xml:lang="en">type of storage</skos:prefLabel>
+    <skos:definition xml:lang="en">Type of germplasm storage (MCPD term 27).</skos:definition>
+    <skos:example xml:lang="en">10; 11; 12; 13; 20; 30; 40; 99; Refer to FAO/IPGRI Genebank Standards 1994 for details on storage type.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the code list defined by the MCPD term 27, STORAGE.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSample"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;GermplasmAccession"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;typeOfStorage"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">STORAGE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Type of germplasm storage</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;SafetyDuplicationID">
+    <skos:prefLabel xml:lang="en">safety duplication ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Persistent identifier for the genebank accession in the safety duplication storage. A globally unique identifier (GUID), persistent identifier (PI) such as a URI, DOI, LSID or similar is preferred.</skos:definition>
+    <skos:example xml:lang="en">URI, DOI, LSID or similar.</skos:example>
+    <skos:note xml:lang="en">Could also be an unique and stable identifier specific to the safety storage collection.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SafetyDuplicationID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;SafetyDuplication"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;safetyDuplicationID"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:narrower rdf:resource="dwcg:germplasmID"/>
+    <skos:relatedMatch rdf:resource="dwc:otherCatalogNumbers"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SafetyDuplicationInstituteCode">
+    <skos:prefLabel xml:lang="en">safety duplication institute ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Location of safety duplicates. FAO institute code of the institute where a safety duplicate of the accession is maintained (MCPD term 26).</skos:definition>
+    <skos:example xml:lang="en">NOR051; urn:lsid:biocol.org:col:35294</skos:example>
+    <skos:note xml:lang="en">Recommended best practice  is to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SafetyDuplicationInstituteCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;SafetyDuplication"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;safetyDuplicationInstituteID"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">DUPLSITE</skos:altLabel>
+    <skos:altLabel xml:lang="en">Location of safety duplicates</skos:altLabel>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SafetyDuplicationInstitute">
+    <skos:prefLabel xml:lang="en">safety duplication institute</skos:prefLabel>
+    <skos:definition xml:lang="en">Location of safety duplicates (MCPD term 26).</skos:definition>
+    <skos:example xml:lang="en">The name of the safe duplication institute. Recommended to use SafetyDuplicationInstituteCode when possible.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use the SafetyDuplicationInstituteCode term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SafetyDuplicationInstitute"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;SafetyDuplication"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;safetyDuplicationInstitute"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;euriscoTerm">DUPLDESCR</skos:altLabel>
+    <skos:altLabel xml:lang="en">Location of safety duplicates</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"/>
+    <skos:broader rdf:resource="&dwcg;SafetyDuplicationInstituteCode"/>
+    <skos:relatedMatch rdf:resource="foaf:Organization"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;SafetyDuplicationDate">
+    <skos:prefLabel xml:lang="en">safety duplication date</skos:prefLabel>
+    <skos:definition xml:lang="en">Date of safety duplication.</skos:definition>
+    <skos:example xml:lang="en">2008-02-26</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/SafetyDuplicationDate"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;SafetyDuplication"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;safetyDuplicationDate"/>
+    <skos:narrowMatch rdf:resource="dwc:eventDate"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmRegulationID">
+    <skos:prefLabel xml:lang="en">treaty or regulation ID</skos:prefLabel>
+    <skos:definition xml:lang="en">An identifier for the regulation or treaty.</skos:definition>
+    <skos:example xml:lang="en">URI, DOI, LSID or similar.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to report a persistent identifier for the treaty or regulation.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmRegulationID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TreatyOrRegulation"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;treatyOrRegulationID"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="foaf:Document"/>
+    <skos:relatedMatch rdf:resource="dcterms:Policy"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;TreatyOrRegulationName">
+    <skos:prefLabel xml:lang="en">treaty or regulation</skos:prefLabel>
+    <skos:definition xml:lang="en">Regulation or treaty name.</skos:definition>
+    <skos:example xml:lang="en">The International Treaty for Plant Genetic Resources for Food and Agriculture (ITPGRFA)</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use the GermplasmRegulationID term when possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/TreatyOrRegulationName"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TreatyOrRegulation"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;treatyOrRegulation"/>
+    <skos:relatedMatch rdf:resource="foaf:Document"/>
+    <skos:relatedMatch rdf:resource="dcterms:Policy"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;TreatyOrRegulationGoverningBody">
+    <skos:prefLabel xml:lang="en">governing body</skos:prefLabel>
+    <skos:definition xml:lang="en">Governing body for the regulation or treaty.</skos:definition>
+    <skos:example xml:lang="en">WIEWS institute code</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TreatyOrRegulation"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;treatyOrRegulationGoverningBody"/>
+    <skos:relatedMatch rdf:resource="foaf:Group"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitID">
+    <skos:prefLabel xml:lang="en">trait ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Persistent identifier for a trait descriptor used to identify the description of the measurement method.</skos:definition>
+    <skos:example xml:lang="en">URI, DOI, LSID or similar</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a persistent identifier for trait descriptors, and a controlled and curated ontology such as the Plant Ontology (http://www.plantontology.org).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitID"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">TRAIT_NUMBER</skos:altLabel>
+    <skos:altLabel xml:lang="en">Trait descriptor number</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementMethod"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitIdentifier">
+    <skos:prefLabel xml:lang="en">trait identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">English name used to identify the trait measurement method.</skos:definition>
+    <skos:example xml:lang="en">stem rust susceptibility; powdery mildew susceptibility; plant height; ear density; etc</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use the GermplasmTraitID term whenever possible, and to use a controlled vocabulary such as the Plant Ontology (http://www.plantontology.org).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitIdentifier"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitIdentifier"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">TRAIT_NAME</skos:altLabel>
+    <skos:altLabel xml:lang="en">English name of the trait</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementMethod"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitClass">
+    <skos:prefLabel xml:lang="en">trait descriptor group</skos:prefLabel>
+    <skos:definition xml:lang="en">Classification of the trait descriptor.</skos:definition>
+    <skos:example xml:lang="en">agrobotanical; morphological; chemical; phenological; molecular biology; disease susceptibility/-resistance; tolerance (abiotic); utilization.</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the Plant Ontology (http://www.plantontology.org).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitClass"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitGroup"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementType"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitScale">
+    <skos:prefLabel xml:lang="en">trait measurement scale</skos:prefLabel>
+    <skos:definition xml:lang="en">Measurement scale used to score the measurement values.</skos:definition>
+    <skos:example xml:lang="en">absolute; interval; nominal; ordinal; ratio; relative</skos:example>
+    <skos:note xml:lang="en">The theory of scale types was developed by Stanley S. Stevens (1946) in Science 103(2684):677–680.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitScale"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitScale"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitSource">
+    <skos:prefLabel xml:lang="en">trait descriptor source</skos:prefLabel>
+    <skos:definition xml:lang="en">Reference to a standard Germplasm Descriptor. For example the UPOV descriptor or the Bioversity Crop Descriptor identifier.</skos:definition>
+    <skos:example xml:lang="en">UPOV TG/198/1 (april 2003)</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a controlled vocabulary of source trait descriptors.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitSource"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitSource"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementMethod"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmTraitRemarks">
+    <skos:prefLabel xml:lang="en">trait remarks</skos:prefLabel>
+    <skos:definition xml:lang="en">Remarks related to the trait measurement method.</skos:definition>
+    <skos:example xml:lang="en">inflorescences after cutting; measured three days after heading date</skos:example>
+    <skos:note xml:lang="en">Any general remark that helps interpret the trait measurement method.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmTraitRemarks"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitDescriptor"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitRemarks"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">TRAIT_REMARK</skos:altLabel>
+    <skos:altLabel xml:lang="en">Measurement remarks</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementRemarks"/>
+  </skos:Concept>
+
+
+  <skos:Concept rdf:about="&dwcg;GermplasmExperimentID">
+    <skos:prefLabel xml:lang="en">trait experiment ID</skos:prefLabel>
+    <skos:definition xml:lang="en">Persistent identifier used to identify a trait measurement experiment.</skos:definition>
+    <skos:example xml:lang="en">URI, DOI, LSID or similar</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use a persistent identifier for trait measurement experiments.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmExperimentID"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitExperiment"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitExperimentID"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmExperimentIdentifier">
+    <skos:prefLabel xml:lang="en">trait experiment identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">Unique number in the dataset for the experiment.</skos:definition>
+    <skos:example xml:lang="en">Local identifier for the experiment or project activity.</skos:example>
+    <skos:note xml:lang="en">This number should be unique and persistent for the data provider. Recommended best practice is to use the GermplasmExperimentID term whenever possible.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmExperimentIdentifier"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitExperiment"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitExperimentIdentifier"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">EXPERIMENT_NUMBER</skos:altLabel>
+    <skos:altLabel xml:lang="en">Experiment number</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmExperimentRemarks">
+    <skos:prefLabel xml:lang="en">trait experiment remarks</skos:prefLabel>
+    <skos:definition xml:lang="en">Information relevant for the interpretation of the scores in the experiment.</skos:definition>
+    <skos:example xml:lang="en">Experimental design, location, experimentor, weather, etc.</skos:example>
+    <skos:note xml:lang="en">General remarks related to the experimental conditions or experiment design.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmExperimentRemarks"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitExperiment"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitExperimentRemarks"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">EXPERIMENT_DESCRIPTION</skos:altLabel>
+    <skos:altLabel xml:lang="en">Experiment description</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementRemarks"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmExperimentYear">
+    <skos:prefLabel xml:lang="en">trait experiment year</skos:prefLabel>
+    <skos:definition xml:lang="en">The year when the trait experiment was conducted.</skos:definition>
+    <skos:example xml:lang="en">2010</skos:example>
+    <skos:note xml:lang="en">For the more detailed experiment date, best practice is to use the dwc:measurementDeterminedDate term.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmExperimentYear"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitExperiment"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitExperimentYear"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">EXPERIMENT_YEAR</skos:altLabel>
+    <skos:altLabel xml:lang="en">Experiment year</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementDeterminedDate"/>
+    <skos:relatedMatch rdf:resource="dwc:year"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;GermplasmExperimentReport">
+    <skos:prefLabel xml:lang="en">trait experiment report</skos:prefLabel>
+    <skos:definition xml:lang="en">A reference to the report of the experiment, either supplied as the file name or the URL of the report.</skos:definition>
+    <skos:example xml:lang="en">URL or reference citation</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to provide the URL to the report.</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/GermplasmExperimentReport"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitExperiment"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitExperimentReport"/>
+    <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;epgrisTerm">EXPERIMENT_REPORT</skos:altLabel>
+    <skos:altLabel xml:lang="en">Experiment report</skos:altLabel>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;MeasurementByInstituteCode">
+    <skos:prefLabel xml:lang="en">Trait measurement by institute</skos:prefLabel>
+    <skos:definition xml:lang="en">Trait observation determined by institute code, INSTCODE. FAO WIEWS institute code for the institute performing the observation/measurement.</skos:definition>
+    <skos:example xml:lang="en">DEU146; NLD037; SWE054; urn:lsid:biocol.org:col:35293</skos:example>
+    <skos:note xml:lang="en">Recommended best practice is to use institute codes from the FAO WIEWS information system, "http://apps3.fao.org/wiews/institute_query.htm?i_l=EN" or the Biodiversity Collections Index (BCI), "http://www.biodiversitycollectionsindex.org/".</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/MeasurementByInstituteCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitMeasurement"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitMeasurementByInstituteID"/>
+    <rdfs:range rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="dwc:measurementDeterminedBy"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&dwcg;MeasurementGrowthStage">
+    <skos:prefLabel xml:lang="en">trait measurement at growth stage</skos:prefLabel>
+    <skos:definition xml:lang="en">The growth stage of the plant when the trait observation or measurement was made.</skos:definition>
+    <skos:example xml:lang="en">flowering; heading; ripening; etc.</skos:example>
+    <skos:note xml:lang="en">A more general modifier of the TDWG SDD style could be applied here and include modifiers such as part of the plant where the observation was made (eg. leaf, stem, seeds).</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/BiologicalStatusOfSampleCode"/>
+    <dcterms:issued>2009-08-24</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;TraitMeasurement"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;traitMeasurementGrowthStage"/>
+  </skos:Concept>
+
+
+
+
+<!-- ### Datatype declaration, Internal annotation properties ###
+ Some internal annotation properties to provide the type of identifiers and alternative labels (skos:altLabel)
+ There are different types of identifiers and declaring a datatype to keep them appart might perhaps be useful? 
+ Examples how to declare datatypes for WIEWS and BCI identifiers:
+  <dcterms:identifier rdf:datatype="&dwcg;bioColID">http://biocol.org/urn:lsid:biocol.org:col:35293</dcterms:identifier>
+  <dcterms:identifier rdf:datatype="&dwcg;wiewsInstituteID">SWE054</dcterms:identifier>
+  <skos:altLabel xml:lang="en" rdf:datatype="&dwcg;mcpdTerm">DONORNUMB</skos:altLabel>
+-->
+
+  <rdfs:Datatype rdf:about="&dwcg;wiewsInstituteID">
+    <skos:prefLabel xml:lang="en">FAO WIEWS Institute Code</skos:prefLabel>
+    <skos:definition xml:lang="en">A three letter country ISO code and a three (old) or four digit number.</skos:definition>
+    <skos:example xml:lang="en">ITA247; ITA406; NOR051; SWE002; SWE054</skos:example>
+    <skos:note xml:lang="en">The FAO WIEWS Institute Codes are available at http://apps3.fao.org/wiews/institute_query.htm</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/wiewsInstituteID"/>
+    <dcterms:issued>2012-03-27</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;wiewsInstituteID"/>
+    <skos:closeMatch rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="http://apps3.fao.org/wiews/wiews.jsp"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&dwcg;bioColID">
+    <skos:prefLabel xml:lang="en">Biodiversity Collections Index ID</skos:prefLabel>
+    <skos:definition xml:lang="en">An index of biodiversity collections, providing persistent identifiers based on LSID URIs.</skos:definition>
+    <skos:example xml:lang="en">http://biocol.org/urn:lsid:biocol.org:col:35293</skos:example>
+    <skos:note xml:lang="en">The Biodiversity Collections Index is available at http://biocol.org/</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/bioColID"/>
+    <dcterms:issued>2012-03-27</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;bioCollID"/>
+    <skos:closeMatch rdf:resource="dcterms:identifier"/>
+    <skos:relatedMatch rdf:resource="http://biocol.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&dwcg;mcpdTerm">
+    <skos:prefLabel xml:lang="en">Equivalent MCPD term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent term from the MultiCrop Passport Descriptor list.</skos:definition>
+    <skos:example xml:lang="en">INSTCODE; ACCENUMB; COLLNUMB; etc.</skos:example>
+    <skos:note xml:lang="en">The MCPD terms are available at "http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/mcpdTerm"/>
+    <dcterms:issued>2012-03-27</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;mcpdTerm"/>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&dwcg;euriscoTerm">
+    <skos:prefLabel xml:lang="en">Equivalent EURISCO term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent term from the European Germplasm Search Catalog, amendment to the MCPD.</skos:definition>
+    <skos:example xml:lang="en">NICODE; COLLDESCR; BREDDESCR; DONORDESCR; DUPLDESCR; ACCEURL</skos:example>
+    <skos:note xml:lang="en">The EURISCO terms are available at "http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/euriscoTerm"/>
+    <dcterms:issued>2012-03-27</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;euriscoTerm"/>
+    <dcterms:source rdf:resource="http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&dwcg;epgrisTerm">
+    <skos:prefLabel xml:lang="en">Equivalent EPGRIS term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent proposed term from the EPGRIS3 project team of the European Genebank Documentation group.</skos:definition>
+    <skos:example xml:lang="en">DATASET; UPLOADERCODE; DATASET_REMARK; EXPERIMENT; EXPERIMENT_NUMBER; EXPERIMENT_DESCRIPTION; EXPERIMENT_YEAR; EXPERIMENT_LONGITUDE; EXPERIMENT_LATITUDE; EXPERIMENT_REPORT; TRAIT; TRAIT_NUMBER; TRAIT_NAME; TRAIT_REMARK; TRAIT_METHOD; GENOTYPE; GENOTYPE_NUMBER; GENOTYPE_NICODE; GENOTYPE_INSTCODE; GENOTYPE_ACCENUMB; GENOTYPE_GENUS; SCORE</skos:example>
+    <skos:note xml:lang="en">The EPGRIS3 phenotype characterization and evaluation terms are available at "http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"</skos:note>
+    <skos:scopeNote rdf:resource="http://code.google.com/p/darwincore-germplasm/wiki/epgrisTerm"/>
+    <dcterms:issued>2012-03-27</dcterms:issued>
+    <dcterms:modified>2012-03-27</dcterms:modified>
+    <vann:termGroup rdf:resource="&dwcg;DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&dwcg;"/>
+    <skos:inScheme rdf:resource="&dwcg;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:isReplacedBy rdf:resource="&germplasm;epgrisTerm"/>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+  </rdfs:Datatype>
+
+
+
+<!-- ### Agents, Organization and Person ###
+ Providing information about the organization and the persons who contributed
+ to creating or maintaining the Vocabulary of Terms would be a good practice.
+ When using dcterms:creator, contributor, publisher etc these have range dcterms:Agent
+ and will this require the values to be non-literal resources.
+
+ foaf:organization and foaf:Person entities are described by:
+  foaf:name					(full name, institute or person)
+  foaf:nickname				(reporting institute acronyms here)
+  dcterms:identifier		(from the FAO WIEWS and/or the Biodiversity Collections Index)
+  @rdf:datatype				(datatype property, WIEWS INSTCODE, BCI ID)
+  foaf:homepage				(institute home page, www)
+  foaf:member				(list persons affiliated)
+  foaf:mbox					(mailbox)
+  foaf:mbox_sha1sum			(md5 hash sum based on the mailbox [md5 -s mailbox])
+ -->
+
+  <foaf:Organization rdf:about="&dwcg;institute#Bioversity">
+    <foaf:name>Bioversity International</foaf:name>
+    <dcterms:identifier rdf:datatype="&dwcg;wiewsInstituteID">ITA406</dcterms:identifier>
+    <geo:lat>41.87831</geo:lat>
+    <geo:long>12.23752</geo:long>
+    <geo:alt>9.4</geo:alt>
+    <foaf:homepage rdf:resource="http://www.bioversityinternational.org/"/>
+    <foaf:member rdf:resource="&dwcg;person#ElizabethArnaud"/>
+    <foaf:member rdf:resource="&dwcg;person#MilkoSkofic"/>
+    <foaf:member rdf:resource="&dwcg;person#AdrianaAlercia"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&dwcg;institute#CGN">
+    <foaf:name>Centre for Genetic Resources, the Netherlands, Wageningen University and Research Centre</foaf:name>
+    <foaf:nickname>WUR-CGN</foaf:nickname>
+    <dcterms:identifier rdf:datatype="&dwcg;wiewsInstituteID">NLD037</dcterms:identifier>
+    <geo:lat>51.98654</geo:lat>
+    <geo:long>5.66343</geo:long>
+    <geo:alt>12.6</geo:alt>
+    <foaf:homepage rdf:resource="http://www.cgn.wur.nl/UK/CGN+Plant+Genetic+Resources/"/>
+    <foaf:member rdf:resource="&dwcg;person#TheoVanHintum"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&dwcg;institute#GBIF">
+    <foaf:name>Global Biodiversity Information Facility</foaf:name>
+    <foaf:nickname>GBIF</foaf:nickname>
+    <geo:lat>55.70261</geo:lat>
+    <geo:long>12.55967</geo:long>
+    <geo:alt>13.9</geo:alt>
+    <foaf:homepage rdf:resource="http://www.gbif.org/"/>
+    <foaf:member rdf:resource="&dwcg;person#DagEndresen"/>
+    <foaf:member rdf:resource="&dwcg;person#SamyGaiji"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&dwcg;institute#IPK">
+    <foaf:name>Leibniz Institute of Plant Genetics and Crop Plant Research</foaf:name>
+    <foaf:nickname>IPK</foaf:nickname>
+    <dcterms:identifier rdf:datatype="&dwcg;wiewsInstituteID">DEU146</dcterms:identifier>
+    <geo:lat>51.82469</geo:lat>
+    <geo:long>11.27920</geo:long>
+    <geo:alt>108.4</geo:alt>
+    <foaf:homepage rdf:resource="http://www.ipk-gatersleben.de/"/>
+    <foaf:member rdf:resource="&dwcg;person#HelmutKnüpffer"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&dwcg;institute#NordGen">
+    <foaf:name>Nordic Genetic Resources Center</foaf:name>
+    <foaf:nickname>NordGen</foaf:nickname>
+    <dcterms:identifier rdf:datatype="&dwcg;bioColID">http://biocol.org/urn:lsid:biocol.org:col:35293</dcterms:identifier>
+    <dcterms:identifier rdf:datatype="&dwcg;wiewsInstituteID">SWE054</dcterms:identifier>
+    <geo:lat>55.65887</geo:lat>
+    <geo:long>13.08334</geo:long>
+    <geo:alt>8.0</geo:alt>
+    <foaf:homepage rdf:resource="http://www.nordgen.org/"/>
+    <foaf:member rdf:resource="&dwcg;person#DagEndresen"/>
+    <foaf:member rdf:resource="&dwcg;person#JonasNordling"/>
+  </foaf:Organization>
+
+
+  <foaf:Person rdf:about="&dwcg;person#AdrianaAlercia">
+    <foaf:name>Adriana Alercia</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="a56ace61d2d7c86cf4b329ac1feb8bb0"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#DagEndresen">
+    <foaf:name>Dag Endresen</foaf:name>
+    <foaf:homepage rdf:resource="http://community.gbif.org/pg/profile/dag.endresen"/>
+    <foaf:mbox rdf:resource="mailto:dag.endresen@gmail.com"/>
+    <foaf:mbox_sha1sum rdf:resource="a8e8e5b95a36957148199894431c3ab2"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#ElizabethArnaud">
+    <foaf:name>Elizabeth Arnaud</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="10cee1f5c482b14007f5dddb054a590f"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#HelmutKnupffer">
+    <foaf:name>Helmut Knüpffer</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="282d4f21fe4a49982ff8cdd4d3bdcb49"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#JonasNordling">
+    <foaf:name>Jonas Nordling</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="949ec64725963edbe886f6aa3ffa3b8c"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#MilkoSkofic">
+    <foaf:name>Milko Škofič</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="a6aa48d12d44b332833422ffd3b7ca7e"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#SamyGaiji">
+    <foaf:name>Samy Gaiji</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="e65e38d05dc3f9756c706b398801765b"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&dwcg;person#TheoVanHintum">
+    <foaf:name>Theo van Hintum</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="49ea9711975d24eecedd6071b1ed9040"/>
+  </foaf:Person>
+
+</rdf:RDF>

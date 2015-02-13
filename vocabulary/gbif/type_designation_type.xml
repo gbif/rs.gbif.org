@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+ dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type" 
+	dc:description="A vocabulary to be used for reasons for a type designation of a specimen or name. See also the related type status vocabulary." 
+	dc:title="Nomenclatural Type Designation Type Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+<concept dc:identifier="originalDesignation" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/originalDesignation" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/originalDesignation"
+ dc:description="If one nominal species is explicitly designated as the type species when a nominal genus-group taxon is established, that nominal species is the type species (type by original designation).">
+ <preferred>
+  <term dc:title="Original Designation" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="presentDesignation" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/presentDesignation" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/presentDesignation"
+ dc:description="">
+ <preferred>
+  <term dc:title="Present Designation" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="subsequentDesignation" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/subsequentDesignation" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/subsequentDesignation"
+ dc:description="">
+ <preferred>
+  <term dc:title="Subsequent Designation" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="monotypy" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/monotypy" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/monotypy"
+ dc:description="Type species by monotypy. When an author establishes a new nominal genus-group taxon for a single taxonomic species and denotes that species by an available name, the nominal species so named is the type species.">
+ <preferred>
+  <term dc:title="Monotypy" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="subsequentMonotypy" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/subsequentMonotypy" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/subsequentMonotypy"
+ dc:description="">
+ <preferred>
+  <term dc:title="Subsequent Monotypy" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="tautonymy" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/tautonymy" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/tautonymy"
+ dc:description="If a valid species-group name, or its cited synonym, originally included in a nominal genus-group taxon is identical with the name of that taxon, the nominal species denoted by that specific name (if available) is the type species.">
+ <preferred>
+  <term dc:title="Tautonymy" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="absoluteTautonymy" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/absoluteTautonymy" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/absoluteTautonymy"
+ dc:description="The identical spelling of a generic or subgeneric name and the specific or subspecific name of one of its originally included nominal species or subspecies.">
+ <preferred>
+  <term dc:title="Absolute Tautonymy" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="linnaeanTautonymy" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/linnaeanTautonymy" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/linnaeanTautonymy"
+ dc:description="The identical spelling of a new generic or subgeneric name established before 1931 and a pre-1758 name cited as a synonym of only one of the species or subspecies originally included in that genus.">
+ <preferred>
+  <term dc:title="Linnaean Tautonymy" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+<concept dc:identifier="rulingByCommission" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_designation_type/rulingByCommission" 
+ dc:relation="http://rs.gbif.org/vocabulary/gbif/type_designation_type/rulingByCommission"
+ dc:description="An explicit, published decision by the Commission or Congress">
+ <preferred>
+  <term dc:title="Ruling by Commission" xml:lang="en"/>
+ </preferred>
+ <alternative>
+ </alternative>
+</concept>
+
+
+</thesaurus>

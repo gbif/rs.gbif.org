@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/sex" 
+	dc:description="A short vocabulary representing an organisms sex" 
+	dc:title="Sex GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="male" dc:URI="http://rs.gbif.org/vocabulary/gbif/sex/male" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/sex/male"
+        dc:description="Male (♂) refers to the sex of an organism, or part of an organism, which produces small mobile gametes, called spermatozoa.">
+        <preferred>
+            <term dc:title="male" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="♂" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="female" dc:URI="http://rs.gbif.org/vocabulary/gbif/sex/female" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/sex/female"
+        dc:description="Female (♀) is the sex of an organism, or a part of an organism, which produces mobile ova (egg cells). ">
+        <preferred>
+            <term dc:title="female" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="♀" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="hermaphrodite" dc:URI="http://rs.gbif.org/vocabulary/gbif/sex/hermaphrodite" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/sex/hermaphrodite"
+        dc:description="one organism having both male and female sexual characteristics and organs; at birth an unambiguous assignment of male or female cannot be made ">
+        <preferred>
+            <term dc:title="hermaphrodite" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="Zwitter" xml:lang="de"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="undetermined" dc:URI="http://rs.gbif.org/vocabulary/gbif/sex/undetermined" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/sex/undetermined"
+        dc:description="If the sex of an organism can't be determined for some reason.">
+        <preferred>
+            <term dc:title="undetermined" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="unbestimmt" xml:lang="de"  />
+        </alternative>
+    </concept>
+</thesaurus>

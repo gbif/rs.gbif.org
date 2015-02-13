@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Prototype discussion document: version 2012-08-28.
+  Dag Endresen, Global Biodiversity Information Facility (GBIF), GBIF Norway
+  Edward Baker, Natural History Museum, London (NHM)
+
+ This RDF Vocabulary is based on the Darwin Core extension developed at the 
+  GBIF Vocabulary Server at http://vocabularies.gbif.org/vocabularies/geo_chronostrat
+  by Edward Baker (NHM London).
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY geotime         "http://rs.gbif.org/terms/geotime/geotimeConcept#">
+  <!ENTITY contact         "http://rs.gbif.org/terms/geotime/geotimeContact#">
+  <!ENTITY history         "http://rs.gbif.org/terms/geotime/archive/20120828/">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:geotime="&geotime;"
+  xml:base="&contact;"
+>
+
+
+<!-- ### Vocabulary of contacts ### -->
+
+  <skos:ConceptScheme rdf:about="&contact;">
+    <skos:prefLabel xml:lang="en">List of contributors for the Geological time period vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en">This resource lists the institutions and persons contributing to the development of the GeoTime vocabulary.</skos:definition>
+    <dcterms:created>2012-08-03</dcterms:created>
+    <dcterms:modified>2012-08-28</dcterms:modified>
+    <dc:creator rdf:resource="&contact;GBIF"/>
+    <dcterms:contributor rdf:resource="&contact;DagEndresen"/>
+    <dcterms:publisher rdf:resource="&contact;GBIF"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Geological Time Periods (GeoTime) vocabulary".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <skos:editorialNote>This list was created to list the organizations and persons contributing to the GeoTime vocabulary.</skos:editorialNote>
+    <rdfs:seeAlso rdf:resource="http://terms.gbif.org/wiki/geotime"/>
+    <owl:versionInfo xml:lang="en">Prototype SKOS version, August 2012</owl:versionInfo>
+    <dcterms:hasVersion rdf:resource="&history;geotimeContact.rdf"/>
+  </skos:ConceptScheme>
+
+
+
+<!-- ### Agents, Organization and Person ###
+ Providing information about the organization and the persons who contributed
+ to creating or maintaining the Vocabulary of Terms would be a good practice.
+ When using dcterms:creator, contributor, publisher etc these have range dcterms:Agent
+ and will this require the values to be non-literal resources.
+ Germplasm contact entities (foaf:organization and foaf:Person) are described by:
+  foaf:name					(full name, institute or person)
+  foaf:nickname				(reporting institute acronyms here)
+  dcterms:identifier		(from the FAO WIEWS and/or the Biodiversity Collections Index)
+  @rdf:datatype				(datatype property, WIEWS INSTCODE, BCI ID)
+  foaf:homepage				(institute home page, www)
+  foaf:member				(list persons affiliated)
+  foaf:mbox					(mailbox)
+  foaf:mbox_sha1sum			(md5 hash sum based on the mailbox [md5 -s mailbox])
+ -->
+
+  <foaf:Organization rdf:about="&contact;GBIF">
+    <foaf:name>Global Biodiversity Information Facility</foaf:name>
+    <foaf:nickname>GBIF</foaf:nickname>
+    <geo:lat>55.70261</geo:lat>
+    <geo:long>12.55967</geo:long>
+    <geo:alt>13.9</geo:alt>
+    <foaf:homepage rdf:resource="http://www.gbif.org/"/>
+    <foaf:member rdf:resource="&contact;DagEndresen"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&contact;NHM_UK">
+    <foaf:name>Natural History Museum in London</foaf:name>
+    <foaf:nickname>NHM</foaf:nickname>
+    <dcterms:identifier rdf:datatype="&geotime;bioColID">http://biocol.org/urn:lsid:biocol.org:col:34665</dcterms:identifier>
+    <geo:lat>51.496258</geo:lat>
+    <geo:long>-0.175518</geo:long>
+    <foaf:homepage rdf:resource="http://www.nhm.ac.uk/"/>
+    <foaf:member rdf:resource="&contact;EdwardBaker"/>
+  </foaf:Organization>
+
+  <foaf:Person rdf:about="&contact;DagEndresen">
+    <foaf:name>Dag Endresen</foaf:name>
+    <foaf:homepage rdf:resource="http://community.gbif.org/pg/profile/dag.endresen"/>
+    <foaf:mbox rdf:resource="mailto:dag.endresen@gmail.com"/>
+    <foaf:mbox_sha1sum rdf:resource="a8e8e5b95a36957148199894431c3ab2"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&contact;EdwardBaker">
+    <foaf:name>Edward Baker</foaf:name>
+    <foaf:homepage rdf:resource="http://ebaker.me.uk/"/>
+    <foaf:mbox rdf:resource="mailto:edwbaker@gmail.com"/>
+    <foaf:mbox_sha1sum rdf:resource="aad5aa68e5ebbb4ac9da1997c8fce688"/>
+  </foaf:Person>
+
+</rdf:RDF>

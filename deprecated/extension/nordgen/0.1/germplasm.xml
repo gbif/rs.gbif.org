@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:description="NB! THIS DRAFT GERMPLASM EXTENSION HAS BEEN DEPRECATED. SEE: http://rs.gbif.org/extension/germplasm/ FOR THE CURRENT GERMPLASM EXTENSIONS."
+    dc:relation="http://rs.nordgen.org/dwc/"
+    dc:title="Germplasm (0.1)"
+    dc:subject="dwc:Occurrence"
+    name="GermplasmSample" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/"
+    rowType="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmSample">
+<!--
+    Application schema for the GBIF IPT data provider software
+    DwC Germplasm Extension version 0.1 (draft version)
+    NOTE that the germplasm extension to Darwin Core is an early suggested DRAFT version... and WILL PROBABLY CHANGE SIGNIFICANTLY
+    This file (germplasm_0_1.xml) was originally located at http://rs.nordgen.org/dwc/germplasm/0.1/ipt_germplasm_0_1.xml
+    Dag Endresen (NordGen), 2009-05-15, 2009-08-21, 2009-08-26
+
+    UPDATE: This draft version of the germplasm extension was deprecated in September 2012.
+    Replaced by: http://rs.gbif.org/extension/germplasm/20120911/GermplasmAccession.xml
+    See: http://rs.gbif.org/extension/germplasm/ for the current germplasm extensions.
+-->
+    <property name="GermplasmID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmID" />
+    <property name="BiologicalStatusOfSample" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BiologicalStatusOfSample" />
+    <property name="BiologicalStatusOfSampleCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BiologicalStatusOfSampleCode" />
+    <property name="GermplasmIdentifier" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmIdentifier" />
+    <property name="CollectingInstituteCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/CollectingInstituteCode" />
+    <property name="AncestralData" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/AncestralData" />
+    <property name="PurdyPedigree" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/PurdyPedigree" />
+    <property name="TypeOfStorage" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/TypeOfStorage" />
+    <!-- NOTE multiple instances of LocationOfSafetyDuplication. Does this thus require a new XML definition file like this one? -->
+    <property name="LocationOfSafetyDuplication" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/LocationOfSafetyDuplication" /><!-- CLASS -->
+    <property name="SafetyDuplicationID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SafetyDuplicationID" />
+    <property name="SafetyDuplicationInstituteCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SafetyDuplicationInstituteCode" />
+    <property name="SafetyDuplicationInstitute" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SafetyDuplicationInstitute" />
+    <property name="SafetyDuplicationDate" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SafetyDuplicationDate" />
+    <!-- NOTE multiple instances of TreatiesAndRegulations. Does this thus require a new XML definition file like this one? -->
+    <property name="GermplasmTreatiesAndRegulations" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTreatiesAndRegulations" /><!-- CLASS -->
+    <property name="GermplasmRegulationID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmRegulationID" />
+    <property name="TreatyOrRegulationName" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/TreatyOrRegulationName" />
+    <property name="TreatyOrRegulationGoverningBody" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/TreatyOrRegulationGoverningBody" />
+    <!-- NOTE multiple instances of SampleAcquisition. Does this thus require a new XML definition file like this one? -->
+    <property name="SampleAcquisition" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SampleAcquisition" /><!-- CLASS -->
+    <property name="SampleAcquisitionID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SampleAcquisitionID" />
+    <property name="DonorsSampleIdentifier" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/DonorsSampleIdentifier" />
+    <property name="SampleAcquisitionSource" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SampleAcquisitionSource" />
+    <property name="SampleAcquisitionDate" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SampleAcquisitionDate" />
+    <property name="DonorInstituteCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/DonorInstituteCode" />
+    <property name="DonorInstitute" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/DonorInstitute" />
+    <property name="SampleAcquisitionRemarks" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/SampleAcquisitionRemarks" />
+    <!-- NOTE multiple instances of BreedingEventGroup. Does this thus require a new XML definition file like this one? -->
+    <property name="BreedingEventGroup" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingEventGroup" /><!-- CLASS -->
+    <property name="BreedingEventID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingEventID" />
+    <property name="BreedersSampleIdentifier" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedersSampleIdentifier" />
+    <property name="BreedingYear" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingYear" />
+    <property name="BreederPerson" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreederPerson" />
+    <property name="BreederInstituteCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreederInstituteCode" />
+    <property name="BreederInstitute" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreederInstitute" />
+    <property name="BreedingCountry" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingCountry" />
+    <property name="BreedingCountryCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingCountryCode" />
+    <property name="BreedingEventRemarks" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/BreedingEventRemarks" />
+    <!-- NOTE multiple instances of GermplasmTraitGroup. Does this thus require a new XML definition file like this one? -->
+    <property name="GermplasmTraitGroup" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitGroup" />
+    <property name="GermplasmTraitID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitID" />
+    <property name="MeasurementByInstituteCode" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/MeasurementByInstituteCode" />
+    <property name="MeasurementGrowthStage" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/MeasurementGrowthStage" />
+    <!-- NOTE multiple instances of GermplasmTraitGroup. Does this thus require a new XML definition file like this one? -->
+    <property name="GermplasmTraitIdentifier" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitIdentifier" />
+    <property name="GermplasmTraitClass" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitClass" /><!-- CLASS -->
+    <property name="GermplasmTraitScale" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitScale" />
+    <property name="GermplasmTraitSource" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitSource" />
+    <property name="GermplasmTraitRemarks" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmTraitRemarks" />
+    <!-- NOTE multiple instances of GermplasmExperimentGroup. Does this thus require a new XML definition file like this one? -->
+    <property name="GermplasmExperimentGroup" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentGroup" /><!-- CLASS -->
+    <property name="GermplasmExperimentID" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentID" />
+    <property name="GermplasmExperimentIdentifier" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentIdentifier" />
+    <property name="GermplasmExperimentRemarks" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentRemarks" />
+    <property name="GermplasmExperimentYear" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentYear" />
+    <property name="GermplasmExperimentReport" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/" qualName="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmExperimentReport" />
+</extension>

@@ -1,0 +1,58 @@
+<html>
+     <head>
+          <title>GBIF Coding Conventions</title>
+          <link rel="stylesheet" type="text/css" href="/style/human.css"/>
+     </head>
+     <body>
+          <div class="container">
+		    <div id="header" class="box">
+		        <h1 id="logo"><img src="/style/logo.gif"/>GBIF Coding Conventions</h1>
+		        <p><a href="http://rs.gbif.org/">index to resources</a></p>
+		    </div>
+	        <div id="content">
+		        <h1>Java with Eclipse IDE</h1>
+		        
+		        <h3>Setting up Eclipse with Maven</h3>
+		        <p>Your maven project needs to include the following maven-eclipse-plugin configuration to make use of the gbif coding style:</p>
+<pre>
+</pre> 
+		        <p>To setup eclispse execute <pre>mvn eclipse:eclipse</pre> in the root folder of your project.
+		        </p>
+		        
+		        <h3>Code Formatting Style</h3>
+		        <p>To manually setup the coding style without maven do:<br/>
+	Window->Preferences->Java->Code Style->Formatter->Import...
+	Then select the downloaded <a href="java-style-config.xml">java-style-config.xml</a> file.	        
+		        </p>
+
+		        <h3>Import Organization</h3>
+		        <p>
+For Eclipse import organization:
+Window->Preferences->Java->Code Style->Organize Imports->Import...
+Then select the downloaded <a href="java-style.importorder">java-style.importorder</a> file.
+		        </p>
+
+		        <h3>Member Sort Order</h3>
+		        <p>
+For Eclipse member sort order make your <pre>Window->Preferences->Java->Appearance->Members Sort Order</pre> match the following screenshot:<br/>
+<img src="eclipse_import_order.png" />
+		        </p>
+
+		        <h3>Save Actions</h3>
+		        <p>
+Finally, to automate all of this each time you save, configure your
+Eclipse <pre>Window-Preferences->Java->Editor->Save Actions...</pre> to match the following screenshot:<br/>
+<img src="eclipse_save_actions.png" />
+		        </p>
+
+            <h1>IntelliJ IDEA</h1>
+            <p>Download <a href="settings.jar">settings.jar</a> and select <pre>File -> Import Settings</pre></p>
+            </div>
+          </div>
+     </body>
+</html>
+
+
+
+
+

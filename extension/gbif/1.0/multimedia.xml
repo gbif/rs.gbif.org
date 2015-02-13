@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:title="Simple Multimedia" name="Multimedia" 
+    namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Multimedia"
+    dc:subject=""
+    dc:relation="http://web.archive.org/web/20080225232621/http://www.dartmouth.edu/comp/about/projects/digitalmedia/images/resources/metadata-schemas.html"
+    dc:description="Simple extension for exchanging metadata about multimedia resources, in particular links to image, video and audio files.">
+
+    <property name='type' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/type' dc:relation='' dc:description='The kind of media object. Recommended terms from the DCMI Type Vocabulary are StillImage, Sound or MovingImage for GBIF to index and show the media files.' examples='StillImage' thesaurus="http://rs.gbif.org/vocabulary/dcterms/type.xml" required='false'/>
+    <property name="format" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/format" dc:description='The format the image is exposed in. It is recommended to use a IANA registered media type, but known file suffices are permissible too. See http://www.iana.org/assignments/media-types/media-types.xhtml' examples='image/jpeg' required='false'/>
+    <property name="identifier" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/identifier" dc:description='The public URL that identifies and locates the media file directly, not the html page it might be shown on. It is highly recommended that a URL to a media file of good resolution is provided or at least dc:reference in cases no public URI exists.' examples='http://farm6.static.flickr.com/5127/5242866958_98afd8cbce_o.jpg' type="uri" required="false"/>
+    <property name='references' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/references' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#dcterms:references' dc:description='An html webpage that shows the image or its metadata. This link should be used for html based image viewers like FSI and should be used as a source link wherever the media item is shown. It is recommended to provide this url even if a media file exists as it will be used for linking out.' examples='http://www.flickr.com/photos/victorsaavedramartinez/1866107071/' type="uri" required='false'/>
+    <property name="title" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/title" dc:description='The media items title. Strongly recommended as in many cases this will be used as the hyperlink text, and should be used accrodingly.' examples='Andorinha-do-rio (Tachycineta albiventer)' required='false'/>
+    <property name="description" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/description" dc:description='A textual description of the content of the media item' examples='Female Tachycineta albiventer photographed in the Amazon, Brazil, in November 2010.' required='false'/>
+    <property name="created" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/created" dc:description='The date and time this media item was taken' examples='2010-09-29' type="date" required='false'/>
+    <property name="creator" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/creator" dc:description='The person that took the image, recorded the video or sound' examples='David Remsen' required='false'/>
+    <property name="contributor" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/contributor" dc:description='Any contributor in addition to the creator that helped in recording the media item' examples='Dana Mock' required='false'/>
+    <property name="publisher" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/publisher" dc:description='An entity responsible for making the image available.' examples='Flickr' required='false'/>
+    <property name='audience' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/audience' dc:relation='' dc:description='A class or description for whom the image is intended or useful' examples='"experts", "general public", "children"' required='false'/>
+    <property name="source" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/source" dc:description='If the media item was derived or taken from another source this is the reference to that resource. For example a book from which an image was scanned or the original provider of a photo/graphic, such as photography agencies.' examples='' required='false'/>
+    <property name="license" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/license" dc:description='License for this media object. Can be text or a url like creative commons uses' examples='http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en' required='false'/>
+    <property name='rightsHolder' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/rightsHolder' dc:relation='' dc:description='A person or organization owning or managing rights over the media item.' examples='' required='false'/>
+
+</extension>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://purl.org/germplasm/germplasmType#BiologicalStatusType"
+    dc:description="Controlled values for the types of germplasm material and their cultivation status." 
+    dc:title="Biological status of germplasm"
+    dc.relation="http://purl.org/germplasm/germplasmType.rdf"
+    xmlns="http://rs.gbif.org/thesaurus/" 
+    xmlns:dc="http://purl.org/dc/terms/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+    <!--
+      Software application schema for the GBIF IPT data provider software
+      Darwin Core extension for genebanks (DwC germplasm)
+      Dag Endresen (GBIF/NordGen), 2012-09-11
+    -->
+
+    <concept dc:identifier="wild" 
+        dc:URI="http://purl.org/germplasm/germplasmType#wild" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:wild"
+        dc:description="Wild germplasm. A wild relatives of the cultivated plants.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Wild (100)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="100" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="natural" 
+        dc:URI="http://purl.org/germplasm/germplasmType#natural" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:natural"
+        dc:description="Natural wild germplasm.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Natural wild (110)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="110" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="semiNaturalWild" 
+        dc:URI="http://purl.org/germplasm/germplasmType#semiNaturalWild" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:semiNaturalWild"
+        dc:description="Semi-natural wild germplasm.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Semi-natural wild (120)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="120" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="semiNaturalSown" 
+        dc:URI="http://purl.org/germplasm/germplasmType#semiNaturalSown" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:semiNaturalSown"
+        dc:description="Weedy.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Semi-natural, sown (130)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="130" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="weedy" 
+        dc:URI="http://purl.org/germplasm/germplasmType#weedy" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:weedy"
+        dc:description="Weedy.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Weedy (200)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="200" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="landrace" 
+        dc:URI="http://purl.org/germplasm/germplasmType#landrace" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:landrace"
+        dc:description="Traditional cultivar, landrace.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Landrace (300)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="300" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="breedingResearchMaterial" 
+        dc:URI="http://purl.org/germplasm/germplasmType#breedingResearchMaterial" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:breedingResearchMaterial"
+        dc:description="Breeding lines and research material.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Breeding or research material (400)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="400" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="breedersLine" 
+        dc:URI="http://purl.org/germplasm/germplasmType#breedersLine" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:breedersLine"
+        dc:description="Breeders line.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Breeders line (410)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="410" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="syntheticPopulation" 
+        dc:URI="http://purl.org/germplasm/germplasmType#syntheticPopulation" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:syntheticPopulation"
+        dc:description="Syntetic population.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Synthetic population (411)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="411" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="hybrid" 
+        dc:URI="http://purl.org/germplasm/germplasmType#hybrid" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:hybrid"
+        dc:description="Hybrid.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Hybrid (412)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="412" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="founderStock" 
+        dc:URI="http://purl.org/germplasm/germplasmType#founderStock" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:founderStock"
+        dc:description="Founder stock, base population.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Founder stock, base population (413)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="413" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="inbredLine" 
+        dc:URI="http://purl.org/germplasm/germplasmType#inbredLine" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:inbreadLine"
+        dc:description="Inbred line, parent of hybrid cultivar.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Inbred line, parent of hybrid cultivar (414)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="414" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="segregatingPopulation" 
+        dc:URI="http://purl.org/germplasm/germplasmType#segregatingPopulation" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:segregatingPopulation"
+        dc:description="Segregating population.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Segregating population (415)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="415" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="clonalSelection" 
+        dc:URI="http://purl.org/germplasm/germplasmType#clonalSelection" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:clonalSelection"
+        dc:description="Mutant, genetic stock.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Clonal selection (416)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="416" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="geneticStock" 
+        dc:URI="http://purl.org/germplasm/germplasmType#geneticStock" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:geneticStock"
+        dc:description="Genetic stock.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Genetic stock (420)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="420" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="mutant" 
+        dc:URI="http://purl.org/germplasm/germplasmType#mutant" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:mutant"
+        dc:description="Mutant (e.g. induced/insertion mutants, tiling populations).">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Mutant (421)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="421" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="cytogeneticStock" 
+        dc:URI="http://purl.org/germplasm/germplasmType#cytogeneticStock" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:cytogeneticStock"
+        dc:description="Cytogenetic stocks (e.g. chromosome addition/substitution, aneuploids, amphiloids).">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Cytogenetic stocks (422)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="422" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="otherGeneticStock" 
+        dc:URI="http://purl.org/germplasm/germplasmType#otherGeneticStock" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:otherGeneticStock"
+        dc:description="Other genetic stocks (e.g. mapping populations).">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Other genetic stocks (423)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="423" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="advancedCultivar" 
+        dc:URI="http://purl.org/germplasm/germplasmType#advancedCultivar" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:advancedCultivar"
+        dc:description="Advanced or improved cultivar (conventional breeding methods).">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Advanced or improved cultivar (500)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="500" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="GMO" 
+        dc:URI="http://purl.org/germplasm/germplasmType#GMO" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:GMO"
+        dc:description="Genetically modified (by genetic engineering).">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="GMO by genetic engineering (600)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="600" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="otherBiologicalStatus" 
+        dc:URI="http://purl.org/germplasm/germplasmType#otherBiologicalStatus" 
+        dc:relation="http://terms.gbif.org/wiki/germplasmType:otherBiologicalStatus"
+        dc:description="Other biological status, elaborate in remarks field.">
+        <preferred>
+            <term dc:source="Germplasm" dc:title="Other (999)" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:source="MCPD" dc:title="999" xml:lang="en"/>
+        </alternative>
+    </concept>
+
+</thesaurus>

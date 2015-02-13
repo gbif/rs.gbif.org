@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/" 
+ dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=4" 
+ dc:title="GISIN Species Status Spread Rate Vocabulary" 
+ 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+ <concept dc:identifier="Name" dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/Name" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=7" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Name" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Unknown" dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/Unknown" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=7" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Unknown" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Slow" dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/Slow" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=7" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Slow" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Moderate" dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/Moderate" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=7" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Moderate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Rapid" dc:URI="http://www.gisinetwork.org/IASProfile/SpreadRate/terms/Rapid" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=7" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Rapid" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept> 
+ 
+</thesaurus>

@@ -1,0 +1,10 @@
+#Organize Import Order
+#Thu Aug 11 14:13:10 CEST 2011
+6=\#javax
+5=\#java
+4=\#org.gbif
+3=
+2=javax
+1=java
+0=org.gbif
+7=\#

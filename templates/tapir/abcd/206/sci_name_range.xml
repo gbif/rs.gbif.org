@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<searchTemplate xmlns="http://rs.tdwg.org/tapir/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="http://rs.tdwg.org/tapir/1.0 http://rs.tdwg.org/tapir/1.0/schema/tapir.xsd http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+	<label>Scientific name in range query for ABCD 2.06</label>
+	<documentation>
+		Query template (ABCD 2.06) to search for records by scientific name range.
+	</documentation>
+	<externalOutputModel location="http://rs.tdwg.org/tapir/cs/abcd/2.06/model/abcd206.xml"/>
+	<filter>
+		<and>
+			<greaterThanOrEquals>
+				<concept
+					id="http://www.tdwg.org/schemas/abcd/2.06/DataSets/DataSet/Units/Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/FullScientificNameString"/>
+				<parameter name="lower"/>
+			</greaterThanOrEquals>
+			<lessThan>
+				<concept
+					id="http://www.tdwg.org/schemas/abcd/2.06/DataSets/DataSet/Units/Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/FullScientificNameString"/>
+				<parameter name="upper"/>
+			</lessThan>
+		</and>
+	</filter>
+</searchTemplate>

@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  This is the Germplasm Type Vocabulary, "http://purl.org/germplasm/germplasmType#".
+  This resource is part the Germplasm Vocabulary, "http://purl.org/germplasm/".
+  The Germplasm Vocabulary is also described using the TDWG Terms Wiki available at
+  "http://terms.tdwg.org/wiki/Germplasm", and at the Google Code home page site at
+  "http://code.google.com/p/darwincore-germplasm/".
+  Validated using "http://www.w3.org/RDF/Validator/".
+  Input and feedback are most welcome! "dag.endresen@gmail.com"
+  Dag Endresen, GBIF-Norway, Natural History Museum, University of Oslo (NHM-UiO).
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY germplasmTerm     "http://purl.org/germplasm/germplasmTerm#">
+  <!ENTITY germplasmType     "http://purl.org/germplasm/germplasmType#">
+  <!ENTITY history           "http://purl.org/germplasm/archive/20140116/">
+  <!ENTITY contact           "http://purl.org/germplasm/germplasmContact#">
+  <!ENTITY tdwgWiki          "http://terms.tdwg.org/wiki/Germplasm/">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:dsw="http://purl.org/dsw/"
+  xmlns:germplasmTerm="&germplasmTerm;"
+  xmlns:germplasmType="&germplasmType;"
+  xml:base="&germplasmType;"
+>
+
+  <skos:ConceptScheme rdf:about="http://purl.org/germplasm/germplasmType#">
+    <skos:prefLabel xml:lang="en">List of controlled values for some of the germplasm terms</skos:prefLabel>
+    <rdfs:comment xml:lang="en">The Darwin Core extension for germplasm provides a vocabulary of terms for describing and annotating germplasm information resources. This resource lists controlled values for some of the germplasm terms.</rdfs:comment>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <dcterms:creator rdf:resource="&contact;DagEndresen"/>
+    <dcterms:contributor rdf:resource="&contact;Bioversity"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Darwin Core extension for genebanks".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&germplasmType;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>germplasmType</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://code.google.com/p/darwincore-germplasm/"/>
+    <foaf:homepage rdf:resource="http://terms.tdwg.org/wiki/Germplasm"/>
+    <dcterms:bibliographicCitation>Endresen DTF, and Knüpffer H (2012). The Darwin Core extension for genebanks opens up new opportunities for sharing genebank data sets. Biodiversity Informatics 8:11-29. Available at "https://journals.ku.edu/index.php/jbi/article/view/4095".</dcterms:bibliographicCitation>
+    <dc:relation>Alercia A, Diulgheroff S, Mackay M (2012). FAO/Bioversity Multi-Crop Passport Descriptors V.2 [MCPD V.2]. Available at "http://www.bioversityinternational.org/e-library/publications/single-details-publication/?tx_news_pi1[news]=1350&amp;cHash=d953e45ada3ab285d635593b5068a38f" and "http://www.bioversityinternational.org/uploads/tx_news/1526.pdf".</dc:relation>
+    <skos:editorialNote xml:lang="en">Notice that the base URI for the vocabulary of controlled values for germplasm terms is "http://purl.org/germplasm/germplasmType#". Please make sure that you are only using element identifiers in this namespace, e.g. "http://purl.org/germplasm/germplasmType#TERM". There may be copies of the vocabulary file on the Web which can be retrieved from other locations, but those locations should not be used as the basis of identifiers.</skos:editorialNote>
+    <dcterms:hasVersion rdf:resource="&history;germplasmType.rdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </skos:ConceptScheme>
+
+
+
+  <!-- ############################## 
+       ### Controlled value picklists
+       ############################## 
+       This RDF SKOS vocabulary provides the declareation of controlled values for:
+        * Biological status types (germplasmTerm:biologicalStatus)
+        * Acquisition source types (germplasmTerm:acquisitionSource)
+        * Storage condition types (germplasmTerm:storageCondition)
+        * Internal technical types for the germplasm vocabulary.
+  -->
+
+
+
+
+  <!-- ##########################
+       ### Biological status type
+       ### controlled values for germplasmTerm:biologicalStatus
+       ########################## -->
+
+  <skos:Collection rdf:about="&germplasmType;BiologicalStatusType">
+    <skos:prefLabel xml:lang="en">Biological status type</skos:prefLabel>
+    <rdfs:comment xml:lang="en">Controlled values for the types of germplasm material and their cultivation status.</rdfs:comment>
+    <dcterms:created>2012-06-26</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="&tdwgWiki;germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <skos:related rdf:resource="germplasmTerm:biologicalStatus"/>
+    <skos:relatedMatch rdf:resource="dwc:basisOfRecord"/>
+    <skos:relatedMatch rdf:resource="dcterms:type"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:member rdf:resource="&germplasmType;wild"/> <!-- 100 -->
+    <skos:member rdf:resource="&germplasmType;natural"/> <!-- 110 -->
+    <skos:member rdf:resource="&germplasmType;semiNaturalWild"/> <!-- 120 -->
+    <skos:member rdf:resource="&germplasmType;semiNaturalSown"/> <!-- 130 -->
+    <skos:member rdf:resource="&germplasmType;weedy"/> <!-- 200 -->
+    <skos:member rdf:resource="&germplasmType;landrace"/> <!-- 300 -->
+    <skos:member rdf:resource="&germplasmType;breedingResearchMaterial"/> <!-- 400 -->
+    <skos:member rdf:resource="&germplasmType;breedersLine"/> <!-- 410 -->
+    <skos:member rdf:resource="&germplasmType;syntheticPopulation"/> <!-- 411 -->
+    <skos:member rdf:resource="&germplasmType;hybrid"/> <!-- 412 -->
+    <skos:member rdf:resource="&germplasmType;founderStock"/> <!-- 413 -->
+    <skos:member rdf:resource="&germplasmType;inbredLine"/> <!-- 414 -->
+    <skos:member rdf:resource="&germplasmType;segregatingPopulation"/> <!-- 415 -->
+    <skos:member rdf:resource="&germplasmType;clonalSelection"/> <!-- 416 -->
+    <skos:member rdf:resource="&germplasmType;geneticStock"/> <!-- 420 -->
+    <skos:member rdf:resource="&germplasmType;mutant"/> <!-- 421 -->
+    <skos:member rdf:resource="&germplasmType;cytogeneticStock"/> <!-- 422 -->
+    <skos:member rdf:resource="&germplasmType;otherGeneticStock"/> <!-- 423 -->
+    <skos:member rdf:resource="&germplasmType;advancedCultivar"/> <!-- 500 -->
+    <skos:member rdf:resource="&germplasmType;GMO"/> <!-- 600 -->
+    <skos:member rdf:resource="&germplasmType;otherBiologicalStatus"/> <!-- 999 -->
+  </skos:Collection>
+
+  <skos:Concept rdf:about="&germplasmType;wild">
+    <skos:prefLabel xml:lang="en">wild</skos:prefLabel>
+    <skos:definition xml:lang="en">wild material</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">100</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;natural">
+    <skos:prefLabel xml:lang="en">natural wild</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural wild.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">110</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;semiNaturalWild">
+    <skos:prefLabel xml:lang="en">semi-natural, wild</skos:prefLabel>
+    <skos:definition xml:lang="en">Semi-natural, wild.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">120</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;semiNaturalSown">
+    <skos:prefLabel xml:lang="en">semi-natural, sown</skos:prefLabel>
+    <skos:definition xml:lang="en">Semi-natural, sown.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">130</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;weedy">
+    <skos:prefLabel xml:lang="en">weedy</skos:prefLabel>
+    <skos:definition xml:lang="en">Weedy.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">200</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;landrace">
+    <skos:prefLabel xml:lang="en">Traditional cultivar, landrace</skos:prefLabel>
+    <skos:definition xml:lang="en">Traditional cultivar/landrace.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">300</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;breedingResearchMaterial">
+    <skos:prefLabel xml:lang="en">breeding or research material</skos:prefLabel>
+    <skos:definition xml:lang="en">Breeding or research material.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">400</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;breedersLine">
+    <skos:prefLabel xml:lang="en">breeders line</skos:prefLabel>
+    <skos:definition xml:lang="en">Breeder's line.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">410</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;syntheticPopulation">
+    <skos:prefLabel xml:lang="en">synthetic population</skos:prefLabel>
+    <skos:definition xml:lang="en">Synthetic population.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">411</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;hybrid">
+    <skos:prefLabel xml:lang="en">hybrid</skos:prefLabel>
+    <skos:definition xml:lang="en">Hybrid.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">412</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;founderStock">
+    <skos:prefLabel xml:lang="en">founder stock</skos:prefLabel>
+    <skos:definition xml:lang="en">Founder stock/base population.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">413</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;inbredLine">
+    <skos:prefLabel xml:lang="en">inbred line</skos:prefLabel>
+    <skos:definition xml:lang="en">Inbred line (parent of hybrid cultivar).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">414</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;segregatingPopulation">
+    <skos:prefLabel xml:lang="en">segregating population</skos:prefLabel>
+    <skos:definition xml:lang="en">Segregating population.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">415</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;clonalSelection">
+    <skos:prefLabel xml:lang="en">clonal selection</skos:prefLabel>
+    <skos:definition xml:lang="en">Clonal selection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">416</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;geneticStock">
+    <skos:prefLabel xml:lang="en">genetic stock</skos:prefLabel>
+    <skos:definition xml:lang="en">Genetic stock.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">420</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;mutant">
+    <skos:prefLabel xml:lang="en">mutant</skos:prefLabel>
+    <skos:definition xml:lang="en">Mutant (e.g. induced/insertion mutants, tilling populations).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">421</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;cytogeneticStock">
+    <skos:prefLabel xml:lang="en">cytogenetic stock</skos:prefLabel>
+    <skos:definition xml:lang="en">Cytogenetic stock (e.g. chromosome addition/substitution, aneuploids, amphiloids).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">422</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;otherGeneticStock">
+    <skos:prefLabel xml:lang="en">other genetic stock</skos:prefLabel>
+    <skos:definition xml:lang="en">Other genetic stock (e.g. mapping populations).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">423</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;advancedCultivar">
+    <skos:prefLabel xml:lang="en">advanced cultivar</skos:prefLabel>
+    <skos:definition xml:lang="en">Advanced or improved cultivar (by conventional breeding methods).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">500</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;GMO">
+    <skos:prefLabel xml:lang="en">GMO</skos:prefLabel>
+    <skos:definition xml:lang="en">Genetically modified organism (GMO) developed by genetic engineering.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">600</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;otherBiologicalStatus">
+    <skos:prefLabel xml:lang="en">other biological status</skos:prefLabel>
+    <skos:definition xml:lang="en">other biological status, elaborate using the remarks</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">999</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:BiologicalStatusType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+
+
+
+  <!-- ####################
+       ### Acquisition type
+       ### controlled values for germplasmTerm:acquisitionSource
+       #################### -->
+
+  <!-- Most of the Acquisition types could probably be replaced by terms from the 
+    Environmental Ontology (EnvO), http://bioportal.bioontology.org/ontologies/1069 -->
+  <skos:Collection rdf:about="&germplasmType;AcquisitionSourceType">
+    <skos:prefLabel xml:lang="en">Acquisition source type</skos:prefLabel>
+    <rdfs:comment xml:lang="en">Controlled values for the type of germplasm acquisition source.</rdfs:comment>
+    <dcterms:created>2012-06-26</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="&tdwgWiki;germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <skos:related rdf:resource="germplasmTerm:acquisitionSource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:member rdf:resource="&germplasmType;wildHabitat"/> <!-- 10 -->
+    <skos:member rdf:resource="&germplasmType;forest"/> <!-- 11 -->
+    <skos:member rdf:resource="&germplasmType;shrubland"/> <!-- 12 -->
+    <skos:member rdf:resource="&germplasmType;grassland"/> <!-- 13 -->
+    <skos:member rdf:resource="&germplasmType;desertOrTundra"/> <!-- 14 -->
+    <skos:member rdf:resource="&germplasmType;aquaticHabitat"/> <!-- 15 -->
+    <skos:member rdf:resource="&germplasmType;cultivatedHabitat"/> <!-- 20 -->
+    <skos:member rdf:resource="&germplasmType;field"/> <!-- 21 -->
+    <skos:member rdf:resource="&germplasmType;orchard"/> <!-- 22 -->
+    <skos:member rdf:resource="&germplasmType;backyard"/> <!-- 23 -->
+    <skos:member rdf:resource="&germplasmType;fallowLand"/> <!-- 24 -->
+    <skos:member rdf:resource="&germplasmType;pasture"/> <!-- 25 -->
+    <skos:member rdf:resource="&germplasmType;farmStore"/> <!-- 26 -->
+    <skos:member rdf:resource="&germplasmType;threshingFloor"/> <!-- 27 -->
+    <skos:member rdf:resource="&germplasmType;park"/> <!-- 28 -->
+    <skos:member rdf:resource="&germplasmType;marketOrShop"/> <!-- 30 -->
+    <skos:member rdf:resource="&germplasmType;instituteOrGenebank"/> <!-- 40 -->
+    <skos:member rdf:resource="&germplasmType;seedCompany"/> <!-- 50 -->
+    <skos:member rdf:resource="&germplasmType;ruderalHabitat"/> <!-- 60 -->
+    <skos:member rdf:resource="&germplasmType;roadside"/> <!-- 61 -->
+    <skos:member rdf:resource="&germplasmType;fieldMargin"/> <!-- 62 -->
+    <skos:member rdf:resource="&germplasmType;otherAcquisition"/> <!-- 99 -->
+  </skos:Collection>
+
+  <skos:Concept rdf:about="&germplasmType;wildHabitat">
+    <skos:prefLabel xml:lang="en">wild habitat</skos:prefLabel>
+    <skos:definition xml:lang="en">Wild habitat.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">10</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;forest">
+    <skos:prefLabel xml:lang="en">forest</skos:prefLabel>
+    <skos:definition xml:lang="en">Forest or woodland.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">11</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;shrubland">
+    <skos:prefLabel xml:lang="en">shrubland</skos:prefLabel>
+    <skos:definition xml:lang="en">Shrubland</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">12</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;grassland">
+    <skos:prefLabel xml:lang="en">grassland</skos:prefLabel>
+    <skos:definition xml:lang="en">Grassland.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">13</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;desertOrTundra">
+    <skos:prefLabel xml:lang="en">desert or tundra</skos:prefLabel>
+    <skos:definition xml:lang="en">Desert or tundra.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">14</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;aquaticHabitat">
+    <skos:prefLabel xml:lang="en">aquatic habitat</skos:prefLabel>
+    <skos:definition xml:lang="en">Aquatic habitat.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">15</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;cultivatedHabitat">
+    <skos:prefLabel xml:lang="en">cultivated habitat</skos:prefLabel>
+    <skos:definition xml:lang="en">Farm or cultivated habitat.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">20</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;field">
+    <skos:prefLabel xml:lang="en">field</skos:prefLabel>
+    <skos:definition xml:lang="en">Field.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">21</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;orchard">
+    <skos:prefLabel xml:lang="en">orchard</skos:prefLabel>
+    <skos:definition xml:lang="en">Orchard.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">22</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;backyard">
+    <skos:prefLabel xml:lang="en">backyard or home garden</skos:prefLabel>
+    <skos:definition xml:lang="en">Backyard, kitchen or home garden (urban, peri-urban or rural).</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">23</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;fallowLand">
+    <skos:prefLabel xml:lang="en">fallow land</skos:prefLabel>
+    <skos:definition xml:lang="en">Fallow land</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">24</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;pasture">
+    <skos:prefLabel xml:lang="en">pasture</skos:prefLabel>
+    <skos:definition xml:lang="en">Pasture.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">25</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;farmStore">
+    <skos:prefLabel xml:lang="en">farm store</skos:prefLabel>
+    <skos:definition xml:lang="en">Farm store</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">26</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;threshingFloor">
+    <skos:prefLabel xml:lang="en">threshing floor</skos:prefLabel>
+    <skos:definition xml:lang="en">Threshing floor</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">27</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;park">
+    <skos:prefLabel xml:lang="en">park</skos:prefLabel>
+    <skos:definition xml:lang="en">Park</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">28</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;marketOrShop">
+    <skos:prefLabel xml:lang="en">market or shop</skos:prefLabel>
+    <skos:definition xml:lang="en">Market or shop.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">30</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;instituteOrGenebank">
+    <skos:prefLabel xml:lang="en">institute or genebank</skos:prefLabel>
+    <skos:definition xml:lang="en">Institute, experimental station, research station, or genebank.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">40</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;seedCompany">
+    <skos:prefLabel xml:lang="en">seed company</skos:prefLabel>
+    <skos:definition xml:lang="en">Seed company.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">50</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;ruderalHabitat">
+    <skos:prefLabel xml:lang="en">ruderal habitat</skos:prefLabel>
+    <skos:definition xml:lang="en">Weedy, disturbed or ruderal habitat.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">60</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;roadside">
+    <skos:prefLabel xml:lang="en">roadside</skos:prefLabel>
+    <skos:definition xml:lang="en">Roadside.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">61</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;fieldMargin">
+    <skos:prefLabel xml:lang="en">field margin</skos:prefLabel>
+    <skos:definition xml:lang="en">Field margin.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">62</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;otherAcquisition">
+    <skos:prefLabel xml:lang="en">other acquisition type</skos:prefLabel>
+    <skos:definition xml:lang="en">Other acquisition type.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">99</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:AcquisitionSourceType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+
+
+  <!-- ##########################
+       ### Storage condition type
+       ### controlled values for germplasmTerm:storageCondition
+       ########################## -->
+
+  <skos:Collection rdf:about="&germplasmType;StorageConditionType">
+    <skos:prefLabel xml:lang="en">Storage type</skos:prefLabel>
+    <rdfs:comment xml:lang="en">Controlled values for the type of germplasm storage conditions.</rdfs:comment>
+    <dcterms:created>2012-06-26</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="&tdwgWiki;germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <skos:related rdf:resource="germplasmTerm:storageCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:member rdf:resource="&germplasmType;seedCollection"/> <!-- 10 -->
+    <skos:member rdf:resource="&germplasmType;shortTerm"/> <!-- 11 -->
+    <skos:member rdf:resource="&germplasmType;mediumTerm"/> <!-- 12 -->
+    <skos:member rdf:resource="&germplasmType;longTerm"/> <!-- 13 -->
+    <skos:member rdf:resource="&germplasmType;fieldCollection"/> <!-- 20 -->
+    <skos:member rdf:resource="&germplasmType;inVitro"/> <!-- 30 -->
+    <skos:member rdf:resource="&germplasmType;cryopreserved"/> <!-- 40 -->
+    <skos:member rdf:resource="&germplasmType;DNA"/> <!-- 50 -->
+    <skos:member rdf:resource="&germplasmType;otherStorage"/> <!-- 99 -->
+  </skos:Collection>
+
+  <skos:Concept rdf:about="&germplasmType;seedCollection">
+    <skos:prefLabel xml:lang="en">seed collection</skos:prefLabel>
+    <skos:definition xml:lang="en">Seed collection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">10</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;shortTerm">
+    <skos:prefLabel xml:lang="en">short term seed collection</skos:prefLabel>
+    <skos:definition xml:lang="en">Short term seed collection</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">11</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;mediumTerm">
+    <skos:prefLabel xml:lang="en">medium term seed collection</skos:prefLabel>
+    <skos:definition xml:lang="en">medium term seed collection</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">12</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;longTerm">
+    <skos:prefLabel xml:lang="en">long term seed collection</skos:prefLabel>
+    <skos:definition xml:lang="en">Long term seed collection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">13</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;fieldCollection">
+    <skos:prefLabel xml:lang="en">field collection</skos:prefLabel>
+    <skos:definition xml:lang="en">Field collection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">20</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;inVitro">
+    <skos:prefLabel xml:lang="en">in vitro</skos:prefLabel>
+    <skos:definition xml:lang="en">In vitro collection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">30</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;cryopreserved">
+    <skos:prefLabel xml:lang="en">cryopreserved</skos:prefLabel>
+    <skos:definition xml:lang="en">Cryopreserved collection.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">40</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;DNA">
+    <skos:prefLabel xml:lang="en">DNA collection</skos:prefLabel>
+    <skos:definition xml:lang="en">DNA collection</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">50</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&germplasmType;otherStorage">
+    <skos:prefLabel xml:lang="en">other storage conditions</skos:prefLabel>
+    <skos:definition xml:lang="en">Other storage conditions, elaborate under remarks.</skos:definition>
+    <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">99</skos:altLabel>
+    <dcterms:created>2012-06-28</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="germplasmType:StorageConditionType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </skos:Concept>
+
+
+
+
+
+
+  <!-- #############################
+       ### Identifier or label type
+       ### controlled values for identifier and label types
+       ############################# -->
+
+  <skos:Collection rdf:about="&germplasmType;IdentifierType">
+    <skos:prefLabel xml:lang="en">identifier or label type</skos:prefLabel>
+    <rdfs:comment xml:lang="en">Controlled values for the type of identifiers and labels (altLabel).</rdfs:comment>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <rdfs:seeAlso rdf:resource="&tdwgWiki;germplasmType:IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>testing</vs:term_status>
+    <skos:relatedMatch rdf:resource="dcterms:identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:member rdf:resource="&germplasmType;wiewsInstituteID"/>
+    <skos:member rdf:resource="&germplasmType;bioColID"/>
+    <skos:member rdf:resource="&germplasmType;mcpdTerm"/>
+    <skos:member rdf:resource="&germplasmType;euriscoTerm"/>
+    <skos:member rdf:resource="&germplasmType;epgrisTerm"/>
+  </skos:Collection>
+
+
+<!-- ### Datatype declaration, Internal annotation properties ###
+ Some internal annotation properties to provide the type for identifiers and alternative labels (skos:altLabel)
+ There are different types of identifiers and declaring a datatype to keep them separate seems to be useful? 
+ Examples how to declare datatypes for WIEWS and BCI identifiers:
+  <dcterms:identifier rdf:datatype="&germplasmType;bioColID">http://biocol.org/urn:lsid:biocol.org:col:35293</dcterms:identifier>
+  <dcterms:identifier rdf:datatype="&germplasmType;wiewsInstituteID">SWE054</dcterms:identifier>
+ Example how to declare datatypes for alternative term labels:
+  <skos:altLabel xml:lang="en" rdf:datatype="&germplasmType;mcpdTerm">DONORNUMB</skos:altLabel>
+-->
+
+  <rdfs:Datatype rdf:about="&germplasmType;wiewsInstituteID">
+    <skos:prefLabel xml:lang="en">FAO WIEWS Institute Code</skos:prefLabel>
+    <skos:definition xml:lang="en">A three letter country ISO code and a three (old) or four digit number.</skos:definition>
+    <skos:example xml:lang="en">ITA247; ITA406; NOR051; SWE002; SWE054</skos:example>
+    <skos:note xml:lang="en">The FAO WIEWS Institute Codes are available at http://apps3.fao.org/wiews/institute_query.htm</skos:note>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="&germplasmType;IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <skos:relatedMatch rdf:resource="http://apps3.fao.org/wiews/wiews.jsp"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&germplasmType;bioColID">
+    <skos:prefLabel xml:lang="en">Biodiversity Collections Index ID</skos:prefLabel>
+    <skos:definition xml:lang="en">An index of biodiversity collections, providing persistent identifiers based on LSID URIs.</skos:definition>
+    <skos:example xml:lang="en">http://biocol.org/urn:lsid:biocol.org:col:35293</skos:example>
+    <skos:note xml:lang="en">The Biodiversity Collections Index is available at http://biocol.org/</skos:note>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-14</dcterms:modified>
+    <vann:termGroup rdf:resource="&germplasmType;IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <skos:relatedMatch rdf:resource="http://biocol.org/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&germplasmType;mcpdTerm">
+    <skos:prefLabel xml:lang="en">Equivalent MCPD term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent term from the FAO/Bioversity MultiCrop Passport Descriptor list.</skos:definition>
+    <skos:example xml:lang="en">INSTCODE; ACCENUMB; COLLNUMB; etc.</skos:example>
+    <skos:note xml:lang="en">The Multi-Crop Passport Descriptors (MCPD) was issued in a draft version in 1997 with the first official and stable version published in 2001. In 2012 a revision of the MCPD was published.</skos:note>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="&germplasmType;IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:source rdf:resource="http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf"/>
+    <dcterms:source rdf:resource="http://goo.gl/JI53g"/>
+    <dcterms:bibliographicCitation>Alercia A., S. Diulgheroff, and T. Metz (2001). FAO/IPGRI Multi-crop passport descriptors, December 2001. International Plant Genetic Resources Institute (IPGRI) / Food and Agriculture Organization of the United Nations (FAO), Rome, Italy. Available at "http://apps3.fao.org/wiews/mcpd/MCPD_Dec2001_EN.pdf".</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation>Alercia A., S. Diulgheroff, and M. Mackay (2012). FAO/Bioversity Multi-crop passport descriptors v.2 [MCPD v.2]. Food and Agriculture Organization of the United Nations (FAO), and Bioversity International, Rome, Italy. 11 pp. Available at "http://www.bioversityinternational.org/index.php?id=244&amp;tx_news_pi1[news]=1350" and "http://www.bioversityinternational.org/uploads/tx_news/1526.pdf".</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&germplasmType;euriscoTerm">
+    <skos:prefLabel xml:lang="en">Equivalent EURISCO term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent term from the European Germplasm Search Catalog, amendment to the MCPD.</skos:definition>
+    <skos:example xml:lang="en">NICODE; COLLDESCR; BREDDESCR; DONORDESCR; DUPLDESCR; ACCEURL</skos:example>
+    <skos:note xml:lang="en">The EURISCO terms are available at "http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"</skos:note>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="&germplasmType;IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:source rdf:resource="http://www.ecpgr.cgiar.org/fileadmin/www.ecpgr.cgiar.org/MISC/EURISCO_Descriptors.pdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="&germplasmType;epgrisTerm">
+    <skos:prefLabel xml:lang="en">Equivalent EPGRIS term</skos:prefLabel>
+    <skos:definition xml:lang="en">Equivalent proposed term from the EPGRIS3 project team of the European Genebank Documentation group.</skos:definition>
+    <skos:example xml:lang="en">DATASET; UPLOADERCODE; DATASET_REMARK; EXPERIMENT; EXPERIMENT_NUMBER; EXPERIMENT_DESCRIPTION; EXPERIMENT_YEAR; EXPERIMENT_LONGITUDE; EXPERIMENT_LATITUDE; EXPERIMENT_REPORT; TRAIT; TRAIT_NUMBER; TRAIT_NAME; TRAIT_REMARK; TRAIT_METHOD; GENOTYPE; GENOTYPE_NUMBER; GENOTYPE_NICODE; GENOTYPE_INSTCODE; GENOTYPE_ACCENUMB; GENOTYPE_GENUS; SCORE</skos:example>
+    <skos:note xml:lang="en">The EPGRIS3 phenotype characterization and evaluation terms are available at "http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"</skos:note>
+    <dcterms:created>2012-05-24</dcterms:created>
+    <dcterms:modified>2014-01-16</dcterms:modified>
+    <vann:termGroup rdf:resource="&germplasmType;IdentifierType"/>
+    <rdfs:isDefinedBy rdf:resource="&germplasmType;"/>
+    <skos:inScheme rdf:resource="&germplasmType;"/>
+    <vs:term_status>unstable</vs:term_status>
+    <dcterms:source rdf:resource="http://www.epgris3.eu/docs/activities/2-05/Inclusion%20of%20C&amp;E%20data.pdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Datatype>
+
+
+
+</rdf:RDF>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/" 
+	dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3" 
+	dc:title="Occurrence Status GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="present" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/present"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="present" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="endemic" xml:lang="en"  />
+   <term dc:source="" dc:title="native" xml:lang="en"  />
+   <term dc:source="" dc:title="extant" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="common" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/common"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="common" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="frequent" xml:lang="en"  />
+   <term dc:source="" dc:title="fairly common" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="rare" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/rare"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="rare" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="uncommon" xml:lang="en"  />
+   <term dc:source="" dc:title="casual" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="irregular" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/irregular"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="irregular" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="ephemeral" xml:lang="en"  />
+   <term dc:source="" dc:title="episodic" xml:lang="en"  />
+   <term dc:source="" dc:title="vagrant" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="doubtful" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="doubtful" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="possibly extant" xml:lang="en"  />
+   <term dc:source="" dc:title="probably extant" xml:lang="en"  />
+   <term dc:source="" dc:title="possibly extinct" xml:lang="en"  />
+   <term dc:source="" dc:title="presence uncertain" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="absent" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="absent" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="extinct" xml:lang="en"  />
+   <term dc:source="" dc:title="extirpated" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="excluded" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/excluded"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+  <preferred>
+   <term dc:source="" dc:title="excluded" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="misidentification" xml:lang="en"  />
+   <term dc:source="" dc:title="reported in error" xml:lang="en"  />
+   <term dc:source="" dc:title="erroneous" xml:lang="en"  />
+  </alternative>
+ </concept>
+</thesaurus>

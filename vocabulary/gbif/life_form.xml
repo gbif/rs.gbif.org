@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form" 
+    dc:description="A life form vocabulary targeted at plants and based on Raunkiær's definitions"
+    dc:relation="http://en.wikipedia.org/wiki/Raunkiær_plant_life-form"
+	dc:title="Life Form GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="P" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/P" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/P"
+        dc:description="Projecting into the air on stems – normally woody perennials - with resting buds more than 25 cms above soil level, e.g. trees and shrubs. May be further subdivided according to plant height in megaphanerophytes, mesophanerophytes and nanophanerophytes and other characters, such as duration of leaves (evergreen or deciduous), presence of covering bracts on buds, succulence and epiphytism.">
+        <preferred>
+            <term dc:title="Phanerophyte" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="N" xml:lang="en"/>
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="C" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/C" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/C"
+        dc:description="Buds on persistent shoots near the ground – woody plants with perennating buds borne close to the ground, no more than 25 cms above soil surface, e.g. bilberry and periwinkle.">
+        <preferred>
+            <term dc:title="Chamaephyte" xml:lang="en"/>
+        </preferred>
+        <alternative>
+            <term dc:title="Z" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="H" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/H" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/H"
+        dc:description="Buds at or near the soil surface , e.g. daisy, dandelion, crocus.">
+        <preferred>
+            <term dc:title="Hemicryptophyte" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="K" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/K" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/K"
+        dc:description="Below ground or under water - with resting buds lying either beneath the surface of the ground as a rhizome, bulb, corm, etc., or a resting bud submerged under water. Cryptophytes are sometimes divided into subgroups, e.g. Geo-, Helo- or Hydrophytes">
+        <preferred>
+            <term dc:title="Cryptophyte" xml:lang="en"  />
+        </preferred>
+        <alternative>
+            <term dc:title="G" xml:lang="en"  />
+            <term dc:title="Geophyte" xml:lang="en"  />
+            <term dc:title="Hydrophyte" xml:lang="en"  />
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="T" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/T" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/T"
+        dc:description="Annual plants which survive the unfavourable season in the form of seeds and completes its life-cycle during favourable seasons. Annual species are therophytes. Many desert plants are by necessity therophytes.">
+        <preferred>
+            <term dc:title="Therophyte" xml:lang="en"  />
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    
+    <concept dc:identifier="E" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_form/E" 
+        dc:relation="http://rs.gbif.org/vocabulary/gbif/life_form/E"
+        dc:description="see Phanerophytes above.">
+        <preferred>
+            <term dc:title="Epiphyte" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+        
+</thesaurus>

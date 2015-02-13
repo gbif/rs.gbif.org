@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://gensc.org/ns/mixs/voc/investigation_type" 
+	dc:title="MIxS Environmental Package vocabulary" 
+	dc:description="" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+
+ <concept dc:identifier="air" dc:URI="http://gensc.org/ns/mixs/voc/env_package/air" dc:description="">
+  <preferred>
+   <term dc:title="air" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="host-associated" dc:URI="http://gensc.org/ns/mixs/voc/env_package/host-associated" dc:description="">
+  <preferred>
+   <term dc:title="host-associated" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="human-associated" dc:URI="http://gensc.org/ns/mixs/voc/env_package/human-associated" dc:description="">
+  <preferred>
+   <term dc:title="human-associated" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="human-skin" dc:URI="http://gensc.org/ns/mixs/voc/env_package/human-skin" dc:description="">
+  <preferred>
+   <term dc:title="human-skin" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="human-oral" dc:URI="http://gensc.org/ns/mixs/voc/env_package/human-oral" dc:description="">
+  <preferred>
+   <term dc:title="human-oral" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="human-gut" dc:URI="http://gensc.org/ns/mixs/voc/env_package/human-gut" dc:description="">
+  <preferred>
+   <term dc:title="human-gut" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="human-vaginal" dc:URI="http://gensc.org/ns/mixs/voc/env_package/human-vaginal" dc:description="">
+  <preferred>
+   <term dc:title="human-vaginal" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="microbial-mat" dc:URI="http://gensc.org/ns/mixs/voc/env_package/microbial-mat" dc:description="">
+  <preferred>
+   <term dc:title="microbial mat or biofilm" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="microbial mat" xml:lang="en"  />
+   <term dc:title="microbial biofilm" xml:lang="en"  />
+   <term dc:title="mat" xml:lang="en"  />
+   <term dc:title="biofilm" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="miscellaneous_artificial_or_natural_environment" dc:URI="http://gensc.org/ns/mixs/voc/env_package/miscellaneous_artificial_or_natural_environment" dc:description="">
+  <preferred>
+   <term dc:title="miscellaneous artificial or natural environment" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="miscellaneous environment" xml:lang="en"/>
+   <term dc:title="artificial environment" xml:lang="en"/>
+   <term dc:title="natural environment" xml:lang="en"/>
+   <term dc:title="miscellaneous" xml:lang="en"/>
+   <term dc:title="artificial" xml:lang="en"/>
+   <term dc:title="natural" xml:lang="en"/>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plant-associated" dc:URI="http://gensc.org/ns/mixs/voc/env_package/plant-associated" dc:description="">
+  <preferred>
+   <term dc:title="plant-associated" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="sediment" dc:URI="http://gensc.org/ns/mixs/voc/env_package/sediment" dc:description="">
+  <preferred>
+   <term dc:title="sediment" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="soil" dc:URI="http://gensc.org/ns/mixs/voc/env_package/soil" dc:description="">
+  <preferred>
+   <term dc:title="soil" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="wastewater" dc:URI="http://gensc.org/ns/mixs/voc/env_package/wastewater" dc:description="">
+  <preferred>
+   <term dc:title="wastewater or sludge" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="wastewater" xml:lang="en"  />
+   <term dc:title="sludge" xml:lang="en"  />
+   <term dc:title="wastewater/sludge" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="water" dc:URI="http://gensc.org/ns/mixs/voc/env_package/water" dc:description="">
+  <preferred>
+   <term dc:title="water" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+
+</thesaurus>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="jokes.xsl" type="text/xsl" ?>
+<jokes>
+    <joke>
+        <question>What do you call a man with a seagull on his head</question>
+        <answer>Cliff</answer>
+    </joke>
+    <joke>
+        <question>What do you call a man with a spade on his head</question>
+        <answer>Edward</answer>
+    </joke>
+</jokes>

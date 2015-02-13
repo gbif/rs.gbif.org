@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/" 
+ dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" 
+ dc:title="GISIN Species Status Presence Vocabulary" 
+ 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ 
+ <concept dc:identifier="Reported" dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/Reported" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Reported" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Unknown" dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/Unknown" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Unknown" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Absent" dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/Absent" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Absent" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="SometimesPresent" dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/SometimesPresent" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="SometimesPresent" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Present" dc:URI="http://www.gisinetwork.org/IASProfile/Presence/terms/Present" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=2" dc:issued="2009-04-01T01:01:01+00:00">
+  <preferred>
+   <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Present" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+</thesaurus>

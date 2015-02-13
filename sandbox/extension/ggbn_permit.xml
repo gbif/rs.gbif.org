@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
+    xmlns:ggbn="http://data.ggbn.org/schemas/ggbn/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:title="GGBN Permit Extension" 
+    name="Permit" namespace="http://data.ggbn.org/schemas/ggbn/terms/" rowType="http://data.ggbn.org/schemas/ggbn/terms/Permit"
+    dc:subject=""
+    dc:relation="http://terms.tdwg.org/wiki/GGBN_Permit_Vocabulary"
+    dc:description="Support for all kinds of permits as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.">
+
+	<property group='Permit' thesaurus="http://rs.gbif.org/vocabulary/ggbn/permit_type.xml" name='permitType' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/permitType' dc:relation='http://terms.tdwg.org/wiki/ggbn:permitType' dc:description='A permit is a document that allows someone to take an action that otherwise would not be allowed. Mandatory element' examples=' 	Collecting Permit, Import Permit, Export Permit, Intellectual Property Rights, Copyright, Patent, Data use, Phytosanitary, Salvage, Exemption Permit, Material Transfer Agreement, Internationally Recognized Certificate of Compliance, contract, Memorandum of Understanding, Memorandum of Cooperation, Veterinary Certificate, Human Pathogens, Genetically Modified Organism, Other' required='true'/>
+    <property group='Permit' thesaurus="http://rs.gbif.org/vocabulary/ggbn/permit_status.xml" name='permitStatus' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/permitStatus' dc:relation='http://terms.tdwg.org/wiki/ggbn:permitStatus' dc:description='Information about the presence, absence or other basic status of permits associated with the sample(s). Mandatory element' examples='Permit available, Permit not required, Permit not available, Unknown Material collected after 2014-10-12 cannot be in "Unknown" permit status!' required='true'/>
+    <property group='Permit' name='permitStatusQualifier' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/permitStatusQualifier' dc:relation='http://terms.tdwg.org/wiki/ggbn:permitStatusQualifier' dc:description='Description of why a certain permit was not required or why Permit Status is unknown' examples='"no national requirement for a permit at date of access", "officially authorized illegal holder", "collected on private land", "pre-Nagoya"' required='true'/>
+	<property group='Permit' type='uri' name='permitURI' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/permitURI' dc:relation='http://terms.tdwg.org/wiki/ggbn:permitURI' dc:description='A reference to the permit related to the gathering or shipping event' examples='' required='false'/>
+    <property group='Permit' name='permitText' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/permitText' dc:relation='http://terms.tdwg.org/wiki/ggbn:permitText' dc:description='The text of a permit related to the gathering/shipping or further details' examples='' required='false'/>
+</extension>

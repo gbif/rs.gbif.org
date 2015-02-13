@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Discussion document: version 2012-08-14.
+  Dag Endresen, Global Biodiversity Information Facility (GBIF)
+ This RDF Vocabulary includes terminology for Natural Collections Decriptions (NCD)
+ developed by the TDWG NCD task group. 
+ Terms and term identifiers used by this resource was extracted from the 
+ NCD version 0.9 and the TDWG LSID ontology (which is based on the NCD v 0.7).
+-->
+
+<!-- QUESTION :: Is it appropriate here to declare the controlled values to be of type rdfs:Datatype...? DE August 2012 -->
+
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY tdwgCollection     "http://rs.tdwg.org/ontology/voc/Collection#">
+  <!ENTITY tdwgCollectionType "http://rs.tdwg.org/ontology/voc/CollectionType#">
+  <!ENTITY tdwgVoc            "http://rs.tdwg.org/ontology/voc/">
+  <!ENTITY ncdConcept         "http://rs.gbif.org/terms/ncd/ncdConcept#">
+  <!ENTITY ncdType            "http://rs.gbif.org/terms/ncd/ncdType#">
+  <!ENTITY history            "http://rs.gbif.org/terms/ncd/archive/">
+  <!ENTITY contact            "http://rs.gbif.org/terms/ncd/ncdContact#">
+]>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:ncd="&tdwgCollection;"
+  xmlns:ncdConcept="&ncdConcept;"
+  xmlns:ncdType="&ncdType;"
+  xml:base="&ncdType;"
+>
+
+
+<!-- ### Vocabulary of type concepts (skos:ConceptScheme) ### -->
+
+  <skos:ConceptScheme rdf:about="&ncdType;">
+    <skos:prefLabel xml:lang="en">List of controlled values for the Natural Collections Description (NCD)</skos:prefLabel>
+    <skos:definition xml:lang="en">Natural Collections Description (NCD) is a data standard for describing collections of natural history materials at the collection level; one NCD record describes one entire collection.</skos:definition>
+    <dcterms:created>2007-03-05</dcterms:created>
+    <dcterms:modified>2012-08-14</dcterms:modified>
+    <dc:creator rdf:resource="&contact;GBIF"/>
+    <dcterms:contributor rdf:resource="&contact;TDWG_NCD_IG"/>
+    <dcterms:contributor rdf:resource="&contact;MarkusDoring"/>
+    <dcterms:contributor rdf:resource="&contact;ConstanceRinaldo"/>
+    <dcterms:contributor rdf:resource="&contact;DagEndresen"/>
+    <dcterms:publisher rdf:resource="&contact;GBIF"/> <!-- who is the publisher ?? -->
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/> <!-- NB! Licence rights...? -->
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the Darwin Core extension for genebanks".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&tdwgCollectionType;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>ncdType</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <dcterms:bibliographicCitation>TDWG NCD Interest Group (2009). Natural Collections Descriptions (NCD): A data standard for exchanging data describing natural history collections (Cover Page). Biodiversity Information Standards (TDWG). Available at http://www.tdwg.org/standards/312/, verified 20 June 2012.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation>Thomson N, Hyam R, Rinaldo C, Butler C, Holland D, Mathe B, Waibel B, Addink W, Altenburg R, and Döring M (2009). Natural Collections Description (NCD): A data standard for exchanging data describing natural history collections. Biodiversity Information Standards (TDWG). Available at http://www.tdwg.org/standards/312/, verified 20 June 2012.</dcterms:bibliographicCitation>
+    <skos:note xml:lang="en">Notice that the base URI for the NCD vocabulary is "http://rs.tdwg.org/ontology/voc/Collection". Please make sure that you are only using element identifiers in this namespace, e.g. "http://rs.tdwg.org/ontology/voc/CollectionTERM". There may be copies of the vocabulary file on the Web which can be retrieved from other locations, but those locations should not be used as the basis of identifiers.</skos:note>
+    <skos:editorialNote>Terms and definitions for this vocabulary of terms was extracted from the documentation NCD version 0.9 and from the TDWG Ontology.</skos:editorialNote>
+    <rdfs:seeAlso rdf:resource="http://kos.gbif.org/wiki/NCD"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/standards/312/"/>
+    <rdfs:seeAlso rdf:resource="http://www.tdwg.org/activities/ncd/"/>
+    <owl:versionInfo xml:lang="en">Draft version, not yet published</owl:versionInfo>
+    <dcterms:hasVersion rdf:resource="&history;20120814/ncdType.rdf"/> <!-- SKOS version of the NCD here -->
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </skos:ConceptScheme>
+
+
+  <!-- NCD controlled values (type concepts) are described by	
+   skos:prefLabel	
+   dc:description	
+   vann:termGroup	
+   rdf:type	
+   rdfs:isDefinedBy	
+   skos:inScheme	
+   dcterms:modified	
+   skos:example	
+   skos:note	
+   skos:editorialNote	
+  -->
+
+
+
+
+
+  <!-- Collection type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm">
+    <skos:prefLabel xml:lang="en">Collection type</skos:prefLabel>
+    <dc:description xml:lang="en">The class for controlled vocabularies of collection types. Picklist keyword to indicate typical contents or unifying characteristics of the collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <!--
+  WARNING: Some of the NCD concepts for CollectionType in the NCD 0.9 are missing in the TDWG ontology (Collection.rdf): 
+    geological, herbarium, manuscripts, mineralogical, specimens
+  These concepts are included here in this SKOS vocabulary.
+  -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#archival">
+    <skos:prefLabel xml:lang="en">Archival </skos:prefLabel>
+    <dc:description xml:lang="en">Public and/or private records and historical documents  in various media which are preserved and accessible.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Papers and records, field logs, photographs, etc.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#art">
+    <skos:prefLabel xml:lang="en">Art</skos:prefLabel>
+    <dc:description xml:lang="en">Representational and impressionistic works from the human hand.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Paintings, drawings, scientific illustrations.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#audio">
+    <skos:prefLabel xml:lang="en">Audio</skos:prefLabel>
+    <dc:description xml:lang="en">Recorded auditory phenomena.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Amphibian mating calls.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#cellCultures">
+    <skos:prefLabel xml:lang="en">Cell Cultures</skos:prefLabel>
+    <dc:description xml:lang="en">Biological material that is intentionally cultured and maintained in a viable state.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>cell lines, microorganisms.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: the TDWG Ontology (Collection.rdf) declare all lowercase "cellcultures" as the concept name.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#electronic">
+    <skos:prefLabel xml:lang="en">Electronic </skos:prefLabel>
+    <dc:description xml:lang="en">Data or information that has been captured and fixed for storage and manipulation in an automated system and that requires the use of the system to render it intelligible by a person</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Electronic documents, web sites, databases.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#facsimiles">
+    <skos:prefLabel xml:lang="en">Facsimiles</skos:prefLabel>
+    <dc:description xml:lang="en">Accurate representations of the original item; may be naturally occurring or manufactured.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Endocasts, moulds.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#fossils">
+    <skos:prefLabel xml:lang="en">Fossils</skos:prefLabel>
+    <dc:description xml:lang="en">Biological specimens that are preserved through geological processes.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Tyrannosaurus Rex.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#genetic">
+    <skos:prefLabel xml:lang="en">Genetic</skos:prefLabel>
+    <dc:description xml:lang="en">Stored or banked biological samples for future use.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Germplasm, seed, blood, DNA.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#geological">
+    <skos:prefLabel xml:lang="en">Geological</skos:prefLabel>
+    <dc:description xml:lang="en">Collections of rocks and gemstones</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#herbarium">
+    <skos:prefLabel xml:lang="en">Herbarium</skos:prefLabel>
+    <dc:description xml:lang="en">Collections of preserved plant material</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#living">
+    <skos:prefLabel xml:lang="en">Living </skos:prefLabel>
+    <dc:description xml:lang="en">Collections that grow and reproduce, including botanic gardens, zoos and aquaria.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Plants, fish.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#manuscripts">
+    <skos:prefLabel xml:lang="en">Manuscripts</skos:prefLabel>
+    <dc:description xml:lang="en">Collections of manuscripts</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Letters, field note books</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#mineralogical">
+    <skos:prefLabel xml:lang="en">Mineralogical</skos:prefLabel>
+    <dc:description xml:lang="en">Collections of minerals</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Rocks, minerals, gemstones, meteorites</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#observations">
+    <skos:prefLabel xml:lang="en">Observations </skos:prefLabel>
+    <dc:description xml:lang="en">Recorded visual phenomena, may be observation or measurement.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Avian mating displays.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#preserved">
+    <skos:prefLabel xml:lang="en">Preserved</skos:prefLabel>
+    <dc:description xml:lang="en">Biological specimens that are preserved indefinitely.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Pinned butterfly, herbarium specimen, skeleton, skin, fluid-preserved invertebrate.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#products">
+    <skos:prefLabel xml:lang="en">Products</skos:prefLabel>
+    <dc:description xml:lang="en">Specimens that result from biological functions or behaviours.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Nests, webs, moults</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: the NCD 0.9 uses term ID ncdType:audio here.</skos:editorialNote>	
+  </skos:Concept>
+  <!-- WARNING :: the NCD 0.9 uses term ID ncdType:audio here. -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#specimens">
+    <skos:prefLabel xml:lang="en">Specimens</skos:prefLabel>
+    <dc:description xml:lang="en">Relating to a particular grouping of biological or geological specimens.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>North American Mammal collection, lichen collection, arachnid collection.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: this concept is missing in the TDWG Ontology (CollectionType.rdf), however the TDWG ontology declares ".../collectionType#taxonomic" with the same description as this concept. "...collectionType#taxonomic" is missing in the NCD 0.9 documentation (and not included here).</skos:editorialNote>	
+  </skos:Concept>
+  <!-- WARNING :: CollectionType:specimens is missing in the TDWG Ontology (CollectionType.rdf), 
+  however the TDWG ontology declares ".../collectionType#taxonomic" with the same description as declared for this concept. 
+  "...collectionType#taxonomic" is missing in the NCD 0.9 documentation (and not included here). -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#texts">
+    <skos:prefLabel xml:lang="en">Texts</skos:prefLabel>
+    <dc:description xml:lang="en">A collection of books or other written material, or a list of works.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Books, journals and other printed publications.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#tissue">
+    <skos:prefLabel xml:lang="en">Tissue</skos:prefLabel>
+    <dc:description xml:lang="en">Plant and/or animal tissues.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Blood, muscle, ovary, leaf.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/CollectionType#visual">
+    <skos:prefLabel xml:lang="en">Visual</skos:prefLabel>
+    <dc:description xml:lang="en">Visual representations of an item or object produced with the aid of a camera or a digital imaging system.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType#CollectionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/CollectionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Photograph, SEM image, video.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Kingdom type -->
+
+  <!-- WARNING :: perhaps the namespace should be "http://rs.tdwg.org/ontology/voc/KingdomType#[CONCEPT]" 
+    to follow the same pattern as for CollectionType...? -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm">
+    <skos:prefLabel xml:lang="en">Kingdom type</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for taxonomic kingdom.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <!-- WARNING :: The NCD v 0.9 documentation declares the KingdomType concepts as all lowercase 
+    while the TDWG ontology (Collection.rdf) declare these concept names as first letter uppercase -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#animalia">
+    <skos:prefLabel xml:lang="en">Animalia</skos:prefLabel>
+    <dc:description xml:lang="en">Animals</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#archaebacteria">
+    <skos:prefLabel xml:lang="en">Archaebacteria</skos:prefLabel>
+    <dc:description xml:lang="en">Archaebacteria</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#eubacteria">
+    <skos:prefLabel xml:lang="en">Eubacteria</skos:prefLabel>
+    <dc:description xml:lang="en">Eubacteria</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#fungi">
+    <skos:prefLabel xml:lang="en">Fungi</skos:prefLabel>
+    <dc:description xml:lang="en">Fungi</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#plantae">
+    <skos:prefLabel xml:lang="en">Plantae</skos:prefLabel>
+    <dc:description xml:lang="en">Plants</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#protista">
+    <skos:prefLabel xml:lang="en">Protista</skos:prefLabel>
+    <dc:description xml:lang="en">Protists</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#KingdomTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = KingdomTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Primary Grouping Principle Type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm">
+    <skos:prefLabel xml:lang="en">Primary Grouping Principle Type</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for primary grouping principle.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#cultural">
+    <skos:prefLabel xml:lang="en">Cultural</skos:prefLabel>
+    <dc:description xml:lang="en">Collections relating to a group of people.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Example: Victorian taxidermy</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#ecosystems">
+    <skos:prefLabel xml:lang="en">Ecosystems</skos:prefLabel>
+    <dc:description xml:lang="en">Collections relating to complex community of living organisms and their environment.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Water column samples or forest plot collections.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: declared as ncd:Ecosystems in the TDWG Ontology (Collection.rdf). NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+  <!-- WARNING :: declared as ncd:Ecosystems by the TDWG Ontology (Collection.rdf) and as ncd:ecosystems by the NCD v 0.9 documentation -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#environmental">
+    <skos:prefLabel xml:lang="en">Environmental</skos:prefLabel>
+    <dc:description xml:lang="en">The aggregate of external conditions in which organisms live or phenomena occur; may be defined components only.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Rainfall measurements, average temperature, specimens from hydrothermal vents.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#events">
+    <skos:prefLabel xml:lang="en">Events</skos:prefLabel>
+    <dc:description xml:lang="en">Collections that were made as a result of an event or that document an event.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: ash samples collected during a specific volcanic eruption, birds collected or killed as a result of suspected H5N1 (bird flu)</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#expeditions">
+    <skos:prefLabel xml:lang="en">Expeditions</skos:prefLabel>
+    <dc:description xml:lang="en">Collections resulting from a named journey or trip such as a voyage of discovery.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Items from Captain Cook's First Voyage or from H.M.S. Beagle</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#historical">
+    <skos:prefLabel xml:lang="en">Historical</skos:prefLabel>
+    <dc:description xml:lang="en">relating to a particular time period relevant to human history</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Example: Collecting equipment used in the 1700's</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#national">
+    <skos:prefLabel xml:lang="en">National</skos:prefLabel>
+    <dc:description xml:lang="en">Collections of material from a specific country c.f. regional</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Example: Fossils from Canada</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#relationships">
+    <skos:prefLabel xml:lang="en">Relationships</skos:prefLabel>
+    <dc:description xml:lang="en">Organisms sharing an intimate biological relationship.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Parasitic or Symbiotic</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#repository">
+    <skos:prefLabel xml:lang="en">Repository</skos:prefLabel>
+    <dc:description xml:lang="en">Similar or related items that are placed in a facility for long term care as the result of a specific agreement.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Specimens from US Mineral Management Service, specimens from US National Park Service.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#spatial">
+    <skos:prefLabel xml:lang="en">Regional</skos:prefLabel>
+    <dc:description xml:lang="en">Relating to a physical location or region rather than a country c.f. national.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Plants from North America</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#stage">
+    <skos:prefLabel xml:lang="en">Stage</skos:prefLabel>
+    <dc:description xml:lang="en">Relating to a specific phase in physical development.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Larva, fetus.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#taxonomic">
+    <skos:prefLabel xml:lang="en">Taxonomic</skos:prefLabel>
+    <dc:description xml:lang="en">Collections laid out according to a particular taxonomy.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Example: Insect collection grouped by Family</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#temporal">
+    <skos:prefLabel xml:lang="en">Temporal</skos:prefLabel>
+    <dc:description xml:lang="en">Relating to a particular time period.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryGroupingPrincipleTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example>Examples: Cenozoic mollusks.</skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryGroupingPrincipleTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Primary purpose type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm">
+    <skos:prefLabel xml:lang="en">Primary Purpose</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for primary purpose types.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#commercial">
+    <skos:prefLabel xml:lang="en">Commercial</skos:prefLabel>
+    <dc:description xml:lang="en">Biological or geological material for sale or other commercial use, such as some culture collections. </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#education">
+    <skos:prefLabel xml:lang="en">Education</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired to educate, inform, or convey information e.g. for distance learning.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#exhibition">
+    <skos:prefLabel xml:lang="en">Exhibition</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired to educate, inform, or convey information through display.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#monitoring">
+    <skos:prefLabel xml:lang="en">Monitoring</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired as a result of observation, measurement, or sampling.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#ornamental">
+    <skos:prefLabel xml:lang="en">Ornamental</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired for decorative purposes.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#personal">
+    <skos:prefLabel xml:lang="en">Personal</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired for idiosyncratic reasons.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#research">
+    <skos:prefLabel xml:lang="en">Research</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired for current and future study.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#voucher">
+    <skos:prefLabel xml:lang="en">Voucher</skos:prefLabel>
+    <dc:description xml:lang="en">Acquired and maintained to document organisms, observations, or phenomena.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#PrimaryPurposeTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = PrimaryPurposeTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Specimen preservation method type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm">
+    <skos:prefLabel xml:lang="en">Specimen Preservation Method</skos:prefLabel>
+    <dc:description xml:lang="en">Process or technique used to prevent physical deterioration of non-living collections. Controlled vocabulary for specimen preservation method.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#controlledAtmosphere">
+    <skos:prefLabel xml:lang="en">Controlled atmosphere</skos:prefLabel>
+    <dc:description xml:lang="en">Held in conditions that vary from the typical elemental mix of the atmosphere; usually implies reduced oxygen. </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#cryopreserved">
+    <skos:prefLabel xml:lang="en">Cryopreserved</skos:prefLabel>
+    <dc:description xml:lang="en">Held at very low temperatures, typically in liquid Nitrogen.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#dried">
+    <skos:prefLabel xml:lang="en">Dried</skos:prefLabel>
+    <dc:description xml:lang="en">Treated or exposed to remove all internal fluids; may have used silica gel.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#driedAndPressed">
+    <skos:prefLabel xml:lang="en">Dried and pressed</skos:prefLabel>
+    <dc:description xml:lang="en">Treated to remove all internal fluids; flattened, typically mounted on paper.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#embedded">
+    <skos:prefLabel xml:lang="en">Embedded</skos:prefLabel>
+    <dc:description xml:lang="en">Maintained in a solid matrix suitable for making thin sections.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#fluidPreserved">
+    <skos:prefLabel xml:lang="en">Fluid preserved</skos:prefLabel>
+    <dc:description xml:lang="en">Maintained in formalin, ethyl alcohol, or other liquid preservative.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#freezeDried">
+    <skos:prefLabel xml:lang="en">Freeze dried</skos:prefLabel>
+    <dc:description xml:lang="en">Removal of internal liquids using cold, low humidity environment.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#frozen">
+    <skos:prefLabel xml:lang="en">Frozen</skos:prefLabel>
+    <dc:description xml:lang="en">Held at temperatures below freezing (32 Degrees F or 0 degrees C).</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#glycerin">
+    <skos:prefLabel xml:lang="en">Glycerin</skos:prefLabel>
+    <dc:description xml:lang="en">Replacement of original internal fluids with glycerine.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#noTreatment">
+    <skos:prefLabel xml:lang="en">No treatment</skos:prefLabel>
+    <dc:description xml:lang="en">Absence of any deliberate preservation action.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#notApplicable">
+    <skos:prefLabel xml:lang="en">Not applicable</skos:prefLabel>
+    <dc:description xml:lang="en">For living collections that grow and reproduce.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#pinned">
+    <skos:prefLabel xml:lang="en">Pinned</skos:prefLabel>
+    <dc:description xml:lang="en">Treated to remove all internal fluids; held on metallic pin. </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#recordedAnalog">
+    <skos:prefLabel xml:lang="en">Recorded (analog)</skos:prefLabel>
+    <dc:description xml:lang="en">Observations, measurements, or images that capture phenomena in analog formats.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#recordedDigital">
+    <skos:prefLabel xml:lang="en">Recorded (digital)</skos:prefLabel>
+    <dc:description xml:lang="en">Observations, measurements, or images that capture phenomena in digital formats.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#refrigerated">
+    <skos:prefLabel xml:lang="en">Refrigerated</skos:prefLabel>
+    <dc:description xml:lang="en">Maintained at cool temperatures above freezing.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#semstub">
+    <skos:prefLabel xml:lang="en">SEM stub</skos:prefLabel>
+    <dc:description xml:lang="en">Mounted and coated for scanning electron microscopy.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#skeletonized">
+    <skos:prefLabel xml:lang="en">Skeletonized</skos:prefLabel>
+    <dc:description xml:lang="en">Removal of soft tissues including connective tissues.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#slideMount">
+    <skos:prefLabel xml:lang="en">Slide mount</skos:prefLabel>
+    <dc:description xml:lang="en">Held on a glass slide using fixative and cover slip.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#stasis">
+    <skos:prefLabel xml:lang="en">Stasis</skos:prefLabel>
+    <dc:description xml:lang="en">Collections capable of growing and reproducing that are held in a suspended state.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#surfaceCoating">
+    <skos:prefLabel xml:lang="en">Surface coating</skos:prefLabel>
+    <dc:description xml:lang="en">Application of protective or consolidating surface coating using organic or inorganic materials.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#tanned">
+    <skos:prefLabel xml:lang="en">Tanned</skos:prefLabel>
+    <dc:description xml:lang="en">Chemically treated skins and hides.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#SpecimenPreservationMethodTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG Ontology: type = SpecimenPreservationMethodTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Development status type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm">
+    <skos:prefLabel xml:lang="en">Development Status Type</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for development status.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: The TDWG Ontology (Collection.rdf) declares "owl:DevelopmentStatusTypeTerm".</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#activeGrowth">
+    <skos:prefLabel xml:lang="en">Active growth</skos:prefLabel>
+    <dc:description xml:lang="en">Currently increasing in volume, count, number of taxa represented or other dimension due to intentional activity.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#closed">
+    <skos:prefLabel xml:lang="en">Closed</skos:prefLabel>
+    <dc:description xml:lang="en">Currently closed to acquisitions or deposits. </dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#consumable">
+    <skos:prefLabel xml:lang="en">Consumable</skos:prefLabel>
+    <dc:description xml:lang="en">Collection may or will be decreasing in volume, count, representation or other dimension due to intentional destructive analytical activity.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#decreasing">
+    <skos:prefLabel xml:lang="en">Decreasing</skos:prefLabel>
+    <dc:description xml:lang="en">Currently diminishing in volume, count, number of taxa represented, or other dimension due to intentional activity.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#lost">
+    <skos:prefLabel xml:lang="en">Lost</skos:prefLabel>
+    <dc:description xml:lang="en">Host institution has concluded that collection is permanently unavailable after appropriate efforts have been made although documentation of the collection exists.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#missing">
+    <skos:prefLabel xml:lang="en">Missing</skos:prefLabel>
+    <dc:description xml:lang="en">Physical collection cannot be located although its documentation exists; the possibility of finding the collection exists.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#passiveGrowth">
+    <skos:prefLabel xml:lang="en">Passive growth</skos:prefLabel>
+    <dc:description xml:lang="en">May increase in volume, count, number of taxa represented or other dimension due to unplanned and unpredictable activity.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#static">
+    <skos:prefLabel xml:lang="en">Static</skos:prefLabel>
+    <dc:description xml:lang="en">Cannot or will not increase or decrease in any manner.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#DevelopmentStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:DevelopmentStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Conservation status type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm">
+    <skos:prefLabel xml:lang="en">Conservation Status Type</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for conservation status. Terms are taken from the McGinley levels.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>WARNING: the TDWG Ontology (Collection.rdf) declares "owl:ConservationStatusTypeTerm"</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley1">
+    <skos:prefLabel xml:lang="en">McGinley Level 1</skos:prefLabel>
+    <dc:description xml:lang="en">Specimens deteriorating, potentially cullable, or unprepared. Collection unit in need of immediate attention; museum pests, rusting pins, crystallizing slide media, unringed Hoyer’s media, evaporated alcohol, fading labels, broken cover slip or slide, etc. Primary types missed in general collection.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley2">
+    <skos:prefLabel xml:lang="en">McGinley Level 2</skos:prefLabel>
+    <dc:description xml:lang="en">Material properly prepared but not sorted or only rough-sorted; not readily available to specialists.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley3">
+    <skos:prefLabel xml:lang="en">McGinley Level 3</skos:prefLabel>
+    <dc:description xml:lang="en">Specimens sorted to a level necessary to be efficiently accessible to research specialist for study. All specimens in soft-bottom trays, shell vials in jars or slide boxes, with appropriate levels denoting pertinent taxonomic information. Taxonomic category may vary among different taxa.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley4">
+    <skos:prefLabel xml:lang="en">McGinley Level 4</skos:prefLabel>
+    <dc:description xml:lang="en">Valuable material that has been identified to the species level but not yet put away effectively inaccessible.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley5">
+    <skos:prefLabel xml:lang="en">McGinley Level 5</skos:prefLabel>
+    <dc:description xml:lang="en">All specimens identified and integrated. However, this collection unit needs upgrading, e.g., names checked, header labels for unit trays prepared, transfer to soft-bottom trays, etc., box header labels checked against slides. Alcoholic collection with individual exposed vials, jar labels misleading or without detail, overall format heterogenous.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley6">
+    <skos:prefLabel xml:lang="en">McGinley Level 6</skos:prefLabel>
+    <dc:description xml:lang="en">All specimens in soft-bottom unit trays; all unit-tray header labels, drawer or box, and cabinet labels completed; space left for expansion. When a collection reaches Level 6, the name(s) or who did the curation, the date of curation and listing of catalogues or monographs on which the names are based should be entered in the Smithsonian Collection Inventory File computerized files. Vial within jar system established, labels complete and accurately typed, expansion space allocated, and alcohol levels adequate.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley7">
+    <skos:prefLabel xml:lang="en">McGinley Level 7</skos:prefLabel>
+    <dc:description xml:lang="en">Species inventory with header or box label generation completed. Alcoholic collection with taxa listed on jar labels and in database, as in Level 6 plus species-level inventory.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley8">
+    <skos:prefLabel xml:lang="en">McGinley Level 8</skos:prefLabel>
+    <dc:description xml:lang="en">Label data are recorded for systematic, biogeography or natural history studies. The data elements recorded will vary by group, however, a d standard core set includes the following: a) a country/province/place/latitude-longitude; b) date of collection; c) collector(s); d) miscellaneous (for example, elevation, host). Miscellaneous voucher specimens, including types, from various studies are also ranked at this level.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley9">
+    <skos:prefLabel xml:lang="en">McGinley Level 9</skos:prefLabel>
+    <dc:description xml:lang="en">Measurements, graphics, or other pertinent (descriptions) of specimens are captured in a database.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/Collection#mcginley10">
+    <skos:prefLabel xml:lang="en">McGinley Level 10</skos:prefLabel>
+    <dc:description xml:lang="en">Groups of specimens included in published monographic, synthetic, or revisionary works, including primary type collection if storage is at Level 7 or higher. When groups of specimens serve to voucher published scientific collection-based studies and have undergone conservation and accession requirements of at least Level 7.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/Collection#ConservationStatusTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/Collection"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote>NOTE: in TDWG ontology: type = owl:ConservationStatusTypeTerm.</skos:editorialNote>	
+  </skos:Concept>
+
+
+  <!-- Institution type -->
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm">
+    <skos:prefLabel xml:lang="en">Institution Type</skos:prefLabel>
+    <dc:description xml:lang="en">Controlled vocabulary for institution types</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="owl:Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#aquarium">
+    <skos:prefLabel xml:lang="en">Aquarium</skos:prefLabel>
+    <dc:description xml:lang="en">An institution where aquatic collections of living organisms are kept and exhibited.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#archive">
+    <skos:prefLabel xml:lang="en">Archive</skos:prefLabel>
+    <dc:description xml:lang="en">An institution where public and/or private records and historical documents are preserved and made accessible.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#botanicGarden">
+    <skos:prefLabel xml:lang="en">Botanic garden</skos:prefLabel>
+    <dc:description xml:lang="en">A garden, sometimes with greenhouse, for the study and exhibition of special plants.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#conservation">
+    <skos:prefLabel xml:lang="en">Conservation</skos:prefLabel>
+    <dc:description xml:lang="en">An organization dedicated to the conservation or preservation of wildlife and/or habitats.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#fieldStation">
+    <skos:prefLabel xml:lang="en">Field station</skos:prefLabel>
+    <dc:description xml:lang="en">An establishment for the study and observation of phenomena that is in close proximity to the object of study.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#government">
+    <skos:prefLabel xml:lang="en">Government</skos:prefLabel>
+    <dc:description xml:lang="en">Local or regional government agency or entity.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#historicalSociety">
+    <skos:prefLabel xml:lang="en">Historical society</skos:prefLabel>
+    <dc:description xml:lang="en">An organization devoted to preserving the historical record of a place, institution, people, activity or thing</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#horticulturalInstitution">
+    <skos:prefLabel xml:lang="en">Horticultural institution</skos:prefLabel>
+    <dc:description xml:lang="en">An institution associated with the science and study of propagating plants.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#industry">
+    <skos:prefLabel xml:lang="en">Industry</skos:prefLabel>
+    <dc:description xml:lang="en">A private or public industrial enterprise.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#laboratory">
+    <skos:prefLabel xml:lang="en">Laboratory</skos:prefLabel>
+    <dc:description xml:lang="en">An institution or facility for experimental, observational or analytical studies.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#library">
+    <skos:prefLabel xml:lang="en">Library</skos:prefLabel>
+    <dc:description xml:lang="en">An institution holding books, manuscripts, images and recordings for research and study.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#management">
+    <skos:prefLabel xml:lang="en">Management</skos:prefLabel>
+    <dc:description xml:lang="en">An institution dedicated to preservation and management of natural resources in a specific region.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#museum">
+    <skos:prefLabel xml:lang="en">Museum</skos:prefLabel>
+    <dc:description xml:lang="en">An institution for the procurement, preservation, study and exhibition of specimens and objects of value.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#natureEducationCenter">
+    <skos:prefLabel xml:lang="en">Nature education center</skos:prefLabel>
+    <dc:description xml:lang="en">An institution dedicated to informing audiences on phenomena related to the natural world.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#nonUniversityCollege">
+    <skos:prefLabel xml:lang="en">Non university college</skos:prefLabel>
+    <dc:description xml:lang="en">An institution of higher learning that does not grant advanced degrees beyond the bachelor's.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#park">
+    <skos:prefLabel xml:lang="en">Park</skos:prefLabel>
+    <dc:description xml:lang="en">Managed open space e.g. national park</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#repository">
+    <skos:prefLabel xml:lang="en">Repository</skos:prefLabel>
+    <dc:description xml:lang="en">An institution that provides care and accessibiltiy to deposited materials based upon a series of defined formal agreements.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#researchInstitute">
+    <skos:prefLabel xml:lang="en">Research institute</skos:prefLabel>
+    <dc:description xml:lang="en">An institution dedicated to acquiring, developing and communicating knowledge.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#school">
+    <skos:prefLabel xml:lang="en">School</skos:prefLabel>
+    <dc:description xml:lang="en">An institution dedicated to providing basic knowledge and education, typically from the earliest stages to the college or university level.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#scienceCenter">
+    <skos:prefLabel xml:lang="en">Science center</skos:prefLabel>
+    <dc:description xml:lang="en">An institution dedicated to informing audiences on scientific facts, phenomena and theory.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#society">
+    <skos:prefLabel xml:lang="en">Society</skos:prefLabel>
+    <dc:description xml:lang="en">An organization or association of persons engaged in a common profession, activity, or interest</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#university">
+    <skos:prefLabel xml:lang="en">University</skos:prefLabel>
+    <dc:description xml:lang="en">A degree-granting institution of higher learning.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+  <skos:Concept rdf:about="http://rs.tdwg.org/ontology/voc/InstitutionType#zoo">
+    <skos:prefLabel xml:lang="en">Zoo</skos:prefLabel>
+    <dc:description xml:lang="en">An institution where living animals are maintained and exhibited.</dc:description>
+    <vann:termGroup rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType#InstitutionTypeTerm"/>
+    <rdf:type rdf:resource="rdfs:Datatype"/>
+    <rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ontology/voc/InstitutionType"/>
+    <skos:inScheme rdf:resource="http://rs.gbif.org/terms/ncd/ncdType.rdf"/>
+    <skos:example></skos:example>
+    <skos:note></skos:note>
+    <skos:editorialNote></skos:editorialNote>	
+  </skos:Concept>
+
+
+</rdf:RDF>

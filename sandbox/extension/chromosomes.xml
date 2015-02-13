@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    rowType="http://rs.gbif.org/terms/1.0/Chromosomes"
+    dc:title="Chromosomes Count" name="Chromosomes" namespace="http://rs.gbif.org/terms/1.0" 
+    dc:subject="dwc:Taxon"
+    dc:relation=""
+    dc:description="Information about the number of chromosomes of a species">
+    
+    <property name='haploidCount' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/haploidCount' dc:relation='' dc:description='Number of chromosomes counted in the haploid state' examples='"10"' required='false'/>
+    <property name='diploidCount' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/diploidCount' dc:relation='' dc:description='Number of chromosomes counted in the diploid state. For polyploid organisms if known indicate the polyploidy in the remarks, but still use this term for the count in the sporophyte life stage' examples='"20" "20+2B"' required='false'/>
+    <property name='source' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/source' dc:relation='' dc:description='Source reference for this chromosome count record. Can be a full literature citation, a webpage URL, DOI, etc.' examples='Goldblatt, P. 1984. Index to Plant Chromosome Numbers, 1979-1981. Monogr. Syst. Bot. Missouri Bot. Gard. 8: 1-427.' required='false'/>
+    <property name='chromosomeRemarks' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/chromosomeRemarks' dc:relation='' dc:description='Additional remarks for the count, e.g. if polyploidy is known' examples='"Cultivated Medicago sativa is tetraploid, with 2n=4x=32. Wild relatives have 2n=16" "76 autosomal and 2 sexual."' required='false'/>
+
+</extension>

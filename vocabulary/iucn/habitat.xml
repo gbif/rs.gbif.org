@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+ dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/" 
+ dc:description="" 
+ dc:relation="http://www.iucn.org/about/work/programmes/species/red_list/resources/technical_documents/authority_files/"
+ dc:title="IUCN Habitat Vocabulary" 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ 
+  <concept dc:identifier="1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1"
+  dc:description="Forest">
+  <preferred>
+   <term dc:title="Forest" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.1"
+  dc:description="Boreal">
+  <preferred>
+   <term dc:title="Boreal" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.2"
+  dc:description="Subarctic">
+  <preferred>
+   <term dc:title="Subarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.3"
+  dc:description="Subantarctic">
+  <preferred>
+   <term dc:title="Subantarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.4"
+  dc:description="Temperate">
+  <preferred>
+   <term dc:title="Temperate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.5"
+  dc:description="Subtropical/Tropical Dry">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Dry" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.6"
+  dc:description="Subtropical/Tropical Moist Lowland">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Moist Lowland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.7"
+  dc:description="Subtropical/Tropical Mangrove Vegetation Above High Tide Level">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Mangrove Vegetation" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.8"
+  dc:description="Subtropical/Tropical Swamp">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Swamp" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="1.9" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/1.9" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/1.9"
+  dc:description="Subtropical/Tropical Moist Montane">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Moist Montane" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/2"
+  dc:description="Savanna">
+  <preferred>
+   <term dc:title="Savanna" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="2.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/2.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/2.1"
+  dc:description="Dry Savanna">
+  <preferred>
+   <term dc:title="Dry Savanna" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="2.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/2.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/2.2"
+  dc:description="Moist Savana">
+  <preferred>
+   <term dc:title="Moist Savana" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3"
+  dc:description="Shrubland">
+  <preferred>
+   <term dc:title="Shrubland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.1"
+  dc:description="Subarctic">
+  <preferred>
+   <term dc:title="Subarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.2"
+  dc:description="Subantarctic">
+  <preferred>
+   <term dc:title="Subantarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.3"
+  dc:description="Boreal">
+  <preferred>
+   <term dc:title="Boreal" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.4"
+  dc:description="Temperate">
+  <preferred>
+   <term dc:title="Temperate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.5"
+  dc:description="Subtropical/Tropical Dry">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Dry" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.6"
+  dc:description="Subtropical/Tropical Moist">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Moist" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.7"
+  dc:description="Subtropical/Tropical High Altitude">
+  <preferred>
+   <term dc:title="Subtropical/Tropical High Altitude" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="3.8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/3.8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/3.8"
+  dc:description="Mediterranean-type Shrubby Vegetation">
+  <preferred>
+   <term dc:title="Mediterranean-type Shrubby Vegetation" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4"
+  dc:description="Grassland">
+  <preferred>
+   <term dc:title="Grassland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.1"
+  dc:description="Tundra">
+  <preferred>
+   <term dc:title="Tundra" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.2"
+  dc:description="Subarctic">
+  <preferred>
+   <term dc:title="Subarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.3"
+  dc:description="Subantarctic">
+  <preferred>
+   <term dc:title="Subantarctic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.4"
+  dc:description="Temperate">
+  <preferred>
+   <term dc:title="Temperate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.5"
+  dc:description="Subtropical/Tropical Dry Lowland">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Dry Lowland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.6"
+  dc:description="Subtropical/Tropical Seasonally Wet/Flooded Lowland">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Seasonally Wet/Flooded Lowland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="4.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/4.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/4.7"
+  dc:description="Subtropical/Tropical High Altitude">
+  <preferred>
+   <term dc:title="Subtropical/Tropical High Altitude" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5"
+  dc:description="Wetlands (inland)">
+  <preferred>
+   <term dc:title="Wetlands (inland)" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.1"
+  dc:description="Permanent Rivers/Streams/Creeks [includes waterfalls]">
+  <preferred>
+   <term dc:title="Permanent Rivers" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.2"
+  dc:description="Seasonal/Intermittent/Irregular Rivers/Streams/Creeks">
+  <preferred>
+   <term dc:title="Seasonal/Intermittent/Irregular Rivers/Streams/Creeks" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.3"
+  dc:description="Shrub Dominated Wetlands">
+  <preferred>
+   <term dc:title="Shrub Dominated Wetlands" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.4"
+  dc:description="Bogs, Marshes, Swamps, Fens, Peatlands">
+  <preferred>
+   <term dc:title="Bogs" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.5"
+  dc:description="Permanent Freshwater Lakes [over 8ha]">
+  <preferred>
+   <term dc:title="Permanent Freshwater Lakes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.6"
+  dc:description="Seasonal/Intermittent Freshwater Lakes [over 8ha]">
+  <preferred>
+   <term dc:title="Seasonal Freshwater Lakes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.7"
+  dc:description="Permanent Freshwater Marshes/Pools [under 8ha]">
+  <preferred>
+   <term dc:title="Permanent Freshwater Marshes/Pools" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.8"
+  dc:description="Seasonal/Intermittent Freshwater Marshes/Pools [under 8ha]">
+  <preferred>
+   <term dc:title="Seasonal Freshwater Marshes/Pools" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.9" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.9" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.9"
+  dc:description="Freshwater Springs and Oases">
+  <preferred>
+   <term dc:title="Freshwater Springs and Oases" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.10" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.10" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.10"
+  dc:description="Tundra Wetlands [includes pools and temporary waters from snowmelt]">
+  <preferred>
+   <term dc:title="Tundra Wetlands" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.11" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.11" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.11"
+  dc:description="Alpine Wetlands [includes temporary waters from snowmelt]">
+  <preferred>
+   <term dc:title="Alpine Wetlands" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.12" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.12" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.12"
+  dc:description="Geothermal Wetlands">
+  <preferred>
+   <term dc:title="Geothermal Wetlands" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.13" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.13" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.13"
+  dc:description="Permanent Inland Deltas">
+  <preferred>
+   <term dc:title="Permanent Inland Deltas" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.14" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.14" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.14"
+  dc:description="Permanent Saline, Brackish or Alkaline Lakes">
+  <preferred>
+   <term dc:title="Permanent Saline, Brackish or Alkaline Lakes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.15" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.15" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.15"
+  dc:description="Seasonal/Intermittent Saline, Brackish or Alkaline Lakes and Flats">
+  <preferred>
+   <term dc:title="Seasonal Saline, Brackish or Alkaline Lakes and Flats" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.16" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.16" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.16"
+  dc:description="Permanent Saline, Brackish or Alkaline Marshes/Pools">
+  <preferred>
+   <term dc:title="Permanent Saline, Brackish or Alkaline Marshes/Pools" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.17" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.17" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.17"
+  dc:description="Seasonal/Intermittent Saline, Brackish or Alkaline Marshes/Pools">
+  <preferred>
+   <term dc:title="Seasonal Saline, Brackish or Alkaline Marshes/Pools" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="5.18" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/5.18" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/5.18"
+  dc:description="Karst and Other Subterranean Hydrological Systems [inland]">
+  <preferred>
+   <term dc:title="Karst and Other Subterranean Hydrological Systems" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/6"
+  dc:description="Rocky Areas [e.g. inland cliffs, mountain peaks]">
+  <preferred>
+   <term dc:title="Rocky Areas" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/7"
+  dc:description="Caves and Subterranean Habitats (non-aquatic)">
+  <preferred>
+   <term dc:title="Caves and Subterranean Habitats" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="7.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/7.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/7.1"
+  dc:description="Caves">
+  <preferred>
+   <term dc:title="Caves" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="7.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/7.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/7.2"
+  dc:description="Other Subterranean Habitats">
+  <preferred>
+   <term dc:title="Other Subterranean Habitats" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/8"
+  dc:description="Desert">
+  <preferred>
+   <term dc:title="Desert" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="8.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/8.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/8.1"
+  dc:description="Hot">
+  <preferred>
+   <term dc:title="Hot" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="8.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/8.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/8.2"
+  dc:description="Temperate">
+  <preferred>
+   <term dc:title="Temperate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="8.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/8.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/8.3"
+  dc:description="Cold">
+  <preferred>
+   <term dc:title="Cold" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9"
+  dc:description="Marine Neritic (Submergent Nearshore Continental Shelf or Oceanic Island)">
+  <preferred>
+   <term dc:title="Marine Neritic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.1"
+  dc:description="Pelagic">
+  <preferred>
+   <term dc:title="Pelagic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.2"
+  dc:description="Subtidal Rock and Rocky Reefs">
+  <preferred>
+   <term dc:title="Subtidal Rock and Rocky Reefs" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.3"
+  dc:description="Subtidal Loose Rock/Pebble/Gravel">
+  <preferred>
+   <term dc:title="Subtidal Loose Rock/Pebble/Gravel" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.4"
+  dc:description="Subtidal Sandy">
+  <preferred>
+   <term dc:title="Subtidal Sandy" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.5"
+  dc:description="Subtidal Sandy-Mud">
+  <preferred>
+   <term dc:title="Subtidal Sandy-Mud" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.6"
+  dc:description="Subtidal Muddy">
+  <preferred>
+   <term dc:title="Subtidal Muddy" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.7"
+  dc:description="Macroalgal/Kelp">
+  <preferred>
+   <term dc:title="Macroalgal/Kelp" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8"
+  dc:description="Coral Reef">
+  <preferred>
+   <term dc:title="Coral Reef" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.1"
+  dc:description="Outer Reef Channel">
+  <preferred>
+   <term dc:title="Outer Reef Channel" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.2"
+  dc:description="Back Slope">
+  <preferred>
+   <term dc:title="Back Slope" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.3"
+  dc:description="Foreslope (Outer Reef Slope)">
+  <preferred>
+   <term dc:title="Outer Reef Slope" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.4"
+  dc:description="Lagoon">
+  <preferred>
+   <term dc:title="Lagoon" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.5"
+  dc:description="Inter-Reef Soft Substrate">
+  <preferred>
+   <term dc:title="Inter-Reef Soft Substrate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.8.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.8.6"
+  dc:description="Inter-Reef Rubble Substrate">
+  <preferred>
+   <term dc:title="Inter-Reef Rubble Substrate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.9" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.9" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.9"
+  dc:description="Seagrass (Submerged)">
+  <preferred>
+   <term dc:title="Seagrass (Submerged)" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="9.10" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/9.10" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/9.10"
+  dc:description="Estuaries">
+  <preferred>
+   <term dc:title="Estuaries" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="10" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/10" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/10"
+  dc:description="Marine Oceanic">
+  <preferred>
+   <term dc:title="Marine Oceanic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="10.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/10.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/10.1"
+  dc:description="Epipelagic (0-0m)">
+  <preferred>
+   <term dc:title="Epipelagic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="10.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/10.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/10.2"
+  dc:description="Mesopelagic (200-1,0m)">
+  <preferred>
+   <term dc:title="Mesopelagic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="10.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/10.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/10.3"
+  dc:description="Bathypelagic (1,000-4,0m)">
+  <preferred>
+   <term dc:title="Bathypelagic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="10.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/10.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/10.4"
+  dc:description="Abyssopelagic (4,000-6,0m)">
+  <preferred>
+   <term dc:title="Abyssopelagic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11"
+  dc:description="Marine Deep Benthic">
+  <preferred>
+   <term dc:title="Marine Deep Benthic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.1"
+  dc:description="Continental Slope/Bathyl Zone (200-4,0m)">
+  <preferred>
+   <term dc:title="Continental Slope/Bathyl Zone" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.1.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.1.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.1.1"
+  dc:description="Hard Substrate">
+  <preferred>
+   <term dc:title="Hard Substrate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.1.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.1.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.1.2"
+  dc:description="Soft Substrate">
+  <preferred>
+   <term dc:title="Soft Substrate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.2"
+  dc:description="Abyssal Plain (4,000-6,0m)">
+  <preferred>
+   <term dc:title="Abyssal Plain" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.3"
+  dc:description="Abyssal Mountain/Hills (4,000-6,0m)">
+  <preferred>
+   <term dc:title="Abyssal Mountain/Hills" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.4"
+  dc:description="Hadal/Deep Sea Trench (>6,0m)">
+  <preferred>
+   <term dc:title="Hadal/Deep Sea Trench" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.5"
+  dc:description="Seamount">
+  <preferred>
+   <term dc:title="Seamount" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="11.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/11.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/11.6"
+  dc:description="Deep Sea Vents (Rifts/Seeps)">
+  <preferred>
+   <term dc:title="Deep Sea Vents (Rifts/Seeps)" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12"
+  dc:description="Marine Intertidal">
+  <preferred>
+   <term dc:title="Marine Intertidal" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.1"
+  dc:description="Rocky Shoreline">
+  <preferred>
+   <term dc:title="Rocky Shoreline" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.2"
+  dc:description="Sandy Shoreline and/or Beaches, Sand Bars, Spits, Etc.">
+  <preferred>
+   <term dc:title="Sandy Shoreline and/or Beaches" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.3"
+  dc:description="Shingle and/or Pebble Shoreline and/or Beaches">
+  <preferred>
+   <term dc:title="Shingle and/or Pebble Shoreline and/or Beaches" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.4"
+  dc:description="Mud Flats and Salt Flats">
+  <preferred>
+   <term dc:title="Mud Flats and Salt Flats" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.5"
+  dc:description="Salt Marshes (Emergent Grasses)">
+  <preferred>
+   <term dc:title="Salt Marshes (Emergent Grasses)" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.6"
+  dc:description="Tidepools">
+  <preferred>
+   <term dc:title="Tidepools" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="12.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/12.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/12.7"
+  dc:description="Mangrove Submerged Roots">
+  <preferred>
+   <term dc:title="Mangrove Submerged Roots" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13"
+  dc:description="Marine Coastal/Supratidal">
+  <preferred>
+   <term dc:title="Marine Coastal/Supratidal" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13.1"
+  dc:description="Sea Cliffs and Rocky Offshore Islands">
+  <preferred>
+   <term dc:title="Sea Cliffs and Rocky Offshore Islands" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13.2"
+  dc:description="Coastal Caves/Karst">
+  <preferred>
+   <term dc:title="Coastal Caves/Karst" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13.3"
+  dc:description="Coastal Sand Dunes">
+  <preferred>
+   <term dc:title="Coastal Sand Dunes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13.4"
+  dc:description="Coastal Brackish/Saline Lagoons/Marine Lakes">
+  <preferred>
+   <term dc:title="Coastal Brackish/Saline Lagoons/Marine Lakes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="13.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/13.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/13.5"
+  dc:description="Coastal Freshwater Lakes">
+  <preferred>
+   <term dc:title="Coastal Freshwater Lakes" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14"
+  dc:description="Artificial - Terrestrial">
+  <preferred>
+   <term dc:title="Artificial - Terrestrial" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.1"
+  dc:description="Arable Land">
+  <preferred>
+   <term dc:title="Arable Land" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.2"
+  dc:description="Pastureland">
+  <preferred>
+   <term dc:title="Pastureland" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.3"
+  dc:description="Plantations">
+  <preferred>
+   <term dc:title="Plantations" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.4"
+  dc:description="Rural Gardens">
+  <preferred>
+   <term dc:title="Rural Gardens" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.5"
+  dc:description="Urban Areas">
+  <preferred>
+   <term dc:title="Urban Areas" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="14.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/14.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/14.6"
+  dc:description="Subtropical/Tropical Heavily Degraded Former Forest">
+  <preferred>
+   <term dc:title="Subtropical/Tropical Heavily Degraded Former Forest" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15"
+  dc:description="Artificial - Aquatic">
+  <preferred>
+   <term dc:title="Artificial - Aquatic" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.1" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.1" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.1"
+  dc:description="Water Storage Areas (over 8ha)">
+  <preferred>
+   <term dc:title="Water Storage Areas" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.2" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.2" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.2"
+  dc:description="Ponds (below 8ha)">
+  <preferred>
+   <term dc:title="Ponds" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.3" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.3" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.3"
+  dc:description="Aquaculture Ponds">
+  <preferred>
+   <term dc:title="Aquaculture Ponds" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.4" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.4" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.4"
+  dc:description="Salt Exploitation Sites">
+  <preferred>
+   <term dc:title="Salt Exploitation Sites" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.5" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.5" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.5"
+  dc:description="Excavations (open)">
+  <preferred>
+   <term dc:title="Excavations (open)" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.6" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.6" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.6"
+  dc:description="Wastewater Treatment Areas">
+  <preferred>
+   <term dc:title="Wastewater Treatment Areas" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.7" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.7" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.7"
+  dc:description="Irrigated Land [includes irrigation channels]">
+  <preferred>
+   <term dc:title="Irrigated Land" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.8" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.8" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.8"
+  dc:description="Seasonally Flooded Agricultural Land">
+  <preferred>
+   <term dc:title="Seasonally Flooded Agricultural Land" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.9" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.9" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.9"
+  dc:description="Canals and Drainage Channels, Ditches">
+  <preferred>
+   <term dc:title="Canals and Drainage Channels, Ditches" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.10" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.10" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15"
+  dc:description="Karst and Other Subterranean Hydrological Systems [human-made]">
+  <preferred>
+   <term dc:title="Karst and Other Subterranean Hydrological Systems" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.11" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.11" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.11"
+  dc:description="Marine Anthropogenic Structures">
+  <preferred>
+   <term dc:title="Marine Anthropogenic Structures" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.12" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.12" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.12"
+  dc:description="Mariculture Cages">
+  <preferred>
+   <term dc:title="Mariculture Cages" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="15.13" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/15.13" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/15.13"
+  dc:description="Mari/Brackish-culture Ponds">
+  <preferred>
+   <term dc:title="Mari/Brackish-culture Ponds" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="16" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/16" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/16"
+  dc:description="Introduced Vegetation">
+  <preferred>
+   <term dc:title="Introduced Vegetation" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="17" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/17" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/17"
+  dc:description="Other">
+  <preferred>
+   <term dc:title="Other" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="18" dc:URI="http://rs.gbif.org/vocabulary/iucn/habitat/18" 
+  dc:relation="http://rs.gbif.org/vocabulary/iucn/habitat/18"
+  dc:description="Unknown">
+  <preferred>
+   <term dc:title="Unknown" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   
+  </alternative>
+ </concept>
+
+</thesaurus>

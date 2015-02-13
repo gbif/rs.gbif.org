@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
+    xmlns:ggbn="http://data.ggbn.org/schemas/ggbn/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    dc:title="GGBN Gel Image Extension" 
+    name="GelImage" namespace="http://data.ggbn.org/schemas/ggbn/terms/" rowType="http://data.ggbn.org/schemas/ggbn/terms/GelImage"
+    dc:subject=""
+    dc:relation="http://terms.tdwg.org/wiki/GGBN_Gel_Image_Vocabulary"
+    dc:description="Support for gel image properties as an extension to an Material Sample core. Intended to be a one to many relation to the Material Sample core.">
+	
+	<property group='GelImage' type="uri" name='identifier' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/identifier' dc:relation='http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#identifier' dc:description='The public URL that identifies and locates the media file directly, not the html page it might be shown on. Link to a DNA sample image (e.g. agarose gel image); used to determine fragment length profile' examples='' required='true'/>
+    <property group='GelImage' name='description' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/description' dc:relation='http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#description' dc:description='A textual description of the content of the media item. Remarks/Notes related to Gel' examples='' required='false'/>
+	<property group='GelImage' name='gelVoltage' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/gelVoltage' dc:relation='http://terms.tdwg.org/wiki/ggbn:gelVoltage' dc:description='Voltage of Gel (in V)' examples='' required='false'/>
+    <property group='GelImage' name='gelConcentration' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/gelConcentration' dc:relation='http://terms.tdwg.org/wiki/ggbn:gelConcentration' dc:description='Concentration of Gel with unit' examples='' required='false'/>
+    <property group='GelImage' name='gelDuration' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/gelDuration' dc:relation='http://terms.tdwg.org/wiki/ggbn:gelDuration' dc:description='Duration of Gel with unit' examples='' required='false'/>
+    <property group='GelImage' name='gelLadder' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/gelLadder' dc:relation='http://terms.tdwg.org/wiki/ggbn:gelLadder' dc:description='Ladder (Name of Ladder) used for Gel' examples='' required='false'/>
+    <property group='GelImage' name='gelStain' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/gelStain' dc:relation='http://terms.tdwg.org/wiki/ggbn:gelStain' dc:description='Stain used for Gel' examples='' required='false'/>
+</extension>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    rowType="http://rs.gbif.org/terms/1.0/Ellenberg"
+    dc:title="Ellenbergs Ecological Indicators for European Plants" name="Ellenberg" namespace="http://rs.gbif.org/terms/1.0" 
+    dc:subject="dwc:Taxon"
+    dc:relation="http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg"
+    dc:description="Die Kurzbezeichnung Zeigerwerte nach Ellenberg für die &quot;Ökologischen Zeigerwerte von Pflanzen in Mitteleuropa&quot; ist ein von Heinz Ellenberg Mitte der 1970er-Jahre erstmals ausführlich beschriebenes Klassifikationsverfahren für mitteleuropäische Pflanzen nach ihrem ökologischen &quot;Verhalten&quot; und botanischen Eigenschaften.
+    Die Zeigerwerte nach Ellenberg sind von ökologischen und botanischen Beobachtungen und Erfahrungen abgeleitete und inzwischen größtenteils durch Standortanalysen und ökophysiologische Untersuchungen bestätigte beziehungsweise abgesicherte Kenngrößen für einzelne Pflanzenarten.">
+    
+    <property name='light' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/light' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Lichtzahl_.28L-Zahl.29' dc:description='Ecological indicator for light. L-Zahl. Vocabulary=1 - 9' examples='3' required='false'/>
+    <property name='temperature' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/temperature' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Temperaturzahl_.28T-Zahl.29' dc:description='Ecological indicator for temperature. T-Zahl. Vocabulary=1 - 9' examples='9' required='false'/>
+    <property name='continental' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/continental' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Kontinentalit.C3.A4tszahl_.28K-Zahl.29' dc:description='Ecological indicator for continental climate. K-Zahl. Vocabulary=1 - 9' examples='2' required='false'/>
+    <property name='wetness' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/wetness' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Feuchtezahl_.28F-Zahl.29' dc:description='Ecological indicator for wetness. F-Zahl. Vocabulary=1 - 9' examples='' required='false'/>
+    <property name='alkalinity' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/alkalinity' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Reaktionszahl_.28R-Zahl.29' dc:description='Ecological indicator for alkalinity. R-Zahl. Vocabulary=1 - 9' examples='3' required='false'/>
+    <property name='nitrogen' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/nitrogen' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Stickstoffzahl_.28N-Zahl.29' dc:description='Ecological indicator for nitrogen. N-Zahl. Vocabulary=1 - 9' examples='6' required='false'/>
+    <property name='salinity' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/salinity' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Salzzahl_.28S-Zahl.29' dc:description='Ecological indicator for salinity. S-Zahl. Vocabulary=1 - 9' examples='7' required='false'/>
+    <property name='heavyMetalResistence' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/heavyMetalResistence' dc:relation='' dc:description='Ecological indicator for resistence against heavy metals. Vocabulary=1 - 9' examples='8' required='false'/>
+    <property name='lifeForm' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/lifeForm' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Schwermetallresistenz' dc:description='Ecological indicator for the life form. Vocabulary see http://rs.gbif.org/vocabulary/gbif/life_form.xml' examples='P' required='false'/>
+    <property name='lifeStrategy' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/lifeStrategy' dc:relation='http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg#Die_Lebensform' dc:description='"Stragies for survival. For plants recommended 3 term vocabulary by Grime: http://en.wikipedia.org/wiki/J._Philip_Grime http://www.jstor.org/pss/2460262". Vocabulary="stress;competetive;ruderal"' examples='ruderal' required='false'/>
+    
+</extension>

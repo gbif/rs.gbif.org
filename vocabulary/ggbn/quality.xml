@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/quality/" 
+	dc:description="The Quality Vocabulary is a recommended set of values to use for the quality term in the GGBN Material Sample Extension." 
+	dc:title="GGBN Quality Vocabulary" 
+	dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/quality"
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="low" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/quality/low"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:low"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="low" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="medium" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/quality/medium"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:medium"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="medium" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="high" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/quality/high"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:high"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="high" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+  
+</thesaurus>

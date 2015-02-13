@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus dc:URI="http://rs.gbif.org/vocab/cites/" dc:description="Vocabulary for the 3 CITES (Convention on International Trade in Endangered Species of Wild Fauna and Flora) Appendix numbers. Appendices I, II and III to the Convention are lists of species afforded different levels or types of protection from over-exploitation." dc:title="CITES Appendix Numbers" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="I" dc:URI="http://rs.gbif.org/vocab/cites/appendixI" dc:description="Appendix I lists species that are the most endangered among CITES-listed animals and plants (see Article II, paragraph 1 of the Convention). They are threatened with extinction and CITES prohibits international trade in specimens of these species except when the purpose of the import is not commercial (see Article III), for instance for scientific research. In these exceptional cases, trade may take place provided it is authorized by the granting of both an import permit and an export permit (or re-export certificate). Article VII of the Convention provides for a number of exemptions to this general prohibition.">
+  <preferred>
+   <term dc:source="" dc:title="Appendix I" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="1" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="II" dc:URI="http://rs.gbif.org/vocab/cites/appendixII" dc:description="Appendix II lists species that are not necessarily now threatened with extinction but that may become so unless trade is closely controlled. It also includes so-called &quot;look-alike species&quot;, i.e. species of which the specimens in trade look like those of species listed for conservation reasons (see Article II, paragraph 2 of the Convention). International trade in specimens of Appendix-II species may be authorized by the granting of an export permit or re-export certificate. No import permit is necessary for these species under CITES (although a permit is needed in some countries that have taken stricter measures than CITES requires). Permits or certificates should only be granted if the relevant authorities are satisfied that certain conditions are met, above all that trade will not be detrimental to the survival of the species in the wild. (See Article IV of the Convention)">
+  <preferred>
+   <term dc:source="" dc:title="Appendix II" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="2" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="III" dc:URI="http://rs.gbif.org/vocab/cites/appendixIII" dc:description="Appendix III is a list of species included at the request of a Party that already regulates trade in the species and that needs the cooperation of other countries to prevent unsustainable or illegal exploitation (see Article II, paragraph 3, of the Convention). International trade in specimens of species listed in this Appendix is allowed only on presentation of the appropriate permits or certificates. (See Article V of the Convention)">
+  <preferred>
+   <term dc:source="" dc:title="Appendix III" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:source="" dc:title="3" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+</thesaurus>

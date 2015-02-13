@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/" 
+	dc:relation="" 
+	dc:title="Establishment Means GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="native" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/native" dc:relation=""
+ dc:description="A species that is a part of the balance of nature that has developed over hundreds or thousands of years in a particular region or ecosystem. The word native should always be used with a geographic qualifier (for example, native to New England).">
+  <preferred>
+   <term dc:title="native" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="indigenous" xml:lang="en"  />
+   <term dc:title="reintroduced" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="introduced" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced" dc:relation=""
+ dc:description="A species introduced with human help (intentionally or accidentally) to a new place or new type of habitat where it was not previously found. Not all non-native species are invasive. In fact, when many non-native species are introduced to new places, they cannot reproduce or spread readily without continued human help (for example, many ornamental plants).">
+  <preferred>
+   <term dc:title="introduced" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="exotic" xml:lang="en" />
+   <term dc:title="alien" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="naturalised" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised" dc:relation="" 
+	dc:description="Subclass of introduced: The organism reproduces naturally and forms part of the local ecology.">
+  <preferred>
+   <term dc:title="naturalised" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="invasive" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive" dc:relation="" 
+	dc:description="Subclass of introduced: The organism is having a deleterious impact on another organism, multiple organisms or the ecosystem as a whole.">
+  <preferred>
+   <term dc:title="invasive" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="managed" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/managed" dc:relation="" 
+	dc:description="Subclass of introduced: The organism maintains its presence through intentional cultivation or husbandry.">
+  <preferred>
+   <term dc:title="managed" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="cultivated" xml:lang="en" />
+   <term dc:title="captive" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="uncertain" dc:URI="http://rs.gbif.org/vocabulary/gbif/establishment_means/uncertain" dc:relation="" 
+	dc:description="Origin of organism is uncertain">
+  <preferred>
+   <term dc:title="uncertain" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="unknown" xml:lang="en" />
+  </alternative>
+ </concept>
+
+</thesaurus>

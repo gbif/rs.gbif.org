@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status" 
+	dc:description="The Permit Status Vocabulary is a recommended set of values to use for the permit status in the GGBN Permit Extension." 
+	dc:title="GGBN Permit Status Vocabulary" 
+	dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status"
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="Permit available" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status/Permit_available"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Permit_available"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Permit available" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+<concept dc:identifier="Permit not required" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status/Permit_not_required"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Permit_not_required"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Permit not required" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="Permit not available" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status/Permit_not_available"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Permit_not_available"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Permit not available" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Unknown" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status/Unknown"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Unknown"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Unknown" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+  
+</thesaurus>

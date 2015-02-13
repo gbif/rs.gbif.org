@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://www.eol.org/IPT/vocabulary/subject" 
+	dc:description="SPM categories for text descriptions that are allowed in EOL" 
+	dc:title="Subject EOL Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">	
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Associations" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Associations" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Behaviour" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Behaviour" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Biology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Biology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Conservation" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Conservation" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#ConservationStatus" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Conservation Status" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Cyclicity" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Cyclicity" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Cytology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Cytology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Description" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Description" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#DiagnosticDescription" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Diagnostic Description" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Diseases" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Diseases" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Dispersal" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Dispersal" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Distribution" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Distribution" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Ecology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Ecology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Evolution" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Evolution" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#GeneralDescription" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="General Description" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Genetics" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Genetics" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Growth" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Growth" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Habitat" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Habitat" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Key" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Key" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Legislation" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Legislation" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#LifeCycle" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Life Cycle" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#LifeExpectancy" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Life Expectancy" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#LookAlikes" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Look Alikes" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Management" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Management" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Migration" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Migration" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#MolecularBiology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Molecular Biology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Morphology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Morphology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Physiology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Physiology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#PopulationBiology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Population Biology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Procedures" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Procedures" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Reproduction" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Reproduction" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#RiskStatement" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Risk Statement" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Size" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Size" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#TaxonBiology" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Taxon Biology" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Threats" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Threats" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Trends" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Trends" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#TrophicStrategy" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Trophic Strategy" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="http://rs.tdwg.org/ontology/voc/SPMInfoItems#Uses" dc:URI="" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="Uses" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+
+</thesaurus>

@@ -1,0 +1,166 @@
+<html>
+     <head>
+          <title>Named Area Standards</title>
+          <link rel="stylesheet" type="text/css" href="/style/human.css"/>
+<style>
+	div.example {
+		color: grey;
+	}
+	table td {
+		background-color: #FCFCFC;
+	}
+</style>
+     </head>
+     <body>
+          <div class="container">
+		    <div id="header" class="box">
+		        <h1 id="logo"><img src="/style/logo.gif"/>Named Area Standards recommended by GBIF</h1>
+		        <p><a href="http://rs.gbif.org/">index to resources</a></p>
+		    </div>
+	        <div id="content">
+		        <p>This page lists geographic area standards and recommends a namespace prefix for each of them 
+					to be used as part of the <a href="http://rs.tdwg.org/dwc/terms/locationID">dwc:locationID</a> 
+					in particular inside the <a href="http://rs.gbif.org/extension/gbif/1.0/distribution.xml">GNA Species Distribution Extension</a>.</p>
+				<p>
+					A good index to standards with maps and sometimes shapefiles is managed at <a href="http://www.vliz.be/vmdcdata/vlimar/downloads.php">VLIZ</a>.
+				</p>
+
+		        <h1>Standards</h1>
+		        <table class="definition">
+			<tr>
+				<th>Prefix</th>
+				<th>Name</th>
+				<th>Example</th>
+				<th>Description</th>
+			</tr>
+  			<tr>
+  				<td>ISO</td>
+  				<td><a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166 country codes</a></td>
+  				<td>ISO:DK<div class="example">Denmark</div></td>
+  				<td>
+					All country codes from the ISO 3166 family. 
+					This includes in particular the 3166-1 ALPHA2 (2 letter) and 3166-1 ALPHA3 (3 letter) country codes.
+					But also the 3166-3 4 letter codes of formerly existing countries and any 3166-2 codes for the principal subdivisions of a country, e.g. AU-VIC for Victoria, Australia.
+  				</td>
+  			</tr>
+			<tr>
+				<td nowrap="true">TDWG</td>
+				<td width="300px"><a href="http://www.kew.org/science-research-data/kew-in-depth/gis/resources-and-publications/data/tdwg/index.htm">
+					TDWG World Geographical Scheme <br/>for Recording Plant Distributions</a></td>
+				<td nowrap="true">TDWG:AGS<div class="example">South Argentina</div></td>
+				<td>This scheme meets the need for a standard yet adaptable system of geographical units for use in recording plant distributions and arranging specimens. 
+					Because a purely political arrangement cannot meet all the needs of botanists, 
+					the scheme's arrangement compromises between a politically and a phytogeographically oriented system. 
+					It identifies geographic units worldwide in a four-level hierarchy, incorporating continents, regions, provinces and countries. 
+					Each geographical unit at each level has its own numeric or alphanumeric code.</td>
+			</tr>
+
+  			<tr>
+  				<td>WOEID</td>
+  				<td><a href="http://developer.yahoo.com/geo/geoplanet/guide/concepts.html">Where on Earth IDentifier</a></td>
+  				<td>WOEID:2347563<div class="example">California</div></td>
+  				<td>
+Spatial entities provided by Yahoo! GeoPlanet are referenced by a 32-bit identifier: the Where On Earth ID (WOEID). 
+WOEIDs are unique and non-repetitive, and are assigned to all entities within the system. 
+A WOEID, once assigned, is never changed or recycled. 
+If a WOEID is deprecated it is mapped to its successor or parent WOEID, so that requests to the service using a deprecated WOEID are served transparently.
+  				</td>
+  			</tr>
+
+  			<tr>
+  				<td>FAO</td>
+  				<td><a href="http://www.fao.org/fishery/cwp/handbook/H/en">FAO Fishing Areas</a></td>
+  				<td>FAO:37.4.1<div class="example">Marmara Sea</div></td>
+  				<td>
+  					The FAO Fishing Areas using the numerical codes for the mayor areas, subareas, divisions or subdivisions.
+  				</td>
+  			</tr>
+
+  			<tr>
+  				<td>TEOW</td>
+  				<td><a href="http://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world">Terrestrial Ecoregions of the World (TEOW)</a></td>
+  				<td>TEOW:PA0446<div class="example">Western Iran mountain forest steppe</div></td>
+  				<td>
+  					Terrestrial Ecoregions of the World is a biogeographic regionalization of the Earth's terrestrial biodiversity 
+					published by the World Wildlife Fund (WWF). 
+					The biogeographic units are ecoregions, which are defined as relatively large units of land or water 
+					containing a distinct assemblage of natural communities sharing a large majority of species, dynamics, and environmental conditions. 
+					There are 867 terrestrial ecoregions, classified into 14 different biomes such as forests, grasslands, or deserts. 
+					Ecoregions represent the original distribution of distinct assemblages of species and communities.
+  				</td>
+  			</tr>
+
+  			<tr>
+  				<td>WDPA</td>
+  				<td><a href="http://www.protectedplanet.net/">World Database on Protected Areas</a></td>
+  				<td>WDPA:975<div class="example">Yosemite National Park</div></td>
+  				<td>
+  					The protected area WDPA_IDs as given on the protected planet website for an individual area.
+  				</td>
+  			</tr>
+
+			<tr>
+				<td>EEZ</td>
+				<td><a href="http://en.wikipedia.org/wiki/Exclusive_economic_zone">Exclusive Economic Zones <br/>(ISO based)</a></td>
+				<td>EEZ:DE<div class="example">German Exclusive Economic Zone</div></td>
+				<td>The Exclusive Economic Zones (EEZ) of the world for all countries. 
+					The identifiers used are the 2 letter ISO country codes.
+				</td>
+			</tr>
+			<tr>
+				<td>EEZ-VLIZ</td>
+				<td><a href="http://www.vliz.be/vmdcdata/marbound">Exclusive Economic Zones <br/>(VLIZ ID based)</a></td>
+				<td>EEZ-VLIZ:58<div class="example">Canary Islands Exclusive Economic Zone</div></td>
+				<td>The Exclusive Economic Zones (EEZ) of the world as maintained by VLIZ/Flanders Marine Institute.
+					The identifiers used are the numerical EEZ_IDs
+				</td>
+			</tr>
+
+  			<tr>
+  				<td>LONGHURST</td>
+  				<td><a href="http://www.vliz.be/vmdcdata/vlimar/downloads.php#Longhurst">Longhurst Biogeographical Provinces</a></td>
+  				<td>LONGHURST:REDS<div class="example">Red Sea</div></td>
+  				<td>
+This dataset represents a partition of the world oceans into provinces as defined by Longhurst, A.R. (2006). Ecological Geography of the Sea. 2nd Edition. Academic Press, San Diego, 560p.
+They are based on the prevailing role of physical forcing as a regulator of phytoplankton distribution. 
+Note that the boundaries of these provinces are not fixed in time and space, but are dynamic and move under seasonal and interannual changes in physical forcing. 
+At the first level of reduction, Longhurst recognised four principal biomes (also referred to as domains in earlier publications): 
+the Polar Biome, the Westerlies Biome, the Trade-Winds Biome, and the Coastal Boundary Zone Biome. 
+These four Biomes are recognisable in every major ocean basin. 
+At the next level of reduction, the ocean basins are partitioned into provinces, roughly ten for each basin. 
+These partitions provide a template for data analysis or for making parameter assignments on a global scale.
+  				</td>
+  			</tr>
+
+			<tr>
+				<td>IHO</td>
+				<td><a href="http://www.vliz.be/vmdcdata/vlimar/files/S23_1953.pdf">IHO Sea Areas</a></td>
+				<td>&nbsp;</td>
+				<td>
+This dataset represents the boundaries of the major oceans and seas of the world. 
+The source for the boundaries is the publication 'Limits of Oceans &amp; Seas, Special Publication No. 23' published by the International Hydrographic Organization in 1953. 
+				</td>
+			</tr>
+
+			<tr>
+				<td>GADM</td>
+				<td><a href="http://www.gadm.org/">GADM database of Global Administrative Areas</a></td>
+				<td>&nbsp;</td>
+				<td>
+GADM is a spatial database of the location of the world's administrative areas (or adminstrative boundaries) for use in GIS and similar software. 
+Administrative areas in this database are countries and lower level subdivisions such as 
+provinces, departments, bibhag, bundeslander, daerah istimewa, fivondronana, krong, landsvæðun, opština, sous-préfectures, counties, and thana. 
+GADM describes where these administrative areas are (the "spatial features"), and for each area it provides some attributes, such as the name and variant names.
+				</td>
+			</tr>
+						
+				</table>
+            </div>
+          </div>
+     </body>
+</html>
+
+
+
+
+

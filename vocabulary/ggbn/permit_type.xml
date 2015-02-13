@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status" 
+	dc:description="The Permit Type Vocabulary is a recommended set of values to use for the permit type in the GGBN Permit Extension." 
+	dc:title="GGBN Permit Type Vocabulary" 
+	dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type"
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="Collecting Permit" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Collection_Permit"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Collecting_Permit"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Collecting Permit" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="Import Permit" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Import_Permit"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Import_Permit"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Import Permit" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Export Permit" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Export_Permit"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Collecting_Permit"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Export Permit" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Intellectual Property Rights" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Intellectual_Property_Rights"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Intellectual_Property_Rights"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Intellectual Property Rights" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Copyright" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Copyright"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Copyright"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Copyright" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Patent" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Patent"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Patent"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Patent" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Data Use" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Data_Use"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Data_Use"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Data Use" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Phytosanitary" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Phytosanitary"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Phytosanitary"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Phytosanitary" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Salvage" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Salvage"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Salvage"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Salvage" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Exemption Permit" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Exemption_Permit"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Exemption_Permit"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Exemption Permit" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Material Transfer Agreement" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Material_Transfer_Agreement"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Material_Transfer_Agreement"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Material Transfer Agreement" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Internationally Recognized Certificate of Compliance" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Internationally_Recognized_Certificate_of_Compliance"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Internationally_Recognized_Certificate_of_Compliance"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Internationally Recognized Certificate of Compliance" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Contract" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Contract"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Contract"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Contract" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Memorandum of Understanding" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Memorandum_of_Understanding"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Memorandum_of_Understanding"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Memorandum of Understanding" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Memorandum of Cooperation" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Memorandum_of_Cooperation"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Memorandum_of_Cooperation"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Memorandum of Cooperation" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Veterinary Certificate" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Veterinary_Certificate"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Veterinary_Certificate"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Veterinary Certificate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Human Pathogens" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Human_Pathogens"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Human_Pathogens"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Human Pathogens" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Genetically Modified Organism" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Genetically_Modified_Organism"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Genetically_Modified_Organism"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Genetically Modified Organism" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+ <concept dc:identifier="Other" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type/Other"
+     dc:relation="http://terms.tdwg.org/wiki/ggbnvoc:Other"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Other" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+ 
+</thesaurus>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType" 
+	dc:description="Vocabulary to categorise (literature) references" 
+	dc:title="Reference Type GBIF Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="publication" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/publication" 
+        dc:description="A reference to a publication in general">
+        <preferred>
+            <term dc:title="publication" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="original" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/original" 
+        dc:description="A reference to the original description of a taxon">
+        <preferred>
+            <term dc:title="original description" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="combination" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/combination" 
+        dc:description="A reference to a new combination of a taxon">
+        <preferred>
+            <term dc:title="new combination" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="monograph" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/monograph" 
+        dc:description="A reference to a monograph that treats this taxon">
+        <preferred>
+            <term dc:title="monograph" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="florafauna" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/florafauna" 
+        dc:description="A reference to a flora or fauna that treats this taxon">
+        <preferred>
+            <term dc:title="flora or fauna" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="checklist" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/checklist" 
+        dc:description="A reference to some kind of checklist that treats this taxon">
+        <preferred>
+            <term dc:title="checklist" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="legal" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/legal" 
+        dc:description="A reference to some legal document that refers to this taxon">
+        <preferred>
+            <term dc:title="legal" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="website" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/website" 
+        dc:description="A reference to a website">
+        <preferred>
+            <term dc:title="website" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="expert" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/expert" 
+        dc:description="A reference about an expert">
+        <preferred>
+            <term dc:title="expert" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+    <concept dc:identifier="other" dc:URI="http://rs.gbif.org/vocabulary/gbif/referenceType/other" 
+        dc:description="Some other reference">
+        <preferred>
+            <term dc:title="other" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+
+</thesaurus>

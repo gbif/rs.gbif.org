@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://www.eol.org/IPT/vocabulary/mimetype" 
+	dc:description="MIME type for EOL data objects" 
+	dc:title="MIME Type EOL Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">	
+
+    <concept dc:identifier="audio/mpeg" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/mpeg" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="audio/mpeg" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="audio/x-ms-wma" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/x-ms-wma" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="audio/x-ms-wma" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="audio/x-pn-realaudio" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/x-pn-realaudio" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="audio/x-pn-realaudio" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="audio/x-realaudio" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/x-realaudio" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="audio/x-realaudio" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="audio/x-wav" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/x-wav" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="audio/x-wav" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/bmp" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/bmp" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/bmp" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/gif" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/gif" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/gif" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/jpeg" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/jpeg" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/jpeg" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/png" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/png" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/png" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/svg+xml" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/svgxml" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/svg+xml" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="image/tiff" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/image/tiff" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="image/tiff" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="text/html" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/text/html" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="text/html" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="text/plain" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/text/plain" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="text/plain" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="text/richtext" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/text/richtext" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="text/richtext" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="text/rtf" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/text/rtf" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="text/rtf" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="text/xml" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/text/xml" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="text/xml" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="video/mp4" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/video/mp4" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="video/mp4" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="video/mpeg" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/video/mpeg" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="video/mpeg" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="video/quicktime" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/video/quicktime" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="video/quicktime" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="video/x-flv" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/video/x-flv" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="video/x-flv" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+    <concept dc:identifier="video/x-ms-wmv" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/video/x-ms-wmv" dc:relation="" dc:description="">
+      <preferred>
+        <term dc:title="video/x-ms-wmv" xml:lang="en"/>
+      </preferred>
+      <alternative></alternative>
+    </concept>
+
+</thesaurus>

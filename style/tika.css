@@ -1,0 +1,26 @@
+body {
+	text-align: left;
+	background-color: #fff;
+	padding: 5px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	counter-reset:page;
+}
+
+.page{
+	background-color: #bfdef8;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 10px;
+	font-size: x-small;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.page:before{
+counter-increment:page;
+content:"page " counter(page);
+}
+p{
+	padding: 0 5px;
+	font-size: medium;
+	margin: 5px 0 10px;
+}

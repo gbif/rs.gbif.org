@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://www.eol.org/IPT/vocabulary/datatype" 
+	dc:description="Data types for EOL data objects" 
+	dc:title="Data types EOL Vocabulary" 
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">	
+
+    <concept dc:identifier="http://purl.org/dc/dcmitype/MovingImage" dc:URI="http://purl.org/dc/dcmitype/MovingImage" dc:relation="" dc:description="">
+  <preferred>
+    <term dc:title="Moving Image" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+</concept>
+
+    <concept dc:identifier="http://purl.org/dc/dcmitype/Sound" dc:URI="http://purl.org/dc/dcmitype/Sound" dc:relation="" dc:description="">
+  <preferred>
+    <term dc:title="Sound" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+</concept>
+
+    <concept dc:identifier="http://purl.org/dc/dcmitype/StillImage" dc:URI="http://purl.org/dc/dcmitype/StillImage" dc:relation="" dc:description="">
+  <preferred>
+    <term dc:title="Still Image" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+</concept>
+
+    <concept dc:identifier="http://purl.org/dc/dcmitype/Text" dc:URI="http://purl.org/dc/dcmitype/Text" dc:relation="" dc:description="">
+  <preferred>
+    <term dc:title="Text" xml:lang="en"/>
+  </preferred>
+  <alternative></alternative>
+</concept>
+    
+</thesaurus>

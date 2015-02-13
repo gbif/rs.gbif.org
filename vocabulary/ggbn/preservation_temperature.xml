@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature" 
+	dc:description="The Preservation Temperature Vocabulary is a recommended set of values to use for the preservation temperature in the GGBN Preservation Extension." 
+	dc:title="GGBN Preservation Temperature Vocabulary" 
+	dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature"
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+ <concept dc:identifier="Celsius" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Celsius"
+     dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Celsius"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Celsius" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="Fahrenheit" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Fahrenheit"
+     dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Fahrenheit"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Fahrenheit" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="Kelvin" 
+	 dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Kelvin"
+     dc:relation="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/preservation_temperature/Kelvin"
+     dc:description="">
+  <preferred>
+   <term dc:source="GGBN Data Standard" dc:title="Kelvin" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+  
+</thesaurus>

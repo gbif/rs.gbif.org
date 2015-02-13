@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+ dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status" 
+ dc:description="" 
+ dc:title="Nomenclatural Status GBIF Vocabulary" 
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ 
+ 
+  <concept dc:identifier="abortivum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/abortivum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/abortivum"
+  dc:description="In taxonomy, a name which contravened the Code in operation at the time.">
+  <preferred>
+   <term dc:title="abortivum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. abort." xml:lang="la"  />
+   <term dc:title="nomen abortivum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="alternativum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/alternativum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/alternativum"
+  dc:description="An alternative name given in the original publication before 1953 based on the same type.">
+  <preferred>
+   <term dc:title="alternativum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. altern." xml:lang="la"  />
+   <term dc:title="nomen alternativum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="ambigua" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/ambigua" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/ambigua"
+  dc:description="ambiguous name, one which has been used so long by different authors in different senses that it has become a persistent cause of error and confusion.">
+  <preferred>
+   <term dc:title="ambigua" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. ambig." xml:lang="la"  />
+   <term dc:title="nomen ambigua" xml:lang="la"  />
+   <term dc:title="nomen ambiguum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="available" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/available" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/available"
+  dc:description="A name that is correctly proposed according to the International Code of Zoological Nomenclature. An available name is not necessarily the valid name. ">
+  <preferred>
+   <term dc:title="available" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="combinatio" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/combinatio" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/combinatio"
+  dc:description="The name is a new combination, i.e. a name change involving the epithet of the basionym. ICBN: Name of the original author being kept within parantheses.">
+  <preferred>
+   <term dc:title="combinatio" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="comb. nov." xml:lang="la"  />
+   <term dc:title="combinatio nova" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="confusum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/confusum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/confusum"
+  dc:description="A name rejected if it is based on a type consisting of two or more entirely discordant elements, so that it is difficult to select a satisfactory lectotype.">
+  <preferred>
+   <term dc:title="confusum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. confus." xml:lang="la"  />
+   <term dc:title="nomen confusum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="conservandum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/conservandum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/conservandum"
+  dc:description="a scientific name that enjoys special nomenclatural protection, i.e. a name conserved in respective code. names classed as available and valid by action of the ICZN or ICBN exercising its Plenary Powers . Includes rulings to conserve junior/later synonyms in place of rejected forgotten names (nomen oblitum). Such names are entered on the Official Lists.">
+  <preferred>
+   <term dc:title="conservandum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. cons." xml:lang="la"  />
+   <term dc:title="nomen conservandum" xml:lang="la"  />
+   <term dc:title="nomina conservata" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="conservandumProp" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/conservandumProp" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/conservandumProp"
+  dc:description="">
+  <preferred>
+   <term dc:title="conservandumProp" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. cons. prop." xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="correctum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/correctum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/correctum"
+  dc:description="Corrected names or 'improved' names, available names which are mandatory and allowable emendations of imperfect names (qv) or of taxonomic names higher than family (which are not subject to name form and ending regulations). Do not depend on transfer in taxon rank or assignment. (= an emended name).">
+  <preferred>
+   <term dc:title="correctum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nomen correctum" xml:lang="la"  />
+   <term dc:title="nomina correcta" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="dubimum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubimum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubimum"
+  dc:description="A name of uncertain sense, of doubtful validity. E.g. the name Encephalartos tridentatus (Willdenow) Lehmann (Pugillus 6, 1834) is a nomen dubium which may refer to several species of Encephalartos or Macrozamia. ICZN: doubtful or dubious names, names which are not certainly applicable to any known taxon or for which the evidence is insufficient to permit recognition of the taxon to which they belong. May possess availability conducive to uncertainty and instability. Also 'names under enquiry': NOMEN INQUIRENDUM (NOMINA INQUIRENDA).">
+  <preferred>
+   <term dc:title="dubimum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="uncertain" xml:lang="en"  />
+   <term dc:title="doubtful" xml:lang="en"  />
+   <term dc:title="nom. dub." xml:lang="la"  />
+   <term dc:title="nomen dubimum" xml:lang="la"  />
+   <term dc:title="nomina dubia" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="illegitimum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/illegitimum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/illegitimum"
+  dc:description="nomen illegitimum: illegitimate name">
+  <preferred>
+   <term dc:title="illegitimum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="illegitimate" xml:lang="en"/>
+   <term dc:title="nomen illegitimum" xml:lang="la"  />
+   <term dc:title="nom. illeg." xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="invalidum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/invalidum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/invalidum"
+  dc:description="invalid name">
+  <preferred>
+   <term dc:title="invalidum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="invalid" xml:lang="en"  />
+   <term dc:title="unaccepted" xml:lang="en"  />
+   <term dc:title="nom. inval." xml:lang="la"  />
+   <term dc:title="comb. inval." xml:lang="la"  />
+   <term dc:title="nomen invalidum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="legitimate" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/legitimate" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/legitimate"
+  dc:description="">
+  <preferred>
+   <term dc:title="legitimate" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="negatum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/negatum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/negatum"
+  dc:description="denied names, unavailable names which are incorrect original spellings as defined by the Code. Subset of nom.inval. based only on spellings">
+  <preferred>
+   <term dc:title="negatum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom.neg." xml:lang="la"  />
+   <term dc:title="nomen negatum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="novum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/novum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/novum"
+  dc:description="A scientific name that is created specifically to replace a name which is a junior synonym or homonym. New name designated when a name cannot be used for nomenclaturalpurposes and no type or original material exists. A name established expressly to replace an already established name. A nominal taxon denoted by a new replacement name (nomen novum) has the same name-bearing type as the nominal taxon denoted by the replaced name. ICZN: new name which is expressly proposed as a replacement name for a preoccupied name , automatically takes the same type and type locality. (= a replacement name or substitute name for a preoccupied name). Commonly applied to names proposed to replace junior homonyms. A name proposed as a substitute for a previously published name (ICBN Art. 7.3 and 33.4).">
+  <preferred>
+   <term dc:title="novum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. nov." xml:lang="la"  />
+   <term dc:title="replacement name" xml:lang="en"  />
+   <term dc:title="avowed substitute" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="nudum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/nudum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/nudum"
+  dc:description="name without a description, i.e. a name not (or not yet) published with an adequate description.">
+  <preferred>
+   <term dc:title="nudum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nude" xml:lang="en"  />
+   <term dc:title="nude name" xml:lang="en"  />
+   <term dc:title="nomen nudum" xml:lang="la"  />
+   <term dc:title="nom. nud." xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="nullum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/nullum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/nullum"
+  dc:description="null names, unavailable names which as defined by the Code are non demonstrably intentional changes of an original spelling i.e. a form of incorrect subsequent spelling">
+  <preferred>
+   <term dc:title="nullum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nomina nulla" xml:lang="la"  />
+   <term dc:title="nomen nullum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="oblitum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/oblitum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/oblitum"
+  dc:description="a name that has not been used in the scientific community for more than fifty years after its original proposal. forgotten names, senior synonyms which have remained unused in the literature for many years. Have been treated differently by different editions of the Code, and remain unavailable names.">
+  <preferred>
+   <term dc:title="oblitum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. oblit." xml:lang="la"  />
+   <term dc:title="nomen oblitum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="oppressa" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/oppressa" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/oppressa"
+  dc:description="suppressed publication in respective code">
+  <preferred>
+   <term dc:title="oppressa" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="opus utique oppr." xml:lang="la"  />
+   <term dc:title="operautique oppressa" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="orthographia" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/orthographia" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/orthographia"
+  dc:description="A spelling variation of a full combination (name and authorship) that may or may not be a misspelling.  ">
+  <preferred>
+   <term dc:title="orthographia" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="misspelling" xml:lang="en"  />
+   <term dc:title="orthographia varia" xml:lang="la"  />
+   <term dc:title="incorrect spelling" xml:lang="en"  />
+   <term dc:title="nom. orth" xml:lang="la"  />
+   <term dc:title="orth. var." xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="protectum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/protectum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/protectum"
+  dc:description="protected name applied to a name which has been given precedence over it unused senior synonym or senior homonym relegated to the status of nomen oblitum (see Article 23.9.2).">
+  <preferred>
+   <term dc:title="protectum" xml:lang="la"/>
+  </preferred>
+  <alternative>
+   <term dc:title="protected" xml:lang="en"  />
+   <term dc:title="nomen protectum" xml:lang="la"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="provisorium" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/provisorium" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/provisorium"
+  dc:description="Provisional name, a name proposed in anticipation of the future acceptance of the taxon concerned, or of a particular circumscription, position, or rank of the taxon (ICBN Art. 34.1).">
+  <preferred>
+   <term dc:title="provisorium" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. provis." xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="rejiciendum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendum"
+  dc:description="Rejected in favour of. Inverse of conserved against">
+  <preferred>
+   <term dc:title="rejiciendum" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. rej." xml:lang="en"  />
+   <term dc:title="nomen rejiciendum" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="rejiciendumProp" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumProp" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumProp"
+  dc:description="proposed rejected name. Temporary status until the next botanical congress decides about the proposal.">
+  <preferred>
+   <term dc:title="rejiciendumProp" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. rej. prop." xml:lang="en"  />
+   <term dc:title="nomen rejiciendum propositum" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="rejiciendumUtique" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumUtique" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumUtique"
+  dc:description="Name rejected outright, i. e. without proposing another name to be conserved in favor of this name (nomen utique rejiciendum). This status applies to explicitly listed protonym names as well as to any combinations based on the protonym. See ICBN (Art. 56.1, Appendix V) because otherwise it would cause a disadvantageous nomenclatural change.">
+  <preferred>
+   <term dc:title="rejiciendumUtique" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. utique rej." xml:lang="en"  />
+   <term dc:title="nomen utique rejiciendum" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="rejiciendumUtiqueProp" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumUtiqueProp" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/rejiciendumUtiqueProp"
+  dc:description="proposed rejected name on the basis of appendix V of ICBN">
+  <preferred>
+   <term dc:title="rejiciendumUtiqueProp" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. utique rej. prop." xml:lang="en"  />
+   <term dc:title="nomen utique rejiciendum propositum" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="subnudum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/subnudum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/subnudum"
+  dc:description="">
+  <preferred>
+   <term dc:title="subnudum" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. subnud." xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="superfluum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/superfluum" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/superfluum"
+  dc:description="name superfluous when published, an unnecessary substitute name">
+  <preferred>
+   <term dc:title="superfluum" xml:lang="en"/>
+  </preferred>
+  <alternative>
+   <term dc:title="nom. superfl." xml:lang="en"  />
+   <term dc:title="nomen superfluum" xml:lang="en"  />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="valid" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/valid" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/valid"
+  dc:description="The name is correctly published according to the rules of nomenclature of the ICBN">
+  <preferred>
+   <term dc:title="valid" xml:lang="en"/>
+  </preferred>
+  <alternative>
+  </alternative>
+ </concept>
+
+ 
+</thesaurus>

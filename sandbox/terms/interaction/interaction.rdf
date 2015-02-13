@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Discussion document: version 2012-03-21. Not for production!
+ Dag Endresen, Global Biodiversity Information Facility (GBIF).
+
+ NOTE: the species interaction vocabulary (spi) namespace is temporary developed in 
+ the sandbox of the GBIF Resources Registry (and at the GBIF Vocabulary Server), 
+ and will be moved to a more stable namespace before it is released.
+
+   Possibly: http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction# (?)
+   Possibly: http://rs.gbif.org/terms/tdwg/interaction#
+   Possibly: http://purl.org/TaxonOccurrenceInteraction#
+   Possibly: http://purl.org/tdwg/interaction#
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf         "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs        "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl         "http://www.w3.org/2002/07/owl#">
+  <!ENTITY skos        "http://www.w3.org/2004/02/skos/core#">
+  <!ENTITY foaf        "http://xmlns.com/foaf/0.1/">
+  <!ENTITY vs          "http://www.w3.org/2003/06/sw-vocab-status/ns#">
+  <!ENTITY vann        "http://purl.org/vocab/vann/">
+  <!ENTITY dcterms     "http://purl.org/dc/terms/">
+  <!ENTITY dwc         "http://rs.tdwg.org/dwc/terms/">
+  <!ENTITY toi         "http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction#">
+  <!ENTITY spi         "http://rs.gbif.org/sandbox/terms/tdwg/interaction#">
+  <!ENTITY spiBase    "http://rs.gbif.org/sandbox/terms/tdwg/interaction">
+]>
+
+<rdf:RDF
+  xmlns:rdf="&rdf;"
+  xmlns:rdfs="&rdfs;"
+  xmlns:owl="&owl;"
+  xmlns:skos="&skos;"
+  xmlns:foaf="&foaf;"
+  xmlns:vs="&vs;"
+  xmlns:vann="&vann;"
+  xmlns:dcterms="&dcterms;"
+  xmlns:dwc="&dwc;"
+  xmlns:toi="&toi;"
+  xmlns:spi="&spi;"
+  xml:base="&spiBase;"
+>
+
+<!-- 
+Draft version created 21 March 2012.
+Dag Endresen (gbif.org), Jogeir Stokland (nhm.uio.no), Antonio Mauro Saraiva (usp.br).
+
+Controlled values for Controlled Value Vocabularies are recommended by the VoMaG task 
+group (http://community.gbif.org/pg/groups/21382/) to be RE-USED from a SKOS RDF resource.
+The SKOS RDF resource is recommended to provide the definition of the concepts designed 
+for maximal potential to be re-used. A new draft SKOS RDF resource for species 
+interactions was developed and made available at 
+"http://rs.gbif.org/sandbox/terms/interaction.rdf". This new and draft SKOS vocabulary
+provides the definitions for the concepts re-used here in a controlled value vocabulary
+for species interactions. This model allows for multiple controlled value vocabularies 
+to re-use concepts from the same SKOS vocabularies. And each Controlled Value Vocabulary 
+may re-use concepts defined by different SKOS vocabularies.
+
+This SKOS RDF vocabulary is based on the TDWG LSID Ontology model for taxon occurrence 
+interactions, developed by Kevin Richards in 2007 (Richards, 2007) and aimed at describing 
+the interactions between TaxonOccurrences, observations, specimens etc. Eg the Interaction 
+class can be expressed a host/parasite relation between two TaxonOccurrences (Richards, 
+2007). The TDWG LSID Ontology is again based on earlier developments from 2007 (De 
+Giovanni, Cartolano, Giannini, Saraiva and Pizzigatti, 2007) supported in part by the 
+Pollinators Thematic Network of the Inter-American Biodiversity Information Network 
+(IABIN) and by the Pollination Information Management System of the Food and Agriculture 
+Organization of the United Nations (FAO).
+
+This current update of the list of species interaction concepts was initiated in March 
+2012 to include concepts to describe species interactions for saproxylic organisms living 
+on decaying wood. The new draft controlled value vocabulary for species interactions is 
+available at: "http://vocabularies.gbif.org/vocabularies/Interaction/". 
+See also the discussion page at the GBIF Community Site at: 
+"http://community.gbif.org/pg/pages/view/22551/species-interactions" and the Wiki page at
+the KOS Vocabulary Wiki: "http://kos.gbif.org/wiki/Interactions#Species_interactions".
+
+References:
+* De Giovanni, Renato; Etienne Cartolano; Tereza Giannini; Antonio Saraiva; and Pedro 
+Pizzigatti (2007). Interaction Extension. TDWG Biodiversity Information Standards. 
+Published online 16 May 2007. Available at 
+"http://wiki.tdwg.org/twiki/bin/view/DarwinCore/InteractionExtension".
+
+* Richards, Kevin (2007). TDWG Interaction LSID Ontology. TDWG Biodiversity Information 
+Standards. Published online 08 July 2007. Available at 
+"http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction.rdf".
+
+Notice, is this an appropriate normative URI for this vocabulary?
+ "http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"
+Perhaps (?) establish a new and normative SKOS resource at:
+ "http://rs.gbif.org/terms/tdwg/interaction.rdf"
+-->
+
+  <skos:ConceptScheme rdf:about="&spiBase;">
+    <rdfs:label xml:lang="en">Taxon occurrence interactions</rdfs:label>
+    <rdfs:comment xml:lang="en">This SKOS vocabulary is based the TDWG LSID Ontology model for taxon occurrence interactions, developed by Kevin Richards in 2009 and aimed at describing the interactions between TaxonOccurrences, observations, specimens etc. Eg the Interaction class can be expressed a host/parasite relation between two TaxonOccurrences. The TDWG LSID Ontology is again based on earlier developments from 2007 supported in part by the Pollinators Thematic Network of the Inter-American Biodiversity Information Network (IABIN) and by the Pollination Information Management System of the Food and Agriculture Organization of the United Nations (FAO).</rdfs:comment>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="http://rs.gbif.org/sandbox/terms/tdwg/interaction"/>
+    <owl:versionInfo xml:lang="en">Draft discussion version, released 21 Mar 2012</owl:versionInfo>
+    <dcterms:creator rdf:resource="&spiBase;/institute#GBIF"/>
+    <dcterms:creator rdf:resource="&spiBase;/person#DagEndresen"/>
+    <dcterms:contributor rdf:resource="&spiBase;/institute#TDWG"/>
+    <dcterms:contributor rdf:resource="&spiBase;/person#JogeirStokland"/>
+    <dcterms:contributor rdf:resource="&spiBase;/person#AntonioSaraiva"/>
+    <dcterms:contributor rdf:resource="&spiBase;/person#KevinRichards"/>
+    <dcterms:publisher rdf:resource="&spiBase;/institute#GBIF"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dcterms:rights xml:lang="en">Creative Commons Public Domain license; see http://creativecommons.org/publicdomain/zero/1.0/. You are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), all without asking permissions. If you wish to provide attribution you may include the statement: "This work is based on the TDWG Species Interaction Vocabulary".</dcterms:rights>
+    <dcterms:accessRights>public</dcterms:accessRights>
+    <vann:preferredNamespaceUri>&spi;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>spi</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction"/>
+    <skos:closeMatch rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"/>
+    <skos:relatedMatch rdf:resource="&dwc;relationshipOfResource"/>
+    <skos:scopeNote>This list of concepts provides a controlled value vocabulary intended for use with the Darwin Core term relationshipOfResource (http://rs.tdwg.org/dwc/terms/relationshipOfResource).</skos:scopeNote>
+    <dcterms:bibliographicCitation>Richards, Kevin (2007). TDWG Interaction Ontology. TDWG Biodiversity Information Standards. Published online 08 July 2007. Available at "http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction.rdf".</dcterms:bibliographicCitation>
+    <skos:editorialNote xml:lang="en">Notice that the base URI of the Species Interaction Vocabulary is "http://rs.gbif.org/terms/tdwg/Interaction#". Please make sure that you are only using element identifiers in this namespace, e.g. "http://rs.gbif.org/terms/tdwg/Interaction#CONCEPT. There may be copies of the ontology file on the Web which can be retrieved from other locations, but those locations should not be used as the basis of identifiers. This is the first draft vocabulary scheduled to be deprecated and replaced.</skos:editorialNote>
+  </skos:ConceptScheme>
+
+
+<!-- ### Collection of Terms ###
+ Labelled collections can be used to group the terms under this sub-heading.
+
+  // Each group of terms (skos:Collection) could use the following properties.
+  @rdf:about 			(provides the identifier for the group of terms) [@rdf:ID]
+  rdfs:label 			(human readable label to be used for the group of terms)
+  rdfs:comment			(description of the group of terms)
+  skos:relatedMatch		(when the grouping concept has a related match to another concept [in another conceptScheme])
+  skos:exactMatch		(when the grouping concept has an exact match to another concept [in another conceptScheme])
+  skos:closeMatch		(when the grouping concept has a close match to another concept [in another conceptScheme])
+  skos:narrowMatch		(when the grouping concept has a narower hierarchal match to another concept [in another conceptScheme])
+  skos:related			(when the grouping concept has a related match to another concept)
+  skos:narrower			(when the grouping concept has a narrower hierarchal match to another concept)
+  skos:member			(list terms to be organized in each group) [on term here using rdf:isPartOf]
+ -->
+
+  <skos:Collection rdf:about="&spi;TaxonOccurrenceOntology">
+    <rdfs:label xml:lang="en">TDWG Interaction Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for concepts imported from the TDWG Interaction Ontology.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:ResourceRelationship"/>
+    <skos:member rdf:resource="&toi;HasHost"/>
+    <skos:member rdf:resource="&toi;HostOf"/>
+    <skos:member rdf:resource="&toi;PreysUpon"/>
+    <skos:member rdf:resource="&toi;PreyedUponBy"/>
+    <skos:member rdf:resource="&toi;ParasiteOf"/>
+    <skos:member rdf:resource="&toi;PathogenOf"/>
+    <skos:member rdf:resource="&toi;InfectedBy"/>
+    <skos:member rdf:resource="&toi;NestedIn"/>
+    <skos:member rdf:resource="&toi;UsedAsNestBy"/>
+    <skos:member rdf:resource="&toi;VisitedFlowerOf"/>
+    <skos:member rdf:resource="&toi;FlowerVisitedBy"/>
+    <skos:member rdf:resource="&toi;DispersedSeedOf"/>
+    <skos:member rdf:resource="&toi;SeedDispersedBy"/>
+    <skos:member rdf:resource="&toi;ExtractsResinFrom"/>
+    <skos:member rdf:resource="&toi;ResinExtractedBy"/>
+  </skos:Collection>
+
+  <skos:Collection rdf:about="&spi;SaproxylicInteraction">
+    <rdfs:label xml:lang="en">Saproxylic Interactions</rdfs:label>
+    <rdfs:comment xml:lang="en">Category for saproxylic interaction concepts.</rdfs:comment>
+    <skos:narrowMatch rdf:resource="dwc:ResourceRelationship"/>
+    <skos:member rdf:resource="&spi;SugarFungus"/>
+    <skos:member rdf:resource="&spi;WoodDecayer"/>
+    <skos:member rdf:resource="&spi;WoodDecayerBrownRot"/>
+    <skos:member rdf:resource="&spi;WoodDecayerWhiteRot"/>
+    <skos:member rdf:resource="&spi;WoodDecayerSoftRot"/>
+    <skos:member rdf:resource="&spi;WoodDecayerResidual"/>
+    <skos:member rdf:resource="&spi;OccursAsMycoparasite"/>
+    <skos:member rdf:resource="&spi;OccursAsMycodecomposer"/>
+    <skos:member rdf:resource="&spi;Detrivore"/>
+    <skos:member rdf:resource="&spi;OccursAsMicrobivore"/>
+    <skos:member rdf:resource="&spi;OccursAsAmbrosiaConsumer"/>
+    <skos:member rdf:resource="&spi;OccursAsFungivore"/>
+    <skos:member rdf:resource="&spi;OccursAsScavenger"/>
+    <skos:member rdf:resource="&spi;OccursAsOmnivor"/>
+    <skos:member rdf:resource="&spi;OccursAsPredator"/>
+    <skos:member rdf:resource="&spi;OccursAsParasite"/>
+    <skos:member rdf:resource="&spi;OccursAsParasitoid"/>
+    <skos:member rdf:resource="&spi;OccursAsHyperparasitoid"/>
+    <skos:member rdf:resource="&spi;OccursAsCleptoparasite"/>
+    <skos:member rdf:resource="&spi;AssociatedSpecies"/>
+    <skos:member rdf:resource="&spi;Epixylic"/>
+    <skos:member rdf:resource="&spi;WoodNester"/>
+  </skos:Collection>
+
+
+<!-- ### INDIVIDUAL CONCEPTS ###
+ Some vocabularies simply use "rdf:Description" for all of the RDF "molecules"... 
+ SKOS:Concept seems appropriate because SKOS is designed to express thesauri and terminology.
+ SKOS was designed with re-usability in mind, the terms has minimal semantic restrictions declared.
+ And minimum restrictions makes for maximum RE-USABILITY - and the rationale for using SKOS.
+
+  // Each concept (skos:Concept) is described by the following properties.
+  @rdf:about 			(provides the identifier for the concept) [@rdf:ID]
+  skos:prefLabel 		(human readable name or label)
+  skos:altLabel 		(for synonym labels)
+  skos:definition 		(brief definition)
+  skos:note 			(notes on how to use for each concept)
+  skos:scopeNote 		(what the concept does and does not cover)
+  rdfs:seeAlso  		(link to discussion page, link to other documentation resources)
+  dcterms:issued 		(date when the concept was first published)
+  dcterms:modified 		(modification date)
+  vann:termGroup		(used for organizing terms into groups, collection or category of terms)
+  skos:inScheme			(terms belong to an identifiable vocabulary of terms)    
+  rdfs:isDefinedBy 		(terms are defined by an identifiable vocabulary or resource)
+  vs:term_status 		(all terms here are still considered "unstable", and under development)
+
+  // Cross-walk between terms and concepts in other concept schemes.
+  skos:relatedMatch		(when the term has a related match to another concept [in another conceptScheme])
+  skos:exactMatch		(when the term has an exact match to another concept [in another conceptScheme])
+  skos:closeMatch		(when the term has a close match to another concept [in another conceptScheme])
+  skos:narrowMatch		(when the term has a narower hierarchal match to another concept [in another conceptScheme])
+  skos:broadMatch       (when the term has a broader hierarchal match to another concept [in another conceptScheme])
+  skos:related			(when the term has a related match to another concept [in the same conceptScheme])
+  skos:narrower			(when the term has a narrower hierarchal match to another concept)
+  skos:broader			(when the term has a broader hierarchal match to another concept)
+
+  // Potentially useful properties.
+  dcterms:source 		(link to the source description)
+  dcterms:isReplacedBy 	(when a term is deprecated and replaced)
+  dcterms:replaces 		(can be used if the TERM replaces a previous TERM)
+  dcterms:isPartOf 		(could perhaps be used here for organizing terms into groups, collection or category of terms [?])
+  rdf:type 				(type is here implicit when using skos:Concept for the "RDF molecules")
+
+  dcterms:hasVersion 	(terms can be versioned individually)
+  dcterms:identifier 	(we could also provide other identifiers than the URI here)
+  rdfs:label 			(human readable name for the term, same as skos:prefLabel)
+  rdfs:domain			(defines the resources used as subjects when a concept is used as an annotation property)
+  rdfs:range			(defines the resources used as objects when a concept is used as an annotation property)
+  rdfs:subPropertyOf 	(when the term can be seen as instance of a broader vocabulary term [Property])
+  rdfs:subClassOf 		(when the term can be seen as instance of a broader vocabulary term [Class])
+  owl:equivalentProperty
+-->
+
+
+ <!-- Interaction terms (imported from the TDWG Interaction Ontology) -->
+
+  <skos:Concept rdf:about="&spi;HasHost">
+    <skos:prefLabel xml:lang="en">has host</skos:prefLabel>
+    <skos:definition xml:lang="en">Specifies a host organism for the organism.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/HasHost"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;HasHost"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;HostOf">
+    <skos:prefLabel xml:lang="en">is host of</skos:prefLabel>
+    <skos:definition xml:lang="en">Has occurrred with the host organism defined.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/HostOf"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;HostOf"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;PreysUpon">
+    <skos:prefLabel xml:lang="en">preys upon</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/PreysUpon"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;PreysUpon"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;PreyedUponBy">
+    <skos:prefLabel xml:lang="en">preyed upon by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/PreyedUponBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;PreyedUponBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;ParasiteOf">
+    <skos:prefLabel xml:lang="en">parasite of</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/ParasiteOf"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;ParasiteOf"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;PathogenOf">
+    <skos:prefLabel xml:lang="en">pathogen of</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/PathogenOf"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;PathogenOf"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;InfectedBy">
+    <skos:prefLabel xml:lang="en">infected by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/InfectedBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;InfectedBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;NestedIn">
+    <skos:prefLabel xml:lang="en">nested in</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/NestedIn"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;NestedIn"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;UsedAsNestBy">
+    <skos:prefLabel xml:lang="en">used as nest by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/UsedAsNestBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;UsedAsNestBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;VisitedFlowerOf">
+    <skos:prefLabel xml:lang="en">visited flower of</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/VisitedFlowerOf"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;VisitedFlowerOf"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;FlowerVisitedBy">
+    <skos:prefLabel xml:lang="en">flower visited by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/FlowerVisitedBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;FlowerVisitedBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;DispesedSeedOf">
+    <skos:prefLabel xml:lang="en">dispersed seed of</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/DispersedSeedOf"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;DispersedSeedOf"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;SeedDispersedBy">
+    <skos:prefLabel xml:lang="en">seed dispersed by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/SeedDispersedBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;SeedDispersedBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;ExtractsResinFrom">
+    <skos:prefLabel xml:lang="en">extracts resin from</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/ExtractsResinFrom"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;ExtractsResinFrom"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;ResinExtractedBy">
+    <skos:prefLabel xml:lang="en">resin extracted by</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/ResinExtractedBy"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&toi;"/>
+    <skos:exactMatch rdf:resource="&toi;ResinExtractedBy"/>
+    <vs:term_status>unstable</vs:term_status>
+  </skos:Concept>
+
+
+
+ <!-- PROPOSED NEW CONCEPTS for Saproxylic taxonOccurrence interactions -->
+ <!-- NOTICE that these terms are in early DRAFT testing status -->
+ <!-- NOTICE not for production! -->
+
+  <skos:Concept rdf:about="&spi;SugarFungus">
+    <skos:prefLabel xml:lang="en">sugar fungus</skos:prefLabel>
+    <skos:definition xml:lang="en">Fungus that live on sugars and carbon compounds simpler than cellulose in the initial decomposition stage.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/Interaction/SugarFungus"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodDecayer">
+    <skos:prefLabel xml:lang="en">Wood decayer</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, unknown which category it belongs to.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayer"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodDecayerBrownRot">
+    <skos:prefLabel xml:lang="en">Wood decayer, brown rot</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, brown rot category.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerBrownRot"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodDecayerWhiteRot">
+    <skos:prefLabel xml:lang="en">Wood decayer, white rot</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, white rot category.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerWhiteRot"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodDecayerSoftRot">
+    <skos:prefLabel xml:lang="en">Wood decayer, soft rot</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, soft rot category.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerSoftRot"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodDecayerResidual">
+    <skos:prefLabel xml:lang="en">Wood decayer, residual</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood decayer fungus with ability to decompose cellulose and/or lignin, or smaller fragments thereof, residual category.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodDecayerResidual"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsMycoparasite">
+    <skos:prefLabel xml:lang="en">Occurs as mycoparasite</skos:prefLabel>
+    <skos:definition xml:lang="en">Fungus that is a parasite on a live wood decaying fungus.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMycoparasite"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsMycodecomposer">
+    <skos:prefLabel xml:lang="en">Occurs as mycodecomposer</skos:prefLabel>
+    <skos:definition xml:lang="en">Fungus that decomposes a dead wood decaying fungus.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMycodecomposer"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodBoringDetrivore">
+    <skos:prefLabel xml:lang="en">Wood boring detrivore</skos:prefLabel>
+    <skos:definition xml:lang="en">Make distinct galleries in living or dead bark or wood, with or without fungus mycelium.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodBoringDetrivore"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;Detrivore">
+    <skos:prefLabel xml:lang="en">Detrivore</skos:prefLabel>
+    <skos:definition xml:lang="en">Feeds on woody material (or sap) with or without fungus mycelium. Does not make distinct galleries.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/Detrivore"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsMicrobivore">
+    <skos:prefLabel xml:lang="en">Occurs as microbivore</skos:prefLabel>
+    <skos:definition xml:lang="en">Filter feeders that feed on bacteria and other food particles dissolved in wet media (typically sap).</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsMicrobivore"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsAmbrosiaConsumer">
+    <skos:prefLabel xml:lang="en">Occurs as ambrosia consumer</skos:prefLabel>
+    <skos:definition xml:lang="en">Wood boring invertebrate feeding on ambrosia fungus.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsAmbrosiaConsumer"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsFungivore">
+    <skos:prefLabel xml:lang="en">Occurs as fungivore</skos:prefLabel>
+    <skos:definition xml:lang="en">Invertebrate feeding on live or dead wood-decaying fungi. Either some or all parts of the fungus (mycelium, fruit body or spores).</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsFungivore"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsScavenger">
+    <skos:prefLabel xml:lang="en">Occurs as scavenger</skos:prefLabel>
+    <skos:definition xml:lang="en">Diet is mix of woody debris, mycelium and dead animals, some also feed on bacteria etc. in decaying matter. Includes insects in hollow trees and bird nests.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsScavenger"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsOmnivor">
+    <skos:prefLabel xml:lang="en">Occurs as omnivor</skos:prefLabel>
+    <skos:definition xml:lang="en">A detrivore or fungivore that also predates (occasionally) on live animals, typically larvae/pupae.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsOmnivor"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsPredator">
+    <skos:prefLabel xml:lang="en">Occurs as predator</skos:prefLabel>
+    <skos:definition xml:lang="en">Predator, typically on insect larvae but also on nematodes (predatory insects and woodpeckers, ant-eaters, etc.; even predatory fungi).</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsPredator"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsParasite">
+    <skos:prefLabel xml:lang="en">Occurs as parasite</skos:prefLabel>
+    <skos:definition xml:lang="en">Parasite on other saproxylic invertebrates.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsParasite"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsParasitoid">
+    <skos:prefLabel xml:lang="en">Occurs as parasitoid</skos:prefLabel>
+    <skos:definition xml:lang="en">Parasitoid on other saproxylic invertebrates.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsParasitoid"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsHyperparasitoid">
+    <skos:prefLabel xml:lang="en">Occurs as hyperparasitoid</skos:prefLabel>
+    <skos:definition xml:lang="en">Parasitoid on other parasitoids.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsHyperparasitoid"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;OccursAsCleptoparasite">
+    <skos:prefLabel xml:lang="en">Occurs as cleptoparasite</skos:prefLabel>
+    <skos:definition xml:lang="en">Cleptoparasite on endoxylic species.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/OccursAsCleptoparasite"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;AssociatedSpecies">
+    <skos:prefLabel xml:lang="en">Associated species</skos:prefLabel>
+    <skos:definition xml:lang="en">Lives in dead wood, but functional role is unknown or unclear.</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/AssociatedSpecies"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;Epixylic">
+    <skos:prefLabel xml:lang="en">Epixylic</skos:prefLabel>
+    <skos:definition xml:lang="en">Grows on surface of dead wood or bark, but is not a wood decomposer (lichens, mosses, mycorrhiza fungi).</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/Epixylic"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="&spi;WoodNester">
+    <skos:prefLabel xml:lang="en">Wood nester</skos:prefLabel>
+    <skos:definition xml:lang="en">Nest sites inside dead wood, feeding disconnected from wood (many birds and insects).</skos:definition>
+    <rdfs:seeAlso rdf:resource="http://vocabularies.gbif.org/vocabularies/Interaction/WoodNester"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+  </skos:Concept>
+
+
+<!-- ### Agents, Organization and Person ###
+ Providing information about the organization and the persons who contributed
+ to creating or maintaining the Vocabulary of Terms is a good practice.
+ When using dcterms:creator, :contributor, :publisher etc these have rdfs:range 
+ dcterms:Agent and will therefore specify the values to be non-literal resources.
+
+ foaf:organization and foaf:Person entities are described by:
+  foaf:name					(full name, institute or person)
+  foaf:nickname				(reporting institute acronyms here)
+  dcterms:identifier		(eg. from the Biodiversity Collections Index [BCI])
+  @rdf:datatype				(datatype property, BCI-ID)
+  foaf:homepage				(institute home page, www)
+  foaf:member				(list persons affiliated)
+  foaf:mbox					(mailbox)
+  foaf:mbox_sha1sum			(md5 hash sum based on the mailbox [md5 -s email])
+ -->
+
+  <foaf:Organization rdf:about="&spiBase;/institute#GBIF">
+    <foaf:name>Global Biodiversity Information Facility</foaf:name>
+    <foaf:nickname>GBIF</foaf:nickname>
+    <foaf:homepage rdf:resource="http://www.gbif.org/"/>
+    <foaf:member rdf:resource="&spiBase;/person#DagEndresen"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&spiBase;/institute#TDWG">
+    <foaf:name>Biodiversity Information Standards</foaf:name>
+    <foaf:nickname>TDWG</foaf:nickname>
+    <foaf:homepage rdf:resource="http://www.tdwg.org/"/>
+    <foaf:member rdf:resource="&spiBase;/person#KevinRichards"/>
+    <foaf:member rdf:resource="&spiBase;/person#DagEndresen"/>
+    <foaf:member rdf:resource="&spiBase;/person#AntonioSaraiva"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&spiBase;/institute#NHM_UIO">
+    <foaf:name>Natural History Museum in Oslo</foaf:name>
+    <foaf:nickname>NHM-UIO</foaf:nickname>
+    <dcterms:identifier>http://biocol.org/urn:lsid:biocol.org:col:34650</dcterms:identifier>
+    <foaf:homepage rdf:resource="http://www.nhm.uio.no/english/"/>
+    <foaf:member rdf:resource="&spiBase;/person#JogeirStokland"/>
+  </foaf:Organization>
+
+  <foaf:Organization rdf:about="&spiBase;/institute#USP">
+    <foaf:name>University of Sao Paulo</foaf:name>
+    <foaf:nickname>USP</foaf:nickname>
+    <foaf:homepage rdf:resource="http://www2.pcs.usp.br/"/>
+    <foaf:member rdf:resource="&spiBase;/person#AntonioSaraiva"/>
+  </foaf:Organization>
+
+  <foaf:Person rdf:about="&spiBase;/person#DagEndresen">
+    <foaf:name>Dag Endresen</foaf:name>
+    <foaf:homepage rdf:resource="http://community.gbif.org/pg/profile/dag.endresen"/>
+    <foaf:mbox rdf:resource="mailto:dag.endresen@gmail.com"/>
+    <foaf:mbox_sha1sum rdf:resource="a8e8e5b95a36957148199894431c3ab2"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&spiBase;/person#JogeirStokland">
+    <foaf:name>Jogeir Stokland</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="e38ef85d87fe7e561d4cf80c932d53ad"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&spiBase;/person#AntonioSaraiva">
+    <foaf:name>Antonio Mauro Saraiva</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="a44721f0a511fd3220d2080ee3ce1a0d"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="&spiBase;/person#KevinRichards">
+    <foaf:name>Kevin Richards</foaf:name>
+    <foaf:mbox_sha1sum rdf:resource="5e6ffc74a38184a3ac7494fe6f511065"/>
+  </foaf:Person>
+
+
+<!-- ### Datatype declaration ###
+ There are different types of identifiers and declaring a datatype to keep them appart
+ might perhaps be useful?
+ Example how to declare datatypes for BCI identifiers (not implemented yet):
+  <dcterms:identifier rdf:datatype="&spi;bioColID">http://biocol.org/urn:lsid:biocol.org:col:35293</dcterms:identifier>
+-->
+
+  <rdfs:Datatype rdf:about="&spi;bioColID">
+    <skos:prefLabel xml:lang="en">Biodiversity Collections Index ID</skos:prefLabel>
+    <skos:definition xml:lang="en">An index of biodiversity collections, providing persistent identifiers based on LSID URIs.</skos:definition>
+    <skos:example xml:lang="en">http://biocol.org/urn:lsid:biocol.org:col:34650</skos:example>
+    <skos:note xml:lang="en">The Biodiversity Collections Index is available at "http://biocol.org/"</skos:note>
+    <foaf:homepage rdf:resource="http://biocol.org/"/>
+    <dcterms:issued>2012-03-21</dcterms:issued>
+    <dcterms:modified>2012-03-22</dcterms:modified>
+    <rdfs:isDefinedBy rdf:resource="&spi;"/>
+    <skos:inScheme rdf:resource="&spi;"/>
+    <vs:term_status>testing</vs:term_status>
+    <skos:closeMatch rdf:resource="dcterms:identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdfs:Datatype>
+
+</rdf:RDF>
