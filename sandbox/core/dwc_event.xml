@@ -53,11 +53,6 @@
 		dc:description='A URL to a related resource that is referenced, cited, or otherwise pointed to by the described resource. Often another webpage showing the same, but richer resource'
 		examples='http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&amp;search_value=552479'
 		type="uri" required='false' />
-	<property group="Record Level" name='projectID' namespace='http://rs.tdwg.org/dwc/terms/'
-		qualName='http://rs.tdwg.org/dwc/terms/projectID' dc:relation=''
-		dc:description='An identifier for a project with which the data is associated; use to link related data sets, e.g., a monitoring series; may be a global unique identifier or an identifier specific to the series.'
-		examples=''
-		required='false' />
 	<property group="Record Level" name='datasetID'
 		namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID'
 		dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID'
@@ -102,6 +97,11 @@
 	<property group="Event" name='eventID' namespace='http://rs.tdwg.org/dwc/terms/'
 		qualName='http://rs.tdwg.org/dwc/terms/eventID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#eventID'
 		dc:description='An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.'
+		examples='' required='false' />
+	<property group="Event" name='parentEventID' namespace='http://rs.tdwg.org/dwc/terms/'
+		qualName='http://rs.tdwg.org/dwc/terms/parentEventID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#parentEventID'
+		dc:description='An event identifier for the super event which is composed of one or more sub-sampling events. The value must refer to an existing eventID. If the identifier is local it must exist within the given dataset. 
+Example: "A1" identifying the main Whittaker Plot in nested samples, each with their own eventID (e.g., "A1:1", "A1:2").'
 		examples='' required='false' />
 	<property group="Event" name='samplingProtocol' namespace='http://rs.tdwg.org/dwc/terms/'
 		qualName='http://rs.tdwg.org/dwc/terms/samplingProtocol' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#samplingProtocol'
@@ -173,15 +173,15 @@
 		dc:description='Comments or notes about the Event.'
 		examples='"after the recent rains the river is nearly at flood stage"'
 		required='false' />
-        <property group="Event" name='sampleSize' namespace='http://rs.tdwg.org/dwc/terms/'
+	<property group="Event" name='sampleSize' namespace='http://rs.tdwg.org/dwc/terms/'
 		qualName='http://rs.tdwg.org/dwc/terms/sampleSize' dc:relation=''
-		dc:description=' a numeric value for the time duration, length, area or volume involved in the sampling.'
-		examples=''
+		dc:description='A numeric value for the time duration, length, area or volume involved in the sampling event. The terms sampleSize and sampleSizeUnit are required to be used as a pair. The value of sampleSize is a number. Example: "5" for the value part of 5m.'
+		examples='5'
 		required='false' />
-        <property group="Event" name='sampleSizeUnit' namespace='http://rs.tdwg.org/dwc/terms/'
-        	thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/unit_of_measurement.xml" 
+	<property group="Event" name='sampleSizeUnit' namespace='http://rs.tdwg.org/dwc/terms/'
+		thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/unit_of_measurement.xml" 
 		qualName='http://rs.tdwg.org/dwc/terms/sampleSizeUnit' dc:relation=''
-		dc:description='the unit of measurement used for sampling.'
+		dc:description='The unit of measurement used in the sampling event. The terms sampleSize and sampleSizeUnit are required to be used as a pair, e.g., "5 metre". Example values of sampleSizeUnit include "minute", "hour", "day", "metre", "square metre", "cubic metre". Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units or other non-SI units accepted for use within the SI (e.g. minute, hour, day, litre).'
 		examples='minute, hour, day, metre, metre2, metre3'
 		required='false' />
 

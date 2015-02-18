@@ -23,10 +23,6 @@
     <property group="Record Level" name='institutionID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/institutionID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#institutionID' dc:description='An identifier for the institution having custody of the object(s) or information referred to in the record.' examples='' required='false'/>
     <property group="Record Level" name='collectionID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/collectionID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#collectionID' dc:description='An identifier for the collection or dataset from which the record was derived. For physical specimens, the recommended best practice is to use the identifier in a collections registry such as the Biodiversity Collections Index (http://www.biodiversitycollectionsindex.org/).' examples='"urn:lsid:biocol.org:col:34818"' required='false'/>
     <property group="Record Level" name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.' examples='' required='false'/>
-    <property group="Record Level" name='projectID' namespace='http://rs.tdwg.org/dwc/terms/'
-	qualName='http://rs.tdwg.org/dwc/terms/projectID' dc:relation=''
-	dc:description='An identifier for a project with which the data is associated; use to link related data sets, e.g., a monitoring series; may be a global unique identifier or an identifier specific to the series.'
-	examples='' required='false' />
     <property group="Record Level" name='institutionCode' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/institutionCode' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#institutionCode' dc:description='The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.' examples='"MVZ", "FMNH", "AKN-CLO", "University of California Museum of Paleontology (UCMP)"' required='false'/>
     <property group="Record Level" name='collectionCode' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/collectionCode' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#collectionCode' dc:description='The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.' examples='"Mammals", "Hildebrandt", "eBird"' required='false'/>
     <property group="Record Level" name='datasetName' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetName' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetName' dc:description='The name identifying the data set from which the record was derived.' examples='"Grinnell Resurvey Mammals", "Lacey Ctenomys Recaptures"' required='false'/>
@@ -66,9 +62,24 @@
     <property group="Occurrence" name='associatedSequences' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/associatedSequences' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#associatedSequences' dc:description='A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.' examples='"GenBank: U34853.1"' required='false'/>
     <property group="Occurrence" name='associatedTaxa' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/associatedTaxa' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#associatedTaxa' dc:description='A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.' examples='"host: Quercus alba"' required='false'/>
     <property group="Occurrence" name='occurrenceDetails' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/occurrenceDetails' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#occurrenceDetails' dc:description='This term is deprecated in favor over the new dcterm:references. Previously this term was used as: A reference (publication, URI) to the most detailed information available about the Occurrence.' examples='' required='false'/>
+    <property group="Occurrence" name='organismQuantity' namespace='http://rs.tdwg.org/dwc/terms/' 
+		qualName='http://rs.tdwg.org/dwc/terms/organismQuantity' 
+		dc:description='A number or enumeration value for the quantity of organisms. Use with organismQuantityType to indicate the type of entity that is being quantified.' 
+		examples='12; 31%; r' required='false'/>
+    <property group="Occurrence" name='organismQuantityType' namespace='http://rs.tdwg.org/dwc/terms/' 
+		thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/quantity_type.xml" 
+		qualName='http://rs.tdwg.org/dwc/terms/organismQuantityType' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#organismQuantityType' 
+		dc:description='The type of entity to which the number or enumeration value reported for the quantity of organisms in organismQuantity refers.' 
+		examples='percentage of species, percentage of biovolume, percentage of biomass, individuals/l, individuals/m^2, individuals/m^3, BraunBlanquetScale' 
+		required='false'/>
     
     <!-- Event -->
     <property group="Event" name='eventID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#eventID' dc:description='An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.' examples='' required='false'/>
+	<property group="Event" name='parentEventID' namespace='http://rs.tdwg.org/dwc/terms/'
+		qualName='http://rs.tdwg.org/dwc/terms/parentEventID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#parentEventID'
+		dc:description='An event identifier for the super event which is composed of one or more sub-sampling events. The value must refer to an existing eventID. If the identifier is local it must exist within the given dataset. 
+Example: "A1" identifying the main Whittaker Plot in nested samples, each with their own eventID (e.g., "A1:1", "A1:2").'
+		examples='' required='false' />
     <property group="Event" name='samplingProtocol' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/samplingProtocol' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#samplingProtocol' dc:description='The name of, reference to, or description of the method or protocol used during an Event.' examples='"UV light trap", "mist net", "bottom trawl", "ad hoc observation", "point count", "Penguins from space: faecal stains reveal the location of emperor penguin colonies, http://dx.doi.org/10.1111/j.1466-8238.2009.00467.x", "Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp.", "http://www.bsc-eoc.org/download/Owl.pdf"' required='false'/>
     <property group="Event" name='samplingEffort' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/samplingEffort' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#samplingEffort' dc:description='The amount of effort expended during an Event.' examples='"40 trap-nights", "10 observer-hours; 10 km by foot; 30 km by car"' required='false'/>
     <property group="Event" name='eventDate' type="date" namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventDate' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#eventDate' dc:description='The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).' examples='"1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.' required='false'/>
@@ -83,17 +94,17 @@
     <property group="Event" name='fieldNumber' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/fieldNumber' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#fieldNumber' dc:description='An identifier given to the event in the field. Often serves as a link between field notes and the Event.' examples='"RV Sol 87-03-08"' required='false'/>
     <property group="Event" name='fieldNotes' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/fieldNotes' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#fieldNotes' dc:description='One of a) an indicator of the existence of, b) a reference to (publication, URI), or c) the text of notes taken in the field about the Event.' examples='"notes available in Grinnell-Miller Library"' required='false'/>
     <property group="Event" name='eventRemarks' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventRemarks' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#eventRemarks' dc:description='Comments or notes about the Event.' examples='"after the recent rains the river is nearly at flood stage"' required='false'/>
-    <property group="Event" name='sampleSize' namespace='http://rs.tdwg.org/dwc/terms/'
-	qualName='http://rs.tdwg.org/dwc/terms/sampleSize' dc:relation=''
-	dc:description=' a numeric value for the time duration, length, area or volume involved in the sampling.'
-	examples=''
-	required='false' />
-    <property group="Event" name='sampleSizeUnit' namespace='http://rs.tdwg.org/dwc/terms/'
-    	thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/unit_of_measurement.xml" 
-	qualName='http://rs.tdwg.org/dwc/terms/sampleSizeUnit' dc:relation=''
-	dc:description='the unit of measurement used for sampling.'
-	examples='minute, hour, day, metre, metre2, metre3'
-	required='false' />
+	<property group="Event" name='sampleSize' namespace='http://rs.tdwg.org/dwc/terms/'
+		qualName='http://rs.tdwg.org/dwc/terms/sampleSize' dc:relation=''
+		dc:description='A numeric value for the time duration, length, area or volume involved in the sampling event. The terms sampleSize and sampleSizeUnit are required to be used as a pair. The value of sampleSize is a number. Example: "5" for the value part of 5m.'
+		examples='5'
+		required='false' />
+	<property group="Event" name='sampleSizeUnit' namespace='http://rs.tdwg.org/dwc/terms/'
+		thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/unit_of_measurement.xml" 
+		qualName='http://rs.tdwg.org/dwc/terms/sampleSizeUnit' dc:relation=''
+		dc:description='The unit of measurement used in the sampling event. The terms sampleSize and sampleSizeUnit are required to be used as a pair, e.g., "5 metre". Example values of sampleSizeUnit include "minute", "hour", "day", "metre", "square metre", "cubic metre". Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units or other non-SI units accepted for use within the SI (e.g. minute, hour, day, litre).'
+		examples='minute, hour, day, metre, metre2, metre3'
+		required='false' />
     
     <!-- dcterms:Location -->
     <property group="Location" name='locationID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/locationID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#locationID' dc:description='An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.' examples='' required='false'/>
@@ -208,9 +219,5 @@
     <property group="Taxon" name='taxonomicStatus' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/taxonomicStatus' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#taxonomicStatus' dc:description='The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept. Recommended best practice is to use a controlled vocabulary.' examples='"invalid", "misapplied", "homotypic synonym", "accepted"' required='false'/>
     <property group="Taxon" name='nomenclaturalStatus' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/nomenclaturalStatus' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#nomenclaturalStatus' dc:description='The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code.  It requires no taxonomic opinion.' examples='"nom. ambig.", "nom. illeg.", "nom. subnud."' required='false'/>
     <property group="Taxon" name='taxonRemarks' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/taxonRemarks' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#taxonRemarks' dc:description='Comments or notes about the taxon or name.' examples='"this name is a misspelling in common use"' required='false'/>
-    
-    <!-- Quantity -->
-    <property group="Quantity" name='quantity' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/quantity' dc:description='The number or enumeration value of the quantityType per sample.' examples='12; 31%; r' required='false'/>
-    <property group="Quantity" name='quantityType' namespace='http://rs.tdwg.org/dwc/terms/' thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/quantity_type.xml" qualName='http://rs.tdwg.org/dwc/terms/quantityType' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#quantityType' dc:description='The entity being referred to by quantity, e.g., individuals, a percentage  (e.g., species, biomass, biovolume), a scale type such as Braun Blanquet or Domin. Values should be chosen from a controlled vocabulary.' examples='percentage of species, percentage of biovolume, percentage of biomass, individuals/l, individuals/m^2, individuals/m^3, BraunBlanquetScale' required='false'/>
     
 </extension>
