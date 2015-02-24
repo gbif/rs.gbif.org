@@ -126,11 +126,12 @@ def listVocabularies(basedir, baseurl):
 
 if __name__ ==  "__main__":
   print 'LOCATED RS.GBIF.ORG FILESYSTEM AT: '+RS_BASE
-
+  
   print 'UPDATE PRODUCTION EXTENSION FILE'
+  external=listExternal()
   urlsCore = listExtensions(RS_BASE+"core/","http://rs.gbif.org/core/");
   urlsExt  = listExtensions(RS_BASE+"extension/","http://rs.gbif.org/extension/");
-  writeExtensions(RS_BASE, urlsCore+urlsExt+listExternal())  
+  writeExtensions(RS_BASE, urlsCore+urlsExt+external)  
   print 'UPDATE PRODUCTION VOCABULARY FILE'
   urlsVoc = listVocabularies(RS_BASE+"vocabulary/","http://rs.gbif.org/vocabulary/");
   writeVocabs(RS_BASE, urlsVoc)
@@ -138,7 +139,7 @@ if __name__ ==  "__main__":
   print 'UPDATE SANDBOX EXTENSION FILE'
   urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","http://rs.gbif.org/sandbox/extension/");
   urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","http://rs.gbif.org/sandbox/core/");
-  writeExtensions(RS_BASE+'sandbox/', urlsCore+urlsExt+urlsSandbox+eolExtensions+urlsSandboxCore)  
+  writeExtensions(RS_BASE+'sandbox/', urlsCore+urlsExt+urlsSandbox+external+urlsSandboxCore)  
   print 'UPDATE SANDBOX VOCABULARY FILE'
   urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/");
   writeVocabs(RS_BASE+'sandbox/', urlsVoc+urlsVoc2)
