@@ -16,13 +16,13 @@
 		dc:description="An arbitrary code that is unique for the resource, with the resource being either a provider, collection, or media item."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dcterms:identifier"/>
 	<property name="type" namespace="http://purl.org/dc/elements/1.1"
-		qualName="http://purl.org/dc/elements/1.1/type" required="true"
+		qualName="http://purl.org/dc/elements/1.1/type" required="false"
 		group="Management Vocabulary"
 		examples="&quot;Image&quot;, &quot;MovingImage&quot;, &quot;Sound&quot;"
 		dc:description="dc:type may take as value any type term from the DCMI Type Vocabulary. Recommended terms are Collection, StillImage, Sound, MovingImage, InteractiveResource, Text. Values may be used either in their literal form, or with a full namespace (e. g. http://purl.org/dc/dcmitype/StillImage) from a controlled vocabulary, but the best practice is to use the literal form when using dc:type and use dcterms:type when you can supply the URI from a controlled vocabulary and implementers may require this practice. At least one of dc:type and dcterms:type must be supplied but, when feasible, supplying both may make the metadata more widely useful. The values of each should designate the same type, but in case of ambiguity dcterms:type prevails."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dc:type"/>
 	<property name="type" namespace="http://purl.org/dc/terms"
-		qualName="http://purl.org/dc/terms/type" required="true" group="Management Vocabulary"
+		qualName="http://purl.org/dc/terms/type" required="false" group="Management Vocabulary"
 		examples="&quot;http://purl.org/dc/dcmitype/StillImage&quot;"
 		dc:description="A full URI preferably from among the type URIs specified in the DCMI Type Vocabulary. Recommended terms are those URIs whose labels are Collection, StillImage, Sound, MovingImage, InteractiveResource, or Text (e.g. http://purl.org/dc/dcmitype/Collection). Also recommended are the full URIs of ac:PanAndZoomImage, ac:3DStillImage, and ac: 3DMovingImage. Values MUST NOT be a string, but a URI with full namespace (e. g. http://purl.org/dc/dcmitype/StillImage) from a controlled vocabulary. Implementers and communities of practice may determine whether specific controlled vocabularies must be used. If the resource is a Collection, this item does not identify what types of objects it may contain. Following the DC recommendations at http://purl.org/dc/dcmitype/Text, images of text should be with this URI."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dcterms:type"/>
@@ -54,7 +54,7 @@
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#xmp:MetadataDate"/>
 	<property name="metadataLanguageLiteral" namespace="http://rs.tdwg.org/ac/terms"
 		qualName="http://rs.tdwg.org/ac/terms/metadataLanguageLiteral" required="false"
-		group="Management Vocabulary" examples="&quot;en&quot;, &quot;fr&quot;"
+		group="Management Vocabulary" examples="&quot;eng&quot;, &quot;fre&quot;"
 		dc:description="Language of description and other metadata (but not necessarily of the image itself) represented as an ISO639-2 three letter language code. ISO639-1 two-letter codes are permitted but deprecated. Note: At least one of ac:metadataLanguage and ac:metadataLanguageLiteral must be supplied but, when feasible, supplying both may make the metadata more widely useful."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:metadataLanguageLiteral"/>
 	<property name="metadataLanguage" namespace="http://rs.tdwg.org/ac/terms"
@@ -116,13 +116,13 @@
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:hasServiceAccessPoint"/>
 	<!--Attribution Vocabulary-->
 	<property name="rights" namespace="http://purl.org/dc/elements/1.1"
-		qualName="http://purl.org/dc/elements/1.1/rights" required="true"
+		qualName="http://purl.org/dc/elements/1.1/rights" required="false"
 		group="Attribution Vocabulary"
 		examples="&quot;Copyright 2014 Ron Thomas&quot; or a URI like &quot;http://creativecommons.org/licenses/by/3.0/legalcode&quot;"
 		dc:description="Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , &quot;Public Domain.&quot;, &quot;Copyright unknown.&quot; Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dc:rights"/>
 	<property name="rights" namespace="http://purl.org/dc/terms"
-		qualName="http://purl.org/dc/terms/rights" required="true" group="Attribution Vocabulary"
+		qualName="http://purl.org/dc/terms/rights" required="false" group="Attribution Vocabulary"
 		examples=""
 		dc:description="A URI pointing to structured information about rights held in and over the resource. Examples include http://creativecommons.org/licenses/by/3.0/legalcode and http://creativecommons.org/publicdomain/zero/1.0/. At least one of dcterms:rights and dc:rights must be supplied but, when feasible, supplying both may make the metadata more widely useful. They must specify the same rights. In case of ambiguity, dcterms:rights prevails."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dcterms:rights"/>
@@ -235,7 +235,7 @@
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:caption"/>
 	<property name="language" namespace="http://purl.org/dc/elements/1.1"
 		qualName="http://purl.org/dc/elements/1.1/language" required="false"
-		group="Content Coverage Vocabulary" examples=""
+		group="Content Coverage Vocabulary" examples="&quot;eng&quot;, &quot;fre&quot;"
 		dc:description="Language(s) of resource itself represented in the ISO639-2 three-letter language code. ISO639-1 two-letter codes are permitted but deprecated."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#dc:language"/>
 	<property name="language" namespace="http://purl.org/dc/terms"
@@ -277,8 +277,8 @@
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#Iptc4xmpExt:WorldRegion"/>
 	<property name="CountryCode" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
 		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode" required="false"
-		group="Geography Vocabulary" examples="&quot;us&quot;"
-		dc:description="The geographic location of the specific entity or entities documented by the media item, expressed through a constrained vocabulary of countries using 2-letter ISO country code (e. g. &quot;it, si&quot;)."
+		group="Geography Vocabulary" examples="&quot;US&quot;"
+		dc:description="The geographic location of the specific entity or entities documented by the media item, expressed through a constrained vocabulary of countries using ISO 3166-1-alpha-2 2-letter country codes (e. g. &quot;IT, SI&quot;)."
 		dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List#Iptc4xmpExt:CountryCode"/>
 	<property name="CountryName" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
 		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName" required="false"
