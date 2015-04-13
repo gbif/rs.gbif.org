@@ -7,7 +7,7 @@
     dc:title='Darwin Core Taxon' 
     name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/' rowType='http://rs.tdwg.org/dwc/terms/Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#Taxon'
-    dc:description='The category of information pertaining to taxonomic names, taxon name usages, or taxon concepts. Released March 2015, this version removes terms dcterms:source and dcterms:rights, and adds dcterms:license.'>
+    dc:description='The category of information pertaining to taxonomic names, taxon name usages, or taxon concepts. Released April 2015, this version removes terms dcterms:source and dcterms:rights, and adds dcterms:license.'>
     
     <!-- Taxon -->
     <property group='Taxon' name='taxonID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/taxonID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#taxonID' dc:description='A unique identifier for the set of nomenclatural and taxonomic information (data associated with the Taxon class). A taxonID refers to a name being used somewhere, therefore not precluding whether it is a taxon (concept) or name alone that is being described. This also includes both accepted taxon references and references to synonyms. If possible a globally unique ID is preferred, but local IDs are valid as long as they are unique within the dataset. It is possible for two different taxonID rows to refer to the same scientificName if they refer to different taxon concept circumscriptions referenced in nameAccordingTo.' examples='8fa58e08-08de-4ac1-b69c-1235340b7001;  32567;  http://species.gbif.org/abies_alba_1753;  urn:lsid:gbif.org:usages:32567' required='false'/>
