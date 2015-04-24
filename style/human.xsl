@@ -42,6 +42,11 @@
                                              <th>Name</th><td><xsl:value-of select="@name"/></td>
                                         </tr>
                                    </xsl:if>
+                                   <xsl:if test="@dc:issued">
+                                        <tr>
+                                             <th>Issued</th><td><xsl:value-of select="@dc:issued"/></td>
+                                        </tr>
+                                   </xsl:if>
                                    <xsl:if test="@namespace">
                                         <tr>
                                              <th>Namespace</th><td><xsl:value-of select="@namespace"/></td>
