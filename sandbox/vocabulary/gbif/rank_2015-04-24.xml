@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -5,7 +6,7 @@
  xmlns="http://rs.gbif.org/thesaurus/" 
  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd" 
  dc:title="Taxonomic Rank GBIF Vocabulary" 
- dc:URI="http://rs.gbif.org/vocabulary/gbif/rank"
+ dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/rank20150424/"
  dc:issued="2015-04-24" 
  dc:description="An ordered taxonomic rank vocabulary with the most frequently used values and their alternative representations."> 
  
