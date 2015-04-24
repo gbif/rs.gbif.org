@@ -3,9 +3,11 @@
 <extension xmlns='http://rs.gbif.org/extension/'
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
     xmlns:dc='http://purl.org/dc/terms/'    
-    xsi:schemaLocation='http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd' 
+    xsi:schemaLocation='http://rs.gbif.org/extension/ http://rs.gbif.org/sandbox/schema/extension.xsd' 
     dc:title='Darwin Core Taxon' 
-    name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/' rowType='http://rs.tdwg.org/dwc/terms/Taxon'
+    name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/' 
+    rowType='http://rs.tdwg.org/dwc/terms/Taxon'
+    dc:issued="2015-04-24"
     dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#Taxon'
     dc:description='The category of information pertaining to taxonomic names, taxon name usages, or taxon concepts. Released April 2015, this version removes terms dcterms:source and dcterms:rights, and adds dcterms:license.'>
     
