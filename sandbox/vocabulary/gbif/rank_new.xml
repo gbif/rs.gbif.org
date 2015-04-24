@@ -1,10 +1,13 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
- dc:URI="http://rs.gbif.org/vocabulary/gbif/rank" 
- dc:description="An ordered taxonomic rank vocabulary with the most frequently used values and their alternative representations." 
+<thesaurus
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:dc="http://purl.org/dc/terms/"  
+ xmlns="http://rs.gbif.org/thesaurus/" 
+ xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd" 
  dc:title="Taxonomic Rank GBIF Vocabulary" 
- xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
- xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+ dc:URI="http://rs.gbif.org/vocabulary/gbif/rank"
+ dc:issued="2015-04-24" 
+ dc:description="An ordered taxonomic rank vocabulary with the most frequently used values and their alternative representations."> 
  
  <concept dc:identifier="domain" dc:URI="http://rs.gbif.org/vocabulary/gbif/rank/domain" 
   dc:relation="http://rs.gbif.org/vocabulary/gbif/rank/domain"
