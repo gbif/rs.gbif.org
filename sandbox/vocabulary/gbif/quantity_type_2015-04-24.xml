@@ -5,11 +5,11 @@
   xmlns:dc="http://purl.org/dc/terms/" 
   xmlns="http://rs.gbif.org/thesaurus/"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd"
-	dc:title="Quantity Type Vocabulary"
-	dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/quantityType20150424/"
-	dc:issued="2015-04-24"
-	dc:description="The quantityType Vocabulary is a recommended set of values to	use for the Darwin Core quantityType property.">
-	
+  dc:title="Quantity Type Vocabulary"
+  dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/quantityType20150424/"
+  dc:issued="2015-04-24"
+  dc:description="The quantityType Vocabulary is a recommended set of values to use for the Darwin Core quantityType property.">
+  
  <concept dc:identifier="percentageOfSpecies" 
     dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType/percentageOfSpecies"
     dc:relation=""
