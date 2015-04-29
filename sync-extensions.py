@@ -9,7 +9,7 @@
 import sys, string, urllib, traceback, os, json, datetime
 from xml.etree.ElementTree import ElementTree
 
-RS_BASE="/tmp/rs.gbif.org/"
+RS_BASE="/var/www/rs.gbif.org/"
 NS_DC="http://purl.org/dc/terms/"
 NS_EXT="http://rs.gbif.org/extension/"
 # default issued date 
