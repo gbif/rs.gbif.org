@@ -6,14 +6,14 @@
 # ****************************************
 
 
-import sys, string, urllib, traceback, os, json
+import sys, string, urllib, traceback, os, json, datetime
 from xml.etree.ElementTree import ElementTree
 
-
-RS_BASE="/var/www/rs.gbif.org/"
+RS_BASE="/tmp/rs.gbif.org/"
 NS_DC="http://purl.org/dc/terms/"
 NS_EXT="http://rs.gbif.org/extension/"
-
+# default issued date 
+MIN_DATE = datetime.date(datetime.MINYEAR, 1, 1)
 
 class Extension:
   def __init__(self):
@@ -22,8 +22,10 @@ class Extension:
     self.title = None
     self.description = None
     self.subject = None
+    self.issued=None
+    self.isLatest=False
   def __repr__(self):
-    return """EXT %s >>%s<< %s [%s]""" % (self.identifier,self.title,self.description,self.subject)
+    return """EXT %s Issued:%s (latest=%s) >>%s<< %s [%s]""" % (self.identifier,self.issued,self.isLatest,self.title,self.description,self.subject)
     
 class Vocabulary:
   def __init__(self):
@@ -32,8 +34,10 @@ class Vocabulary:
     self.title = None
     self.description = None
     self.subject = None
+    self.issued = None
+    self.isLatest=False
   def __repr__(self):
-    return """VOC %s >>%s<< %s [%s]""" % (self.identifier,self.title,self.description,self.subject)
+    return """VOC %s Issued:%s (latest=%s) >>%s<< %s [%s] """ % (self.identifier,self.issued,self.isLatest,self.title,self.description,self.subject)
 
 
 def writeExtensions(dir, urls):
@@ -47,20 +51,52 @@ def writeVocabs(dir, urls):
   f.close()
 
 def processUrls(fp, urls, rootElement):
+  """Retrieve a list of objects by their url, sort them by their issued 
+     date, update each object indicating if it is the latest issued or 
+     not, and write each object to the JSON file"""
   fp.write('{"%s":[\n' % rootElement)
-  first = True;
+  allObjects = [] 
   for url in urls:
-    print "\nProcessing %s" % url
+    print "Processing %s" % url
     obj = parseUrl(url)
-    if (obj is not None):
-      if (not first):
-        fp.write(',\n')
-      json.dump(obj.__dict__, fp)
-      first = False;
+    allObjects.append(obj) 
+  # sort by issued date, starting with newest dates
+  allObjects = sorted(allObjects, key=getIssuedDate, reverse=True)
+  # iterate through objects and indicate whether it is the latest or not
+  identifiers = [] 
+  for obj in allObjects:
+    if (obj.identifier is not None and obj.identifier not in identifiers):
+      identifiers.append(obj.identifier) 
+      obj.isLatest=True
+    else:
+      print 'The extension or vocabulary with URL %s issued %s is deprecated or superseded by one in production' % (obj.url, obj.issued)
+  # write each object to the JSON file
+  first = True;
+  for obj in allObjects:
+    if (not first):
+      fp.write(',\n')
+    json.dump(obj.__dict__, fp, default=json_serial)
+    first = False;
   fp.write('\n]}')
-  
+  return allObjects
+
+def getIssuedDate(x):
+  """Return the issued date, using default if issued date was None"""
+  return x.issued or MIN_DATE
+
+def json_serial(obj):
+  """JSON serializer for objects not serializable by default json code
+     For datime.date objects, return ISO format, e.g. yyyy-mm-dd
+  """
+  if isinstance(obj, datetime.date):
+    serial = obj.isoformat()
+    return serial
 
 def parseUrl(url):
+  """Download the XML document at a given URL. Parse the XML and
+     construct either an Extension or Vocabulary depending on the
+     contents of the XML document. At the end, return the object 
+     constructed""" 
   try:
     f = urllib.urlopen(url)
     tree = ElementTree()
@@ -77,6 +113,10 @@ def parseUrl(url):
     obj.title=doc.attrib.get('{%s}title'%NS_DC)
     obj.description=doc.attrib.get('{%s}description'%NS_DC)
     obj.subject=doc.attrib.get('{%s}subject'%NS_DC)
+    # convert YYYY-MM-DD string date into datetime.date object
+    strDate=doc.attrib.get('{%s}issued'%NS_DC) 
+    if (strDate is not None):
+      obj.issued=datetime.datetime.strptime(strDate, "%Y-%m-%d").date()
     return obj
   except:
     print "Oops, cant parse url %s" % url
@@ -121,9 +161,6 @@ def listVocabularies(basedir, baseurl):
         urls.append(url)
   return urls
   
-
-
-
 if __name__ ==  "__main__":
   print 'LOCATED RS.GBIF.ORG FILESYSTEM AT: '+RS_BASE
   
@@ -143,4 +180,3 @@ if __name__ ==  "__main__":
   print 'UPDATE SANDBOX VOCABULARY FILE'
   urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/");
   writeVocabs(RS_BASE+'sandbox/', urlsVoc+urlsVoc2)
-  
