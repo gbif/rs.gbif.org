@@ -13,5 +13,8 @@ Coding conventions & styles for IntelliJ and Eclipse.
 ## Dictionaries
 Dictionaries for name parsing and finding.
 
+## Schemas
+XML schemas for extensions, vocabularies, EML, Dublin Core, etc.
+
 ## Templates
 Crawling templates for DiGIR and BioCASe.
