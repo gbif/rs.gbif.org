@@ -18,3 +18,6 @@ XML schemas for extensions, vocabularies, EML, Dublin Core, etc.
 
 ## Templates
 Crawling templates for DiGIR and BioCASe.
+
+## Terms
+Term definitions in RDF, including Darwin Core Term definitions translated into various languages.
