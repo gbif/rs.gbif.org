@@ -4,7 +4,7 @@
   <xs:import namespace="eml://ecoinformatics.org/party-2.1.1" schemaLocation="eml-party.xsd"/>
   <xs:import namespace="eml://ecoinformatics.org/coverage-2.1.1" schemaLocation="eml-coverage.xsd"/>
   <xs:import namespace="eml://ecoinformatics.org/text-2.1.1" schemaLocation="eml-text.xsd"/>
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://rs.gbif.org/schema/xml.xsd"/>
   
   <xs:annotation>
     <xs:documentation>
