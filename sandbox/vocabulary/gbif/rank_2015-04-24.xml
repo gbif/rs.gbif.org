@@ -6,7 +6,7 @@
  xmlns="http://rs.gbif.org/thesaurus/" 
  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd" 
  dc:title="Taxonomic Rank GBIF Vocabulary" 
- dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/rank20150424/"
+ dc:URI="http://rs.gbif.org/vocabulary/gbif/rank"
  dc:issued="2015-04-24" 
  dc:description="An ordered taxonomic rank vocabulary with the most frequently used values and their alternative representations."> 
  

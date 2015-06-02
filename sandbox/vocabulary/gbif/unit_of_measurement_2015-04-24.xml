@@ -6,7 +6,7 @@
     xmlns="http://rs.gbif.org/thesaurus/"
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd"
     dc:title="Unit of Measurement Vocabulary" 
-    dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/unitOfMeasurement20150424/"
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/unitOfMeasurement"
     dc:issued="2015-04-24"
     dc:description="Units of measurement, based on the International System of Units (SI) and other non-SI units accepted for use with the SI.">
 

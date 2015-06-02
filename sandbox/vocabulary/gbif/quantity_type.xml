@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
-	dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType/" 
+	dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType" 
         dc:description="The quantityType Vocabulary is a recommended set of values to
         use for the Darwin Core quantityType property." 
 	dc:title="Quantity Type Vocabulary" 

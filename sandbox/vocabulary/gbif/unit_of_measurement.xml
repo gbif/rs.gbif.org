@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
-    dc:URI="http://rs.gbif.org/vocabulary/gbif/unitOfMeasurement/" 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/unitOfMeasurement" 
     dc:description="Units of measurement, based on the International System of Units (SI) and other non-SI units accepted for use with the SI." 
     dc:title="Unit of Measurement Vocabulary" 
     xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
