@@ -19,7 +19,7 @@
   <xs:import namespace="eml://ecoinformatics.org/protocol-2.1.1" schemaLocation="eml-protocol.xsd"/>
   <xs:import namespace="eml://ecoinformatics.org/resource-2.1.1" schemaLocation="eml-resource.xsd"/>
   <xs:import namespace="eml://ecoinformatics.org/access-2.1.1" schemaLocation="eml-access.xsd"/>
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://rs.gbif.org/xml.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://rs.gbif.org/schema/xml.xsd"/>
   <xs:annotation>
     <xs:documentation> '$RCSfile: eml.xsd,v $' Copyright: 1997-2002 Regents of the University of
       California, University of New Mexico, and Arizona State University Sponsors: National Center
