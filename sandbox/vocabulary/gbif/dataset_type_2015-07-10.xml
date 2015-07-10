@@ -43,8 +43,10 @@
         dc:relation=""
         dc:description="a sampling event resource.">
         <preferred>
-            <term dc:title="Sampling Event" xml:lang="en"/>
+            <term dc:title="Sampling event" xml:lang="en"/>
             <term dc:title="Evento de muestreo" xml:lang="es"/>
+            <term dc:title="Données d'échantillonnage" xml:lang="fr"/>
+            <term dc:title="Evento de amostragem" xml:lang="pt"/>
         </preferred>
     </concept>
     <concept dc:identifier="metadata" dc:URI="http://rs.gbif.org/vocabulary/gbif/datasetType/metadata"
