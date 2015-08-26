@@ -3,14 +3,15 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Trait measurement score (v20140515)" 
     dc:description="The Germplasm Vocabulary (Darwin Core extension for genebanks) was developed in 2009 for sharing genebank datasets with the GBIF Integrated Publishing Toolkit from the Global Biodiversity Information Facility (GBIF). This application schema includes the terms to describe the trait measurements - the so-called Characterization and Evaluation (C and E) data. These terms where developed by the EPGRIS3 group of the European Cooperative Programme for Plant Genetic Resources (ECPGR) in 2009. Most of the terms used in the genebank community are already covered by Darwin Core.
     Many of the terms listed here are the very same as included in the Darwin Core Measurement Or Fact extension. The germplasm vocabulary term g.germplasmID is a persistent identifier for the germplasm material (genebank accession, specimen, cultivar, etc that was the subject of the measurement experiment. The g.germplasmID term is in particular important when linking the trait measurement score to a germplasm occurrence described in an external Darwin Core archive. When linking to external descriptions of the trait measurement trait methods and trial experiments the g.measurementTraitID and g.measurementTrialID should be resolvable persistent identifiers resolving to more relevant information on each entity."
     dc:relation="http://purl.org/germplasm/germplasmTerm"
     name="MeasurementScore" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
-    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementScore">
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementScore"
+    dc:issued="2014-05-15">
 
 
 <!--

@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Web Links" 
     name="Links" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Links"
+    dc:issued="2015-02-13"
     dc:subject="dwc:Occurrence dwc:Taxon"
     dc:relation=""
     dc:description="Links of related webpages. Links can be classified with keywords (dc:subject) and should point to human friendly webpages.">

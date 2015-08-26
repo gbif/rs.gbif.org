@@ -5,9 +5,10 @@
     xmlns:dc="http://purl.org/dc/terms/"    
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
     xmlns:obis="http://rs.obis.org/obis/extension/mbg/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="OBIS Marine BioGeography (MBG) Fish Abundance Extension" 
-    name="MBG Fish Abundance" namespace="http://rs.obis.org/obis/extension/mbg/terms/" rowType="http://rs.obis.org/obis/extension/mbg/terms/MBGFishAbundance"
+    name="MBGFishAbundance" namespace="http://rs.obis.org/obis/extension/mbg/terms/" rowType="http://rs.obis.org/obis/extension/mbg/terms/MBGFishAbundance"
+    dc:issued="2015-02-13"
     dc:subject="dwc:Occurrence"
     dc:relation="http://rs.obis.org/obis/extension/mbg/terms/index.htm#mbgfishabundanceindex"
     dc:description="Support for OBIS MBG Fish Abundance properties as an extension to a Darwin Occurrence core. Intended to be a one to one relation to the Occurrence core.">

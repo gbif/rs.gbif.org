@@ -3,13 +3,14 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Germplasm accession (v20140515)" 
     dc:description="The Germplasm Vocabulary (Darwin Core extension for genebanks) was developed in 2009 for sharing genebank accession information using the GBIF Integrated Publishing Toolkit (IPT) from the Global Biodiversity Information Facility (GBIF). The Germplasm Vocabulary provides a set of terms (supplementing the Darwin Core terms) for describing genebank accessions. These terms are maintained by the thematic community of plant genetic resources for food and agriculture (PGRFA). Most of these terms are imported from the Multi-Crop Passport Descriptor List (MCPD) maintained by Bioversity International and the Food and Agriculture Organization of the United Nations (FAO). Some terms were also developed by the European Cooperative Programme for Plant Genetic Resources (ECPGR)."
     dc:relation="http://purl.org/germplasm/germplasmTerm"
     name="GermplasmAccession" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
-    rowType="http://purl.org/germplasm/germplasmTerm#GermplasmAccession">
+    rowType="http://purl.org/germplasm/germplasmTerm#GermplasmAccession"
+    dc:issued="2014-05-15">
 
 <!--
 Software application schema for the GBIF IPT data provider software, Darwin Core extension for genebanks (DwC-germplasm).

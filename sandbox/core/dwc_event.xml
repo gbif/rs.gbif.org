@@ -3,6 +3,7 @@
 <extension xmlns="http://rs.gbif.org/extension/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:dc="http://purl.org/dc/terms/"
            xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+           dc:issued="2015-03-27"
            dc:title="Darwin Core Event" name="Event" namespace="http://rs.tdwg.org/dwc/terms/"
            rowType="http://rs.tdwg.org/dwc/terms/Event" dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#Event"
            dc:description="The category of information pertaining to a sampling event. Updated March 2014 with newly ratified terms (parentEventID, sampleSizeValue, sampleSizeUnit).">

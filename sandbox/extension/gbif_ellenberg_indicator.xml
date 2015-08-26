@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     rowType="http://rs.gbif.org/terms/1.0/Ellenberg"
-    dc:title="Ellenbergs Ecological Indicators for European Plants" name="Ellenberg" namespace="http://rs.gbif.org/terms/1.0" 
+    dc:issued="2015-02-13"
+    dc:title="Ellenbergs Ecological Indicators for European Plants" name="Ellenberg" namespace="http://rs.gbif.org/terms/1.0"
     dc:subject="dwc:Taxon"
     dc:relation="http://de.wikipedia.org/wiki/Zeigerwerte_nach_Ellenberg"
     dc:description="Die Kurzbezeichnung Zeigerwerte nach Ellenberg für die &quot;Ökologischen Zeigerwerte von Pflanzen in Mitteleuropa&quot; ist ein von Heinz Ellenberg Mitte der 1970er-Jahre erstmals ausführlich beschriebenes Klassifikationsverfahren für mitteleuropäische Pflanzen nach ihrem ökologischen &quot;Verhalten&quot; und botanischen Eigenschaften.

@@ -3,13 +3,14 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Trait descriptor (v20140515)" 
     dc:description="The Germplasm Vocabulary (Darwin Core extension for genebanks) was developed in 2009 for sharing genebank datasets using the GBIF Integrated Publishing Toolkit (IPT) from the Global Biodiversity Information Facility (GBIF). This application schema describes the trait descriptors and methodology used for collecting trait measurements for the so-called Characterization and Evaluation (C and E) data. These terms where in part developed by the EPGRIS3 group of the European Cooperative Programme for Plant Genetic Resources (ECPGR) in 2009."
     dc:relation="http://purl.org/germplasm/germplasmTerm"
     name="MeasurementTrait" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
-    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrait">
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrait"
+    dc:issued="2014-05-15">
 
 
 <!--

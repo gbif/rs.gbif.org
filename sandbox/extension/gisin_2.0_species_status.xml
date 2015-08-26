@@ -3,12 +3,13 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:dc="http://purl.org/dc/terms/"
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="GISIN Species Status" 
     dc:description=""
     dc:relation="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Model_Info.php?ModelID=1"
     name="SpeciesStatus" namespace="http://www.gisin.org/IASProfile"
-    rowType="http://www.gisin.org/IASProfile/SpeciesStatus">
+    rowType="http://www.gisin.org/IASProfile/SpeciesStatus"
+    dc:issued="2015-02-13">
     <!-- 
         only the species status has been ported as an IPT extension from GISIN.
         More extensions to be written are:

@@ -3,9 +3,10 @@
  <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="GBIF Relevé" 
     name="Releve" namespace="http://rs.gbif.org/terms/1.0/" rowType="http://rs.gbif.org/terms/1.0/Releve"
+    dc:issued="2015-02-13"
     dc:subject=""
     dc:relation=""
     dc:description="Support for vegetation plot survey (relevé) measurements ancillary to those reported using Event core with Occurrence extension.">

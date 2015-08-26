@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Darwin Core Material Sample" 
     name="MaterialSample" namespace="http://rs.tdwg.org/dwc/terms/" rowType="http://rs.tdwg.org/dwc/terms/MaterialSample"
+    dc:issued="2015-02-13"
     dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#MaterialSample"
     dc:description="The category of information pertaining to the physical results of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed. Created 2 Apr 2014 with all Simple Darwin Core ratified terms.">
 
