@@ -3,13 +3,14 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Trait measurement score (v20140515)" 
     dc:description="Trait measurements or the so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA). The germplasm vocabulary term g.germplasmID is a persistent identifier for the germplasm material (genebank accession, specimen, cultivar, etc that was the subject of the measurement experiment. NB! please report stable and resolvable persistent identifiers for g.germplasmID term when linking the trait measurement score to a germplasm occurrence described in an external Darwin Core archive. When linking to trait measurement descriptors and measurement trials described extenally to the Darwin Core archive, please include stable and resolvable persistent identifiers for g.measurementTraitID and g.measurementTrialID - resolving to information on each entity."
     dc:relation="http://purl.org/germplasm/germplasmTerm"
     name="MeasurementScore" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
-    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementScore">
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementScore"
+    dc:issued="2015-02-13">
 
 
 <!--

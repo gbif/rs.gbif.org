@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     rowType="http://rs.gbif.org/terms/1.0/Distribution"
-    dc:title="Species Distribution" name="Distribution" namespace="http://rs.gbif.org/terms/1.0" 
+    dc:title="Species Distribution" name="Distribution" namespace="http://rs.gbif.org/terms/1.0"
+    dc:issued="2015-02-13"
     dc:subject="dwc:Taxon"
     dc:relation=""
     dc:description="Geographic distribution of a taxon">

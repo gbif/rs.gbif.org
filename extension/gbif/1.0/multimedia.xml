@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Simple Multimedia" name="Multimedia" 
     namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Multimedia"
+    dc:issued="2015-02-13"
     dc:subject=""
     dc:relation="http://web.archive.org/web/20080225232621/http://www.dartmouth.edu/comp/about/projects/digitalmedia/images/resources/metadata-schemas.html"
     dc:description="Simple extension for exchanging metadata about multimedia resources, in particular links to image, video and audio files.">

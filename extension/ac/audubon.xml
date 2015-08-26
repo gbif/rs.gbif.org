@@ -5,6 +5,7 @@
 	xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
 	dc:title="Audubon Media Description" name="Multimedia" namespace="http://rs.tdwg.org/ac/terms/"
 	rowType="http://rs.tdwg.org/ac/terms/Multimedia"
+	dc:issued="2015-03-19"
 	dc:description="The Audubon Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them."
 	dc:relation="http://terms.tdwg.org/wiki/Audubon_Core_Term_List">
 	<!-- Audubon Media extension for IPT including selected fields from the

@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Darwin Core Identification History" 
     name="Identification" namespace="http://rs.tdwg.org/dwc/terms/" rowType="http://rs.tdwg.org/dwc/terms/Identification"
+    dc:issued="2015-02-13"
     dc:subject="dwc:Occurrence dwc:MaterialSample"
     dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#Identification"
     dc:description="Support for multiple identification/determinations of species occurrences such as specimens. All identifications including the current one should be listed, while the current should also be repeated in the occurrence core for simple access.">

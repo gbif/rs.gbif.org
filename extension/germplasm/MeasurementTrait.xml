@@ -3,13 +3,14 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Trait descriptor (v20140515)" 
     dc:description="Trait descriptors describing methods and protocols followed when making trait measurements or the so-called Characterization and Evaluation (C and E) data for plant genetic resources for food and agriculture (PGRFA)."
     dc:relation="http://purl.org/germplasm/germplasmTerm"
     name="MeasurementTrait" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
-    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrait">
+    rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrait"
+    dc:issued="2015-02-13">
 
 
 <!--

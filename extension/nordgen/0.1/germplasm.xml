@@ -3,13 +3,14 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:description="WARNING! THIS DRAFT GERMPLASM EXTENSION HAS BEEN DEPRECATED. SEE: http://rs.gbif.org/extension/germplasm/ FOR THE CURRENT GERMPLASM EXTENSIONS."
     dc:relation="http://rs.nordgen.org/dwc/"
     dc:title="Germplasm (0.1)"
     dc:subject="dwc:Occurrence"
     name="GermplasmSample" namespace="http://rs.nordgen.org/dwc/germplasm/0.1/terms/"
-    rowType="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmSample">
+    rowType="http://rs.nordgen.org/dwc/germplasm/0.1/terms/GermplasmSample"
+    dc:issued="2015-02-13">
 <!--
     Application schema for the GBIF IPT data provider software
     DwC Germplasm Extension version 0.1 (draft version)

@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Simple Images (deprecated)" name="Image" 
     namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Image"
+    dc:issued="2015-02-13"
     dc:subject="dwc:Taxon dwc:Occurrence"
     dc:relation=""
     dc:description="This extension has been DEPRECATED! Please use the newer Multimedia extension instead: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml">

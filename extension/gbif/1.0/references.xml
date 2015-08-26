@@ -3,9 +3,10 @@
 <extension xmlns="http://rs.gbif.org/extension/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
-    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd" 
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Reference"
-    dc:title="Literature References" name="Reference" 
+    dc:issued="2015-02-13"
+    dc:title="Literature References" name="Reference"
     dc:subject=""
     dc:relation=""
     dc:description="Bibliography, i.e. list of literature references. For example a taxon or occurrence/specimen.">
