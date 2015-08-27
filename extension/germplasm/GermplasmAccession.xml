@@ -10,7 +10,7 @@
            name="GermplasmAccession"
            namespace="http://purl.org/germplasm/germplasmTerm#"
            rowType="http://purl.org/germplasm/germplasmTerm#GermplasmAccession"
-           dc:issued="2015-03-20">
+           dc:issued="2014-05-20">
 
   <!--
   Software application schema for the GBIF IPT data provider software, Darwin Core extension for genebanks (DwC-germplasm).

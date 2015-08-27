@@ -10,7 +10,7 @@
     name="MeasurementTrial" 
     namespace="http://purl.org/germplasm/germplasmTerm#"
     rowType="http://purl.org/germplasm/germplasmTerm#MeasurementTrial"
-    dc:issued="2015-02-13">
+    dc:issued="2014-05-08">
 
 
 <!--
@@ -83,7 +83,7 @@ Major update: renaming MeasurementExperiment as MeasurementTrial, Dag Endresen, 
       namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" 
       qualName="http://www.w3.org/2003/01/geo/wgs84_pos#location"
       dc:description="Location for the measurement trial."
-      type="float" 
+      type="string" 
       examples="Wageningen, Netherlands" 
       dc:relation="http://terms.tdwg.org/wiki/geo:location"
       group="MeasurementTrailLocation" 
@@ -92,7 +92,7 @@ Major update: renaming MeasurementExperiment as MeasurementTrial, Dag Endresen, 
       namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" 
       qualName="http://www.w3.org/2003/01/geo/wgs84_pos#lon"
       dc:description="Longitude for the trial location."
-      type="float" 
+      type="decimal" 
       examples="-121.1761111" 
       dc:relation="http://terms.tdwg.org/wiki/geo:lon"
       group="MeasurementTrailLocation" 
@@ -101,7 +101,7 @@ Major update: renaming MeasurementExperiment as MeasurementTrial, Dag Endresen, 
       namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" 
       qualName="http://www.w3.org/2003/01/geo/wgs84_pos#lat"
       dc:description="Latitude for the trial location."
-      type="float" 
+      type="decimal" 
       examples="-41.0983423" 
       dc:relation="http://terms.tdwg.org/wiki/geo:lat"
       group="MeasurementTrailLocation" 
