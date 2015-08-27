@@ -2,8 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
 	dc:URI="http://gensc.org/ns/mixs/voc/investigation_type" 
-	dc:title="MIxS Investigation Type vocabulary" 
-	dc:description="" 
+	dc:title="MIxS Investigation Type vocabulary"
+  dc:issued="2015-02-13"
+  dc:description=""
 	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	

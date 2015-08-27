@@ -4,8 +4,9 @@
     dc:URI="http://iso.org/639-2"
     dc:relation="http://en.wikipedia.org/wiki/ISO_639-2"
     dc:description="Codes for the representation of names of languages — Part 2: Alpha-3 code, is the second part of the ISO 639 standard, which lists codes for the representation of the names of languages. The three-letter codes given for each language in this part of the standard are referred to as &quot;Alpha-3&quot; codes. There are 464 entries in the list of ISO 639-2 codes." 
-    dc:title="ISO 639-2 Language Codes" 
-    xmlns="http://rs.gbif.org/thesaurus/" 
+    dc:title="ISO 639-2 Language Codes"
+		dc:issued="2015-02-13"
+		xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">

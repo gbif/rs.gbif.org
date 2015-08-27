@@ -3,10 +3,11 @@
 <thesaurus 
 	dc:URI="http://rs.tdwg.org/dwc/dwctype/" 
 	dc:description="The Type Vocabulary is a recommended set of values to use for the basisOfRecord term to categorize Darwin Core resources. The Darwin Core Type Vocabulary extends and refines terms from the Dublin Core Type Vocabulary to describe and categorize resources more specifically for biodiversity applications. The basisOfRecord should be populated with the value from the Darwin Core Type Vocabulary that best corresponds to the resource being shared." 
-	dc:title="Darwin Core Type Vocabulary" 
-	dc:relation="http://rs.tdwg.org/dwc/terms/type-vocabulary/"
+	dc:title="Darwin Core Type Vocabulary"
+  dc:issued="2015-02-13"
+  dc:relation="http://rs.tdwg.org/dwc/terms/type-vocabulary/"
 	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd">
 	
  <concept dc:identifier="PreservedSpecimen" 
 	 dc:URI="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen"

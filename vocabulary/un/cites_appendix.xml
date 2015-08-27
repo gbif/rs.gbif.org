@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI="http://rs.gbif.org/vocab/cites/" dc:description="Vocabulary for the 3 CITES (Convention on International Trade in Endangered Species of Wild Fauna and Flora) Appendix numbers. Appendices I, II and III to the Convention are lists of species afforded different levels or types of protection from over-exploitation." dc:title="CITES Appendix Numbers" 
+<thesaurus dc:URI="http://rs.gbif.org/vocab/cites/" dc:description="Vocabulary for the 3 CITES (Convention on International Trade in Endangered Species of Wild Fauna and Flora) Appendix numbers. Appendices I, II and III to the Convention are lists of species afforded different levels or types of protection from over-exploitation." dc:title="CITES Appendix Numbers" dc:issued="2015-02-13"
 	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	

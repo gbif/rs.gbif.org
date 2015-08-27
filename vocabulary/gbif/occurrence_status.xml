@@ -3,11 +3,12 @@
 <thesaurus 
     dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/" 
 	dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3" 
-	dc:title="Occurrence Status GBIF Vocabulary" 
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	dc:title="Occurrence Status GBIF Vocabulary"
+	dc:issued="2009-10-02"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	
- <concept dc:identifier="present" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/present"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="present" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/present"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="present" xml:lang="en"/>
   </preferred>
@@ -18,7 +19,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="common" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/common"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="common" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/common"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="common" xml:lang="en"/>
   </preferred>
@@ -28,7 +29,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="rare" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/rare"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="rare" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/rare"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="rare" xml:lang="en"/>
   </preferred>
@@ -38,7 +39,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="irregular" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/irregular"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="irregular" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/irregular"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="irregular" xml:lang="en"/>
   </preferred>
@@ -49,7 +50,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="doubtful" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="doubtful" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="doubtful" xml:lang="en"/>
   </preferred>
@@ -61,7 +62,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="absent" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="absent" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="absent" xml:lang="en"/>
   </preferred>
@@ -71,7 +72,7 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="excluded" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/excluded"  dc:issued="2009-10-02T17:05:00+00:00" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
+ <concept dc:identifier="excluded" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/excluded"  dc:issued="2009-10-02" dc:description="http://spreadsheets.google.com/pub?key=tVs-UWMXnkD3slwIE8T336w&amp;gid=3">
   <preferred>
    <term dc:source="" dc:title="excluded" xml:lang="en"/>
   </preferred>

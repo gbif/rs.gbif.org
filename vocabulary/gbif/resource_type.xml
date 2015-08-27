@@ -3,8 +3,9 @@
 <thesaurus 
     dc:URI="http://rs.gbif.org/vocabulary/gbif/resource_type" 
 	dc:description="A vocabulary classifying resources indexed by GBIF. This vocabulary is used exclusively by IPT versions 2.0.0 to 2.0.3." 
-	dc:title="GBIF Resource Type Vocabulary" 
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	dc:title="GBIF Resource Type Vocabulary"
+  dc:issued="2015-02-13"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	
 	

@@ -2,12 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/" 
  dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" 
- dc:title="GISIN Species Status Persistence Vocabulary" 
- 
+ dc:title="GISIN Species Status Persistence Vocabulary"
+ dc:issued="2009-04-01"
  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
- <concept dc:identifier="Unknown" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Unknown" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01T01:01:01+00:00">
+ <concept dc:identifier="Unknown" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Unknown" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01">
   <preferred>
    <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Unknown" xml:lang="en"/>
   </preferred>
@@ -15,7 +15,7 @@
   </alternative>
  </concept>
  
- <concept dc:identifier="DiedOut" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/DiedOut" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01T01:01:01+00:00">
+ <concept dc:identifier="DiedOut" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/DiedOut" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01">
   <preferred>
    <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="DiedOut" xml:lang="en"/>
   </preferred>
@@ -23,7 +23,7 @@
   </alternative>
  </concept>
  
- <concept dc:identifier="Transient" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Transient" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01T01:01:01+00:00">
+ <concept dc:identifier="Transient" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Transient" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01">
   <preferred>
    <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Transient" xml:lang="en"/>
   </preferred>
@@ -31,7 +31,7 @@
   </alternative>
  </concept>
  
- <concept dc:identifier="Temporary" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Temporary" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01T01:01:01+00:00">
+ <concept dc:identifier="Temporary" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Temporary" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01">
   <preferred>
    <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Temporary" xml:lang="en"/>
   </preferred>
@@ -39,7 +39,7 @@
   </alternative>
  </concept>
  
- <concept dc:identifier="Persistent" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Persistent" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01T01:01:01+00:00">
+ <concept dc:identifier="Persistent" dc:URI="http://www.gisinetwork.org/IASProfile/Persistence/terms/Persistent" dc:description="http://www.niiss.org/cwis438/websites/GISINDirectory/tech/Concept_Info.php?ConceptID=3" dc:issued="2009-04-01">
   <preferred>
    <term dc:modified="2009-01-01T01:01:01+00:00" dc:source="" dc:title="Persistent" xml:lang="en"/>
   </preferred>

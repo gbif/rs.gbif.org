@@ -3,9 +3,10 @@
 <thesaurus 
     dc:URI="http://www.eol.org/IPT/vocabulary/mimetype" 
 	dc:description="MIME type for EOL data objects" 
-	dc:title="MIME Type EOL Vocabulary" 
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">	
+	dc:title="MIME Type EOL Vocabulary"
+  dc:issued="2015-02-13"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
     <concept dc:identifier="audio/mpeg" dc:URI="http://www.eol.org/IPT/vocabulary/mimetype/audio/mpeg" dc:relation="" dc:description="">
       <preferred>

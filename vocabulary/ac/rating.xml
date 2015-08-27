@@ -3,8 +3,9 @@
 <thesaurus 
  dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml" 
  dc:description="The short vocabulary providing values for http://ns.adobe.com/xap/1.0/Rating with -1 defining rejected, 0 unrated, and 1 (worst) to 5 (best)." 
- dc:title="The Audobon Rating Vocabulary" 
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ dc:title="The Audobon Rating Vocabulary"
+ dc:issued="2015-02-13"
+ xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
 <concept dc:identifier="-1" dc:URI="http://rs.gbif.org/vocabulary/ac/rating.xml#1" 
