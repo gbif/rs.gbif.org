@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
-	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_status" 
+	dc:URI="http://data.ggbn.org/schemas/GGBN/terms/vocabulary/permit_type"
 	dc:description="The Permit Type Vocabulary is a recommended set of values to use for the permit type in the GGBN Permit Extension." 
 	dc:title="GGBN Permit Type Vocabulary"
   dc:issued="2015-02-13"

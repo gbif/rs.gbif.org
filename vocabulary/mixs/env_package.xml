@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
-	dc:URI="http://gensc.org/ns/mixs/voc/investigation_type" 
+	dc:URI="http://gensc.org/ns/mixs/voc/env_package"
 	dc:title="MIxS Environmental Package vocabulary"
   dc:issued="2015-02-13"
   dc:description=""
