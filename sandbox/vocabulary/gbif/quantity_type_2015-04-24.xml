@@ -4,7 +4,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:dc="http://purl.org/dc/terms/" 
   xmlns="http://rs.gbif.org/thesaurus/"
-  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/sandbox/schema/thesaurus.xsd"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
   dc:title="Quantity Type Vocabulary"
   dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType"
   dc:issued="2015-04-24"

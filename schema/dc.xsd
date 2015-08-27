@@ -6,7 +6,7 @@
             <xs:documentation>Globally unique URI identifying the resource. This URI is often used in RDF:about statements, so ideally it should even resolve to some RDF definition.</xs:documentation>
         </xs:annotation>
     </xs:attribute>
-    <xs:attribute name="issued" type="xs:dateTime"/>
+    <xs:attribute name="issued" type="xs:date"/>
     <xs:attribute name="type" type="xs:string"/>
     <xs:attribute name="title" type="xs:string"/>
     <xs:attribute name="source" type="xs:string"/>

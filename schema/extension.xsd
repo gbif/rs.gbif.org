@@ -34,7 +34,7 @@
                                 <xs:documentation>The data type for the property. Defaults to a string.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        
+
                         <xs:attribute name="examples" type="xs:string">
                             <xs:annotation>
                                 <xs:documentation>Example content for the property. If multiple are given delimited by a semicolon</xs:documentation>
@@ -72,12 +72,17 @@
                     <xs:documentation>The rowType is the qualified name when combined with the namespace. Double or missing slashes are removed/added when name + namespace is combined.</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
-            <xs:attribute ref="dc:description" use="optional"/> 
+            <xs:attribute ref="dc:issued" use="required">
+                <xs:annotation>
+                    <xs:documentation>The date that the extension (version) was officially released.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute ref="dc:description" use="optional"/>
             <xs:attribute ref="dc:relation" use="optional"/>
             <xs:attribute ref="dc:subject" use="optional"/>
         </xs:complexType>
     </xs:element>
-    
+
     <!-- Enumeration of supported data types -->
     <xs:simpleType name="dataType">
         <xs:restriction base="xs:token">
