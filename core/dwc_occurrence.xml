@@ -7,7 +7,7 @@
     dc:title="Darwin Core Occurrence" 
     name="Occurrence" namespace="http://rs.tdwg.org/dwc/terms/" rowType="http://rs.tdwg.org/dwc/terms/Occurrence"
     dc:issued="2015-04-14"
-    dc:subject="http://rs.tdwg.org/dwc/terms/Taxon"
+    dc:subject="dwc:Taxon"
     dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#Occurrence"
     dc:description="The category of information pertaining to evidence of an occurrence in nature, in a collection, or in a dataset (specimen, observation, etc.). Updated 2 Apr 2014 with materialSampleID.">
 
