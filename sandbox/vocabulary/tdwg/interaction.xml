@@ -2,16 +2,15 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 
 <thesaurus 
-    dc:identifier="http://rs.gbif.org/sandbox/vocabulary/tdwg/interaction"
 	dc:URI="http://rs.gbif.org/sandbox/terms/tdwg/interaction" 
 	dc:description="This controlled vocabulary is based the TDWG LSID Ontology model for taxon occurrence interactions, developed by Kevin Richards in 2009 and aimed at describing the interactions between TaxonOccurrences, observations, specimens etc. Eg the Interaction class can be expressed a host/parasite relation between two TaxonOccurrences. The TDWG LSID Ontology is again based on earlier developments from 2007 supported in part by the Pollinators Thematic Network of the Inter-American Biodiversity Information Network (IABIN) and by the Pollination Information Management System of the Food and Agriculture Organization of the United Nations (FAO)." 
-	dc:title="Taxon occurrence interactions" 
-	dc:relation="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"
+	dc:title="Taxon occurrence interactions"
+  dc:issued="2012-03-16"
+  dc:relation="http://rs.tdwg.org/ontology/voc/TaxonOccurrenceInteraction"
 	xmlns="http://rs.gbif.org/thesaurus/" 
 	xmlns:dc="http://purl.org/dc/terms/" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
-	xml:base="http://rs.gbif.org/sandbox/vocabulary/tdwg/interaction#">
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 
 <!-- 
 Draft version created 16 March 2012.

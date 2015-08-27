@@ -4,8 +4,9 @@
 	dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType" 
         dc:description="The quantityType Vocabulary is a recommended set of values to
         use for the Darwin Core quantityType property." 
-	dc:title="Quantity Type Vocabulary" 
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	dc:title="Quantity Type Vocabulary"
+  dc:issued="2015-06-02"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	
  <concept dc:identifier="percentageOfSpecies" 
