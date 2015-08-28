@@ -6,7 +6,7 @@ This documents the versioning policy for extensions and vocabularies hosted on h
 * [Extensions Versioning Policy](#)
   * [What types of changes require a new version of an extension to be created?](#)
   * [What types of changes do not require a new version of an extension to be created?](#)
-  * [How to create a new version of an extension](#)
+  * [How to create a new version of an extension](versioning.md#how-to-create-a-new-version-of-a-vocabulary)
 * [Vocabularies Versioning Policy](#)
   * [What types of changes require a new version of a vocabulary to be created?](#)
   * [What types of changes do not require a new version of a vocabulary to be created?](#)
