@@ -179,7 +179,7 @@
             examples='A sampleSizeValue must have a corresponding sampleSizeUnit. Example: "5" for sampleSizeValue with "metre" for sampleSizeUnit. For discussion see http://terms.tdwg.org/wiki/dwc:sampleSizeValue'
             required='false' />
   <property group="Event" name='sampleSizeUnit' namespace='http://rs.tdwg.org/dwc/terms/'
-            thesaurus="http://rs.gbif.org/sandbox/vocabulary/gbif/unit_of_measurement.xml"
+            thesaurus="http://rs.gbif.org/vocabulary/gbif/unit_of_measurement_2015-07-10.xml"
             qualName='http://rs.tdwg.org/dwc/terms/sampleSizeUnit' dc:relation=''
             dc:description='The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling event.'
             examples='A sampleSizeUnit must have a corresponding sampleSizeValue, e.g., "5" for sampleSizeValue with "metre" for sampleSizeUnit. Examples: "minute", "hour", "day", "metre", "square metre", "cubic metre". Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units, or other non-SI units accepted for use within the SI (e.g., minute, hour, day, litre). For discussion see http://terms.tdwg.org/wiki/dwc:sampleSizeUnit'
