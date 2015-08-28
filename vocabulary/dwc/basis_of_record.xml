@@ -16,6 +16,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Preserved Specimen" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Espécime Preservado" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Espécimen preservado" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="保存標本" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -29,6 +30,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Fossil Specimen" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Espécime Fóssil" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Espécimen fósil" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="化石標本" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -42,6 +44,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Living Specimen" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Espécime Vivo" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Espécimen vivo" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="生体標本" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -55,6 +58,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Human Observation" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Observação por Humano" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Observación humana" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="人による観察" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -68,6 +72,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Machine Observation" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Observação por Máquina" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Observación con máquina" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="機械観測" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -81,6 +86,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="MaterialSample" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Amostra" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Muestra" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="試料" xml:lang="ja"/>
   </preferred>
   <alternative>
@@ -95,6 +101,7 @@
   <preferred>
    <term dc:source="Darwin Core" dc:title="Occurrence" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Ocorrência" xml:lang="pt"/>
+   <term dc:source="Darwin Core" dc:title="Observación" xml:lang="es"/>
    <term dc:source="Darwin Core" dc:title="オカレンス" xml:lang="ja"/>
   </preferred>
   <alternative>
