@@ -10,7 +10,7 @@
     dc:issued="2015-07-02"
     dc:subject="dwc:Taxon dwc:Event"
     dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#Occurrence'
-    dc:description='The category of information pertaining to evidence of an occurrence in nature, in a collection, or in a dataset (specimen, observation, etc.). Released April 2015, this version removes terms dcterms:source, dcterms:rights, dwc:individualID, dwc:occurrenceDetails, and adds dcterms:license, dwc:organismQuantity, dwc:organismQuantityType, dwc:organismID, dwc:organismName, dwc:organismScope, dwc:associatedOrganisms, dwc:organismRemarks, dwc:parentEventID, dwc:sampleSizeValue, dwc:sampleSizeUnit.'>
+    dc:description='The category of information pertaining to evidence of an occurrence in nature, in a collection, or in a dataset (specimen, observation, etc.). Released July 2015, this version removes terms dcterms:source, dcterms:rights, dwc:individualID, dwc:occurrenceDetails, and adds dcterms:license, dwc:organismQuantity, dwc:organismQuantityType, dwc:organismID, dwc:organismName, dwc:organismScope, dwc:associatedOrganisms, dwc:organismRemarks, dwc:parentEventID, dwc:sampleSizeValue, dwc:sampleSizeUnit.'>
 
     <!-- Record-level -->
     <property group='Record-level' name='type' thesaurus='http://rs.gbif.org/vocabulary/dcterms/type.xml' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/type' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#dcterms:type' dc:description='The nature or genre of the resource. For Darwin Core, recommended best practice is to use the name of the class that defines the root of the record.' examples='&quot;StillImage&quot;, &quot;MovingImage&quot;, &quot;Sound&quot;, &quot;PhysicalObject&quot;, &quot;Event&quot;' required='false'/>
