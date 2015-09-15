@@ -7,7 +7,7 @@
     dc:title="Darwin Core Identification History" 
     name="Identification" namespace="http://rs.tdwg.org/dwc/terms/" rowType="http://rs.tdwg.org/dwc/terms/Identification"
     dc:issued="2015-02-13"
-    dc:subject="dwc:Occurrence dwc:MaterialSample"
+    dc:subject="dwc:Occurrence http://rs.tdwg.org/dwc/terms/MaterialSample"
     dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#Identification"
     dc:description="Support for multiple identification/determinations of species occurrences such as specimens. All identifications including the current one should be listed, while the current should also be repeated in the occurrence core for simple access.">
 
