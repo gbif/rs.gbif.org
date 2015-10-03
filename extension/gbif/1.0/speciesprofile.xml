@@ -8,7 +8,7 @@
     namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/SpeciesProfile"
     dc:issued="2015-02-13"
     dc:subject="dwc:Taxon"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml"
     dc:description="A basic species profile with characteristics in addition to textural description which are covered by the description extension.">
     
     <property name='isMarine' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isMarine' dc:relation='' dc:description='a boolean flag indicating whether the taxon is a marine organism, i.e. can be found in/above sea water' examples='TRUE' required='false'/>
