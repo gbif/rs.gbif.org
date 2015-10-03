@@ -7,7 +7,7 @@
     name="Identifier" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Identifier"
     dc:issued="2015-02-13"
     dc:title="Alternative Identifiers"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/identifier.xml"
     dc:subject=""
     dc:description=""
     >

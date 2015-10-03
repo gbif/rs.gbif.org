@@ -7,7 +7,7 @@
     dc:title="Taxon Description" 
     name="Description" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Description"
     dc:issued="2015-02-13"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/description.xml"
     dc:subject="dwc:Taxon checklist"
     dc:description="DwC Taxon extension to exchange simple text/paragraph based taxon descriptions. Not suitable for structured descriptions and keys, but useful for creating species pages.">
 

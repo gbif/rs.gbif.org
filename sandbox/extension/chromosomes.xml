@@ -8,7 +8,7 @@
     rowType="http://rs.gbif.org/terms/1.0/Chromosomes"
     dc:title="Chromosomes Count" name="Chromosomes" namespace="http://rs.gbif.org/terms/1.0" 
     dc:subject="dwc:Taxon"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/sandbox/extension/chromosomes.xml"
     dc:description="Information about the number of chromosomes of a species">
     
     <property name='haploidCount' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/haploidCount' dc:relation='' dc:description='Number of chromosomes counted in the haploid state' examples='"10"' required='false'/>

@@ -8,7 +8,7 @@
     namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Image"
     dc:issued="2015-02-13"
     dc:subject="dwc:Taxon dwc:Occurrence"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/images.xml"
     dc:description="This extension has been DEPRECATED! Please use the newer Multimedia extension instead: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml">
 
     <property name="identifier" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/identifier" dc:description='The public URL that identifies and locates the image file directly, not a html page.' examples='http://farm6.static.flickr.com/5127/5242866958_98afd8cbce_o.jpg' type="uri" required="true"/>

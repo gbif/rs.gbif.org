@@ -8,7 +8,7 @@
     dc:issued="2015-02-13"
     dc:title="Literature References" name="Reference"
     dc:subject=""
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/references.xml"
     dc:description="Bibliography, i.e. list of literature references. For example a taxon or occurrence/specimen.">
     
     <property name='identifier' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/identifier' dc:relation='' dc:description='DOI, ISBN, URI, etc refering to the reference. This can be repeated in multiple rows to include multiple identifiers, e.g. a DOI and a URL pointing to a pdf of the article.' examples='doi:10.1038/ng0609-637;  http://www.nature.com/ng/journal/v41/n6/pdf/ng0609-637.pdf' required='false'/>

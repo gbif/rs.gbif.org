@@ -8,7 +8,7 @@
     name="Links" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Links"
     dc:issued="2015-02-13"
     dc:subject="dwc:Occurrence dwc:Taxon"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/sandbox/extension/links.xml"
     dc:description="Links of related webpages. Links can be classified with keywords (dc:subject) and should point to human friendly webpages.">
 
     <property name='url' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/url' dc:relation='' dc:description='The absolute URL to the related webpage' examples='http://www.arkive.org/atlantic-cod/gadus-morhua/' required='true'/>

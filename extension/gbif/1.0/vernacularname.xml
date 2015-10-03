@@ -7,7 +7,7 @@
     rowType="http://rs.gbif.org/terms/1.0/VernacularName"
     dc:issued="2015-02-13"
     dc:title="Vernacular Names" name="VernacularName" namespace="http://rs.gbif.org/terms/1.0"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml"
     dc:subject="dwc:Taxon"
     dc:description="Extension to core taxa that lists vernacular names for a scientific taxon">
     

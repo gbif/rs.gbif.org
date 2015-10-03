@@ -8,7 +8,7 @@
     dc:issued="2015-02-13"
     dc:title="Types and Specimen" name="TypesAndSpecimen" namespace="http://rs.gbif.org/terms/1.0"
     dc:subject="dwc:Taxon"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml"
     dc:description="An extension for specimens and types, including type specimens, type species and type genera and simple specimens unrelated to types.">
     
     <property name='typeStatus' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/typeStatus' thesaurus="http://rs.gbif.org/vocabulary/gbif/type_status.xml" dc:relation='' dc:description='The type status of the specimen, not used for type species or type genus' examples='holotype, syntype, lectotype, type species' required='false'/>
