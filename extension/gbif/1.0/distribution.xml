@@ -8,7 +8,7 @@
     dc:title="Species Distribution" name="Distribution" namespace="http://rs.gbif.org/terms/1.0"
     dc:issued="2015-02-13"
     dc:subject="dwc:Taxon"
-    dc:relation=""
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/distribution.xml"
     dc:description="Geographic distribution of a taxon">
     
     <property name='locationID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/locationID' dc:relation='http://rs.gbif.org/areas/' dc:description='A code for the named area this distributon record is about. Use a prefix for each code to indicate the source of the code, see http://rs.gbif.org/areas/ for list of coding schemes and their recommended prefix.' examples='TDWG:AGS-TF; ISO:AR; WOEID:564721' required='false'/>
