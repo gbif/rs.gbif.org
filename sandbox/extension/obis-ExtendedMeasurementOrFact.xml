@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
-    dc:title="Darwin Core Extended Measurement Or Facts" 
+    dc:title="OBIS Extended Measurement Or Facts" 
     name="ExtendedMeasurementOrFact" namespace="http://rs.obis.org/obis/terms/" rowType="http://rs.obis.org/obis/terms/ExtendedMeasurementOrFact"
     dc:issued="2015-10-07"
     dc:subject=""
