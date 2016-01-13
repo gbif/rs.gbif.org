@@ -8,12 +8,12 @@
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="GGBN Preservation Extension" 
     name="Preservation" namespace="http://data.ggbn.org/schemas/ggbn/terms/" rowType="http://data.ggbn.org/schemas/ggbn/terms/Preservation"
-    dc:issued="2015-02-13"
+    dc:issued="2016-01-13"
     dc:subject=""
     dc:relation="http://terms.tdwg.org/wiki/GGBN_Preservation_Vocabulary"
     dc:description="Support for all kinds of preservations as an extension for Material Sample core sample data in Darwin Core. Intended to be a one to many relation to the Material Sample core.">
 
-	<property group='Preservation' name='preservationType' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/preservationType' dc:relation='http://terms.tdwg.org/wiki/ggbn:preservationType' dc:description='Type of Specimen, Tissue, DNA or DNA Preservation or Storage' examples='dried, silica, alcohol, FTA card, tube, QIAsafe' required='true'/>
+    <property group='Preservation' name='preservationType' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/preservationType' dc:relation='http://terms.tdwg.org/wiki/ggbn:preservationType' dc:description='Type of Specimen, Tissue, DNA or DNA Preservation or Storage' examples='dried, silica, alcohol, FTA card, tube, QIAsafe' required='true'/>
     <property group='Preservation' thesaurus="http://rs.gbif.org/vocabulary/ggbn/preservation_temperature.xml" name='preservationTemperature' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/preservationTemperature' dc:relation='http://terms.tdwg.org/wiki/ggbn:preservationTemperature' dc:description='Temperature of Specimen, Tissue, DNA or RNA Preservation or Storage' examples='-20°C, RT, -80°C, -196°C, LN' required='false'/>
     <property group='Preservation' name='preservationDateBegin' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/preservationDateBegin' dc:relation='http://terms.tdwg.org/wiki/ggbn:preservationDateBegin' dc:description='Start of current Specimen, Tissue, DNA or RNA Preservation' examples='March 2012, 2014-02-19' required='false'/>
     <property group='Preservation' name='sequence' namespace='http://data.ggbn.org/schemas/ggbn/terms/' qualName='http://data.ggbn.org/schemas/ggbn/terms/sequence' dc:relation='http://terms.tdwg.org/wiki/ggbn:sequence' dc:description='can be used to describe sequence (order) of different preservations or other issues' examples='1, 2, 3, 4 (1=oldest, 4=latest)' required='false'/>
