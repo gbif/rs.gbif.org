@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+ <extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="GBIF Relevé" 
+    name="Releve" namespace="http://rs.gbif.org/terms/1.0/" rowType="http://rs.gbif.org/terms/1.0/Releve"
+    dc:issued="2016-02-26"
+    dc:subject=""
+    dc:relation="http://rs.gbif.org/sandbox/extension/releve.xml"
+    dc:description="Support for vegetation plot survey (relevé) measurements ancillary to those reported using Event core with Occurrence extension.">
+    <property name='releveNumber' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/releveNumber' dc:relation='' dc:description='Relevé number' examples='' required='false'/>
+    <property name='reference' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.gbif.org/terms/1.0/reference' dc:relation='' dc:description='The reference number for the publication associated with the relevé' examples='' required='false'/>
+    <property name='tableNumber' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/tableNumber' dc:relation='' dc:description='The table number in the associated publication' examples='' required='false'/>
+    <property name='numberInTable' namespace='' qualName='http://rs.gbif.org/terms/1.0/numberInTable' dc:relation='' dc:description='The relevé number in the associated publication table' examples='' required='false'/>
+    <property name='coverScale' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverScale' dc:relation='' dc:description='Cover scale' examples='' required='false'/>
+    <property name='project' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/project' dc:relation='' dc:description='The code for the project associated with the relevé' examples='' required='false'/>
+    <property name='syntaxon' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/syntaxon' dc:relation='' dc:description='The code for the syntaxon (plant community type) associated with the relevé' examples='' required='false'/>
+    <property name='exposition' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/exposition' dc:relation='' dc:description='The direction of exposition (none, South, East, West, North) of the relevé' examples='' required='false'/>
+    <property name='inclination' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/inclination' dc:relation='' dc:description='The inclination in degrees of the relevé site' examples='' required='false'/>
+    <property name='coverTotal' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverTotal' dc:relation='' dc:description='The total cover (%) of all plants' examples='' required='false'/>
+    <property name='coverTrees' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverTrees' dc:relation='' dc:description='The  cover (%) of trees' examples='' required='false'/>
+    <property name='coverShrubs' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverShrubs' dc:relation='' dc:description='The  cover (%) of shrubs' examples='' required='false'/>
+    <property name='coverHerbs' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverHerbs' dc:relation='' dc:description='The  cover (%) of the herb layer' examples='' required='false'/>
+    <property name='coverMosses' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverMosses' dc:relation='' dc:description='The  cover (%) of mosses' examples='' required='false'/>
+    <property name='coverLichens' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverLichens' dc:relation='' dc:description='The  cover (%) of lichens' examples='' required='false'/>
+    <property name='coverAlgae' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverAlgae' dc:relation='' dc:description='The  cover (%) of algae' examples='' required='false'/>
+    <property name='coverLitter' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/coverLitter' dc:relation='' dc:description='The  cover (%) of litter' examples='' required='false'/>
+    <property name='highTreeLayerHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/highTreeLayerHeight' dc:relation='' dc:description='The height in metres of the high tree layer' examples='' required='false'/>
+    <property name='lowTreeLayerHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/lowTreeLayerHeight' dc:relation='' dc:description='The height in metres of the low tree layer' examples='' required='false'/>
+    <property name='highShrubLayerHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/highShrubLayerHeight' dc:relation='' dc:description='The height in metres of the high shrub layer' examples='' required='false'/>
+    <property name='lowShrubLayerHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/lowShrubLayerHeight' dc:relation='' dc:description='The height in metres of the low shrub layer' examples='' required='false'/>
+    <property name='highHerbLayerMeanHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/highHerbLayerMeanHeight' dc:relation='' dc:description='The mean height in centimetres of the high herb layer' examples='' required='false'/>
+    <property name='lowHerbLayerMeanHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/lowHerbLayerMeanHeight' dc:relation='' dc:description='The mean height in centimetres of the low herb layer' examples='' required='false'/>
+    <property name='herbLayerMaximumHeight' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/herbLayerMaximumHeight' dc:relation='' dc:description='The maximum height in centimetres of the herb layer' examples='' required='false'/>
+    <property name='meanHeightCryptogamLayer' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/meanHeightCryptogamLayer' dc:relation='' dc:description='The mean height in milliimetres of the cryptogam layer' examples='' required='false'/>
+    <property name='mossesIdentified' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/mossesIdentified' dc:relation='' dc:description='The mosses in the releve were identified (Yes/No)' examples='' required='false'/>
+    <property name='lichensIdentified' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/lichensIdentified' dc:relation='' dc:description='The lichens in the releve were identified (Yes/No)' examples='' required='false'/>
+</extension>
