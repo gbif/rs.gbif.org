@@ -15,7 +15,7 @@ This documents the versioning policy for extensions and vocabularies hosted on h
 ## Extensions Versioning Policy 
 ### What types of changes require a new version of an extension to be created?
 
--  Adding or removing properties. Note properties are no longer marked as deprecated, they are simiply removed from the new version.
+-  Adding or removing properties. Note properties are no longer marked as deprecated, they are simply removed from the new version.
 -  Modifying the vocabulary or vocabulary version for a property
 -  Changing a property from being non-required to being required
 -  Modifying a property's data type
@@ -42,7 +42,7 @@ New versions are first quarantined in the [sandbox](http://rs.gbif.org/sandbox/)
 ## Vocabularies Versioning Policy
 ### What types of changes require a new version of a vocabulary to be created?
 
--  Adding or removing concepts. Note concepts are no longer marked as deprecated, they are simiply removed from the new version.
+-  Adding or removing concepts. Note concepts are no longer marked as deprecated, they are simply removed from the new version.
 
 ### What types of changes do not require a new version of a vocabulary to be created?
 
