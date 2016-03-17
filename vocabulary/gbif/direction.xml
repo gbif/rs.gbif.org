@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/direction" 
+    dc:description="A vocabulary representing compass directions including the four cardinal directions, the four intercardinal directions, plus eight further secondary-intercardinal directions." 
+    dc:title="Direction GBIF Vocabulary"
+  dc:issued="2016-03-17"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="N" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/n" 
+        dc:relation=""
+        dc:description="North - one of four cardinal directions.">
+        <preferred>
+            <term dc:title="North" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="E" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/e" 
+        dc:relation=""
+        dc:description="East - one of four cardinal directions.">
+        <preferred>
+            <term dc:title="East" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="S" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/s" 
+        dc:relation=""
+        dc:description="South - one of four cardinal directions.">
+        <preferred>
+            <term dc:title="South" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="W" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/w" 
+        dc:relation=""
+        dc:description="West - one of four cardinal directions.">
+        <preferred>
+            <term dc:title="West" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>    
+    <concept dc:identifier="NE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/ne" 
+        dc:relation=""
+        dc:description="Northeast - one of four intercardinal directions.">
+        <preferred>
+            <term dc:title="Northeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="SE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/se" 
+        dc:relation=""
+        dc:description="Southeast - one of four intercardinal directions.">
+        <preferred>
+            <term dc:title="Southeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="SW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/sw" 
+        dc:relation=""
+        dc:description="Southwest - one of four intercardinal directions.">
+        <preferred>
+            <term dc:title="Southwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="NW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/nw" 
+        dc:relation=""
+        dc:description="Northwest - one of four intercardinal directions.">
+        <preferred>
+            <term dc:title="Northwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>    
+    <concept dc:identifier="NNE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/nne" 
+        dc:relation=""
+        dc:description="North-northeast - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="North-northeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="ENE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/ene" 
+        dc:relation=""
+        dc:description="East-northeast - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="East-northeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="ESE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/ese" 
+        dc:relation=""
+        dc:description="East-southeast - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="East-southeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="SSE" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/sse" 
+        dc:relation=""
+        dc:description="South-southeast - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="South-southeast" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="SSW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/ssw" 
+        dc:relation=""
+        dc:description="South-southwest - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="South-southwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="WSW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/wsw" 
+        dc:relation=""
+        dc:description="West-southwest - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="West-southwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="WNW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/wnw" 
+        dc:relation=""
+        dc:description="West-northwest - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="West-northwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="NNW" dc:URI="http://rs.gbif.org/vocabulary/gbif/direction/nnw" 
+        dc:relation=""
+        dc:description="North-northwest - one of eight secondary-intercardinal direction.">
+        <preferred>
+            <term dc:title="North-northwest" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+</thesaurus>
