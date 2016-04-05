@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer" 
+    dc:description="A vocabulary representing vegetation layers. Note: sub-layers are excluded." 
+    dc:title="Vegetation Layer GBIF Vocabulary"
+    dc:issued="2016-04-05"
+    xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	
+    <concept dc:identifier="treeLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/treeLayer" 
+        dc:relation=""
+        dc:description="Includes all woody plants greater than 10 meters tall.">
+        <preferred>
+            <term dc:title="Tree layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="shrubLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/shrubLayer" 
+        dc:relation=""
+        dc:description="Includes all woody plants less than 10 meters tall, except low woody or trailing plants which are considered part of the herb layer.">
+        <preferred>
+            <term dc:title="Shrub layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="herbLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/herbLayer" 
+        dc:relation=""
+        dc:description="Includes all herbaceous species, regardless of height, and some low woody plants less than 15 centimeters tall.">
+        <preferred>
+            <term dc:title="Tree layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="juvenileLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/juvenileLayer" 
+        dc:relation=""
+        dc:description="Includes all juvenile trees.">
+        <preferred>
+            <term dc:title="Juvenile layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="seedlingLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/seedlingLayer" 
+        dc:relation=""
+        dc:description="Includes all tree seedlings less than two years old.">
+        <preferred>
+            <term dc:title="Seedling layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="cryptogamLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/cryptogamLayer" 
+        dc:relation=""
+        dc:description="Includes all cryptogams.">
+        <preferred>
+            <term dc:title="Cryptogam layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+</thesaurus>
