@@ -2,51 +2,78 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
     dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer" 
-    dc:description="A vocabulary representing vegetation layers. Note: sub-layers are excluded." 
+    dc:description="A vocabulary representing vegetation layers, including sub-layers." 
     dc:title="Vegetation Layer GBIF Vocabulary"
     dc:issued="2016-04-05"
     xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	
-    <concept dc:identifier="treeLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/treeLayer" 
+    <concept dc:identifier="tree" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/treeLayer" 
         dc:relation=""
-        dc:description="Includes all woody plants greater than 10 meters tall.">
+        dc:description="Includes all woody plants greater than five meters tall.">
         <preferred>
             <term dc:title="Tree layer" xml:lang="en"/>
         </preferred>
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="shrubLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/shrubLayer" 
+    <concept dc:identifier="emergent" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/emergent" 
         dc:relation=""
-        dc:description="Includes all woody plants less than 10 meters tall, except low woody or trailing plants which are considered part of the herb layer.">
+        dc:description="The tree layer above the general canopy.">
+        <preferred>
+            <term dc:title="Emergent layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="canopy" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/canopy" 
+        dc:relation=""
+        dc:description="The upper tree layer, made up of the crowns of its tallest trees.">
+        <preferred>
+            <term dc:title="Canopy layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="understory" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/understory" 
+        dc:relation=""
+        dc:description="The lower tree layer, made up of trees above the shrub layer and below the canopy.">
+        <preferred>
+            <term dc:title="Understory layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="shrub" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/shrub" 
+        dc:relation=""
+        dc:description="Includes all woody plants between one and a half and five meters tall, except low woody or trailing plants which are considered part of the herb layer.">
         <preferred>
             <term dc:title="Shrub layer" xml:lang="en"/>
         </preferred>
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="herbLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/herbLayer" 
-        dc:relation=""
-        dc:description="Includes all herbaceous species, regardless of height, and some low woody plants less than 15 centimeters tall.">
-        <preferred>
-            <term dc:title="Tree layer" xml:lang="en"/>
-        </preferred>
-        <alternative>
-        </alternative>
-    </concept>
     <concept dc:identifier="juvenileLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/juvenileLayer" 
         dc:relation=""
-        dc:description="Includes all juvenile trees.">
+        dc:description="The shrub layer, made up of all juvenile trees.">
         <preferred>
             <term dc:title="Juvenile layer" xml:lang="en"/>
         </preferred>
         <alternative>
         </alternative>
     </concept>
+    <concept dc:identifier="herbaceous" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/herbaceous" 
+        dc:relation=""
+        dc:description="Includes all herbaceous (non woody) species, regardless of height, and some low woody plants up to one and a half meters tall.">
+        <preferred>
+            <term dc:title="Herbaceous layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
     <concept dc:identifier="seedlingLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/seedlingLayer" 
         dc:relation=""
-        dc:description="Includes all tree seedlings less than two years old.">
+        dc:description="The herbaceous layer, made up of all tree seedlings.">
         <preferred>
             <term dc:title="Seedling layer" xml:lang="en"/>
         </preferred>
@@ -58,6 +85,15 @@
         dc:description="Includes all cryptogams.">
         <preferred>
             <term dc:title="Cryptogam layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="rhizosphere" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/rhizosphere" 
+        dc:relation=""
+        dc:description="The root layer, made up of the underground area of a plant habitat.">
+        <preferred>
+            <term dc:title="Rhizosphere layer" xml:lang="en"/>
         </preferred>
         <alternative>
         </alternative>
