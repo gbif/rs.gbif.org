@@ -2,13 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
     dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer" 
-    dc:description="A vocabulary representing vegetation layers, including sub-layers." 
+    dc:description="A vocabulary representing vegetation layers, including aquatic vegetation layers, and their sub-layers." 
     dc:title="Vegetation Layer GBIF Vocabulary"
     dc:issued="2016-04-05"
     xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 	
-    <concept dc:identifier="tree" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/treeLayer" 
+    <concept dc:identifier="tree" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/tree" 
         dc:relation=""
         dc:description="Includes all woody plants greater than five meters tall.">
         <preferred>
@@ -53,7 +53,7 @@
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="juvenileLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/juvenileLayer" 
+    <concept dc:identifier="juvenile" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/juvenile" 
         dc:relation=""
         dc:description="The shrub layer, made up of all juvenile trees.">
         <preferred>
@@ -71,7 +71,7 @@
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="seedlingLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/seedlingLayer" 
+    <concept dc:identifier="seedling" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/seedling" 
         dc:relation=""
         dc:description="The herbaceous layer, made up of all tree seedlings.">
         <preferred>
@@ -80,7 +80,7 @@
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="cryptogamLayer" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/cryptogamLayer" 
+    <concept dc:identifier="cryptogam" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/cryptogam" 
         dc:relation=""
         dc:description="Includes all cryptogams.">
         <preferred>
@@ -97,5 +97,41 @@
         </preferred>
         <alternative>
         </alternative>
+    </concept>    
+    <concept dc:identifier="submerged" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/submerged" 
+        dc:relation=""
+        dc:description="The submerged layer in the littoral zone, made up of sediment-rooted macrophytes.">
+        <preferred>
+            <term dc:title="Submerged layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
     </concept>
+    <concept dc:identifier="emergentAquatic" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/emergentAquatic" 
+        dc:relation=""
+        dc:description="The partly-submerged layer in the littoral zone, made up of sediment-rooted macrophytes.">
+        <preferred>
+            <term dc:title="Emergent (aquatic) layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="floating" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/floating" 
+        dc:relation=""
+        dc:description="The floating layer in the littoral zone, made up of sediment-rooted macrophytes. E.g. Nymphaea.">
+        <preferred>
+            <term dc:title="Floating layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>
+    <concept dc:identifier="freeFloating" dc:URI="http://rs.gbif.org/vocabulary/gbif/vegetationLayer/freeFloating" 
+        dc:relation=""
+        dc:description="The free-floating layer in the littoral zone, made up of non-sediment-rooted macrophytes. E.g. Lemna.">
+        <preferred>
+            <term dc:title="Free-Floating layer" xml:lang="en"/>
+        </preferred>
+        <alternative>
+        </alternative>
+    </concept>    
 </thesaurus>
