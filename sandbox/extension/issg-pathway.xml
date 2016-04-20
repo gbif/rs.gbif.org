@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="Invasive Species Pathways" 
+    name="Pathway" namespace="http://rs.gbif.org/issg/terms/" rowType="http://rs.gbif.org/issg/terms/Pathway"
+    dc:issued="2016-04-20"
+    dc:relation=""
+    dc:subject="dwc:Taxon checklist"
+    dc:description="DwC Taxon extension to exchange invasive species pathways.">
+
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for data provider. Should be a unique acronym or other identifier.' examples='ISC' required='false'/>
+    <property name='type' thesaurus="http://rs.gbif.org/sandbox/vocabulary/issg/pathway_type.xml" namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/type' dc:relation='' dc:description='The kind of pathway' examples='vector, cause' required='false'/>
+    <property name='pathway' thesaurus="http://rs.gbif.org/sandbox/vocabulary/issg/pathway.xml" namespace='http://rs.gbif.org/issg/terms/' qualName='http://rs.gbif.org/issg/terms/pathway' dc:relation='' dc:description='The pathway, given as a URI' examples='' required='true'/>
+    <property name='description' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/description' dc:relation='' dc:description='Any descriptive free text explaining the pathway.' examples='' required='false'/>
+    <property name='source' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/source' dc:relation='' dc:description='Source reference of this pathway, a URL or full publication citation' examples='' required='false'/>
+</extension>
