@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus 
-	dc:URI="http://rs.gbif.org/vocabulary/issg/pathway" 
-	dc:description="The Pathway vocabulary is a classification for pathways of entry for invasive alien species, developed under the leadership of the IUCN Species Survival Commission Invasive Species Specialist Group (IUCN SSC ISSG). The vocabulary was published as supplementary material in Pagad et al., 2015, IUCN SSC Invasive Species Specialist Group: invasive alien species information management supporting practitioners, policy makers and decision takers (http://dx.doi.org/10.3391/mbi.2015.6.2.03)." 
-	dc:title="IUCN SSC ISSG Pathway Vocabulary"
-  dc:issued="2016-04-20"
-  dc:relation="http://rs.gbif.org/vocabulary/issg/pathway"
-	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-	
+    dc:URI="http://rs.gbif.org/vocabulary/issg/pathway" 
+    dc:description="The Pathway vocabulary is a classification for pathways of entry for invasive alien species, developed under the leadership of the IUCN Species Survival Commission Invasive Species Specialist Group (IUCN SSC ISSG). The vocabulary was published as supplementary material in Pagad et al., 2015, IUCN SSC Invasive Species Specialist Group: invasive alien species information management supporting practitioners, policy makers and decision takers (http://dx.doi.org/10.3391/mbi.2015.6.2.03)." 
+    dc:title="IUCN SSC ISSG Pathway Vocabulary"
+    dc:issued="2016-04-20"
+    dc:relation="http://www.reabic.net/journals/mbi/2015/Supplements/MBI_2015_Pagad_etal_Supplement.xls"
+    xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
 <concept dc:identifier="Release:ReleaseInNatureForUse" 
     dc:URI="http://rs.gbif.org/vocabulary/issg/pathway/Release/ReleaseInNatureForUse"  
     dc:description="Pathway class: Release, subclass: ReleaseInNatureForUse">	
