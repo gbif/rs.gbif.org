@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/status" 
+    dc:description="The status vocabulary is a classification for native/alien/cryptogenic status of species in a given area, developed under the leadership of the IUCN Species Survival Commission Invasive Species Specialist Group (IUCN SSC ISSG). The vocabulary was published as supplementary material in Pagad et al., 2015, IUCN SSC Invasive Species Specialist Group: invasive alien species information management supporting practitioners, policy makers and decision takers (http://dx.doi.org/10.3391/mbi.2015.6.2.03)." 
+    dc:title="IUCN SSC ISSG Status Vocabulary"
+    dc:issued="2016-04-20"
+    dc:relation="http://www.reabic.net/journals/mbi/2015/Supplements/MBI_2015_Pagad_etal_Supplement.xls"
+    xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+<concept dc:identifier="Native" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/status/Native"  
+    dc:description="The species has been categorised as native in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Status Vocabulary" dc:title="Native" xml:lang="en"/></preferred>
+</concept>
+<concept dc:identifier="Alien" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/status/Alien"  
+    dc:description="The species has been categorised as alien in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Status Vocabulary" dc:title="Alien" xml:lang="en"/></preferred>
+</concept><concept dc:identifier="Cryptogenic" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/status/Cryptogenic"  
+    dc:description="The species has been categorised as cryptogenic (of unknown origin) in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Status Vocabulary" dc:title="Cryptogenic" xml:lang="en"/></preferred>
+</concept><concept dc:identifier="Unspecified" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/status/Unspecified"  
+    dc:description="It is not specified whether the species as native, alien or cryptogenic in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Status Vocabulary" dc:title="Unspecified" xml:lang="en"/></preferred>
+</concept>
+</thesaurus>

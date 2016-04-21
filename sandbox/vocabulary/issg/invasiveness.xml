@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/invasiveness" 
+    dc:description="The invasiveness vocabulary is a classification for invasiveness of introduced species, developed under the leadership of the IUCN Species Survival Commission Invasive Species Specialist Group (IUCN SSC ISSG). The vocabulary was published as supplementary material in Pagad et al., 2015, IUCN SSC Invasive Species Specialist Group: invasive alien species information management supporting practitioners, policy makers and decision takers (http://dx.doi.org/10.3391/mbi.2015.6.2.03)." 
+    dc:title="IUCN SSC ISSG Invasiveness Vocabulary"
+    dc:issued="2016-04-20"
+    dc:relation="http://www.reabic.net/journals/mbi/2015/Supplements/MBI_2015_Pagad_etal_Supplement.xls"
+    xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+<concept dc:identifier="Invasive" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/invasiveness/Invasive"  
+    dc:description="The species has been categorised as invasive in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Invasiveness Vocabulary" dc:title="Invasive" xml:lang="en"/></preferred>
+</concept>
+<concept dc:identifier="NotInvasive" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/invasiveness/NotInvasive"  
+    dc:description="The species has been categorised as not invasive in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Invasiveness Vocabulary" dc:title="NotInvasive" xml:lang="en"/></preferred>
+</concept><concept dc:identifier="Uncertain" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/invasiveness/Uncertain"  
+    dc:description="It is uncertain whether the species is invasive in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Invasiveness Vocabulary" dc:title="Uncertain" xml:lang="en"/></preferred>
+</concept><concept dc:identifier="Unspecified" 
+    dc:URI="http://rs.gbif.org/vocabulary/issg/invasiveness/Unspecified"  
+    dc:description="It is not specified whether the species is invasive in the area in question">	
+  <preferred><term dc:source="IUCN SSC ISSG Invasiveness Vocabulary" dc:title="Unspecified" xml:lang="en"/></preferred>
+</concept></thesaurus>
