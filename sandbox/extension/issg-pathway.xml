@@ -5,7 +5,7 @@
     xmlns:dc="http://purl.org/dc/terms/"    
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Invasive Species Pathways" 
-    name="Pathway" namespace="http://rs.gbif.org/issg/terms/" rowType="http://rs.gbif.org/issg/terms/Pathways"
+    name="Pathways" namespace="http://rs.gbif.org/issg/terms/" rowType="http://rs.gbif.org/issg/terms/Pathways"
     dc:issued="2016-04-20"
     dc:relation=""
     dc:subject="dwc:Taxon checklist"
