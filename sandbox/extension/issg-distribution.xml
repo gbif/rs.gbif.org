@@ -12,6 +12,7 @@
     dc:subject="dwc:Taxon checklist"
     dc:description="DwC Taxon extension to exchange invasive species area distributions. It is based on the GBIF distribution extension but adds invasiveness and uses other vocabuarlies">
     
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='GBIF' required='false'/>
     <property name='locationID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/locationID' dc:relation='http://rs.gbif.org/areas/' dc:description='A code for the named area this distributon record is about. Use a prefix for each code to indicate the source of the code, see http://rs.gbif.org/areas/ for list of coding schemes and their recommended prefix.' examples='TDWG:AGS-TF; ISO:AR; WOEID:564721' required='false'/>
     <property name='countryCode' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/countryCode' dc:relation='' dc:description='ISO3166 alpha 2 (3 is permissable) country codes the area belongs to or as an alternative for a lcoationID if the area is a country.' examples='"AR"' required='false'/>
     <property name='locality' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/locality' dc:relation='' dc:description='The verbatim name of the area this distributon record is about.' examples='Patagonia' required='false'/>
@@ -22,5 +23,6 @@
     <property name='invasiveness' thesaurus="http://rs.gbif.org/sandbox/vocabulary/issg/invasiveness.xml" namespace='http://rs.gbif.org/issg/terms/' qualName='http://rs.gbif.org/issg/terms/invasiveness' dc:relation='' dc:description='Invasiveness of the species in the given area' examples='' required='false'/>
     <property name='source' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/source' dc:relation='' dc:description='Source reference for this distribution record. Can be proper publication citation, a webpage URL, etc.' examples='"Euro+Med Plantbase - the information resource for Euro-Mediterranean plant diversity (2006-). Published on the Internet http://ww2.bgbm.org/EuroPlusMed/ July, 2009"' required='false'/>
     <property name='occurrenceRemarks' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/occurrenceRemarks' dc:relation='' dc:description='Comments or notes about the distribution' examples='"Excluded because of misidentification"' required='false'/>
+    <property name='occurrenceCount' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/occurrenceCount' dc:relation='' dc:description='Number of GBIF occurrences found in distribution area' examples='' required='false'/>
 
 </extension>
