@@ -26,5 +26,6 @@
     <property name='audience' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/audience' dc:relation='' dc:description='A class or description for whom the image is intended or useful' examples='"experts", "general public", "children"' required='false'/>
     <property name="license" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/license" dc:description='License for this image. Can be text or a url like creative commons uses' examples='http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en' />
     <property name='rightsHolder' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/rightsHolder' dc:relation='' dc:description='A person or organization owning or managing rights over the image.' examples='' required='false'/>
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='' required='false'/>
 
 </extension>

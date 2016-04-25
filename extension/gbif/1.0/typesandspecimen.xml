@@ -31,5 +31,6 @@
     <property name='verbatimLabel' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/verbatimLabel' dc:relation='' dc:description='The full, verbatim text from the specimen label' examples='' required='false'/>
     <property name='verbatimLongitude' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/verbatimLongitude' dc:relation='' dc:description='The geographic longitude ' examples="121d 10' 34 W" required='false'/>
     <property name='verbatimLatitude' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/verbatimLatitude' dc:relation='' dc:description='The geographic latitude ' examples='41 05 54.03S' required='false'/>
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='' required='false'/>
     
 </extension>

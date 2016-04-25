@@ -24,5 +24,6 @@
     <property name='endDayOfYear' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/endDayOfYear' dc:relation='' dc:description='Seasonal temporal subcontext within the eventDate context. The latest ordinal day of the year on which the distribution record is valid' examples='"120"' required='false'/>
     <property name='source' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/source' dc:relation='' dc:description='Source reference for this distribution record. Can be proper publication citation, a webpage URL, etc.' examples='"Euro+Med Plantbase - the information resource for Euro-Mediterranean plant diversity (2006-). Published on the Internet http://ww2.bgbm.org/EuroPlusMed/ July, 2009"' required='false'/>
     <property name='occurrenceRemarks' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/occurrenceRemarks' dc:relation='' dc:description='Comments or notes about the distribution' examples='"Excluded because of misidentification"' required='false'/>
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='' required='false'/>
 
 </extension>

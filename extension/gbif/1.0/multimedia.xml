@@ -25,5 +25,6 @@
     <property name="source" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/source" dc:description='If the media item was derived or taken from another source this is the reference to that resource. For example a book from which an image was scanned or the original provider of a photo/graphic, such as photography agencies.' examples='' required='false'/>
     <property name="license" namespace="http://purl.org/dc/terms/" qualName="http://purl.org/dc/terms/license" dc:description='License for this media object. Can be text or a url like creative commons uses' examples='http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en' required='false'/>
     <property name='rightsHolder' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/rightsHolder' dc:relation='' dc:description='A person or organization owning or managing rights over the media item.' examples='' required='false'/>
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='' required='false'/>
 
 </extension>
