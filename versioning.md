@@ -3,7 +3,7 @@
 This documents the versioning policy for extensions and vocabularies hosted on http://rs.gbif.org. It also provides detailed instructions on how to create new versions of extensions and vocabularies.
 
 ## Table of Contents
-* [Rationale for Versioning](#versioning.md#rationale-for-versioning)
+* [Rationale for Versioning](versioning.md#rationale-for-versioning)
 * [Extensions Versioning Policy](#)
   * [What types of changes require a new version of an extension to be created?](versioning.md#what-types-of-changes-require-a-new-version-of-an-extension-to-be-created)
   * [What types of changes do not require a new version of an extension to be created?](#)
