@@ -3,6 +3,7 @@
 This documents the versioning policy for extensions and vocabularies hosted on http://rs.gbif.org. It also provides detailed instructions on how to create new versions of extensions and vocabularies.
 
 ## Table of Contents
+* [Rationale for Versioning](#versioning.md#rationale-for-versioning)
 * [Extensions Versioning Policy](#)
   * [What types of changes require a new version of an extension to be created?](versioning.md#what-types-of-changes-require-a-new-version-of-an-extension-to-be-created)
   * [What types of changes do not require a new version of an extension to be created?](#)
@@ -11,6 +12,13 @@ This documents the versioning policy for extensions and vocabularies hosted on h
   * [What types of changes require a new version of a vocabulary to be created?](#)
   * [What types of changes do not require a new version of a vocabulary to be created?](#)
   * [How to create a new version of a vocabulary](#)
+  
+## Rationale for Versioning
+An extension is immutable by design and software tools confidently rely on this fact. 
+
+To avoid breaking tools such as the IPT, authors are encouraged to produce new versions of extensions and vocabularies as per these guidelines.
+
+The IPT automatically detects when new versions of installed extensions become available. When an IPT administrator upgrades an extension to a newer version, the IPT ensures that existing mappings to this extension don't break. It does this by safely removing or migrating mappings to terms that have been removed or replaced. In addition, it will ensure that any new terms that have been added to the extension are made available to map to.
 
 ## Extensions Versioning Policy 
 ### What types of changes require a new version of an extension to be created?
