@@ -9,7 +9,7 @@
     dc:issued="2016-05-10"
     dc:subject="dwc:Event"
     dc:relation="http://rs.gbif.org/sandbox/extension/releve.xml"
-    dc:description="Support for vegetation plot survey (relevé) measurements ancillary to those reported using Event core with Occurrence extension.">
+    dc:description="Support for vegetation plot survey (relevé) measurements ancillary to those reported using Event core with Occurrence extension. Note all coverage measurements are in percentage.">
     <property name='project' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/project' dc:relation='' dc:description='The name or code for the project associated with the relevé' examples='&quot;Project Bos-Eco-Systemen&quot;' required='false'/>
     <property name='syntaxonName' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/syntaxonName' dc:relation='http://www.iavs.org/pdf/Code.pdf' dc:description='The description (not a code) of the plant community or vegetation unit associated with the relevé' examples='&quot;Littorelletea&quot;, &quot;Luzulo-Fagetum Meusel 1937&quot;' required='false'/>
     <property name='aspect' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/aspect' dc:relation='' dc:description='The compass direction that the relevé site faces' thesaurus="http://rs.gbif.org/vocabulary/gbif/direction.xml" examples='&quot;N&quot;, &quot;NE&quot;, &quot;NNE&quot;' required='false'/>
