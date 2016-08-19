@@ -145,3 +145,8 @@ table.definition td {
 	background-color: white;
 	padding:0px 10px 0px 0px;
 }
+#logo img {
+    position: relative;
+    top: 13;
+    right:10;
+} 
