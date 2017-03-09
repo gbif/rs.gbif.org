@@ -1,10 +1,10 @@
 [
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/distribution.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/endemicity.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/legislation.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/managementAndConservation.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/pliniancore.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/synonyms.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/threatStatus.xml",
-  "https://raw.githubusercontent.com/PlinianCore/Sources/master/extension/uses.xml"
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/distribution.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/endemicity.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/legislation.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/managementAndConservation.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/pliniancore.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/synonyms.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/threatStatus.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/uses.xml"
 ]
