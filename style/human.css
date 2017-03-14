@@ -12,23 +12,27 @@ body, div, span, p, a, img, ul, ol, li, caption, table, thead, tbody, tfoot, tr,
 	border:0;
 }
 body {
-	padding:20px 0; 
-	font:0.8em/1.5 "arial", sans-serif; 
-	text-align:center; 
-	background:#FFF; 
-	color:#000;
+	font-family: sans-serif;
+	text-align: center;
+	background: #FFF;
+	color: #000;
+	margin: 3em auto;
+	padding: 0 3em;
+}
+
+body.index {
+	max-width: 40em;
+	padding: 0;
 }
 
 a {
-	text-decoration:none; 
+	text-decoration:none;
 	color: rgb(0, 125, 36);
 }
 a:hover {
 	text-decoration: underline;
 	color: rgb(0, 84, 24);
 }
-
-
 
 h1, h2 {margin:15px 0 10px 0;}
 h3, h4, h5, h6 {margin:5px 0 10px 0;}
@@ -43,10 +47,14 @@ table {border-collapse:collapse; border-spacing:0; font-size:100%;}
 th {text-align:left; font-weight:bold;}
 th, td {padding:3px 7px;}
 
-ul, ol {
-	margin: 0; 
-	padding:0; 
-	list-style:none; 
+ul {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding: 0;
+}
+li {
+	list-style:none;
+	margin-bottom: 0.5em;
 }
 ol {list-style-type:decimal;}
 
@@ -59,31 +67,23 @@ legend {position:absolute; top:-1em; margin:0; padding:5px 10px; font-size:100%;
 
 
 /* @group LAYOUT */
-
-div#container {
-	width:960px;
-	text-align:left;	
-	margin:0 auto; /* center, not in IE5 */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3em auto;
 }
-   
-div#header {position:relative; padding-bottom:0px;}
-
-#logo {margin:0; font-weight:normal;color:#000;}
-
-div#content {
-	clear:both;
-	padding: 10px 30px; 
-	min-height:400px;
+header * {
+	padding: 0 0.25em;
+	outline: 1px solid red;
 }
 
 /* @end */
 
-
-
 /* @group TABLES */
 table.nice{
 	border-spacing: 2px 2px;
-	border-collapse: separate; 
+	border-collapse: separate;
 }
 table.nice td{
 	padding: 1px 4px;
@@ -111,7 +111,7 @@ table.grey tr.line {
 
 table.definition {
 	border-spacing: 2px 10px;
-	border-collapse: separate; 
+	border-collapse: separate;
 }
 table.definition th {
 	text-align: left;
@@ -145,8 +145,3 @@ table.definition td {
 	background-color: white;
 	padding:0px 10px 0px 0px;
 }
-#logo img {
-    position: relative;
-    top: 13;
-    right:10;
-} 
