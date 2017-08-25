@@ -15,8 +15,6 @@ NS_EXT="http://rs.gbif.org/extension/"
 # default issued date 
 MIN_DATE = datetime.date(datetime.MINYEAR, 1, 1)
 
-RS_BASE="/Users/markus/code/rs.gbif.org/"
-
 class Extension:
   def __init__(self):
     self.identifier=None
