@@ -15,6 +15,8 @@ NS_EXT="http://rs.gbif.org/extension/"
 # default issued date 
 MIN_DATE = datetime.date(datetime.MINYEAR, 1, 1)
 
+RS_BASE="/Users/markus/code/rs.gbif.org/"
+
 class Extension:
   def __init__(self):
     self.identifier=None
@@ -59,7 +61,11 @@ def processUrls(fp, urls, rootElement):
   for url in urls:
     print "Processing %s" % url
     obj = parseUrl(url)
-    allObjects.append(obj) 
+    if obj != None:
+        if obj.identifier != None:
+            allObjects.append(obj) 
+        else:
+            print "Missing identifier in %s. Ignore" % url
   # sort by issued date, starting with newest dates
   allObjects = sorted(allObjects, key=getIssuedDate, reverse=True)
   # iterate through objects and indicate whether it is the latest or not
