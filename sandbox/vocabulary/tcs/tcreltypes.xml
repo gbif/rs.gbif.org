@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+
+<thesaurus
+    xmlns="http://rs.gbif.org/thesaurus/" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/" 
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
+    dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType" 
+	dc:description="This controlled vocabulary is the same as used in the TDWG Taxon Concept Transfer Schema. These are the allowable terms in the 'type' attribute of TaxonRelationshipAssertion in RCS." 
+	dc:title="Taxon Concept Relationship Types"
+    dc:issued="2017-08-25"
+    dc:relation="http://rs.gbif.org/sandbox/vocabulary/tcs/tcreltypes.xml"
+    >
+
+  <!-- Development notes:
+       1. Version 0.1
+       2. See: https://github.com/camwebb/dwca-tcs
+  -->
+
+  
+  <concept dc:identifier="does_not_include"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_include"
+           dc:description="Set Relationship: Concept 2 is not a subset of Concept 1">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="does_not_include" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="does_not_overlap"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_overlap"
+           dc:description="Set Relationship: Concepts 1 and 2 have no members/children in common">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="does_not_overlap" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="excludes"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#excludes"
+           dc:description="Set Relationship: Concept 1 does not overlap or include Concept 2. RCC-5: '|'">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="excludes" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="has_synonym"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_synonym"
+           dc:description="The target concept is considered a synonym of the current concept. This is an ambiguous relationship. It can mean: 1) a nomenclatural relationship where all that is implied is that the type of the target concept is included in the current circumscription. This is more precisely expressed as a SpecimenCircumscription (for heterotypic synonyms) or as TaxonName basionym relationships (for homotypic synonyms) 2) a concept relationship where some part of (or all of) the target concept is included in the current circumscription. This is more precisely expressed using the set relationships such as 'is congruent to'. This is intended for handling legacy data.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="has_synonym" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="has_vernacular"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_vernacular"
+           dc:description="The target concept is used as a vernacular concept, at least in part, for the current concept. This kind of relationship should not be used to express any form of set relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular type relationships along with set type relationships to avoid any ambiguity.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="has_vernacular" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="includes"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#includes"
+           dc:description="Set Relationship: Concept 2 is a subset of Concept 1. RCC-5: '&gt;'">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="includes" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_ambiregnal_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_ambiregnal_of"
+           dc:description="Concepts have only a single scientific name. This name is governed by a single nomenclatural code. If an organism falls into two codes (not a desirable or frequent situation) then two TaxonConcepts should be created and linked with this relationship. e.g. a concept for the organism as an animal and a concept of it as a plant. It is unlikely this will be widely used as a taxonomist would typically have a single view of which kingdom a organism is in. Also note that ambiregnal is used to imply different nomenclatural codes but there is not a precise relationship between codes and kingdoms.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_ambiregnal_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_anamorph_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_anamorph_of"
+           dc:description="Concept 1 is the asexual or mitotic reproductive stage in a pleomorphic life cycle in which Concept 2 is the teleomorph or meiotic reproductive stage .">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_anamorph_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_child_taxon_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_child_taxon_of"
+           dc:description="Hierarchical Relationship: Concept 1 is a member of lower taxonomic rank of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_child_taxon_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_congruent_to"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_congruent_to"
+           dc:description="Set Relationship: The extent of Concept 1 is (essentially) identical to Concept 2. RCC-5: '=='">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_congruent_to" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_female_parent_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_female_parent_of"
+           dc:description="Hybrid Relationship: Concept 1 is genetic mother of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_female_parent_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_first_parent_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_first_parent_of"
+           dc:description="Hybrid Relationship: Concept 1 is genetic parent (1) of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_first_parent_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_hybrid_child_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_child_of"
+           dc:description="Hybrid Relationship: Concept 2 is a genetic parent of Concept 1">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_hybrid_child_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_hybrid_parent_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_parent_of"
+           dc:description="Hybrid Relationship: Concept 1 is genetic parent of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_hybrid_parent_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="is_included_in"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_included_in"
+           dc:description="Set Relationship: Concept 1 is a subset of Concept 2. RCC-5: '&lt;'">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_included_in" xml:lang="en"/>
+    </preferred>
+  </concept>
+  <concept dc:identifier="is_male_parent_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_male_parent_of"
+           dc:description="Hybrid Relationship: Concept 1 is genetic father of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_male_parent_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+  
+  <concept dc:identifier="is_not_congruent_to"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_congruent_to"
+           dc:description="Set Relationship: The extent of Concept 1 is not identical to Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_not_congruent_to" xml:lang="en"/>
+    </preferred>
+  </concept>
+  
+  <concept dc:identifier="is_not_included_in"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_included_in"
+           dc:description="Set Relationship: Concept 1 is not a subset of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_not_included_in" xml:lang="en"/>
+    </preferred>
+  </concept>
+  
+  <concept dc:identifier="is_parent_taxon_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_parent_taxon_of"
+           dc:description="Hierarchical Relationship: Taxon Concept 1 includes Concept 2 as a lower-ranked member.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_parent_taxon_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+  
+  <concept dc:identifier="is_second_parent_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_second_parent_of"
+           dc:description="Hybrid Relationship: Concept 1 is genetic parent (2) of Concept 2">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_second_parent_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+  <concept dc:identifier="is_teleomorph_of"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_teleomorph_of"
+           dc:description="Concept 1 is the teleomorph or meiotic reproductive stage in a pleomorphic life cycle in which Concept 2 is the asexual or mitotic reproductive stage.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_teleomorph_of" xml:lang="en"/>
+    </preferred>
+  </concept>
+  
+  <concept dc:identifier="is_vernacular_for"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_vernacular_for"
+           dc:description="The current concept is used as a vernacular concept, at least in part, for the target concept. This kind of relationship should not be used to express any form of set relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular type relationships along with set type relationships to avoid any ambiguity.">
+    <preferred>
+      <term dc:source="TDWG TCS" dc:title="is_vernacular_for" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="overlaps"
+           dc:URI="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#overlaps"
+           dc:description="Set Relationship: Concepts 1 and 2 share members/children in common. RCC-5: '&gt;&lt;'">
+  <preferred>
+    <term dc:source="TDWG TCS" dc:title="overlaps" xml:lang="en"/>
+  </preferred>
+</concept>
+
+
+</thesaurus>

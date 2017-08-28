@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="Taxon Concept Relationship"
+    name="TaxonConceptRelationship"
+    namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+    rowType="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"
+    dc:issued="2017-08-25"
+    dc:relation="http://rs.gbif.org/sandbox/extension/tcrel.xml"
+    dc:description="A Darwin Core Archive extension for specifying the relationsips between taxon concepts, based on the 'TaxonRelationshipAssertion' element of the TDWG Taxon Concept Transfer (XML) Schema. Relationship types include Set Theory types (included_in, etc.) and taxonomic parent-child relationships. Taxon Concepts are specified in the DwCA 'Taxon' module, where a record must have: 1. a name (and ideally also a scientificNameID), 2. a nameAccordingTo (and ideally also a nameAccordingToID), and 3. a taxonConceptID. The latter is used as the key for subjectTaxonConceptID and objectTaxonConceptID in this module.">
+
+  <!-- Development notes:
+       1. Version 0.1
+       2. See: https://github.com/camwebb/dwca-tcs
+       3. If all the IDs in this module are external URIs,
+          then a valid Archive might validly not contain a Taxon module.
+       4. taxonConceptRelationshipAccordingToID might possibly be used as
+          DwCA interal reference to a publication.
+  -->
+  
+  <property
+      name="taxonConceptRelationshipID"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipID"
+      examples="001; http://foo.com/swdata/TaxConRel-12346; 2215c41f-3b9d-4165-bf25-7368ce3efe47"
+      type="uri"
+      required="false"
+      dc:description="A unique row ID. Format: may be an internal counter, or a URI link to where this assertion has been published elsewhere."
+      />
+
+  <property
+      name="subjectTaxonConceptID"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#subjectTaxonConceptID"
+      examples="http://foo.com/swdata/TaxCon-0001; 589715d1-a2ec-46ef-9cc3-0b9fcc885786"
+      type="uri"
+      required="true"
+      dc:description="The ID of the taxon concept that is the subject of the taxon relationship statement. Must be identical to taxonConceptID in the Taxon module of the archive. Format: may be an internal reference (e.g., UUID), or a URI of the Concept published elsewhere."
+      />
+
+  <property
+      name="objectTaxonConceptID"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#objectTaxonConceptID"
+      examples="http://foo.com/swdata/TaxCon-0001; 589715d1-a2ec-46ef-9cc3-0b9fcc885786"
+      type="uri"
+      required="true"
+      dc:description="The ID of the taxon concept that is the object of the taxon relationship statement. Must be identical to taxonConceptID in the Taxon module of the archive. Format: may be an internal reference (e.g., UUID), or a URI of the Concept published elsewhere."
+      />
+
+  <property
+      name="taxonConceptRelationshipType"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipType"
+      examples="is_included_in; is_congruent_with"
+      type="string"
+      thesaurus="http://rs.gbif.org/sandbox/vocabulary/tcs/tcreltypes.xml"
+      required="true"
+      dc:description="The nature of the taxon concept relationship. Acceptable values are the allowable TCS terms used in the attribute 'type' of the TaxonRelationshipAssertion element; See TCS schema or terms link specified in this document."
+      />
+
+  <property
+      name="taxonConceptRelationshipAccordingTo"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingTo"
+      dc:description="The event where the assertion about the relationship between two taxon concepts was made. Either a publication or other taxon mapping event."
+      examples="Taxon concept mapping for Flora of Alaska by E.R. Jones, 2017-02-12; Jones, E.R. 2017. Oxytropis in Alaska. J Arctic Bot. 23:12-24."
+      type="string"
+      required="true"
+      />
+
+  <property
+      name="taxonConceptRelationshipAccordingToID"
+      namespace="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#"
+      qualName="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingToID"
+      dc:description="A URI for the event where the assertion about the relationship between two taxon concepts was made. Either a publication or other taxon mapping event (published online)."
+      examples="doi:10.001/0001; http://foo.com/swdata/TaxMapEvent-0011"
+      type="uri"
+      required="false"
+      />
+    
+</extension>

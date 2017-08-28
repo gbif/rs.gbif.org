@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://rs.gbif.org/terms/tcs/"
+     xml:base="http://rs.gbif.org/terms/tcs/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:versionInfo>Terms used to describe the relationship between taxon concepts. Borrows structure and terms from the TDWG Taxon Concept Transfer Schema.
+
+See: https://github.com/camwebb/dwca-tcs</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#objectTaxonConceptID -->
+
+    <owl:ObjectProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#objectTaxonConceptID">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#subjectTaxonConceptID -->
+
+    <owl:ObjectProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#subjectTaxonConceptID">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipType -->
+
+    <owl:ObjectProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipType">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingTo -->
+
+    <owl:DatatypeProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingTo">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingToID -->
+
+    <owl:DatatypeProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipAccordingToID">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipID -->
+
+    <owl:DatatypeProperty rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#taxonConceptRelationshipID">
+        <rdfs:domain rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConcept -->
+
+    <owl:Class rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConcept"/>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship -->
+
+    <owl:Class rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationship"/>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType -->
+
+    <owl:Class rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType">
+        <rdfs:comment>The types of relationship among taxon concepts are modeled as individuals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_include -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_include">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concept 2 is not a subset of Concept 1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_overlap -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#does_not_overlap">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concepts 1 and 2 have no members/children in common</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#excludes -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#excludes">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concept 1 does not overlap or include Concept 2. RCC-5: &quot;|&quot;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_synonym -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_synonym">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>The target concept is considered a synonym of the current concept. This is an ambiguous relationship. It can mean: 1) a nomenclatural relationship where all that is implied is that the type of the target concept is included in the current circumscription. This is more precisely expressed as a SpecimenCircumscription (for heterotypic synonyms) or as TaxonName basionym relationships (for homotypic synonyms) 2) a concept relationship where some part of (or all of) the target concept is included in the current circumscription. This is more precisely expressed using the set relationships such as &apos;is congruent to&apos;. This is intended for handling legacy data.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_vernacular -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#has_vernacular">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>The target concept is used as a vernacular concept, at least in part, for the current concept. This kind of relationship should not be used to express any form of set relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular type relationships along with set type relationships to avoid any ambiguity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#includes -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#includes">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concept 2 is a subset of Concept 1. RCC-5: &quot;&gt;&quot;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_ambiregnal_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_ambiregnal_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Concepts have only a single scientific name. This name is governed by a single nomenclatural code. If an organism falls into two codes (not a desirable or frequent situation) then two TaxonConcepts should be created and linked with this relationship. e.g. a concept for the organism as an animal and a concept of it as a plant. It is unlikely this will be widely used as a taxonomist would typically have a single view of which kingdom a organism is in. Also note that ambiregnal is used to imply different nomenclatural codes but there is not a precise relationship between codes and kingdoms.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_anamorph_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_anamorph_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Concept 1 is the asexual or mitotic reproductive stage in a pleomorphic life cycle in which Concept 2 is the teleomorph or meiotic reproductive stage .</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_child_taxon_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_child_taxon_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hierarchical Relationship: Concept 1 is a member of lower taxonomic rank of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_congruent_to -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_congruent_to">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: The extent of Concept 1 is (essentially) identical to Concept 2. RCC-5: &quot;==&quot;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_female_parent_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_female_parent_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 1 is genetic mother of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_first_parent_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_first_parent_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 1 is genetic parent (1) of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_child_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_child_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 2 is a genetic parent of Concept 1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_parent_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_hybrid_parent_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 1 is genetic parent of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_included_in -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_included_in">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concept 1 is a subset of Concept 2. RCC-5: &quot;&lt;&quot;</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_male_parent_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_male_parent_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 1 is genetic father of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_congruent_to -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_congruent_to">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: The extent of Concept 1 is not identical to Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_included_in -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_not_included_in">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concept 1 is not a subset of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_parent_taxon_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_parent_taxon_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hierarchical Relationship: Taxon Concept 1 includes Concept 2 as a lower-ranked member.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_second_parent_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_second_parent_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Hybrid Relationship: Concept 1 is genetic parent (2) of Concept 2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_teleomorph_of -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_teleomorph_of">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Concept 1 is the teleomorph or meiotic reproductive stage in a pleomorphic life cycle in which Concept 2 is the asexual or mitotic reproductive stage.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_vernacular_for -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#is_vernacular_for">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>The current concept is used as a vernacular concept, at least in part, for the target concept. This kind of relationship should not be used to express any form of set relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular type relationships along with set type relationships to avoid any ambiguity.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#overlaps -->
+
+    <owl:NamedIndividual rdf:about="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#overlaps">
+        <rdf:type rdf:resource="http://rs.gbif.org/sandbox/terms/tcs/tcrel.rdf#TaxonConceptRelationshipType"/>
+        <rdfs:comment>Set Relationship: Concepts 1 and 2 share members/children in common. RCC-5: &quot;&gt;&lt;&quot;</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
