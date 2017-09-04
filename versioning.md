@@ -1,4 +1,4 @@
-# How to Version Extensions and Vocabularies on rs.gbif.org
+# How to Create New Version of Extensions and Vocabularies on rs.gbif.org
 
 This documents the versioning policy for extensions and vocabularies hosted on http://rs.gbif.org. It also provides detailed instructions on how to create new versions of extensions and vocabularies.
 
