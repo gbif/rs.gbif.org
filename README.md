@@ -1,6 +1,13 @@
 # [rs.gbif.org](http://rs.gbif.org)
 GBIF static resources hosted at http://rs.gbif.org
 
+## Deploying
+Deploying this is through a git pull and then running the script to build the extension inventory files:
+```
+  rs.gbif.org /var/www/rs.gbif.org $ sudo git pull
+  rs.gbif.org /var/www/rs.gbif.org $ sudo ./sync-extensions.py
+``` 
+
 ## Darwin Core Archive extensions and vocabularies
 The folder [core](core) contains [IPT](http://www.gbif.org/ipt) XML definitions for [Darwin Core Archive](http://rs.tdwg.org/dwc/terms/guides/text/) core data files. [Production extensions](extension) and associated [vocabularies](vocabulary) are hosted here, as well as [sandbox](sandbox) definitions of those used by IPT test installations.
 
