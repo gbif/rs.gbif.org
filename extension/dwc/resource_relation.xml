@@ -9,7 +9,7 @@
     dc:issued="2015-02-13"
     dc:subject=""
     dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#relindex"
-    dc:description="Support for generic resource rleations according to Darwin Core terms.">
+    dc:description="Support for generic relationships between resources (in Darwin Core). Can be used to describe a relationship (<code>relationshipOfResource</code>) between a related resource (<code>relatedResourceID</code>) and a subject resource (<code>resourceID</code>). These resources can be core records, extension records or external resources.">
 
     <property name='resourceRelationshipID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/resourceRelationshipID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#resourceRelationshipID' dc:description='An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).' examples='' required='false'/>
     <property name='resourceID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/resourceID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#resourceID' dc:description='An identifier for the resource that is the subject of the relationship.' examples='' required='false'/>
