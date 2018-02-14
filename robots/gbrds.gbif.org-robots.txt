@@ -1,0 +1,5 @@
+# robots.txt for gbrds.gbif.org
+#
+
+User-agent: *
+Disallow: /
