@@ -17,3 +17,5 @@ Disallow: /v1/image/unsafe/9
 Disallow: /v1/image/unsafe/f
 Disallow: /v1/image/unsafe/t
 Disallow: /v1/image/unsafe/x
+# Block V1 map tiles.
+Disallow: /v1/map/density/tile
