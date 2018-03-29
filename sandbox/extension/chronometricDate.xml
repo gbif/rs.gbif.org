@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
+    xmlns:zan="http://zooarchnet.org/dwc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="ChronometricDate"
+    name="ChronometricDate" 
+    namespace="http://zooarchnet.org/dwc/terms/" 
+    rowType="http://zooarchnet.org/dwc/terms/ChronometricDate"
+    dc:issued="2017-11-30"
+    dc:modified="2018-03-28"
+    dc:subject="dwc:Occurrence"
+    dc:relation="https://github.com/VertNet/dwc-chronology/blob/master/standard/vocabularies/term_versions.csv#L2"
+    dc:description="Extension to Occurrence Core to capture chronometric dating information.">
+    <property name="chronometricDateID" namespace="http://zooarchnet.org/dwc/terms/" qualName="http://zooarchnet.org/dwc/terms/chronometricDateID" dc:description='An identifier for the set of information associated with a chronometricDate. May be a global unique identifier or an identifier specific to the data set.' examples='GUID reference to the combination of information for one ChronometricDate' type="string" required="true"/>
+    <property name='reportedAge' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/reportedAge' dc:description='The unconverted output of a dating protocol. For example, the conventional radiocarbon age.' examples='' type="string" required='false'/>
+    <property name='reportedAgeConversionProtocol' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/reportedAgeConversionProtocol' dc:description='The method used for converting the reportedAge into a chronometric date, as captured in the maximumAge, maximumAgeReferenceSystem, minimumAge, and minimumAgeReferenceSystem fields. For example, calibration of conventional radiocarbon age.' examples='' type="string" required='false'/>
+    <property name='maximumAge' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/maximumAge' dc:description='Upper limit for the age of a specimen as determined by a dating method.' examples='' type="integer" required='false'/>
+    <property name='maximumAgeReferenceSystem' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/maximumAgeReferenceSystem' dc:description='The reference system associated with the maximumAge.' examples='"kya", "mya", "BP", "AD", "BCE"' type="string" required='false'/>
+    <property name='minimumAge' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/minimumAge' dc:description='Lower limit for the age of a specimen as determined by a dating method.' examples='' type="integer" required='false'/>
+    <property name='minimumAgeReferenceSystem' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/minimumAgeReferenceSystem' dc:description='The reference system associated with the minimumAge.' examples='"kya", "mya", "BP", "AD", "BCE"' type="string" required='false'/>
+    <property name='ageUncertaintyInYears' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/ageUncertaintyInYears' dc:description='The temporal uncertainty of the maximumAge and minimumAge, in years.' examples='' type="integer" required='false'/>
+    <property name='ageUncertaintyMethod' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/ageUncertaintyMethod' dc:description='The method used to generate reported uncertainty calculations.' examples='' type="string" required='false'/>
+    <property name='materialDated' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/materialDated' dc:description='A description of the material on which the chronometricDateProtocol was actually performed.' examples='' type="string" required='false'/>
+    <property name="materialDatedID" namespace="http://zooarchnet.org/dwc/terms/" qualName="http://zooarchnet.org/dwc/terms/materialDatedID" dc:description='An identifier for the material on which the dating protocol was performed.' examples='If the material dated is not the sample itself (or even to clarify if it is), an identifier can be given.' type="string" required="false"/>
+    <property name='chronometricDateProtocol' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/chronometricDateProtocol' dc:description='A description or reference to the methods used to determine the chronometricDate.' examples='' type="string" required='false'/>
+    <property name='chronometricDateReferences' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/chronometricDateReferences' dc:description='A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the chronometricDate.' examples='' type="string" required='false'/>
+    <property name='chronometricDateRemarks' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/chronometricDateRemarks' dc:description='Notes or comments about the chronometricDate.' examples='' type="string" required='false'/>
+</extension>
