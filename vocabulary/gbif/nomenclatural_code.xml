@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code" dc:description="GBIF recommended terms for denoting a nomenclatural code" dc:title="Nomenclatural Codes" dc:issued="2010-07-01" xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<thesaurus dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code" 
+	dc:description="GBIF recommended terms for denoting a nomenclatural code" 
+	dc:title="Nomenclatural Codes" 
+	dc:issued="2010-07-01" 
+	xmlns="http://rs.gbif.org/thesaurus/" 
+	xmlns:dc="http://purl.org/dc/terms/" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
- <concept dc:identifier="ICBN" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code"  dc:issued="2010-07-01" dc:description="International Code of Botanical Nomenclature">
+	
+ <concept dc:identifier="ICN" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICN"  dc:issued="2010-07-01" dc:description="International Code of Nomenclature for algae, fungi and plants">
   <preferred>
-   <term dc:source="Checklist Bank" dc:title="ICBN" xml:lang="en" />
+   <term dc:source="GBIF" dc:title="ICN" xml:lang="en" />
   </preferred>
   <alternative>
+   <term dc:source="" dc:title="ICNafp" xml:lang="en" />
+   <term dc:source="" dc:title="ICBN" xml:lang="en" />
    <term dc:source="" dc:title="Botanical Code" xml:lang="en" />
+   <term dc:source="" dc:title="Botanical" xml:lang="en" />
    <term dc:source="" dc:title="Botany" xml:lang="en" />
    <term dc:source="" dc:title="Bot" xml:lang="en" />
   </alternative>
  </concept>
  <concept dc:identifier="ICZN" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICZN"  dc:issued="2010-07-01" dc:description="International Code of Zoological Nomenclature">
   <preferred>
-   <term dc:source="Checklist Bank" dc:title="ICZN" xml:lang="en" />
+   <term dc:source="GBIF" dc:title="ICZN" xml:lang="en" />
   </preferred>
   <alternative>
    <term dc:source="" dc:title="Zoological Code" xml:lang="en" />
+   <term dc:source="" dc:title="Zoological" xml:lang="en" />
    <term dc:source="" dc:title="Zoology" xml:lang="en" />
    <term dc:source="" dc:title="Zoo" xml:lang="en" />
   </alternative>
  </concept>
  <concept dc:identifier="ICVCN" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICVCN"  dc:issued="2010-07-01" dc:description="International Code of Virus Classifications and Nomenclature">
   <preferred>
-   <term dc:source="Checklist Bank" dc:title="ICVCN" xml:lang="en" />
+   <term dc:source="GBIF" dc:title="ICVCN" xml:lang="en" />
   </preferred>
   <alternative>
+   <term dc:source="" dc:title="ICTV" xml:lang="en" />
    <term dc:source="" dc:title="Virus Code" xml:lang="en" />
    <term dc:source="" dc:title="Virus" xml:lang="en" />
    <term dc:source="" dc:title="Vir" xml:lang="en" />
   </alternative>
  </concept>
  <concept dc:identifier="ICNB" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICNB"  dc:issued="2010-07-01" dc:description="International Code of Nomenclature of Bacteria">
+   <preferred>
+    <term dc:source="Checklist Bank" dc:title="ICNB" xml:lang="en" />
+   </preferred>
+   <alternative>
+    <term dc:source="" dc:title="Bacterial Code" xml:lang="en" />
+    <term dc:source="" dc:title="Bacterial" xml:lang="en" />
+    <term dc:source="" dc:title="Bacteria" xml:lang="en" />
+    <term dc:source="" dc:title="Bac" xml:lang="en" />
+   </alternative>
+  </concept>
+  <concept dc:identifier="ICNCP" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICNCP"  dc:issued="2010-07-01" dc:description="International Code of Nomenclature for Cultivated Plants">
   <preferred>
-   <term dc:source="Checklist Bank" dc:title="ICNB" xml:lang="en" />
-  </preferred>
-  <alternative>
-   <term dc:source="" dc:title="Bacterial Code" xml:lang="en" />
-   <term dc:source="" dc:title="Bacteria" xml:lang="en" />
-   <term dc:source="" dc:title="Bac" xml:lang="en" />
-  </alternative>
- </concept>
- <concept dc:identifier="ICNCP" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICNCP"  dc:issued="2010-07-01" dc:description="International Code of Nomenclature for Cultivated Plants">
-  <preferred>
-   <term dc:source="Checklist Bank" dc:title="ICNCP" xml:lang="en" />
+   <term dc:source="GBIF" dc:title="ICNCP" xml:lang="en" />
   </preferred>
   <alternative>
    <term dc:source="" dc:title="Cultivar Code" xml:lang="en" />
