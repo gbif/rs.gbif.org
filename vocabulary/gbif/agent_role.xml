@@ -219,4 +219,18 @@
     <alternative>
     </alternative>
   </concept>
+  <concept dc:identifier="reviewer" dc:URI="http://rs.gbif.org/vocabulary/gbif/agentRole/reviewer"
+           dc:relation=""
+           dc:description="person assigned to review the dataset and verify its data and/or metadata quality. This role is analogous to the role played by peer reviewers in the scholarly publication process.">
+    <preferred>
+      <term dc:title="Reviewer" xml:lang="en"/>
+      <term dc:title="Verificador" xml:lang="es"/>
+      <term dc:title="Vérificateur" xml:lang="fr"/>
+      <term dc:title="審閱者" xml:lang="zh"/>
+      <term dc:title="Verificador" xml:lang="pt"/>
+      <term dc:title="レビューア" xml:lang="ja"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
 </thesaurus>
