@@ -8,6 +8,7 @@
 
 import sys, string, urllib, traceback, os, json, datetime
 from xml.etree.ElementTree import ElementTree
+from urllib import FancyURLopener
 
 RS_BASE="/var/www/rs.gbif.org/"
 NS_DC="http://purl.org/dc/terms/"
@@ -39,6 +40,8 @@ class Vocabulary:
   def __repr__(self):
     return """VOC %s Issued:%s (latest=%s) >>%s<< %s [%s] """ % (self.identifier,self.issued,self.isLatest,self.title,self.description,self.subject)
 
+class UrlOpener(FancyURLopener):
+  version = 'GBIF sync extensions'
 
 def writeExtensions(dir, urls):
   f = open(dir + 'extensions.json', 'w')
@@ -102,7 +105,7 @@ def parseUrl(url):
      contents of the XML document. At the end, return the object 
      constructed""" 
   try:
-    f = urllib.urlopen(url)
+    f = UrlOpener().open(url)
     tree = ElementTree()
     tree.parse(f)
     f.close()
