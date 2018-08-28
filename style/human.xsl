@@ -25,7 +25,7 @@
                     <div class="container">
                          <div id="header" class="box">
                               <h2 id="logo">
-                                   <img src="/style/logo.png"/>
+                                   <img src="/style/logo-gbif.svg"/>
                                    Darwin Core <xsl:value-of select="$defType"/>
                                    <span style="font-size:60%;color:#888;"> (<a href="/">index</a>)</span>
                               </h2>
