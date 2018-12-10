@@ -6,15 +6,15 @@
     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"    
     xmlns:zan="http://zooarchnet.org/dwc/terms/"    
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
-    dc:title="ChronometricDate"
+    dc:title="ChronometricDate (deprecated)" name="ChronometricDate"
     name="ChronometricDate" 
     namespace="http://zooarchnet.org/dwc/terms/" 
     rowType="http://zooarchnet.org/dwc/terms/ChronometricDate"
     dc:issued="2017-11-30"
-    dc:modified="2018-05-04"
+    dc:modified="2018-12-10"
     dc:subject="dwc:Occurrence"
     dc:relation="https://github.com/VertNet/dwc-chronology/blob/master/standard/vocabularies/term_versions.csv"
-    dc:description="Extension to Occurrence Core to capture chronometric dating information.">
+    dc:description="This extension has been DEPRECATED! Please use the newer ChronometricAge extension instead: http://rs.gbif.org/extension/gbif/1.0/ChronometricAge.xml">
     <property name="chronometricDateID" namespace="http://zooarchnet.org/dwc/terms/" qualName="http://zooarchnet.org/dwc/terms/chronometricDateID" dc:description='An identifier for the set of information associated with a ChronometricDate. May be a global unique identifier or an identifier specific to the data set.' examples='GUID reference to the combination of information for one ChronometricDate.' type="string" required="true"/>
     <property name='verbatimChronometricAge' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/verbatimChronometricAge' dc:description='The verbatim age for a specimen, whether reported by a dating assay, associated references, or legacy information. For example, this could be the conventional radiocarbon age as given in an AMS dating report. This could also be simply what is reported as the age of a specimen in legacy collections data.' examples='27 BC to 14 AD' type="string" required='false'/>
     <property name='verbatimChronometricAgeConversionProtocol' namespace='http://zooarchnet.org/dwc/terms/' qualName='http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol' dc:description='The method used for converting the verbatimChronometricAge into a chronometric date in years, as captured in the maximumChronometricAge, maximumChronometricAgeReferenceSystem, minimumChronometricAge, and minimumChronometricAgeReferenceSystem fields. For example, calibration of conventional radiocarbon age or the currently accepted age range of a cultural or geological period.' examples='' type="string" required='false'/>
