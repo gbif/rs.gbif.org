@@ -10,7 +10,7 @@ If you are suggesting additional attributes for an existing extension you should
 Add your suggestions to the new version and place it in the sandbox folder: https://github.com/gbif/rs.gbif.org/tree/master/sandbox/extension
 Do the pull request.
 
-### Reviewing/test your contribution
+### Reviewing/testing your contribution
 Once your pull request has been merged, IPTs running in test mode have access to the new version.
 Go to the IPTs administration page and choose "Core Types and Extensions". Scroll to "Synchronise Extensions and Vocabularies" and click the "Synchronize" button. Please allow an hour for the IPT to be aware of the new extension/version.
 The new extension / new version will now be available for review/test.
