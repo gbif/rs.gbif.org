@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dc="http://purl.org/dc/terms/"    
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="Species Profile" name="SpeciesProfile" 
+    namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/SpeciesProfile"
+    dc:issued="2019-01-29"
+    dc:subject="dwc:Taxon"
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/speciesprofile.xml"
+    dc:description="A basic species profile with characteristics in addition to textural description which are covered by the description extension.">
+    
+    <property name='isMarine' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isMarine' dc:relation='' dc:description='a boolean flag indicating whether the taxon is a marine organism, i.e. can be found in/above sea water' examples='TRUE' required='false'/>
+    <property name='isFreshwater' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isFreshwater' dc:relation='' dc:description='a boolean flag indicating whether the taxon occurrs in freshwater habitats, i.e. can be found in/above rivers or lakes' examples='TRUE' required='false'/>
+    <property name='isTerrestrial' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isTerrestrial' dc:relation='' dc:description='a boolean flag indicating the taxon is a terrestial organism, i.e. occurrs on land as opposed to the sea' examples='false' required='false'/>
+    <property name='isInvasive' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isInvasive' dc:relation='' dc:description='Flag indicating a species known to be invasive/alien in some are of the world. Detailed native and introduced distribution areas can be published with the distribution extension.' examples='TRUE' required='false'/>
+    <property name='isHybrid' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isHybrid' dc:relation='' dc:description='Flag indicating a hybrid organism. This does not have to be reflected in the name, but can be based on other studies like chromosome numbers etc' examples='TRUE' required='false'/>
+    <property name='isExtinct' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/isExtinct' dc:relation='' dc:description='Flag indicating an extinct organism. Details about the timeperiod the organism has lived in can be supplied below' examples='TRUE' required='false'/>
+    <property name='livingPeriod' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/livingPeriod' dc:relation='' dc:description='The (geological) time a currently extinct organism is known to have lived. For geological times of fossils ideally based on a vocabulary like http://en.wikipedia.org/wiki/Geologic_column' examples='Cretaceous' required='false'/>
+    <property name='ageInDays' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/ageInDays' dc:relation='' dc:description='Maximum observed age of an organism given as number of days' examples='5' required='false'/>
+    <property name='sizeInMillimeters' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/sizeInMillimeters' dc:relation='' dc:description='Maximum observed size of an organism in millimeter. Can be either height, length or width, whichever is greater.' examples='1500' required='false'/>
+    <property name='massInGrams' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/massInGrams' dc:relation='' dc:description='Maximum observed weight of an organism in grams.' examples='12' required='false'/>
+    <property name='lifeForm' namespace='http://rs.gbif.org/terms/1.0/' qualName='http://rs.gbif.org/terms/1.0/lifeForm' dc:relation='' dc:description='A term describing the growth/lifeform of an organism. Should be based on a vocabulary like Raunkiær for plants: http://en.wikipedia.org/wiki/Raunkiær_plant_life-form. Recommended vocabulary: http://rs.gbif.org/vocabulary/gbif/life_form.xml' examples='Phanerophyte' required='false'/>
+    <property name='habitat' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/habitat' dc:relation='' dc:description='Comma seperated list of mayor habitat classification as defined by IUCN in which a species is known to exist: http://www.iucnredlist.org/static/major_habitats' examples='"1.1"' required='false' thesaurus="http://rs.gbif.org/vocabulary/iucn/habitat.xml" />
+    <property name='sex' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/sex' dc:relation='' dc:description='Comma seperated list of known sexes to exist for this organism. Recommended vocabulary is: http://rs.gbif.org/vocabulary/gbif/sex.xml' examples='"Male,Female"' required='false'/>
+    <property name='source' namespace='http://purl.org/dc/terms/' qualName='http://purl.org/dc/terms/source' dc:relation='' dc:description='Source reference of this species profile, a URL or full publication citation' examples='' required='false'/>
+    <property name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#datasetID' dc:description='An identifier for a subset of data.' examples='' required='false'/>
+</extension>
