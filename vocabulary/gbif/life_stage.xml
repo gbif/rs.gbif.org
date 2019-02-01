@@ -152,11 +152,12 @@
     
     <concept dc:identifier="pupa" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_stage/pupa" 
         dc:relation="http://rs.gbif.org/vocabulary/gbif/life_stage/pupa"
-        dc:description="">
+        dc:description="A pupa is the life stage of some insects undergoing transformation between immature and mature stages. The pupal stage is found only in holometabolous insects, those that undergo a complete metamorphosis, with four life stages: egg (-> embryo), larva, pupa, and imago (-> adult).">
         <preferred>
             <term dc:title="pupa" xml:lang="en"/>
         </preferred>
         <alternative>
+            <term dc:title="puppe" xml:lang="de" />
         </alternative>
     </concept>
 
