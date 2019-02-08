@@ -116,11 +116,11 @@
   </alternative>
  </concept>
 
- <concept dc:identifier="dubimum" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubimum" 
-  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubimum"
+ <concept dc:identifier="dubium" dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubium" 
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status/dubium"
   dc:description="A name of uncertain sense, of doubtful validity. E.g. the name Encephalartos tridentatus (Willdenow) Lehmann (Pugillus 6, 1834) is a nomen dubium which may refer to several species of Encephalartos or Macrozamia. ICZN: doubtful or dubious names, names which are not certainly applicable to any known taxon or for which the evidence is insufficient to permit recognition of the taxon to which they belong. May possess availability conducive to uncertainty and instability. Also 'names under enquiry': NOMEN INQUIRENDUM (NOMINA INQUIRENDA).">
   <preferred>
-   <term dc:title="dubimum" xml:lang="la"/>
+   <term dc:title="dubium" xml:lang="la"/>
   </preferred>
   <alternative>
    <term dc:title="uncertain" xml:lang="en"  />
