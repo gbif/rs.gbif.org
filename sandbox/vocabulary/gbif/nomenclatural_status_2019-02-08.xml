@@ -125,7 +125,9 @@
   <alternative>
    <term dc:title="uncertain" xml:lang="en"  />
    <term dc:title="doubtful" xml:lang="en"  />
+   <term dc:title="dubimum" xml:lang="en"  />
    <term dc:title="nom. dub." xml:lang="la"  />
+   <term dc:title="nomen dubium" xml:lang="la"  />
    <term dc:title="nomen dubimum" xml:lang="la"  />
    <term dc:title="nomina dubia" xml:lang="la"  />
   </alternative>
