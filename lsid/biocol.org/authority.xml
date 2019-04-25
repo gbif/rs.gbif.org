@@ -4,7 +4,7 @@
   <wsdl:import namespace="http://www.omg.org/LSID/2003/AuthorityServiceHTTPBindings" location="LSIDAuthorityServiceHTTPBindings.wsdl" />
   <wsdl:service name="AuthorityHTTPService">
     <wsdl:port name="HTTPPort" binding="httpsns:LSIDAuthorityHTTPBinding">
-      <httpsns:address location="http://biocol.org:80/authority/" />
+      <httpsns:address location="http://biocol.org:80" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
