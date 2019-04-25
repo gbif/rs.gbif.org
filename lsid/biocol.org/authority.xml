@@ -1,0 +1,10 @@
+<!-- Returned in the second step, based on the DNS SRV record -->
+<?xml version="1.0"?>
+<wsdl:definitions xmlns:httpsns="http://www.omg.org/LSID/2003/AuthorityServiceHTTPBindings" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://rs.tdwg.org/tapir/lsid/Authority">
+  <wsdl:import namespace="http://www.omg.org/LSID/2003/AuthorityServiceHTTPBindings" location="LSIDAuthorityServiceHTTPBindings.wsdl" />
+  <wsdl:service name="AuthorityHTTPService">
+    <wsdl:port name="HTTPPort" binding="httpsns:LSIDAuthorityHTTPBinding">
+      <httpsns:address location="http://biocol.org:80/authority/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
