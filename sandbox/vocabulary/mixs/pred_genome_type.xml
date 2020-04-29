@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/' 
+	dc:description="The predicted genome type Vocabulary is a recommended set of values to use for the pred_genome_type term in the MIxS Extension." 
+	dc:title="Genomic Standards Consortium predicted genome type Vocabulary"
+  dc:issued="2020-04-24"
+  dc:relation=""
+    xmlns="http://rs.gbif.org/thesaurus/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+    <concept dc:identifier="DNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/DNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="DNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="dsDNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/dsDNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="dsDNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="ssDNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/ssDNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="ssDNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="RNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/RNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="RNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="dsRNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/dsRNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="dsRNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="ssRNA" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/ssRNA'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="ssRNA" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="ss_rna" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/ss_rna'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="ssRNA (+)" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="ss_rna" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/ss_rna'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="ssRNA (-)" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="mixed" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/mixed'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="mixed" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="uncharacterized" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/pred_genome_type/uncharacterized'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="uncharacterized" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+</thesaurus>
+    

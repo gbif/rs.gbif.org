@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/' 
+	dc:description="The binning parameters Vocabulary is a recommended set of values to use for the bin_param term in the MIxS Extension." 
+	dc:title="Genomic Standards Consortium binning parameters Vocabulary"
+  dc:issued="2020-04-24"
+  dc:relation=""
+    xmlns="http://rs.gbif.org/thesaurus/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+    <concept dc:identifier="homology_search" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/homology_search'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="homology search" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="kmer" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/kmer'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="kmer" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="coverage" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/coverage'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="coverage" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="codon_usage" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/codon_usage'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="codon usage" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="combination" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_param/combination'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+</thesaurus>
+    

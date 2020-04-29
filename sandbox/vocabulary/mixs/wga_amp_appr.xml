@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/wga_amp_appr/' 
+	dc:description="The WGA amplification approach Vocabulary is a recommended set of values to use for the wga_amp_appr term in the MIxS Extension." 
+	dc:title="Genomic Standards Consortium WGA amplification approach Vocabulary"
+  dc:issued="2020-04-24"
+  dc:relation=""
+    xmlns="http://rs.gbif.org/thesaurus/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+    <concept dc:identifier="pcr_based" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/wga_amp_appr/pcr_based'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="pcr based" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="mda_based" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/wga_amp_appr/mda_based'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="mda based" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+</thesaurus>
+    

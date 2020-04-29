@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/' 
+	dc:description="The environmental package Vocabulary is a recommended set of values to use for the env_package term in the MIxS Extension." 
+	dc:title="Genomic Standards Consortium environmental package Vocabulary"
+  dc:issued="2020-04-24"
+  dc:relation=""
+    xmlns="http://rs.gbif.org/thesaurus/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+    <concept dc:identifier="air" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/air'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="air" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="built_environment" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/built_environment'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="built environment" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="host-associated" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/host-associated'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="host-associated" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="human-associated" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/human-associated'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="human-associated" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="human-skin" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/human-skin'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="human-skin" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="human-oral" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/human-oral'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="human-oral" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="human-gut" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/human-gut'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="human-gut" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="human-vaginal" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/human-vaginal'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="human-vaginal" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="hydrocarbon_resources_cores" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/hydrocarbon_resources_cores'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="hydrocarbon resources-cores" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="hydrocarbon_resources_fluids_swabs" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/hydrocarbon_resources_fluids_swabs'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="hydrocarbon resources-fluids/swabs" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="microbial_mat_biofilm" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/microbial_mat_biofilm'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="microbial mat/biofilm" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="misc_environment" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/misc_environment'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="misc environment" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="plant-associated" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/plant-associated'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="plant-associated" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="sediment" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/sediment'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="sediment" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="soil" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/soil'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="soil" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="wastewater/sludge" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/wastewater/sludge'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="wastewater/sludge" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="water" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/env_package/water'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="water" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+</thesaurus>
+    

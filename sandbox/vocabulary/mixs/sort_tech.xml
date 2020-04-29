@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/' 
+	dc:description="The sorting technology Vocabulary is a recommended set of values to use for the sort_tech term in the MIxS Extension." 
+	dc:title="Genomic Standards Consortium sorting technology Vocabulary"
+  dc:issued="2020-04-24"
+  dc:relation=""
+    xmlns="http://rs.gbif.org/thesaurus/"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+    <concept dc:identifier="flow_cytometric_cell_sorting" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/flow_cytometric_cell_sorting'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="flow cytometric cell sorting" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="microfluidics" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/microfluidics'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="microfluidics" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="lazer-tweezing" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/lazer-tweezing'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="lazer-tweezing" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="optical_manipulation" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/optical_manipulation'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="optical manipulation" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="micromanipulation" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/micromanipulation'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="micromanipulation" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+    <concept dc:identifier="other" 
+  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/other'
+  dc:description="">
+        <preferred>
+            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+        </preferred>
+        <alternative></alternative>
+    </concept>
+</thesaurus>
+    
