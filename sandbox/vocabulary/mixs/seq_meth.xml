@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/MinION'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="MinION" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="MinION" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/GridION'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="GridION" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="GridION" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/PromethION'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="PromethION" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="PromethION" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs_20'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS 20" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS 20" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs_flx'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS FLX" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS FLX" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -62,7 +62,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs_flx'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS FLX+" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS FLX+" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -70,7 +70,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs_flx_titanium'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS FLX Titanium" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS FLX Titanium" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -78,7 +78,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/454_gs_junior'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="454 GS Junior" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="454 GS Junior" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -86,7 +86,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_genome_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -94,7 +94,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_genome_analyzer_ii'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer II" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer II" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -102,7 +102,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_genome_analyzer_i_ix'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer IIx" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina Genome Analyzer IIx" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -110,7 +110,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_4000'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 4000" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 4000" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -118,7 +118,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_3000'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 3000" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 3000" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -126,7 +126,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_2500'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 2500" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 2500" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -134,7 +134,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_2000'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 2000" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 2000" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -142,7 +142,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_1500'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 1500" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 1500" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -150,7 +150,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_1000'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 1000" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq 1000" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -158,7 +158,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_scan_sq'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiScanSQ" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiScanSQ" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -166,7 +166,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_mi_seq'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina MiSeq" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina MiSeq" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -174,7 +174,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_x_five'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq X Five" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq X Five" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -182,7 +182,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_hi_seq_x_ten'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq X Ten" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina HiSeq X Ten" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -190,7 +190,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_next_seq_500'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina NextSeq 500" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina NextSeq 500" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -198,7 +198,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/illumina_next_seq_550'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Illumina NextSeq 550" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Illumina NextSeq 550" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -206,7 +206,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -214,7 +214,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_system_2_0'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System 2.0" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System 2.0" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -222,7 +222,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_system_3_0'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System 3.0" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD System 3.0" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -230,7 +230,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_3_plus_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 3 Plus System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 3 Plus System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -238,7 +238,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_4_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 4 System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 4 System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -246,7 +246,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_4_hq_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 4hq System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD 4hq System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -254,7 +254,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_so_li_d_pi_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB SOLiD PI System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB SOLiD PI System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -262,7 +262,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_5500_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 5500 Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 5500 Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -270,7 +270,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_5500_xl_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 5500xl Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 5500xl Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -278,7 +278,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_5500_xl_w_genetic_analysis_system'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 5500xl-W Genetic Analysis System" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 5500xl-W Genetic Analysis System" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -286,7 +286,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ion_torrent_pgm'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Ion Torrent PGM" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Ion Torrent PGM" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -294,7 +294,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ion_torrent_proton'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Ion Torrent Proton" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Ion Torrent Proton" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -302,7 +302,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ion_torrent_s_5'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Ion Torrent S5" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Ion Torrent S5" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -310,7 +310,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ion_torrent_s_5_xl'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Ion Torrent S5 XL" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Ion Torrent S5 XL" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -318,7 +318,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/pac_bio_rs'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="PacBio RS" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="PacBio RS" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -326,7 +326,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/pac_bio_rs_ii'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="PacBio RS II" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="PacBio RS II" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -334,7 +334,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/Sequel'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="Sequel" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="Sequel" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -342,7 +342,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3730_x_l_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3730xL Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3730xL Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -350,7 +350,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3730_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3730 Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3730 Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -358,7 +358,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3500_x_l_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3500xL Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3500xL Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -366,7 +366,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3500_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3500 Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3500 Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -374,7 +374,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3130_x_l_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3130xL Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3130xL Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -382,7 +382,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_3130_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 3130 Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 3130 Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -390,7 +390,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/ab_310_genetic_analyzer'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="AB 310 Genetic Analyzer" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="AB 310 Genetic Analyzer" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -398,7 +398,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/seq_meth/BGISEQ-500'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="BGISEQ-500" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="BGISEQ-500" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/provirus'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="provirus" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="provirus" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/host_sequence_similarity'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="host sequence similarity" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="host sequence similarity" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/crispr_spacer_match'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="CRISPR spacer match" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="CRISPR spacer match" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/kmer_similarity'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="kmer similarity" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="kmer similarity" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/co-occurrence'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="co-occurrence" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="co-occurrence" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/combination'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -62,7 +62,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/host_pred_appr/other'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

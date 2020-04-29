@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/independent_sequence_uvig'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="independent sequence (UViG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="independent sequence (UViG)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/provirus_upvig'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="provirus (UpViG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="provirus (UpViG)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/flow_cytometric_cell_sorting'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="flow cytometric cell sorting" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="flow cytometric cell sorting" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/microfluidics'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="microfluidics" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="microfluidics" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/lazer-tweezing'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="lazer-tweezing" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="lazer-tweezing" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/optical_manipulation'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="optical manipulation" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="optical manipulation" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/micromanipulation'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="micromanipulation" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="micromanipulation" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/sort_tech/other'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

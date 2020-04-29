@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metagenome_not_viral_targeted'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="metagenome (not viral targeted)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metagenome (not viral targeted)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_metagenome_virome'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="viral fraction metagenome (virome)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral fraction metagenome (virome)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_metagenome'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="sequence-targeted metagenome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="sequence-targeted metagenome" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metatranscriptome_not_viral_targeted'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="metatranscriptome (not viral targeted)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metatranscriptome (not viral targeted)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_rna_metagenome_rna_virome'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="viral fraction RNA metagenome (RNA virome)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral fraction RNA metagenome (RNA virome)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_rna_metagenome'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="sequence-targeted RNA metagenome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="sequence-targeted RNA metagenome" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -62,7 +62,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/microbial_single_amplified_genome_sag'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="microbial single amplified genome (SAG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="microbial single amplified genome (SAG)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -70,7 +70,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_single_amplified_genome_v_sag'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="viral single amplified genome (vSAG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral single amplified genome (vSAG)" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -78,7 +78,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/isolate_microbial_genome'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="isolate microbial genome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="isolate microbial genome" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -86,7 +86,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/other'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

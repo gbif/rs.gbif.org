@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/autotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="autotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="autotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/carboxydotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="carboxydotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="carboxydotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemoautotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemoautotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemoautotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemoheterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemoheterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemoheterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemolithoautotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemolithoautotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemolithoautotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemolithotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemolithotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemolithotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -62,7 +62,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemoorganoheterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemoorganoheterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemoorganoheterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -70,7 +70,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemoorganotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemoorganotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemoorganotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -78,7 +78,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemosynthetic'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemosynthetic" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemosynthetic" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -86,7 +86,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -94,7 +94,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/copiotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="copiotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="copiotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -102,7 +102,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/diazotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="diazotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="diazotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -110,7 +110,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/facultative'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="facultative" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="facultative" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -118,7 +118,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/autotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="autotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="autotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -126,7 +126,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/heterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="heterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="heterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -134,7 +134,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/lithoautotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="lithoautotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="lithoautotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -142,7 +142,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/lithoheterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="lithoheterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="lithoheterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -150,7 +150,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/lithotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="lithotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="lithotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -158,7 +158,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/methanotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="methanotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="methanotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -166,7 +166,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/methylotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="methylotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="methylotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -174,7 +174,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/mixotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="mixotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="mixotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -182,7 +182,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/obligate'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="obligate" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="obligate" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -190,7 +190,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/chemoautolithotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="chemoautolithotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemoautolithotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -198,7 +198,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/oligotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="oligotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="oligotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -206,7 +206,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/organoheterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="organoheterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="organoheterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -214,7 +214,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/organotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="organotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="organotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -222,7 +222,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/photoautotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="photoautotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="photoautotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -230,7 +230,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/photoheterotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="photoheterotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="photoheterotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -238,7 +238,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/photolithoautotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="photolithoautotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="photolithoautotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -246,7 +246,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/photolithotroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="photolithotroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="photolithotroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -254,7 +254,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/photosynthetic'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="photosynthetic" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="photosynthetic" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -262,7 +262,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/trophic_level/phototroph'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="phototroph" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="phototroph" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
