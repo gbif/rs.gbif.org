@@ -14,7 +14,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/metabat'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="metabat" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metabat" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -22,7 +22,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/maxbin'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="maxbin" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="maxbin" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -30,7 +30,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/concoct'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="concoct" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="concoct" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -38,7 +38,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/groupm'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="groupm" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="groupm" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -46,7 +46,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/esom'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="esom" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="esom" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -54,7 +54,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/metawatt'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="metawatt" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metawatt" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -62,7 +62,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/combination'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
@@ -70,7 +70,7 @@
   dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/bin_software/other'
   dc:description="">
         <preferred>
-            <term dc:source="Genimc Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
