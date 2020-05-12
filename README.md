@@ -1,3 +1,5 @@
+[![Build Status](https://builds.gbif.org/job/rs.gbif.org/badge/icon)](https://builds.gbif.org/job/rs.gbif.org/)
+
 # [rs.gbif.org](http://rs.gbif.org)
 GBIF **R**epository of **S**chemas hosted at http://rs.gbif.org
 
@@ -14,7 +16,7 @@ git submodule update --init
 ## Deploying
 Deployment to rs.gbif.org uses rsync:
 ```
-  rsync -n -r -v -l --checksum --delete --exclude '.git*' --exclude datasets ./ static-vh.gbif.org:/var/www/rs.gbif.org/
+  rsync -nrlv --checksum --delete --exclude '.git*' ./ user@static.gbif.org:/var/www/html/rs/
 ```
 This happens automatically for commits to the master branch, and by a daily cron trigger, on the Jenkins build server.
 
