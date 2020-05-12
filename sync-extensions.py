@@ -5,12 +5,11 @@
 # +++  Extensions and Vocabularies
 # ****************************************
 
-
 import sys, string, urllib, traceback, os, json, datetime
 from xml.etree.ElementTree import ElementTree
 from urllib import FancyURLopener
 
-RS_BASE="/var/www/rs.gbif.org/"
+RS_BASE=os.getcwd()+"/"
 NS_DC="http://purl.org/dc/terms/"
 NS_EXT="http://rs.gbif.org/extension/"
 # default issued date 
@@ -92,7 +91,7 @@ def getIssuedDate(x):
   return x.issued or MIN_DATE
 
 def json_serial(obj):
-  """JSON serializer for objects not serializable by default json code
+  """JSON serializer for objects not serializable by default JSON code
      For datime.date objects, return ISO format, e.g. yyyy-mm-dd
   """
   if isinstance(obj, datetime.date):
@@ -102,10 +101,14 @@ def json_serial(obj):
 def parseUrl(url):
   """Download the XML document at a given URL. Parse the XML and
      construct either an Extension or Vocabulary depending on the
-     contents of the XML document. At the end, return the object 
-     constructed""" 
+     contents of the XML document. At the end, return the object
+     constructed
+
+     URLs beginning http://rs.gbif.org are instead retrieved
+     relative to this script."""
   try:
-    f = UrlOpener().open(url)
+    latestUrl = url.replace('http://rs.gbif.org/', RS_BASE)
+    f = UrlOpener().open(latestUrl)
     tree = ElementTree()
     tree.parse(f)
     f.close()

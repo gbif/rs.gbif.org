@@ -1,13 +1,22 @@
 # [rs.gbif.org](http://rs.gbif.org)
 GBIF **R**epository of **S**chemas hosted at http://rs.gbif.org
 
+## Build
+The repository can be built locally.
+
+```
+git submodule update --init
+./sync-extensions.py
+```
+
+(NB if an additional release of `eml-profile` is required, it should be added with a command like `git submodule add --name eml-profile-X.Y https://github.com/gbif/eml-profile.git schema/eml-gbif-profile/X.Y`.)
+
 ## Deploying
-Deploying this is through a git pull and then running the script to build the extension inventory files:
+Deployment to rs.gbif.org uses rsync:
 ```
-  rs.gbif.org /var/www/rs.gbif.org $ sudo git pull
-  rs.gbif.org /var/www/rs.gbif.org $ sudo ./sync-extensions.py
+  rsync -n -r -v -l --checksum --delete --exclude '.git*' --exclude datasets ./ static-vh.gbif.org:/var/www/rs.gbif.org/
 ```
-This happens automatically by a cron job running on the server hosting `rs.gbif.org`.
+This happens automatically for commits to the master branch, and by a daily cron trigger, on the Jenkins build server.
 
 ## Darwin Core Archive extensions and vocabularies
 The folder [core](core) contains [IPT](https://www.gbif.org/ipt) XML definitions for [Darwin Core Archive](http://rs.tdwg.org/dwc/terms/guides/text/) core data files. [Production extensions](extension) and associated [vocabularies](vocabulary) are hosted here, as well as [sandbox](sandbox) definitions of those used by IPT test installations.

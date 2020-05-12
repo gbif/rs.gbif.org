@@ -1,0 +1,15 @@
+[submodule "eml-profile-dev"]
+	path = schema/eml-gbif-profile/dev
+	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.0"]
+	path = schema/eml-gbif-profile/1.0
+	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.0.1"]
+	path = schema/eml-gbif-profile/1.0.1
+	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.0.2"]
+	path = schema/eml-gbif-profile/1.0.2
+	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.1"]
+	path = schema/eml-gbif-profile/1.1
+	url = https://github.com/gbif/eml-profile.git
