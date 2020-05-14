@@ -4,7 +4,7 @@
  dc:URI="http://rs.gbif.org/vocabulary/gbif/nomenclatural_status" 
  dc:description="" 
  dc:title="Nomenclatural Status GBIF Vocabulary"
- dc:issued="2015-02-13"
+ dc:issued="2019-02-08"
  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
  

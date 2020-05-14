@@ -1,7 +1,5 @@
 extensions.json
 sandbox/extensions.json
 sandbox/vocabularies.json
-schema/eml-gbif-profile
 vocabularies.json
 .DS_Store
-extension/.DS_Store

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus
+    dc:URI="http://rs.gbif.org/sandbox/vocabulary/gbif/occurrence_status/"
+	dc:description="A statement about the presence or absence of a taxon at a location.  Replaces version issued 2009-10-02, removing all values except 'present' and 'absent'."
+	dc:title="Occurrence Status GBIF Vocabulary"
+	dc:issued="2020-05-13"
+    xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+ <concept dc:identifier="present" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/present"  dc:issued="2020-05-14" dc:description="The occurrence was present at the location and time of the observation.">
+  <preferred>
+   <term dc:source="" dc:title="present" xml:lang="en"/>
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="absent" dc:URI="http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent"  dc:issued="2020-05-14" dc:description="The occurrence was not present at the location and time of the observation.">
+  <preferred>
+   <term dc:source="" dc:title="absent" xml:lang="en"/>
+  </preferred>
+ </concept>
+</thesaurus>

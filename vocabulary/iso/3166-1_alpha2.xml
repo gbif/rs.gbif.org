@@ -522,7 +522,7 @@
  </concept>
  <concept dc:identifier="CV" dc:URI="http://iso.org/iso3166-1/alpha2#CV">
   <preferred>
-   <term dc:title="CABO VERDE" xml:lang="en"/> x
+   <term dc:title="CABO VERDE" xml:lang="en"/>
    <term dc:title="CABO VERDE" xml:lang="es"/>
   </preferred>
   <alternative>
