@@ -1,7 +1,7 @@
 [![Build Status](https://builds.gbif.org/job/rs.gbif.org/badge/icon)](https://builds.gbif.org/job/rs.gbif.org/)
 
-# [rs.gbif.org](http://rs.gbif.org)
-GBIF **R**epository of **S**chemas hosted at http://rs.gbif.org
+# [rs.gbif.org](https://rs.gbif.org)
+GBIF **R**epository of **S**chemas hosted at https://rs.gbif.org
 
 ## Build
 The repository can be built locally.
