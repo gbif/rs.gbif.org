@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:sch="http://schema.org/"
+    xmlns:gvp="http://vocab.getty.edu/ontology/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="AgentActions"
+    name="AgentActions"
+    namespace="https://tdwg.github.io/attribution/people/dwc/"
+    rowType="https://tdwg.github.io/attribution/people/dwc/AgentActions"
+    dc:issued="2020-09-08"
+    dc:description="Extension to Occurrence Core to capture agents and optionally the specific roles they played in the context of executing actions on occurrences."
+    dc:relation=""
+    dc:subject="dwc:Occurrence">
+    <property
+        name="type"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/type"
+        dc:description="The nature or genre of the resource. Recommended practice is to use a controlled vocabulary."
+        examples='"http://schema.org/Person", "http://schema.org/Organization"'
+        type="string"
+        required="true"/>
+    <property
+        name="agentIdentifierType"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/agentIdentifierType.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentIdentifierType"
+        dc:description="The type of identifier for the agent. Recommended best practice is to use a controlled vocabulary."
+        examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
+        type="string"
+        required="false"/>
+    <property
+        name="identifier"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/identifier"
+        dc:description="Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs."
+        examples="https://orcid.org/0000-0001-6201-7340"
+        type="string"
+        required="false"/>
+    <property
+        name="name"
+        namespace="https://schema.org/"
+        qualName="https://schema.org/name"
+        dc:description="The name of the item. In this case the full name as woud be written on a legal document (without abbreviation), eg givenName familyName"
+        examples="Margaret Smith"
+        type="string"
+        required="true"/>
+    <property
+        name="additionalName"
+        namespace="https://schema.org/"
+        qualName="https://schema.org/additionalName"
+        dc:description="An additional name for a Person, can be used for a middle name."
+        examples="Anne"
+        type="string"
+        required="false"/>
+    <property
+        name="alternateName"
+        namespace="https://schema.org/"
+        qualName="https://schema.org/alternateName"
+        dc:description="An alias for the item. Other full name agent may have been known under such as maiden name."
+        examples="Margaret Johnson"
+        type="string"
+        required="false"/>
+    <property
+        name="verbatimName"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/dwc/terms/verbatimName"
+        dc:description="As written on occurrence, such as the collection or determination label."
+        examples="MC Smith"
+        type="string"
+        required="false"/>
+    <property
+        name="action"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/action.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/action"
+        dc:description="The name of the single action written as a verb in past tense. Recommended best practice is to use a controlled vocabulary."
+        examples='"collected","identified"'
+        type="string"
+        required="true"/>
+    <property
+        name="role"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/role.xml"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/role"
+        dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary."
+        examples='"major-effort","participant"'
+        type="string"
+        required="false"/>
+    <property
+        name="displayOrder"
+        namespace="http://vocab.getty.edu/ontology/"
+        qualName="http://vocab.getty.edu/ontology/displayOrder"
+        dc:description="The display order for the agent that executed the action when more than one agent was a participant."
+        examples='1'
+        type="integer"
+        required="false"/>
+    <property
+        name="identificationID"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/identificationID"
+        dc:description="An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set. The intent of this term is to maintain the relational integrity between the identified action and a particular determination/annotation expressed in the Identification History Extension when present."
+        examples='9992'
+        type="string"
+        required="false"/>
+    <property
+        name="startedAtTime"
+        namespace="http://www.w3.org/ns/prov#"
+        qualName="http://www.w3.org/ns/prov#startedAtTime"
+        dc:description="Start is when an activity is deemed to have been started by an entity."
+        examples="2012-04-25T01:30:00Z"
+        type="date"
+        required="false"/>
+     <property
+         name="endedAtTime"
+         namespace="http://www.w3.org/ns/prov#"
+         qualName="http://www.w3.org/ns/prov#endedAtTime"
+         dc:description="End is when an activity is deemed to have been ended by an entity."
+         examples="2012-04-25T03:40:00Z"
+         type="date"
+         required="false"/>
+</extension>
