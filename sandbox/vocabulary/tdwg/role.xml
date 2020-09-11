@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thesaurus
+  dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/role/"
+  dc:description="Vocabulary to represent an agent's role within the context of the specific action."
+  dc:relation="http://purl.obolibrary.org/obo/cro.owl"
+  dc:title="AgentActions role vocabulary"
+  dc:issued="2020-05-18"
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+  <concept dc:identifier="CRO_0000094" dc:URI="http://purl.obolibrary.org/obo/CRO_0000094" dc:relation="" dc:description="In botany, this is the collector listed first for a particular specimen. Each specimen has one primary collector. The primary collector assigns a number to that specimen from his/her own number series.">
+    <preferred>
+      <term dc:title="primary collector role" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="CRO_0000093" dc:URI="http://purl.obolibrary.org/obo/CRO_0000093" dc:relation="" dc:description="Obtaining a material entity for potential use as an input during an investigation.">
+    <preferred>
+      <term dc:title="specimen collection role" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+</thesaurus>
