@@ -25,7 +25,7 @@
         required="true"/>
     <property
         name="agentIdentifierType"
-        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/agentIdentifierType.xml"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/agentIdentifierType.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentIdentifierType"
         dc:description="The type of identifier for the agent. Recommended best practice is to use a controlled vocabulary."
@@ -74,7 +74,7 @@
         required="false"/>
     <property
         name="action"
-        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/action.xml"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/action.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/action"
         dc:description="The name of the single action written as a verb in past tense. Recommended best practice is to use a controlled vocabulary."
@@ -83,7 +83,7 @@
         required="true"/>
     <property
         name="role"
-        thesaurus="https://tdwg.github.io/attribution/people/dwc/vocubulary/role.xml"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/role.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/role"
         dc:description="The name of the role the agent played in the context of executing the action. Not to be confused with the agent's role in an organization. Recommended best practice is to use a controlled vocabulary."
