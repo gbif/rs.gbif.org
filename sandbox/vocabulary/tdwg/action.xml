@@ -66,7 +66,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="transcribed" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/transcribed" dc:relation="" dc:description="Put written text on the object to a digital form">
+  <concept dc:identifier="transcribed" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/transcribed" dc:relation="" dc:description="Entered the text on a physical object into a digital resource">
     <preferred>
       <term dc:title="transcribed" xml:lang="en"/>
     </preferred>
