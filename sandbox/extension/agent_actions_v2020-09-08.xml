@@ -29,7 +29,7 @@
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentIdentifierType"
         dc:description="The type of identifier for the agent. Recommended best practice is to use a controlled vocabulary."
-        examples='"ORCID", "ISNI", "Wikidata", "VIAF", "RoR", "Ringgold", "GRID"'
+        examples='"ORCID", "ISNI", "Wikidata", "VIAF", "ResearcherID", "HUH", "RoR", "Ringgold", "GRID"'
         type="string"
         required="false"/>
     <property
