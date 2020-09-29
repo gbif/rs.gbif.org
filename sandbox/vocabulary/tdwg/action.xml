@@ -42,7 +42,7 @@
     </alternative>
   </concept>
 
-  <concept dc:identifier="prepared" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/prepared" dc:relation="" dc:description="Prepared the subject">
+  <concept dc:identifier="prepared" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/prepared" dc:relation="" dc:description="Made the subject ready for use">
     <preferred>
       <term dc:title="prepared" xml:lang="en"/>
     </preferred>
@@ -50,6 +50,14 @@
     </alternative>
   </concept>
 
+  <concept dc:identifier="preserved" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/preserved" dc:relation="" dc:description="Maintained the subject in its original or existing state">
+    <preferred>
+      <term dc:title="preserved" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+ 
   <concept dc:identifier="georeferenced" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/action/georeferenced" dc:relation="" dc:description="Determined the georeference (spatial representation) for the location">
     <preferred>
       <term dc:title="georeferenced" xml:lang="en"/>
