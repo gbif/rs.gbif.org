@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thesaurus
+  dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/"
+  dc:description="Vocabulary of identifier types for agents that executed actions on occurrences"
+  dc:relation=""
+  dc:title="AgentActions identifierType vocabulary"
+  dc:issued="2020-05-18"
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+  <concept dc:identifier="ORCID" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/ORCID" dc:relation="" dc:description="Open Researcher and Contributor ID (ORCID), https://orcid.org/">
+    <preferred>
+      <term dc:title="ORCID" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="VIAF" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/VIAF" dc:relation="" dc:description="Virtual International Authority File (VIAF), https://viaf.org/">
+    <preferred>
+      <term dc:title="VIAF" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="ISNI" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/ISNI" dc:relation="" dc:description="International Standard Name Identifier (ISNI), http://www.isni.org/">
+    <preferred>
+      <term dc:title="ISNI" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="ResearcherID" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/ResearcherID" dc:relation="" dc:description="Web of Science ResearcherID, https://www.researcherid.com/">
+    <preferred>
+      <term dc:title="ResearcherID" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+ 
+  <concept dc:identifier="HUH" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/HUH" dc:relation="" dc:description="Harvard Index of Botanists ID, http://kiki.huh.harvard.edu/databases/botanist_index.html">
+    <preferred>
+      <term dc:title="HUH" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+ 
+  <concept dc:identifier="GRID" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/GRID" dc:relation="" dc:description="Global Research Identifier Database (GRID), https://www.grid.ac/">
+    <preferred>
+      <term dc:title="GRID" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="ringgold" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/ringgold" dc:relation="" dc:description="Ringgold Identify Database, https://www.ringgold.com/">
+    <preferred>
+      <term dc:title="ringgold" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="RoR" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/RoR" dc:relation="" dc:description="Research Organization Registry (RoR), https://ror.org/">
+    <preferred>
+      <term dc:title="RoR" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="wikidata" dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentIdentifierType/wikidata" dc:relation="" dc:description="Wikidata QID, https://www.wikidata.org/">
+    <preferred>
+      <term dc:title="wikidata" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+</thesaurus>
