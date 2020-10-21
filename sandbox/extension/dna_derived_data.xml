@@ -5,7 +5,7 @@
     xmlns:dc="http://purl.org/dc/terms/"    
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="DNA derived data" 
-    name="environmentalDnaSample" 
+    name="dnaDerivedData" 
     dc:issued="2020-06-23"
     dc:subject="dwc:Occurrence"
     dc:relation="http://www.gensc.org/gc_wiki/index.php/MIxS"
