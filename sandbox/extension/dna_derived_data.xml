@@ -4,12 +4,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:dc="http://purl.org/dc/terms/"    
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
-    dc:title="Environmental DNA (eDNA) Sample" 
+    dc:title="DNA derived data" 
     name="environmentalDnaSample" 
     dc:issued="2020-06-23"
     dc:subject="dwc:Occurrence"
     dc:relation="http://www.gensc.org/gc_wiki/index.php/MIxS"
-    dc:description="Extension for environmental DNA (eDNA) and other DNA based occurrence data. Terms are mostly based on the MIxS, GGBN and MIQE standards and recommendations.">
+    dc:description="Extension for DNA derived data. Terms are mostly based on the MIxS, GGBN and MIQE standards and recommendations.">
 <property group='sequencing' name='DNA_sequence' namespace='http://gensc.org/ns/mixs/terms/' qualName='http://gensc.org/ns/mixs/terms/dna_sequence' dc:relation='' dc:description='The DNA sequence' examples='TCTATCCTCAATTATAGGTCATAATTCACCATCAGTAGATTTAGGAATTTTCTCTATTCATATTGCAGGTGTATCATCAATTATAGGATCAATTAATTTTATTGTAACAATTTTAAATATACATACAAAAACTCATTCATTAAACTTTTTACCATTATTTTCATGATCAGTTCTAGTTACAGCAATTCTCCTTTTATTATCATTA' required='false'/>
 <property group='investigation' name='submitted_to_insdc' type='boolean'  namespace='http://gensc.org/ns/mixs/terms/' qualName='http://gensc.org/ns/mixs/terms/submitted_to_insdc' dc:relation='' dc:description='Depending on the study (large-scale e.g. done with next generation sequencing technology, or small-scale) sequences have to be submitted to SRA (Sequence Read Archive), DRA (DDBJ Read Archive) or via the classical Webin/Sequin systems to Genbank, ENA and DDBJ. Although this field is mandatory, it is meant as a self-test field, therefore it is not necessary to include this field in contextual data submitted to databases' examples='yes' required='false'/>
 <property group='investigation' name='investigation_type'   namespace='http://gensc.org/ns/mixs/terms/' qualName='http://gensc.org/ns/mixs/terms/investigation_type' dc:relation='' dc:description='Nucleic Acid Sequence Report is the root element of all MIGS/MIMS compliant reports as standardized by Genomic Standards Consortium. This field is either eukaryote,bacteria,virus,plasmid,organelle, metagenome,mimarks-survey, mimarks-specimen, metatranscriptome, single amplified genome, metagenome-assembled genome, or uncultivated viral genome' examples='metagenome' required='false'/>
