@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
+<thesaurus
+    dc:URI='http://rs.gbif.org/vocabulary/gbif/pathway_2020-10-26/'
+    dc:relation=''
+    dc:title='Pathway GBIF Vocabulary'
+    dc:issued='2020-10-26'
+    xmlns='http://rs.gbif.org/thesaurus/'
+    xmlns:dc='http://purl.org/dc/terms/'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'>
+
+  <concept dc:identifier='p001' dc:URI='http://rs.tdwg.org/dwcpw/values/p001' dc:relation='' dc:description='Organisms occuring in an area because they were introduced for the purpose of biological control of another organism. Notes: Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='biologicalControl' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='biological control' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p002' dc:URI='http://rs.tdwg.org/dwcpw/values/p002' dc:relation='' dc:description='Organisms introduced for the purpose of erosion control/dune stabilization (windbreaks, hedges, etc). Notes: Probably only applicable only to plants. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='erosionControl' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='erosion control' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p003' dc:URI='http://rs.tdwg.org/dwcpw/values/p003' dc:relation='' dc:description='Fish stocked into the wild either to create a fishery or for recreational angling. Notes: Largely applicable to freshwater and anadromous fish. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='fisheryInTheWild' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='fishery in the wild' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p004' dc:URI='http://rs.tdwg.org/dwcpw/values/p004' dc:relation='' dc:description='Animals stocked into the wild specifically with the intention that they would be hunted for sport. Notes: Largely applicable to terrestrial vertebrates. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='erosionControl' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p005' dc:URI='http://rs.tdwg.org/dwcpw/values/p005' dc:relation='' dc:description='Landscape/flora/fauna 'improvement' in the wild. Notes: 'Improvement' in this context is intended for introductions for the purpose of aesthetic enhancement of the landscape, as opposed to practical introductions for the purpose of erosion control, agriculture, forestry etc. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='landscapeImprovement' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='landscape improvement' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p006' dc:URI='http://rs.tdwg.org/dwcpw/values/p006' dc:relation='' dc:description='Organisms introduced for conservation purposes or wildlife management. Notes: The organism was released with the intention of improving its conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='conservationOrWildlifeManagement' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='conservation or wildlife management' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p007' dc:URI='http://rs.tdwg.org/dwcpw/values/p007' dc:relation='' dc:description='Release in nature for use (other than above, e.g., fur, transport, medical use). Notes: This term refers to organisms intentionally and directly released into the wild to serve a specific purpose. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='releasedForUse' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='released for use' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p008' dc:URI='http://rs.tdwg.org/dwcpw/values/p008' dc:relation='' dc:description='A catch-all for intentional releases not for human use that are not covered by other more specific terms. Notes: Compare with 'other escape from confinement'. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='otherIntentionalRelease' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='other intentional release' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p009' dc:URI='http://rs.tdwg.org/dwcpw/values/p009' dc:relation='' dc:description='Plants grown with then intention of harvesting. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='agriculture' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='agriculture (including biofuel feedstocks)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p010' dc:URI='http://rs.tdwg.org/dwcpw/values/p010' dc:relation='' dc:description='The analog of agriculture and farmed animals, specifically related to aquatic organisms. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='aquacultureMariculture' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='aquaculture/mariculture' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p011' dc:URI='http://rs.tdwg.org/dwcpw/values/p011' dc:relation='' dc:description='Organisms in public collections of plants and/or animals. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='publisGardenZooAquaria' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='botanic garden/zoo/aquaria (excluding domestic aquaria)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p012' dc:URI='http://rs.tdwg.org/dwcpw/values/p012' dc:relation='' dc:description='Privately kept animals. Notes: Animals kept for hunting, such as falcons and ferrets SHOULD be included here, not under the hunting term.'>
+    <preferred>
+      <term dc:title='pet' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='pet/aquarium/terrarium species (including live food for such species)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p013' dc:URI='http://rs.tdwg.org/dwcpw/values/p013' dc:relation='' dc:description='Animals cared for and bred with the specific intention of using their products, such as meat and milk. Notes: Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='farmedAnimals' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='farmed animals (including animals left under limited control)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p014' dc:URI='http://rs.tdwg.org/dwcpw/values/p014' dc:relation='' dc:description='Trees specifically introduced to provide timber and other forestry products. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='forestry' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='forestry (including reforestation)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p015' dc:URI='http://rs.tdwg.org/dwcpw/values/p015' dc:relation='' dc:description='Organisms escaped from a fur farms, including unauthorised releases. Notes: Probably only applicable to vertebrates raised for their pelts and skins. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='fur' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='fur farms' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p016' dc:URI='http://rs.tdwg.org/dwcpw/values/p016' dc:relation='' dc:description='Plants distributed by the ornamental and decorative plants industry. Usage: This term excludes plants and other organisms from aquaria and terrariums from the aquarium and terrarium trade which SHOULD be classified under the pet/aquarium/terrarium term. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='horticulture' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p017' dc:URI='http://rs.tdwg.org/dwcpw/values/p017' dc:relation='' dc:description='Ornamental plants introduced through pathways other than the horticultural industry. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='ornamentalNonHorticulture' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='ornamental purpose other than horticulture' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p018' dc:URI='http://rs.tdwg.org/dwcpw/values/p018' dc:relation='' dc:description='Plants and animals introduced for the purpose of breeding, scientific and medical research, including science education. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='research' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='research and ex-situ breeding (in facilities)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p019' dc:URI='http://rs.tdwg.org/dwcpw/values/p019' dc:relation='' dc:description='Live food imported for human consumption, such as shellfish and snails, and for live bait. Notes: Live food, such as mealworms, for the organisms kept as pets should be classified under the pet term. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='liveFoodLiveBait' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='live food and live bait' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p020' dc:URI='http://rs.tdwg.org/dwcpw/values/p020' dc:relation='' dc:description='Organisms brought into an area with the intention of keeping them in captivity permanently, but that have subsequently escaped. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='otherEscape' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='other escape from confinement' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p021' dc:URI='http://rs.tdwg.org/dwcpw/values/p021' dc:relation='' dc:description='Organisms transported into an area together with plant material. Notes: These may be other plants, diseases, fungi and animals. They may be attached to the plant or within the soil. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='contaminantNursery' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='contaminant nursery material' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p022' dc:URI='http://rs.tdwg.org/dwcpw/values/p022' dc:relation='' dc:description='Contaminants, pathogens and parasites transported with live, frozen or preserved bait used to catch fish or other organisms. Notes: Typical examples include crustaceans, cephalopods and molluscs. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='contaminateBait' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='contaminated bait' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p023' dc:URI='http://rs.tdwg.org/dwcpw/values/p023' dc:relation='' dc:description='Foods for human consumption, whether they are transported life or dead. Notes: This term includes unintentional introduction of contaminants such as diseases on those foods and in the case of plants, should include seeds. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='foodContaminant' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='food contaminant (including of live food)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p024' dc:URI='http://rs.tdwg.org/dwcpw/values/p024' dc:relation='' dc:description='Contaminants carried either on or in the body of transported animals. Usage: This term excludes parasites and pathogens, which SHOULD be classified under their own specific term ('parasites on animals'). Notes: Transported animals carry other organisms in their coat, on thier gut and in soil on their hooves and feet. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='contaminantOnAnimals' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='contaminant on animals (except parasites, organisms transported by host/vector)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p025' dc:URI='http://rs.tdwg.org/dwcpw/values/p025' dc:relation='' dc:description='Parasitic and pathogenic organisms transported with their host or vector animal. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='parasitesOnAnimals' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='parasites on animals (including organisms transported by host and vector)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p026' dc:URI='http://rs.tdwg.org/dwcpw/values/p026' dc:relation='' dc:description='Organisms transported on plant material. Usage: This term excludes organisms carried on contaminant nursery material, seed contaminants, and the timber trade, which SHOULD be classified under their own pathway terms. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='contaminantOnPlants' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='contaminant on plants (except parasites, species transported by host/vector)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p027' dc:URI='http://rs.tdwg.org/dwcpw/values/p027' dc:relation='' dc:description='Parasitic and pathogenic organisms transported with their host or vector plant. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='parasitesOnPlants' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='parasites on plants (including species transported by host and vector)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p028' dc:URI='http://rs.tdwg.org/dwcpw/values/p028' dc:relation='' dc:description='Organisms contaminating transported seeds. Notes: These may be parasites or pathogens of the seeds, seeds of other species not intended to be transported, or species that eat seeds. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='seedContaminant' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='seed contaminant' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p029' dc:URI='http://rs.tdwg.org/dwcpw/values/p029' dc:relation='' dc:description='Contaminants on unprocessed timber, processed wood and wood derived products. Usage: This term excludes packing material and habitat material made from wood that SHOULD be included under their own terms ('packing material' and 'transportation of habitat material').'>
+    <preferred>
+      <term dc:title='timberTrade' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='timber trade' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p030' dc:URI='http://rs.tdwg.org/dwcpw/values/p030' dc:relation='' dc:description='Organisms transported with their habitat material to a new location. Notes: Examples include materials such as soil, vegetation, straw and wood chips. Unless these materials are sterilised the organisms can be transported with their habitat to a new location. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='transportationHabitatMaterial' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='transportation of habitat material (soil, vegetation, wood etc.)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p031' dc:URI='http://rs.tdwg.org/dwcpw/values/p031' dc:relation='' dc:description='Aquatic organisms moved between sites on equipment of recreational anglers and professional fishermen. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='fishingEquipment' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='angling/fishing equipment' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p032' dc:URI='http://rs.tdwg.org/dwcpw/values/p032' dc:relation='' dc:description='Stowaways transported in or on the cargo containers or bulk cargo units themselves. Notes: The difference between this category and others, such as 'hitchhikers on ship/boat'', is that the organism embarked and disembarked from the container itself rather than the ship. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='containerBulk' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='container/bulk' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p033' dc:URI='http://rs.tdwg.org/dwcpw/values/p033' dc:relation='' dc:description='Organisms that enter airplanes or other aircraft, such as helicopters, and are transported by them to another location. Notes: This term does not apply to organisms that embarked onto containers that were subsequently loaded on to an aircraft. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='hitchhikersAirplane' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='hitchhikers in or on airplane' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p034' dc:URI='http://rs.tdwg.org/dwcpw/values/p034' dc:relation='' dc:description='Organisms that enter directly onto boats or ships and are transported by them to another location. Notes: This term does not apply to organisms that embarked containers that are subsequently loaded on the ship, nor to contaminents of products loaded on the ship. The term is intended for organisms that directly interact with the boat or ship. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='hitchhikersShip' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='hitchhikers on ship/boat (excluding ballast water and hull fouling)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p035' dc:URI='http://rs.tdwg.org/dwcpw/values/p035' dc:relation='' dc:description='Organisms carried on the surfaces of or within heavy machinery and equipment. Notes: This includes military equipment, farm machinery and manufacturing equipment. This term does not include products carried by vehicles. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='machineryEquipment' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='machinery/equipment' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p036' dc:URI='http://rs.tdwg.org/dwcpw/values/p036' dc:relation='' dc:description='Organisms transported on people themselves and/or their personal luggage. Usage: This term excludes recreational angling equipment, which SHOULD be classified under its own term ('angling/fishing equipment').'>
+    <preferred>
+      <term dc:title='people' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='people and their luggage/equipment (in particular tourism)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p037' dc:URI='http://rs.tdwg.org/dwcpw/values/p037' dc:relation='' dc:description='Organic material, particularly unprocessed plant material that is used to pack transported goods. Notes: Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='packingMaterial' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='organic packing material, in particular wood packaging' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p038' dc:URI='http://rs.tdwg.org/dwcpw/values/p038' dc:relation='' dc:description='Organisms transported within the water pumped into boats and ships to provide ballast. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='ballastWater' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='ship/boat ballast water' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p039' dc:URI='http://rs.tdwg.org/dwcpw/values/p039' dc:relation='' dc:description='Organisms that attach themselves to the subsurface hull of boats and ships. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='hullFouling' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='ship/boat hull fouling' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p040' dc:URI='http://rs.tdwg.org/dwcpw/values/p040' dc:relation='' dc:description='Other vehicle hitchhikers that have been unintentionally dispersed, but are not covered by other terms. Notes: These organisms may be carried on or within the vehicle. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='vehicles' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='vehicles (car, train, etc.)' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p041' dc:URI='http://rs.tdwg.org/dwcpw/values/p041' dc:relation='' dc:description='A catchall term for any transport related dispersal that is not covered in other terms. Notes: Examples include the movement of offshore installations, such as drilling platforms, but also pipeline and cable transport. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='otherTransport' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='other means of transport' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p042' dc:URI='http://rs.tdwg.org/dwcpw/values/p042' dc:relation='' dc:description='Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies. Usage: Organisms transported along these corridors in ballast, on as hull fouling SHOULD be categorised under the 'ship/boat ballast water' or 'ship/boat hull fouling' terms.'>
+    <preferred>
+      <term dc:title='waterwaysBasinsSeas' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='interconnected waterways/basins/seas' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p043' dc:URI='http://rs.tdwg.org/dwcpw/values/p043' dc:relation='' dc:description='Unintentional dispersal by organisms using artificial tunnels, bridges, roads and railways. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='tunnelsBridges' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='tunnels and land bridges' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p044' dc:URI='http://rs.tdwg.org/dwcpw/values/p044' dc:relation='' dc:description='Dispersal of organisms to new regions by natural dispersal from regions in which they are alien. Notes: These are alien species that have previously been introduced through one of these pathways: release in nature, excape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='naturalDispersal' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='natural dispersal across borders of invasive alien organisms' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p045' dc:URI='http://rs.tdwg.org/dwcpw/values/p045' dc:relation='' dc:description='Organisms transported and released by humans in a (semi)natural environment with the intention that they should live there without further human aid. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='releaseInNature' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='release in nature' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p046' dc:URI='http://rs.tdwg.org/dwcpw/values/p046' dc:relation='' dc:description='Organisms intentionally transported by humans and intended to be kept in captivity or cultivation, but having inadvertently escaped from human control. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='escapeFromConfinement' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='escape from confinement' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p047' dc:URI='http://rs.tdwg.org/dwcpw/values/p047' dc:relation='' dc:description='An umbrella term for all species transported as contaninents in other products. Notes: An alien species is a contaminant if it had a trophic or biotic relationship to organisms or items being transported and was to some extent dependent on them for survival. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='transportContaminant' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='transport-contaminant' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p048' dc:URI='http://rs.tdwg.org/dwcpw/values/p048' dc:relation='' dc:description='An umbrella term for all species transported by riding on forms of transport where the organism has a direct interation with the transport and is not merely carried as part of, or a contaminent of cargo. Notes: A stowaway has no trophic or biotic relationship to the organisms or items being transported. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='transportStowaway' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='transport-stowaway' xml:lang='en'/>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p049' dc:URI='http://rs.tdwg.org/dwcpw/values/p049' dc:relation='' dc:description='Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='corridor' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p050' dc:URI='http://rs.tdwg.org/dwcpw/values/p050' dc:relation='' dc:description='Organisms that spread by natural dispersal, without action or assistance by humans, from regions in which they are also alien. Notes: The term refers to secondary dispersal from an area where the taxon is also alien. See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='unaided' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p051' dc:URI='http://rs.tdwg.org/dwcpw/values/p051' dc:relation='' dc:description='Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='intentional' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p052' dc:URI='http://rs.tdwg.org/dwcpw/values/p053' dc:relation='' dc:description='The organism was unintentionally brought to a new region. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='unintentional' xml:lang='en'/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier='p053' dc:URI='http://rs.tdwg.org/dwcpw/values/p053' dc:relation='' dc:description='Organisms dispersed naturally, even if that dispersal was aided by changes in the landscape created by humans. Notes: See also Harrower et al. 2017 http://nora.nerc.ac.uk/id/eprint/519129.'>
+    <preferred>
+      <term dc:title='corridorAndDispersal' xml:lang='en'/>
+    </preferred>
+    <alternative>
+      <term dc:title='corridor and dispersal' xml:lang='en'/>
+    </alternative>
+  </concept>
+</thesaurus>
