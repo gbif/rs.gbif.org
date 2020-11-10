@@ -1,92 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
-	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/' 
-	dc:description="The source of UViGs Vocabulary is a recommended set of values to use for the source_uvig term in the MIxS Extension." 
-	dc:title="Genomic Standards Consortium source of UViGs Vocabulary"
-  dc:issued="2020-04-24"
-  dc:relation=""
+<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/'
+    dc:description="The source of UViGs Vocabulary is a recommended set of values to use for the source_uvig term in the MIxS Extension."
+    dc:title="Genomic Standards Consortium source of UViGs Vocabulary"
+    dc:issued="2020-04-24"
+    dc:relation=""
     xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="metagenome_not_viral_targeted" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metagenome_not_viral_targeted'
-  dc:description="">
+    <concept dc:identifier="metagenome_not_viral_targeted"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metagenome_not_viral_targeted'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metagenome (not viral targeted)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="metagenome (not viral targeted)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="viral_fraction_metagenome_virome" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_metagenome_virome'
-  dc:description="">
+    <concept dc:identifier="viral_fraction_metagenome_virome"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_metagenome_virome'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral fraction metagenome (virome)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="viral fraction metagenome (virome)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="sequence_targeted_metagenome" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_metagenome'
-  dc:description="">
+    <concept dc:identifier="sequence_targeted_metagenome"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_metagenome'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="sequence-targeted metagenome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="sequence-targeted metagenome"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="metatranscriptome_not_viral_targeted" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metatranscriptome_not_viral_targeted'
-  dc:description="">
+    <concept dc:identifier="metatranscriptome_not_viral_targeted"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/metatranscriptome_not_viral_targeted'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="metatranscriptome (not viral targeted)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="metatranscriptome (not viral targeted)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="viral_fraction_rna_metagenome_rna_virome" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_rna_metagenome_rna_virome'
-  dc:description="">
+    <concept dc:identifier="viral_fraction_rna_metagenome_rna_virome"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_fraction_rna_metagenome_rna_virome'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral fraction RNA metagenome (RNA virome)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="viral fraction RNA metagenome (RNA virome)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="sequence_targeted_rna_metagenome" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_rna_metagenome'
-  dc:description="">
+    <concept dc:identifier="sequence_targeted_rna_metagenome"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/sequence_targeted_rna_metagenome'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="sequence-targeted RNA metagenome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="sequence-targeted RNA metagenome"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="microbial_single_amplified_genome_sag" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/microbial_single_amplified_genome_sag'
-  dc:description="">
+    <concept dc:identifier="microbial_single_amplified_genome_sag"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/microbial_single_amplified_genome_sag'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="microbial single amplified genome (SAG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="microbial single amplified genome (SAG)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="viral_single_amplified_genome_v_sag" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_single_amplified_genome_v_sag'
-  dc:description="">
+    <concept dc:identifier="viral_single_amplified_genome_v_sag"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/viral_single_amplified_genome_v_sag'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="viral single amplified genome (vSAG)" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="viral single amplified genome (vSAG)"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="isolate_microbial_genome" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/isolate_microbial_genome'
-  dc:description="">
+    <concept dc:identifier="isolate_microbial_genome"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/isolate_microbial_genome'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="isolate microbial genome" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="isolate microbial genome"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="other" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/other'
-  dc:description="">
+    <concept dc:identifier="other"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/source_uvig/other'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="other" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="other"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

@@ -1,44 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
-	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/' 
-	dc:description="The single cell or viral particle lysis approach Vocabulary is a recommended set of values to use for the single_cell_lysis_appr term in the MIxS Extension." 
-	dc:title="Genomic Standards Consortium single cell or viral particle lysis approach Vocabulary"
-  dc:issued="2020-04-24"
-  dc:relation=""
+<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/'
+    dc:description="The single cell or viral particle lysis approach Vocabulary is a recommended set of values to use for the single_cell_lysis_appr term in the MIxS Extension."
+    dc:title="Genomic Standards Consortium single cell or viral particle lysis approach Vocabulary"
+    dc:issued="2020-04-24"
+    dc:relation=""
     xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="chemical" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/chemical'
-  dc:description="">
+    <concept dc:identifier="chemical"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/chemical'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="chemical" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="chemical"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="enzymatic" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/enzymatic'
-  dc:description="">
+    <concept dc:identifier="enzymatic"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/enzymatic'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="enzymatic" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="enzymatic"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="physical" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/physical'
-  dc:description="">
+    <concept dc:identifier="physical"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/physical'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="physical" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="physical"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="combination" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/combination'
-  dc:description="">
+    <concept dc:identifier="combination"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/single_cell_lysis_appr/combination'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="combination"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
