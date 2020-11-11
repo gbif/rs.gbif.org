@@ -6,6 +6,7 @@
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="DNA derived data"
     name="dnaDerivedData"
+    namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/DNADerivedData"
     dc:issued="2020-11-10"
     dc:subject="dwc:Occurrence"
