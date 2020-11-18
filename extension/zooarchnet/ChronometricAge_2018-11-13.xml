@@ -11,7 +11,7 @@
     namespace="http://zooarchnet.org/dwc/terms/" 
     rowType="http://zooarchnet.org/dwc/terms/ChronometricAge"
     dc:issued="2018-11-13"
-    dc:description="This extension has been DEPRECATED! Please use the newer ChronometricAge extension instead: https://github.com/gbif/rs.gbif.org/blob/master/extension/zooarchnet/ChronometricAge_2020-10-06.xml"
+    dc:description="This extension has been DEPRECATED! Please use the newer ChronometricAge extension instead: https://rs.gbif.org/extension/zooarchnet/ChronometricAge_2020-10-06.xml"
     dc:relation="https://github.com/VertNet/dwc-chronology/blob/master/standard/vocabularies/term_versions.csv"
     dc:subject="dwc:Occurrence">
     <property 
