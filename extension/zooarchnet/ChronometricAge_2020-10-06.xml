@@ -35,7 +35,7 @@
     <property
         name='chronometricAgeProtocol'
         namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol'
         dc:description='A description of or reference to the methods used to determine the chronometric age.'
         examples='`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`'
         type="string"
