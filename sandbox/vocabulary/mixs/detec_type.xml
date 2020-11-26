@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
-	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/' 
-	dc:description="The detection type Vocabulary is a recommended set of values to use for the detec_type term in the MIxS Extension." 
-	dc:title="Genomic Standards Consortium detection type Vocabulary"
+<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/'
+  dc:description="The detection type Vocabulary is a recommended set of values to use for the detec_type term in the MIxS Extension."
+  dc:title="Genomic Standards Consortium detection type Vocabulary"
   dc:issued="2020-04-24"
   dc:relation=""
-    xmlns="http://rs.gbif.org/thesaurus/"
-    xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="independent_sequence_uvig" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/independent_sequence_uvig'
-  dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="independent sequence (UViG)" xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-    <concept dc:identifier="provirus_upvig" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/provirus_upvig'
-  dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="provirus (UpViG)" xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+  <concept dc:identifier="independent_sequence_uvig"
+    dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/independent_sequence_uvig'
+    dc:description="">
+    <preferred>
+      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+        dc:title="independent sequence (UViG)"
+        xml:lang="en"/>
+    </preferred>
+    <alternative></alternative>
+  </concept>
+  <concept dc:identifier="provirus_upvig"
+    dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/detec_type/provirus_upvig'
+    dc:description="">
+    <preferred>
+      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+        dc:title="provirus (UpViG)"
+        xml:lang="en"/>
+    </preferred>
+    <alternative></alternative>
+  </concept>
 </thesaurus>
     

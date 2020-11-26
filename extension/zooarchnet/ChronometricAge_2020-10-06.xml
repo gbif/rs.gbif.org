@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:chrono="http://rs.tdwg.org/chrono/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="ChronometricAge"
+    name="ChronometricAge"
+    namespace="http://rs.tdwg.org/chrono/terms/"
+    rowType="http://rs.tdwg.org/chrono/terms/ChronometricAge"
+    dc:issued="2020-10-06"
+    dc:description="Extension to Occurrence Core to capture chronometric age information."
+    dc:relation="https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv"
+    dc:subject="dwc:Occurrence">
+    <property
+        name="chronometricAgeID"
+        namespace="http://rs.tdwg.org/chrono/terms/"
+        qualName="http://rs.tdwg.org/chrono/terms/chronometricAgeID"
+        dc:description='An identifier for the set of information associated with a ChronometricAge.'
+        comments='May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.'
+        examples='`https://www.canadianarchaeology.ca/samples/70673`'
+        type="string"
+        required="true"/>
+    <property
+        name='verbatimChronometricAge'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/verbatimChronometricAge'
+        dc:description='The verbatim age for a specimen, whether reported by a dating assay, associated references, or legacy information.'
+        comments='For example, this could be the radiocarbon age as given in an AMS dating report. This could also be simply what is reported as the age of a specimen in legacy collections data.'
+        examples='`27 BC to 14 AD`, `stratigraphically pre-1104`'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeProtocol'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol'
+        dc:description='A description of or reference to the methods used to determine the chronometric age.'
+        examples='`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`'
+        type="string"
+        required='false'/>
+    <property
+        name='uncalibratedChronometricAge'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge'
+        dc:description='The output of a dating assay before it is calibrated into an age using a specific conversion protocol.'
+        examples='`1510 +/- 25 14C yr BP`, `16.26 Ma +/- 0.016`'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeConversionProtocol'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol'
+        dc:description='The method used to convert the uncalibratedChronometricAge into a chronometric age in years, as captured in maximumChronometricAge, maximumChronometricAgeReferenceSystem, minimumChronometricAge, and minimumChronometricAgeReferenceSystem.'
+        comments='For example, calibration of conventional radiocarbon age or the currently accepted age range of a cultural or geological period.'
+        examples='`INTCAL13`, `sequential 6 phase Bayesian model and IntCal13 calibration`'
+        type="string"
+        required='false'/>
+    <property
+        name='maximumChronometricAge'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/maximumChronometricAge'
+        dc:description='Upper limit for the age of a specimen as determined by a dating method.'
+        comments='The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.'
+        examples='27'
+        type="string"
+        required='false'/>
+    <property
+        name='maximumChronometricAgeReferenceSystem'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem'
+        dc:description='The reference system associated with the maximumChronometricAge.'
+        examples='`kya`,`mya`,`BP`,`AD`,`BCE`'
+        type="string"
+        required='false'/>
+    <property
+        name='minimumChronometricAge'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/minimumChronometricAge'
+        dc:description='Lower limit for the age of a specimen as determined by a dating method. The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.'
+        comments='The expected unit for this field is years. This field, if populated, must have an associated minimumChronometricAgeReferenceSystem.'
+        examples='100'
+        type="string"
+        required='false'/>
+    <property
+        name='minimumChronometricAgeReferenceSystem'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem'
+        dc:description='The reference system associated with the minimumChronometricAge.'
+        examples='`kya`,`mya`,`BP`,`AD`,`BCE`'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeUncertaintyInYears'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears'
+        dc:description='The temporal uncertainty of the maximumChronometricAge and minimumChronometicAge in years.'
+        comments='This is the +/- number for the age in years. The expected unit for this field is years.'
+        examples='100'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeUncertaintyMethod'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyMethod'
+        dc:description='The method used to generate the value of chronometricAgeUncertaintyInYears.'
+        examples='`2-sigma calibrated range`, `Half of 95% confidence interval`'
+        type="string"
+        required='false'/>
+    <property
+        name='materialDated'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/materialDated'
+        dc:description='A description of the material on which the chronometricAgeProtocol was actually performed, if known.'
+        examples='`Double Tuff`, `Charcoal found in Stratum V`, `charred wood`, `tooth`'
+        type="string"
+        required='false'/>
+    <property
+        name="materialDatedID"
+        namespace="http://rs.tdwg.org/chrono/terms/"
+        qualName="http://rs.tdwg.org/chrono/terms/materialDatedID"
+        dc:description='An identifier for the material on which the chronometricAgeProtocol was performed, if applicable.'
+        examples='`dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839`, `https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`'
+        type="string"
+        required="false"/>
+    <property
+        name='chronometricAgeDeterminedBy'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy'
+        dc:description='A list (concatenated and separated) of names of people, groups, or organizations who determined the ChronometricAge.'
+        comments='Recommended best practice is to separate the values in a list with space vertical bar space ( | ).'
+        examples='`Michelle LeFebvre | Neill Wallis`'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeDeterminedDate'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate'
+        dc:description='The date on which the ChronometricAge was determined.'
+        comments='Recommended best practice is to use a date that conforms to ISO 8601-1:2019.'
+        examples='`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971).'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeReferences'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeReferences'
+        dc:description='A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the ChronometricAge.'
+        comments='Recommended best practice is to separate the values in a list with space vertical bar space ( | ).'
+        examples='`Pluckhahn, Thomas J., Neill J. Wallis, and Victor D. Thompson. 2020  The History and Future of Migrationist Explanation in the Archaeology of the Eastern Woodlands: A Review and Case Study of the Woodland Period Gulf Coast. Journal of Archaeological Research. https://doi.org/10.1007/s10814-019-09140-x`'
+        type="string"
+        required='false'/>
+    <property
+        name='chronometricAgeRemarks'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeRemarks'
+        dc:description='Notes or comments about the ChronometricAge.'
+        examples='`Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.`'
+        type="string"
+        required='false'/>
+</extension>

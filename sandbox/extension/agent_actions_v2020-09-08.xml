@@ -16,10 +16,10 @@
     dc:relation=""
     dc:subject="dwc:Occurrence">
     <property
-        name="type"
-        namespace="http://purl.org/dc/terms/"
-        qualName="http://purl.org/dc/terms/type"
-        dc:description="The nature or genre of the resource. Recommended practice is to use a controlled vocabulary."
+        name="agentType"
+        namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
+        qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentType"
+        dc:description="The nature of the agent. Recommended practice is to use a controlled vocabulary."
         examples='"http://schema.org/Person", "http://schema.org/Organization"'
         type="string"
         required="true"/>

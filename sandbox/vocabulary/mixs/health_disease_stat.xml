@@ -1,100 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
-	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/' 
-	dc:description="The health or disease status of specific host at time of collection Vocabulary is a recommended set of values to use for the health_disease_stat term in the MIxS Extension." 
-	dc:title="Genomic Standards Consortium health or disease status of specific host at time of collection Vocabulary"
-  dc:issued="2020-04-24"
-  dc:relation=""
+<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/'
+    dc:description="The health or disease status of specific host at time of collection Vocabulary is a recommended set of values to use for the health_disease_stat term in the MIxS Extension."
+    dc:title="Genomic Standards Consortium health or disease status of specific host at time of collection Vocabulary"
+    dc:issued="2020-04-24"
+    dc:relation=""
     xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="healthy" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/healthy'
-  dc:description="">
+    <concept dc:identifier="healthy"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/healthy'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="healthy" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="healthy"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="diseased" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/diseased'
-  dc:description="">
+    <concept dc:identifier="diseased"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/diseased'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="diseased" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="diseased"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="dead" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/dead'
-  dc:description="">
+    <concept dc:identifier="dead"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/dead'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="dead" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="dead"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="disease-free" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/disease-free'
-  dc:description="">
+    <concept dc:identifier="disease-free"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/disease-free'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="disease-free" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="disease-free"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="undetermined" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/undetermined'
-  dc:description="">
+    <concept dc:identifier="undetermined"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/undetermined'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="undetermined" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="undetermined"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="recovering" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/recovering'
-  dc:description="">
+    <concept dc:identifier="recovering"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/recovering'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="recovering" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="recovering"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="resolving" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/resolving'
-  dc:description="">
+    <concept dc:identifier="resolving"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/resolving'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="resolving" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="resolving"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="pre_existing_condition" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/pre_existing_condition'
-  dc:description="">
+    <concept dc:identifier="pre_existing_condition"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/pre_existing_condition'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="pre-existing condition" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="pre-existing condition"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="pathological" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/pathological'
-  dc:description="">
+    <concept dc:identifier="pathological"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/pathological'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="pathological" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="pathological"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="life_threatening" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/life_threatening'
-  dc:description="">
+    <concept dc:identifier="life_threatening"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/life_threatening'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="life threatening" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="life threatening"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="congenital" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/congenital'
-  dc:description="">
+    <concept dc:identifier="congenital"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/health_disease_stat/congenital'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="congenital" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="congenital"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>

@@ -1,60 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus 
-	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/' 
-	dc:description="The decontamination software Vocabulary is a recommended set of values to use for the decontam_software term in the MIxS Extension." 
-	dc:title="Genomic Standards Consortium decontamination software Vocabulary"
-  dc:issued="2020-04-24"
-  dc:relation=""
+<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/'
+    dc:description="The decontamination software Vocabulary is a recommended set of values to use for the decontam_software term in the MIxS Extension."
+    dc:title="Genomic Standards Consortium decontamination software Vocabulary"
+    dc:issued="2020-04-24"
+    dc:relation=""
     xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="checkm/refinem" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/checkm/refinem'
-  dc:description="">
+    <concept dc:identifier="checkm/refinem"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/checkm/refinem'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="checkm/refinem" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="checkm/refinem"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="anvi´o" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/anvi_o'
-  dc:description="">
+    <concept dc:identifier="anvi´o"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/anvi_o'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="anvi'o" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="anvi'o"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="prodege" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/prodege'
-  dc:description="">
+    <concept dc:identifier="prodege"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/prodege'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="prodege" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="prodege"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="bbtools:decontaminate.sh" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/bbtools:decontaminate.sh'
-  dc:description="">
+    <concept dc:identifier="bbtools:decontaminate.sh"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/bbtools:decontaminate.sh'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="bbtools:decontaminate.sh" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="bbtools:decontaminate.sh"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="acdc" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/acdc'
-  dc:description="">
+    <concept dc:identifier="acdc"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/acdc'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="acdc" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="acdc"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
-    <concept dc:identifier="combination" 
-  dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/combination'
-  dc:description="">
+    <concept dc:identifier="combination"
+        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/decontam_software/combination'
+        dc:description="">
         <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="combination" xml:lang="en"/>
+            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+                dc:title="combination"
+                xml:lang="en"/>
         </preferred>
         <alternative></alternative>
     </concept>
