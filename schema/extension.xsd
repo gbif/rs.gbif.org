@@ -34,14 +34,10 @@
                                 <xs:documentation>The data type for the property. Defaults to a string.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="comments" type="xs:string">
-                            <xs:annotation>
-                                <xs:documentation>Recommendations for the content for the property.</xs:documentation>
-                            </xs:annotation>
-                        </xs:attribute>
+
                         <xs:attribute name="examples" type="xs:string">
                             <xs:annotation>
-                                <xs:documentation>Examples of content for the property. If multiple are given, separate them with ' | '.</xs:documentation>
+                                <xs:documentation>Example content for the property. If multiple are given delimited by a semicolon</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
                         <xs:attribute ref="dc:relation"/>
@@ -75,10 +71,6 @@
                 <xs:annotation>
                     <xs:documentation>The rowType is the qualified name when combined with the namespace. Double or missing slashes are removed/added when name + namespace is combined.</xs:documentation>
                 </xs:annotation>
-            <xs:attribute ref="dc:creator" use="optional">
-                <xs:annotation>
-                    <xs:documentation>The agent responsible for creating the extension.</xs:documentation>
-                </xs:annotation>
             </xs:attribute>
             <xs:attribute ref="dc:issued" use="required">
                 <xs:annotation>
@@ -88,7 +80,6 @@
             <xs:attribute ref="dc:description" use="optional"/>
             <xs:attribute ref="dc:relation" use="optional"/>
             <xs:attribute ref="dc:subject" use="optional"/>
-
         </xs:complexType>
     </xs:element>
 
