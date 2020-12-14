@@ -49,14 +49,6 @@
         type="string"
         required="true"/>
     <property
-        name="additionalName"
-        namespace="https://schema.org/"
-        qualName="https://schema.org/additionalName"
-        dc:description="An additional name for a Person, can be used for a middle name."
-        examples="Anne"
-        type="string"
-        required="false"/>
-    <property
         name="alternateName"
         namespace="https://schema.org/"
         qualName="https://schema.org/alternateName"
@@ -110,7 +102,7 @@
         name="startedAtTime"
         namespace="http://www.w3.org/ns/prov#"
         qualName="http://www.w3.org/ns/prov#startedAtTime"
-        dc:description="Start is when an activity is deemed to have been started by an entity."
+        dc:description="Start is when an activity is deemed to have been started by an agent."
         examples="2012-04-25T01:30:00Z"
         type="date"
         required="false"/>
@@ -118,7 +110,7 @@
          name="endedAtTime"
          namespace="http://www.w3.org/ns/prov#"
          qualName="http://www.w3.org/ns/prov#endedAtTime"
-         dc:description="End is when an activity is deemed to have been ended by an entity."
+         dc:description="End is when an activity is deemed to have been ended by an agent."
          examples="2012-04-25T03:40:00Z"
          type="date"
          required="false"/>
