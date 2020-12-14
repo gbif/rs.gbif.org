@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thesaurus
+  dc:URI="https://tdwg.github.io/attribution/people/dwc/vocabulary/agentType/"
+  dc:description="Vocabulary of agent types that executed actions on occurrences"
+  dc:relation=""
+  dc:title="AgentActions agentType vocabulary"
+  dc:issued="2020-12-14"
+  xmlns="http://rs.gbif.org/thesaurus/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+  <concept dc:identifier="Person" dc:URI="https://schema.org/Person" dc:relation="" dc:description="A person (alive, dead).">
+    <preferred>
+      <term dc:title="Person" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="Organization" dc:URI="https://schema.org/Organization" dc:relation="" dc:description="An organization such as a school, NGO, corporation, club, etc.">
+    <preferred>
+      <term dc:title="Organization" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+  <concept dc:identifier="SoftwareApplication" dc:URI="https://schema.org/SoftwareApplication" dc:relation="" dc:description="A software application.">
+    <preferred>
+      <term dc:title="SoftwareApplication" xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+
+</thesaurus>
