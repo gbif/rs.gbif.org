@@ -17,10 +17,11 @@
     dc:subject="dwc:Occurrence">
     <property
         name="agentType"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/tdwg/agentType.xml"
         namespace="https://tdwg.github.io/attribution/people/dwc/terms/"
         qualName="https://tdwg.github.io/attribution/people/dwc/terms/agentType"
         dc:description="The nature of the agent. Recommended practice is to use a controlled vocabulary."
-        examples='"http://schema.org/Person", "http://schema.org/Organization"'
+        examples='"Person", "Organization", "SoftwareApplication"'
         type="string"
         required="true"/>
     <property
@@ -102,7 +103,7 @@
         name="startedAtTime"
         namespace="http://www.w3.org/ns/prov#"
         qualName="http://www.w3.org/ns/prov#startedAtTime"
-        dc:description="Start is when an activity is deemed to have been started by an agent."
+        dc:description="Start is when an action is deemed to have been started by an agent."
         examples="2012-04-25T01:30:00Z"
         type="date"
         required="false"/>
@@ -110,7 +111,7 @@
          name="endedAtTime"
          namespace="http://www.w3.org/ns/prov#"
          qualName="http://www.w3.org/ns/prov#endedAtTime"
-         dc:description="End is when an activity is deemed to have been ended by an agent."
+         dc:description="End is when an action is deemed to have been ended by an agent."
          examples="2012-04-25T03:40:00Z"
          type="date"
          required="false"/>
