@@ -9,7 +9,7 @@
     dc:title="Humboldt Inventory Event Extension"
     name="Humboldt Inventory Event Extension"
     namespace="http://rs.tdwg.org/hc/terms/"
-    rowType="http://rs.tdwg.org/dwc/terms/Event"
+    rowType="http://rs.tdwg.org/hc/terms/HumboldtInventory"
     dc:issued="2020-12-11"
     dc:description="Extension to Event Core to capture inventory metadata."
     dc:relation="https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv"
