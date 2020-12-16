@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:hc="http://rs.tdwg.org/hc/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="Humboldt Inventory Event Extension"
+    name="Humboldt Inventory Event Extension"
+    namespace="http://rs.tdwg.org/hc/terms/"
+    rowType="http://rs.tdwg.org/hc/terms/HumboldtInventory"
+    dc:issued="2020-12-11"
+    dc:description="Extension to Event Core to capture inventory metadata."
+    dc:relation="https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv"
+    dc:subject="dwc:Event">
+    <property
+        name="inventoryPerformedBy"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/inventoryPerformedBy"
+        dc:description='Original Definition: The person or people who performed the inventory.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="taxaIdentifiedBy"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/taxaIdentifiedBy"
+        dc:description='Original Definition: The agent(s) who performed taxonomic identifications in the field.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="identificationQuality"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/identificationQuality"
+        dc:description='Original Definition: How confident is the assessor in the quality of identifications on a scale from 1 (not confident) to 5 (fully confident).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="siteCount"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteCount"
+        dc:description='Original Definition: Author-reported number of separate sites inventoried.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="siteNestingDescription"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteNestingDescription"
+        dc:description='Original Definition: Author-reported hierarchical sample design e.g. sampled subunits nested with larger units.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="siteNames"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteNames"
+        dc:description='Original Definition: Author-reported site names.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="siteDetails"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteDetails"
+        dc:description='Original Definition: Author-reported site information (utilizes terms below per site if more than one).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="diurnality"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/diurnality"
+        dc:description='Original Definition: Author reported sampling during day, night, or both?'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="season"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/season"
+        dc:description='Original Definition: Did the author report seasons surveyed?  Which ones (from a pick list).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="environmentReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/environmentReported"
+        dc:description='Original Definition: Controlled vocabulary includes "Environment reported by site", "reported but not by site", and "not reported".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="habitatScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/habitatScope"
+        dc:description='Original Definition: A verbatim text description of the habitats reported as included in the surveys.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedHabitatScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedHabitatScope"
+        dc:description='Original Definition: A verbatim text description of the habitats explicitly reported as not included in the surveys.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="reportedWeather"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/reportedWeather"
+        dc:description='Original Definition: Weather or climate conditions experienced during the survey (e.g., drought, frost).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="reportedImpacts"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/reportedImpacts"
+        dc:description='Original Definition: Adverse conditions that affected the survey or survey sites (e.g., fire, floods).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="compilationType"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/compilationType"
+        dc:description='Original Definition: Compiled data is ancillary data that was not directly collected by authors but assembled from other sources. Inventories can be compiled only, survey only, or both.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="compilationSources"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/compilationSources"
+        dc:description='Original Definition: Compilation types include expert and local knowledge, museum specimens, literature, or other sources.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="inventoryType"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/inventoryType"
+        dc:description='Original Definition: Inventory type can be restricted search, open search,  opportunistic search, trap, incidental or adventitous or material sample. Recommend using a subclasee of bco:taxonomic inventory process.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="searchGeometryType"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/searchGeometryType"
+        dc:description='Original Definition: The shape of the search area can be rectangle, circle, line, or polygon.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isAbundanceReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbundanceReported"
+        dc:description='Original Definition: Did the survey results include number of individuals captured per species? (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isAbundanceCapReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbundanceCapReported"
+        dc:description='Original Definition: What value, if any, was used a maximum cap on reported abundances? (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isVegetationCoverReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isVegetationCoverReported"
+        dc:description='Original Definition: In vegetation surveys, was cover metric reported as output (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isAbsenceReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbsenceReported"
+        dc:description='Original Definition: Did the authors report species expected in the survey that were not found? (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="hasVouchers"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/hasVouchers"
+        dc:description='Original Definition: Did the authors collect specimen vouchers? (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="voucherLocations"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/voucherLocations"
+        dc:description='Original Definition: If collected, the name of the repository where vouchers were deposited.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="hasSamples"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/hasSamples"
+        dc:description='Original Definition: Did the author collect samples from organisms during the survey?'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="sampleTypes"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/sampleTypes"
+        dc:description='Original Definition: Sample types include blood, tissue, fecal, etc.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="hasTraits"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/hasTraits"
+        dc:description='Original Definition: This explicitly refers to physical measurements e.g. length, mass, etc. (yes/no).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="compilationEffortLevel"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/compilationEffortLevel"
+        dc:description='Original Definition: Measured as "low, medium and high" and discussed in more detail in paper text.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isEffortReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isEffortReported"
+        dc:description='Original Definition: Measured as "no/partial/complete".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="effortCalculatedBy"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/effortCalculatedBy"
+        dc:description='Original Definition: Was the final assessment of effort reported directly by author or an assessment by data entry person?'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="effortCalculationProtocol"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/effortCalculationProtocol"
+        dc:description='Original Definition: If calculated, what data and what method were used to determine assessment of effort?'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="isTaxonCompletenessReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isTaxonCompletenessReported"
+        dc:description='Original Definition: Choices for this field:  "No, not reported", "Yes, reported as complete", "Yes, reported as incomplete".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="taxonCompletenessMethod"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/taxonCompletenessMethod"
+        dc:description='Original Definition: If author reported their assessment of incompleteness, capture author reported measurement or inferred assessment of incompleteness.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="minimumTaxonCompleteness"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/minimumTaxonCompleteness"
+        dc:description='Original Definition: Inferred lower bound completeness is captured in quartiles (0, 25, 50,  75, 100).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="maximumTaxonCompleteness"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/maximumTaxonCompleteness"
+        dc:description='Original Definition: Inferred upper bound completeness is captured in quartlies (0, 25, 50, 75, 100).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="inferredTaxonCompletenessMethod"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/inferredTaxonCompletenessMethod"
+        dc:description='Original Definition: A description of the rationale for the inferred completeness assessment often based on how well sampling was done across the geospatial scope, and the survey and compilation effort.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="identificationReferences"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/identificationReferences"
+        dc:description='Original Definition: The published reference to the taxonomic authority used in the checklist.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="taxonomicScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/taxonomicScope"
+        dc:description='Original Definition: Set of searched species during inventory.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedTaxonomicScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedTaxonomicScope"
+        dc:description='Original Definition: Set of species explicitly excluded from the inventory.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="lifeStageScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/lifeStageScope"
+        dc:description='Original Definition: Type(s) of individuals included  when sampling due to developmental stage.  Pick list: "Adult / Reproductive / Juvenile / Larval / Seedling / Vegetative / Reproductive".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedLifeStageScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedLifeStageScope"
+        dc:description='Original Definition: Type(s) of individuals excluded when sampling due to developmental stage. Pick list: "Adult / Reproductive / Juvenile / Larval / Seedling / Vegetative / Reproductive".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="degreeOfEstablishmentScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/degreeOfEstablishmentScope"
+        dc:description='Original Definition: Distributional status explicitly included in inventory. Pick list: "Native / Non-Native / Invasive / Naturalized".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedDegreeOfEstablishmentScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedDegreeOfEstablishmentScope"
+        dc:description='Original Definition: Distributional status explicitly exluded in inventory. Pick list: "Native / Non-Native / Invasive / Naturalized".'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="growthFormScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/growthFormScope"
+        dc:description='Original Definition: Growth form explicitly included in inventory. Current controlled vocab. list: tree / shrub.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedGrowthFormScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedGrowthFormScope"
+        dc:description='Original Definition: Growth form explicitly excluded in inventory.   Current controlled vocab. list: tree / shrub.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="sizeClassScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/sizeClassScope"
+        dc:description='Original Definition: Size classes included in the study for the prospective taxa (e.g., only small mammals).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="excludedSizeClassScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedSizeClassScope"
+        dc:description='Original Definition: Size classes excluded in the study for the prospective taxa (e.g., only small mammals).'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+    <property
+        name="absentTaxa"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/absentTaxa"
+        dc:description='Original Definition: List of taxa reported absence(s) at whatever taxonomic level reported.'
+        comments=''
+        examples='``'
+        type="string"
+        required="false"/>
+</extension>
