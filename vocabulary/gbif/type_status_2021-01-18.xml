@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus
+ dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status"
+	dc:description="A vocabulary to be used for a nomenclatural type status of a specimen or name. See also the related type reason vocabulary. This release adds isoparatype."
+	dc:title="Nomenclatural Type Status Vocabulary"
+  dc:issued="2021-01-18"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+  <concept dc:identifier="allolectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/allolectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/allolectotype"
+  dc:description="A paralectotype specimen that is the opposite sex of the lectotype. The term is not regulated by the ICZN. [Zoo.]">
+  <preferred>
+   <term dc:title="allolectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="alloneotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/alloneotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/alloneotype"
+  dc:description="A paraneotype specimen that is the opposite sex of the neotype. The term is not regulated by the ICZN. [Zoo.]">
+  <preferred>
+   <term dc:title="alloneotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="allotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/allotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/allotype"
+  dc:description="A paratype specimen designated from the type series by the original author that is the opposite sex of the holotype. The term is not regulated by the ICZN. [Zoo.]">
+  <preferred>
+   <term dc:title="allotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="cotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/cotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/cotype"
+  dc:description="A deprecated term no longer recognized in the ICZN; formerly used for either syntype or paratype [see ICZN Recommendation 73E]. [Zoo.]">
+  <preferred>
+   <term dc:title="cotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="epitype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/epitype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/epitype"
+  dc:description="An epitype is a specimen or illustration selected to serve as an interpretative type when any kind of holotype, lectotype, etc. is demonstrably ambiguous and cannot be critically identified for purposes of the precise application of the name of a taxon (see Art. ICBN 9.7, 9.18). An epitype supplements, rather than replaces existing types. [Bot./Bio.]">
+  <preferred>
+   <term dc:title="epitype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exepitype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exepitype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exepitype"
+  dc:description="A strain or cultivation derived from epitype material. Ex-types are not regulated by the botanical or zoological code. [Bot.]">
+  <preferred>
+   <term dc:title="exepitype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exholotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exholotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exholotype"
+  dc:description="A strain or cultivation derived from holotype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exholotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exisotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exisotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exisotype"
+  dc:description="A strain or cultivation derived from isotype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exisotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exlectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exlectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exlectotype"
+  dc:description="A strain or cultivation derived from lectotype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exlectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exneotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exneotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exneotype"
+  dc:description="A strain or cultivation derived from neotype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exneotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exparatype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exparatype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exparatype"
+  dc:description="A strain or cultivation derived from paratype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exparatype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="exsyntype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/exsyntype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/exsyntype"
+  dc:description="A strain or cultivation derived from neotype material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="exsyntype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="extype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/extype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/extype"
+  dc:description="A strain or cultivation derived from some kind of type material. Ex-types are not regulated by the botanical or zoological code. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="extype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="hapantotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/hapantotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/hapantotype"
+  dc:description="One or more preparations of directly related individuals representing distinct stages in the life cycle, which together form the type in an extant species of protistan [ICZN Article 72.5.4]. A hapantotype, while a series of individuals, is a holotype that must not be restricted by lectotype selection. If an hapantotype is found to contain individuals of more than one species, however, components may be excluded until it contains individuals of only one species [ICZN Article 73.3.2]. [Zoo.]">
+  <preferred>
+   <term dc:title="hapantotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="holotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/holotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/holotype"
+  dc:description="The one specimen or other element used or designated by the original author at the time of publication of the original description as the nomenclatural type of a species or infraspecific taxon. A holotype may be 'explicit' if it is clearly stated in the originating publication or 'implicit' if it is the single specimen proved to have been in the hands of the originating author when the description was published. [Zoo./Bot./Bio.]">
+  <preferred>
+   <term dc:title="holotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="iconotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/iconotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/iconotype"
+  dc:description="A drawing or photograph (also called 'phototype') of a type specimen. Note: the term 'iconotype' is not used in the ICBN, but implicit in, e. g., ICBN Art. 7 and 38. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="iconotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="isolectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/isolectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/isolectotype"
+  dc:description="A duplicate of a lectotype, compare lectotype. [Bot.]">
+  <preferred>
+   <term dc:title="isolectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="isoneotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/isoneotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/isoneotype"
+  dc:description="A duplicate of a neotype, compare neotype. [Bot.]">
+  <preferred>
+   <term dc:title="isoneotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="isoparatype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/isoparatype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/isoparatype"
+  dc:description="A duplicate of a paratype, compare paratype. [Bot.]">
+  <preferred>
+   <term dc:title="isoparatype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="isosyntype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/isosyntype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/isosyntype"
+  dc:description="A duplicate of a syntype, compare isotype = duplicate of holotype. [Bot.]">
+  <preferred>
+   <term dc:title="isosyntype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="isotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/isotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/isotype"
+  dc:description="An isotype is any duplicate of the holotype (i. e. part of a single gathering made by a collector at one time, from which the holotype was derived); it is always a specimen (ICBN Art. 7). [Bot.]">
+  <preferred>
+   <term dc:title="isotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="lectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/lectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/lectotype"
+  dc:description="A specimen or other element designated subsequent to the publication of the original description from the original material (syntypes or paratypes) to serve as nomenclatural type. Lectotype designation can occur only where no holotype was designated at the time of publication or if it is missing (ICBN Art. 7, ICZN Art. 74). [Zoo./Bot.] -- Note: the BioCode defines lectotype as selection from holotype material in cases where the holotype material contains more than one taxon [Bio.].">
+  <preferred>
+   <term dc:title="lectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="neotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/neotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/neotype"
+  dc:description="A specimen designated as nomenclatural type subsequent to the publication of the original description in cases where the original holotype, lectotype, all paratypes and syntypes are lost or destroyed, or suppressed by the (botanical or zoological) commission on nomenclature. In zoology also called 'Standard specimen' or 'Representative specimen'. [Zoo./Bot./Bio.]">
+  <preferred>
+   <term dc:title="neotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="notatype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/notatype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/notatype"
+  dc:description="For specimens erroneously labelled as types an explicit negative statement may be desirable. [General]">
+  <preferred>
+   <term dc:title="notatype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="originalmaterial" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/originalmaterial"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/originalmaterial"
+  dc:description="'type-suspicious' material. The term is in accordance with the Botanical Code, where it is used for material that has been at the disposal of an author describing a new species, and is distinct from a type only in the fact that either the Type has not been officially assigned yet, or that the specific material has not been explicitly cited in the typification process (i.e. it was part of the swarm of specimens examined in the process, but not labelled as type itself).">
+  <preferred>
+   <term dc:title="originalmaterial" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="paralectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/paralectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/paralectotype"
+  dc:description="All of the specimens in the syntype series of a species or infraspecific taxon other than the lectotype itself. Also called 'lectoparatype'. [Zoo.]">
+  <preferred>
+   <term dc:title="paralectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="paraneotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/paraneotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/paraneotype"
+  dc:description="All of the specimens in the syntype series of a species or infraspecific taxon other than the neotype itself. Also called 'neoparatype'. [Zoo.]">
+  <preferred>
+   <term dc:title="paraneotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="paratype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/paratype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/paratype"
+  dc:description="All of the specimens in the type series of a species or infraspecific taxon other than the holotype (and, in botany, isotypes). Paratypes must have been at the disposition of the author at the time when the original description was created and must have been designated and indicated in the publication. Judgment must be exercised on paratype status, for only rarely are specimens explicitly cited as paratypes, but usually as 'specimens examined,' 'other material seen', etc. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="paratype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastoholotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastoholotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastoholotype"
+  dc:description="A copy or cast of holotype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastoholotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastoisotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastoisotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastoisotype"
+  dc:description="A copy or cast of isotype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastoisotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastolectotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastolectotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastolectotype"
+  dc:description="A copy or cast of lectotype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastolectotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastoneotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastoneotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastoneotype"
+  dc:description="A copy or cast of neotype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastoneotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastoparatype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastoparatype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastoparatype"
+  dc:description="A copy or cast of paratype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastoparatype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastosyntype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastosyntype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastosyntype"
+  dc:description="A copy or cast of syntype material (compare Plastotype).">
+  <preferred>
+   <term dc:title="plastosyntype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="plastotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/plastotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/plastotype"
+  dc:description="A copy or cast of type material, esp. relevant for fossil types. Not regulated by the botanical or zoological code (?). [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="plastotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="secondarytype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/secondarytype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/secondarytype"
+  dc:description="A referred, described, measured or figured specimen in the original publication (including a neo/lectotypification publication) that is not a primary type. [Zoo.]">
+  <preferred>
+   <term dc:title="secondarytype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="supplementarytype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/supplementarytype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/supplementarytype"
+  dc:description="A referred, described, measured or figured specimen in a revision of a previously described taxon. [Zoo.]">
+  <preferred>
+   <term dc:title="supplementarytype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="syntype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/syntype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/syntype"
+  dc:description="One of the series of specimens used to describe a species or infraspecific taxon when neither a single holotype nor a lectotype has been designated. The syntypes collectively constitute the name-bearing type. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="syntype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="topotype" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/topotype"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/topotype"
+  dc:description="One or more specimens collected at the same location as the type series (type locality), regardless of whether they are part of the type series. Topotypes are not regulated by the botanical or zoological code. Also called 'locotype'. [Zoo./Bot.]">
+  <preferred>
+   <term dc:title="topotype" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+<!-- GENERAL TYPE DESIGNATION -->
+ <concept dc:identifier="type" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/type"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/type"
+  dc:description="a) A specimen designated or indicated any kind of type of a species or infraspecific taxon. If possible more specific type terms (holotype, syntype, etc.) should be applied. b) the type name of a name of higher rank for taxa above the species rank. [General]">
+  <preferred>
+   <term dc:title="type" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="typeSpecies" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/typeSpecies"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/typeSpecies"
+  dc:description="For designating a type record as a reference to type information tied to a genus">
+  <preferred>
+   <term dc:title="typeSpecies" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="typeGenus" dc:URI="http://rs.gbif.org/vocabulary/gbif/type_status/typeGenus"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/type_status/typeGenus"
+  dc:description="For designating a type record as a reference to type information tied to a Family">
+  <preferred>
+   <term dc:title="typeGenus" xml:lang="en"/>
+  </preferred>
+  <alternative>
+
+  </alternative>
+ </concept>
+
+</thesaurus>
