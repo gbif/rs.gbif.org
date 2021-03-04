@@ -1,63 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/'
-    dc:description="The observed biotic relationship Vocabulary is a recommended set of values to use for the biotic_relationship term in the MIxS Extension."
-    dc:title="Genomic Standards Consortium observed biotic relationship Vocabulary"
-    dc:issued="2020-04-24"
-    dc:relation=""
-    xmlns="http://rs.gbif.org/thesaurus/"
-    xmlns:dc="http://purl.org/dc/terms/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+    <thesaurus 
+	dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/' 
+	dc:description="The biotic_relationship Vocabulary is a recommended set of values to use for the biotic_relationship (MIXS:0000028) term in the DNA Derived Data extension." 
+	dc:title="Genomic Standards Consortium biotic_relationship Vocabulary (MIXS:0000028)"
+  dc:issued="2021-03-04"
+  dc:relation=""
+	xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-    <concept dc:identifier="free_living"
-        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/free_living'
-        dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-                dc:title="free living"
-                xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-    <concept dc:identifier="parasitism"
-        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/parasitism'
-        dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-                dc:title="parasitism"
-                xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-    <concept dc:identifier="commensalism"
-        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/commensalism'
-        dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-                dc:title="commensalism"
-                xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-    <concept dc:identifier="symbiotic"
-        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/symbiotic'
-        dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-                dc:title="symbiotic"
-                xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-    <concept dc:identifier="mutualism"
-        dc:URI='http://gensc.org/ns/mixs/terms/vocabulary/biotic_relationship/mutualism'
-        dc:description="">
-        <preferred>
-            <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-                dc:title="mutualism"
-                xml:lang="en"/>
-        </preferred>
-        <alternative></alternative>
-    </concept>
-</thesaurus>
+    <concept dc:identifier="free_living" 
+  dc:URI='https://what.goes.here/MIXS:0000028/free_living'
+  dc:description="">
+<preferred>
+<term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="free living" xml:lang="en"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+<concept dc:identifier="parasitism" 
+  dc:URI='https://what.goes.here/MIXS:0000028/parasitism'
+  dc:description="">
+<preferred>
+<term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="parasitism" xml:lang="en"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+<concept dc:identifier="commensalism" 
+  dc:URI='https://what.goes.here/MIXS:0000028/commensalism'
+  dc:description="">
+<preferred>
+<term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="commensalism" xml:lang="en"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+<concept dc:identifier="symbiotic" 
+  dc:URI='https://what.goes.here/MIXS:0000028/symbiotic'
+  dc:description="">
+<preferred>
+<term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="symbiotic" xml:lang="en"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+<concept dc:identifier="mutualism" 
+  dc:URI='https://what.goes.here/MIXS:0000028/mutualism'
+  dc:description="">
+<preferred>
+<term dc:source="Genomic Standards Consortium MIxS Data Standard" dc:title="mutualism" xml:lang="en"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+    </thesaurus>
     
