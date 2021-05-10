@@ -11,7 +11,7 @@
     namespace="http://rs.tdwg.org/chrono/terms/"
     rowType="http://rs.tdwg.org/chrono/terms/ChronometricAge"
     dc:issued="2020-10-06"
-    dc:description="Extension to Occurrence Core to capture chronometric age information."
+    dc:description="This extension has been DEPRECATED! Please use the newer ChronometricAge extension instead: https://rs.gbif.org/extension/dwc/ChronometricAge_2021-03-27.xml"
     dc:relation="https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv"
     dc:subject="dwc:Occurrence">
     <property

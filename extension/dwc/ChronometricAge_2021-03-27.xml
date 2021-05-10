@@ -10,8 +10,8 @@
     name="ChronometricAge"
     namespace="http://rs.tdwg.org/chrono/terms/"
     rowType="http://rs.tdwg.org/chrono/terms/ChronometricAge"
-    dc:issued="2020-10-06"
-    dc:description="Extension to Occurrence Core to capture chronometric age information."
+    dc:issued="2021-03-27"
+    dc:description="Extension to Occurrence Core to capture chronometric age information to be used only in cases where the collecting event is not contemporaneous with the time when the dwc:Organism was alive in its context. Collection event information can be reported in dwc:eventDate. See also the normative term list document at https://tdwg.github.io/chrono/list/ and the human-friendly Quick Reference Guide at https://tdwg.github.io/chrono/terms/."
     dc:relation="https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv"
     dc:subject="dwc:Occurrence">
     <property
@@ -22,7 +22,7 @@
         comments='May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.'
         examples='`https://www.canadianarchaeology.ca/samples/70673`'
         type="string"
-        required="true"/>
+        required="false"/>
     <property
         name='verbatimChronometricAge'
         namespace='http://rs.tdwg.org/chrono/terms/'
@@ -35,7 +35,7 @@
     <property
         name='chronometricAgeProtocol'
         namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol'
         dc:description='A description of or reference to the methods used to determine the chronometric age.'
         examples='`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`'
         type="string"
@@ -52,51 +52,53 @@
         name='chronometricAgeConversionProtocol'
         namespace='http://rs.tdwg.org/chrono/terms/'
         qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol'
-        dc:description='The method used to convert the uncalibratedChronometricAge into a chronometric age in years, as captured in maximumChronometricAge, maximumChronometricAgeReferenceSystem, minimumChronometricAge, and minimumChronometricAgeReferenceSystem.'
+        dc:description='The method used for converting the uncalibratedChronometricAge into a chronometric age in years, as captured in the earliestChronometricAge, earliestChronometricAgeReferenceSystem, latestChronometricAge, and latestChronometricAgeReferenceSystem fields.'
         comments='For example, calibration of conventional radiocarbon age or the currently accepted age range of a cultural or geological period.'
         examples='`INTCAL13`, `sequential 6 phase Bayesian model and IntCal13 calibration`'
         type="string"
         required='false'/>
     <property
-        name='maximumChronometricAge'
+        name='earliestChronometricAge'
         namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/maximumChronometricAge'
-        dc:description='Upper limit for the age of a specimen as determined by a dating method.'
-        comments='The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.'
-        examples='27'
-        type="string"
-        required='false'/>
-    <property
-        name='maximumChronometricAgeReferenceSystem'
-        namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem'
-        dc:description='The reference system associated with the maximumChronometricAge.'
-        examples='`kya`,`mya`,`BP`,`AD`,`BCE`'
-        type="string"
-        required='false'/>
-    <property
-        name='minimumChronometricAge'
-        namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/minimumChronometricAge'
-        dc:description='Lower limit for the age of a specimen as determined by a dating method. The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.'
-        comments='The expected unit for this field is years. This field, if populated, must have an associated minimumChronometricAgeReferenceSystem.'
+        qualName='http://rs.tdwg.org/chrono/terms/earliestChronometricAge'
+        dc:description='The maximum/earliest/oldest possible age of a specimen as determined by a dating method.'
+        comments='The expected unit for this field is years. This field, if populated, must have an associated earliestChronometricAgeReferenceSystem.'
         examples='100'
         type="string"
         required='false'/>
     <property
-        name='minimumChronometricAgeReferenceSystem'
+        name='earliestChronometricAgeReferenceSystem'
         namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem'
-        dc:description='The reference system associated with the minimumChronometricAge.'
-        examples='`kya`,`mya`,`BP`,`AD`,`BCE`'
+        qualName='http://rs.tdwg.org/chrono/terms/earlliestChronometricAgeReferenceSystem'
+        dc:description='The reference system associated with the earliestChronometricAge.'
+        comments='Recommended best practice is to use a controlled vocabulary.'
+        examples='`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`'
+        type="string"
+        required='false'/>
+    <property
+        name='latestChronometricAge'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/latestChronometricAge'
+        dc:description='The minimum/latest/youngest possible age of a specimen as determined by a dating method.'
+        comments='The expected unit for this field is years. This field, if populated, must have an associated latestChronometricAgeReferenceSystem.'
+        examples='27'
+        type="string"
+        required='false'/>
+    <property
+        name='latestChronometricAgeReferenceSystem'
+        namespace='http://rs.tdwg.org/chrono/terms/'
+        qualName='http://rs.tdwg.org/chrono/terms/lattestChronometricAgeReferenceSystem'
+        dc:description='The reference system associated with the latestChronometricAge.'
+        comments='Recommended best practice is to use a controlled vocabulary.'
+        examples='`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`'
         type="string"
         required='false'/>
     <property
         name='chronometricAgeUncertaintyInYears'
         namespace='http://rs.tdwg.org/chrono/terms/'
         qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears'
-        dc:description='The temporal uncertainty of the maximumChronometricAge and minimumChronometicAge in years.'
-        comments='This is the +/- number for the age in years. The expected unit for this field is years.'
+        dc:description='The temporal uncertainty of the earliestChronometricAge and latestChronometicAge in years.'
+        comments='The expected unit for this field is years. The value in this field is number of years before and after the values given in the earliest and latest chronometric age fields within which the actual values are estimated to be.'
         examples='100'
         type="string"
         required='false'/>
@@ -120,8 +122,17 @@
         name="materialDatedID"
         namespace="http://rs.tdwg.org/chrono/terms/"
         qualName="http://rs.tdwg.org/chrono/terms/materialDatedID"
-        dc:description='An identifier for the material on which the chronometricAgeProtocol was performed, if applicable.'
-        examples='`dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839`, `https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`'
+        dc:description='An identifier for the MaterialSample on which the chronometricAgeProtocol was performed, if applicable.'
+        examples='`dwc:materialSampleID: https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`'
+        type="string"
+        required="false"/>
+    <property
+        name="materialDatedRelationship"
+        namespace="http://rs.tdwg.org/chrono/terms/"
+        qualName="http://rs.tdwg.org/chrono/terms/materialDatedRelationship"
+        dc:description='The relationship of the materialDated to the subject of the ChronometricAge record, from which the ChronometricAge of the subject is inferred.'
+        comments='Recommended best practice is to use a controlled vocabulary.'
+        examples='`sameAs` (cases where the subject material was completely destructively subsampled to get the ChronometricAge), `subsampleOf` (cases where part of the original specimen was extracted as the material used to determine the ChronometricAge), `inContextWith` (cases where the ChronometricAge is inferred from materialDated, such as sediments or cultural objects, in related temporal context), `stratigraphicallyCorrelatedWith` (cases where the ChronometricAge is inferred from materialDated in a stratigraphically correlated context)'
         type="string"
         required="false"/>
     <property
