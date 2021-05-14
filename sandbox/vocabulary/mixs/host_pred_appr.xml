@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/gbwg/dwc-mixs/dwc/style/human.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus dc:URI='https://w3id.org/gensc/terms/vocabulary/host_pred_appr/'
   dc:description="The host_pred_appr Vocabulary is a recommended set of values to use for the host_pred_appr (MIXS:0000088) term in the MIxS Darwin Core Extension."
   dc:title="Genomic Standards Consortium host_pred_appr Vocabulary (MIXS:0000088)"
