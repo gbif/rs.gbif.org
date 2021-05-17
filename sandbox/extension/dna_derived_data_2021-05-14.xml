@@ -8,7 +8,7 @@
     name="dnaDerivedData"
     namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/DNADerivedData"
-    dc:issued="2021-03-04"
+    dc:issued="2021-05-14"
     dc:subject=""
     dc:relation="https://w3id.org/gensc/"
     dc:description="Extension for DNA derived data. Based on the MIxS extension for Darwin Core, with additions from GGBN and MIQE standards and recommendations.">
