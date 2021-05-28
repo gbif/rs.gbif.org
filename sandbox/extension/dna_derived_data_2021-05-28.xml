@@ -8,7 +8,7 @@
     name="dnaDerivedData"
     namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/DNADerivedData"
-    dc:issued="2021-05-14"
+    dc:issued="2021-05-28"
     dc:subject=""
     dc:relation="https://w3id.org/gensc/"
     dc:description="An extension to Occurrence and Event cores to capture information relating to DNA. This extension is based on the MIxS extension for Darwin Core (underway), with additions from GGBN and MIQE standards and recommendations. This definition supports the outcomes documented in Publishing DNA-derived data through biodiversity data platforms (https://doi.org/10.35035/doc-vf1a-nr22).  This extension is subject to change, and recommended for early adopters who understand that data remapping may be required as things evolve.">
