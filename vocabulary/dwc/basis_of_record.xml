@@ -97,7 +97,7 @@
  <concept dc:identifier="Occurrence" 
 	 dc:URI="http://rs.tdwg.org/dwc/dwctype/Occurrence"
      dc:relation="http://rs.tdwg.org/dwc/terms/type-vocabulary/#Occurrence"
-     dc:description="A resource describing an instance of the Occurrence class. NOTE: this value is ambiguous and hence should only be used when the when the resource type is unknown.">
+     dc:description="A resource describing an instance of the Occurrence class. NOTE: this value is ambiguous and hence should only be used when the resource type is unknown.">
   <preferred>
    <term dc:source="Darwin Core" dc:title="Occurrence" xml:lang="en"/>
    <term dc:source="Darwin Core" dc:title="Ocorrência" xml:lang="pt"/>
