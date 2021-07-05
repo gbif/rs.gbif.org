@@ -1,75 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/'
-  dc:description="The decontam_software Vocabulary is a recommended set of values to use for the decontam_software (MIXS:0000074) term."
-  dc:title="Genomic Standards Consortium decontam_software Vocabulary (MIXS:0000074)"
-  dc:issued="2021-05-14"
+<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/bin_software/'
+  dc:description="The bin_software Vocabulary is a recommended set of values to use for the bin_software (MIXS:0000078) term."
+  dc:title="Genomic Standards Consortium bin_software Vocabulary (MIXS:0000078)"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-  <concept dc:identifier="checkm/refinem"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/checkm/refinem'
+  <concept dc:identifier="metabat"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/metabat'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="checkm/refinem"
+        dc:title="metabat"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="anvi´o"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/anvi_o'
+  <concept dc:identifier="maxbin"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/maxbin'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="anvi'o"
+        dc:title="maxbin"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="prodege"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/prodege'
+  <concept dc:identifier="concoct"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/concoct'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="prodege"
+        dc:title="concoct"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="bbtools:decontaminate.sh"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/bbtools:decontaminate.sh'
+  <concept dc:identifier="groupm"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/groupm'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="bbtools:decontaminate.sh"
+        dc:title="groupm"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="acdc"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/acdc'
+  <concept dc:identifier="esom"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/esom'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="acdc"
+        dc:title="esom"
+        xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+  <concept dc:identifier="metawatt"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/metawatt'
+    dc:description="">
+    <preferred>
+      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+        dc:title="metawatt"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
   <concept dc:identifier="combination"
-    dc:URI='https://rs.gbif.org/vocab/dna/decontam_software/combination'
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/combination'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
         dc:title="combination"
+        xml:lang="en"/>
+    </preferred>
+    <alternative>
+    </alternative>
+  </concept>
+  <concept dc:identifier="other"
+    dc:URI='https://rs.gbif.org/vocab/dna/bin_software/other'
+    dc:description="">
+    <preferred>
+      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
+        dc:title="other"
         xml:lang="en"/>
     </preferred>
     <alternative>

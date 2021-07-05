@@ -1,141 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/'
-  dc:description="The virus_enrich_appr Vocabulary is a recommended set of values to use for the virus_enrich_appr (MIXS:0000036) term."
-  dc:title="Genomic Standards Consortium virus_enrich_appr Vocabulary (MIXS:0000036)"
-  dc:issued="2021-05-14"
+<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/'
+  dc:description="The health_disease_stat Vocabulary is a recommended set of values to use for the health_disease_stat (MIXS:0000031) term."
+  dc:title="Genomic Standards Consortium health_disease_stat Vocabulary (MIXS:0000031)"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-  <concept dc:identifier="filtration"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/filtration'
+  <concept dc:identifier="healthy"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/healthy'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="filtration"
+        dc:title="healthy"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="ultrafiltration"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/ultrafiltration'
+  <concept dc:identifier="diseased"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/diseased'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="ultrafiltration"
+        dc:title="diseased"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="centrifugation"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/centrifugation'
+  <concept dc:identifier="dead"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/dead'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="centrifugation"
+        dc:title="dead"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="ultracentrifugation"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/ultracentrifugation'
+  <concept dc:identifier="disease-free"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/disease-free'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="ultracentrifugation"
+        dc:title="disease-free"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="peg_precipitation"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/peg_precipitation'
+  <concept dc:identifier="undetermined"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/undetermined'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="PEG Precipitation"
+        dc:title="undetermined"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="fe_cl_precipitation"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/fe_cl_precipitation'
+  <concept dc:identifier="recovering"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/recovering'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="FeCl Precipitation"
+        dc:title="recovering"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="cs_cl_density_gradient"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/cs_cl_density_gradient'
+  <concept dc:identifier="resolving"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/resolving'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="CsCl density gradient"
+        dc:title="resolving"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="DNAse"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/DNAse'
+  <concept dc:identifier="pre_existing_condition"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/pre_existing_condition'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="DNAse"
+        dc:title="pre-existing condition"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="RNAse"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/RNAse'
+  <concept dc:identifier="pathological"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/pathological'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="RNAse"
+        dc:title="pathological"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="targeted_sequence_capture"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/targeted_sequence_capture'
+  <concept dc:identifier="life_threatening"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/life_threatening'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="targeted sequence capture"
+        dc:title="life threatening"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="other"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/other'
+  <concept dc:identifier="congenital"
+    dc:URI='https://rs.gbif.org/vocab/dna/health_disease_stat/congenital'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="other"
-        xml:lang="en"/>
-    </preferred>
-    <alternative>
-    </alternative>
-  </concept>
-  <concept dc:identifier="none"
-    dc:URI='https://rs.gbif.org/vocab/dna/virus_enrich_appr/none'
-    dc:description="">
-    <preferred>
-      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="none"
+        dc:title="congenital"
         xml:lang="en"/>
     </preferred>
     <alternative>

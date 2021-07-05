@@ -3,7 +3,7 @@
 <thesaurus dc:URI='https://rs.gbif.org/vocab/dna/sort_tech/'
   dc:description="The sort_tech Vocabulary is a recommended set of values to use for the sort_tech (MIXS:0000075) term."
   dc:title="Genomic Standards Consortium sort_tech Vocabulary (MIXS:0000075)"
-  dc:issued="2021-05-14"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"

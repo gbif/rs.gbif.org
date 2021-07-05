@@ -3,7 +3,7 @@
 <thesaurus dc:URI='https://rs.gbif.org/vocab/dna/pred_genome_type/'
   dc:description="The pred_genome_type Vocabulary is a recommended set of values to use for the pred_genome_type (MIXS:0000082) term."
   dc:title="Genomic Standards Consortium pred_genome_type Vocabulary (MIXS:0000082)"
-  dc:issued="2021-05-14"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"

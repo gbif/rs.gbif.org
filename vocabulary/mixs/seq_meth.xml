@@ -3,7 +3,7 @@
 <thesaurus dc:URI='https://rs.gbif.org/vocab/dna/seq_meth/'
   dc:description="The seq_meth Vocabulary is a recommended set of values to use for the seq_meth (MIXS:0000050) term."
   dc:title="Genomic Standards Consortium seq_meth Vocabulary (MIXS:0000050)"
-  dc:issued="2021-05-14"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"

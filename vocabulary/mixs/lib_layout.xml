@@ -1,64 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/bin_param/'
-  dc:description="The bin_param Vocabulary is a recommended set of values to use for the bin_param (MIXS:0000077) term."
-  dc:title="Genomic Standards Consortium bin_param Vocabulary (MIXS:0000077)"
-  dc:issued="2021-05-14"
+<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/lib_layout/'
+  dc:description="The lib_layout Vocabulary is a recommended set of values to use for the lib_layout (MIXS:0000041) term."
+  dc:title="Genomic Standards Consortium lib_layout Vocabulary (MIXS:0000041)"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-  <concept dc:identifier="homology_search"
-    dc:URI='https://rs.gbif.org/vocab/dna/bin_param/homology_search'
+  <concept dc:identifier="paired"
+    dc:URI='https://rs.gbif.org/vocab/dna/lib_layout/paired'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="homology search"
+        dc:title="paired"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="kmer"
-    dc:URI='https://rs.gbif.org/vocab/dna/bin_param/kmer'
+  <concept dc:identifier="single"
+    dc:URI='https://rs.gbif.org/vocab/dna/lib_layout/single'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="kmer"
+        dc:title="single"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="coverage"
-    dc:URI='https://rs.gbif.org/vocab/dna/bin_param/coverage'
+  <concept dc:identifier="vector"
+    dc:URI='https://rs.gbif.org/vocab/dna/lib_layout/vector'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="coverage"
+        dc:title="vector"
         xml:lang="en"/>
     </preferred>
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="codon_usage"
-    dc:URI='https://rs.gbif.org/vocab/dna/bin_param/codon_usage'
+  <concept dc:identifier="other"
+    dc:URI='https://rs.gbif.org/vocab/dna/lib_layout/other'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="codon usage"
-        xml:lang="en"/>
-    </preferred>
-    <alternative>
-    </alternative>
-  </concept>
-  <concept dc:identifier="combination"
-    dc:URI='https://rs.gbif.org/vocab/dna/bin_param/combination'
-    dc:description="">
-    <preferred>
-      <term dc:source="Genomic Standards Consortium MIxS Data Standard"
-        dc:title="combination"
+        dc:title="other"
         xml:lang="en"/>
     </preferred>
     <alternative>

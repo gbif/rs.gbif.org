@@ -3,7 +3,7 @@
 <thesaurus dc:URI='https://rs.gbif.org/vocab/dna/contam_screen_input/'
   dc:description="The contam_screen_input Vocabulary is a recommended set of values to use for the contam_screen_input (MIXS:0000005) term."
   dc:title="Genomic Standards Consortium contam_screen_input Vocabulary (MIXS:0000005)"
-  dc:issued="2021-05-14"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"

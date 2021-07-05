@@ -3,7 +3,7 @@
 <thesaurus dc:URI='https://rs.gbif.org/vocab/dna/trophic_level/'
   dc:description="The trophic_level Vocabulary is a recommended set of values to use for the trophic_level (MIXS:0000032) term."
   dc:title="Genomic Standards Consortium trophic_level Vocabulary (MIXS:0000032)"
-  dc:issued="2021-05-14"
+  dc:issued="2021-07-05"
   dc:relation=""
   xmlns="http://rs.gbif.org/thesaurus/"
   xmlns:dc="http://purl.org/dc/terms/"
