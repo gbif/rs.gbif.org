@@ -488,7 +488,7 @@
         examples='vConTACT vContact2 (references from NCBI RefSeq v83, genus rank classification, default parameters)'
         required='false'/>
     <property group='sequencing'
-        name='16s_recover'
+        name='_16s_recover'
         type='boolean'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000065'
@@ -497,7 +497,7 @@
         examples='yes'
         required='false'/>
     <property group='sequencing'
-        name='16s_recover_software'
+        name='_16s_recover_software'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000066'
         dc:relation=''
