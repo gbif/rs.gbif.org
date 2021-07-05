@@ -2,7 +2,7 @@
     <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
     <thesaurus 
 	dc:URI='https://rs.gbif.org/vocab/dna/biotic_relationship/' 
-	dc:description="The biotic_relationship Vocabulary is a recommended set of values to use for the biotic_relationship (MIXS:0000028) term in the DNA Derived Data extension." 
+	dc:description="The biotic_relationship Vocabulary is a recommended set of values to use for the biotic_relationship (MIXS:0000028) term." 
 	dc:title="Genomic Standards Consortium biotic_relationship Vocabulary (MIXS:0000028)"
   dc:issued="2021-05-14"
   dc:relation=""
