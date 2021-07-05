@@ -1,11 +1,11 @@
 [
   "https://raw.githubusercontent.com/Sp2000/colplus/master/dwca/name_relation.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/distribution.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/endemicity.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/legislation.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/managementAndConservation.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/pliniancore.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/synonyms.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/threatStatus.xml",
-  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/uses.xml"
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC1_generic.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC2_synonyms.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC3_distribution.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC4_endemicity.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC5_threadStaus.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC6_legislation.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC7_managementAndConservation.xml",
+  "https://raw.githubusercontent.com/tdwg/PlinianCore/master/extension/PliC8_uses.xml"
 ]
