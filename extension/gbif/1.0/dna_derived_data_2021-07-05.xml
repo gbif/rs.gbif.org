@@ -8,7 +8,7 @@
     name="dnaDerivedData"
     namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/DNADerivedData"
-    dc:issued="2021-05-28"
+    dc:issued="2021-07-05"
     dc:subject=""
     dc:relation="https://w3id.org/gensc/"
     dc:description="An extension to Occurrence and Event cores to capture information relating to DNA. This extension is based on the MIxS extension for Darwin Core (underway), with additions from GGBN and MIQE standards and recommendations. This definition supports the outcomes documented in Publishing DNA-derived data through biodiversity data platforms (https://doi.org/10.35035/doc-vf1a-nr22).  This extension is subject to change, and recommended for early adopters who understand that data remapping may be required as things evolve.">
@@ -129,7 +129,7 @@
         required='false'/>
     <property group='nucleic acid sequence source'
         name='biotic_relationship'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/biotic_relationship.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/biotic_relationship.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000028'
         dc:relation=''
@@ -163,7 +163,7 @@
         required='false'/>
     <property group='nucleic acid sequence source'
         name='trophic_level'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/trophic_level.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/trophic_level.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000032'
         dc:relation=''
@@ -188,7 +188,7 @@
         required='false'/>
     <property group='nucleic acid sequence source'
         name='rel_to_oxygen'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/rel_to_oxygen.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/rel_to_oxygen.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000015'
         dc:relation=''
@@ -254,7 +254,7 @@
         required='false'/>
     <property group='nucleic acid sequence source'
         name='source_uvig'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/source_uvig.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/source_uvig.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000035'
         dc:relation=''
@@ -263,7 +263,7 @@
         required='false'/>
     <property group='nucleic acid sequence source'
         name='virus_enrich_appr'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/virus_enrich_appr.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/virus_enrich_appr.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000036'
         dc:relation=''
@@ -308,7 +308,7 @@
         required='false'/>
     <property group='sequencing'
         name='lib_layout'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/lib_layout.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/lib_layout.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000041'
         dc:relation=''
@@ -381,7 +381,7 @@
         required='false'/>
     <property group='sequencing'
         name='seq_meth'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/seq_meth.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/seq_meth.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000050'
         dc:relation=''
@@ -406,7 +406,7 @@
         required='false'/>
     <property group='sequencing'
         name='tax_ident'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/tax_ident.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/tax_ident.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000053'
         dc:relation=''
@@ -415,7 +415,7 @@
         required='false'/>
     <property group='sequencing'
         name='assembly_qual'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/assembly_qual.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/assembly_qual.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000056'
         dc:relation=''
@@ -539,7 +539,7 @@
         required='false'/>
     <property group='sequencing'
         name='compl_appr'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/compl_appr.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/compl_appr.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000071'
         dc:relation=''
@@ -556,7 +556,7 @@
         required='false'/>
     <property group='sequencing'
         name='contam_screen_input'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/contam_screen_input.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/contam_screen_input.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000005'
         dc:relation=''
@@ -573,7 +573,7 @@
         required='false'/>
     <property group='sequencing'
         name='decontam_software'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/decontam_software.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/decontam_software.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000074'
         dc:relation=''
@@ -582,7 +582,7 @@
         required='false'/>
     <property group='sequencing'
         name='sort_tech'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/sort_tech.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/sort_tech.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000075'
         dc:relation=''
@@ -591,7 +591,7 @@
         required='false'/>
     <property group='sequencing'
         name='single_cell_lysis_appr'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/single_cell_lysis_appr.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/single_cell_lysis_appr.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000076'
         dc:relation=''
@@ -608,7 +608,7 @@
         required='false'/>
     <property group='sequencing'
         name='wga_amp_appr'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/wga_amp_appr.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/wga_amp_appr.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000055'
         dc:relation=''
@@ -625,7 +625,7 @@
         required='false'/>
     <property group='sequencing'
         name='bin_param'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/bin_param.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/bin_param.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000077'
         dc:relation=''
@@ -634,7 +634,7 @@
         required='false'/>
     <property group='sequencing'
         name='bin_software'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/bin_software.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/bin_software.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000078'
         dc:relation=''
@@ -652,7 +652,7 @@
         required='false'/>
     <property group='sequencing'
         name='mag_cov_software'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/mag_cov_software.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/mag_cov_software.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000080'
         dc:relation=''
@@ -669,7 +669,7 @@
         required='false'/>
     <property group='sequencing'
         name='pred_genome_type'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/pred_genome_type.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/pred_genome_type.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000082'
         dc:relation=''
@@ -678,7 +678,7 @@
         required='false'/>
     <property group='sequencing'
         name='pred_genome_struc'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/pred_genome_struc.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/pred_genome_struc.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000083'
         dc:relation=''
@@ -687,7 +687,7 @@
         required='false'/>
     <property group='sequencing'
         name='detec_type'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/detec_type.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/detec_type.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000084'
         dc:relation=''
@@ -720,7 +720,7 @@
         required='false'/>
     <property group='sequencing'
         name='host_pred_appr'
-        thesaurus='https://rs.gbif.org/sandbox/vocabulary/mixs/host_pred_appr.xml'
+        thesaurus='https://rs.gbif.org/vocabulary/mixs/host_pred_appr.xml'
         namespace='https://w3id.org/gensc/terms/'
         qualName='https://w3id.org/gensc/terms/MIXS:0000088'
         dc:relation=''
