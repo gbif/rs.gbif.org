@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
-<thesaurus dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/'
+<thesaurus dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/'
   dc:description="The rel_to_oxygen Vocabulary is a recommended set of values to use for the rel_to_oxygen (MIXS:0000015) term."
   dc:title="Genomic Standards Consortium rel_to_oxygen Vocabulary (MIXS:0000015)"
   dc:issued="2021-07-05"
@@ -10,7 +10,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
   <concept dc:identifier="aerobe"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/aerobe'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/aerobe'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -21,7 +21,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="anaerobe"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/anaerobe'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/anaerobe'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -32,7 +32,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="facultative"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/facultative'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/facultative'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -43,7 +43,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="microaerophilic"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/microaerophilic'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/microaerophilic'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -54,7 +54,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="microanaerobe"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/microanaerobe'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/microanaerobe'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -65,7 +65,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="obligate_aerobe"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/obligate_aerobe'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/obligate_aerobe'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -76,7 +76,7 @@
     </alternative>
   </concept>
   <concept dc:identifier="obligate_anaerobe"
-    dc:URI='https://rs.gbif.org/vocab/dna/rel_to_oxygen/obligate_anaerobe'
+    dc:URI='http://rs.gbif.org/vocabulary/dna/rel_to_oxygen/obligate_anaerobe'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
