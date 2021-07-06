@@ -28,9 +28,6 @@ Instructions for how to create new versions of extensions and vocabularies can b
 ## Named Area Standards
 The folder [areas](areas) lists geographic area standards and recommends a namespace prefix for each of them to be used as part of the [dwc:locationID](http://rs.tdwg.org/dwc/terms/locationID) in particular inside the [GNA Species Distribution Extension](http://rs.gbif.org/extension/gbif/1.0/distribution.xml)
 
-## Conventions
-Coding conventions and styles for IntelliJ and Eclipse.
-
 ## Dictionaries
 Dictionaries for name parsing and finding.
 
