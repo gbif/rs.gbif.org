@@ -174,8 +174,8 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="wastewater/sludge"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/env_package/wastewater/sludge'
+  <concept dc:identifier="wastewater_sludge"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/env_package/wastewater_sludge'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"

@@ -9,8 +9,8 @@
   xmlns:dc="http://purl.org/dc/terms/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
-  <concept dc:identifier="16_s_r_rna_gene"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/tax_ident/16_s_r_rna_gene'
+  <concept dc:identifier="16S_rRNA_gene"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/tax_ident/16S_rRNA_gene'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"

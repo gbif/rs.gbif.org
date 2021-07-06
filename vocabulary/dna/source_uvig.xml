@@ -86,8 +86,8 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="viral_single_amplified_genome_v_sag"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/source_uvig/viral_single_amplified_genome_v_sag'
+  <concept dc:identifier="viral_single_amplified_genome"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/source_uvig/viral_single_amplified_genome'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"

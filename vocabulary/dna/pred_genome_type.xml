@@ -75,8 +75,8 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="ss_rna"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/pred_genome_type/ss_rna'
+  <concept dc:identifier="ssRNA_plus"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/pred_genome_type/ssRNA_plus'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -86,8 +86,8 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="ss_rna"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/pred_genome_type/ss_rna'
+  <concept dc:identifier="ssRNA_minus"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/pred_genome_type/ssRNA_minus'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
