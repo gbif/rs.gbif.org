@@ -223,7 +223,17 @@
                     <div class="technical">
                          <table>
                               <tr><th>Code</th><td><xsl:value-of select="@dc:identifier"/></td></tr>
-                              <tr><th>URI</th><td><xsl:value-of select="@dc:URI"/></td></tr>
+                              <tr>
+                                   <th>URI</th>
+                                   <td>
+                                        <a>
+                                             <xsl:attribute name="href">
+                                                  <xsl:value-of select="@dc:URI"/>
+                                             </xsl:attribute>
+                                             <xsl:value-of select="@dc:URI"/>
+                                        </a>
+                                   </td>
+                              </tr>
                               <tr><th>Issued</th><td><xsl:value-of select="@dc:issued"/></td></tr>
                               <tr>
                                    <th>Alternative Terms</th>
