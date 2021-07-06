@@ -20,8 +20,8 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="anvi´o"
-    dc:URI='http://rs.gbif.org/vocabulary/dna/decontam_software/anvi_o'
+  <concept dc:identifier="anvio"
+    dc:URI='http://rs.gbif.org/vocabulary/dna/decontam_software/anvio'
     dc:description="">
     <preferred>
       <term dc:source="Genomic Standards Consortium MIxS Data Standard"
@@ -76,4 +76,3 @@
     </alternative>
   </concept>
 </thesaurus>
-    
