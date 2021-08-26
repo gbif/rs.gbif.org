@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://rs.gbif.org/thesaurus/"
+	xmlns:dc="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://rs.gbif.org/thesaurus/"
+	elementFormDefault="qualified">
+	<xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dc.xsd"/>
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace"
+		schemaLocation="http://rs.gbif.org/schema/xml.xsd"/>
+	<xs:element name="thesaurus">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="concept" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="dc:URI" use="required"/>
+			<xs:attribute ref="dc:title" use="required"/>
+			<xs:attribute ref="dc:issued" use="required">
+				<xs:annotation>
+					<xs:documentation>The date that the vocabulary (version) was officially released.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="dc:description" use="optional"/>
+			<xs:attribute ref="dc:relation" use="optional"/>
+			<xs:attribute ref="dc:subject" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="concept">
+		<xs:complexType>
+
+			<xs:sequence>
+				<!-- Many titles per language for synonyms -->
+				<xs:element name="preferred">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="term" maxOccurs="unbounded" minOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Many titles per language for synonyms -->
+				<xs:element name="alternative" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="term" maxOccurs="unbounded" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute ref="dc:URI" use="required">
+				<xs:annotation>
+					<xs:documentation>The proper full URI. Preferably pointing to an
+						RDF document in an ontology</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="dc:description" use="optional"/>
+			<xs:attribute ref="dc:relation" use="optional"/>
+			<xs:attribute ref="dc:comments" use="optional"/>
+			<xs:attribute ref="dc:subject" use="optional"/>
+			<xs:attribute ref="dc:identifier" use="required">
+				<xs:annotation>
+					<xs:documentation>A short code locally unique within a vocabulary
+						as identified by the dc:type attribute.
+						Should be language neutral as much as possible. E.g. DE for Germany or
+						familia for the family rank</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="dc:issued" use="optional"/>
+			<xs:anyAttribute processContents="lax"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term">
+		<xs:complexType>
+			<xs:attribute ref="dc:title" use="required">
+				<xs:annotation>
+					<xs:documentation>The term itself</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="xml:lang" use="optional">
+				<xs:annotation>
+					<xs:documentation>ISO 2 letter language code only!</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="dc:source" use="optional">
+				<xs:annotation>
+					<xs:documentation>The source where the term originated from
+					</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="dc:modified" use="optional"/>
+			<xs:anyAttribute processContents="lax"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
