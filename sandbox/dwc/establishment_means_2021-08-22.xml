@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
+<thesaurus
+  dc:URI='http://rs.gbif.org/vocabulary/dwc/establishment_means/'
+  dc:relation='https://dwc.tdwg.org/terms/#dwc:establishmentMeans'
+  dc:title='Darwin Core Establishment Means Vocabulary'
+  dc:issued='2021-08-22'
+  xmlns='http://rs.gbif.org/thesaurus/'
+  xmlns:dc='http://purl.org/dc/terms/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd'>
+
+  <concept
+    dc:identifier='native'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e001'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e001'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='A taxon occurring within its natural range.'
+    dc:comments='What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a &quot;natural range&quot;.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='native (indigenous)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='nativa' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:source='Darwin Core' dc:title='native | indigenous' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='autóctona | nativa' xml:lang='es'/>
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='nativeReintroduced'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e002'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e002'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='A taxon re-established by direct introduction by humans into an area that was once part of its natural range, but from where it had become extinct.'
+    dc:comments='Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intension of re-establishing it.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='native: reintroduced' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='nativa (reintroducida) ' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:title='reintroduced' xml:lang='en'  />
+      <term dc:title='reintroducida' xml:lang='en'  />
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='introduced'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e003'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e003'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='Establishment of a taxon by human agency into an area that is not part of its natural range.'
+    dc:comments='Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that break down natural barriers to dispersal and allow organisms to spread beyond their natural range.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='introduced (alien, exotic, non-native, nonindigenous)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='introducida' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:title='alien | introduced | nonindigenous | exotic | non-native' xml:lang='en'  />
+      <term dc:title='no-nativa | exótica' xml:lang='en'  />
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='introducedAssistedColonisation'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e004'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e004'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon&apos;s natural range.'
+    dc:comments='In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='introduced: assisted colonisation' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='introducida (colonización asistida)' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:title='assisted colonisation' xml:lang='en'  />
+      <term dc:title='colonización asistida' xml:lang='en'  />
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='vagrant'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e005'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e005'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='The temporary occurrence of a taxon far outside its natural or migratory range.'
+    dc:comments='Natural events and human activity can disperse organisms unpredictably into places where they may stay or survive for a period.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='vagrant (casual)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='transitoria (casual)' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:title='casual | vagrant' xml:lang='en'  />
+      <term dc:title='transitoria | casual' xml:lang='en'  />
+    </alternative>
+  </concept>
+
+  <concept
+    dc:identifier='uncertain'
+    dc:URI='http://rs.tdwg.org/dwcem/values/e006'
+    dc:subject='http://rs.tdwg.org/dwcem/values/e006'
+    dc:relation='https://doi.org/10.3897/biss.3.38084'
+    dc:issued='2020-10-13'
+    dc:description='The origin of the occurrence of the taxon in an area is obscure.'
+    dc:comments='When there is a lack of fossil or historical evidence for the occurrence of a taxon in an area it can be impossible to know if the taxon is new to the area or native.'>
+    <preferred>
+      <term dc:source='Darwin Core' dc:title='uncertain (unknown, cryptogenic)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='incierto (desconocido)' xml:lang='es'/>
+    </preferred>
+    <alternative>
+      <term dc:title='uncertain | unknown | cryptogenic' xml:lang='en'  />
+      <term dc:title='incierto | desconocido' xml:lang='en'  />
+    </alternative>
+  </concept>
+
+</thesaurus>
