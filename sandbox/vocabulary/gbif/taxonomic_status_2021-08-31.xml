@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<thesaurus
+  dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/"
+  dc:description="Simple vocabulary to describe the taxonomic status of a name"
+  dc:title="Taxonomic Status GBIF Vocabulary"
+  dc:issued="2021-08-30"
+  xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+
+ <concept dc:identifier="accepted" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/accepted"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/accepted"
+  dc:description="The status of a taxon according to the taxonomic judgement of a cited authority">
+  <preferred>
+   <term dc:title="accepted" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="valid" xml:lang="en" />
+   <term dc:title="valid name" xml:lang="en" />
+   <term dc:title="accepted name" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="doubtful" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/doubtful"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/doubtful"
+  dc:description="Treated as accepted, but it is doubtful whether this is correct">
+  <preferred>
+   <term dc:title="doubtful" xml:lang="en" />
+  </preferred>
+ </concept>
+
+ <concept dc:identifier="synonym" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/synonym"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/synonym"
+  dc:description="if unclear whether hetero- or homotypic.  May be qualified by the nomenclatural status of the name">
+  <preferred>
+   <term dc:title="synonym" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="junior synonym" xml:lang="en" />
+   <term dc:title="later synonym" xml:lang="en" />
+   <term dc:title="unaccepted" xml:lang="en" />
+   <term dc:title="unaccepted name" xml:lang="en" />
+   <term dc:title="invalid" xml:lang="en" />
+   <term dc:title="invalid name" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="heterotypicSynonym" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/heterotypicSynonym"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/heterotypicSynonym"
+  dc:description="Subjective synonym based on different type(s)">
+  <preferred>
+   <term dc:title="heterotypicSynonym" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="subjective synonym" xml:lang="en" />
+   <term dc:title="facultative synonym" xml:lang="en" />
+   <term dc:title="taxonomic synonym" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="homotypicSynonym" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/homotypicSynonym"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/homotypicSynonym"
+  dc:description="Objective synonym based on the same type(s)">
+  <preferred>
+   <term dc:title="homotypicSynonym" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="objective synonym" xml:lang="en" />
+   <term dc:title="nomenclatural synonym" xml:lang="en" />
+   <term dc:title="absolute synonym" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="proParteSynonym" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/proParteSynonym"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/proParteSynonym"
+  dc:description="Some specimens of the original type series have been assigned to a new type">
+  <preferred>
+   <term dc:title="proParteSynonym" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="pro parte" xml:lang="en" />
+  </alternative>
+ </concept>
+
+ <concept dc:identifier="misapplied" dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/misapplied"
+  dc:relation="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/misapplied"
+  dc:description="">
+  <preferred>
+   <term dc:title="misapplied" xml:lang="en" />
+  </preferred>
+  <alternative>
+   <term dc:title="misapplied name" xml:lang="en" />
+  </alternative>
+ </concept>
+
+</thesaurus>
