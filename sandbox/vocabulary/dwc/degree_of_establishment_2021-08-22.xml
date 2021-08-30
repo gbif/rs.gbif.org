@@ -15,7 +15,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d001'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d001'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Not transported beyond limits of native range.'
     comments='Considered native and naturally occurring. See also &quot;category A&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -29,7 +28,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d002'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d002'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place).'
     comments='See also &quot;category B1&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -43,7 +41,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d003'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d003'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals in cultivation (i.e., individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best).'
     comments='Examples include gardens, parks and farms. See also &quot;category B2&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -57,7 +54,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d004'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d004'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals directly released into novel environment.'
     comments='For example, fish stocked for angling, birds for hunting. See also &quot;category B3&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -71,7 +67,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d005'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d005'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals released outside of captivity or cultivation in a location, but incapable of surviving for a significant period.'
     comments='For example, frost-tender plants sown or planted in a cold climate. See also &quot;category C0&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -85,7 +80,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d006'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d006'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals surviving outside of captivity or cultivation in a location with no reproduction.'
     comments='Trees planted in the wild for forestry or ornament may come under this category. See also &quot;category C1&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -99,7 +93,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d007'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d007'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals surviving outside of captivity or cultivation in a location. Reproduction is occurring, but population not self-sustaining.'
     comments='Offspring are produced, but these either do not survive or are not fertile enough to maintain the population. See also &quot;category C2&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -113,7 +106,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d008'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d008'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Individuals surviving outside of captivity or cultivation in a location. Reproduction occurring, and population self-sustaining.'
     comments='The population is maintained by reproduction, but is not spreading. See also &quot;category C3&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -127,7 +119,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d009'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d009'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Self-sustaining population outside of captivity or cultivation, with individuals surviving a significant distance from the original point of introduction.'
     comments='The population is maintained by reproduction and is spreading. See also &quot;category D1&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -141,7 +132,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d010'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d010'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Self-sustaining population outside of captivity or cultivation, with individuals surviving and reproducing a significant distance from the original point of introduction.'
     comments='The population is maintained by reproduction, is spreading, and its progeny are also reproducing and spreading. See also &quot;category D2&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
@@ -155,7 +145,6 @@
     dc:URI='http://rs.tdwg.org/dwcdoe/values/d011'
     dc:subject='http://rs.tdwg.org/dwcdoe/values/d011'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
-    dc:relation='https://doi.org/10.1016/j.tree.2011.03.023'
     dc:issued='2020-10-13'
     dc:description='Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a spectrum of habitats and geographic range.'
     comments='See also &quot;category E&quot; in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023'>
