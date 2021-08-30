@@ -23,3 +23,7 @@ The new extension / new version will now be available for review/test.
 When the new extension/version has been tested, you can do a new pull request to get it into production. Simply copy the extension XML from the sandbox folder into the extensions folder https://github.com/gbif/rs.gbif.org/tree/master/extension, and place it in the appropriate subfolder.
 
 Make a pull request. When this pull request has been merged, the new extension/version will be available for IPTs when they synchronize as described above.
+
+### Darwin Core
+
+The Darwin Core core "extensions" are generated programatically from the Darwin Core schemas.  See [the script](https://github.com/tdwg/dwc/blob/master/build/build_extension.py) and [the discussion](https://github.com/gbif/rs.gbif.org/issues/21#issuecomment-900490420).
