@@ -17,7 +17,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/PreservedSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#preservedspecimen'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='A specimen that has been preserved.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Preserved Specimen' xml:lang='en'/>
@@ -35,7 +35,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/FossilSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#fossilspecimen'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='A preserved specimen that is a fossil.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Fossil Specimen' xml:lang='en'/>
@@ -53,7 +53,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/LivingSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#livingspecimen'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='A specimen that is alive.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Living Specimen' xml:lang='en'/>
@@ -71,7 +71,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/HumanObservation'
     dc:relation='https://dwc.tdwg.org/terms/#humanobservation'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='An output of a human observation process.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Human Observation' xml:lang='en'/>
@@ -89,7 +89,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/MachineObservation'
     dc:relation='https://dwc.tdwg.org/terms/#machineobservation'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='An output of a machine observation process.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Machine Observation' xml:lang='en'/>
@@ -107,7 +107,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/MaterialSample'
     dc:relation='https://dwc.tdwg.org/terms/#materialsample'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Sample' xml:lang='en'/>
@@ -126,7 +126,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/Occurrence'
     dc:relation='https://dwc.tdwg.org/terms/#occurrence'
     dc:issued='2018-09-06'
-    dc:comments=''
+    comments=''
     dc:description='An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Occurrence' xml:lang='en'/>
@@ -144,7 +144,7 @@
 	dc:subject='http://rs.tdwg.org/dwc/terms/MaterialCitation'
     dc:relation='https://dwc.tdwg.org/terms/#materialcitation'
     dc:issued='2021-07-15'
-    dc:comments=''
+    comments=''
     dc:description='A reference to or citation of one, a part of, or multiple specimens in scholarly publications.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Citation' xml:lang='en'/>

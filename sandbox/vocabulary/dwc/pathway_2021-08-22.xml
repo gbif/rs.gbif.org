@@ -17,7 +17,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms occuring in an area because they were introduced for the purpose of biological control of another organism.'
-    dc:comments='Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='biological control' xml:lang='en'/>
     </preferred>
@@ -30,7 +30,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms introduced for the purpose of erosion control/dune stabilization (windbreaks, hedges, etc.).'
-    dc:comments='Probably only applicable to plants. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Probably only applicable to plants. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='erosion control' xml:lang='en'/>
     </preferred>
@@ -43,7 +43,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Fish stocked into the wild either to create a fishery or for recreational angling.'
-    dc:comments='Largely applicable to freshwater and anadromous fish. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Largely applicable to freshwater and anadromous fish. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='fishery in the wild' xml:lang='en'/>
     </preferred>
@@ -56,7 +56,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Animals stocked into the wild specifically with the intention that they would be hunted for sport.'
-    dc:comments='Largely applicable to terrestrial vertebrates. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Largely applicable to terrestrial vertebrates. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hunting' xml:lang='en'/>
     </preferred>
@@ -69,7 +69,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Landscape/flora/fauna &quot;improvement&quot; in the wild.'
-    dc:comments='&quot;Improvement&quot; in this context is intended for introductions for the purpose of aesthetic enhancement of the landscape, as opposed to practical introductions for the purpose of erosion control, agriculture, forestry etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='&quot;Improvement&quot; in this context is intended for introductions for the purpose of aesthetic enhancement of the landscape, as opposed to practical introductions for the purpose of erosion control, agriculture, forestry etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='landscape improvement' xml:lang='en'/>
     </preferred>
@@ -82,7 +82,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms introduced for conservation purposes or wildlife management.'
-    dc:comments='The organism was released with the intention of improving the conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='The organism was released with the intention of improving the conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='conservation or wildlife management' xml:lang='en'/>
     </preferred>
@@ -95,7 +95,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Release in nature for use (other than above, e.g., fur, transport, medical use).'
-    dc:comments='This term refers to organisms intentionally and directly released into the wild to serve a specific purpose. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term refers to organisms intentionally and directly released into the wild to serve a specific purpose. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='released for use' xml:lang='en'/>
     </preferred>
@@ -108,7 +108,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='A catch-all term for intentional releases not for human use that are not covered by other more specific terms.'
-    dc:comments='Compare with &quot;other escape from confinement&quot;. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Compare with &quot;other escape from confinement&quot;. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other intentional release' xml:lang='en'/>
     </preferred>
@@ -121,7 +121,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Plants grown with the intention of harvesting.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='agriculture (including biofuel feedstocks)' xml:lang='en'/>
     </preferred>
@@ -134,7 +134,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='The analog of agriculture and farmed animals, specifically related to aquatic organisms.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='aquaculture/mariculture' xml:lang='en'/>
     </preferred>
@@ -147,7 +147,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms in public collections of plants and/or animals.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='botanic garden/zoo/aquaria (excluding domestic aquaria)' xml:lang='en'/>
     </preferred>
@@ -160,7 +160,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Privately kept animals.'
-    dc:comments='Animals kept for hunting, such as falcons and ferrets SHOULD be included here, not under the hunting term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Animals kept for hunting, such as falcons and ferrets SHOULD be included here, not under the hunting term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='pet/aquarium/terrarium species (including live food for such species)' xml:lang='en'/>
     </preferred>
@@ -173,7 +173,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Animals cared for and bred with the specific intention of using their products, such as meat and milk.'
-    dc:comments='Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='farmed animals (including animals left under limited control)' xml:lang='en'/>
     </preferred>
@@ -186,7 +186,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Trees specifically introduced to provide timber and other forestry products.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='forestry (including reforestation)' xml:lang='en'/>
     </preferred>
@@ -199,7 +199,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms escaped from a fur farm, including unauthorised releases.'
-    dc:comments='Probably only applicable to vertebrates raised for their pelts and skins. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Probably only applicable to vertebrates raised for their pelts and skins. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='fur farms' xml:lang='en'/>
     </preferred>
@@ -212,7 +212,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Plants distributed by the ornamental and decorative plants industry.'
-    dc:comments='This term excludes plants and other organisms from aquaria and terrariums, which SHOULD be classified under the pet/aquarium/terrarium term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term excludes plants and other organisms from aquaria and terrariums, which SHOULD be classified under the pet/aquarium/terrarium term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='horticulture' xml:lang='en'/>
     </preferred>
@@ -225,7 +225,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Ornamental plants introduced through pathways other than the horticultural industry.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ornamental purpose other than horticulture' xml:lang='en'/>
     </preferred>
@@ -238,7 +238,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Plants and animals introduced for the purpose of breeding or scientific and medical research, including science education.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='research and ex-situ breeding (in facilities)' xml:lang='en'/>
     </preferred>
@@ -251,7 +251,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Live food imported for human consumption or live bait, such as shellfish and snails.'
-    dc:comments='Live food, such as mealworms, for the organisms kept as pets should be classified under the pet term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Live food, such as mealworms, for the organisms kept as pets should be classified under the pet term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='live food and live bait' xml:lang='en'/>
     </preferred>
@@ -264,7 +264,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms brought into an area with the intention of keeping them in captivity permanently, but that have subsequently escaped.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other escape from confinement' xml:lang='en'/>
     </preferred>
@@ -277,7 +277,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported into an area together with plant material.'
-    dc:comments='These may be other plants, diseases, fungi and animals. They may be attached to the plant or within the soil. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='These may be other plants, diseases, fungi and animals. They may be attached to the plant or within the soil. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant nursery material' xml:lang='en'/>
     </preferred>
@@ -290,7 +290,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants, pathogens and parasites transported with live, frozen or preserved bait used to catch fish or other organisms.'
-    dc:comments='Typical examples include crustaceans, cephalopods and molluscs. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Typical examples include crustaceans, cephalopods and molluscs. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminated bait' xml:lang='en'/>
     </preferred>
@@ -303,7 +303,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Foods for human consumption, whether they are transported live or dead.'
-    dc:comments='This term includes unintentional introduction of contaminants such as diseases on those foods and in the case of plants, should include seeds. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term includes unintentional introduction of contaminants such as diseases on those foods and in the case of plants, should include seeds. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='food contaminant (including of live food)' xml:lang='en'/>
     </preferred>
@@ -316,7 +316,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants carried either on or in the body of transported animals.'
-    dc:comments='This term excludes parasites and pathogens, which SHOULD be classified under their own specific term (&quot;parasites on animals&quot;). Transported animals carry other organisms in their coats, in their guts and in soil on their hooves and feet. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term excludes parasites and pathogens, which SHOULD be classified under their own specific term (&quot;parasites on animals&quot;). Transported animals carry other organisms in their coats, in their guts and in soil on their hooves and feet. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant on animals (except parasites, organisms transported by host/vector)' xml:lang='en'/>
     </preferred>
@@ -329,7 +329,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Parasitic and pathogenic organisms transported with their host or vector animal.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='parasites on animals (including organisms transported by host and vector)' xml:lang='en'/>
     </preferred>
@@ -342,7 +342,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported on plant material.'
-    dc:comments='This term excludes organisms carried on contaminant nursery material, seed contaminants, and the material from the timber trade, which SHOULD be classified under their own pathway terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term excludes organisms carried on contaminant nursery material, seed contaminants, and the material from the timber trade, which SHOULD be classified under their own pathway terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant on plants (except parasites, species transported by host/vector)' xml:lang='en'/>
     </preferred>
@@ -355,7 +355,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Parasitic and pathogenic organisms transported with their host or vector plant.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='parasites on plants (including species transported by host and vector)' xml:lang='en'/>
     </preferred>
@@ -368,7 +368,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms contaminating transported seeds.'
-    dc:comments='These may be parasites or pathogens of seeds or species that eat seeds, whether intended to be transported or not. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='These may be parasites or pathogens of seeds or species that eat seeds, whether intended to be transported or not. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='seed contaminant' xml:lang='en'/>
     </preferred>
@@ -381,7 +381,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants on unprocessed timber, processed wood and wood-derived products.'
-    dc:comments='This term excludes packing material and habitat material made from wood that SHOULD be included under their own terms (&quot;packing material&quot; and &quot;transportation of habitat material&quot;). Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term excludes packing material and habitat material made from wood that SHOULD be included under their own terms (&quot;packing material&quot; and &quot;transportation of habitat material&quot;). Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='timber trade' xml:lang='en'/>
     </preferred>
@@ -394,7 +394,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported with their habitat material to a new location.'
-    dc:comments='Examples include materials such as soil, vegetation, straw and wood chips. Unless these materials are sterilised the organisms can be transported with their habitat to a new location. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include materials such as soil, vegetation, straw and wood chips. Unless these materials are sterilised the organisms can be transported with their habitat to a new location. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transportation of habitat material (soil, vegetation, wood etc)' xml:lang='en'/>
     </preferred>
@@ -407,7 +407,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Aquatic organisms moved between sites on equipment of recreational anglers and professional fishermen.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='angling/fishing equipment' xml:lang='en'/>
     </preferred>
@@ -420,7 +420,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Stowaways transported in or on cargo containers or bulk cargo units.'
-    dc:comments='The difference between this category and others, such as &quot;hitchhikers on ship/boat&quot;, is that the organism embarked and disembarked from the container rather than the ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='The difference between this category and others, such as &quot;hitchhikers on ship/boat&quot;, is that the organism embarked and disembarked from the container rather than the ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='container/bulk' xml:lang='en'/>
     </preferred>
@@ -433,7 +433,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that enter airplanes or other aircraft, such as helicopters, and are transported by them to another location.'
-    dc:comments='This term does not apply to organisms that embarked in containers that were subsequently loaded onto an aircraft. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term does not apply to organisms that embarked in containers that were subsequently loaded onto an aircraft. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hitchhikers in or on airplane' xml:lang='en'/>
     </preferred>
@@ -446,7 +446,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that enter directly onto boats or ships and are transported by them to another location.'
-    dc:comments='This term does not apply to organisms that embarked in containers that are subsequently loaded onto the ship, nor to contaminants of products loaded onto the ship. The term is intended for organisms that directly interact with the boat or ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term does not apply to organisms that embarked in containers that are subsequently loaded onto the ship, nor to contaminants of products loaded onto the ship. The term is intended for organisms that directly interact with the boat or ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hitchhikers on ship/boat (excluding ballast water and hull fouling)' xml:lang='en'/>
     </preferred>
@@ -459,7 +459,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms carried on the surfaces of or within heavy machinery and equipment.'
-    dc:comments='This includes military equipment, farm machinery and manufacturing equipment. This term does not include products carried by vehicles. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This includes military equipment, farm machinery and manufacturing equipment. This term does not include products carried by vehicles. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='machinery/equipment' xml:lang='en'/>
     </preferred>
@@ -472,7 +472,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported on people and/or their personal luggage.'
-    dc:comments='This term excludes recreational angling equipment, which SHOULD be classified under its own term (&quot;angling/fishing equipment&quot;). Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='This term excludes recreational angling equipment, which SHOULD be classified under its own term (&quot;angling/fishing equipment&quot;). Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='people and their luggage/equipment (in particular tourism)' xml:lang='en'/>
     </preferred>
@@ -485,7 +485,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organic material, particularly unprocessed plant material that is used to pack transported goods.'
-    dc:comments='Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='organic packing material, in particular wood packaging' xml:lang='en'/>
     </preferred>
@@ -498,7 +498,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported within the water pumped into boats and ships to provide ballast.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ship/boat ballast water' xml:lang='en'/>
     </preferred>
@@ -511,7 +511,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that attach themselves to the subsurface hull of boats and ships.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ship/boat hull fouling' xml:lang='en'/>
     </preferred>
@@ -524,7 +524,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Other vehicle hitchhikers that have been unintentionally dispersed, but are not covered by other terms.'
-    dc:comments='These organisms may be carried on or within the vehicle. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='These organisms may be carried on or within the vehicle. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='vehicles (car, train, etc.)' xml:lang='en'/>
     </preferred>
@@ -537,7 +537,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='A catch-all term for any transport related dispersal that is not covered in other terms.'
-    dc:comments='Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other means of transport' xml:lang='en'/>
     </preferred>
@@ -550,7 +550,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.'
-    dc:comments='Organisms transported along these corridors in ballast, on as hull fouling SHOULD be categorised under the &quot;ship/boat ballast water&quot; or &quot;ship/boat hull fouling&quot; terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Organisms transported along these corridors in ballast, on as hull fouling SHOULD be categorised under the &quot;ship/boat ballast water&quot; or &quot;ship/boat hull fouling&quot; terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='interconnected waterways/basins/seas' xml:lang='en'/>
     </preferred>
@@ -563,7 +563,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Unintentional dispersal by organisms using artificial tunnels, bridges, roads and railways.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='tunnels and land bridges' xml:lang='en'/>
     </preferred>
@@ -576,7 +576,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Dispersal of organisms to new regions by natural dispersal from regions in which they are alien.'
-    dc:comments='These are alien species that have previously been introduced through one of these pathways: release in nature, excape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='These are alien species that have previously been introduced through one of these pathways: release in nature, excape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='natural dispersal across borders of invasive alien organisms' xml:lang='en'/>
     </preferred>
@@ -589,7 +589,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported and released by humans in a (semi)natural environment with the intention that they should live there without further human aid.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='release in nature' xml:lang='en'/>
     </preferred>
@@ -602,7 +602,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms intentionally transported by humans and intended to be kept in captivity or cultivation, but having inadvertently escaped from human control.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='escape from confinement' xml:lang='en'/>
     </preferred>
@@ -615,7 +615,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='An umbrella term for all species transported as contaninents in other products.'
-    dc:comments='An alien species is a contaminant if it had a trophic or biotic relationship to organisms or items being transported and was to some extent dependent on them for survival. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='An alien species is a contaminant if it had a trophic or biotic relationship to organisms or items being transported and was to some extent dependent on them for survival. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transport-contaminant' xml:lang='en'/>
     </preferred>
@@ -628,7 +628,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='An umbrella term for all species transported by riding on forms of transport where the organism has a direct interaction with the transport and is not merely carried as part of, or a contaminant of cargo.'
-    dc:comments='A stowaway has no trophic or biotic relationship to the organisms or items being transported. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='A stowaway has no trophic or biotic relationship to the organisms or items being transported. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transport-stowaway' xml:lang='en'/>
     </preferred>
@@ -641,7 +641,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='corridor' xml:lang='en'/>
     </preferred>
@@ -654,7 +654,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that spread by natural dispersal, without action or assistance by humans, from regions in which they are also alien.'
-    dc:comments='The term refers to secondary dispersal from an area where the taxon is also alien. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='The term refers to secondary dispersal from an area where the taxon is also alien. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='unaided' xml:lang='en'/>
     </preferred>
@@ -667,7 +667,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='intentional' xml:lang='en'/>
     </preferred>
@@ -680,7 +680,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='The organism was unintentionally brought to a new region.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='unintentional' xml:lang='en'/>
     </preferred>
@@ -693,7 +693,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms dispersed naturally, even if that dispersal was aided by changes in the landscape created by humans.'
-    dc:comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='corridor and dispersal' xml:lang='en'/>
     </preferred>

@@ -52,7 +52,11 @@
 			</xs:attribute>
 			<xs:attribute ref="dc:description" use="optional"/>
 			<xs:attribute ref="dc:relation" use="optional"/>
-			<xs:attribute ref="dc:comments" use="optional"/>
+			<xs:attribute name="comments" type="xs:string" use="optional">
+				<xs:annotation>
+					<xs:documentation>Recommendations for the content for the property.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
 			<xs:attribute ref="dc:subject" use="optional"/>
 			<xs:attribute ref="dc:identifier" use="required">
 				<xs:annotation>

@@ -17,7 +17,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='A taxon occurring within its natural range.'
-    dc:comments='What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a &quot;natural range&quot;.'>
+    comments='What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a &quot;natural range&quot;.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='native (indigenous)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='nativa' xml:lang='es'/>
@@ -35,7 +35,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='A taxon re-established by direct introduction by humans into an area that was once part of its natural range, but from where it had become extinct.'
-    dc:comments='Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intension of re-establishing it.'>
+    comments='Where a taxon has become extirpated from an area where it had naturally occurred it may be returned to that area deliberately with the intension of re-establishing it.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='native: reintroduced' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='nativa (reintroducida) ' xml:lang='es'/>
@@ -53,7 +53,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Establishment of a taxon by human agency into an area that is not part of its natural range.'
-    dc:comments='Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that break down natural barriers to dispersal and allow organisms to spread beyond their natural range.'>
+    comments='Organisms can be introduced to novel areas and habitats by human activity, either on purpose or by accident. Humans can also inadvertently create corridors that break down natural barriers to dispersal and allow organisms to spread beyond their natural range.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='introduced (alien, exotic, non-native, nonindigenous)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='introducida' xml:lang='es'/>
@@ -71,7 +71,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon&apos;s natural range.'
-    dc:comments='In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.'>
+    comments='In the event of environmental change and habitat destruction a conservation option is to introduce a taxon into an area it did not naturally occur.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='introduced: assisted colonisation' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='introducida (colonización asistida)' xml:lang='es'/>
@@ -89,7 +89,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='The temporary occurrence of a taxon far outside its natural or migratory range.'
-    dc:comments='Natural events and human activity can disperse organisms unpredictably into places where they may stay or survive for a period.'>
+    comments='Natural events and human activity can disperse organisms unpredictably into places where they may stay or survive for a period.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='vagrant (casual)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='transitoria (casual)' xml:lang='es'/>
@@ -107,7 +107,7 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='The origin of the occurrence of the taxon in an area is obscure.'
-    dc:comments='When there is a lack of fossil or historical evidence for the occurrence of a taxon in an area it can be impossible to know if the taxon is new to the area or native.'>
+    comments='When there is a lack of fossil or historical evidence for the occurrence of a taxon in an area it can be impossible to know if the taxon is new to the area or native.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='uncertain (unknown, cryptogenic)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='incierto (desconocido)' xml:lang='es'/>

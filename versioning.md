@@ -45,7 +45,7 @@ New versions are first quarantined in the [sandbox](http://rs.gbif.org/sandbox/)
 3. Update the `<extension>` element `dc:description` attribute, appending a change summary of what is new in this version.
 4. Remove all properties that have been deprecated since the last version.
 5. Ensure the extension XML validates against the latest version of the GBIF extension schema, currently in the Sandbox at: http://rs.gbif.org/schema/extension.xsd
-   Example command on Linux: `xmllint --noout --schema schema/extension.xsd sandbox/extension/gbif/1.0/distribution_2020-05-14.xml`
+   Example command on Linux: `for i in extension/**/*.xml sandbox/extension/**/*.xml; do xmllint --noout --schema schema/extension.xsd $i; echo; done`
 6. Update the `<property>` thesaurus attribute with the new vocabulary version URL (if its version was updated). Chances are new vocabulary versions will be in the sandbox also, e.g. http://rs.gbif.org/sandbox/vocabulary/gbif/rank_2015-04-24.xml
 
 ## Vocabularies Versioning Policy
@@ -67,5 +67,5 @@ New versions are first quarantined in the [sandbox](http://rs.gbif.org/sandbox/)
 3. Update the `<thesaurus>` element `dc:description` attribute, appending a change summary of what is new in this version.
 4. Remove all concepts that have been deprecated since the last version.
 5. Ensure the extension XML validates against the latest version of the GBIF thesaurus schema, http://rs.gbif.org/schema/thesaurus.xsd
-   Example command on Linux: `xmllint --noout --schema schema/thesaurus.xsd sandbox/vocabulary/gbif/distribution_status_2020-05-14.xml`
+   Example command on Linux: `for i in vocabulary/**/*.xml sandbox/vocabulary/**/*.xml; do xmllint --noout --schema schema/thesaurus.xsd $i; echo; done`
 6. Update the `<thesaurus>` element `dc:URI` attribute with the accurate unique address URL, e.g. http://rs.gbif.org/sandbox/vocabulary/gbif/quantityType20150424/
