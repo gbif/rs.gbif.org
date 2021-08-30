@@ -75,6 +75,7 @@
                 <xs:annotation>
                     <xs:documentation>The rowType is the qualified name when combined with the namespace. Double or missing slashes are removed/added when name + namespace is combined.</xs:documentation>
                 </xs:annotation>
+            </xs:attribute>
             <xs:attribute ref="dc:creator" use="optional">
                 <xs:annotation>
                     <xs:documentation>The agent responsible for creating the extension.</xs:documentation>
