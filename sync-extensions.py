@@ -12,7 +12,7 @@ from urllib import FancyURLopener
 RS_BASE=os.getcwd()+"/"
 NS_DC="http://purl.org/dc/terms/"
 NS_EXT="http://rs.gbif.org/extension/"
-# default issued date 
+# default issued date
 MIN_DATE = datetime.date(datetime.MINYEAR, 1, 1)
 
 class Extension:
@@ -26,7 +26,7 @@ class Extension:
     self.isLatest=False
   def __repr__(self):
     return """EXT %s Issued:%s (latest=%s) >>%s<< %s [%s]""" % (self.identifier,self.issued,self.isLatest,self.title,self.description,self.subject)
-    
+
 class Vocabulary:
   def __init__(self):
     self.identifier = None
@@ -53,26 +53,26 @@ def writeVocabs(dir, urls):
   f.close()
 
 def processUrls(fp, urls, rootElement):
-  """Retrieve a list of objects by their url, sort them by their issued 
-     date, update each object indicating if it is the latest issued or 
+  """Retrieve a list of objects by their url, sort them by their issued
+     date, update each object indicating if it is the latest issued or
      not, and write each object to the JSON file"""
   fp.write('{"%s":[\n' % rootElement)
-  allObjects = [] 
+  allObjects = []
   for url in urls:
     print "Processing %s" % url
     obj = parseUrl(url)
     if obj != None:
         if obj.identifier != None:
-            allObjects.append(obj) 
+            allObjects.append(obj)
         else:
             print "Missing identifier in %s. Ignore" % url
   # sort by issued date, starting with newest dates
   allObjects = sorted(allObjects, key=getIssuedDate, reverse=True)
   # iterate through objects and indicate whether it is the latest or not
-  identifiers = [] 
+  identifiers = []
   for obj in allObjects:
     if (obj.identifier is not None and obj.identifier not in identifiers):
-      identifiers.append(obj.identifier) 
+      identifiers.append(obj.identifier)
       obj.isLatest=True
     else:
       print 'The extension or vocabulary with URL %s issued %s is deprecated or superseded by one in production' % (obj.url, obj.issued)
@@ -124,7 +124,7 @@ def parseUrl(url):
     obj.description=doc.attrib.get('{%s}description'%NS_DC)
     obj.subject=doc.attrib.get('{%s}subject'%NS_DC)
     # convert YYYY-MM-DD string date into datetime.date object
-    strDate=doc.attrib.get('{%s}issued'%NS_DC) 
+    strDate=doc.attrib.get('{%s}issued'%NS_DC)
     if (strDate is not None):
       obj.issued=datetime.datetime.strptime(strDate, "%Y-%m-%d").date()
     return obj
@@ -134,7 +134,7 @@ def parseUrl(url):
     traceback.print_exc(file=sys.stdout)
     print '-'*60
     return None
-  
+
 
 def listExtensions(basedir, baseurl):
   urls = []
@@ -170,10 +170,10 @@ def listVocabularies(basedir, baseurl):
         print " found vocabulary at "+url
         urls.append(url)
   return urls
-  
+
 if __name__ ==  "__main__":
   print 'LOCATED RS.GBIF.ORG FILESYSTEM AT: '+RS_BASE
-  
+
   print 'UPDATE PRODUCTION EXTENSION FILE'
   externalProd=listExternal(RS_BASE+"extension/")
   urlsCore = listExtensions(RS_BASE+"core/","http://rs.gbif.org/core/")
@@ -185,9 +185,9 @@ if __name__ ==  "__main__":
 
   print 'UPDATE SANDBOX EXTENSION FILE'
   externalDev=listExternal(RS_BASE+"sandbox/extension/")
-  urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","http://rs.gbif.org/sandbox/extension/")
-  urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","http://rs.gbif.org/sandbox/core/")
-  writeExtensions(RS_BASE+'sandbox/', urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)  
+  urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","https://rs.gbif.org/sandbox/extension/")
+  urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","https://rs.gbif.org/sandbox/core/")
+  writeExtensions(RS_BASE+'sandbox/', urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
   print 'UPDATE SANDBOX VOCABULARY FILE'
-  urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/")
+  urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","https://rs.gbif.org/sandbox/vocabulary/")
   writeVocabs(RS_BASE+'sandbox/', urlsVoc+urlsVoc2)
