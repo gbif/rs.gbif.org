@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type='text/xsl' href='/style/human.xsl'?>
 <thesaurus
-  dc:URI='http://rs.gbif.org/vocabulary/dwc/basis_of_record/'
+  dc:URI='http://rs.tdwg.org/dwc/dwctype/'
   dc:description='The specific nature of the data record.'
   dc:title='Darwin Core Basis of Record Vocabulary'
-  dc:issued='2021-08-22'
+  dc:issued='2022-01-24'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:basisOfRecord'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-  xsi:schemaLocation='http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd'>
+  xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'>
 
   <concept
     dc:identifier='PreservedSpecimen'
-	dc:URI='http://rs.tdwg.org/dwc/terms/PreservedSpecimen'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen'
 	dc:subject='http://rs.tdwg.org/dwc/terms/PreservedSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#preservedspecimen'
     dc:issued='2018-09-06'
@@ -31,7 +31,7 @@
 
   <concept
     dc:identifier='FossilSpecimen'
-	dc:URI='http://rs.tdwg.org/dwc/terms/FossilSpecimen'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/FossilSpecimen'
 	dc:subject='http://rs.tdwg.org/dwc/terms/FossilSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#fossilspecimen'
     dc:issued='2018-09-06'
@@ -49,7 +49,7 @@
 
   <concept
     dc:identifier='LivingSpecimen'
-	dc:URI='http://rs.tdwg.org/dwc/terms/LivingSpecimen'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/LivingSpecimen'
 	dc:subject='http://rs.tdwg.org/dwc/terms/LivingSpecimen'
     dc:relation='https://dwc.tdwg.org/terms/#livingspecimen'
     dc:issued='2018-09-06'
@@ -67,7 +67,7 @@
 
   <concept
     dc:identifier='HumanObservation'
-	dc:URI='http://rs.tdwg.org/dwc/terms/HumanObservation'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/HumanObservation'
 	dc:subject='http://rs.tdwg.org/dwc/terms/HumanObservation'
     dc:relation='https://dwc.tdwg.org/terms/#humanobservation'
     dc:issued='2018-09-06'
@@ -85,7 +85,7 @@
 
   <concept
     dc:identifier='MachineObservation'
-	dc:URI='http://rs.tdwg.org/dwc/terms/MachineObservation'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/MachineObservation'
 	dc:subject='http://rs.tdwg.org/dwc/terms/MachineObservation'
     dc:relation='https://dwc.tdwg.org/terms/#machineobservation'
     dc:issued='2018-09-06'
@@ -103,7 +103,7 @@
 
   <concept
     dc:identifier='MaterialSample'
-	dc:URI='http://rs.tdwg.org/dwc/terms/MaterialSample'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/MaterialSample'
 	dc:subject='http://rs.tdwg.org/dwc/terms/MaterialSample'
     dc:relation='https://dwc.tdwg.org/terms/#materialsample'
     dc:issued='2018-09-06'
@@ -122,7 +122,7 @@
 
   <concept
     dc:identifier='Occurrence'
-	dc:URI='http://rs.tdwg.org/dwc/terms/Occurrence'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/Occurrence'
 	dc:subject='http://rs.tdwg.org/dwc/terms/Occurrence'
     dc:relation='https://dwc.tdwg.org/terms/#occurrence'
     dc:issued='2018-09-06'
@@ -140,7 +140,7 @@
 
   <concept
     dc:identifier='MaterialCitation'
-	dc:URI='http://rs.tdwg.org/dwc/terms/MaterialCitation'
+	dc:URI='http://rs.tdwg.org/dwc/dwctype/MaterialCitation'
 	dc:subject='http://rs.tdwg.org/dwc/terms/MaterialCitation'
     dc:relation='https://dwc.tdwg.org/terms/#materialcitation'
     dc:issued='2021-07-15'
@@ -148,9 +148,6 @@
     dc:description='A reference to or citation of one, a part of, or multiple specimens in scholarly publications.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Citation' xml:lang='en'/>
-      <term dc:source='Darwin Core' dc:title='' xml:lang='pt'/>
-      <term dc:source='Darwin Core' dc:title='' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='' xml:lang='ja'/>
     </preferred>
     <alternative>
       <term dc:title='Literature' xml:lang='en'/>
