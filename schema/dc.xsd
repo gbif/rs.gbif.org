@@ -10,6 +10,7 @@
     <xs:attribute name="type" type="xs:string"/>
     <xs:attribute name="title" type="xs:string"/>
     <xs:attribute name="source" type="xs:string"/>
+    <xs:attribute name="creator" type="xs:string"/>
     <xs:attribute name="subject" type="xs:string">
         <xs:annotation>
             <xs:documentation>Simple space delimited list of keywords for tagging</xs:documentation>

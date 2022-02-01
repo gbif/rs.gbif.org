@@ -4,7 +4,7 @@
   dc:URI='http://rs.gbif.org/vocabulary/dwc/establishment_means/'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:establishmentMeans'
   dc:title='Darwin Core Establishment Means Vocabulary'
-  dc:issued='2021-08-22'
+  dc:issued='2022-02-02'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'

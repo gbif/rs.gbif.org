@@ -44,7 +44,7 @@ New versions are first quarantined in the [sandbox](http://rs.gbif.org/sandbox/)
 2. The file name must include the issued date. The date format must by YYYY-MM-DD, e.g. dwc_event_2015-04-24.xml.
 3. Update the `<extension>` element `dc:description` attribute, appending a change summary of what is new in this version.
 4. Remove all properties that have been deprecated since the last version.
-5. Ensure the extension XML validates against the latest version of the GBIF extension schema, currently in the Sandbox at: http://rs.gbif.org/schema/extension.xsd
+5. Ensure the extension XML validates against the latest version of the GBIF extension schema http://rs.gbif.org/schema/extension.xsd
    Example command on Linux: `for i in extension/**/*.xml sandbox/extension/**/*.xml; do xmllint --noout --schema schema/extension.xsd $i; echo; done`
 6. Update the `<property>` thesaurus attribute with the new vocabulary version URL (if its version was updated). Chances are new vocabulary versions will be in the sandbox also, e.g. http://rs.gbif.org/sandbox/vocabulary/gbif/rank_2015-04-24.xml
 

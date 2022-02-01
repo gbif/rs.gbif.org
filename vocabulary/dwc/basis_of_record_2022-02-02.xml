@@ -4,7 +4,7 @@
   dc:URI='http://rs.tdwg.org/dwc/dwctype/'
   dc:description='The specific nature of the data record.'
   dc:title='Darwin Core Basis of Record Vocabulary'
-  dc:issued='2022-01-24'
+  dc:issued='2022-02-02'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:basisOfRecord'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
