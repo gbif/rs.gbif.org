@@ -4,7 +4,7 @@
   dc:URI="http://rs.gbif.org/vocabulary/gbif/taxonomicStatus/"
   dc:description="Simple vocabulary to describe the taxonomic status of a name"
   dc:title="Taxonomic Status GBIF Vocabulary"
-  dc:issued="2021-08-30"
+  dc:issued="2022-02-02"
   xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
 

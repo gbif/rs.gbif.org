@@ -7,7 +7,7 @@
     dc:title='Darwin Core Taxon'
     name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Taxon'
-    dc:issued='2021-08-30'
+    dc:issued='2022-02-02'
     dc:relation='https://dwc.tdwg.org/terms/#taxon'
     dc:description='The category of information pertaining to a group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit.'>
 
