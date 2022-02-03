@@ -1,5 +1,0 @@
-# robots.txt for registry.gbif.org
-#
-
-User-agent: *
-Disallow: /

@@ -1,5 +1,0 @@
-# robots.txt for crawler.gbif.org
-#
-
-User-agent: *
-Disallow: /
