@@ -1,6 +1,6 @@
 ## Experimental
 
-This section contains schemas to be used as GBIF explore enabling the IPT to support richer data formats.
+This section contains schemas to be used for exploring richer data support in the IPT.
 These may change or disappear at short notice, so should be used with caution.
 
-The schemas are presented using [Frictionless table schema](https://specs.frictionlessdata.io/table-schema/) definitions as a first exploration.
+The schemas are presented using [Frictionless Table Schema](https://specs.frictionlessdata.io/table-schema/) definitions as a first exploration.

@@ -1,0 +1,104 @@
+{
+  "name": "species-interaction",
+  "title": "Species Interaction",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "relatedTaxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "relatedTaxonScientificName",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "related to",
+          "co occurs with",
+          "interacts with",
+          "adjacent to",
+          "symbiont of",
+          "eats",
+          "eaten by",
+          "kills",
+          "killed by",
+          "preys upon",
+          "preyed upon by",
+          "host of",
+          "has host",
+          "parasite of",
+          "has parasite",
+          "pathogen of",
+          "has pathogen",
+          "vector of",
+          "has vector",
+          "endoparasite of",
+          "has endoparasite",
+          "ectoparasite of",
+          "has ectoparasite",
+          "hyperparasite of",
+          "has hyperparasite",
+          "kleptoparasite of",
+          "has kleptoparasite",
+          "parasitoid of",
+          "has parasitoid",
+          "hyperparasitoid of",
+          "has hyperparasitoid",
+          "visits",
+          "visited by",
+          "visits flowers of",
+          "flowers visited by",
+          "pollinates",
+          "pollinated by",
+          "lays eggs on",
+          "has eggs layed on by",
+          "epiphyte of",
+          "has epiphyte",
+          "commensalist of",
+          "mutualist of"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

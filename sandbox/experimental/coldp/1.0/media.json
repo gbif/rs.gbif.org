@@ -1,0 +1,83 @@
+{
+  "name": "media",
+  "title": "Media",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "image",
+          "video",
+          "audio"
+        ]
+      }
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "plain text",
+          "markdown",
+          "xml",
+          "html",
+          "tax pub",
+          "taxon x",
+          "rdf"
+        ]
+      }
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "created",
+      "type": "date",
+      "format": "default"
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "license",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    }
+  ]
+}
