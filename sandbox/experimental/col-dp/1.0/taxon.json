@@ -1,0 +1,256 @@
+{
+  "name": "taxon",
+  "title": "Taxon",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "parentID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nameID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "namePhrase",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "accordingToID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "provisional",
+      "type": "boolean",
+      "format": "default"
+    },
+    {
+      "name": "scrutinizer",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scrutinizerID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scrutinizerDate",
+      "type": "date",
+      "format": "default"
+    },
+    {
+      "name": "extinct",
+      "type": "boolean",
+      "format": "default"
+    },
+    {
+      "name": "temporalRangeStart",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "temporalRangeEnd",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "environment",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "brackish",
+          "freshwater",
+          "marine",
+          "terrestrial"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "species",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "section",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "subgenus",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "genus",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "subtribe",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "tribe",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "subfamily",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "family",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "superfamily",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "suborder",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "order",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "subclass",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "class",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "subphylum",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "phylum",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "kingdom",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "sequenceIndex",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "parentID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

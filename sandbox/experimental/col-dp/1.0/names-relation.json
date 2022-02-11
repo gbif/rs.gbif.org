@@ -1,0 +1,72 @@
+{
+  "name": "names-relation",
+  "title": "Names Relation",
+  "fields": [
+    {
+      "name": "nameID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "relatedNameID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "spelling correction",
+          "basionym",
+          "based on",
+          "replacement name",
+          "conserved",
+          "later homonym",
+          "superfluous",
+          "homotypic",
+          "type"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "relatedNameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

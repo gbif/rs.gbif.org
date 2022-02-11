@@ -1,0 +1,82 @@
+{
+  "name": "distribution",
+  "title": "Distribution",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "areaID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "area",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "gazetteer",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "tdwg",
+          "iso",
+          "fao",
+          "longhurst",
+          "teow",
+          "iho",
+          "mrgid",
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "native",
+          "domesticated",
+          "alien",
+          "uncertain"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

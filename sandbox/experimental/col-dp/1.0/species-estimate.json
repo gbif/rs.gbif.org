@@ -1,0 +1,59 @@
+{
+  "name": "species-estimate",
+  "title": "Species Estimate",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "estimate",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "species living",
+          "species extinct",
+          "estimated species"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

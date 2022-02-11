@@ -1,0 +1,93 @@
+{
+  "name": "synonym",
+  "title": "Synonym",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nameID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "namePhrase",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "accordingToID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "accepted",
+          "provisionally accepted",
+          "synonym",
+          "ambiguous synonym",
+          "misapplied",
+          "bare name"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "name": "name",
+  "title": "Name",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "basionymID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scientificName",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "authorship",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "rank",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "domain",
+          "realm",
+          "subrealm",
+          "superkingdom",
+          "kingdom",
+          "subkingdom",
+          "infrakingdom",
+          "superphylum",
+          "phylum",
+          "subphylum",
+          "infraphylum",
+          "superclass",
+          "class",
+          "subclass",
+          "infraclass",
+          "subterclass",
+          "parvclass",
+          "superdivision",
+          "division",
+          "subdivision",
+          "infradivision",
+          "superlegion",
+          "legion",
+          "sublegion",
+          "infralegion",
+          "supercohort",
+          "cohort",
+          "subcohort",
+          "infracohort",
+          "gigaorder",
+          "magnorder",
+          "grandorder",
+          "mirorder",
+          "superorder",
+          "order",
+          "nanorder",
+          "hypoorder",
+          "minorder",
+          "suborder",
+          "infraorder",
+          "parvorder",
+          "megafamily",
+          "grandfamily",
+          "superfamily",
+          "epifamily",
+          "family",
+          "subfamily",
+          "infrafamily",
+          "supertribe",
+          "tribe",
+          "subtribe",
+          "infratribe",
+          "suprageneric name",
+          "genus",
+          "subgenus",
+          "infragenus",
+          "supersection",
+          "section",
+          "subsection",
+          "superseries",
+          "series",
+          "subseries",
+          "infrageneric name",
+          "species aggregate",
+          "species",
+          "infraspecific name",
+          "grex",
+          "subspecies",
+          "cultivar group",
+          "convariety",
+          "infrasubspecific name",
+          "proles",
+          "natio",
+          "aberration",
+          "morph",
+          "variety",
+          "subvariety",
+          "form",
+          "subform",
+          "pathovar",
+          "biovar",
+          "chemovar",
+          "morphovar",
+          "phagovar",
+          "serovar",
+          "chemoform",
+          "forma specialis",
+          "cultivar",
+          "strain",
+          "other",
+          "unranked"
+        ]
+      }
+    },
+    {
+      "name": "uninomial",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "genus",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "infragenericEpithet",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "specificEpithet",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "infraspecificEpithet",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "cultivarEpithet",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "bacterial",
+          "botanical",
+          "cultivars",
+          "phytosociological",
+          "virus",
+          "zoological"
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "established",
+          "not established",
+          "acceptable",
+          "unacceptable",
+          "conserved",
+          "rejected",
+          "doubtful",
+          "manuscript",
+          "chresonym"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "publishedInYear",
+      "type": "year",
+      "format": "default"
+    },
+    {
+      "name": "publishedInPage",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "publishedInPageLink",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}
