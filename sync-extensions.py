@@ -9,6 +9,7 @@ import os
 import sys
 import traceback
 import urllib.request
+from string import Template
 from xml.etree.ElementTree import ElementTree
 
 RS_BASE=os.getcwd()+"/"
@@ -16,6 +17,78 @@ NS_DC="http://purl.org/dc/terms/"
 NS_EXT="http://rs.gbif.org/extension/"
 # default issued date
 MIN_DATE = datetime.date(datetime.MINYEAR, 1, 1)
+PRODUCTION = 0
+SANDBOX = 1
+
+# Templates for the HTML extension list.
+HTML_EXTENSION_TEMPLATE_HEADER = Template("""
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GBIF Registered Extensions</title>
+        <link rel="stylesheet" type="text/css" href="/style/human.css"/>
+
+        <style type="text/css">
+            .definition {
+                background: rgba(67%, 67%, 67%, 50%);
+                padding: 0.5em 0 0 0.5em;
+            }
+            .definition .title {
+                margin-top: 0.3em;
+                margin-left: 2rem;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .definition .body {
+                background: rgba(100%, 100%, 100%, 95%);
+                margin-top: 0.5em;
+                padding-top: 0.5em;
+                margin-left: 2em;
+                padding-left: 1em;
+            }
+            .definition .details {
+                color: grey;
+                font-size: 0.8em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="/style/logo-gbif.svg" alt="GBIF" width="115" height="46"/>
+            <h1>Registered Extensions</h1>
+        </header>
+
+        <p>The following extensions are the latest versions of those registered with GBIF for $environment use.</p>
+
+        <p>The list was last updated at $last_updated, and is also available in <a href="extensions.json">JSON format</a>.</p>
+""")
+
+HTML_EXTENSION_TEMPLATE_ENTRY = Template("""
+        <a name="$identifier"></a>
+        <div class="definition">
+            <div class="title">
+                <a href="$url">$title</a>
+            </div>
+            <div class="body">
+                <p>$description</p>
+
+                <table class="details">
+                    <tr><th>Name</th><td>$name</td></tr>
+                    <tr><th>Namespace</th><td>$namespace</td></tr>
+                    <tr><th>RowType</th><td>$identifier</td></tr>
+                    <tr><th>Issued</th><td>$issued</td></tr>
+                    <tr><th>Keywords</th><td>$subject</td></tr>
+                </table>
+            </div>
+        </div>
+""")
+
+HTML_EXTENSION_TEMPLATE_FOOTER = Template("""
+    </body>
+</html>
+""")
 
 class Extension:
   def __init__(self):
@@ -26,6 +99,8 @@ class Extension:
     self.subject = None
     self.issued = None
     self.isLatest = False
+    self.namespace = None
+    self.name = None
   def __repr__(self):
     return """EXT %s Issued:%s (latest=%s) >>%s<< %s [%s]""" % (self.identifier, self.issued, self.isLatest, self.title, self.description, self.subject)
 
@@ -38,24 +113,28 @@ class Vocabulary:
     self.subject = None
     self.issued = None
     self.isLatest = False
+    self.namespace = None
+    self.name = None
   def __repr__(self):
     return """VOC %s Issued:%s (latest=%s) >>%s<< %s [%s] """ % (self.identifier, self.issued, self.isLatest, self.title, self.description, self.subject)
 
-def writeExtensions(dir, urls):
-  f = open(dir + 'extensions.json', 'w')
-  processUrls(f, urls, 'extensions')
-  f.close()
+def writeExtensions(env, dir, urls):
+  j = open(dir + 'extensions.json', 'w')
+  h = open(dir + 'extensions.html', 'w')
+  processUrls(j, h, urls, env, 'extensions')
+  j.close()
+  h.close()
 
 def writeVocabs(dir, urls):
   f = open(dir + 'vocabularies.json', 'w')
-  processUrls(f, urls, 'thesauri')
+  processUrls(f, None, urls, None, 'thesauri')
   f.close()
 
-def processUrls(fp, urls, rootElement):
+def processUrls(fp, html, urls, env, rootElement):
   """Retrieve a list of objects by their URL, sort them by their issue
      date, update each object indicating if it is the latest issued or
      not, and write each object to the JSON file."""
-  fp.write('{"%s":[\n' % rootElement)
+
   allObjects = []
   for url in urls:
     print("Processing %s" % url)
@@ -65,6 +144,7 @@ def processUrls(fp, urls, rootElement):
         allObjects.append(obj)
       else:
         print("Missing identifier in %s. Ignore" % url)
+
   # sort by issued date, starting with newest
   allObjects = sorted(allObjects, key=getIssuedDate, reverse=True)
   # iterate through objects and indicate whether it is the latest or not
@@ -75,14 +155,43 @@ def processUrls(fp, urls, rootElement):
       obj.isLatest=True
     else:
       print("The extension or vocabulary with URL %s issued %s is deprecated or superseded by one in production" % (obj.url, obj.issued))
+
   # write each object to the JSON file
+  fp.write('{"%s":[\n' % rootElement)
   first = True;
   for obj in allObjects:
+    if (first and html):
+      html.write(HTML_EXTENSION_TEMPLATE_HEADER.substitute(
+          last_updated=datetime.datetime.today().strftime("%H:%M:%S on %e %B %Y"),
+          environment=('production' if (env == PRODUCTION) else 'development (sandbox)')
+      ))
     if (not first):
       fp.write(',\n')
-    json.dump(obj.__dict__, fp, default=json_serial)
+
+    if (obj.isLatest and html):
+        t = dict(
+            identifier=obj.identifier,
+            url=obj.url,
+            title=obj.title,
+            description=obj.description,
+            name=obj.name,
+            namespace=obj.namespace,
+            issued=obj.issued,
+            subject=obj.subject,
+        )
+        html.write(HTML_EXTENSION_TEMPLATE_ENTRY.substitute(t))
+
+    # name and namespace are used in the HTML list, but not the JSON.
+    del(obj.name)
+    del(obj.namespace)
+    json.dump(obj.__dict__, fp, default=json_serial, indent=2)
+
     first = False;
+
   fp.write('\n]}')
+  if (html):
+      html.write(HTML_EXTENSION_TEMPLATE_FOOTER.substitute())
+
   return allObjects
 
 def getIssuedDate(x):
@@ -118,6 +227,8 @@ def parseUrl(url):
     else:
       obj = Vocabulary()
       obj.identifier = doc.attrib.get('{%s}URI'%NS_DC)
+    obj.namespace = doc.attrib.get('namespace')
+    obj.name = doc.attrib.get('name')
     obj.url = url
     obj.title = doc.attrib.get('{%s}title'%NS_DC)
     obj.description = doc.attrib.get('{%s}description'%NS_DC)
@@ -128,7 +239,7 @@ def parseUrl(url):
       obj.issued = datetime.datetime.strptime(strDate, "%Y-%m-%d").date()
     return obj
   except:
-    print("Oops, cant parse URL %s" % url)
+    print("Oops, can't parse URL %s" % url)
     print("-"*60)
     traceback.print_exc(file = sys.stdout)
     print("-"*60)
@@ -178,7 +289,7 @@ if __name__ ==  "__main__":
   externalProd = listExternal(RS_BASE+"extension/")
   urlsCore = listExtensions(RS_BASE+"core/","http://rs.gbif.org/core/")
   urlsExt = listExtensions(RS_BASE+"extension/","http://rs.gbif.org/extension/")
-  writeExtensions(RS_BASE, urlsCore+urlsExt+externalProd)
+  writeExtensions(PRODUCTION, RS_BASE, urlsCore+urlsExt+externalProd)
   print("UPDATE PRODUCTION VOCABULARY FILE")
   urlsVoc = listVocabularies(RS_BASE+"vocabulary/","http://rs.gbif.org/vocabulary/")
   writeVocabs(RS_BASE, urlsVoc)
@@ -187,7 +298,7 @@ if __name__ ==  "__main__":
   externalDev=listExternal(RS_BASE+"sandbox/extension/")
   urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","http://rs.gbif.org/sandbox/extension/")
   urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","http://rs.gbif.org/sandbox/core/")
-  writeExtensions(RS_BASE+"sandbox/", urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
+  writeExtensions(SANDBOX, RS_BASE+"sandbox/", urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
   print("UPDATE SANDBOX VOCABULARY FILE")
   urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/")
   writeVocabs(RS_BASE+"sandbox/", urlsVoc+urlsVoc2)
