@@ -1,5 +1,8 @@
+extensions.html
 extensions.json
+sandbox/extensions.html
 sandbox/extensions.json
+sandbox/vocabularies.html
 sandbox/vocabularies.json
+vocabularies.html
 vocabularies.json
-.DS_Store
