@@ -66,7 +66,7 @@ HTML_EXTENSION_TEMPLATE_HEADER = Template("""
 """)
 
 HTML_EXTENSION_TEMPLATE_ENTRY = Template("""
-        <a name="$identifier"></a>
+        <a id="$identifier"></a>
         <div class="definition">
             <div class="title">
                 <a href="$url">$title</a>
@@ -88,6 +88,13 @@ HTML_EXTENSION_TEMPLATE_ENTRY = Template("""
 HTML_EXTENSION_TEMPLATE_FOOTER = Template("""
     </body>
 </html>
+""")
+
+ASIS_TEMPLATE = Template("""Status: 303 See Other
+Location: $location
+Content-Type: $contentType
+
+See <a href="$location">$location</a>.
 """)
 
 class Extension:
@@ -125,9 +132,9 @@ def writeExtensions(env, dir, urls):
   j.close()
   h.close()
 
-def writeVocabs(dir, urls):
+def writeVocabs(env, dir, urls):
   f = open(dir + 'vocabularies.json', 'w')
-  processUrls(f, None, urls, None, 'thesauri')
+  processUrls(f, None, urls, env, 'thesauri')
   f.close()
 
 def processUrls(fp, html, urls, env, rootElement):
@@ -168,6 +175,25 @@ def processUrls(fp, html, urls, env, rootElement):
     if (not first):
       fp.write(',\n')
 
+    # Write Apache HTTPD asis files to allow redirects like https://rs.gbif.org/terms/1.0/Distribution → https://rs.gbif.org/extension/gbif/1.0/distribution_2022-02-02.xml
+    if (obj.isLatest and obj.identifier.startswith("http://rs.gbif.org/") and "#" not in obj.identifier):
+        if (env != PRODUCTION and not obj.identifier.startswith("http://rs.gbif.org/sandbox/")):
+            print("Refusing to create "+obj.identifier+" from the sandbox, adding sandbox/ to path")
+            path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "sandbox/")
+        else:
+            path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "")
+        # Some identifiers end with /, index.asis will be served
+        if (path.endswith("/")):
+            path = path + "index"
+        asisFile = path + ".asis"
+        asisDir = os.path.dirname(asisFile)
+        if not os.path.isdir(asisDir):
+            os.makedirs(asisDir)
+        a = open(asisFile, 'w')
+        a.write(ASIS_TEMPLATE.substitute(location=obj.url.replace("http://rs.gbif.org", "https://rs.gbif.org"), contentType='text/xml'))
+        a.close()
+
+    # Write HTML extensions list
     if (obj.isLatest and html):
         t = dict(
             identifier=obj.identifier,
@@ -181,6 +207,7 @@ def processUrls(fp, html, urls, env, rootElement):
         )
         html.write(HTML_EXTENSION_TEMPLATE_ENTRY.substitute(t))
 
+    # Write JSON extensions list
     # name and namespace are used in the HTML list, but not the JSON.
     del(obj.name)
     del(obj.namespace)
@@ -292,7 +319,7 @@ if __name__ ==  "__main__":
   writeExtensions(PRODUCTION, RS_BASE, urlsCore+urlsExt+externalProd)
   print("UPDATE PRODUCTION VOCABULARY FILE")
   urlsVoc = listVocabularies(RS_BASE+"vocabulary/","http://rs.gbif.org/vocabulary/")
-  writeVocabs(RS_BASE, urlsVoc)
+  writeVocabs(PRODUCTION, RS_BASE, urlsVoc)
 
   print("UPDATE SANDBOX EXTENSION FILE")
   externalDev=listExternal(RS_BASE+"sandbox/extension/")
@@ -301,4 +328,4 @@ if __name__ ==  "__main__":
   writeExtensions(SANDBOX, RS_BASE+"sandbox/", urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
   print("UPDATE SANDBOX VOCABULARY FILE")
   urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/")
-  writeVocabs(RS_BASE+"sandbox/", urlsVoc+urlsVoc2)
+  writeVocabs(SANDBOX, RS_BASE+"sandbox/", urlsVoc+urlsVoc2)

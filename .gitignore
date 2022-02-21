@@ -1,3 +1,4 @@
+*.asis
 extensions.html
 extensions.json
 sandbox/extensions.html
