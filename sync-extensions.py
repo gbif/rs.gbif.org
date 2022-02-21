@@ -35,6 +35,10 @@ HTML_EXTENSION_TEMPLATE_HEADER = Template("""
                 background: rgba(67%, 67%, 67%, 50%);
                 padding: 0.5em 0 0 0.5em;
             }
+            .definition:target {
+                background: rgba(90%, 100%, 100%, 50%);
+                outline: 2px solid rgba(90%, 100%, 100%, 100%);
+            }
             .definition .title {
                 margin-left: 2rem;
                 font-weight: bold;
@@ -72,8 +76,7 @@ HTML_EXTENSION_TEMPLATE_HEADER = Template("""
 """)
 
 HTML_EXTENSION_TEMPLATE_ENTRY = Template("""
-        <a id="$identifier"></a>
-        <div class="definition">
+        <div id="$identifier" class="definition">
             <div class="title">
                 <a href="$url">$title</a>
             </div>
@@ -183,35 +186,35 @@ def processUrls(fp, html, urls, env, rootElement):
 
     # Write Apache HTTPD asis files to allow redirects like https://rs.gbif.org/terms/1.0/Distribution → https://rs.gbif.org/extension/gbif/1.0/distribution_2022-02-02.xml
     if (obj.isLatest and obj.identifier.startswith("http://rs.gbif.org/") and "#" not in obj.identifier):
-        if (env != PRODUCTION and not obj.identifier.startswith("http://rs.gbif.org/sandbox/")):
-            print("Refusing to create "+obj.identifier+" from the sandbox, adding sandbox/ to path")
-            path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "sandbox/")
-        else:
-            path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "")
-        # Some identifiers end with /, index.asis will be served
-        if (path.endswith("/")):
-            path = path + "index"
-        asisFile = path + ".asis"
-        asisDir = os.path.dirname(asisFile)
-        if not os.path.isdir(asisDir):
-            os.makedirs(asisDir)
-        a = open(asisFile, 'w')
-        a.write(ASIS_TEMPLATE.substitute(location=obj.url.replace("http://rs.gbif.org", "https://rs.gbif.org"), contentType='text/xml'))
-        a.close()
+      if (env != PRODUCTION and not obj.identifier.startswith("http://rs.gbif.org/sandbox/")):
+        print("Refusing to create "+obj.identifier+" from the sandbox, adding sandbox/ to path")
+        path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "sandbox/")
+      else:
+        path = RS_BASE + obj.identifier.replace("http://rs.gbif.org/", "")
+      # Some identifiers end with /, index.asis will be served
+      if (path.endswith("/")):
+        path = path + "index"
+      asisFile = path + ".asis"
+      asisDir = os.path.dirname(asisFile)
+      if not os.path.isdir(asisDir):
+        os.makedirs(asisDir)
+      a = open(asisFile, 'w')
+      a.write(ASIS_TEMPLATE.substitute(location=obj.url.replace("http://rs.gbif.org", "https://rs.gbif-uat.org"), contentType='text/xml'))
+      a.close()
 
     # Write HTML extensions list
     if (obj.isLatest and html):
-        t = dict(
-            identifier=obj.identifier,
-            url=obj.url,
-            title=obj.title,
-            description=obj.description,
-            name=obj.name,
-            namespace=obj.namespace,
-            issued=obj.issued,
-            subject=obj.subject,
-        )
-        html.write(HTML_EXTENSION_TEMPLATE_ENTRY.substitute(t))
+      t = dict(
+        identifier=obj.identifier,
+        url=obj.url,
+        title=obj.title,
+        description=obj.description,
+        name=obj.name,
+        namespace=obj.namespace,
+        issued=obj.issued,
+        subject=obj.subject,
+      )
+      html.write(HTML_EXTENSION_TEMPLATE_ENTRY.substitute(t))
 
     # Write JSON extensions list
     # name and namespace are used in the HTML list, but not the JSON.
@@ -223,7 +226,7 @@ def processUrls(fp, html, urls, env, rootElement):
 
   fp.write('\n]}')
   if (html):
-      html.write(HTML_EXTENSION_TEMPLATE_FOOTER.substitute())
+    html.write(HTML_EXTENSION_TEMPLATE_FOOTER.substitute())
 
   return allObjects
 
