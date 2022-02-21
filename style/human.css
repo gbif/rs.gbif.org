@@ -9,14 +9,14 @@
 
 html {
 	color: #333;
-	font-family: Helvetica, Arial, Geneva, sans-serif;
+	font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #ffffff;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%0D%0A  viewBox%3D'0 0 476.24922 237.20944' height%3D'237.20944' width%3D'476.24921' version%3D'1.1' id%3D'svg2'%3E%0D%0A %3Cg id%3D'logo' transform%3D'translate(-1.3637789%2C1.4287109e-5)' style%3D'fill%3A%2347a138%3Bfill-opacity%3A0.05%3Bstroke%3Anone'%3E%0D%0A %3Cpath d%3D'm 96.631234%2C107.59128 c 0%2C-42.597997 20.789506%2C-79.462997 82.647876%2C-79.462997 0%2C42.69 -28.08125%2C79.462997 -82.647876%2C79.462997' %2F%3E%0D%0A %3Cpath d%3D'm 195.74161%2C219.43703 c 11.58625%2C0 20.49125%2C-1.64892 29.6375%2C-5.01368 0%2C-33.71244 -20.11125%2C-57.80269 -55.635%2C-75.16107 -27.185%2C-13.63337 -60.64462%2C-20.691 -91.159751%2C-20.691 13.389625%2C-40.189247 3.629875%2C-90.056747 -9.34625%2C-117.430497 -14.375875%2C28.6775 -23.349125%2C77.8425 -9.545375%2C117.842127 -27.106875%2C1.97662 -48.603025%2C13.78425 -57.6977496%2C29.354 -0.6870075%2C1.1875 -2.06298503%2C3.71875 -1.23974253%2C4.15137 0.64795003%2C0.34762 1.69678003%2C-0.71237 2.34473003%2C-1.30375 9.7944251%2C-9.06737 22.7636371%2C-13.48475 35.2153871%2C-13.48475 28.77725%2C0 49.09275%2C23.88075 63.446751%2C38.2275 30.8495%2C30.84613 61.002%2C43.57371 93.9795%2C43.50975' %2F%3E%0D%0A  %3C%2Fg%3E%0D%0A  %3Cuse x%3D'0' y%3D'0' xlink%3Ahref%3D'%23logo' transform%3D'translate(245.87887%2C-108)' width%3D'100%25' height%3D'100%25' %2F%3E%0D%0A  %3Cuse x%3D'0' y%3D'0' xlink%3Ahref%3D'%23logo' transform%3D'translate(245.87887%2C129.20944)' width%3D'100%25' height%3D'100%25' %2F%3E%0D%0A%3C%2Fsvg%3E");
 	background-position: 50% 0;
 }
 
 body {
-	margin: 3em auto;
+	margin: 4em auto 1em;
 	padding: 0 3em;
 }
 
@@ -34,11 +34,7 @@ a:hover {
 	color: rgb(0, 84, 24);
 }
 
-header img {
-	display: block;
-}
-
-h1, h2 {margin:15px 0 10px 0;}
+h1, h2 {margin:15px 0 15px 0;}
 h3, h4, h5, h6 {margin:5px 0 10px 0;}
 h1 {font-size:260%; font-weight:normal; letter-spacing:-1px;}
 h2 {font-size:160%; font-weight:normal;}
@@ -72,19 +68,63 @@ legend {position:absolute; top:-1em; margin:0; padding:5px 10px; font-size:100%;
 
 /* @end */
 
-
 /* @group LAYOUT */
 header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 3em auto;
+	margin: 2em auto;
 }
 header * {
 	padding: 0 0.25em;
 }
-#header {
+header h1, header h2 {
 	text-align: center;
+	margin: 0;
+}
+header img {
+	display: block;
+}
+
+/* @end */
+
+/* @group NAV */
+nav {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.75em;
+	background: #686a68;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	height: 2.75em;
+	align-items: center;
+	gap: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0 0 0 0.5em;
+	list-style-type: none;
+}
+
+nav ul li {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+nav a {
+	display: block;
+	color: white;
+}
+
+nav a, nav a:hover {
+	display: block;
+	color: white;
 }
 
 /* @end */
