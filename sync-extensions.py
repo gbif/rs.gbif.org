@@ -36,7 +36,6 @@ HTML_EXTENSION_TEMPLATE_HEADER = Template("""
                 padding: 0.5em 0 0 0.5em;
             }
             .definition .title {
-                margin-top: 0.3em;
                 margin-left: 2rem;
                 font-weight: bold;
                 font-size: 1.2em;
@@ -55,6 +54,13 @@ HTML_EXTENSION_TEMPLATE_HEADER = Template("""
         </style>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><img src="/style/logo-gbif-white.svg" width="67" height="28"/></li>
+                <li><a href="/">Repository of Schemas</a></li>
+            </ul>
+        </nav>
+
         <header>
             <img src="/style/logo-gbif.svg" alt="GBIF" width="115" height="46"/>
             <h1>Registered Extensions</h1>

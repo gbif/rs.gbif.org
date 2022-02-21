@@ -7,7 +7,6 @@
      xmlns:voc="http://rs.gbif.org/thesaurus/"
      xmlns="http://www.w3.org/1999/xhtml">
 
-
      <xsl:output method="html" encoding="UTF-8" indent="yes"/>
      <xsl:template match="/*">
           <xsl:variable name="defType">
@@ -18,20 +17,25 @@
           </xsl:variable>
           <html>
                <head>
-                    <title><xsl:value-of select="@dc:title"/> - <xsl:value-of select="$defType"/></title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <title><xsl:value-of select="@dc:title"/> – <xsl:value-of select="$defType"/></title>
                     <link rel="stylesheet" type="text/css" href="/style/human.css"/>
                </head>
                <body>
-                    <div class="container">
-                         <div id="header" class="box">
-                              <h2 id="logo">
-                                   <img src="/style/logo-gbif.svg" width="115" height="46"/>
-                                   Darwin Core <xsl:value-of select="$defType"/>
-                                   <span style="font-size:60%;color:#888;"> (<a href="/">index</a>)</span>
-                              </h2>
+                    <nav>
+                         <ul>
+                              <li><img src="/style/logo-gbif-white.svg" width="67" height="28"/></li>
+                              <li><a href="/">Repository of Schemas</a></li>
+                         </ul>
+                    </nav>
+                    <header>
+                         <img src="/style/logo-gbif.svg" width="115" height="46"/>
+                         <div>
+                              <h2>Darwin Core <xsl:value-of select="$defType"/></h2>
                               <h1><xsl:value-of select="@dc:title"/></h1>
                          </div>
-
+                    </header>
+                    <div class="container">
                          <div id="content">
                               <table class="nice">
                                    <tr>
