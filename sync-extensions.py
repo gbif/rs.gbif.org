@@ -199,7 +199,7 @@ def processUrls(fp, html, urls, env, rootElement):
       if not os.path.isdir(asisDir):
         os.makedirs(asisDir)
       a = open(asisFile, 'w')
-      a.write(ASIS_TEMPLATE.substitute(location=obj.url.replace("http://rs.gbif.org", "https://rs.gbif-uat.org"), contentType='text/xml'))
+      a.write(ASIS_TEMPLATE.substitute(location=obj.url.replace("http://rs.gbif.org", "https://rs.gbif.org"), contentType='text/xml'))
       a.close()
 
     # Write HTML extensions list
