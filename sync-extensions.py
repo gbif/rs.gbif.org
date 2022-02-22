@@ -206,7 +206,7 @@ def processUrls(fp, html, urls, env, rootElement):
     if (obj.isLatest and html):
       t = dict(
         identifier=obj.identifier,
-        url=obj.url,
+        url=obj.url.replace("http://rs.gbif", "https://rs.gbif"),
         title=obj.title,
         description=obj.description,
         name=obj.name,
