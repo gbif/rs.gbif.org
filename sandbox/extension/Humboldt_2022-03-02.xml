@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+    xmlns:hc="http://rs.tdwg.org/hc/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="Humboldt Inventory Event Extension"
+    name="HumboldtInventoryEventExtension"
+    namespace="http://rs.tdwg.org/hc/terms/"
+    rowType="http://rs.tdwg.org/hc/terms/HumboldtInventory"
+    dc:issued="2022-03-02"
+    dc:description="Extension to Event Core to capture inventory metadata."
+    dc:relation="https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv"
+    dc:subject="dwc:Event">
+    <property
+        name="samplingPerformedBy"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/samplingPerformedBy"
+        dc:description="A person, group, or organization responsible for recording the Event."
+        comments="The sampling Event could be at any level of hierarchy. In the case of a higher level Event (parent), include all the organizations or people involved in the child Events that contributed to the parent Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`North American Butterlfy Association`, `KK Wall`, `JJ Green`, `LL Pink and FF Grey | Aspen Center for Environmental Studies`"
+        type="string"
+        required="false"/>
+    <property
+        name="identifiedBy"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/identifiedBy"
+        dc:relation="https://dwc.tdwg.org/terms/#dwc:identifiedBy"
+        dc:description="A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject."
+        comments="Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`James L. Patton`, `Theodore Pappenfuss | Robert Macey`"
+        type="string"
+        required="false"/>
+    <property
+        name="identificationReferences"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/identificationReferences"
+        dc:relation="https://dwc.tdwg.org/terms/#dwc:identificationReferences"
+        dc:description="A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification."
+        comments="Recommended best practice is to separate the values in a list with space vertical bar space (` | `)."
+        examples="`Aves del Noroeste Patagonico. Christie et al. 2004.`, `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`"
+        type="string"
+        required="false"/>
+    <property
+        name="siteCount"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteCount"
+        dc:description="Total number of individual sites surveyed during the Event."
+        comments="Site refers to the location at which observations are made or samples/measurements are taken. The site could be at any level of hierarchy."
+        examples="`1`, `15`"
+        type="integer"
+        required="false"/>
+    <property
+        name="siteNestingDescription"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/siteNestingDescription"
+        dc:description="Textual description of the hierarchical sampling design."
+        comments="Site refers to the location at which observations are made or samples/measurements are taken. The site could be at any level of hierarchy."
+        examples="`5 sampling sites of 3-5 plots each`"
+        type="string"
+        required="false"/>
+    <property
+        name="verbatimSiteNames"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/verbatimSiteNames"
+        dc:description="A list (concatenated and separated) of original site names."
+        comments="Site refers to the location at which observations are made or samples/measurements are taken. The site could be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`East Coastal Fringe | St. Marks Wildlife Management Area`, `S1 | S2 | C1 | C2 | R14 | R22 | W1`"
+        type="string"
+        required="false"/>
+    <property
+        name="verbatimSiteDescriptions"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/verbatimSiteDescriptions"
+        dc:description="Original textual description of the site(s)."
+        comments="Site refers to the location at which observations are made or samples/measurements are taken. The site could be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`Wet flatwoods | Wet depression surrounded by mesic longleaf pine flatwoods | Ground cover of thick Andropogon spp., Sporobolus floridanus, Vaccinium spp, Rhynchospora spp., Centella erecta, Panicum rigidulum.`"
+        type="string"
+        required="false"/>
+    <property
+        name="geospatialScopeAreaInSquareKilometers"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers"
+        dc:description="Total area in km2 of the geospatial scope of the Event."
+        comments="Geospatial scope refers to the Event location reported using the dwc:Location class terms. This area is always greater than or equal to totalAreaSampledInSquareKilometers."
+        examples="`25`"
+        type="decimal"
+        required="false"/>
+    <property
+        name="totalAreaSampledInSquareKilometers"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers"
+        dc:description="Total area in km2 surveyed during the Event."
+        comments="This area is always less than or equal to geospatialScopeAreaInSquareKilometers."
+        examples="`0.8`"
+        type="decimal"
+        required="false"/>
+    <property
+        name="eventDuration"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/eventDuration"
+        dc:description="The length of the Event in the unit reported in hc:eventDurationUnit."
+        comments="Recommended best practice is to use a controlled vocabulary. An hc:eventDuration should have a corresponding hc:eventDurationUnit."
+        examples="`1`, `30`"
+        type="decimal"
+        required="false"/>
+    <property
+        name="eventDurationUnit"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/eventDurationUnit"
+        dc:description="The temporal unit used to report hc:eventDuration."
+        comments="An hc:eventDurationUnit should have a corresponding hc:eventDuration."
+        examples="`minutes`, `hours`, `days`, `months`, `years`"
+        type="string"
+        required="false"/>
+    <property
+        name="targetTaxonomicScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/targetTaxonomicScope"
+        dc:description="Taxonomic group(s) targeted for sampling during the Event."
+        comments="The Event could be at any level of hierarchy. In the case of a higher level Event (parent), include all taxonomic groups surveyed in the child Events that contributed to the parent Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`Aves`, `Aves | Mammalia`, `Procellariformes`"
+        type="string"
+        required="false"/>
+    <property
+        name="excludedTaxonomicScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedTaxonomicScope"
+        dc:description="Taxonomic group(s) explicitly excluded from sampling during the Event."
+        comments="The Event could be at any level of hierarchy. In the case of a higher level Event (parent) include all the taxonomic groups explicitly excluded from the child Events that contributed to the parent Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`nocturnal Aves`, `Quercus`"
+        type="string"
+        required="false"/>
+    <property
+        name="targetLifeStageScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/targetLifeStageScope"
+        dc:description="The targeted age class(es) or life stage(s) of the Organism(s) sampled during the Event."
+        comments="This term i   s defined based on the definition of the Darwin Core term lifeStage (http://rs.tdwg.org/dwc/terms/lifeStage). Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`larva`, `adult | juvenile`"
+        type="string"
+        required="false"/>
+    <property
+        name="excludedLifeStageScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedLifeStageScope"
+        dc:description="The explicitly excluded age class(es) or life stage(s) of the organism(s) sampled during the Event."
+        comments="This term is defined based on the definition of the Darwin Core term lifeStage (http://rs.tdwg.org/dwc/terms/lifeStage). Recommended best practice is to use a controlled vocabulary and to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`seedling`, `nestling | fledgling`"
+        type="string"
+        required="false"/>
+    <property
+        name="targetDegreeOfEstablishmentScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/targetDegreeOfEstablishmentScope"
+        dc:description="Degree(s) of establishment targeted for sampling during the Event."
+        comments="Recommended best practice is to use controlled value strings from the controlled vocabulary (http://rs.tdwg.org/dwcdoe/) for the Darwin Core term degreeOfEstablishment. For details, refer to https://doi.org/10.3897/biss.3.38084. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`native`, `invasive | widespreadInvasive`"
+        type="string"
+        required="false"/>
+    <property
+        name="excludedDegreeOfEstablishmentScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedDegreeOfEstablishmentScope"
+        dc:description="Degree(s) of establishment explicitly excluded from sampling during the Event."
+        comments="Recommended best practice is to use controlled value strings from the controlled vocabulary (http://rs.tdwg.org/dwcdoe/) for the Darwin Core term degreeOfEstablishment. For details, refer to https://doi.org/10.3897/biss.3.38084. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`native`, `invasive | widespreadInvasive`"
+        type="string"
+        required="false"/>
+    <property
+        name="targetGrowthFormScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/targetGrowthFormScope"
+        dc:description="Targeted growth form(s) or habit(s) of the Organism(s) sampled during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`tree`, `shrub | sub-shrub`"
+        type="string"
+        required="false"/>
+    <property
+        name="excludedGrowthFormScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedGrowthFormScope"
+        dc:description="Explicitly excluded growth form(s) or habit(s) of the Organism(s) sampled during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`tree`, `shrub | sub-shrub`"
+        type="string"
+        required="false"/>
+    <property
+        name="habitatScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/habitatScope"
+        dc:description="Targeted habitat(s) sampled during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | )."
+        examples="`dunes`, `pine forest`, `riparian`, `scrub | grassland`"
+        type="string"
+        required="false"/>
+    <property
+        name="excludedHabitatScope"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/excludedHabitatScope"
+        dc:description="Explicitly excluded habitat(s) sampled during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`wet flatwoods`, `swamp | estuary`"
+        type="string"
+        required="false"/>
+    <property
+        name="reportedWeather"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/reportedWeather"
+        dc:description="A list of weather or climatic conditions present at the time of the Event."
+        comments="Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON."
+        examples="`{'minimumTemperatureInDegreesFarenheit':18, 'maximumTemperatureInDegreesFarenheit':32, 'stillWaterCondition':'Partly Frozen'}`"
+        type="string"
+        required="false"/>
+    <property
+        name="reportedExtremeConditions"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/reportedExtremeConditions"
+        dc:description="A description of any extreme weather or environmental condition(s) that may have affected the Event."
+        comments=""
+        examples="`flooding during week 3 of surveys`, `rockslide at site 2`"
+        type="string"
+        required="false"/>
+    <property
+        name="inventoryTypes"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/inventoryTypes"
+        dc:description="The type(s) of search process(es) used to conduct the inventory."
+        comments="This term is only relevant if the Event represents an inventory. Recommended best practice is to use a controlled vocabulary such as the terms included under the Biological Collections Ontology superclass 'taxonomic inventory process' (http://purl.obolibrary.org/obo/BCO_0000047). Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`restricted search`, `open search`, `opportunistic search`, `adventitious`, `compilation`, `open search | opportunistic search`"
+        type="string"
+        required="false"/>
+    <property
+        name="compilationType"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/compilationType"
+        dc:description="A statement specifying whether data reported are derived from sampling event(s), ancillary data compiled from other sources, or a combination of both."
+        comments="This term is only relevant if the Event is an inventory. Recommended best practice is to use a controlled vocabulary."
+        examples="`surveyOnly`, `compilationIncludingSurveys`, `compilationNotIncludingSurveys`"
+        type="string"
+        required="false"/>
+    <property
+        name="compilationSourceTypes"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/compilationSourceTypes"
+        dc:description="The type(s) of data sources contributing to the compilation reported."
+        comments="This term is only relevant if the Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`museum specimens`, `literature`, `expert knowledge | local knowledge`"
+        type="string"
+        required="false"/>
+    <property
+        name="protocolNames"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/protocolNames"
+        dc:description="Categorical descriptive name(s) for the method(s) used during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`boxTrapping`, `floraInventory`, `boxTrapping | funnelTrapping`"
+        type="string"
+        required="false"/>
+    <property
+        name="protocolDescription"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/protocolDescription"
+        dc:description="A detailed description of the method(s) used during the Event."
+        comments="This description should be associated with reporting of protocolNames. This may include deviations from the published protocol referred to in protocolReferences. Good practices may include instruments used, calibration, etc."
+        examples="`Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status."
+        type="string"
+        required="false"/>
+    <property
+        name="protocolReferences"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/protocolReferences"
+        dc:description="The reference(s) to the method(s) used during the Event."
+        comments="Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`Penguins from space: faecal stains reveal the location of emperor penguin colonies, https://doi.org/10.1111/j.1466-8238.2009.00467.x`"
+        type="string"
+        required="false"/>
+    <property
+        name="isAbundanceReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbundanceReported"
+        dc:description="A statement about whether the number of Organisms collected or observed is reported."
+        comments="If the Event is a compilation that contains at least one reported abundance, the value should be 'true'. Typically abundance values reported would be associated with related occurrences, either under the term dwc:individualCount or the combination of terms dwc:organismQuantity and dwc:organismQuantityType."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="isAbundanceCapReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbundanceCapReported"
+        dc:description="A statement about whether a maximum number of Organisms is reported, as specified or restricted by the protocol used."
+        comments="If the Event is a compilation that contains at least one reported abundance capped, the value should be 'true'. Values of abundance cap should be captured under the term hc:abundanceCap."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="abundanceCap"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/abundanceCap"
+        dc:description="Maximum number of Organisms reported."
+        comments="If the Event is a compilation that contains at least one reported abundance capped, the value should be the maximum abundance cap among the ones reported."
+        examples="`300`,`700`"
+        type="integer"
+        required="false"/>
+    <property
+        name="isVegetationCoverReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isVegetationCoverReported"
+        dc:description="A statement about whether a vegetation cover metric is reported."
+        comments="If the Event is a compilation that contains at least one reported vegetation cover metric, the value should be 'true'. Typically values or descriptions of vegetation cover would be captured under the term hc:verbatimSiteDescriptions."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="isAbsenceReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isAbsenceReported"
+        dc:description="A statement about whether taxonomic absences are reported."
+        comments="If the Event is a compilation that contains at least one reported taxonomic absence, the value should be 'true'. Absences could be reported at any taxonomic level."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="absentTaxa"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/absentTaxa"
+        dc:description="A list (concatenated and separated) of taxa reported absent during the Event."
+        comments="Absences could be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`Parabuteo unicinctus | Geranoaetus melanoleucus`, `Cetoniinae | Aclopinae | Cyclocephala modesta`"
+        type="string"
+        required="false"/>
+    <property
+        name="hasVouchers"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/hasVouchers"
+        dc:description="A statement about whether specimen voucher(s) were collected during Event."
+        comments="If the Event is a compilation that contains at least one specimen voucher collected, the value should be 'true'."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="voucherInstitutions"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/voucherInstitutions"
+        dc:description="A list (concatenated and separated) of the name(s) or acronym(s) of the institution(s) where voucher(s) collected during the Event were deposited."
+        comments="Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`FMNH`, `AMNH | MVZ`, `Nairobi National Museum`"
+        type="string"
+        required="false"/>
+    <property
+        name="hasMaterialSamples"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/hasMaterialSamples"
+        dc:description="A statement about whether MaterialSample(s) were collected during the Event."
+        comments="If the Event is a compilation that contains at least one MaterialSample, the value should be 'true'."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="materialSampleTypes"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/materialSampleTypes"
+        dc:description="A list (concatenated and separated) of MaterialSample type(s) collected during the Event."
+        comments="Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | )."
+        examples="`whole organism`, `skeleton`, `tissue | blood | fecal | stomach content`"
+        type="string"
+        required="false"/>
+    <property
+        name="isSamplingEffortReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/isSamplingEffortReported"
+        dc:description="A statement about whether sampling effort associated with the Event is reported."
+        comments="If the Event is a compilation that contains at least one sampling effort reported, the value should be 'true'. Typically values of effort would be captured under the terms hc:samplingEffortValue and hc:samplingEffortUnit."
+        examples="`true`, `false`"
+        type="string"
+        required="false"/>
+    <property
+        name="samplingEffortProtocol"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/samplingEffortProtocol"
+        dc:description="A description of or reference to (publication or URL) the method(s) used to determine the sampling effort."
+        comments="This description should be associated with reporting of hc:samplingEffortValue and hc:samplingEffortUnit. This is a specialisation of hc:protocolDescritption focused on the effort as distinct from the survey method itself. The effort relates to the intensity of sampling and therefore can assist in interpreting measures of completeness."
+        examples="`40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period`, `2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours`, `A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way`"
+        type="string"
+        required="false"/>
+    <property
+        name="samplingEffortValue"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/samplingEffortValue"
+        dc:description="The numeric value of sampling effort expended during the Event in the unit reported in hc:samplingEffortUnit."
+        comments="This term is meant to capture the total sampling effort value, to express details use hc:samplingEffortProtocol. For compilations it is recommend not to infer effort."
+        examples="`1900`, `40`, `5.5`"
+        type="string"
+        required="false"/>
+    <property
+        name="samplingEffortUnit"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/samplingEffortUnit"
+        dc:description="The unit used to report hc:samplingEffortValue."
+        comments="Recommended best practice is to use a controlled vocabulary. hc:samplingEffortUnit should always be used in conjunction with hc:samplingEffortValue."
+        examples="`trap hours`, `person hours`, `trap days`"
+        type="string"
+        required="false"/>
+    <property
+        name="taxonCompletenessReported"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/taxonCompletenessReported"
+        dc:description="Statement about whether, given the hc:targetTaxonomicScope, the Event yielded a complete list of the expected taxa."
+        comments="Recommended best practice is to use a controlled vocabulary. For compilations it is recommended not to infer completeness."
+        examples="`notReported`, `reportedComplete`, `reportedIncomplete`"
+        type="string"
+        required="false"/>
+    <property
+        name="taxonCompletenessProtocols"
+        namespace="http://rs.tdwg.org/hc/terms/"
+        qualName="http://rs.tdwg.org/hc/terms/taxonCompletenessProtocols"
+        dc:description="A description of or reference to (publication, URL) the method(s) used to determined hc:taxonCompletenessReported."
+        comments="This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
+        examples="`Census | Based on sampling effort`,  `Based on species accumulation curves`"
+        type="string"
+        required="false"/>
+</extension>
