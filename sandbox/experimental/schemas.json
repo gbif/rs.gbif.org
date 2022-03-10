@@ -1,0 +1,38 @@
+{
+  "schemas": [
+    {
+      "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
+      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1",
+      "subSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/deployments.json",
+          "title": "Camera trap: deployments",
+          "description": "Camera trap: deployments schema",
+          "issued": "2022-03-10",
+          "isLatest": true
+        },
+        {
+          "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/media.json",
+          "title": "Camera trap: media",
+          "description": "Camera trap: media schema",
+          "issued": "2022-03-10",
+          "isLatest": true
+        },
+        {
+          "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/observations.json",
+          "title": "Camera trap: observations",
+          "description": "Camera trap: observations schema",
+          "issued": "2022-03-10",
+          "isLatest": true
+        }
+      ],
+      "title": "Camera trap",
+      "description": "Camera trap schema",
+      "issued": "2022-03-10",
+      "isLatest": true
+    }
+  ]
+}
