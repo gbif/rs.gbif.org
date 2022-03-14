@@ -3,6 +3,7 @@
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
       "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1",
+      "version": "0.1",
       "subSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
