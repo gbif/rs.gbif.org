@@ -119,7 +119,7 @@
           "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/vernacular-name.json",
           "title": "Catalogue of Life Data Package: vernacular-name",
           "description": "Catalogue of Life Data Package: vernacular-name schema"
-        },
+        }
       ],
       "title": "Catalogue of Life Data Package",
       "description": "Catalogue of Life Data Package schema",
