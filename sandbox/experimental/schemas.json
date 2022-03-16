@@ -28,17 +28,6 @@
       "title": "Camera trap",
       "description": "Camera trap schema",
       "issued": "2022-03-10",
-      "isLatest": false
-    },
-    {
-      "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1",
-      "name": "camtrap-dp",
-      "version": "0.2",
-      "subSchemas": [],
-      "title": "Camera trap",
-      "description": "Camera trap schema",
-      "issued": "2022-03-16",
       "isLatest": true
     },
      {
