@@ -61,10 +61,10 @@
           "description": "Catalogue of Life Data Package: name schema"
         },
         {
-          "identifier": "http://rs.gbif.org/schemas/col-dp/name-relation",
-          "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/name-relation.json",
-          "title": "Catalogue of Life Data Package: name-relation",
-          "description": "Catalogue of Life Data Package: name-relation schema"
+          "identifier": "http://rs.gbif.org/schemas/col-dp/names-relation",
+          "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/names-relation.json",
+          "title": "Catalogue of Life Data Package: names-relation",
+          "description": "Catalogue of Life Data Package: names-relation schema"
         },
         {
           "identifier": "http://rs.gbif.org/schemas/col-dp/reference",
