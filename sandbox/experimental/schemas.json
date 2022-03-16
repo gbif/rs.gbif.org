@@ -11,29 +11,41 @@
           "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/deployments.json",
           "title": "Camera trap: deployments",
           "description": "Camera trap: deployments schema",
-          "issued": "2022-03-10",
-          "isLatest": true
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
           "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/media.json",
           "title": "Camera trap: media",
           "description": "Camera trap: media schema",
-          "issued": "2022-03-10",
-          "isLatest": true
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
           "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/observations.json",
           "title": "Camera trap: observations",
           "description": "Camera trap: observations schema",
-          "issued": "2022-03-10",
-          "isLatest": true
         }
       ],
       "title": "Camera trap",
       "description": "Camera trap schema",
       "issued": "2022-03-10",
+      "isLatest": true
+    },
+     {
+      "identifier": "http://rs.gbif.org/schemas/col-dp",
+      "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0",
+      "name": "col-dp",
+      "version": "1.0",
+      "subSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/schemas/col-dp/distribution",
+          "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/distribution.json",
+          "title": "Catalogue of Life Data Package: distribution",
+          "description": "Catalogue of Life Data Package: distribution schema"
+        }
+      ],
+      "title": "Catalogue of Life Data Package",
+      "description": "Catalogue of Life Data Package schema",
+      "issued": "2022-03-16",
       "isLatest": true
     }
   ]
