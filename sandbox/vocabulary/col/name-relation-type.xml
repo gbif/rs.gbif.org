@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+
+<thesaurus
+    xmlns="http://rs.gbif.org/thesaurus/" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/" 
+	  xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
+    dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type" 
+	  dc:description="The kind of directed nomenclatural name relation. This controlled vocabulary is the same as used in ColDP. These are the allowable terms in the 'type' attribute of TaxonRelationshipAssertion in RCS." 
+	  dc:title="Name Relationship Types"
+    dc:issued="2022-08-08"
+    dc:relation="https://api.checklistbank.org/vocab/nomreltype"
+    >
+  
+  <concept dc:identifier="spelling-correction"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#spelling-correction"
+           dc:description="The name is a spelling correction, called emendation in zoology, of the related name having the same type. Intentional changes in the original spelling of an available name, whether justified or unjustified. The binomial authority remains unchanged. Valid emendations include changes made to correct:  a) typographical errors in the original work describing the species,  b) errors in transliteration from non-Latin languages,  c) names that included diacritics, hyphens  d) endings of species to match the gender of the generic name, particularly when the combination has been changed\nFor example, Hieronima and Hyeronima are orthographical variants of Hieronyma. One of the spellings must be treated as the correct one. In this case, the spelling Hieronyma has been conserved and is to be used as the correct spelling.\nBotany (Article 61).: An inadvertent use of one of the other spellings has no consequences: the name is to be treated as if it were correctly spelled.\nZoology (Art. 32-33 ): Orthographical variants in the formal sense do not exist; a misspelling or orthographic error is treated as a lapsus, a form of inadvertent error. The first reviser is allowed to choose one variant for mandatory further use, but in other ways, these errors generally have no further formal standing.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="spelling correction" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="basionym"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#basionym"
+           dc:description="The name has a basionym and therefore is either a recombination (combinatio nova, comb. nov.) of the name pointed to (and the name pointed to is not, itself, a recombination), or a change in rank (status novus, stat. nov.).">
+    <preferred>
+      <term dc:source="COLDP" dc:title="basionym" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="based-on"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#based-on"
+           dc:description="The name is the validation of a name that was not fully published before. Covers the use of ex in botanical author strings. \nICN Art. 46.4: e.g. if this name object represents G. tomentosum Nutt. ex Seem. then the related name should be G. tomentosum Nutt.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="based on" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="replacement-name"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#replacement-name"
+           dc:description="The name is a replacement for the homotypic related name. Also called 'Nomen Novum' or 'avowed substitute'. In zoology this is called a new replacement name or new substitute name and is easily confused with just replacement name. ICN: Article 7.3. ICZN: Article 60.3, 67.8, 72.7">
+    <preferred>
+      <term dc:source="COLDP" dc:title="replacement name" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="conserved"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#conserved"
+           dc:description="The name or spelling is conserved / protected against the related name or the related name is suppressed / rejected in favor of the current name.\nA spelling which has been conserved relates two homotypic names, otherwise the related names should be based on different types.\nBased on an individual publication but more often due to actions of the ICZN or ICBN exercising its Plenary Powers.\nICN: Conservation is covered under Article 14 and Appendix II and Appendix III (this name is nomina conservanda).\nICZN: Reversal of precedence under Article 23.9 (this name is nomen protectum and the target name is nomen oblitum)\nor suppression via plenary power Article 81.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="conserved" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="later-homonym"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#later-homonym"
+           dc:description="The name has the same spelling as the related name but was published later and has priority over it (unless conserved or sanctioned) and is based on a different type. Called a junior homonym in zoology.\nThis includes botanical parahomonyms which differ slightly in spelling but are similar enough that they are likely to be confused (Art 53.3). The zoological code has a set of spelling variations (article 58) that are considered to be identical.\nWhen acts of conservation or suppression have occurred then the terms 'Conserved Later Homonym' and 'Rejected Earlier Homonym' should be used.\nTwo identical and homotypic names (isonyms) should be indicated with the superfluous relation type.\nICN: Article 53\nICZN: Chapter 12, Article 52.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="later homonym" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="superfluous"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#superfluous"
+           dc:description="This name was superfluous at its time of publication, i. e. it was based on the same type as the related, previously published name (ICN article 52). The superfluous name is available but illegitimate.\nIncludes the special case of isonyms which are identical names. Zoology: unnecessary substitute name">
+    <preferred>
+      <term dc:source="COLDP" dc:title="superfluous" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="homotypic"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#homotypic"
+           dc:description="A relation indicating two homotypic names, i.e. objective or nomenclatural synonymy, but not further specifying why.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="homotypic" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+  <concept dc:identifier="type"
+           dc:URI="http://rs.gbif.org/sandbox/terms/col/name-relation-type#type"
+           dc:description="This name is the type name (species/genus) for the related higher ranked name. The name should be the original combination, i.e. basionym, if subsequent recombinations exist.">
+    <preferred>
+      <term dc:source="COLDP" dc:title="type" xml:lang="en"/>
+    </preferred>
+  </concept>
+
+</thesaurus>

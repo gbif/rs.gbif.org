@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    dc:title="COL Name Relation Extension"
+    name="ColNameRelation"
+    namespace="http://rs.catalogueoflife.org/terms/dwc/"
+    rowType="http://rs.tdwg.org/hc/terms/HumboldtInventory"
+    dc:issued="2022-08-08"
+    dc:description="Extension to Taxon Core to capture (nomenclatural) name relations as found in ColDP. This extension is an adaptation of the col:NameRelation entity to Darwin Core Taxon records."
+    dc:relation="https://github.com/CatalogueOfLife/coldp/blob/master/README.md#namerelation"
+    dc:subject="dwc:Taxon">
+    <property
+        name="relatedNameUsageID"
+        namespace="http://rs.catalogueoflife.org/terms/dwc/"
+        qualName="http://rs.catalogueoflife.org/terms/dwc/relatedNameUsageID"
+        dc:description="The object name usage this relation relates to. Refers to an existing TaxonID within the dataset."
+        comments=""
+        examples=""
+        type="string"
+        required="true"/>
+    <property
+        name="relationType"
+        namespace="http://rs.catalogueoflife.org/terms/dwc/"
+        qualName="http://rs.catalogueoflife.org/terms/dwc/relationType"
+        dc:description="The kind of directed nomenclatural relation."
+        comments=""
+        examples=""
+        type="string"
+        thesaurus="http://rs.gbif.org/sandbox/vocabulary/col/name-relation-type.xml"
+        required="true"/>
+    <property
+        name="relationPublishedIn"
+        namespace="http://rs.catalogueoflife.org/terms/dwc/"
+        qualName="http://rs.catalogueoflife.org/terms/dwc/relationPublishedIn"
+        dc:description="The reference or nomenclatural act where this nomenclatural relation was established."
+        comments="This is the full citation string of the reference"
+        examples=""
+        type="string"
+        required="false"/>
+    <property
+        name="relationPublishedInID"
+        namespace="http://rs.catalogueoflife.org/terms/dwc/"
+        qualName="http://rs.catalogueoflife.org/terms/dwc/relationPublishedInID"
+        dc:description="An identifier for the reference or nomenclatural act where this nomenclatural relation was established."
+        comments="A DOI or other identifier for the same reference as given in relationPublishedIn"
+        examples=""
+        type="string"
+        required="false"/>
+    <property
+        name="relationRemarks"
+        namespace="http://rs.catalogueoflife.org/terms/dwc/"
+        qualName="http://rs.catalogueoflife.org/terms/dwc/relationRemarks"
+        dc:description="Remarks about the name relation."
+        comments=""
+        examples=""
+        type="string"
+        required="false"/>
+
+</extension>
