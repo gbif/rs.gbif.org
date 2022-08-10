@@ -19,6 +19,10 @@
     <preferred>
       <term dc:source="COLDP" dc:title="spelling correction" xml:lang="en"/>
     </preferred>
+    <alternative>
+       <term dc:source="ICN" dc:title="correction" xml:lang="en"/>
+       <term dc:source="ICZN" dc:title="emendation" xml:lang="en"/>
+    </alternative>
   </concept>
 
   <concept dc:identifier="basionym"
@@ -27,6 +31,10 @@
     <preferred>
       <term dc:source="COLDP" dc:title="basionym" xml:lang="en"/>
     </preferred>
+    <alternative>
+       <term dc:source="DwC" dc:title="original name" xml:lang="en"/>
+       <term dc:source="ICZN" dc:title="protonym" xml:lang="en"/>
+    </alternative>
   </concept>
 
   <concept dc:identifier="based-on"
@@ -43,6 +51,11 @@
     <preferred>
       <term dc:source="COLDP" dc:title="replacement name" xml:lang="en"/>
     </preferred>
+    <alternative>
+       <term dc:source="" dc:title="Nomen Novum" xml:lang="en"/>
+       <term dc:source="" dc:title="avowed substitute" xml:lang="en"/>
+       <term dc:source="" dc:title="substitute name" xml:lang="en"/>
+    </alternative>
   </concept>
 
   <concept dc:identifier="conserved"
@@ -51,6 +64,10 @@
     <preferred>
       <term dc:source="COLDP" dc:title="conserved" xml:lang="en"/>
     </preferred>
+    <alternative>
+       <term dc:source="ICN" dc:title="sanctioned" xml:lang="en"/>
+       <term dc:source="ICZN" dc:title="protected" xml:lang="en"/>
+    </alternative>
   </concept>
 
   <concept dc:identifier="later-homonym"
@@ -59,6 +76,9 @@
     <preferred>
       <term dc:source="COLDP" dc:title="later homonym" xml:lang="en"/>
     </preferred>
+    <alternative>
+       <term dc:source="ICZN" dc:title="junior homonym" xml:lang="en"/>
+    </alternative>
   </concept>
 
   <concept dc:identifier="superfluous"
