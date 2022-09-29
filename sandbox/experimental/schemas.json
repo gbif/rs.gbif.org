@@ -26,7 +26,7 @@
         }
       ],
       "title": "Camera trap",
-      "description": "Camera trap schema",
+      "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
       "issued": "2022-03-10",
       "isLatest": true
     },
