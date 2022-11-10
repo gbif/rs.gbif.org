@@ -2,35 +2,35 @@
   "schemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1",
+      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.4",
       "name": "camtrap-dp",
-      "version": "0.1",
+      "version": "0.4",
       "subSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/deployments.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.4/deployments.json",
           "title": "Camera trap: deployments",
           "description": "Camera trap: deployments schema"
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/media.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.4/media.json",
           "title": "Camera trap: media",
           "description": "Camera trap: media schema"
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.1/observations.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.4/observations.json",
           "title": "Camera trap: observations",
           "description": "Camera trap: observations schema"
         }
       ],
       "title": "Camera trap",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
-      "issued": "2022-03-10",
+      "issued": "2022-10-04",
       "isLatest": true
     },
-     {
+    {
       "identifier": "http://rs.gbif.org/schemas/col-dp",
       "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0",
       "name": "col-dp",
