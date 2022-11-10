@@ -1,0 +1,156 @@
+{
+  "name": "media",
+  "title": "Media",
+  "description": "Table with media files (images/videos) captured by the camera traps. Associated with deployments (`deploymentID`) and organized in sequences (`sequenceID`). Includes timestamp and file path.",
+  "fields": [
+    {
+      "name": "mediaID",
+      "type": "string",
+      "format": "default",
+      "description": "Unique (within the package) identifier of the media file.",
+      "example": "m1",
+      "skos:broadMatch": "http://purl.org/dc/terms/identifier",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "deploymentID",
+      "type": "string",
+      "format": "default",
+      "description": "Unique identifier of the deployment the media file belongs to. Foreign key to `deployments.deploymentID`.",
+      "example": "dep1",
+      "skos:broadMatch": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sequenceID",
+      "type": "string",
+      "format": "default",
+      "description": "Unique (within the package) identifier of the sequence the media file belongs to. Sequences contain one or more media files (e.g. a single image or video or a sequence of successive images or videos) and are defined by `package.project.sequenceInterval`.",
+      "example": "seq1",
+      "skos:broadMatch": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "captureMethod",
+      "type": "string",
+      "format": "default",
+      "description": "Method used to capture the media file.",
+      "example": "motion detection",
+      "skos:broadMatch": "http://rs.tdwg.org/ac/terms/resourceCreationTechnique",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "motion detection",
+          "time lapse"
+        ]
+      }
+    },
+    {
+      "name": "timestamp",
+      "type": "datetime",
+      "format": "%Y-%m-%dT%H:%M:%S%z",
+      "description": "Date and time when the media file was recorded, as an ISO 8601 formatted string with timezone designator (`YYYY-MM-DDThh:mm:ssZ` or `YYYY-MM-DDThh:mm:ss±hh:mm`).",
+      "example": "2020-03-24T11:21:46Z",
+      "skos:exactMatch": "http://ns.adobe.com/xap/1.0/CreateDate",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "filePath",
+      "type": "string",
+      "format": "default",
+      "description": "URL or relative path to the media file, respectively for externally hosted files or files that are part of the package.",
+      "example": "https://multimedia.agouti.eu/assets/6d65f3e4-4770-407b-b2bf-878983bf9872/file",
+      "skos:broadMatch": "http://rs.tdwg.org/ac/terms/accessURI",
+      "constraints": {
+        "required": true,
+        "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$"
+      }
+    },
+    {
+      "name": "fileName",
+      "type": "string",
+      "format": "default",
+      "description": "Name of the media file. If provided, one should be able to sort media chronologically within a deployment on `timestamp` (first) and `fileName` (second).",
+      "example": "IMG0001.jpg",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "fileMediatype",
+      "type": "string",
+      "format": "default",
+      "description": "Mediatype of the file.",
+      "example": "image/jpeg",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "exifData",
+      "type": "object",
+      "format": "default",
+      "description": "EXIF data of the file, as a valid JSON object.",
+      "example": "{\"EXIF\":{\"ISO\":200,\"Make\":\"RECONYX\"}}",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "favourite",
+      "type": "boolean",
+      "format": "default",
+      "description": "`true` if media file is deemed of interest, e.g. an exemplar photo of an individual.",
+      "example": "true",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "comments",
+      "type": "string",
+      "format": "default",
+      "description": "Comments or notes about the media file.",
+      "example": "corrupted file",
+      "skos:exactMatch": "http://rs.tdwg.org/ac/terms/comments",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "_id",
+      "type": "string",
+      "format": "default",
+      "description": "Unique identifier of the media file as assigned by the data management system.",
+      "example": "",
+      "skos:exactMatch": "http://rs.tdwg.org/ac/terms/providerManagedID",
+      "constraints": {
+        "required": false
+      }
+    }
+  ],
+  "missingValues": [
+    "",
+    "NaN",
+    "nan"
+  ],
+  "primaryKey": "mediaID",
+  "foreignKeys": [
+    {
+      "fields": "deploymentID",
+      "reference": {
+        "resource": "deployments",
+        "fields": "deploymentID"
+      }
+    }
+  ]
+}

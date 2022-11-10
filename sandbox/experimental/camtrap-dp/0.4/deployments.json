@@ -1,0 +1,310 @@
+{
+  "name": "deployments",
+  "title": "Deployments",
+  "description": "Table with camera trap deployments. Includes `deploymentID`, start, end, location and camera setup information.",
+  "fields": [
+    {
+      "name": "deploymentID",
+      "description": "Unique (within the package) identifier of the deployment.",
+      "type": "string",
+      "format": "default",
+      "example": "dep1",
+      "skos:broadMatch": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "locationID",
+      "description": "Unique (within the package) identifier of the sampling location for the deployment.",
+      "type": "string",
+      "format": "default",
+      "example": "loc1",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/locationID",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "locationName",
+      "type": "string",
+      "format": "default",
+      "description": "Name given to the sampling location.",
+      "example": "Białowieża MRI 01",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/locality",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "longitude",
+      "type": "number",
+      "format": "default",
+      "description": "Longitude of the sampling location in decimal degrees, using the WGS84 datum.",
+      "example": "23.84995",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/decimalLongitude",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "latitude",
+      "type": "number",
+      "format": "default",
+      "description": "Latitude of the sampling location in decimal degrees, using the WGS84 datum.",
+      "example": "52.70442",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/decimalLatitude",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "coordinateUncertainty",
+      "type": "integer",
+      "format": "default",
+      "description": "Horizontal distance in meters from the given `latitude` and `longitude` describing the smallest circle containing the location of the camera trap. Especially relevant when coordinates are rounded to protect sensitive species.",
+      "example": "100",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters",
+      "constraints": {
+        "required": false,
+        "minimum": 1
+      }
+    },
+    {
+      "name": "start",
+      "type": "datetime",
+      "format": "%Y-%m-%dT%H:%M:%S%z",
+      "description": "Date and time when the deployment started, as an ISO 8601 formatted string with timezone designator (`YYYY-MM-DDThh:mm:ssZ` or `YYYY-MM-DDThh:mm:ss±hh:mm`).",
+      "example": "2020-03-01T22:00:00Z",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/eventDate",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "end",
+      "type": "datetime",
+      "format": "%Y-%m-%dT%H:%M:%S%z",
+      "description": "Date and time when the deployment ended, as an ISO 8601 formatted string with timezone designator (`YYYY-MM-DDThh:mm:ssZ` or `YYYY-MM-DDThh:mm:ss±hh:mm`).",
+      "example": "2020-04-01T22:00:00Z",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/eventDate",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "setupBy",
+      "type": "string",
+      "format": "default",
+      "description": "Name or unique (within the package) identifier of the person who set up the camera for the deployment.",
+      "example": "Jakub Bubnicki",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cameraID",
+      "type": "string",
+      "format": "default",
+      "description": "Unique (within the package) identifier of the camera used for the deployment (e.g. the camera device serial number).",
+      "example": "P800HG08192031",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cameraModel",
+      "type": "string",
+      "format": "default",
+      "description": "Manufacturer and model of the camera provided in the format `manufacturer-model`.",
+      "example": "Reconyx-PC800",
+      "skos:broadMatch": "http://rs.tdwg.org/ac/terms/captureDevice",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cameraInterval",
+      "type": "integer",
+      "description": "Time specified between shutter triggers when activity in the sensor will not trigger the shutter. Expressed in seconds.",
+      "example": "120",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cameraHeight",
+      "type": "number",
+      "description": "Height at which the camera was deployed. Expressed in meters.",
+      "example": "1.2",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cameraTilt",
+      "type": "integer",
+      "format": "default",
+      "description": "Angle at which the camera was deployed in the vertical plane. Expressed in degrees, with -90 facing down, 0 horizontal and 90 facing up.",
+      "example": "-90",
+      "constraints": {
+        "required": false,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "cameraHeading",
+      "type": "integer",
+      "format": "default",
+      "description": "Angle at which the camera was deployed in the horizontal plane. Expressed in decimal degrees clockwise from north, with values ranging from 0 to 360: 0 = north, 90 = east, 180 = south, 270 = west.",
+      "example": "225",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 360
+      }
+    },
+    {
+      "name": "detectionDistance",
+      "type": "number",
+      "format": "default",
+      "description": "Furthest distance at which the camera detected a human during setup.",
+      "example": "9.5",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "timestampIssues",
+      "type": "boolean",
+      "description": "`true` if timestamps in the `media` and `observations` resources for that deployment are known to have (unsolvable) issues (e.g. unknown timezone, am/pm switch).",
+      "example": "false",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "baitUse",
+      "type": "string",
+      "format": "default",
+      "description": "Type of bait (if any) that was used for the deployment. If other, more info can be provided in `comments`.",
+      "example": "food",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "none",
+          "scent",
+          "food",
+          "visual",
+          "acoustic",
+          "other"
+        ]
+      }
+    },
+    {
+      "name": "session",
+      "type": "string",
+      "format": "default",
+      "description": "Temporal deployment group. Common sessions are seasons (wet and dry), months, years or other logical groupings when sampling occurred. For groupings without context, use `tags`.",
+      "example": "winter 2020",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "array",
+      "type": "string",
+      "format": "default",
+      "description": "Spatial deployment group. Common arrays are grids, arrays, clusters or other logical groupings where sampling occurred. For groupings without context, use `tags`.",
+      "example": "grid A1",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "featureType",
+      "type": "string",
+      "format": "default",
+      "description": "Type of feature (if any) that camera deployment is associated with. If other, more info can be provided in `comments`.",
+      "example": "culvert",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "none",
+          "road paved",
+          "road dirt",
+          "trail hiking",
+          "trail game",
+          "road underpass",
+          "road overpass",
+          "road bridge",
+          "culvert",
+          "burrow",
+          "nest site",
+          "carcass",
+          "water source",
+          "fruiting tree",
+          "other"
+        ]
+      }
+    },
+    {
+      "name": "habitat",
+      "type": "string",
+      "format": "default",
+      "description": "Short characterization of the habitat.",
+      "example": "Mixed temperate low-land forest",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/habitat",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "format": "default",
+      "description": "User defined tags associated with the deployment, as a pipe (`|`) separated list.",
+      "example": "Outside NP | Forest edge",
+      "skos:narrowMatch": "http://rs.tdwg.org/ac/terms/tag",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "comments",
+      "type": "string",
+      "format": "default",
+      "description": "Comments or notes about the deployment.",
+      "example": "",
+      "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/eventRemarks",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "_id",
+      "type": "string",
+      "format": "default",
+      "description": "Unique identifier of the deployment as assigned by the data management system.",
+      "example": "",
+      "constraints": {
+        "required": false
+      }
+    }
+  ],
+  "missingValues": [
+    "",
+    "NaN",
+    "nan"
+  ],
+  "primaryKey": "deploymentID"
+}
