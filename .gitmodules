@@ -13,3 +13,6 @@
 [submodule "eml-profile-1.1"]
 	path = schema/eml-gbif-profile/1.1
 	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.2"]
+	path = schema/eml-gbif-profile/1.2
+	url = https://github.com/gbif/eml-profile.git
