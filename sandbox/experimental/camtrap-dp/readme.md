@@ -1,7 +1,6 @@
-## Camera Trap
+## Camera Trap Data Package (Camtrap DP)
 
-The camera trap schemas are copied from https://github.com/tdwg/camtrap-dp/tree/main.
-
+The camera trap schemas are copied from releases of https://github.com/tdwg/camtrap-dp/releases. The files are renamed from `<table>-table-schema.json` to `<table>.json`.
 
 Versions:
 
