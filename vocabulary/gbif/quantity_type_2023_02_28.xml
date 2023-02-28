@@ -170,6 +170,7 @@
     sample is recorded as the number of DNA sequence reads of the sequence representing the species">
     <preferred>
       <term dc:source="" dc:title="DNA sequence reads" xml:lang="en"/>
+      <term dc:source="" dc:title="lecturas de secuencias de ADN" xml:lang="es"/>
     </preferred>
     <alternative>
     </alternative>
