@@ -31,6 +31,12 @@
           "description": "Camera trap: media observations schema"
         }
       ],
+      "subSchemaRequirements": [
+        {
+          "required": ["deployments", "media"],
+          "anyOf": ["media-observations", "event-observations"]
+        }
+      ],
       "title": "Camera trap",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
       "issued": "2023-02-24",
