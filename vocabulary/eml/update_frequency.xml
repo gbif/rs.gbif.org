@@ -138,19 +138,6 @@
     <alternative>
     </alternative>
   </concept>
-  <concept dc:identifier="unknown" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/unknown"
-    dc:relation=""
-    dc:description="Further updates may still happen, but it is not known for sure.">
-    <preferred>
-      <term dc:title="Unknown" xml:lang="en"/>
-      <term dc:title="Desconocido" xml:lang="es"/>
-      <term dc:title="Inconnue" xml:lang="fr"/>
-      <term dc:title="Desconhecido" xml:lang="pt"/>
-      <term dc:title="有可能更新，但不確知何時" xml:lang="zh"/>
-    </preferred>
-    <alternative>
-    </alternative>
-  </concept>
   <concept dc:identifier="otherMaintenancePeriod" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/otherMaintenancePeriod"
     dc:relation=""
     dc:description="Updated according to some other interval.">
