@@ -2,12 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
 <thesaurus
         dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency"
-        dc:description="Vocabulary that describes the frequency with which changes and additions are made to the dataset after the initial dataset is completed. The vocabulary is derived from the EML specification (version 2.1.1) at http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-dataset.html#maintenanceUpdateFrequency/."
+        dc:description="Vocabulary that describes the frequency with which changes and additions are made to the dataset after the initial dataset is completed. The vocabulary is derived from the EML specification (version 2.2) at https://eml.ecoinformatics.org/schema/eml-dataset_xsd.html#MaintenanceType_maintenanceUpdateFrequency"
         dc:title="EML Maintenance Update Frequency"
-        dc:issued="2015-02-13"
+        dc:issued="2023-03-24"
         xmlns="http://rs.gbif.org/thesaurus/" xmlns:dc="http://purl.org/dc/terms/"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+        xsi:schemaLocation="http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd">
     <concept dc:identifier="daily" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/daily"
              dc:relation=""
              dc:description="Updated 1 time each day.">
@@ -125,7 +125,7 @@
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="unkown" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/unkown"
+    <concept dc:identifier="unknown" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/unknown"
              dc:relation=""
              dc:description="Further updates may still happen, but it is not known for sure.">
         <preferred>
@@ -138,9 +138,9 @@
         <alternative>
         </alternative>
     </concept>
-    <concept dc:identifier="unknown" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/unknown"
+    <concept dc:identifier="unkown" dc:URI="http://rs.gbif.org/vocabulary/eml/updateFrequency/unkown"
              dc:relation=""
-             dc:description="Further updates may still happen, but it is not known for sure.">
+             dc:description="Further updates may still happen, but it is not known for sure.  Spelling error from a prior version, deprecated but kept for backward compatibility.">
         <preferred>
             <term dc:title="Unknown" xml:lang="en"/>
             <term dc:title="Desconocido" xml:lang="es"/>
