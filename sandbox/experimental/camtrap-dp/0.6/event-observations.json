@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/camtrap-dp/event-observations",
+  "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.6/event-observations.json",
   "name": "event-observations",
   "title": "Event observations",
   "description": "Table with observations that are classified at event level. Associated with media files via `eventID`. Observations can mark non-animal events (camera setup, human, blank) or one or more animal observations (`observationType` = `animal`) of a certain taxon, count, life stage, sex, behavior and/or individual. Event observations are required to be mutually exclusive, so that `count` can be summed.",

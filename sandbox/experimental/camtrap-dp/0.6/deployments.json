@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
+  "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.6/deployments.json",
   "name": "deployments",
   "title": "Deployments",
   "description": "Table with camera trap deployments. Includes `deploymentID`, start, end, location and camera setup information.",
