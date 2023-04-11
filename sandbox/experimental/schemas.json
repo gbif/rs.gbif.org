@@ -31,12 +31,18 @@
           "description": "Camera trap: media observations schema"
         }
       ],
-      "subSchemaRequirements": [
-        {
-          "required": ["deployments", "media"],
-          "anyOf": ["media-observations", "event-observations"]
-        }
-      ],
+      "subSchemaRequirements": {
+        "allOf": [
+          {
+            "description": "Required schemas must be present: deployments, media",
+            "required": ["deployments", "media"]
+          },
+          {
+            "description": "At least one must be present: media-observations, event-observations",
+            "requiredAny": ["media-observations", "event-observations"]
+          }
+        ]
+      },
       "title": "Camera trap",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
       "issued": "2023-02-24",
@@ -133,6 +139,26 @@
           "description": "Catalogue of Life Data Package: vernacular-name schema"
         }
       ],
+      "subSchemaRequirements": {
+        "allOf": [
+          {
+            "description": "At least one required schema present: name, taxon, reference, name-usage",
+            "requiredAny": ["name", "taxon", "reference", "name-usage"]
+          },
+          {
+            "description": "If 'name', 'taxon' or 'synonym' present, then 'name-usage' must not be present",
+            "applicableIfPresentAny": ["name", "taxon", "synonym"],
+            "requiredAny": ["name", "taxon", "synonym"],
+            "prohibited": ["name-usage"]
+          },
+          {
+            "description": "If 'name-usage' present, then 'name', 'taxon' and 'synonym' must not be present",
+            "applicableIfPresentAny": ["name-usage"],
+            "required": ["name-usage"],
+            "prohibited": ["name", "taxon", "synonym"]
+          }
+        ]
+      },
       "title": "Catalogue of Life Data Package",
       "description": "Catalogue of Life Data Package schema",
       "issued": "2022-03-16",
