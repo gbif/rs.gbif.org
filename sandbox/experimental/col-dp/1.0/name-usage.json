@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/col-dp/name-usage",
+  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/name-usage.json",
   "name": "name-usage",
   "title": "Name Usage",
   "fields": [

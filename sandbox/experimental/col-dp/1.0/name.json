@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/col-dp/name",
+  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/name.json",
   "name": "name",
   "title": "Name",
   "fields": [

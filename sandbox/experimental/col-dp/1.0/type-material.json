@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/col-dp/type-material",
+  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/type-material.json",
   "name": "type-material",
   "title": "Type Material",
   "fields": [

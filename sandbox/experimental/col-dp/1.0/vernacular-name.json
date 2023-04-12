@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/col-dp/vernacular-name",
+  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/vernacular-name.json",
   "name": "vernacular-name",
   "title": "Vernacular Name",
   "fields": [

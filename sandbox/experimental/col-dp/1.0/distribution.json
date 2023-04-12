@@ -1,4 +1,6 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/col-dp/distribution",
+  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/distribution.json",
   "name": "distribution",
   "title": "Distribution",
   "fields": [
