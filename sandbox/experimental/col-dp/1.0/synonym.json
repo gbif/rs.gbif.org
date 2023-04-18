@@ -1,6 +1,6 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/col-dp/synonym",
-  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/synonym.json",
+  "identifier": "http://rs.gbif.org/schemas/coldp/synonym",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/synonym.json",
   "name": "synonym",
   "title": "Synonym",
   "fields": [

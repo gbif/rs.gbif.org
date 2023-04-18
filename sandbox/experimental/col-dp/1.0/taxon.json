@@ -1,6 +1,6 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/col-dp/taxon",
-  "url": "http://rs.gbif.org/sandbox/experimental/col-dp/1.0/taxon.json",
+  "identifier": "http://rs.gbif.org/schemas/coldp/taxon",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/taxon.json",
   "name": "taxon",
   "title": "Taxon",
   "fields": [
@@ -98,122 +98,77 @@
     {
       "name": "section",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "subgenus",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "genus",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "subtribe",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "tribe",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "subfamily",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "family",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "superfamily",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "suborder",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "order",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "subclass",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "class",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "subphylum",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "phylum",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "kingdom",
       "type": "string",
-      "format": "default",
-      "constraints": {
-        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
-      }
+      "format": "default"
     },
     {
       "name": "sequenceIndex",
