@@ -3,24 +3,29 @@
   "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/taxon-concept-relation.json",
   "name": "taxon-concept-relation",
   "title": "Taxon Concept Relation",
+  "description": "A directed taxon relation representing RCC5 taxon concept assertions.",
   "fields": [
     {
       "name": "taxonID",
+      "description": "The subject taxon this relation originates from.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "relatedTaxonID",
+      "description": "The object this taxon relates to.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
       "type": "string",
       "format": "default"
     },
     {
       "name": "type",
+      "description": "The kind of directed RCC5 relation that specifies how the two taxon concepts are related.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -35,11 +40,13 @@
     },
     {
       "name": "referenceID",
+      "description": "A reference where this relation was documented or who asserted it.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "remarks",
+      "description": "Remarks about the concept relation.",
       "type": "string",
       "format": "default"
     }

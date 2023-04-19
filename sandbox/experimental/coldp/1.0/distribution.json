@@ -3,29 +3,35 @@
   "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/distribution.json",
   "name": "distribution",
   "title": "Distribution",
+  "description": "A structured distribution record for a taxon in a given area.",
   "fields": [
     {
       "name": "taxonID",
+      "description": "Pointer to the taxon referring to an existing Taxon.ID within this data package.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
       "type": "string",
       "format": "default"
     },
     {
       "name": "areaID",
+      "description": "The identifier/code for the geographic area this distribution record is about. The value must be taken from the gazetteer this record declares. E.g. country codes, `TDWG` codes or `TEOW` identifiers. If the `TEXT` gazetteer is used only the free text area should be given with no areaID.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "area",
+      "description": "The geographic area this distribution record is about. The value provides a human label for the area specified by areaID. Free text values can be provided here when the gazetteer is set to `TEXT`.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "gazetteer",
+      "description": "The geographic gazetteer the area is defined in. If none is given defaults to free `TEXT`.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -43,6 +49,7 @@
     },
     {
       "name": "status",
+      "description": "Distribution status.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -56,11 +63,13 @@
     },
     {
       "name": "referenceID",
+      "description": "Pointer to the reference that supports this distribution. Refers to an existing Reference.ID within this data package.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "remarks",
+      "description": "Remarks about the distribution.",
       "type": "string",
       "format": "default"
     }
