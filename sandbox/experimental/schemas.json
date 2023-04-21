@@ -19,16 +19,16 @@
           "description": "Camera trap: media schema"
         },
         {
-          "identifier": "http://rs.gbif.org/schemas/camtrap-dp/event-observations",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.6/event-observations.json",
-          "title": "Camera trap: event observations",
-          "description": "Camera trap: event observations schema"
-        },
-        {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media-observations",
           "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.6/media-observations.json",
           "title": "Camera trap: media observations",
           "description": "Camera trap: media observations schema"
+        },
+        {
+          "identifier": "http://rs.gbif.org/schemas/camtrap-dp/event-observations",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/0.6/event-observations.json",
+          "title": "Camera trap: event observations",
+          "description": "Camera trap: event observations schema"
         }
       ],
       "subSchemaRequirements": {
