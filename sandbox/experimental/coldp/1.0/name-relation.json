@@ -1,8 +1,8 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/names-relation",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/names-relation.json",
-  "name": "names-relation",
-  "title": "Names Relation",
+  "identifier": "http://rs.gbif.org/schemas/coldp/name-relation",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/name-relation.json",
+  "name": "name-relation",
+  "title": "Name Relation",
   "description": "A directed nomenclatural name relation. See [name-relations](https://github.com/CatalogueOfLife/general/blob/master/docs/NAMES.md#name-relations) for examples and definitions.",
   "fields": [
     {

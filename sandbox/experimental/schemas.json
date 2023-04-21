@@ -79,10 +79,10 @@
           "description": "Catalogue of Life Data Package: name schema"
         },
         {
-          "identifier": "http://rs.gbif.org/schemas/coldp/names-relation",
-          "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/names-relation.json",
-          "title": "Catalogue of Life Data Package: names-relation",
-          "description": "Catalogue of Life Data Package: names-relation schema"
+          "identifier": "http://rs.gbif.org/schemas/coldp/name-relation",
+          "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/name-relation.json",
+          "title": "COL Data Package (ColDP): name-relation",
+          "description": "A directed nomenclatural name relation."
         },
         {
           "identifier": "http://rs.gbif.org/schemas/coldp/reference",
