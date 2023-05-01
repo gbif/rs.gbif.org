@@ -47,7 +47,8 @@
           }
         ]
       },
-      "title": "Camtrap DP",
+      "title": "Camera trap Data Package (Camtrap DP)",
+      "shortTitle": "Camtrap DP",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
       "issued": "2023-02-24",
       "isLatest": true
@@ -177,7 +178,8 @@
           }
         ]
       },
-      "title": "COL Data Package (ColDP)",
+      "title": "Catalogue of Life Data Package (ColDP)",
+      "shortTitle": "ColDP",
       "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
       "issued": "2022-03-16",
       "isLatest": true
@@ -224,7 +226,8 @@
           "description": "DigitalEntity"
         }
       ],
-      "title": "Material DP",
+      "title": "Darwin Core Material Data Package",
+      "shortTitle": "Material DP",
       "description": "Material type",
       "issued": "2022-05-01",
       "isLatest": true
