@@ -35,5 +35,14 @@
       "type": "string",
       "format": "default"
     }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "georerencedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
   ]
 }

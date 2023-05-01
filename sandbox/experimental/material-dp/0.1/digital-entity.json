@@ -47,5 +47,35 @@
       "type": "string",
       "format": "default"
     }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "gatheringEventID",
+      "reference": {
+        "resource": "gathering-event",
+        "fields": "gatheringEventID"
+      }
+    },
+    {
+      "fields": "parentMaterialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "parentDigitalEntityID",
+      "reference": {
+        "resource": "digital-entity",
+        "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "recordedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
   ]
 }

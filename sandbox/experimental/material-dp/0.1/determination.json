@@ -41,5 +41,21 @@
       "type": "string",
       "format": "default"
     }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "digitalEntityID",
+      "reference": {
+        "resource": "digital-entity",
+        "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "materialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    }
   ]
 }
