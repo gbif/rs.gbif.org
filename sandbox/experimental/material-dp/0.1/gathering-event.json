@@ -1,0 +1,39 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/material-dp/gathering-event",
+  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/gathering-event.json",
+  "name": "gathering-event",
+  "title": "GatheringEvent",
+  "description": "GatheringEvent",
+  "fields": [
+    {
+      "name": "gatheringEventID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "locationInfo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "eventInfo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "georerencedBy",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "georerencedByID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    }
+  ]
+}
