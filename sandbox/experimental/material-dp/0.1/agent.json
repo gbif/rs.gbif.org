@@ -12,6 +12,12 @@
       "format": "default"
     },
     {
+      "name": "parentAgentID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
       "name": "agentType",
       "description": "The category of agent. Examples: `person`, `organization`, `group`, `organism`, `software`",
       "type": "string",
@@ -22,6 +28,15 @@
       "description": "The preferred form of the name when referring to the agent.  Examples: `person`, `organization`, `group`, `organism`, `software`",
       "type": "string",
       "format": "default"
+    }
+  ]
+  "foreignKeys": [
+    {
+      "fields": "parentAgentID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
     }
   ]
 }

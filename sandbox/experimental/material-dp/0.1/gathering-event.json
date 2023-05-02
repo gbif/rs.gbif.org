@@ -186,7 +186,7 @@
       "format": "default"
     },
     {
-      "name": "water_body",
+      "name": "waterBody",
       "description": "",
       "type": "string",
       "format": "default"

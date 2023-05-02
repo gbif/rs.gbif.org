@@ -132,7 +132,7 @@
       "format": "default"
     },
     {
-      "name": "other_catalog_numbers",
+      "name": "otherCatalogNumbers",
       "description": "",
       "type": "string",
       "format": "default"

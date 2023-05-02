@@ -24,7 +24,7 @@
       "format": "default"
     },
     {
-      "name": "parentMaterialEntityID",
+      "name": "materialEntityID",
       "description": "",
       "type": "string",
       "format": "default"
@@ -150,7 +150,7 @@
       "format": "default"
     },
     {
-      "name": "bibliographic_citation",
+      "name": "bibliographicCitation",
       "description": "",
       "type": "string",
       "format": "default"
@@ -165,7 +165,7 @@
       }
     },
     {
-      "fields": "parentMaterialEntityID",
+      "fields": "materialEntityID",
       "reference": {
         "resource": "material-entity",
         "fields": "materialEntityID"
