@@ -12,6 +12,12 @@
       "format": "default"
     },
     {
+      "name": "materialEntityType",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
       "name": "parentMaterialEntityID",
       "description": "",
       "type": "string",
@@ -30,7 +36,13 @@
       "format": "default"
     },
     {
-      "name": "acceptedDeterminationID",
+      "name": "acceptedIdentificationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "datasetID",
       "description": "",
       "type": "string",
       "format": "default"
@@ -49,6 +61,78 @@
     },
     {
       "name": "organismID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "preparations",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "disposition",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "institutionCode",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "institutionID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "collectionCode",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "collectionID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "ownerInstitutionCode",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "catalogNumber",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "recordNumber",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "associatedReferences",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "assciatedSequences",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "other_catalog_numbers",
       "description": "",
       "type": "string",
       "format": "default"
@@ -77,10 +161,24 @@
       }
     },
     {
-      "fields": "acceptedDeterminationID",
+      "fields": "acceptedIdentificationID",
       "reference": {
-        "resource": "determination",
-        "fields": "determinationID"
+        "resource": "identification",
+        "fields": "identificationID"
+      }
+    },
+    {
+      "fields": "institutionID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "collectionID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
       }
     },
     {

@@ -12,6 +12,12 @@
       "format": "default"
     },
     {
+      "name": "digitalEntityType",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
       "name": "parentDigitalEntityID",
       "description": "",
       "type": "string",
@@ -30,6 +36,18 @@
       "format": "default"
     },
     {
+      "name": "acceptedIdentificationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "datasetID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
       "name": "recordedBy",
       "description": "",
       "type": "string",
@@ -43,6 +61,96 @@
     },
     {
       "name": "organismID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "accessURI",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "webStatement",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "format",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "license",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "rights",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "rightsURI",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "accessRights",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "rightsHolder",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "source",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceURI",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "creator",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "created",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "modified",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "language",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "bibliographic_citation",
       "description": "",
       "type": "string",
       "format": "default"
@@ -68,6 +176,13 @@
       "reference": {
         "resource": "digital-entity",
         "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "acceptedIdentificationID",
+      "reference": {
+        "resource": "identification",
+        "fields": "identificationID"
       }
     },
     {

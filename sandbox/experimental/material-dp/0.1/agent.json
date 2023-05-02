@@ -12,13 +12,13 @@
       "format": "default"
     },
     {
-      "name": "agent_type",
+      "name": "agentType",
       "description": "The category of agent. Examples: `person`, `organization`, `group`, `organism`, `software`",
       "type": "string",
       "format": "default"
     },
     {
-      "name": "agent_preferred_name",
+      "name": "agentPreferredName",
       "description": "The preferred form of the name when referring to the agent.  Examples: `person`, `organization`, `group`, `organism`, `software`",
       "type": "string",
       "format": "default"

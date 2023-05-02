@@ -1,0 +1,282 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/material-dp/identification",
+  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/identification.json",
+  "name": "identification",
+  "title": "Identification",
+  "description": "Identification",
+  "fields": [
+    {
+      "name": "identificationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identificationType",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "materialEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "digitalEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "datasetID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimIdentification",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "typeStatus",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identifiedBy",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identifiedByID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "dateIdentified",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identificationReferences",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identificationVerificationStatus",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "identificationRemarks",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "typeDesignationType",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "typeDesignatedBy",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scientificNameID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonAuthority",
+      "description": "From what taxonomic authority is the information taken",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scientificName",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "acceptedNameUsage",
+      "description": "populated only when scientific name is a synonym",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nameAccordingTo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nameAccordingToID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "higherClassification",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "kingdom",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "phylum",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "class",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "order",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "family",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "subfamily",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "genericName",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "subgenus",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "specificEpithet",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+      "name": "infraSpecificEpithet",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+      "name": "cultivarEpithet",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonRank",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimTaxonRank",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scientificNameAuthorship",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "vernacularName",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nomenclaturalCode",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonomicStatus",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nomenclaturalStatus",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonRemarks",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "digitalEntityID",
+      "reference": {
+        "resource": "digital-entity",
+        "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "materialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "identifiedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

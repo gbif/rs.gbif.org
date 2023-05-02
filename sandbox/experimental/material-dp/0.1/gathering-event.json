@@ -3,22 +3,346 @@
   "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/gathering-event.json",
   "name": "gathering-event",
   "title": "GatheringEvent",
-  "description": "GatheringEvent",
+  "description": "A type of Event during which Material and/or Digital Entities are gathered.",
   "fields": [
     {
       "name": "gatheringEventID",
+      "description": "An identifier for the set of information associated with a GatheringEvent. May be a global unique identifier or an identifier specific to the data set.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "parentEventID",
       "description": "",
       "type": "string",
       "format": "default"
     },
     {
-      "name": "locationInfo",
+      "name": "datasetID",
       "description": "",
       "type": "string",
       "format": "default"
     },
     {
-      "name": "eventInfo",
+      "name": "locationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "protocolID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "eventName",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "fieldNumber",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "eventDate",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "year",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "month",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "day",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimEventDate",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimLocality",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimElevation",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimDepth",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimCoordinates",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimLatitude",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimLongitude",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimCoordinateSystem",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verbatimSRS",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "habitat",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "protocolDescription",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sampleSizeValue",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sampleSizeUnit",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "eventEffort",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "fieldNotes",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "eventRemarks",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "locationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "higherGeography",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "continent",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "water_body",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "islandGroup",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "island",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "country",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "countryCode",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "stateProvince",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "county",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "municipality",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "locality",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "minimumElevationInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "maximumElevationInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "minimumDistanceAboveSurfaceInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "maximumDistanceAboveSurfaceInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "minimumDepthInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "maximumDepthInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "verticalDatum",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "locationAccordingTo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "locationRemarks",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "decimalLatitude",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "decimalLongitude",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "geodeticDatum",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "coordinateUncertaintyInMeters",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "coordinatePrecision",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "pointRadiusSpatialFit",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "footprintWKT",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "footprintSRS",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "footprintSpatialFit",
       "description": "",
       "type": "string",
       "format": "default"
@@ -34,9 +358,46 @@
       "description": "",
       "type": "string",
       "format": "default"
+    },
+    {
+      "name": "georeferencedDate",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "georeferenceProtocol",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "georeferenceSources",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "georeferenceRemarks",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "preferredSpatialRepresentation",
+      "description": "",
+      "type": "string",
+      "format": "default"
     }
   ],
   "foreignKeys": [
+    {
+      "fields": "parentEventID",
+      "reference": {
+        "resource": "gathering-event",
+        "fields": "gatheringEventID"
+      }
+    },
     {
       "fields": "georerencedByID",
       "reference": {
