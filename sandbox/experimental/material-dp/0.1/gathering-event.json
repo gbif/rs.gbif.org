@@ -56,20 +56,30 @@
     {
       "name": "year",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
     },
     {
       "name": "month",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": 1,
+        "maximum": 12
+      }
     },
     {
       "name": "day",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": 1,
+        "maximum": 31
+      }
     },
     {
       "name": "verbatimEventDate",
@@ -242,38 +252,58 @@
     {
       "name": "minimumElevationInMeters",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": -430,
+        "maximum": 8850
+      }
     },
     {
       "name": "maximumElevationInMeters",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": -430,
+        "maximum": 8850
+      }
     },
     {
       "name": "minimumDistanceAboveSurfaceInMeters",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
     },
     {
       "name": "maximumDistanceAboveSurfaceInMeters",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
     },
     {
       "name": "minimumDepthInMeters",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 11000
+      }
     },
     {
       "name": "maximumDepthInMeters",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 11000
+      }
     },
     {
       "name": "verticalDatum",
@@ -296,14 +326,24 @@
     {
       "name": "decimalLatitude",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": -90,
+        "maximum": 90
+      }
     },
     {
       "name": "decimalLongitude",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": -180,
+        "maximum": 180
+      }
     },
     {
       "name": "geodeticDatum",
@@ -314,19 +354,24 @@
     {
       "name": "coordinateUncertaintyInMeters",
       "description": "",
-      "type": "string",
+      "type": "integer",
       "format": "default"
+      "constraints": {
+        "required": false,
+        "minimum": 1,
+        "maximum": 20037509
+      },
     },
     {
       "name": "coordinatePrecision",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
     },
     {
       "name": "pointRadiusSpatialFit",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
     },
     {
@@ -344,7 +389,7 @@
     {
       "name": "footprintSpatialFit",
       "description": "",
-      "type": "string",
+      "type": "number",
       "format": "default"
     },
     {
