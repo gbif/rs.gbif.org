@@ -50,11 +50,11 @@
             <term dc:title="サンプリング イベント" xml:lang="ja"/>
         </preferred>
     </concept>
-    <concept dc:identifier="material" dc:URI="http://rs.gbif.org/vocabulary/gbif/datasetType/material"
+    <concept dc:identifier="materialEntity" dc:URI="http://rs.gbif.org/vocabulary/gbif/datasetType/materialEntity"
         dc:relation=""
         dc:description="Information pertaining to physical objects.">
         <preferred>
-            <term dc:title="Material" xml:lang="en"/>
+            <term dc:title="Material entity" xml:lang="en"/>
         </preferred>
     </concept>
     <concept dc:identifier="metadata" dc:URI="http://rs.gbif.org/vocabulary/gbif/datasetType/metadata"
