@@ -1,0 +1,94 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/material-dp/material-entity",
+  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/material-entity.json",
+  "name": "material-entity",
+  "title": "MaterialEntity",
+  "description": "MaterialEntity",
+  "fields": [
+    {
+      "name": "materialEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "parentMaterialEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "parentDigitalEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "gatheringEventID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "acceptedDeterminationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "recordedBy",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "recordedByID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "organismID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "gatheringEventID",
+      "reference": {
+        "resource": "gathering-event",
+        "fields": "gatheringEventID"
+      }
+    },
+    {
+      "fields": "parentMaterialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "parentDigitalEntityID",
+      "reference": {
+        "resource": "digital-entity",
+        "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "acceptedDeterminationID",
+      "reference": {
+        "resource": "determination",
+        "fields": "determinationID"
+      }
+    },
+    {
+      "fields": "recordedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

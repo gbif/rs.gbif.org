@@ -1,0 +1,21 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/material-dp/agent",
+  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/agent.json",
+  "name": "agent",
+  "title": "Agent",
+  "description": "Agent",
+  "fields": [
+    {
+      "name": "agentID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "agentInfo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    }
+  ]
+}

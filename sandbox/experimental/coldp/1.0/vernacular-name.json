@@ -1,34 +1,43 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/coldp/vernacular-name",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/vernacular-name.json",
   "name": "vernacular-name",
   "title": "Vernacular Name",
+  "description": "A vernacular or common name for a taxon.",
   "fields": [
     {
       "name": "taxonID",
+      "description": "Pointer to the taxon referring to an existing Taxon.ID within this data package.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
       "type": "string",
       "format": "default"
     },
     {
       "name": "name",
+      "description": "The vernacular name in the original script.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "transliteration",
+      "description": "An optional transliteration of the vernacular name into the latin script.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "language",
+      "description": "Language of the vernacular name given as an ISO 639-3 letter code.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "country",
+      "description": "Country this vernacular name is used in given as an ISO 3166-2 letter code.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -289,11 +298,13 @@
     },
     {
       "name": "area",
+      "description": "Optional area describing the geographic use of the vernacular name in free text within the given country.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "sex",
+      "description": "Optional sex of the organism this vernacular name is restricted to.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -306,6 +317,7 @@
     },
     {
       "name": "referenceID",
+      "description": "Pointer to the reference that supports this vernacular name. Refers to an existing Reference.ID within this data package.",
       "type": "string",
       "format": "default"
     }

@@ -1,0 +1,106 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/coldp/synonym",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/synonym.json",
+  "name": "synonym",
+  "title": "Synonym",
+  "description": "A synonymous name for a taxon. Note that the same name can be linked to mulitple taxa by having several Synonym records to model pro parte synonyms.",
+  "fields": [
+    {
+      "name": "ID",
+      "description": "Optional unique identifier for the synonym. If given it should not clash with the taxon ids.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "taxonID",
+      "description": "Pointer to the taxon that this synonym is used for. For pro parte synonyms with multiple accepted names several synonym records sharing the same name but having different taxonIDs should be created. Refers to an existing Taxon.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "nameID",
+      "description": "Pointer to the synonymous name referring to an existing Name.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "namePhrase",
+      "description": "An optional, unrestricted, lose phrase appended to the name just for this synonym. E.g. the phrase \"sensu lato\" may be added to the name to describe this synonym more precisely. Or \"auct. mult.\" or \"auct. amer.\" for misapplied names that cannot refer to a single publication. Misapplied names that refer to a single publication should use `accordingToID` instead.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "accordingToID",
+      "description": "A reference ID to the publication that established the taxonomic concept used by this taxon. The author & year of the reference will be used to qualify the name with `sensu AUTHOR, YEAR`. Strongly recommended in case of misapplied names. The ID must refer to an existing Reference.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "status",
+      "description": "The kind of synonym. One of synonym, ambiguous synonym or misapplied. Defaults to <i>synonym</i>.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "accepted",
+          "provisionally accepted",
+          "synonym",
+          "ambiguous synonym",
+          "misapplied",
+          "bare name"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "description": "A comma concatenated list of reference IDs supporting the synonym status of the name. Each ID must refer to an existing Reference.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "description": "A link to a webpage provided by the source depicting the synonym.",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "remarks",
+      "description": "Any further taxonomic remarks.",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

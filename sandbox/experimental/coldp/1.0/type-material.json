@@ -1,9 +1,13 @@
 {
+  "identifier": "http://rs.gbif.org/schemas/coldp/type-material",
+  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/type-material.json",
   "name": "type-material",
   "title": "Type Material",
+  "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination.",
   "fields": [
     {
       "name": "ID",
+      "description": "Optional unique identifier for the specimen. If possible use the existing specimen identifier, e.g. the collection/institution code and catalogue number. If coming from a Darwin Core world dwc:occurrenceID is a great fit.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -12,21 +16,25 @@
     },
     {
       "name": "nameID",
+      "description": "Pointer to the typified name referring to an existing Name.ID within this data package. Type material should only be associated with an original name, not with recombinations.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
       "type": "string",
       "format": "default"
     },
     {
       "name": "citation",
+      "description": "Material citation of the type material, i.e. type specimen. The citation is ideally given in the verbatim form as it was used in the original publication of the name or the subsequent designation. Otherwise it is recommended to follow the [material citation guidelines published by European Journal of Taxonomy](https://github.com/CatalogueOfLife/coldp/blob/master/docs/material_citations_formatting_guide.pdf). If atomized fields below are given a citation is not needed. Otherwise it is required.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "status",
+      "description": "The status of the type material, e.g. holotype",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -70,16 +78,19 @@
     },
     {
       "name": "referenceID",
+      "description": "A referenceID pointing to the Reference table indicating the publication of the type designation. Most often this is equivalent to the original names referenceID, but for subsequent designations a later reference should be cited.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "locality",
+      "description": "The type locality. Ideally from largest area to smallest.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "country",
+      "description": "The country of the type locality. Preferably as ISO codes.\n\n",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -340,41 +351,49 @@
     },
     {
       "name": "latitude",
+      "description": "Decimal latitude of the type locality given in WGS84",
       "type": "number",
       "format": "default"
     },
     {
       "name": "longitude",
+      "description": "Decimal longitude of the type locality given in WGS84",
       "type": "number",
       "format": "default"
     },
     {
       "name": "altitude",
+      "description": "Altitude of the type locality. Ideally given as meters above mean seal level. Depth should be given as negative altitudes.",
       "type": "integer",
       "format": "default"
     },
     {
       "name": "host",
+      "description": "Indicates the host organism from which the type specimen was obtained (symbiotype).",
       "type": "string",
       "format": "default"
     },
     {
       "name": "date",
+      "description": "Date the type material was gathered. Recommended to be given as ISO 8601 dates.",
       "type": "string",
       "format": "default"
     },
     {
       "name": "collector",
+      "description": "The collectors name",
       "type": "string",
       "format": "default"
     },
     {
       "name": "link",
+      "description": "A link to further information about the specimen, e.g. as provided by the institute holding the collection.",
       "type": "string",
       "format": "uri"
     },
     {
       "name": "remarks",
+      "description": "Any further remarks on the type material.",
       "type": "string",
       "format": "default"
     }

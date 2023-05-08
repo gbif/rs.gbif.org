@@ -1,0 +1,61 @@
+{
+  "identifier": "http://rs.gbif.org/schemas/material-dp/determination",
+  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/determination.json",
+  "name": "determination",
+  "title": "Determination",
+  "description": "Determination",
+  "fields": [
+    {
+      "name": "determinationID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "materialEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "digitalEntityID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "determinedBy",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "determinedByID",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "determinationInfo",
+      "description": "",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "digitalEntityID",
+      "reference": {
+        "resource": "digital-entity",
+        "fields": "digitalEntityID"
+      }
+    },
+    {
+      "fields": "materialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    }
+  ]
+}
