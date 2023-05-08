@@ -47,7 +47,7 @@
           }
         ]
       },
-      "title": "Camera trap Data Package (Camtrap DP)",
+      "title": "Camera Trap Data Package (Camtrap DP)",
       "shortTitle": "Camtrap DP",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
       "issued": "2023-02-24",
@@ -226,7 +226,7 @@
           "description": "DigitalEntity"
         }
       ],
-      "title": "Darwin Core Material Data Package",
+      "title": "Darwin Core Material Data Package (Material DP)",
       "shortTitle": "Material DP",
       "description": "Material type",
       "issued": "2022-05-01",
