@@ -186,7 +186,7 @@
     },
     {
       "identifier": "http://rs.gbif.org/schemas/material-dp",
-      "url": "http://rs.gbif.org/sandbox/experimental/material-dp/",
+      "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1",
       "name": "material-dp",
       "version": "0.1",
       "subSchemas": [
