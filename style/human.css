@@ -43,6 +43,12 @@ h4, h5 {font-size:100%;}
 
 p, table, ul, ol, dl, fieldset {margin:10px 0;}
 
+code, tt {
+	font-style: monospace;
+	font-size: 115%;
+	color: #664192;
+}
+
 table {
 	border-collapse:collapse;
 	border-spacing:0;

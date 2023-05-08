@@ -156,7 +156,9 @@
                     <xsl:if test="@examples != ''">
                          <div class="examples">
                               <em>Examples</em>:
-                              <xsl:value-of select="@examples"/>
+                              <xsl:call-template name="FormatCode">
+                                   <xsl:with-param name="InputString"><xsl:value-of select="@examples"/></xsl:with-param>
+                              </xsl:call-template>
                          </div>
                     </xsl:if>
                     <div class="technical">
@@ -261,6 +263,25 @@
                     [lang=<xsl:value-of select="@xml:lang"/>, source=<xsl:value-of select="@dc:source"/>]
                </span>
           </li>
+     </xsl:template>
+
+     <xsl:template name="FormatCode">
+          <xsl:param name="InputString"/>
+          <xsl:variable name="RemainingString" select="substring-after($InputString,'`')"/>
+          <xsl:choose>
+               <xsl:when test="contains($RemainingString,'`')">
+                    <xsl:value-of select="substring-before($InputString,'`')"/>
+                    <code>
+                         <xsl:value-of select="substring-before($RemainingString,'`')"/>
+                    </code>
+                    <xsl:call-template name="FormatCode">
+                         <xsl:with-param name="InputString" select="substring-after($RemainingString,'`')"/>
+                    </xsl:call-template>
+               </xsl:when>
+               <xsl:otherwise>
+                    <xsl:value-of select="$InputString"/>
+               </xsl:otherwise>
+          </xsl:choose>
      </xsl:template>
 
 </xsl:stylesheet>
