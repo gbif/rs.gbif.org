@@ -1,0 +1,40 @@
+{
+    "identifier": "http://rs.gbif.org/schemas/material-dp/agent-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/agent-identifier.json",
+    "name": "agent-identifier",
+    "title": "AgentIdentifier",
+    "description": "An alternate identifier for an Agent.",
+    "fields": [{
+            "name": "agentID",
+            "description": "The identifier for the Agent to which this alternative identifier refers.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommeded best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "identifierType",
+            "description": "The type of the Identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`ORCID`; `ISNI`; `VIAF`; `GrSciColl`"
+        },
+        {
+            "name": "identifier",
+            "description": "The alternate identifier for the Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "``https://orcid.org/0000-0002-1825-0097``; `http://grscicoll.org/institution/museum-southwestern-biology`"
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "agentID",
+            "reference": {
+                "resource": "agemt",
+                "fields": "agentID"
+            }
+        }
+    ]
+}

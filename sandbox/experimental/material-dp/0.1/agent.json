@@ -1,21 +1,52 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/material-dp/agent",
-  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/agent.json",
-  "name": "agent",
-  "title": "Agent",
-  "description": "Agent",
-  "fields": [
-    {
-      "name": "agentID",
-      "description": "",
-      "type": "string",
-      "format": "default"
-    },
-    {
-      "name": "agentInfo",
-      "description": "",
-      "type": "string",
-      "format": "default"
-    }
-  ]
+    "identifier": "http://rs.gbif.org/schemas/material-dp/agent",
+    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/agent.json",
+    "name": "agent",
+    "title": "Agent",
+    "description": "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity (https://www.w3.org/TR/prov-o/#Agent). ",
+    "fields": [{
+            "name": "agentID",
+            "description": "The unique identifier for an Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://orcid.org/0000-0002-1825-0097` (for a person); `https://ror.org/015hz7p22` (for an organization); `http://grscicoll.org/institution/museum-southwestern-biology` (for an organization); `https://www.gbif.org/grscicoll/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c` (for a collection)",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "parentAgentID",
+            "description": "The identifier for the broader Agent in which this Agent is grouped.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "http://grscicoll.org/institution/museum-southwestern-biology` (for an organization)"
+        },
+        {
+            "name": "agentType",
+            "description": "The category that best matches the Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`person`, `organization`, `agent group`, `organism`, `software`"
+        },
+        {
+            "name": "agentPreferredName",
+            "description": "The preferred form of the name when referring to the agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Oliver P. Pearson`; `Museum of Vertebrate Zoology`"
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "parentAgentID",
+            "reference": {
+                "resource": "agent",
+                "fields": "agentID"
+            }
+        }
+    ]
 }
