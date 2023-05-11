@@ -30,7 +30,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`person`, `organization`, `agent group`, `organism`, `software`"
+            "examples": "`person`, `organization`, `agent group`, `software`"
         },
         {
             "name": "agentPreferredName",
