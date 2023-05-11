@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/material-entity-citation.json",
     "name": "material-entity-citation",
     "title": "MaterialEntityCitation",
-    "description": "An alternate identifier for a MaterialEntity.",
+    "description": "A record of citation against a material entity.",
     "fields": [{
             "name": "materialEntityID",
             "description": "The identifier for the MaterialEntity to which this Citation refers.",
