@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/identification.json",
     "name": "identification",
     "title": "Identification",
-    "description": "Identification",
+    "description": "A taxonomic determination (e.g., the assignment to a taxon).",
     "fields": [
         {
             "name": "identificationID",
