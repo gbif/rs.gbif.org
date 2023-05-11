@@ -1,230 +1,233 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/material-dp/digital-entity",
-  "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/digital-entity.json",
-  "name": "digital-entity",
-  "title": "DigitalEntity",
-  "description": "A digital manifestation of an entity.",
-  "fields": [
-    {
-      "name": "digitalEntityID",
-      "description": "The unique identifier for a DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "digitalEntityType",
-      "description": "The category that best matches the nature of the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a controlled vocabulary.",
-      "examples": "`Sound`; `StillImage`; `MovingImage`; `GeneticSequence`"
-    },
-    {
-      "name": "parentDigitalEntityID",
-      "description": "The identifier for the DigitalEntity that was the source of this DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "materialEntityID",
-      "description": "The identifier for the MaterialEntity that is the subject of this DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "gatheringEventID",
-      "description": "The identifier for the GatheringEvent in which this DigitalEntity was created.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "acceptedIdentificationID",
-      "description": "The identifier for the preferred Identification (if any) for the Organism that was the subject of this DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "datasetID",
-      "description": "The identifier for the data set from which the DigitalEntity record originated.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": ""
-    },
-    {
-      "name": "organismID",
-      "description": "The identifier for the Organism (if any) that was the subject of the GatheringEvent.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommeded best practice is to use a globally unique identifier.",
-      "examples": "`http://arctos.database.museum/guid/WNMU:Mamm:1249`"
-    },
-    {
-      "name": "accessURI",
-      "description": "A URI that uniquely identifies a service that provides a representation of the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://images.morphbank.net/?id=135233&imgType=jpeg`"
-    },
-    {
-      "name": "webStatement",
-      "description": "A URL defining or further elaborating on the license statement (e.g., a web page explaining the precise terms of use).",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://creativecommons.org/licenses/by-nc-sa/3.0/us/`"
-    },
-    {
-      "name": "format",
-      "description": "A string describing the technical format (file format or physical medium) of the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`tiff`; `jpeg`"
-    },
-    {
-      "name": "license",
-      "description": "The license or waiver under which the DigitalEntity is shared.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://creativecommons.org/publicdomain/zero/1.0/legalcode`; `http://creativecommons.org/licenses/by/4.0/legalcode`"
-    },
-    {
-      "name": "rights",
-      "description": "The rights reserved with respect to the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Copyright 2014 Ron Thomas`, `http://creativecommons.org/licenses/by/3.0/legalcode`"
-    },
-    {
-      "name": "rightsURI",
-      "description": "The URI to the statement about the rights reserved with respect to the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://creativecommons.org/licenses/by/3.0/legalcode`"
-    },
-    {
-      "name": "accessRights",
-      "description": "The statement of rights with respect to access to the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`not-for-profit use only` (string literal example); `https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images` (URI example)"
-    },
-    {
-      "name": "Owner",
-      "description": "The Agent who holds the rights over the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Ron Thomas, Roz Thomas`; `https://orcid.org/0000-0002-1825-0097`"
-    },
-    {
-      "name": "source",
-      "description": "A string providing an identifiable source from which the DigitalEntity was derived. ",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Museum of Vertebrate Zoology`"
-    },
-    {
-      "name": "sourceURI",
-      "description": "A URI providing an identifiable source from which the DigitalEntity was derived. ",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`https://www.gbif.org/grscicoll/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c`"
-    },
-    {
-      "name": "creator",
-      "description": "The Agent responsible for the creation of the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Michael Gates`; `https://orcid.org/0000-0002-1825-0097`"
-    },
-    {
-      "name": "createdDate",
-      "description": "The date on which the DigitalEntity was created.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`2023-04-29`"
-    },
-    {
-      "name": "modified",
-      "description": "The date on which the DigitalEntity was most recently modified.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`2023-05-04`"
-    },
-    {
-      "name": "language",
-      "description": "The ISO639-2 three-letter language code (if any) in which the content of the DigitalEntity is recorded.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`eng`; `fre`"
-    },
-    {
-      "name": "bibliographicCitation",
-      "description": "The preferred citation for the DigitalEntity.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": ""
-    }
-  ],
-  "foreignKeys": [
-    {
-      "fields": "gatheringEventID",
-      "reference": {
-        "resource": "gathering-event",
-        "fields": "gatheringEventID"
-      }
-    },
-    {
-      "fields": "materialEntityID",
-      "reference": {
-        "resource": "material-entity",
-        "fields": "materialEntityID"
-      }
-    },
-    {
-      "fields": "parentDigitalEntityID",
-      "reference": {
-        "resource": "digital-entity",
-        "fields": "digitalEntityID"
-      }
-    },
-    {
-      "fields": "acceptedIdentificationID",
-      "reference": {
-        "resource": "identification",
-        "fields": "identificationID"
-      }
-    },
-    {
-      "fields": "recordedByID",
-      "reference": {
-        "resource": "agent",
-        "fields": "agentID"
-      }
-    }
-  ]
+    "identifier": "http://rs.gbif.org/schemas/material-dp/digital-entity",
+    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/digital-entity.json",
+    "name": "digital-entity",
+    "title": "DigitalEntity",
+    "description": "A digital manifestation of an entity.",
+    "fields": [
+        {
+            "name": "digitalEntityID",
+            "description": "The unique identifier for a DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "digitalEntityType",
+            "description": "The category that best matches the nature of the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`Sound`; `StillImage`; `MovingImage`; `GeneticSequence`"
+        },
+        {
+            "name": "parentDigitalEntityID",
+            "description": "The identifier for the DigitalEntity that was the source of this DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "materialEntityID",
+            "description": "The identifier for the MaterialEntity that is the subject of this DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "gatheringEventID",
+            "description": "The identifier for the GatheringEvent in which this DigitalEntity was created.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "acceptedIdentificationID",
+            "description": "The identifier for the preferred Identification (if any) for the Organism that was the subject of this DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "datasetID",
+            "description": "The identifier for the data set from which the DigitalEntity record originated.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "organismID",
+            "description": "The identifier for the Organism (if any) that was the subject of the GatheringEvent.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`http://arctos.database.museum/guid/WNMU:Mamm:1249`"
+        },
+        {
+            "name": "accessURI",
+            "description": "A URI that uniquely identifies a service that provides a representation of the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`http://images.morphbank.net/?id=135233&imgType=jpeg`"
+        },
+        {
+            "name": "webStatement",
+            "description": "A URL defining or further elaborating on the license statement (e.g., a web page explaining the precise terms of use).",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`http://creativecommons.org/licenses/by-nc-sa/3.0/us/`"
+        },
+        {
+            "name": "format",
+            "description": "A string describing the technical format (file format or physical medium) of the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`tiff`; `jpeg`"
+        },
+        {
+            "name": "license",
+            "description": "The license or waiver under which the DigitalEntity is shared.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`http://creativecommons.org/publicdomain/zero/1.0/legalcode`; `http://creativecommons.org/licenses/by/4.0/legalcode`"
+        },
+        {
+            "name": "rights",
+            "description": "The rights reserved with respect to the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Copyright 2014 Ron Thomas`, `http://creativecommons.org/licenses/by/3.0/legalcode`"
+        },
+        {
+            "name": "rightsURI",
+            "description": "The URI to the statement about the rights reserved with respect to the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`http://creativecommons.org/licenses/by/3.0/legalcode`"
+        },
+        {
+            "name": "accessRights",
+            "description": "The statement of rights with respect to access to the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`not-for-profit use only` (string literal example); `https://www.fieldmuseum.org/field-museum-natural-history-conditions-and-suggested-norms-use-collections-data-and-images` (URI example)"
+        },
+        {
+            "name": "Owner",
+            "description": "The Agent who holds the rights over the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Ron Thomas, Roz Thomas`; `https://orcid.org/0000-0002-1825-0097`"
+        },
+        {
+            "name": "source",
+            "description": "A string providing an identifiable source from which the DigitalEntity was derived. ",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Museum of Vertebrate Zoology`"
+        },
+        {
+            "name": "sourceURI",
+            "description": "A URI providing an identifiable source from which the DigitalEntity was derived. ",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`https://www.gbif.org/grscicoll/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c`"
+        },
+        {
+            "name": "creator",
+            "description": "The Agent responsible for the creation of the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Michael Gates`; `https://orcid.org/0000-0002-1825-0097`"
+        },
+        {
+            "name": "createdDate",
+            "description": "The date on which the DigitalEntity was created.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`2023-04-29`"
+        },
+        {
+            "name": "modified",
+            "description": "The date on which the DigitalEntity was most recently modified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`2023-05-04`"
+        },
+        {
+            "name": "language",
+            "description": "The ISO639-2 three-letter language code (if any) in which the content of the DigitalEntity is recorded.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`eng`; `fre`"
+        },
+        {
+            "name": "bibliographicCitation",
+            "description": "The preferred citation for the DigitalEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": ""
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "gatheringEventID",
+            "reference": {
+                "resource": "gathering-event",
+                "fields": "gatheringEventID"
+            }
+        },
+        {
+            "fields": "materialEntityID",
+            "reference": {
+                "resource": "material-entity",
+                "fields": "materialEntityID"
+            }
+        },
+        {
+            "fields": "parentDigitalEntityID",
+            "reference": {
+                "resource": "digital-entity",
+                "fields": "digitalEntityID"
+            }
+        },
+        {
+            "fields": "acceptedIdentificationID",
+            "reference": {
+                "resource": "identification",
+                "fields": "identificationID"
+            }
+        },
+        {
+            "fields": "recordedByID",
+            "reference": {
+                "resource": "agent",
+                "fields": "agentID"
+            }
+        }
+    ]
 }
