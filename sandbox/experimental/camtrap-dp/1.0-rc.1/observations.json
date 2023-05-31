@@ -258,7 +258,6 @@
       "type": "number",
       "constraints": {
         "required": false,
-        "minimum": 1e-15,
         "maximum": 1
       },
       "example": 0.4
@@ -270,7 +269,6 @@
       "type": "number",
       "constraints": {
         "required": false,
-        "minimum": 1e-15,
         "maximum": 1
       },
       "example": 0.5
