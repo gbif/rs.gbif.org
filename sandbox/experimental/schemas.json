@@ -31,12 +31,8 @@
       "subSchemaRequirements": {
         "allOf": [
           {
-            "description": "Required schemas must be present: deployments, media",
-            "required": ["deployments", "media"]
-          },
-          {
-            "description": "At least one must be present: media-observations, event-observations",
-            "requiredAny": ["media-observations", "event-observations"]
+            "description": "Required schemas must be present: deployments, media, observations",
+            "required": ["deployments", "media", "observations"]
           }
         ]
       },
