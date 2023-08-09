@@ -6,9 +6,10 @@
     xmlns:eco="http://rs.tdwg.org/eco/terms/"
     xsi:schemaLocation='http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd'
     dc:title='Humboldt Ecological Inventory'
-    name="HumboldtEcologicalInventory" namespace='http://rs.tdwg.org/eco/terms/'
-    rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2023-07-26'
+    name='HumboldtEcologicalInventory'
+    namespace='http://rs.tdwg.org/eco/terms/'
+    rowType='http://rs.tdwg.org/eco/terms/HumboldtInventory'
+    dc:issued='2023-08-09'
     dc:subject='dwc:Event'
     dc:relation='https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv'
     dc:description='Extended support for dwc:Events related to ecological inventories.'>
