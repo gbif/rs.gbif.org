@@ -6,9 +6,9 @@
     xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
     dc:title="Extended Measurement Or Facts"
     name="ExtendedMeasurementOrFact" namespace="http://rs.iobis.org/obis/terms/" rowType="http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact"
-    dc:issued="2016-09-05"
+    dc:issued="2023-08-28"
     dc:subject=""
-    dc:relation="http://rs.tdwg.org/dwc/terms/index.htm#measureindex"
+    dc:relation="https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml"
     dc:description="Support for generic measurements or facts, extended version linking to occurrences.
     This extension (eMoF) was developed to be used in combination with the Event Core, but is also compatible with other cores. When used with Event Core it allows to create an additional link between the eMoF and the occurrence extension. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.">
 
