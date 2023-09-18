@@ -7,10 +7,10 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2023-09-14'
+    dc:issued='2023-09-18'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
-    dc:description='An action that occurs at some location during some time.'>
+    dc:description='Support for Darwin Core Event-based records.'>
 
     <!-- Record-level -->
     <property group='Record-level' name='type' thesaurus='http://rs.gbif.org/vocabulary/dcterms/type.xml' namespace='http://purl.org/dc/elements/1.1/' qualName='http://purl.org/dc/elements/1.1/type' dc:relation='https://dwc.tdwg.org/terms/#dc:type' dc:description='The nature or genre of the resource.' comments='Must be populated with a value from the DCMI type vocabulary (http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/).' examples='`StillImage`; `MovingImage`; `Sound`; `PhysicalObject`; `Event`; `Text`' required='false'/>
