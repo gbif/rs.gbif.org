@@ -72,7 +72,7 @@
     },
     {
       "name": "observationLevel",
-      "description": "Level at which the observation was classified. `media` for media-based observations that are directly associated with a media file (`mediaID`). These are especially useful for machine learning and don't need to be mutally exclusive (e.g. multiple classifications are allowed). `event` for event-based observations that consider an event (comprising a collection of media files). These are especially useful for ecological research and should be mutually exclusive, so that `count` can be summed.",
+      "description": "Level at which the observation was classified. `media` for media-based observations that are directly associated with a media file (`mediaID`). These are especially useful for machine learning and don't need to be mutually exclusive (e.g. multiple classifications are allowed). `event` for event-based observations that consider an event (comprising a collection of media files). These are especially useful for ecological research and should be mutually exclusive, so that their `count` can be summed.",
       "type": "string",
       "constraints": {
         "required": true,
@@ -85,7 +85,7 @@
     },
     {
       "name": "observationType",
-      "description": "Type of the observation. All categories in this vocabulary have to be understandable from an AI point of view. `unknown` describes classifications with a confidence level below some predefined threshold i.e. neither humans nor AI can say what was recorded.",
+      "description": "Type of the observation. All categories in this vocabulary have to be understandable from an AI point of view. `unknown` describes classifications with a `classificationProbability` below some predefined threshold i.e. neither humans nor AI can say what was recorded.",
       "type": "string",
       "constraints": {
         "required": true,
@@ -248,6 +248,7 @@
       "type": "number",
       "constraints": {
         "required": false,
+        "minimum": 1e-15,
         "maximum": 1
       },
       "example": 0.4
@@ -259,6 +260,7 @@
       "type": "number",
       "constraints": {
         "required": false,
+        "minimum": 1e-15,
         "maximum": 1
       },
       "example": 0.5

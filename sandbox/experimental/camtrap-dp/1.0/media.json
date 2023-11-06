@@ -3,7 +3,7 @@
   "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/media.json",
   "name": "media",
   "title": "Media",
-  "description": "Table with media files (images/videos) captured by the camera traps. Associated with deployments (`deploymentID`). Includes timestamp and file path.",
+  "description": "Table with media files (images/videos) recorded during deployments (`deploymentID`). Includes timestamp and file path.",
   "fields": [
     {
       "name": "mediaID",
@@ -65,6 +65,7 @@
     {
       "name": "filePublic",
       "description": "`false` if the media file is not publicly accessible (e.g. to protect the privacy of people).",
+      "skos:broadMatch": "http://rs.tdwg.org/ac/terms/serviceExpectation",
       "type": "boolean",
       "constraints": {
         "required": true
@@ -94,7 +95,7 @@
     {
       "name": "exifData",
       "description": "EXIF data of the media file. Formatted as a valid JSON object.",
-      "type": "object",
+      "type": "any",
       "constraints": {
         "required": false
       },

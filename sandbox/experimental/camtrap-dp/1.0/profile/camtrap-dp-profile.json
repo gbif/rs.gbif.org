@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Camera Trap Data Package",
-  "description": "Data exchange format for camera trap data. <https://tdwg.github.io/camtrap-dp/>",
+  "description": "Data exchange format for camera trap data. <https://camtrap-dp.tdwg.org>",
   "type": "object",
   "definitions": {
     "version": {
@@ -203,7 +203,7 @@
             },
             "samplingDesign": {
               "description": "Type of a sampling design/layout. The values are based on [Wearn & Glover-Kapfer (2017)](https://doi.org/10.13140/RG.2.2.23409.17767), pages 80-82: `simple random`: random distribution of sampling locations; `systematic random`: random distribution of sampling locations, but arranged in a regular pattern; `clustered random`: random distribution of sampling locations, but clustered in arrays; `experimental`: non-random distribution aimed to study an effect, including the before-after control-impact (BACI) design; `targeted`: non-random distribution optimized for capturing specific target species (often using various bait types); `opportunistic`: opportunistic camera trapping (usually with a small number of cameras).",
-              "skos:broadMatch": "http://rs.tdwg.org/hc/terms/inventoryTypes",
+              "skos:broadMatch": "http://rs.tdwg.org/eco/terms/inventoryTypes",
               "type": "string",
               "enum": [
                 "simpleRandom",
@@ -220,7 +220,7 @@
               "items": {
                 "type": "string",
                 "enum": [
-                  "motionDetection",
+                  "activityDetection",
                   "timeLapse"
                 ]
               },
@@ -283,22 +283,20 @@
           "items": {
             "type": "object",
             "required": [
-              "taxonID",
-              "taxonIDReference",
               "scientificName"
             ],
             "properties": {
-              "taxonID": {
-                "description": "Unique identifier of the taxon according to the taxonomic reference list defined by `taxonIDReference`.",
-                "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/taxonID",
-                "type": "string",
-                "example": "QLXL"
-              },
               "scientificName": {
                 "description": "Scientific name of the taxon.",
                 "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/scientificName",
                 "type": "string",
                 "example": "Canis lupus"
+              },
+              "taxonID": {
+                "description": "Unique identifier of the taxon. Preferably a global unique identifier issued by an authoritative checklist.",
+                "skos:exactMatch": "http://rs.tdwg.org/dwc/terms/taxonID",
+                "type": "string",
+                "example": "https://www.checklistbank.org/dataset/COL2023/taxon/QLXL"
               },
               "taxonRank": {
                 "description": "Taxonomic rank of the scientific name.",

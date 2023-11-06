@@ -3,7 +3,7 @@
   "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/deployments.json",
   "name": "deployments",
   "title": "Deployments",
-  "description": "Table with camera trap deployments. Includes `deploymentID`, start, end, location and camera setup information.",
+  "description": "Table with camera trap placements (deployments). Includes `deploymentID`, start, end, location and camera setup information.",
   "fields": [
     {
       "name": "deploymentID",
@@ -97,7 +97,7 @@
     {
       "name": "setupBy",
       "description": "Name or identifier of the person or organization that deployed the camera.",
-      "skos:broadMatch": "http://rs.tdwg.org/hc/terms/samplingPerformedBy",
+      "skos:broadMatch": "http://rs.tdwg.org/eco/terms/samplingPerformedBy",
       "type": "string",
       "constraints": {
         "required": false
@@ -125,7 +125,7 @@
     },
     {
       "name": "cameraDelay",
-      "description": "Predefined duration after a trigger when activity detected by the camera is ignored. Expressed in seconds.",
+      "description": "Predefined duration after detection when further activity is ignored. Expressed in seconds.",
       "type": "integer",
       "constraints": {
         "required": false,
@@ -135,7 +135,11 @@
     },
     {
       "name": "cameraHeight",
-      "description": "Height at which the camera was deployed. Expressed in meters.",
+      "description": "Height at which the camera was deployed. Expressed in meters. Not to be combined with `cameraDepth`.",
+      "skos:narrowMatch": [
+        "http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters",
+        "http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters"
+      ],
       "type": "number",
       "constraints": {
         "required": false,
