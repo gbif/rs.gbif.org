@@ -329,6 +329,15 @@
         "required": false
       },
       "example": ""
+    },
+    {
+      "name": "newTestFieldForObservations",
+      "description": "TEST FIELD",
+      "type": "string",
+      "constraints": {
+        "required": false
+      },
+      "example": "test"
     }
   ],
   "missingValues": [

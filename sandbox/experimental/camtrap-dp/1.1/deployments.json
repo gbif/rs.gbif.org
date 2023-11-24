@@ -278,6 +278,15 @@
         "required": false
       },
       "example": ""
+    },
+    {
+      "name": "newTestFieldForDeployments",
+      "description": "TEST FIELD",
+      "type": "string",
+      "constraints": {
+        "required": false
+      },
+      "example": "test"
     }
   ],
   "missingValues": [

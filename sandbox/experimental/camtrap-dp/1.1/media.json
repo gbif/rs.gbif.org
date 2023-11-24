@@ -119,6 +119,15 @@
         "required": false
       },
       "example": "corrupted file"
+    },
+    {
+      "name": "newTestFieldForMedia",
+      "description": "TEST FIELD",
+      "type": "string",
+      "constraints": {
+        "required": false
+      },
+      "example": "test"
     }
   ],
   "missingValues": [
