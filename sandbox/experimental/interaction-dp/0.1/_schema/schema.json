@@ -16,7 +16,7 @@
       "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism-interaction-assertion.json",
       "name": "organism-interaction-assertion",
       "title": "OrganismInteractionAssertion",
-      "description": "An observation, measurement, or other statement made by an Agent with respect to a specific instance of interaction between two Organisms.",
+      "description": "An observation, measurement, or other statement made by an Agent with respect to a specific instance of interaction between two Organisms."
     },
     {
       "identifier": "http://rs.gbif.org/schemas/interaction-dp/event",
