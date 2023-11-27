@@ -75,9 +75,9 @@
       "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia.",
     }
   ],
-  "title": "Darwin Core Material Data Package (Material DP)",
-  "shortTitle": "Material DP",
-  "description": "A data package for Material focused datasets",
+  "title": "Interaction DP",
+  "shortTitle": "Interaction DP",
+  "description": "-",
   "issued": "2023-05-11",
   "isLatest": true
 }
