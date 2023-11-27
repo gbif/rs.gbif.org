@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/oganism.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism.json",
   "name": "organism",
   "title": "Organism",
   "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
