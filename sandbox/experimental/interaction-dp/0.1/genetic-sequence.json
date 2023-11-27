@@ -1,69 +1,70 @@
 {
-    "identifier": "http://rs.gbif.org/schemas/interaction-dp/genetic-sequence",
-    "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/genetic-sequence.json",
-    "name": "genetic-sequence",
-    "title": "GeneticSequence",
-    "description": "A genetic sequence in either a physical or digital manifestation.",
-    "fields": [
-        {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a genetic sequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "constraints": {
-                "required": true,
-                "unique": true
-            }
-        },
-        {
-            "name": "sourceMaterialEntityID",
-            "description": "A unique identifier for an instance of MaterialEntity that was the source of this GeneticSequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": ""
-        },
-        {
-            "name": "geneticSequenceType",
-            "description": "The category that best matches the nature of the GeneticSequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
-            "examples": "`16S`; `cytochrome b`"
-        },
-        {
-            "name": "geneticSequence",
-            "description": "A string representing nucleotide base pairs.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": ""
-        },
-        {
-            "name": "geneticSequenceCitation",
-            "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the GeneticSequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
-            "examples": ""
-        },
-        {
-            "name": "geneticSequenceRemarks",
-            "description": "Comments or notes about the GeneticSequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": ""
-        }
-    ],
-    "foreignKeys": [{
-            "fields": "sourceMaterialEntityID",
-            "reference": {
-                "resource": "material-entity",
-                "fields": "materialEntityID"
-            }
-        }
-    ]
+  "identifier": "http://rs.gbif.org/schemas/interaction-dp/genetic-sequence",
+  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/genetic-sequence.json",
+  "name": "genetic-sequence",
+  "title": "GeneticSequence",
+  "description": "A genetic sequence in either a physical or digital manifestation.",
+  "fields": [
+    {
+      "name": "geneticSequenceID",
+      "description": "An identifier for a genetic sequence.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "sourceMaterialEntityID",
+      "description": "A unique identifier for an instance of MaterialEntity that was the source of this GeneticSequence.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "geneticSequenceType",
+      "description": "The category that best matches the nature of the GeneticSequence.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`16S`; `cytochrome b`"
+    },
+    {
+      "name": "geneticSequence",
+      "description": "A string representing nucleotide base pairs.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "geneticSequenceCitation",
+      "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the GeneticSequence.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": ""
+    },
+    {
+      "name": "geneticSequenceRemarks",
+      "description": "Comments or notes about the GeneticSequence.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "sourceMaterialEntityID",
+      "reference": {
+        "resource": "material-entity",
+        "fields": "materialEntityID"
+      }
+    }
+  ]
 }

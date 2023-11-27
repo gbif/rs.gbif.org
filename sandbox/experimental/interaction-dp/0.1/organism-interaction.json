@@ -1,75 +1,76 @@
 {
-    "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism-interaction",
-    "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/oganism-interaction.json",
-    "name": "organism-interaction",
-    "title": "OrganismInteraction",
-    "description": "An interaction between two Organisms.",
-    "fields": [
-        {
-            "name": "eventID",
-            "description": "An identifier for a particular instance of an OrganismInteraction.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "constraints": {
-                "required": true,
-                "unique": true
-            }
-        },
-        {
-            "name": "subjectOrganismID",
-            "description": "A unique identifier for the subject Organism in an OrganismInteraction.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": ""
-        },
-        {
-            "name": "interactionType",
-            "description": "The category that best matches the nature of the OrganismInteraction.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
-            "examples": "`visits flowers of`; `pollinated by`; `host of`; `parasitoid of`"
-        },
-        {
-            "name": "interactionTypeID",
-            "description": "An identifier for the category that best matches the nature of the OrganismInteraction.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "`visits flowers of`; `pollinated by`; `host of`; `parasitoid of`"
-        },
-        {
-            "name": "objectOrganismID",
-            "description": "A unique identifier for the object Organism in an OrganismInteraction.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": ""
-        }
-    ],
-    "foreignKeys": [{
-            "fields": "eventID",
-            "reference": {
-                "resource": "event",
-                "fields": "eventID"
-            }
-        },
-        {
-            "fields": "subjectOrganismID",
-            "reference": {
-                "resource": "organism",
-                "fields": "organismID"
-            }
-        },
-        {
-            "fields": "objectOrganismID",
-            "reference": {
-                "resource": "organism",
-                "fields": "organismID"
-            }
-        }
-    ]
+  "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism-interaction",
+  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/oganism-interaction.json",
+  "name": "organism-interaction",
+  "title": "OrganismInteraction",
+  "description": "An interaction between two Organisms.",
+  "fields": [
+    {
+      "name": "eventID",
+      "description": "An identifier for a particular instance of an OrganismInteraction.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "subjectOrganismID",
+      "description": "A unique identifier for the subject Organism in an OrganismInteraction.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "interactionType",
+      "description": "The category that best matches the nature of the OrganismInteraction.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`visits flowers of`; `pollinated by`; `host of`; `parasitoid of`"
+    },
+    {
+      "name": "interactionTypeID",
+      "description": "An identifier for the category that best matches the nature of the OrganismInteraction.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "`visits flowers of`; `pollinated by`; `host of`; `parasitoid of`"
+    },
+    {
+      "name": "objectOrganismID",
+      "description": "A unique identifier for the object Organism in an OrganismInteraction.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "eventID",
+      "reference": {
+        "resource": "event",
+        "fields": "eventID"
+      }
+    },
+    {
+      "fields": "subjectOrganismID",
+      "reference": {
+        "resource": "organism",
+        "fields": "organismID"
+      }
+    },
+    {
+      "fields": "objectOrganismID",
+      "reference": {
+        "resource": "organism",
+        "fields": "organismID"
+      }
+    }
+  ]
 }
