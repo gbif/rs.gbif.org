@@ -296,7 +296,7 @@
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/event-assertion.json",
           "name": "event-assertion",
           "title": "EventAssertion",
-          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event.",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event."
         },
         {
           "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism",
@@ -310,7 +310,7 @@
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism-assertion.json",
           "name": "organism-assertion",
           "title": "OrganismAssertion",
-          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Organism.",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Organism."
         },
         {
           "identifier": "http://rs.gbif.org/schemas/interaction-dp/material-entity",
@@ -324,21 +324,21 @@
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/material-entity-assertion.json",
           "name": "material-entity-assertion",
           "title": "MaterialEntityAssertion",
-          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of MaterialEntity.",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of MaterialEntity."
         },
         {
           "identifier": "http://rs.gbif.org/schemas/interaction-dp/digital-media",
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/digital-media.json",
           "name": "digital-media",
           "title": "DigitalMedia",
-          "description": "Media (sound, image, video, text) in a digital manifestation.",
+          "description": "Media (sound, image, video, text) in a digital manifestation."
         },
         {
           "identifier": "http://rs.gbif.org/schemas/interaction-dp/digital-media-assertion",
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/digital-media-assertion.json",
           "name": "digital-media-assertion",
           "title": "DigitalMediaAssertion",
-          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia.",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia."
         }
       ],
       "title": "Interaction DP",
