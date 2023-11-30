@@ -344,9 +344,9 @@
           "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia."
         }
       ],
-      "title": "Interaction DP",
+      "title": "Darwin Core Interaction Package (Interaction DP)",
       "shortTitle": "Interaction DP",
-      "description": "-",
+      "description": "A data package for testing interaction data",
       "issued": "2023-11-27",
       "compatible": "2023-11-27",
       "isLatest": true
