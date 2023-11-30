@@ -40,6 +40,7 @@
       "shortTitle": "Camtrap DP",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data. IT'S JUST A TEST VERSION TO TEST HOW THE IPT HANDLE SCHEMA UPDATE",
       "issued": "2023-11-24",
+      "compatible": "2023-05-11",
       "isLatest": true
     },
     {
@@ -171,6 +172,7 @@
       "shortTitle": "ColDP",
       "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
       "issued": "2022-03-16",
+      "compatible": "2022-03-16",
       "isLatest": true
     },
     {
@@ -262,6 +264,7 @@
       "shortTitle": "Material DP",
       "description": "A data package for Material focused datasets",
       "issued": "2023-05-11",
+      "compatible": "2023-05-11",
       "isLatest": true
     },
     {
@@ -345,6 +348,7 @@
       "shortTitle": "Interaction DP",
       "description": "-",
       "issued": "2023-11-27",
+      "compatible": "2023-11-27",
       "isLatest": true
     }
   ]

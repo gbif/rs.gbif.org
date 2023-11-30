@@ -87,5 +87,6 @@
   "shortTitle": "Material DP",
   "description": "A data package for Material focused datasets",
   "issued": "2023-05-11",
+  "compatible": "2023-05-11",
   "isLatest": true
 }
