@@ -40,7 +40,7 @@
       "shortTitle": "Camtrap DP",
       "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data. IT'S JUST A TEST VERSION TO TEST HOW THE IPT HANDLE SCHEMA UPDATE",
       "issued": "2023-11-24",
-      "compatible": "2023-05-11",
+      "compatible": "2023-11-24",
       "isLatest": true
     },
     {
