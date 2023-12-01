@@ -2,28 +2,28 @@
   "schemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.1",
-      "metadataProfile": "https://rs.gbif.org/sandbox/experimental/camtrap-dp/1.1/profile/camtrap-dp-profile.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2",
+      "metadataProfile": "https://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/profile/camtrap-dp-profile.json",
       "name": "camtrap-dp",
-      "version": "1.1",
+      "version": "1.2",
       "subSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.1/deployments.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/deployments.json",
           "name": "deployments",
           "title": "Camera trap: deployments",
           "description": "Camera trap: deployments schema"
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.1/media.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/media.json",
           "name": "media",
           "title": "Camera trap: media",
           "description": "Camera trap: media schema"
         },
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
-          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.1/observations.json",
+          "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/observations.json",
           "name": "observations",
           "title": "Camera trap: observations",
           "description": "Camera trap: observations schema"
@@ -40,7 +40,7 @@
       "title": "Camera Trap Data Package (Camtrap DP)",
       "shortTitle": "Camtrap DP",
       "description": "IT'S JUST A TEST VERSION TO TEST HOW THE IPT HANDLE SCHEMA UPDATE",
-      "issued": "2023-11-30",
+      "issued": "2023-12-01",
       "isLatest": true
     },
     {
