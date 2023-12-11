@@ -7,21 +7,21 @@
   "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/deployments",
-      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/deployments.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/deployments.json",
       "name": "deployments",
       "title": "Camera trap: deployments",
       "description": "Camera trap: deployments schema"
     },
     {
       "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/media",
-      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/media.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/media.json",
       "name": "media",
       "title": "Camera trap: media",
       "description": "Camera trap: media schema"
     },
     {
       "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/observations",
-      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/observations.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/observations.json",
       "name": "observations",
       "title": "Camera trap: observations",
       "description": "Camera trap: observations schema"
