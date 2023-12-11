@@ -29,7 +29,7 @@
           "description": "Camera trap: observations schema"
         }
       ],
-      "tableSchemaRequirements": {
+      "tableSchemasRequirements": {
         "allOf": [
           {
             "description": "Required schemas must be present: deployments, media, observations",
@@ -148,7 +148,7 @@
           "description": "A vernacular or common name for a taxon."
         }
       ],
-      "tableSchemaRequirements": {
+      "tableSchemasRequirements": {
         "allOf": [
           {
             "description": "At least one required schema present: name, taxon, reference, name-usage",

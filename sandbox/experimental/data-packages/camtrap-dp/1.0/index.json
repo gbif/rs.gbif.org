@@ -27,7 +27,7 @@
       "description": "Camera trap: observations schema"
     }
   ],
-  "tableSchemaRequirements": {
+  "tableSchemasRequirements": {
     "allOf": [
       {
         "description": "Required schemas must be present: deployments, media, observations",

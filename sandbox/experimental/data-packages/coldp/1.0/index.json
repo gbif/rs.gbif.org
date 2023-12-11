@@ -103,7 +103,7 @@
       "description": "A vernacular or common name for a taxon."
     }
   ],
-  "tableSchemaRequirements": {
+  "tableSchemasRequirements": {
     "allOf": [
       {
         "description": "At least one required schema present: name, taxon, reference, name-usage",
