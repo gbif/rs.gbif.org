@@ -10,7 +10,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://rs.gbif.org/sandbox/experimental/frictionless/data-package.json"
+      "$ref": "https://rs.gbif.org/sandbox/experimental/data-packages/frictionless/data-package.json"
     },
     {
       "required": [

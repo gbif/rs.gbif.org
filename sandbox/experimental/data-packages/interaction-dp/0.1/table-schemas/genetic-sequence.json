@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/genetic-sequence",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/genetic-sequence.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/genetic-sequence.json",
   "name": "genetic-sequence",
   "title": "GeneticSequence",
   "description": "A genetic sequence in either a physical or digital manifestation.",

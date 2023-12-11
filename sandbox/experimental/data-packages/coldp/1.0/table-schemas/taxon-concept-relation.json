@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/taxon-concept-relation",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/taxon-concept-relation.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/taxon-concept-relation.json",
   "name": "taxon-concept-relation",
   "title": "Taxon Concept Relation",
   "description": "A directed taxon relation representing RCC5 taxon concept assertions.",

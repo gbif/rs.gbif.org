@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/event",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/event.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/event.json",
   "name": "event",
   "title": "Event",
   "description": "An action that occurs at some location during some time.",

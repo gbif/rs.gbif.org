@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/material-entity",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/material-entity.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/material-entity.json",
   "name": "material-entity",
   "title": "MaterialEntity",
   "description": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.",

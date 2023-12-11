@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/schemas/material-dp/gathering-event-assertion",
-    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/gathering-event-assertion.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/gathering-event-assertion.json",
     "name": "gathering-event-assertion",
     "title": "GatheringEventAssertion",
     "description": "An observation, measurement, or other statement made by an Agent with respect to a GatheringEvent.",

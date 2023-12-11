@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
-  "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/observations.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/observations.json",
   "name": "observations",
   "title": "Observations",
   "description": "Table with observations derived from the media files. Associated with deployments (`deploymentID`). Observations can mark non-animal events (camera setup, human, blank) or one or more animal observations (`observationType` = `animal`) of a certain taxon, count, life stage, sex, behavior and/or individual. Observations can be made at different levels (`observationLevel`).",

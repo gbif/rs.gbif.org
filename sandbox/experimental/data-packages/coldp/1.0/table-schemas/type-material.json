@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/type-material",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/type-material.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/type-material.json",
   "name": "type-material",
   "title": "Type Material",
   "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination.",

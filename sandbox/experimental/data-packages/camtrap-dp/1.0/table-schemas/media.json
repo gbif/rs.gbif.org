@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
-  "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/media.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/media.json",
   "name": "media",
   "title": "Media",
   "description": "Table with media files (images/videos) recorded during deployments (`deploymentID`). Includes timestamp and file path.",

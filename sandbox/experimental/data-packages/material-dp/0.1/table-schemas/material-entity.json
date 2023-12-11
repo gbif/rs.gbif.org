@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/schemas/material-dp/material-entity",
-    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/material-entity.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/material-entity.json",
     "name": "material-entity",
     "title": "MaterialEntity",
     "description": "A material manifestation of an entity.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/digital-media",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/digital-media.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/digital-media.json",
   "name": "digital-media",
   "title": "DigitalMedia",
   "description": "Media (sound, image, video, text) in a digital manifestation.",

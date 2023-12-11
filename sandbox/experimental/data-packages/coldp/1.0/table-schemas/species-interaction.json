@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/species-interaction",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/species-interaction.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/species-interaction.json",
   "name": "species-interaction",
   "title": "Species Interaction",
   "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/distribution",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/distribution.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/distribution.json",
   "name": "distribution",
   "title": "Distribution",
   "description": "A structured distribution record for a taxon in a given area.",

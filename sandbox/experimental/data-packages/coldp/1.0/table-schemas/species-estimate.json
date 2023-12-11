@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/species-estimate",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/species-estimate.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/species-estimate.json",
   "name": "species-estimate",
   "title": "Species Estimate",
   "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/event-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/event-assertion.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/event-assertion.json",
   "name": "event-assertion",
   "title": "EventAssertion",
   "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event.",

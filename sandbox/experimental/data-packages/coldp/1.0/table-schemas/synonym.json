@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/synonym",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/synonym.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/synonym.json",
   "name": "synonym",
   "title": "Synonym",
   "description": "A synonymous name for a taxon. Note that the same name can be linked to mulitple taxa by having several Synonym records to model pro parte synonyms.",

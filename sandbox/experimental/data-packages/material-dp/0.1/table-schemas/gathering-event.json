@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/schemas/material-dp/gathering-event",
-    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/gathering-event.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/gathering-event.json",
     "name": "gathering-event",
     "title": "GatheringEvent",
     "description": "A type of Event during which Material and/or Digital Entities are gathered. The eventType is implicit.",

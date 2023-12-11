@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/digital-media-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/digital-media-assertion.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/digital-media-assertion.json",
   "name": "digital-media-assertion",
   "title": "DigitalMediaAssertion",
   "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia.",

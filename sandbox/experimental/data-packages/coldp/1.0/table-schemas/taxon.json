@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/taxon",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/taxon.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/taxon.json",
   "name": "taxon",
   "title": "Taxon",
   "description": "An accepted name with a taxonomic classification given either as a parent-child relation or as a flat, denormalized record.",

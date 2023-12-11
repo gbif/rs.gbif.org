@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/genetic-sequence-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/genetic-sequence-assertion.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/genetic-sequence-assertion.json",
   "name": "genetic-sequence-assertion",
   "title": "GeneticSequenceAssertion",
   "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of GeneticSequence.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism-assertion.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/organism-assertion.json",
   "name": "organism-assertion",
   "title": "OrganismAssertion",
   "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Organism.",

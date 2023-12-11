@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/schemas/coldp/name",
-  "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/name.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/name.json",
   "name": "name",
   "title": "Name",
   "description": "See [NAMES.md](https://github.com/CatalogueOfLife/general/blob/master/docs/NAMES.md) for examples and rationales.",

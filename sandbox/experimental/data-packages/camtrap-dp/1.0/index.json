@@ -1,27 +1,27 @@
 {
   "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
-  "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0",
-  "profile": "https://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/profile/camtrap-dp-profile.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0",
+  "profile": "https://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/profile/camtrap-dp-profile.json",
   "name": "camtrap-dp",
   "version": "1.0",
   "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/deployments.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/deployments.json",
       "name": "deployments",
       "title": "Camera trap: deployments",
       "description": "Camera trap: deployments schema"
     },
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/media.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/media.json",
       "name": "media",
       "title": "Camera trap: media",
       "description": "Camera trap: media schema"
     },
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp/observations",
-      "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0/observations.json",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/observations.json",
       "name": "observations",
       "title": "Camera trap: observations",
       "description": "Camera trap: observations schema"

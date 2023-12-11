@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/schemas/material-dp/digital-entity",
-    "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/digital-entity.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/digital-entity.json",
     "name": "digital-entity",
     "title": "DigitalEntity",
     "description": "A digital manifestation of an entity.",
