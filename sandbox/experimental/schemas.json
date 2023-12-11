@@ -1,12 +1,12 @@
 {
-  "schemas": [
+  "dataPackages": [
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp",
       "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2",
-      "metadataProfile": "https://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/profile/camtrap-dp-profile.json",
+      "profile": "https://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/profile/camtrap-dp-profile.json",
       "name": "camtrap-dp",
       "version": "1.2",
-      "subSchemas": [
+      "tableSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
           "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.2/deployments.json",
@@ -29,7 +29,7 @@
           "description": "Camera trap: observations schema"
         }
       ],
-      "subSchemaRequirements": {
+      "tableSchemaRequirements": {
         "allOf": [
           {
             "description": "Required schemas must be present: deployments, media, observations",
@@ -48,7 +48,7 @@
       "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0",
       "name": "coldp",
       "version": "1.0",
-      "subSchemas": [
+      "tableSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/coldp/distribution",
           "url": "http://rs.gbif.org/sandbox/experimental/coldp/1.0/distribution.json",
@@ -148,7 +148,7 @@
           "description": "A vernacular or common name for a taxon."
         }
       ],
-      "subSchemaRequirements": {
+      "tableSchemaRequirements": {
         "allOf": [
           {
             "description": "At least one required schema present: name, taxon, reference, name-usage",
@@ -179,7 +179,7 @@
       "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1",
       "name": "material-dp",
       "version": "0.1",
-      "subSchemas": [
+      "tableSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/material-dp/material-entity",
           "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/material-entity.json",
@@ -270,7 +270,7 @@
       "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1",
       "name": "interaction-dp",
       "version": "0.1",
-      "subSchemas": [
+      "tableSchemas": [
         {
           "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism-interaction",
           "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism-interaction.json",

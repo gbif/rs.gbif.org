@@ -3,7 +3,7 @@
   "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1",
   "name": "material-dp",
   "version": "0.1",
-  "subSchemas": [
+  "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/material-dp/material-entity",
       "url": "http://rs.gbif.org/sandbox/experimental/material-dp/0.1/material-entity.json",

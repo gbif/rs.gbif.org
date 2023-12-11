@@ -3,7 +3,7 @@
   "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1",
   "name": "interaction-dp",
   "version": "0.1",
-  "subSchemas": [
+  "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism-interaction",
       "url": "http://rs.gbif.org/sandbox/experimental/interaction-dp/0.1/organism-interaction.json",

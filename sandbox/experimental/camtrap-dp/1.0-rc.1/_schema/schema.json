@@ -3,7 +3,7 @@
   "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0-rc.1",
   "name": "camtrap-dp",
   "version": "1.0-rc.1",
-  "subSchemas": [
+  "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/schemas/camtrap-dp/deployments",
       "url": "http://rs.gbif.org/sandbox/experimental/camtrap-dp/1.0-rc.1/deployments.json",
@@ -26,7 +26,7 @@
       "description": "Camera trap: observations schema"
     }
   ],
-  "subSchemaRequirements": {
+  "tableSchemaRequirements": {
     "allOf": [
       {
         "description": "Required schemas must be present: deployments, media, observations",
