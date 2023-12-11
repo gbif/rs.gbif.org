@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/name-usage",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/name-usage",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/name-usage.json",
   "name": "name-usage",
   "title": "Name Usage",

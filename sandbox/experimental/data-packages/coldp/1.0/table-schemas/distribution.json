@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/distribution",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/distribution.json",
   "name": "distribution",
   "title": "Distribution",

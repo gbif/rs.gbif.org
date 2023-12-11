@@ -1,5 +1,5 @@
 {
-    "identifier": "http://rs.gbif.org/schemas/material-dp/identification",
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/identification",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/identification.json",
     "name": "identification",
     "title": "Identification",

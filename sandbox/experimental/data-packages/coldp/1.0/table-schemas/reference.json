@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/reference",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/reference.json",
   "name": "reference",
   "title": "Reference",

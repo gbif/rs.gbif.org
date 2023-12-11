@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/vernacular-name",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/vernacular-name.json",
   "name": "vernacular-name",
   "title": "Vernacular Name",

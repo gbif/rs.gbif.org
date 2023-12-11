@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/camtrap-dp/media",
+  "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/media",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/camtrap-dp/1.0/table-schemas/media.json",
   "name": "media",
   "title": "Media",

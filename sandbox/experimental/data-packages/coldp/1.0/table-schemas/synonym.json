@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/synonym",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/synonym",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/synonym.json",
   "name": "synonym",
   "title": "Synonym",

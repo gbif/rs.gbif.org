@@ -1,5 +1,5 @@
 {
-    "identifier": "http://rs.gbif.org/schemas/material-dp/agent-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/agent-identifier",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/agent-identifier.json",
     "name": "agent-identifier",
     "title": "AgentIdentifier",

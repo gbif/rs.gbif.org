@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/interaction-dp/digital-media-assertion",
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp/digital-media-assertion",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/digital-media-assertion.json",
   "name": "digital-media-assertion",
   "title": "DigitalMediaAssertion",

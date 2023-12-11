@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/taxon",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/taxon",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/taxon.json",
   "name": "taxon",
   "title": "Taxon",

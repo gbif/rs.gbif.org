@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/interaction-dp/genetic-sequence-assertion",
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp/genetic-sequence-assertion",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/genetic-sequence-assertion.json",
   "name": "genetic-sequence-assertion",
   "title": "GeneticSequenceAssertion",

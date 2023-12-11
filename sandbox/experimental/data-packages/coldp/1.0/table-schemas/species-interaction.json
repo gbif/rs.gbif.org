@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/species-interaction",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/species-interaction",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/species-interaction.json",
   "name": "species-interaction",
   "title": "Species Interaction",

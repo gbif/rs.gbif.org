@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/coldp/species-estimate",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0/table-schemas/species-estimate.json",
   "name": "species-estimate",
   "title": "Species Estimate",

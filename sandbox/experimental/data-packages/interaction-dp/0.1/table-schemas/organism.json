@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/interaction-dp/organism",
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/organism.json",
   "name": "organism",
   "title": "Organism",

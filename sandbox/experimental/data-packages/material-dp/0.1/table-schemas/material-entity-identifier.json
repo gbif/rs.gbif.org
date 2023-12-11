@@ -1,5 +1,5 @@
 {
-    "identifier": "http://rs.gbif.org/schemas/material-dp/material-entity-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-identifier",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/material-dp/0.1/table-schemas/material-entity-identifier.json",
     "name": "material-entity-identifier",
     "title": "MaterialEntityIdentifier",

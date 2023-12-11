@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.gbif.org/schemas/interaction-dp/material-entity-assertion",
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp/material-entity-assertion",
   "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/material-entity-assertion.json",
   "name": "material-entity-assertion",
   "title": "MaterialEntityAssertion",
