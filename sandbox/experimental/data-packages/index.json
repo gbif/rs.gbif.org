@@ -45,7 +45,7 @@
     },
     {
       "identifier": "http://rs.gbif.org/data-packages/coldp",
-      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/coldp/1.0",
+      "url": "http://rs.gbif.org/sandbox/experimental/data-packages/col-dp/1.0",
       "name": "coldp",
       "version": "1.0",
       "tableSchemas": [
