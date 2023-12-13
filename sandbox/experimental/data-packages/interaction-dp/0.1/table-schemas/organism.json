@@ -58,7 +58,7 @@
       "examples": ""
     },
     {
-      "name": "scientificName",
+      "name": "kingdom",
       "description": "The full scientific name of the kingdom in which the scientificName is classified.",
       "type": "string",
       "format": "default",
