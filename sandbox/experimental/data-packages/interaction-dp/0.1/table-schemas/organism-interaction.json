@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-interaction",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/oganism-interaction.json",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/interaction-dp/0.1/table-schemas/organism-interaction.json",
   "name": "organism-interaction",
   "title": "OrganismInteraction",
   "description": "An interaction between two Organisms.",
