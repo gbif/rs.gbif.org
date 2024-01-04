@@ -1,0 +1,352 @@
+{
+  "dataPackages": [
+    {
+      "identifier": "http://rs.gbif.org/data-packages/camtrap-dp",
+      "url": "http://rs.gbif.org/sandbox/data-packages/camtrap-dp/1.0",
+      "profile": "https://rs.gbif.org/sandbox/data-packages/camtrap-dp/1.0/profile/camtrap-dp-profile.json",
+      "name": "camtrap-dp",
+      "version": "1.0",
+      "tableSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/deployments",
+          "url": "http://rs.gbif.org/sandbox/data-packages/camtrap-dp/1.0/table-schemas/deployments.json",
+          "name": "deployments",
+          "title": "Camera trap: deployments",
+          "description": "Camera trap: deployments schema"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/media",
+          "url": "http://rs.gbif.org/sandbox/data-packages/camtrap-dp/1.0/table-schemas/media.json",
+          "name": "media",
+          "title": "Camera trap: media",
+          "description": "Camera trap: media schema"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/observations",
+          "url": "http://rs.gbif.org/sandbox/data-packages/camtrap-dp/1.0/table-schemas/observations.json",
+          "name": "observations",
+          "title": "Camera trap: observations",
+          "description": "Camera trap: observations schema"
+        }
+      ],
+      "tableSchemasRequirements": {
+        "allOf": [
+          {
+            "description": "Required schemas must be present: deployments, media, observations",
+            "required": ["deployments", "media", "observations"]
+          }
+        ]
+      },
+      "title": "Camera Trap Data Package (Camtrap DP)",
+      "shortTitle": "Camtrap DP",
+      "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
+      "issued": "2023-11-06",
+      "isLatest": true
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp",
+      "url": "http://rs.gbif.org/sandbox/data-packages/col-dp/1.0",
+      "name": "coldp",
+      "version": "1.0",
+      "tableSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/distribution.json",
+          "name": "distribution",
+          "title": "COL Data Package (ColDP): distribution",
+          "description": "A structured distribution record for a taxon in a given area."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/media",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/media.json",
+          "name": "media",
+          "title": "COL Data Package (ColDP): media",
+          "description": "Multimedia items for a taxon such as an image, audio or video."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/name-usage",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name-usage.json",
+          "name": "name-usage",
+          "title": "COL Data Package (ColDP): name-usage",
+          "description": "A simpler alternative to the 3 entities Name, Taxon and Synonym."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/name",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name.json",
+          "name": "name",
+          "title": "COL Data Package (ColDP): name",
+          "description": "COL Data Package (ColDP): name"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name-relation.json",
+          "name": "name-relation",
+          "title": "COL Data Package (ColDP): name-relation",
+          "description": "A directed nomenclatural name relation."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/reference.json",
+          "name": "reference",
+          "title": "COL Data Package (ColDP): reference",
+          "description": "Structured bibliographic references with a unique id to refer to from other entities. References can be given either as a simple, single citation string, or in a structured form."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/species-estimate.json",
+          "name": "species-estimate",
+          "title": "COL Data Package (ColDP): species-estimate",
+          "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/species-interaction",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/species-interaction.json",
+          "name": "species-interaction",
+          "title": "COL Data Package (ColDP): species-interaction",
+          "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/synonym",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/synonym.json",
+          "name": "synonym",
+          "title": "COL Data Package (ColDP): synonym",
+          "description": "A synonymous name for a taxon. Note that the same name can be linked to mulitple taxa by having several Synonym records to model pro parte synonyms."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-concept-relation",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/taxon-concept-relation.json",
+          "name": "taxon-concept-relation",
+          "title": "COL Data Package (ColDP): taxon-concept-relation",
+          "description": "A directed taxon relation representing RCC5 taxon concept assertions."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/taxon",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/taxon.json",
+          "name": "taxon",
+          "title": "COL Data Package (ColDP): taxon",
+          "description": "An accepted name with a taxonomic classification given either as a parent-child relation or as a flat, denormalized record."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/treatment",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/treatment.json",
+          "name": "treatment",
+          "title": "COL Data Package (ColDP): treatment",
+          "description": "Treatments are parts of publications that \"treat\" a single taxon. They can be an original description for a new species, but also subsequent taxonomic works and usually include several sections such as a diagnosis, description, material examied, distribution, etc."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/type-material",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/type-material.json",
+          "name": "type-material",
+          "title": "COL Data Package (ColDP): type-material",
+          "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/vernacular-name.json",
+          "name": "vernacular-name",
+          "title": "COL Data Package (ColDP): vernacular-name",
+          "description": "A vernacular or common name for a taxon."
+        }
+      ],
+      "tableSchemasRequirements": {
+        "allOf": [
+          {
+            "description": "At least one required schema present: name, taxon, reference, name-usage",
+            "requiredAny": ["name", "taxon", "reference", "name-usage"]
+          },
+          {
+            "description": "If 'name', 'taxon' or 'synonym' present, then 'name-usage' must not be present",
+            "applicableIfPresentAny": ["name", "taxon", "synonym"],
+            "requiredAny": ["name", "taxon", "synonym"],
+            "prohibited": ["name-usage"]
+          },
+          {
+            "description": "If 'name-usage' present, then 'name', 'taxon' and 'synonym' must not be present",
+            "applicableIfPresentAny": ["name-usage"],
+            "required": ["name-usage"],
+            "prohibited": ["name", "taxon", "synonym"]
+          }
+        ]
+      },
+      "title": "Catalogue of Life Data Package (ColDP)",
+      "shortTitle": "ColDP",
+      "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
+      "issued": "2022-03-16",
+      "isLatest": true
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/material-dp",
+      "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1",
+      "name": "material-dp",
+      "version": "0.1",
+      "tableSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity.json",
+          "name": "material-entity",
+          "title": "MaterialEntity",
+          "description": "A material manifestation of an entity."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/gathering-event",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/gathering-event.json",
+          "name": "gathering-event",
+          "title": "GatheringEvent",
+          "description": "A type of Event during which Material and/or Digital Entities are gathered. The eventType is implicit."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/identification",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/identification.json",
+          "name": "identification",
+          "title": "Identification",
+          "description": "A taxonomic determination (e.g., the assignment to a taxon)."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/agent",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/agent.json",
+          "name": "agent",
+          "title": "Agent",
+          "description": "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity (https://www.w3.org/TR/prov-o/#Agent)."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/digital-entity",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/digital-entity.json",
+          "name": "digital-entity",
+          "title": "DigitalEntity",
+          "description": "A digital manifestation of an entity."
+        },
+        
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/agent-identifier",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/agent-identifier.json",
+          "name": "agent-identifier",
+          "title": "AgentIdentifier",
+          "description": "An alternate identifier for an Agent"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-identifier",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-identifier.json",
+          "name": "material-entity-identifier",
+          "title": "MaterialEntityIdentifier",
+          "description": "An alternate identifier for a MaterialEntity."
+        },        
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/digital-entity-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/digital-entity-assertion.json",
+          "name": "digital-entity-assertion",
+          "title": "DigitalEntityAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to a DigitalEntity."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-assertion.json",
+          "name": "material-entity-assertion",
+          "title": "MaterialEntityAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to a MaterialEntity."
+        },        
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/gathering-event-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/gathering-event-assertion.json",
+          "name": "gathering-event-assertion",
+          "title": "GatheringEventAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to a GatheringEvent."
+        },        
+        {
+          "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-citation",
+          "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-citation.json",
+          "name": "material-entity-citation",
+          "title": "MaterialEntityCitation",
+          "description": "A record of citation against a material entity."
+        }        
+      ],
+      "title": "Darwin Core Material Data Package (Material DP)",
+      "shortTitle": "Material DP",
+      "description": "A data package for Material focused datasets",
+      "issued": "2023-05-11",
+      "isLatest": true
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1",
+      "name": "interaction-dp",
+      "version": "0.1",
+      "tableSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-interaction",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-interaction.json",
+          "name": "organism-interaction",
+          "title": "OrganismInteraction",
+          "description": "An interaction between two Organisms."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-interaction-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-interaction-assertion.json",
+          "name": "organism-interaction-assertion",
+          "title": "OrganismInteractionAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to a specific instance of interaction between two Organisms."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/event",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/event.json",
+          "name": "event",
+          "title": "Event",
+          "description": "An action that occurs at some location during some time."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/event-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/event-assertion.json",
+          "name": "event-assertion",
+          "title": "EventAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism.json",
+          "name": "organism",
+          "title": "Organism",
+          "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-assertion.json",
+          "name": "organism-assertion",
+          "title": "OrganismAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Organism."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/material-entity",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/material-entity.json",
+          "name": "material-entity",
+          "title": "MaterialEntity",
+          "description": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/material-entity-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/material-entity-assertion.json",
+          "name": "material-entity-assertion",
+          "title": "MaterialEntityAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of MaterialEntity."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/digital-media",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/digital-media.json",
+          "name": "digital-media",
+          "title": "DigitalMedia",
+          "description": "Media (sound, image, video, text) in a digital manifestation."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/interaction-dp/digital-media-assertion",
+          "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/digital-media-assertion.json",
+          "name": "digital-media-assertion",
+          "title": "DigitalMediaAssertion",
+          "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia."
+        }
+      ],
+      "title": "Darwin Core Interaction Package (Interaction DP)",
+      "shortTitle": "Interaction DP",
+      "description": "A data package for testing interaction data",
+      "issued": "2023-12-13",
+      "isLatest": true
+    }
+  ]
+}

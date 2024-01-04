@@ -1,0 +1,81 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name-relation.json",
+  "name": "name-relation",
+  "title": "Name Relation",
+  "description": "A directed nomenclatural name relation. See [name-relations](https://github.com/CatalogueOfLife/general/blob/master/docs/NAMES.md#name-relations) for examples and definitions.",
+  "fields": [
+    {
+      "name": "nameID",
+      "description": "The subject name this relation originates from. Refers to an existing Name.ID or NameUsage.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "relatedNameID",
+      "description": "The object name this relation relates to. Refers to an existing Name.ID or NameUsage.ID within this data package.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "type",
+      "description": "The kind of directed nomenclatural relation.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "spelling correction",
+          "basionym",
+          "based on",
+          "replacement name",
+          "conserved",
+          "later homonym",
+          "superfluous",
+          "homotypic",
+          "type"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "description": "The reference or nomenclatural act where this nomenclatural relation was established.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "remarks",
+      "description": "Remarks about the relation.",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "relatedNameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

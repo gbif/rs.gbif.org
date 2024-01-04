@@ -1,0 +1,131 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0",
+  "name": "coldp",
+  "version": "1.0",
+  "tableSchemas": [
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/distribution.json",
+      "name": "distribution",
+      "title": "COL Data Package (ColDP): distribution",
+      "description": "A structured distribution record for a taxon in a given area."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/media",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/media.json",
+      "name": "media",
+      "title": "COL Data Package (ColDP): media",
+      "description": "Multimedia items for a taxon such as an image, audio or video."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/name-usage",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name-usage.json",
+      "name": "name-usage",
+      "title": "COL Data Package (ColDP): name-usage",
+      "description": "A simpler alternative to the 3 entities Name, Taxon and Synonym."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/name",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name.json",
+      "name": "name",
+      "title": "COL Data Package (ColDP): name",
+      "description": "COL Data Package (ColDP): name"
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name-relation.json",
+      "name": "name-relation",
+      "title": "COL Data Package (ColDP): name-relation",
+      "description": "A directed nomenclatural name relation."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/reference.json",
+      "name": "reference",
+      "title": "COL Data Package (ColDP): reference",
+      "description": "Structured bibliographic references with a unique id to refer to from other entities. References can be given either as a simple, single citation string, or in a structured form."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/species-estimate.json",
+      "name": "species-estimate",
+      "title": "COL Data Package (ColDP): species-estimate",
+      "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/species-interaction",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/species-interaction.json",
+      "name": "species-interaction",
+      "title": "COL Data Package (ColDP): species-interaction",
+      "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/synonym",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/synonym.json",
+      "name": "synonym",
+      "title": "COL Data Package (ColDP): synonym",
+      "description": "A synonymous name for a taxon. Note that the same name can be linked to mulitple taxa by having several Synonym records to model pro parte synonyms."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-concept-relation",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/taxon-concept-relation.json",
+      "name": "taxon-concept-relation",
+      "title": "COL Data Package (ColDP): taxon-concept-relation",
+      "description": "A directed taxon relation representing RCC5 taxon concept assertions."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/taxon",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/taxon.json",
+      "name": "taxon",
+      "title": "COL Data Package (ColDP): taxon",
+      "description": "An accepted name with a taxonomic classification given either as a parent-child relation or as a flat, denormalized record."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/treatment",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/treatment.json",
+      "name": "treatment",
+      "title": "COL Data Package (ColDP): treatment",
+      "description": "Treatments are parts of publications that \"treat\" a single taxon. They can be an original description for a new species, but also subsequent taxonomic works and usually include several sections such as a diagnosis, description, material examied, distribution, etc."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/type-material",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/type-material.json",
+      "name": "type-material",
+      "title": "COL Data Package (ColDP): type-material",
+      "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/vernacular-name.json",
+      "name": "vernacular-name",
+      "title": "COL Data Package (ColDP): vernacular-name",
+      "description": "A vernacular or common name for a taxon."
+    }
+  ],
+  "tableSchemasRequirements": {
+    "allOf": [
+      {
+        "description": "At least one required schema present: name, taxon, reference, name-usage",
+        "requiredAny": ["name", "taxon", "reference", "name-usage"]
+      },
+      {
+        "description": "If 'name', 'taxon' or 'synonym' present, then 'name-usage' must not be present",
+        "applicableIfPresentAny": ["name", "taxon", "synonym"],
+        "requiredAny": ["name", "taxon", "synonym"],
+        "prohibited": ["name-usage"]
+      },
+      {
+        "description": "If 'name-usage' present, then 'name', 'taxon' and 'synonym' must not be present",
+        "applicableIfPresentAny": ["name-usage"],
+        "required": ["name-usage"],
+        "prohibited": ["name", "taxon", "synonym"]
+      }
+    ]
+  },
+  "title": "Catalogue of Life Data Package (ColDP)",
+  "shortTitle": "ColDP",
+  "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
+  "issued": "2022-03-16",
+  "isLatest": true
+}
