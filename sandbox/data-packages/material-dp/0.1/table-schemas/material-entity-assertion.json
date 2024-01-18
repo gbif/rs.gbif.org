@@ -75,7 +75,7 @@
         {
             "name": "assertionUnit",
             "description": "The unit of measurement for the assertionValue or assertionValueNumeric.",
-            "type": "number",
+            "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary of units associated with the assertionType.",
             "examples": "`m`; `g`; `l`; `°C`; `mm`; `km²`; `%`; `hh:mm:ss`"
