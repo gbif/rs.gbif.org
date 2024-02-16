@@ -1,0 +1,40 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-identifier",
+    "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-identifier.json",
+    "name": "material-entity-identifier",
+    "title": "MaterialEntityIdentifier",
+    "description": "An alternate identifier for a MaterialEntity.",
+    "fields": [{
+            "name": "materialEntityID",
+            "description": "The identifier for the MaterialEntity to which this alternative identifier refers.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "identifierType",
+            "description": "The type of the Identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Genbank Accession Number`; `Tissue Sample Number`; `IGSN`"
+        },
+        {
+            "name": "identifier",
+            "description": "The alternate identifier for the MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`FMNH:Mammal:1234`; `U34853.1`"
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "materialEntityID",
+            "reference": {
+                "resource": "material-entity",
+                "fields": "materialEntityID"
+            }
+        }
+    ]
+}

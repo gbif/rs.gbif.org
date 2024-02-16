@@ -1,0 +1,95 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-citation",
+    "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-citation.json",
+    "name": "material-entity-citation",
+    "title": "MaterialEntityCitation",
+    "description": "A record of citation against a material entity.",
+    "fields": [{
+            "name": "materialEntityID",
+            "description": "The identifier for the MaterialEntity to which this Citation refers.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "citationType",
+            "description": "The nature of the Citation.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`voucher`; `holotype`; `basis of illustration`"
+        },
+        {
+            "name": "pageNumber",
+            "description": "The number of the page on which the Citation occurs in the Reference.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`221`; `xii`"
+        },
+        {
+            "name": "citationRemarks",
+            "description": "Notes or comments about the Citation.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Specimen cited by collector number.`"
+        },
+        {
+            "name": "referenceID",
+            "description": "The identifier for the literature Reference in which the Citation occurs.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "https://doi.org/10.1007/s00300-010-0900-2"
+        },
+        {
+            "name": "referenceType",
+            "description": "The type of the literature Reference.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`book`; `book section`; `field notes`; `journal article`"
+        },
+        {
+            "name": "bibliographicCitation",
+            "description": "The bibliographic citation for the literature Reference.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`book`; `book section`; `field notes`; `journal article`"
+        },
+        {
+            "name": "referenceYear",
+            "description": "The four-digit year in which the Reference was published or written occurred, according to the Common Era Calendar.",
+            "type": "integer",
+            "format": "default",
+            "comments": "",
+            "examples": "`1920`; `2023`"
+        },
+        {
+            "name": "wasPeerReviewed",
+            "description": "A statement on whether the Reference was peer reviewed.",
+            "type": "boolean",
+            "format": "default",
+            "comments": "",
+            "examples": "`true`; `false`",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "true",
+                    "false"
+                ]
+            }
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "materialEntityID",
+            "reference": {
+                "resource": "material-entity",
+                "fields": "materialEntityID"
+            }
+        }
+    ]
+}

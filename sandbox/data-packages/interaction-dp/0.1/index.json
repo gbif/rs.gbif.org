@@ -1,0 +1,83 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp",
+  "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1",
+  "name": "interaction-dp",
+  "version": "0.1",
+  "tableSchemas": [
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-interaction",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-interaction.json",
+      "name": "organism-interaction",
+      "title": "OrganismInteraction",
+      "description": "An interaction between two Organisms."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-interaction-assertion",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-interaction-assertion.json",
+      "name": "organism-interaction-assertion",
+      "title": "OrganismInteractionAssertion",
+      "description": "An observation, measurement, or other statement made by an Agent with respect to a specific instance of interaction between two Organisms."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/event",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/event.json",
+      "name": "event",
+      "title": "Event",
+      "description": "An action that occurs at some location during some time."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/event-assertion",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/event-assertion.json",
+      "name": "event-assertion",
+      "title": "EventAssertion",
+      "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism.json",
+      "name": "organism",
+      "title": "Organism",
+      "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/organism-assertion",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/organism-assertion.json",
+      "name": "organism-assertion",
+      "title": "OrganismAssertion",
+    "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Organism."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/material-entity",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/material-entity.json",
+      "name": "material-entity",
+      "title": "MaterialEntity",
+      "description": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/material-entity-assertion",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/material-entity-assertion.json",
+      "name": "material-entity-assertion",
+      "title": "MaterialEntityAssertion",
+      "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of MaterialEntity."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/digital-media",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/digital-media.json",
+      "name": "digital-media",
+      "title": "DigitalMedia",
+      "description": "Media (sound, image, video, text) in a digital manifestation."
+    },
+    {
+      "identifier": "http://rs.gbif.org/data-packages/interaction-dp/digital-media-assertion",
+      "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/digital-media-assertion.json",
+      "name": "digital-media-assertion",
+      "title": "DigitalMediaAssertion",
+      "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of DigitalMedia."
+    }
+  ],
+  "title": "Darwin Core Interaction Data Package (Interaction DP)",
+  "shortTitle": "Interaction DP",
+  "description": "A data package for testing interaction data",
+  "issued": "2023-12-13",
+  "isLatest": true
+}

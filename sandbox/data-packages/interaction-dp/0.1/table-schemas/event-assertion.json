@@ -1,0 +1,149 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/interaction-dp/event-assertion",
+  "url": "http://rs.gbif.org/sandbox/data-packages/interaction-dp/0.1/table-schemas/event-assertion.json",
+  "name": "event-assertion",
+  "title": "EventAssertion",
+  "description": "An observation, measurement, or other statement made by an Agent with respect to an instance of Event.",
+  "fields": [
+    {
+      "name": "assertionID",
+      "description": "The unique identifier for an Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "parentAssertionID",
+      "description": "The identifier for the Assertion that this Assertion is about.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "eventID",
+      "description": "The identifier for the instance of Event that this Assertion is about.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "assertionType",
+      "description": "The nature of the Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "`image quality`"
+    },
+    {
+      "name": "assertionValue",
+      "description": "The value posited by the Assertion in the case that it is not numeric.",
+      "type": "number",
+      "format": "default",
+      "comments": "Numeric Assertion values go in assertionValueNumeric. Units, if any, go in assertionUnit. Consider using values from a controlled vocabulary associated with the assertionType, if appropriate.",
+      "examples": "`blurry`"
+    },
+    {
+      "name": "assertionValueNumeric",
+      "description": "The value posited by the Assertion in the case that it is numeric.",
+      "type": "number",
+      "format": "default",
+      "comments": "Non-numeric Assertion values go in assertionValue. Units, if any, go in assertionUnit.",
+      "examples": "`-12.7`; `0`; `100`"
+    },
+    {
+      "name": "assertionUnit",
+      "description": "The unit of measurement for the assertionValue or assertionValueNumeric.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a controlled vocabulary of units associated with the assertionType.",
+      "examples": "`pixels`; `hh:mm:ss`, `kb`"
+    },
+    {
+      "name": "assertionMadeDate",
+      "description": "The date-time or interval during which an Assertion was made.",
+      "type": "string",
+      "format": "default",
+      "comments": "This is the date-time when the Assertion was made and may differ from the assertionEffectiveDate.",
+      "examples": "`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 8:40am UTC); `2018-08-29T15:19` (3:19pm local time on 29 August 2018); `1809-02-12` (some time during 12 February 1809); `1906-06` (some time in June 1906); `1971` (some time in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909); `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007)"
+    },
+    {
+      "name": "assertionEffectiveDate",
+      "description": "The date-time or interval during which an Assertion applies.",
+      "type": "string",
+      "format": "default",
+      "comments": "This is the date-time when the Assertion applies and may differ from the assertionMadeDate.",
+      "examples": "`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC); `2009-02-20T08:40Z` (20 February 2009 8:40am UTC); `2018-08-29T15:19` (3:19pm local time on 29 August 2018); `1809-02-12` (some time during 12 February 1809); `1906-06` (some time in June 1906); `1971` (some time in the year 1971); `2007-03-01T13:00:00Z/2008-05-11T15:30:00Z` (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC); `1900/1909` (some time during the interval between the beginning of the year 1900 and the end of the year 1909); `2007-11-13/15` (some time in the interval between 13 November 2007 and 15 November 2007)"
+    },
+    {
+      "name": "assertionByAgentName",
+      "description": "The preferred form of the name when referring to the Agent.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "`Oliver P. Pearson`; `Museum of Vertebrate Zoology`"
+    },
+    {
+      "name": "assertionByAgentID",
+      "description": "The identifier for the Agent that made this Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`"
+    },
+    {
+      "name": "assertionProtocol",
+      "description": "A detailed description of the method(s) used to make the Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "assertionProtocolID",
+      "description": "The identifier for the Protocol used to make this Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "assertionCitation",
+      "description": "A reference in which the Assertion is cited.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    },
+    {
+      "name": "assertionRemarks",
+      "description": "Notes or comments about the Assertion.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": ""
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "parentAssertionID",
+      "reference": {
+        "resource": "event-assertion",
+        "fields": "assertionID"
+      }
+    },
+    {
+      "fields": "eventID",
+      "reference": {
+        "resource": "event",
+        "fields": "eventID"
+      }
+    }
+  ]
+}

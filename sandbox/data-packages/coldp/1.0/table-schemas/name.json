@@ -1,0 +1,280 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/name",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0/table-schemas/name.json",
+  "name": "name",
+  "title": "Name",
+  "description": "See [NAMES.md](https://github.com/CatalogueOfLife/general/blob/master/docs/NAMES.md) for examples and rationales.",
+  "fields": [
+    {
+      "name": "ID",
+      "description": "Unique name identifier that is referred to elsewhere via `nameID`.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the [metadata.yaml](https://github.com/CatalogueOfLife/coldp/blob/master/metadata.yaml)",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "basionymID",
+      "description": "Identifier of the name which is the original combination of this name. Also known as the basionym or protonym. Contrary to the strict basionym definition it is recommended to populate this field also for original names which should point to itself.\n\nNote there is an alternative way to share the information about an original name by using a NameRelation with `type=basionym`. The field basionymID exists for simplicity and because it is an important information to be shared.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "scientificName",
+      "description": "Required scientific name excluding the authorship",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "authorship",
+      "description": "Authorship of the scientificName",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "rank",
+      "description": "The rank of the name preferably given in case insensitive english. The recommended vocabulary is included in [rank_enum](http://api.checklistbank.org/vocab/rank).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "superdomain",
+          "domain",
+          "realm",
+          "subrealm",
+          "superkingdom",
+          "kingdom",
+          "subkingdom",
+          "infrakingdom",
+          "superphylum",
+          "phylum",
+          "subphylum",
+          "infraphylum",
+          "parvphylum",
+          "microphylum",
+          "nanophylum",
+          "gigaclass",
+          "megaclass",
+          "superclass",
+          "class",
+          "subclass",
+          "infraclass",
+          "subterclass",
+          "parvclass",
+          "superdivision",
+          "division",
+          "subdivision",
+          "infradivision",
+          "superlegion",
+          "legion",
+          "sublegion",
+          "infralegion",
+          "megacohort",
+          "supercohort",
+          "cohort",
+          "subcohort",
+          "infracohort",
+          "gigaorder",
+          "magnorder",
+          "grandorder",
+          "mirorder",
+          "superorder",
+          "order",
+          "nanorder",
+          "hypoorder",
+          "minorder",
+          "suborder",
+          "infraorder",
+          "parvorder",
+          "falanx",
+          "megafamily",
+          "grandfamily",
+          "superfamily",
+          "epifamily",
+          "family",
+          "subfamily",
+          "infrafamily",
+          "supertribe",
+          "tribe",
+          "subtribe",
+          "infratribe",
+          "suprageneric name",
+          "supergenus",
+          "genus",
+          "subgenus",
+          "infragenus",
+          "supersection",
+          "section",
+          "subsection",
+          "superseries",
+          "series",
+          "subseries",
+          "infrageneric name",
+          "species aggregate",
+          "species",
+          "infraspecific name",
+          "grex",
+          "klepton",
+          "subspecies",
+          "cultivar group",
+          "convariety",
+          "infrasubspecific name",
+          "proles",
+          "natio",
+          "aberration",
+          "morph",
+          "supervariety",
+          "variety",
+          "subvariety",
+          "superform",
+          "form",
+          "subform",
+          "pathovar",
+          "biovar",
+          "chemovar",
+          "morphovar",
+          "phagovar",
+          "serovar",
+          "chemoform",
+          "forma specialis",
+          "lusus",
+          "cultivar",
+          "mutatio",
+          "strain",
+          "other",
+          "unranked"
+        ]
+      }
+    },
+    {
+      "name": "uninomial",
+      "description": "The single-word name of generic or higher rank names.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "genus",
+      "description": "The genus part of a bi/trinomial. Note that for generic names the uninomial field should be used, not genus!",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "^[A-Z\\p{Lu}]\\p{L}+$"
+      }
+    },
+    {
+      "name": "infragenericEpithet",
+      "description": "The infrageneric epithet. Used as the terminal epithet for names at infrageneric ranks and optionally also for bi/trinomials In zoological names often the subgenus.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "specificEpithet",
+      "description": "The specific epithet in case of bi/trinomials.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "infraspecificEpithet",
+      "description": "The infraspecific epithet in case of bi/trinomials.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "cultivarEpithet",
+      "description": "The name of the cultivar for name governed by the cultivar code.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "code",
+      "description": "The nomenclatural code the name falls under.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "bacterial",
+          "botanical",
+          "cultivars",
+          "phytosociological",
+          "virus",
+          "zoological"
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "description": "The broad nomenclatural status of the name. For the exact status note, e.g. <i>nomen nudum</i>, the remarks field should additionally be used Alternatively a URI or simple name from a class of the [NOMEN ontology](https://github.com/SpeciesFileGroup/nomen/blob/master/src/ontology/nomen.owl) can be used.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "enum": [
+          "established",
+          "not established",
+          "acceptable",
+          "unacceptable",
+          "conserved",
+          "rejected",
+          "doubtful",
+          "manuscript",
+          "chresonym"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "description": "A pointer to a Reference indicating the original publication of the name in its given combination, not the basionym.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "publishedInYear",
+      "description": "The effective year the name was published, given as a 4 digit integer. It is the year that is nomenclaturally relevant for the given combination. In most cases this will be the same as the publication year given in the linked reference record via referenceID. But in some cases this might be different.",
+      "type": "year",
+      "format": "default"
+    },
+    {
+      "name": "publishedInPage",
+      "description": "The exact single page number where the name was published. If the description spans multiple pages, the first page should be given.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "publishedInPageLink",
+      "description": "A URL to the exact page where the name was published. If the description spans multiple pages, the link to the first page should be given.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "link",
+      "description": "A link to a webpage provided by the source depicting the name.\n\n",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "remarks",
+      "description": "Additional nomenclatural remarks about the name. Often indicating its status or relevant rules in the code.",
+      "type": "string",
+      "format": "default"
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

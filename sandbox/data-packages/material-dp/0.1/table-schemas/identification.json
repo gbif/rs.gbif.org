@@ -1,0 +1,403 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/material-dp/identification",
+    "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/identification.json",
+    "name": "identification",
+    "title": "Identification",
+    "description": "A taxonomic determination (e.g., the assignment to a taxon).",
+    "fields": [
+        {
+            "name": "identificationID",
+            "description": "The unique identifier for an Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "identificationType",
+            "description": "The category that best matches the nature of the Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`features`; `fine features`; `revised taxonomy`; `molecular`"
+        },
+        {
+            "name": "materialEntityID",
+            "description": "The identifier for the MaterialEntity that is the subject of this Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "digitalEntityID",
+            "description": "The identifier for the DigitalEntity that portrays the subject of this Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "datasetID",
+            "description": "The identifier for the data set from which the Identification record originated.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": ""
+        },
+        {
+            "name": "verbatimIdentification",
+            "description": "A string representing the taxonomic identification as it appeared in the original record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`; `Potentilla × pantotricha Soják`; `Aconitum pilipes × A. variegatum`; `Lepomis auritus x cyanellus`"
+        },
+        {
+            "name": "typeStatus",
+            "description": "A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388`; `holotype of Pinus abies | holotype of Picea abies`"
+        },
+        {
+            "name": "identifiedBy",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`"
+        },
+        {
+            "name": "identifiedByID",
+            "description": "The identifier for the Agent that asserted the Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`"
+        },
+        {
+            "name": "dateIdentified",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+            "examples": "`2023-05-04`"
+        },
+        {
+            "name": "identificationReferences",
+            "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`"
+        },
+        {
+            "name": "identificationVerificationStatus",
+            "description": "A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.",
+            "examples": "`0` ('unverified' in HISPID/ABCD)"
+        },
+        {
+            "name": "identificationRemarks",
+            "description": "Comments or notes about the Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.`"
+        },
+        {
+            "name": "typeDesignationType",
+            "description": "",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": ""
+        },
+        {
+            "name": "typeDesignatedBy",
+            "description": "",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": ""
+        },
+        {
+            "name": "taxonID",
+            "description": "The identifier for the Taxon recognized in the Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`"
+        },
+        {
+            "name": "scientificNameID",
+            "description": "An identifier for the nomenclatural (not taxonomic) details of a scientific name.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`urn:lsid:ipni.org:names:37829-1:1.3`"
+        },
+        {
+            "name": "taxonAuthority",
+            "description": "From what taxonomic authority is the Taxon information taken.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "World Register of Marine Species"
+        },
+        {
+            "name": "scientificName",
+            "description": "The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the verbatimIdentification term.",
+            "type": "string",
+            "format": "default",
+            "comments": "This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term. When applied to an Organism, this term should be used to represent the scientific name that was applied to the associated Organism in accordance with the Taxon to which it was or is currently identified. Names should be compliant to the most recent nomenclatural code. For example, names of hybrids for algae, fungi and plants should follow the rules of the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H.1, H.2 and H.3). Thus, use the multiplication sign `×` (Unicode `U+00D7`, HTML `&times;`) to identify a hybrid, not `x` or `X`, if possible.",
+            "examples": ""
+        },
+        {
+            "name": "acceptedNameUsage",
+            "description": "The full name, with authorship and date information if known, of the currently valid (zoological) or accepted (botanical) taxon.",
+            "type": "string",
+            "format": "default",
+            "comments": "The full scientific name, with authorship and date information if known, of the accepted (botanical) or valid (zoological) name in cases where the provided scientificName is considered by the reference indicated in the accordingTo property, or of the content provider, to be a synonym or misapplied name. When applied to an Organism, this term should be used in cases where a content provider regards the provided scientificName to be inconsistent with the taxonomic perspective of the content provider. For example, there are many discrepancies within specimen collections and observation datasets between the recorded name (e.g., the most recent identification from an expert who examined a specimen, or a field identification for an observed organism), and the name asserted by the content provider to be taxonomically accepted.",
+            "examples": ""
+        },
+        {
+            "name": "nameAccordingTo",
+            "description": "The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin `sensu` or `sec.` (from secundum, meaning 'according to'). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given.",
+            "type": "string",
+            "format": "default",
+            "comments": "This term provides context to the scientificName. Together with the scientificName, separated by `sensu` or `sec.`, it forms the taxon concept label, which may be seen as having the same relationship to taxonConceptID as, for example, acceptedNameUsage has to acceptedNameUsageID. When not provided, in Taxon Core data sets the nameAccordingTo can be taken to be the data set. In this case the data set mostly provides sufficient context to infer the delimitation of the taxon and its relationship with other taxa. In MaterialEntity or Occurrence data sets, when not provided, nameAccordingTo can be an underlying taxonomy of the data set, e.g. Plants of the World Online (http://powo.science.kew.org/) for vascular plant records in iNaturalist (in which case it should be provided), or, which is the case for most PreservedSpecimen data sets, the Identification, in which case there is no further context.",
+            "examples": "`Franz NM, Cardona-Duque J (2013) Description of two new species and phylogenetic reassessment of Perelleschus Wibmer & O’Brien, 1986 (Coleoptera: Curculionidae), with a complete taxonomic concept history of Perelleschus sec. Franz & Cardona-Duque, 2013. Syst Biodivers. 11: 209–236.` (as the full citation of the Franz & Cardona-Duque (2013) in Perelleschus splendida sec. Franz & Cardona-Duque (2013))"
+        },
+        {
+            "name": "nameAccordingToID",
+            "description": "An identifier for the source in which the specific taxon concept circumscription is defined or implied. See nameAccordingTo.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://doi.org/10.1016/S0269-915X(97)80026-2`"
+        },
+        {
+            "name": "higherClassification",
+            "description": "A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the taxon referenced in the taxon record.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `), with terms in order from the highest taxonomic rank to the lowest.",
+            "examples": "`Plantae | Tracheophyta | Magnoliopsida | Ranunculales | Ranunculaceae | Ranunculus`; `Animalia`; `Animalia | Chordata | Vertebrata | Mammalia | Theria | Eutheria | Rodentia | Hystricognatha | Hystricognathi | Ctenomyidae | Ctenomyini | Ctenomys`"
+        },
+        {
+            "name": "kingdom",
+            "description": "The full scientific name of the kingdom in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Animalia`; `Archaea`; `Bacteria`; `Chromista`; `Fungi`; `Plantae`; `Protozoa`; `Viruses`"
+        },
+        {
+            "name": "phylum",
+            "description": "The full scientific name of the phylum or division in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Chordata` (phylum); `Bryophyta` (division)"
+        },
+        {
+            "name": "class",
+            "description": "The full scientific name of the class in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Mammalia`; `Hepaticopsida`"
+        },
+        {
+            "name": "order",
+            "description": "The full scientific name of the order in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Carnivora`; `Monocleales`"
+        },
+        {
+            "name": "superfamily",
+            "description": "The full scientific name of the family in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "A taxonomic category subordinate to an order and superior to a family. According to ICZN article 29.2, the suffix `-oidea` is used for a superfamily name.",
+            "examples": "`Achatinoidea`; `Cerithioidea`; `Helicoidea`; `Hypsibioidea`; `Valvatoidea`; `Zonitoidea`"
+        },
+        {
+            "name": "family",
+            "description": "The full scientific name of the family in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Felidae`; `Monocleaceae`"
+        },
+        {
+            "name": "subfamily",
+            "description": "The full scientific name of the subfamily in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Periptyctinae`; `Orchidoideae`; `Sphindociinae`"
+        },
+        {
+            "name": "tribe",
+            "description": "The full scientific name of the tribe in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Ortaliini`; `Arethuseae`"
+        },
+        {
+            "name": "subtribe",
+            "description": "The full scientific name of the subtribe in which the taxon is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Plotinini`; `Typhaeini`"
+        },
+        {
+            "name": "genericName",
+            "description": "The genus part of the scientificName without authorship.",
+            "type": "string",
+            "format": "default",
+            "comments": "For synonyms the accepted genus and the genus part of the name may be different. The term genericName should be used together with specificEpithet to form a binomial and with infraspecificEpithet to form a trinomial. The term genericName should only be used for combinations. Uninomials of generic rank do not have a genericName.",
+            "examples": "`Felis` (for scientificName `Felis concolor`, with accompanying values of `Puma concolor` in acceptedNameUsage and `Puma` in genus)"
+        },
+        {
+            "name": "subgenus",
+            "description": "The full scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Strobus`; `Amerigo`; `Pilosella`"
+        },
+        {
+            "name": "infraGenericEpithet",
+            "description": "The infrageneric part of a binomial name at ranks above species but below genus.",
+            "type": "string",
+            "format": "default",
+            "comments": "The term infragenericEpithet should be used in conjunction with genericName, specificEpithet, infraspecificEpithet, taxonRank and scientificNameAuthorship to represent the individual elements of the complete scientificName. It can be used to indicate the subgenus placement of a species, which in zoology is often given in parentheses. Can also be used to share infrageneric names such as botanical sections (e.g., `Vicia sect. Cracca`).",
+            "examples": "`Abacetillus` (for scientificName `Abacetus (Abacetillus) ambiguus`); `Cracca` (for scientificName `Vicia sect. Cracca`)"
+        },
+        {
+            "name": "specificEpithet",
+            "description": "The name of the first or species epithet of the scientificName.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`concolor`; `gottschei`"
+        },
+        {
+            "name": "infraSpecificEpithet",
+            "description": "The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.",
+            "type": "string",
+            "format": "default",
+            "comments": "In botany, name strings in literature and identifications may have multiple infraspecific ranks. According to the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles 6.7 & Art. 24.1), valid names only have two epithets, with the lowest rank being the infraspecificEpithet. For example: the infraspecificEpithet in the string `Indigofera charlieriana subsp. sessilis var. scaberrima` is `scaberrima` and the scientificName is `Indigofera charlieriana var. scaberrima (Schinz) J.B.Gillett`. Use verbatimIdentification for the full name string used in an Identification.",
+            "examples": "`concolor` (for scientificName `Puma concolor concolor (Linnaeus, 1771)`); `oxyadenia` (for scientificName `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell`); `laxa` (for scientificName `Cheilanthes hirta f. laxa (Kunze) W.Jacobsen & N.Jacobsen`); `scaberrima` (for scientificName `Indigofera charlieriana var. scaberrima (Schinz) J.B.Gillett`)"
+        },
+        {
+            "name": "cultivarEpithet",
+            "description": "Part of the name of a cultivar, cultivar group or grex that follows the scientific name.",
+            "type": "string",
+            "format": "default",
+            "comments": "According to the Rules of the Cultivated Plant Code, a cultivar name consists of a botanical name followed by a cultivar epithet. The value given as the cultivarEpithet should exclude any quotes. The term taxonRank should be used to indicate which type of cultivated plant name (e.g. cultivar, cultivar group, grex) is concerned. This epithet, including any enclosing apostrophes or suffix, should be provided in scientificName as well.",
+            "examples": "`King Edward` (for scientificName `Solanum tuberosum 'King Edward'` and taxonRank `cultivar`); `Mishmiense` (for scientificName `Rhododendron boothii Mishmiense Group` and taxonRank `cultivar group`); `Atlantis` (for scientificName `Paphiopedilum Atlantis grex` and taxonRank `grex`)"
+        },
+        {
+            "name": "taxonRank",
+            "description": "The taxonomic rank of the most specific name in the scientificName.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary. The taxon ranks of algae, fungi and plants are defined in the International Code of Nomenclature for algae, fungi, and plants (Schenzhen Code Articles H3.2, H4.4 and H.3.1).",
+            "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`"
+        },
+        {
+            "name": "verbatimTaxonRank",
+            "description": "The taxonomic rank of the most specific name in the scientificName as it appears in the original record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Agamospecies`; `sub-lesus`; `prole`; `apomict`; `nothogrex`; `sp.`; `subsp.`; `var.`"
+        },
+        {
+            "name": "scientificNameAuthorship",
+            "description": "The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`(Torr.) J.T. Howell`; `(Martinovský) Tzvelev`; `(Györfi, 1952)`"
+        },
+        {
+            "name": "vernacularName",
+            "description": "A common or vernacular name for the Taxon.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Andean Condor`; `Condor Andino`; `American Eagle`; `Gänsegeier`"
+        },
+        {
+            "name": "nomenclaturalCode",
+            "description": "The nomenclatural code (or codes in the case of an ambiregnal name) under which the scientificName is constructed.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`ICN`; `ICZN`; `BC`; `ICNCP`; `BioCode`"
+        },
+        {
+            "name": "taxonomicStatus",
+            "description": "The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`invalid`; `misapplied`; `homotypic synonym`; `accepted`"
+        },
+        {
+            "name": "nomenclaturalStatus",
+            "description": "The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`nom. ambig.`; `nom. illeg.`; `nom. subnud.`"
+        },
+        {
+            "name": "taxonRemarks",
+            "description": "Comments or notes about the taxon or name.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`this name is a misspelling in common use`"
+        }
+    ],
+    "foreignKeys": [{
+            "fields": "digitalEntityID",
+            "reference": {
+                "resource": "digital-entity",
+                "fields": "digitalEntityID"
+            }
+        },
+        {
+            "fields": "materialEntityID",
+            "reference": {
+                "resource": "material-entity",
+                "fields": "materialEntityID"
+            }
+        },
+        {
+            "fields": "identifiedByID",
+            "reference": {
+                "resource": "agent",
+                "fields": "agentID"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "dataPackages": [
+    {
+      "identifier": "http://rs.gbif.org/data-packages/camtrap-dp",
+      "url": "http://rs.gbif.org/data-packages/camtrap-dp/1.0",
+      "profile": "https://rs.gbif.org/data-packages/camtrap-dp/1.0/profile/camtrap-dp-profile.json",
+      "name": "camtrap-dp",
+      "version": "1.0",
+      "tableSchemas": [
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/deployments",
+          "url": "http://rs.gbif.org/data-packages/camtrap-dp/1.0/table-schemas/deployments.json",
+          "name": "deployments",
+          "title": "Camera trap: deployments",
+          "description": "Camera trap: deployments schema"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/media",
+          "url": "http://rs.gbif.org/data-packages/camtrap-dp/1.0/table-schemas/media.json",
+          "name": "media",
+          "title": "Camera trap: media",
+          "description": "Camera trap: media schema"
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/camtrap-dp/observations",
+          "url": "http://rs.gbif.org/data-packages/camtrap-dp/1.0/table-schemas/observations.json",
+          "name": "observations",
+          "title": "Camera trap: observations",
+          "description": "Camera trap: observations schema"
+        }
+      ],
+      "tableSchemasRequirements": {
+        "allOf": [
+          {
+            "description": "Required schemas must be present: deployments, media, observations",
+            "required": ["deployments", "media", "observations"]
+          }
+        ]
+      },
+      "title": "Camera Trap Data Package (Camtrap DP)",
+      "shortTitle": "Camtrap DP",
+      "description": "Camera Trap Data Package is a community developed data exchange format for camera trap data.",
+      "issued": "2024-01-04",
+      "isLatest": true
+    }
+  ]
+}
