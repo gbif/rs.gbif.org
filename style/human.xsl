@@ -113,7 +113,7 @@
                                         <h2>Properties</h2>
                                         <table class="definition">
                                              <xsl:apply-templates mode="table-row" select="//ext:extension/ext:property">
-                                                  <xsl:sort select="@group"/>
+                                                  <!--xsl:value-of select="@group"/-->
                                              </xsl:apply-templates>
                                         </table>
                                    </xsl:when>
@@ -121,7 +121,7 @@
                                         <h2>Concepts</h2>
                                         <table class="definition">
                                              <xsl:apply-templates mode="table-row" select="//voc:thesaurus/voc:concept">
-                                                  <xsl:sort select="@identifier"/>
+                                                  <!--xsl:value-of select="@identifier"/-->
                                              </xsl:apply-templates>
                                         </table>
                                    </xsl:otherwise>
