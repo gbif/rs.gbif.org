@@ -8,7 +8,7 @@
     name="dnaDerivedData"
     namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/DNADerivedData"
-    dc:issued="2024-04-17"
+    dc:issued="2024-07-11"
     dc:subject=""
     dc:relation="https://w3id.org/mixs/"
     dc:description="An extension to Occurrence and Event cores to capture information relating to DNA. This extension is based on the MIxS extension for Darwin Core (underway), with additions from GGBN and MIQE standards and recommendations. This definition supports the outcomes documented in Publishing DNA-derived data through biodiversity data platforms (https://doi.org/10.35035/doc-vf1a-nr22).  This extension is subject to change, and recommended for early adopters who understand that data remapping may be required as things evolve.">
@@ -21,12 +21,12 @@
         examples=''
         required='false'/>
     <property group=''
-        name='occurrenceID' 
-        namespace='http://rs.tdwg.org/dwc/terms/' 
-        qualName='http://rs.tdwg.org/dwc/terms/occurrenceID' 
-        dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#occurrenceID' 
-        dc:description='The identifier of the occurrence the DNA sequence relates to. If not applicable, it should be left empty.' 
-        examples=''  
+        name='occurrenceID'
+        namespace='http://rs.tdwg.org/dwc/terms/'
+        qualName='http://rs.tdwg.org/dwc/terms/occurrenceID'
+        dc:relation='http://rs.tdwg.org/dwc/terms/index.htm#occurrenceID'
+        dc:description='The identifier of the occurrence the DNA sequence relates to. If not applicable, it should be left empty.'
+        examples=''
         required='false'/>
     <property group='investigation'
         name='project_name'
