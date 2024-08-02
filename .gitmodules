@@ -1,7 +1,6 @@
 [submodule "eml-profile-dev"]
 	path = schema/eml-gbif-profile/dev
 	url = https://github.com/gbif/eml-profile.git
-	branch = eml-2.2.0
 [submodule "eml-profile-1.0"]
 	path = schema/eml-gbif-profile/1.0
 	url = https://github.com/gbif/eml-profile.git
@@ -17,3 +16,7 @@
 [submodule "eml-profile-1.2"]
 	path = schema/eml-gbif-profile/1.2
 	url = https://github.com/gbif/eml-profile.git
+[submodule "eml-profile-1.3"]
+	path = schema/eml-gbif-profile/1.3
+	url = https://github.com/gbif/eml-profile.git
+	branch = eml-2.2.0
