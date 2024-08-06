@@ -1,0 +1,92 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/identification-taxon",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/identification-taxon.json",
+    "name": "identification-taxon",
+    "title": "IdentificationTaxon",
+    "description": "The components and order of dwc:Taxa in an Identification.",
+    "fields": [
+        {
+            "name": "identificationID",
+            "description": "An identifier for a dwc:Identification (the body of information associated with the assignment of a scientific name). ",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/identificationID"
+        },
+        {
+            "name": "taxonID",
+            "description": "An identifier for the set of dwc:Taxon information.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/taxonID"
+        },
+        {
+            "name": "taxonOrder",
+            "description": "The position of a dwc:Taxon in a taxonFormula (e.g., 1, 2, 3)",
+            "type": "integer",
+            "format": "default",
+            "comments": "",
+            "examples": "`1`; `2`; `3`",
+            "constraints": {
+                "required": false,
+                "minimum": 1
+            },
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "kingdom",
+            "description": "The full scientific name of the kingdom in which the dwc:scientificName is classified.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/kingdom"
+        },
+        {
+            "name": "scientificName",
+            "description": "The full scientific name, with authorship and date information if known. When forming part of a dc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:verbatimIdentification term.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
+        },
+        {
+            "name": "taxonRank",
+            "description": "The taxonomic rank of the most specific name in a dwc:scientificName.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/taxonRank"
+        },
+        {
+            "name": "taxonRemarks",
+            "description": "Comments or notes about the dwc:Taxon.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`this name is a misspelling in common use`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+        }
+    ],
+    "foreignKeys": [
+        {
+            "fields": "identificationID",
+            "reference": {
+                "resource": "related-identification",
+                "fields": "identificationID"
+            }
+        }
+    ]
+}

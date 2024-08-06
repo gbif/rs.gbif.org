@@ -1,0 +1,349 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-dp",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/inventory-dp",
+    "name": "inventory-dp",
+    "version": "0.1",
+    "tableSchemas": [
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory.json",
+            "name": "inventory",
+            "title": "Inventory",
+            "description": "Ecological Inventories of dwc:Organisms that occur at some place during some time."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event.json",
+            "name": "related-event",
+            "title": "RelatedEvent",
+            "description": "Other actions that occur at some location during some time."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence.json",
+            "name": "occurrence",
+            "title": "Occurrence",
+            "description": "Occurrences of dwc:Organisms in place and time."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material.json",
+            "name": "related-material",
+            "title": "RelatedMaterial",
+            "description": "MaterialEntities associated with an Event (Inventory, MaterialGathering, Occurrence, InteractionOccurrence) or other MaterialEntities."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/collection",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/collection.json",
+            "name": "collection",
+            "title": "Collection",
+            "description": "Persistent formal repositories in which dwc:MaterialEntities and/or Media are preserved."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/genetic-sequence.json",
+            "name": "genetic-sequence",
+            "title": "GeneticSequence",
+            "description": "Digital representations of a nucleotide sequences."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-target.json",
+            "name": "inventory-target",
+            "title": "InventoryTarget",
+            "description": "Specifications of characteristics of dwc:Organisms in an Inventory that were included or excluded."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target-abundance",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-target-abundance.json",
+            "name": "inventory-target-abundance",
+            "title": "InventoryTargetAbundance",
+            "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of InventoryTargets."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification.json",
+            "name": "related-identification",
+            "title": "RelatedIdentification",
+            "description": "Taxonomic determinations (e.g., assignments to dwc:Taxon)."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification-taxon",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/identification-taxon.json",
+            "name": "identification-taxon",
+            "title": "IdentificationTaxon",
+            "description": "The components and order of dwc:Taxa in an Identification."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media.json",
+            "name": "inventory-media",
+            "title": "InventoryMedia",
+            "description": "Media (sound, image, video, text) related directly to Inventory Events."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media.json",
+            "name": "related-event-media",
+            "title": "RelatedEventMedia",
+            "description": "Media (sound, image, video, text) related directly to RelatedEvents."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media.json",
+            "name": "occurrence-media",
+            "title": "OccurrenceMedia",
+            "description": "Media (sound, image, video, text) related directly to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-media.json",
+            "name": "related-material-media",
+            "title": "RelatedMaterialMedia",
+            "description": "Media (sound, image, video, text) related directly to RelatedMaterial."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media.json",
+            "name": "related-identification-media",
+            "title": "RelatedIdentificationMedia",
+            "description": "Media (sound, image, video, text) related directly to RelatedIdentifications."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-citation.json",
+            "name": "inventory-citation",
+            "title": "InventoryCitation",
+            "description": "Citations related directly to Inventory Events."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-citation.json",
+            "name": "related-event-citation",
+            "title": "RelatedEventCitation",
+            "description": "Citations related directly to RelatedEvents."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-citation.json",
+            "name": "occurrence-citation",
+            "title": "OccurrenceCitation",
+            "description": "Citations related directly to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-citation.json",
+            "name": "related-material-citation",
+            "title": "RelatedMaterialCitation",
+            "description": "Citations related directly to RelatedMaterial."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/genetic-sequence-citation.json",
+            "name": "genetic-sequence-citation",
+            "title": "GeneticSequenceCitation",
+            "description": "Citations related directly to GeneticSequences."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-citation.json",
+            "name": "related-identification-citation",
+            "title": "RelatedIdentificationCitation",
+            "description": "Citations related directly to RelatedIdentifications."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-citation.json",
+            "name": "inventory-media-citation",
+            "title": "InventoryMediaCitation",
+            "description": "Citations related directly to InventoryMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-citation.json",
+            "name": "related-event-media-citation",
+            "title": "RelatedEventMediaCitation",
+            "description": "Citations related directly to RelatedEventMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media-citation.json",
+            "name": "occurrence-media-citation",
+            "title": "OccurrenceMediaCitation",
+            "description": "Citations related directly to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-media-citation.json",
+            "name": "related-material-media-citation",
+            "title": "RelatedMaterialMediaCitation",
+            "description": "Citations related directly to RelatedMaterialMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media-citation.json",
+            "name": "related-identification-media-citation",
+            "title": "RelatedIdentificationMediaCitation",
+            "description": "Citations related directly to RelatedIdentificationMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-assertion.json",
+            "name": "inventory-assertion",
+            "title": "InventoryAssertion",
+            "description": "Assertions made by Agents with respect to Inventory Events."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-assertion.json",
+            "name": "related-event-assertion",
+            "title": "RelatedEventAssertion",
+            "description": "Assertions made by Agents with respect to RelatedEvents."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-assertion.json",
+            "name": "occurrence-assertion",
+            "title": "OccurrenceAssertion",
+            "description": "Assertions made by Agents with respect to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-assertion.json",
+            "name": "related-material-assertion",
+            "title": "RelatedMaterialAssertion",
+            "description": "Assertions made by Agents with respect to RelatedMaterial."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/genetic-sequence-assertion.json",
+            "name": "genetic-sequence-assertion",
+            "title": "GeneticSequenceAssertion",
+            "description": "Assertions made by Agents with respect to GeneticSequences."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-assertion.json",
+            "name": "related-identification-assertion",
+            "title": "RelatedIdentificationAssertion",
+            "description": "Assertions made by Agents with respect to RelatedIdentifications."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-assertion.json",
+            "name": "inventory-media-assertion",
+            "title": "InventoryMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to Inventory Events."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-assertion.json",
+            "name": "related-event-media-assertion",
+            "title": "RelatedEventMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to RelatedEvents."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media-assertion.json",
+            "name": "occurrence-media-assertion",
+            "title": "OccurrenceMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-media-assertion.json",
+            "name": "related-material-media-assertion",
+            "title": "RelatedMaterialMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to RelatedMaterial."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media-assertion.json",
+            "name": "related-identification-media-assertion",
+            "title": "RelatedIdentificationMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to RelatedIdentifications."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-agent-role.json",
+            "name": "inventory-agent-role",
+            "title": "InventoryAgentRole",
+            "description": "Roles filled by Agents with respect to Inventory Events."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-agent-role.json",
+            "name": "related-event-agent-role",
+            "title": "RelatedEventAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedEvents."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-agent-role.json",
+            "name": "occurrence-agent-role",
+            "title": "OccurrenceAgentRole",
+            "description": "Roles filled by Agents with respect to Occurrences of dwc:Organisms."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-agent-role.json",
+            "name": "related-material-agent-role",
+            "title": "RelatedMaterialAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedMaterial."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/genetic-sequence-agent-role.json",
+            "name": "genetic-sequence-agent-role",
+            "title": "GeneticSequenceAgentRole",
+            "description": "Roles filled by Agents with respect to GeneticSequences."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-agent-role.json",
+            "name": "related-identification-agent-role",
+            "title": "RelatedIdentificationAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedIdentifications."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-agent-role.json",
+            "name": "inventory-media-agent-role",
+            "title": "InventoryMediaAgentRole",
+            "description": "Roles filled by Agents with respect to InventoryMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-agent-role.json",
+            "name": "related-event-media-agent-role",
+            "title": "RelatedEventMediaAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedEventMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media-agent-role.json",
+            "name": "occurrence-media-agent-role",
+            "title": "OccurrenceMediaAgentRole",
+            "description": "Roles filled by Agents with respect to OccurrenceMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-media-agent-role.json",
+            "name": "related-material-media-agent-role",
+            "title": "RelatedMaterialMediaAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedMaterialMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media-agent-role.json",
+            "name": "related-identification-media-agent-role",
+            "title": "RelatedIdentificationMediaAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedIdentificationMedia."
+        }
+    ],
+    "title": "Darwin Core Inventory Data Package",
+    "shortTitle": "Inventory DP",
+    "description": "A data package for sharing ecological inventory data.",
+    "issued": "2024-08-05",
+    "isLatest": true
+}

@@ -1,0 +1,153 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/inventory-target",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-target.json",
+    "name": "inventory-target",
+    "title": "InventoryTarget",
+    "description": "Specifications of characteristics of dwc:Organisms in an Inventory that were included or excluded.",
+    "fields": [
+        {
+            "name": "inventoryTargetID",
+            "description": "The identifier for the InventoryTarget instance to which the InventoryAbundance refers.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "inventoryID",
+            "description": "The identifier for the Inventory (a dwc:Event).",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "http://rs.tdwg.org/dwc/terms/eventID"
+        },
+        {
+            "name": "inventoryTargetType",
+            "description": "The type of scope the InventoryTarget describes.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`taxon`; `habitat`; `establishmentMeans`; `growthForm`; `sex`; `lifeStage`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetTypeIRI",
+            "description": "The IRI of the controlled vocabulary value for the inventoryTargetType.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for inventoryTargetType are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetValue",
+            "description": "The value for the inventoryTargetType.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`Aves`; `oak savannah`; `native`; `tree`; `female`; `adult`; `height`; `weight`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetValueIRI",
+            "description": "The IRI for the value of the inventoryTargetValue",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetValueVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for inventoryTargetValue are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetUnit",
+            "description": "The value of the unit for the inventoryTargetValue.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`m`; `g`; `years`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetUnitIRI",
+            "description": "The IRI for the units of the inventoryTargetValue",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "inventoryTargetUnitVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for inventoryTargetUnit are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "includeOrExclude",
+            "description": "A term to declare whether the instance of the InventoryTarget is an included scope or an excluded scope. Combinations of InventoryTarget records of inclusions and exclusions can define complex scopes such as all 'Aves' except 'Passeriformes'.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is use a controlled vocabulary consisting of 'include' and 'exclude' only.",
+            "examples": "`include`; `exclude`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "isInventoryTargetFullyReported",
+            "description": "A declaration of whether the counts for the instance of the InventoryTarget report everything that matches the declared InventoryTarget. If they do, this enables inference of absence of detection for everything in that InventoryTarget that is included but that does not appear in the count.",
+            "type": "boolean",
+            "format": "default",
+            "comments": "",
+            "examples": "`true`; `false`",
+            "namespace": "eco",
+            "iri": "http://rs.tdwg.org/eco/terms/isInventoryTargetFullyReported"
+        }
+    ],
+    "primaryKey": "inventoryTargetID",
+    "foreignKeys": [
+        {
+            "fields": "inventoryID",
+            "reference": {
+                "resource": "inventory",
+                "fields": "inventoryID"
+            }
+        }
+    ]
+}
