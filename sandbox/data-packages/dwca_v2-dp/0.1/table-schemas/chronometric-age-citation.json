@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/occurrence-citation",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/occurrence-citation.json",
-    "name": "occurrence-citation",
-    "title": "OccurrenceCitation",
-    "description": "Citations related directly to Occurrences of dwc:Organisms.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/chronometric-age-citation",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/chronometric-age-citation.json",
+    "name": "chronometric-age-citation",
+    "title": "ChronometricAgeCitation",
+    "description": "Citations related directly to chrono:ChronometricAges.",
     "fields": [
         {
             "name": "citationID",
@@ -165,8 +165,8 @@
         {
             "fields": "citationTargetID",
             "reference": {
-                "resource": "occurrence",
-                "fields": "occurrenceID"
+                "resource": "chronometric-age",
+                "fields": "chronometricAgeID"
             }
         }
     ]

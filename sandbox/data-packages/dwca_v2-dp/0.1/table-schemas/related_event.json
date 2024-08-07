@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-event.json",
     "name": "related-event",
     "title": "RelatedEvent",
-    "description": "Other actions that occur at some location during some time.",
+    "description": "Actions that occur at some location during some time.",
     "fields": [
         {
             "name": "eventID",

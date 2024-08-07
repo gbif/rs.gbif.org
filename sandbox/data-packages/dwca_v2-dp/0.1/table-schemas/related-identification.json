@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-identification.json",
     "name": "related-identification",
     "title": "RelatedIdentification",
-    "description": "Taxonomic determinations (e.g., assignments to dwc:Taxon).",
+    "description": "Taxonomic determinations (e.g., assignments to dwc:Taxa).",
     "fields": [
         {
             "name": "identificationID",

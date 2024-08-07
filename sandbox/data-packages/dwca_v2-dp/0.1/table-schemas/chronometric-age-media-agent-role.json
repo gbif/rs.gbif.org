@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/collection-agent-role",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/collection-agent-role.json",
-    "name": "collection-agent-role",
-    "title": "CollectionAgentRole",
-    "description": "Roles filled by Agents with respect to Collections.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/chronometric-age-media-agent-role",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/chronometric-age-media-agent-role.json",
+    "name": "chronometric-age-media-agent-role",
+    "title": "ChronometricAgeMediaAgentRole",
+    "description": "Roles filled by Agents with respect to ChronometricAgeMedia.",
     "fields": [
         {
             "name": "agentRoleTargetID",
@@ -21,7 +21,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`Agent`; `AgentRole`; `Assertion`; `Event`; `MaterialGathering`; `OrganismInteraction`; `Occurrence; `Inventory`; `MaterialEntity`; `Media`; `Citation`; `Identification`; `Organism`; `Collection`; `ChronometricAge`; `GeneticSequence`; `GeologicalContext`; `PhylogeneticTree`; `PhylogeneticTreeTip`; `Taxon`; `Identifier`; `Relationship`; `TaxonDistribution`",
+            "examples": "`Agent`; `AgentRole`; `Assertion`; `Event`; `MaterialGathering`; `OrganismInteraction`; `Occurrence`; `Inventory`; `MaterialEntity`; `Media`; `Citation`; `Identification`; `Organism`; `Collection`; `ChronometricAge`; `GeneticSequence`; `GeologicalContext`; `PhylogeneticTree`; `PhylogeneticTreeTip`; `Taxon`; `Identifier`; `Relationship`; `TaxonDistribution`",
             "namespace": "gum",
             "iri": ""
         },
@@ -106,13 +106,18 @@
             "iri": ""
         }
     ],
-    "primaryKey": ["agentRoleTargetID", "agentRoleTargetType", "agentRole", "agentRoleIRI"],
+    "primaryKey": [
+        "agentRoleTargetID",
+        "agentRoleTargetType",
+        "agentRole",
+        "agentRoleIRI"
+    ],
     "foreignKeys": [
         {
             "fields": "agentRoleTargetID",
             "reference": {
-                "resource": "collection",
-                "fields": "collectionID"
+                "resource": "chronometric-age-media",
+                "fields": "mediaID"
             }
         }
     ]

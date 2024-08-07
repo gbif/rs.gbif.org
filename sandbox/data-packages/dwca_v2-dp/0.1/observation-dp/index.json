@@ -16,7 +16,7 @@
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event.json",
             "name": "related-event",
             "title": "RelatedEvent",
-            "description": "Other actions that occur at some location during some time."
+            "description": "Actions that occur at some location during some time."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification",
@@ -30,7 +30,7 @@
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/identification-taxon.json",
             "name": "identification-taxon",
             "title": "IdentificationTaxon",
-            "description": "The components and order of dwc:Taxa in an Identification."
+            "description": "The components and positions of dwc:Taxa in dwc:Identifications."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media",
@@ -178,6 +178,13 @@
             "name": "related-identification-media-agent-role",
             "title": "RelatedIdentificationMediaAgentRole",
             "description": "Roles filled by Agents with respect to RelatedIdentificationMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/agent-agent-role.json",
+            "name": "agent-agent-role",
+            "title": "AgentAgentRole",
+            "description": "Roles filled by Agents with respect to other Agents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent",

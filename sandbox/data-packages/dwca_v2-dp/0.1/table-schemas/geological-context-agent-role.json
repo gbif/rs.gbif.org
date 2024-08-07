@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/collection-agent-role",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/collection-agent-role.json",
-    "name": "collection-agent-role",
-    "title": "CollectionAgentRole",
-    "description": "Roles filled by Agents with respect to Collections.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/geological-context-agent-role",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/geological-context-agent-role.json",
+    "name": "geological-context-agent-role",
+    "title": "GeologicalContextAgentRole",
+    "description": "Roles filled by Agents with respect to dwc:GeologicalContexts.",
     "fields": [
         {
             "name": "agentRoleTargetID",
@@ -106,13 +106,18 @@
             "iri": ""
         }
     ],
-    "primaryKey": ["agentRoleTargetID", "agentRoleTargetType", "agentRole", "agentRoleIRI"],
+    "primaryKey": [
+        "agentRoleTargetID",
+        "agentRoleTargetType",
+        "agentRole",
+        "agentRoleIRI"
+    ],
     "foreignKeys": [
         {
             "fields": "agentRoleTargetID",
             "reference": {
-                "resource": "collection",
-                "fields": "collectionID"
+                "resource": "geological-context",
+                "fields": "geologicalContextID"
             }
         }
     ]

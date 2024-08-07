@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-event-assertion.json",
     "name": "related-event-assertion",
     "title": "RelatedEventAssertion",
-    "description": "Assertions made by Agents with respect to RelatedEvents.",
+    "description": "Assertions made by Agents about RelatedEvents.",
     "fields": [
         {
             "name": "assertionID",

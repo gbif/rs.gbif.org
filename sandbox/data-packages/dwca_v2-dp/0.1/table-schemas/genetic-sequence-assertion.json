@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/genetic-sequence-assertion.json",
     "name": "genetic-sequence-assertion",
     "title": "GeneticSequenceAssertion",
-    "description": "Assertions made by Agents with respect to GeneticSequences.",
+    "description": "Assertions made by Agents about GeneticSequences.",
     "fields": [
         {
             "name": "assertionID",

@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-media-agent-role.json",
     "name": "inventory-media-agent-role",
     "title": "InventoryMediaAgentRole",
-    "description": "Roles filled by Agents with respect to OccurrenceMedia.",
+    "description": "Roles filled by Agents with respect to Inventory Events.",
     "fields": [
         {
             "name": "agentRoleTargetID",

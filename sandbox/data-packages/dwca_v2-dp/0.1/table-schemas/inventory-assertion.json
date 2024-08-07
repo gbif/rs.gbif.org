@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-assertion.json",
     "name": "inventory-assertion",
     "title": "InventoryAssertion",
-    "description": "Assertions made by Agents with respect to Inventory Events.",
+    "description": "Assertions made by Agents about Inventory Events.",
     "fields": [
         {
             "name": "assertionID",

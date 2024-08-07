@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/related-material-assertion",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-material-assertion.json",
-    "name": "related-material-assertion",
-    "title": "RelatedMaterialAssertion",
-    "description": "Assertions made by Agents about RelatedMaterial.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/chronometric-age-media-assertion",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/chronometric-age-media-assertion.json",
+    "name": "chronometric-age-media-assertion",
+    "title": "ChronometricAgeMediaAssertion",
+    "description": "Assertions made by Agents with respect to ChronometricAgeMedia.",
     "fields": [
         {
             "name": "assertionID",
@@ -195,8 +195,8 @@
         {
             "fields": "assertionTargetID",
             "reference": {
-                "resource": "related-material",
-                "fields": "materialEntityID"
+                "resource": "chronometric-age-media",
+                "fields": "mediaID"
             }
         }
     ]

@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/occurrence-assertion.json",
     "name": "occurrence-assertion",
     "title": "OccurrenceAssertion",
-    "description": "Assertions made by Agents with respect to Occurrences of dwc:Organisms.",
+    "description": "Assertions made by Agents about Occurrences of dwc:Organisms.",
     "fields": [
         {
             "name": "assertionID",

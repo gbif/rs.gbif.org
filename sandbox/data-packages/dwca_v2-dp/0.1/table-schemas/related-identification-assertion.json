@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-identification-assertion.json",
     "name": "related-identification-assertion",
     "title": "RelatedIDentificationAssertion",
-    "description": "Assertions made by Agents with respect to RelatedIdentifications.",
+    "description": "Assertions made by Agents about RelatedIdentifications.",
     "fields": [
         {
             "name": "assertionID",

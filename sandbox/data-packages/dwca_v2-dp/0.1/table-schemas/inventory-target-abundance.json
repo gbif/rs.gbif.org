@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-target-abundance.json",
     "name": "inventory-target-abundance",
     "title": "InventoryTargetAbundance",
-    "description": "",
+    "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of InventoryTargets.",
     "fields": [
         {
             "name": "inventoryTargetID",

@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/identification-taxon.json",
     "name": "identification-taxon",
     "title": "IdentificationTaxon",
-    "description": "The components and order of dwc:Taxa in an Identification.",
+    "description": "The components and positions of dwc:Taxa in an Identification.",
     "fields": [
         {
             "name": "identificationID",

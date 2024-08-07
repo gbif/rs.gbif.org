@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-target.json",
     "name": "inventory-target",
     "title": "InventoryTarget",
-    "description": "Specifications of characteristics of dwc:Organisms in an Inventory that were included or excluded.",
+    "description": "Specifications of characteristics of dwc:Organisms that were included or excluded in an Inventory.",
     "fields": [
         {
             "name": "inventoryTargetID",

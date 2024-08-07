@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-material-media-assertion.json",
     "name": "related-material-media-assertion",
     "title": "RelatedMaterialMediaAssertion",
-    "description": "Assertions made by Agents with respect to RelatedMaterial.",
+    "description": "Assertions made by Agents about RelatedMaterial.",
     "fields": [
         {
             "name": "assertionID",

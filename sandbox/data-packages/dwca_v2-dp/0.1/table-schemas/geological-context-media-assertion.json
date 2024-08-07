@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/related-material-assertion",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-material-assertion.json",
-    "name": "related-material-assertion",
-    "title": "RelatedMaterialAssertion",
-    "description": "Assertions made by Agents about RelatedMaterial.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/geological-context-media-assertion",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/geological-context-media-assertion.json",
+    "name": "geological-context-media-assertion",
+    "title": "GeologicalContextMediaAssertion",
+    "description": "Assertions made by Agents about dwc:GeologicalContexts.",
     "fields": [
         {
             "name": "assertionID",
@@ -195,8 +195,8 @@
         {
             "fields": "assertionTargetID",
             "reference": {
-                "resource": "related-material",
-                "fields": "materialEntityID"
+                "resource": "geological-context-media",
+                "fields": "mediaID"
             }
         }
     ]

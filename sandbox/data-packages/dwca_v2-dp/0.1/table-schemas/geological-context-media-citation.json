@@ -1,9 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/genetic-sequence-media-citation",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/genetic-sequence-media-citation.json",
-    "name": "genetic-sequence-media-citation",
-    "title": "GeneticSequenceMediaCitation",
-    "description": "Citations related directly to GeneticSequenceMedia.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2-dp/geological-context-media-citation",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/geological-context-media-citation.json",
+    "name": "geological-context-media-citation",
+    "title": "GeologicalContextMediaCitation",
+    "description": "Citations related directly to GeologicalContextMedia.",
     "fields": [
         {
             "name": "citationID",
@@ -165,7 +165,7 @@
         {
             "fields": "citationTargetID",
             "reference": {
-                "resource": "genetic-sequence-media",
+                "resource": "geological-context-media",
                 "fields": "mediaID"
             }
         }

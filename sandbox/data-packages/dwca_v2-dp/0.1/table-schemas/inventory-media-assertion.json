@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/inventory-media-assertion.json",
     "name": "inventory-media-assertion",
     "title": "InventoryMediaAssertion",
-    "description": "Assertions made by Agents with respect to InventoryMedia.",
+    "description": "Assertions made by Agents about InventoryMedia.",
     "fields": [
         {
             "name": "assertionID",

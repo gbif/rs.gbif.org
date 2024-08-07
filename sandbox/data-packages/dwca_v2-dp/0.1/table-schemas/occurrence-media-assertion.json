@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/occurrence-media-assertion.json",
     "name": "occurrence-media-assertion",
     "title": "OccurrenceMediaAssertion",
-    "description": "Assertions made by Agents with respect to OccurrenceMedia.",
+    "description": "Assertions made by Agents about OccurrenceMedia.",
     "fields": [
         {
             "name": "assertionID",

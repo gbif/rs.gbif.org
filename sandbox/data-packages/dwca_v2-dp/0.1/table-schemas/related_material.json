@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2-dp/0.1/table-schemas/related-material.json",
     "name": "related-material",
     "title": "RelatedMaterial",
-    "description": "MaterialEntities associated with an Event (Inventory, MaterialGathering, Occurrence, InteractionOccurrence) or other MaterialEntities.",
+    "description": "MaterialEntities associated with Events (Inventory, MaterialGathering, Occurrence, InteractionOccurrence) or other MaterialEntities.",
     "fields": [
         {
             "name": "materialEntityID",
@@ -68,6 +68,16 @@
             "examples": "`MVZ`; `FMNH`; `CLO`; `UCMP`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/institutionCode"
+        },
+        {
+            "name": "ownerInstitutionCode",
+            "description": "The name (or acronym) in use by the institution having ownership of a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`NPS`; `APN`; `InBio`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/ownerInstitutionCode"
         },
         {
             "name": "collectionID",

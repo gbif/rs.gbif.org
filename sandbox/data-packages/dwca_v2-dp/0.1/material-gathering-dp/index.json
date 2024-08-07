@@ -1,23 +1,9 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-dp",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/inventory-dp",
-    "name": "inventory-dp",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/material-gathering-dp",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/material-gathering-dp",
+    "name": "material-gathering-dp",
     "version": "0.1",
     "tableSchemas": [
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory.json",
-            "name": "inventory",
-            "title": "Inventory",
-            "description": "Ecological Inventories of dwc:Organisms that occur at some place during some time."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event.json",
-            "name": "related-event",
-            "title": "RelatedEvent",
-            "description": "Actions that occur at some location during some time."
-        },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence.json",
@@ -47,18 +33,25 @@
             "description": "Digital representations of a nucleotide sequences."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-target.json",
-            "name": "inventory-target",
-            "title": "InventoryTarget",
-            "description": "Specifications of characteristics of dwc:Organisms that were included or excluded in an Inventory."
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context.json",
+            "name": "geological-context",
+            "title": "GeologicalContext",
+            "description": "Geological information, such as stratigraphy, that qualifies a region or place."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target-abundance",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-target-abundance.json",
-            "name": "inventory-target-abundance",
-            "title": "InventoryTargetAbundance",
-            "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of InventoryTargets."
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age.json",
+            "name": "chronometric-age",
+            "title": "ChronometricAge",
+            "description": "Approximations of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that are supported by evidence."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event.json",
+            "name": "related-event",
+            "title": "RelatedEvent",
+            "description": "Actions that occur at some location during some time."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification",
@@ -75,20 +68,6 @@
             "description": "The components and positions of dwc:Taxa in an Identifications."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media.json",
-            "name": "inventory-media",
-            "title": "InventoryMedia",
-            "description": "Media (sound, image, video, text) related directly to Inventory Events."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media.json",
-            "name": "related-event-media",
-            "title": "RelatedEventMedia",
-            "description": "Media (sound, image, video, text) related directly to RelatedEvents."
-        },
-        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media.json",
             "name": "occurrence-media",
@@ -103,25 +82,32 @@
             "description": "Media (sound, image, video, text) related directly to RelatedMaterial."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-media.json",
+            "name": "geological-context-media",
+            "title": "GeologicalContextMedia",
+            "description": "Media (sound, image, video, text) related directly to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-media.json",
+            "name": "chronometric-age-media",
+            "title": "ChronometricAgeMedia",
+            "description": "Media (sound, image, video, text) related directly to chrono:ChronometricAge determinations."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media.json",
+            "name": "related-event-media",
+            "title": "RelatedEventMedia",
+            "description": "Media (sound, image, video, text) related directly to RelatedEvents."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media.json",
             "name": "related-identification-media",
             "title": "RelatedIdentificationMedia",
             "description": "Media (sound, image, video, text) related directly to RelatedIdentifications."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-citation",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-citation.json",
-            "name": "inventory-citation",
-            "title": "InventoryCitation",
-            "description": "Citations related directly to Inventory Events."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-citation",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-citation.json",
-            "name": "related-event-citation",
-            "title": "RelatedEventCitation",
-            "description": "Citations related directly to RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-citation",
@@ -145,6 +131,27 @@
             "description": "Citations related directly to GeneticSequences."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-citation.json",
+            "name": "geological-context-citation",
+            "title": "GeologicalContextCitation",
+            "description": "Citations related directly to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-citation.json",
+            "name": "chronometric-age-citation",
+            "title": "ChronometricAgeCitation",
+            "description": "Citations related directly to chrono:ChronometricAge determinations."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-citation.json",
+            "name": "related-event-citation",
+            "title": "RelatedEventCitation",
+            "description": "Citations related directly to RelatedEvents."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-citation",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-citation.json",
             "name": "related-identification-citation",
@@ -152,25 +159,11 @@
             "description": "Citations related directly to RelatedIdentifications."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-citation",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-citation.json",
-            "name": "inventory-media-citation",
-            "title": "InventoryMediaCitation",
-            "description": "Citations related directly to InventoryMedia."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-citation",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-citation.json",
-            "name": "related-event-media-citation",
-            "title": "RelatedEventMediaCitation",
-            "description": "Citations related directly to RelatedEventMedia."
-        },
-        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-citation",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media-citation.json",
             "name": "occurrence-media-citation",
             "title": "OccurrenceMediaCitation",
-            "description": "Citations related directly to Occurrences of dwc:Organisms."
+            "description": "Citations related directly to OccurrenceMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-media-citation",
@@ -180,25 +173,32 @@
             "description": "Citations related directly to RelatedMaterialMedia."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-media-citation.json",
+            "name": "geological-context-media-citation",
+            "title": "GeologicalContextMediaCitation",
+            "description": "Citations related directly to GeologicalContextMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-media-citation.json",
+            "name": "chronometric-age-media-citation",
+            "title": "ChronometricAgeMediaCitation",
+            "description": "Citations related directly to ChronometricAgeMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-citation",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-citation.json",
+            "name": "related-event-media-citation",
+            "title": "RelatedEventMediaCitation",
+            "description": "Citations related directly to RelatedEventMedia."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-citation",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media-citation.json",
             "name": "related-identification-media-citation",
             "title": "RelatedIdentificationMediaCitation",
             "description": "Citations related directly to RelatedIdentificationMedia."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-assertion",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-assertion.json",
-            "name": "inventory-assertion",
-            "title": "InventoryAssertion",
-            "description": "Assertions made by Agents with respect to Inventory Events."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-assertion",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-assertion.json",
-            "name": "related-event-assertion",
-            "title": "RelatedEventAssertion",
-            "description": "Assertions made by Agents with respect to RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-assertion",
@@ -222,25 +222,32 @@
             "description": "Assertions made by Agents with respect to GeneticSequences."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-assertion.json",
+            "name": "geological-context-assertion",
+            "title": "GeologicalContextAssertion",
+            "description": "Assertions made by Agents with respect to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-assertion.json",
+            "name": "chronometric-age-assertion",
+            "title": "ChronometricAgeAssertion",
+            "description": "Assertions made by Agents with respect to chrono:ChronometricAges."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-assertion.json",
+            "name": "related-event-assertion",
+            "title": "RelatedEventAssertion",
+            "description": "Assertions made by Agents with respect to RelatedEvents."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-assertion.json",
             "name": "related-identification-assertion",
             "title": "RelatedIdentificationAssertion",
             "description": "Assertions made by Agents with respect to RelatedIdentifications."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-assertion",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-assertion.json",
-            "name": "inventory-media-assertion",
-            "title": "InventoryMediaAssertion",
-            "description": "Assertions about Media (sound, image, video, text) related directly to Inventory Events."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-assertion",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-assertion.json",
-            "name": "related-event-media-assertion",
-            "title": "RelatedEventMediaAssertion",
-            "description": "Assertions about Media (sound, image, video, text) related directly to RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-assertion",
@@ -257,25 +264,32 @@
             "description": "Assertions about Media (sound, image, video, text) related directly to RelatedMaterial."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-media-assertion.json",
+            "name": "geological-context-media-assertion",
+            "title": "GeologicalContextMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-media-assertion.json",
+            "name": "chronometric-age-media-assertion",
+            "title": "ChronometricAgeMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to chrono:ChronometricAges."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-assertion",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-assertion.json",
+            "name": "related-event-media-assertion",
+            "title": "RelatedEventMediaAssertion",
+            "description": "Assertions about Media (sound, image, video, text) related directly to RelatedEvents."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-media-assertion.json",
             "name": "related-identification-media-assertion",
             "title": "RelatedIdentificationMediaAssertion",
             "description": "Assertions about Media (sound, image, video, text) related directly to RelatedIdentifications."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-agent-role",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-agent-role.json",
-            "name": "inventory-agent-role",
-            "title": "InventoryAgentRole",
-            "description": "Roles filled by Agents with respect to Inventory Events."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-agent-role",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-agent-role.json",
-            "name": "related-event-agent-role",
-            "title": "RelatedEventAgentRole",
-            "description": "Roles filled by Agents with respect to RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-agent-role",
@@ -299,25 +313,32 @@
             "description": "Roles filled by Agents with respect to GeneticSequences."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-agent-role.json",
+            "name": "geological-context-agent-role",
+            "title": "GeologicalContextAgentRole",
+            "description": "Roles filled by Agents with respect to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-agent-role.json",
+            "name": "chronometric-age-agent-role",
+            "title": "ChronometricAgeAgentRole",
+            "description": "Roles filled by Agents with respect to chrono:ChronometricAges."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-agent-role.json",
+            "name": "related-event-agent-role",
+            "title": "RelatedEventAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedEvents."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-agent-role",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-agent-role.json",
             "name": "related-identification-agent-role",
             "title": "RelatedIdentificationAgentRole",
             "description": "Roles filled by Agents with respect to RelatedIdentifications."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-media-agent-role",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/inventory-media-agent-role.json",
-            "name": "inventory-media-agent-role",
-            "title": "InventoryMediaAgentRole",
-            "description": "Roles filled by Agents with respect to InventoryMedia."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-agent-role",
-            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-agent-role.json",
-            "name": "related-event-media-agent-role",
-            "title": "RelatedEventMediaAgentRole",
-            "description": "Roles filled by Agents with respect to RelatedEventMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-agent-role",
@@ -332,6 +353,27 @@
             "name": "related-material-media-agent-role",
             "title": "RelatedMaterialMediaAgentRole",
             "description": "Roles filled by Agents with respect to RelatedMaterialMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-media-agent-role.json",
+            "name": "geological-context-media-agent-role",
+            "title": "GeologicalContextMediaAgentRole",
+            "description": "Roles filled by Agents with respect to dwc:GeologicalContexts."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-media-agent-role.json",
+            "name": "chronometric-age-media-agent-role",
+            "title": "ChronometricAgeMediaAgentRole",
+            "description": "Roles filled by Agents with respect to ChronometriAgeMedia."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-agent-role",
+            "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-agent-role.json",
+            "name": "related-event-media-agent-role",
+            "title": "RelatedEventMediaAgentRole",
+            "description": "Roles filled by Agents with respect to RelatedEventMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-agent-role",
@@ -355,9 +397,9 @@
             "description": "People, groups, organizations and other entities that can act."
         }
     ],
-    "title": "Darwin Core Inventory Data Package",
-    "shortTitle": "Inventory DP",
-    "description": "A data package for sharing ecological inventory data.",
-    "issued": "2024-08-05",
+    "title": "Darwin Core Material Gathering Data Package",
+    "shortTitle": "Material Gathering DP",
+    "description": "A data package for sharing data on gathered material.",
+    "issued": "2024-08-06",
     "isLatest": true
 }
