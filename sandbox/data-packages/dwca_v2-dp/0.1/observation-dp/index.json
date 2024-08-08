@@ -100,28 +100,28 @@
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-assertion.json",
             "name": "occurrence-assertion",
             "title": "OccurrenceAssertion",
-            "description": "Assertions made by Agents with respect to Occurrences of dwc:Organisms."
+            "description": "Assertions made by Agents about Occurrences of dwc:Organisms."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-assertion.json",
             "name": "related-event-assertion",
             "title": "RelatedEventAssertion",
-            "description": "Assertions made by Agents with respect to RelatedEvents."
+            "description": "Assertions made by Agents about RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-assertion.json",
             "name": "related-identification-assertion",
             "title": "RelatedIdentificationAssertion",
-            "description": "Assertions made by Agents with respect to RelatedIdentifications."
+            "description": "Assertions made by Agents about RelatedIdentifications."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-agent-role",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-agent-role.json",
             "name": "occurrence-agent-role",
             "title": "OccurrenceAgentRole",
-            "description": "Roles filled by Agents with respect to Occurrences of dwc:Organisms."
+            "description": "Roles filled by Agents about Occurrences of dwc:Organisms."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-agent-role",
@@ -142,21 +142,21 @@
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-media-assertion.json",
             "name": "occurrence-media-assertion",
             "title": "OccurrenceMediaAssertion",
-            "description": "Assertions made by Agents with respect to OccurrenceMedia."
+            "description": "Assertions made by Agents about OccurrenceMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-media-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-media-assertion.json",
             "name": "related-event-media-assertion",
             "title": "RelatedEventMediaAssertion",
-            "description": "Assertions made by Agents with respect to RelatedEventMedia."
+            "description": "Assertions made by Agents about RelatedEventMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-media-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-idntification-media-assertion.json",
             "name": "related-identification-media-assertion",
             "title": "RelatedIdentificationMediaAssertion",
-            "description": "Assertions made by Agents with respect to RelatedIdentificationMedia."
+            "description": "Assertions made by Agents about RelatedIdentificationMedia."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-agent-role",

@@ -2377,7 +2377,7 @@
         },
         {
             "name": "organismID",
-            "description": "An identifier for a particular instance of a dwc:Organism.",
+            "description": "An identifier for an instance of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -2387,7 +2387,7 @@
         },
         {
             "name": "organismInteractionID",
-            "description": "An identifier for a particular instance of an OrganismInteraction.",
+            "description": "An identifier for an instance of an OrganismInteraction.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -2567,7 +2567,7 @@
         },
         {
             "name": "parentInventoryID",
-            "description": "An identifier for Inventory that groups this and potentially other dwc:Occurrences.",
+            "description": "An identifier for an Inventory that groups this and potentially other dwc:Occurrences.",
             "type": "string",
             "format": "default",
             "comments": "",

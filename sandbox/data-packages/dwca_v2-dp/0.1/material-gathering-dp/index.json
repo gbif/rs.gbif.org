@@ -205,49 +205,49 @@
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/occurrence-assertion.json",
             "name": "occurrence-assertion",
             "title": "OccurrenceAssertion",
-            "description": "Assertions made by Agents with respect to Occurrences of dwc:Organisms."
+            "description": "Assertions made by Agents about Occurrences of dwc:Organisms."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-material-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-material-assertion.json",
             "name": "related-material-assertion",
             "title": "RelatedMaterialAssertion",
-            "description": "Assertions made by Agents with respect to RelatedMaterial."
+            "description": "Assertions made by Agents about RelatedMaterial."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/genetic-sequence-assertion.json",
             "name": "genetic-sequence-assertion",
             "title": "GeneticSequenceAssertion",
-            "description": "Assertions made by Agents with respect to GeneticSequences."
+            "description": "Assertions made by Agents about GeneticSequences."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/geological-context-assertion.json",
             "name": "geological-context-assertion",
             "title": "GeologicalContextAssertion",
-            "description": "Assertions made by Agents with respect to dwc:GeologicalContexts."
+            "description": "Assertions made by Agents about dwc:GeologicalContexts."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/chronometric-age-assertion.json",
             "name": "chronometric-age-assertion",
             "title": "ChronometricAgeAssertion",
-            "description": "Assertions made by Agents with respect to chrono:ChronometricAges."
+            "description": "Assertions made by Agents about chrono:ChronometricAges."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-event-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-event-assertion.json",
             "name": "related-event-assertion",
             "title": "RelatedEventAssertion",
-            "description": "Assertions made by Agents with respect to RelatedEvents."
+            "description": "Assertions made by Agents about RelatedEvents."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/related-identification-assertion",
             "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/related-identification-assertion.json",
             "name": "related-identification-assertion",
             "title": "RelatedIdentificationAssertion",
-            "description": "Assertions made by Agents with respect to RelatedIdentifications."
+            "description": "Assertions made by Agents about RelatedIdentifications."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence-media-assertion",
