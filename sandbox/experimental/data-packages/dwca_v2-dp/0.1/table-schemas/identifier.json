@@ -1,0 +1,163 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identifier",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/identifier.json",
+    "name": "identifier",
+    "title": "Identifier",
+    "description": "Additional identifiers for entities.",
+    "fields": [
+        {
+            "name": "identifier",
+            "description": "An unambiguous reference to the resource within a given context.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.",
+            "examples": "",
+            "namespace": "dcterms",
+            "iri": "http://purl.org/dc/terms/identifier",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "identifierTargetID",
+            "description": "The identifier for the target subject of an Identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identifierTargetType",
+            "description": "The class of the target of an identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identifierType",
+            "description": "The category or system that best matches the nature of an Identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identifierTypeIRI",
+            "description": "The IRI of the controlled vocabulary value for the type of Identifier.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identifierTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for identifierType are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identifierLanguage",
+            "description": "A language of the resource.",
+            "type": "string",
+            "format": "default",
+            "comments": "Language(s) of resource itself represented in the ISO639-2 three-letter language code. ISO639-1 two-letter codes are permitted but deprecated. An image may contain language such as superimposed labels. If an image is of a natural scene or organism, without any language included, the resource is language-neutral (ISO code \"zxx\"). Resources with present but unknown language are to be coded as undetermined (ISO code \"und\"). Regional dialects or other special cases should conform to the ISO639-5 Alpha-3 Code for Language Families and Groups, http://id.loc.gov/vocabulary/iso639-5.html, where possible or the IETF Best Practices for Tags Identifying Languages, https://tools.ietf.org/html/rfc5646, where not. See also the entry for dcterms:language in the Audiovisual Core term list document and see the DCMI FAQ on DC and DCTERMS Namespaces, https://web.archive.org/web/20171126043657/https://github.com/dcmi/repository/blob/master/mediawiki_wiki/FAQ/DC_and_DCTERMS_Namespaces.md, for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+            "examples": "`en` (for English); `es (for Spanish)`",
+            "namespace": "gum",
+            "iri": ""
+        }
+    ],
+    "primaryKey": "identifier",
+    "foreignKeys": [
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "agent",
+                "fields": "agentID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "chronometric-age",
+                "fields": "chronometricAgeID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "collection",
+                "fields": "collectionID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "event",
+                "fields": "eventID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "genetic-sequence",
+                "fields": "geneticSequenceID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "geological-context",
+                "fields": "geologicalContextID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "identification",
+                "fields": "identificationID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "material",
+                "fields": "materialID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "media",
+                "fields": "mediaID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "occurrence",
+                "fields": "occurrenceID"
+            }
+        },
+        {
+            "fields": "identifierTargetID",
+            "reference": {
+                "resource": "organism-interaction",
+                "fields": "organismInteractionID"
+            }
+        }
+    ]
+}
