@@ -120,12 +120,7 @@
             "iri": ""
         }
     ],
-    "primaryKey": [
-        "agentRoleTargetID",
-        "agentRoleTargetType",
-        "agentRole",
-        "agentRoleIRI"
-    ],
+    "primaryKey": "agentRoleTargetID",
     "foreignKeys": [
         {
             "fields": "agentRoleTargetID",
