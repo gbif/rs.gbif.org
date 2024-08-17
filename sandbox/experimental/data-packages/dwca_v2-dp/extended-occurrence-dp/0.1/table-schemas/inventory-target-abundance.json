@@ -76,11 +76,7 @@
             "iri": ""
         }
     ],
-    "primaryKey": [
-        "inventoryTargetID",
-        "observedTaxon",
-        "observedTaxonID"
-    ],
+    "primaryKey": "inventoryTargetID",
     "foreignKeys": [
         {
             "fields": "inventoryTargetID",
