@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/inventory.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/inventory.json",
     "name": "inventory",
     "title": "Inventory",
     "description": "Information associated with a dwc:Event that is an ecological Inventory.",

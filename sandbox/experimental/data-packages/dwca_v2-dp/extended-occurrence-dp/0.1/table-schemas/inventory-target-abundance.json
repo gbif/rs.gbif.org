@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target-abundance",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/inventory-target-abundance.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/inventory-target-abundance.json",
     "name": "inventory-target-abundance",
     "title": "InventoryTargetAbundance",
     "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of InventoryTargets.",

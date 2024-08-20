@@ -1,6 +1,6 @@
 {
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/occurrence.json",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
     "name": "occurrence",
     "title": "Occurrence",
     "description": "Occurrences of dwc:Organisms in place and time.",
