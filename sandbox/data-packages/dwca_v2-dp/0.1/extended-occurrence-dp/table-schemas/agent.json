@@ -10,7 +10,7 @@
             "description": "An identifier for an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
             "namespace": "gum",
             "iri": "",
@@ -21,10 +21,10 @@
         },
         {
             "name": "agentType",
-            "description": "The category that best matches the type of the Event.",
+            "description": "The category that best matches the type of the Agent.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
             "examples": "`person`; `group`; `organization`",
             "namespace": "gum",
             "iri": ""
