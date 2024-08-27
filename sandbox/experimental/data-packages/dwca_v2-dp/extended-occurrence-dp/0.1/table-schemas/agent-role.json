@@ -13,24 +13,32 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "agentRoleTargetType",
             "description": "The class of the target of an AgentRole.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can have an AgentRole.",
             "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "agentRole",
             "description": "The category that best matches the nature of a role of an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource the AgentRole is related to.",
             "examples": "`collector`; `preparator`; `organizer`; `author`; `creator`; `owner`; `observer`",
             "namespace": "gum",
             "iri": ""
@@ -51,13 +59,13 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`collector`; `preparator`; `organizer`; `author`; `creator`; `owner`; `observer`",
+            "examples": "",
             "namespace": "gum",
             "iri": ""
         },
         {
             "name": "agentRoleOrder",
-            "description": "The numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRoleTargetID and agentRoleTargetType",
+            "description": "The numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRoleTargetID and agentRoleTargetType.",
             "type": "integer",
             "format": "default",
             "comments": "One could use agentRoleOrder to create an ordered list of collectors for a dwc:MaterialEntity, for example. The first would have agentRoleOrder=1, the second would have agentRoleOrder=2.",
