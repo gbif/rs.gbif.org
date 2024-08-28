@@ -21,7 +21,7 @@
         },
         {
             "name": "agentType",
-            "description": "The category that best matches the type of the Agent.",
+            "description": "The category that best matches the type of an Agent.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -35,7 +35,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "namespace": "gum",
             "iri": ""
         },

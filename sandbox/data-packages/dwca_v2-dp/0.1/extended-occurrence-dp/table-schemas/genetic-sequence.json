@@ -3,11 +3,11 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/genetic-sequence.json",
     "name": "genetic-sequence",
     "title": "GeneticSequence",
-    "description": "Digital representations of a nucleotide sequences.",
+    "description": "Digital representations of nucleotide sequences.",
     "fields": [
         {
             "name": "geneticSequenceID",
-            "description": "An identifier for a genetic sequence.",
+            "description": "An identifier for a GeneticSequence.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -21,7 +21,7 @@
         },
         {
             "name": "gatheringEventID",
-            "description": "An identifier for a GatheringEvent in which a dwc:MaterialEntity was collected.",
+            "description": "An identifier for a dwc:Event in which a dwc:MaterialEntity was collected.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -31,7 +31,7 @@
         },
         {
             "name": "derivedFromMaterialEntityID",
-            "description": "The identifier for a dwc:MaterialEntity from which this dwc:MaterialEntity was derived.",
+            "description": "An identifier for a dwc:MaterialEntity from which this dwc:MaterialEntity was derived.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -71,7 +71,7 @@
         },
         {
             "name": "geneticSequenceRemarks",
-            "description": "Comments or notes about the GeneticSequence.",
+            "description": "Comments or notes about a GeneticSequence.",
             "type": "string",
             "format": "default",
             "comments": "",

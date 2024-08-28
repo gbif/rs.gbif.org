@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/agentrole.json",
     "name": "agent-role",
     "title": "AgentRole",
-    "description": "Roles filled by Agents with respect to other entities",
+    "description": "Roles filled by Agents with respect to other entities.",
     "fields": [
         {
             "name": "agentRoleTargetID",
@@ -13,7 +13,7 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
             "constraints": {
                 "required": true,
                 "unique": false
@@ -27,7 +27,7 @@
             "comments": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can have an AgentRole.",
             "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
             "constraints": {
                 "required": true,
                 "unique": false
@@ -48,7 +48,7 @@
             "description": "The IRI of the controlled vocabulary value for the role of an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -89,7 +89,7 @@
         },
         {
             "name": "agentType",
-            "description": "The category that best matches the type of the Event.",
+            "description": "The category that best matches the type of an Agent.",
             "type": "string",
             "format": "default",
             "comments": "",

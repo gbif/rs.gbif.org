@@ -201,7 +201,7 @@
         },
         {
             "name": "chronometricAgeRemarks",
-            "description": "Notes or comments about the chrono:ChronometricAge.",
+            "description": "Comments or notes about a chrono:ChronometricAge.",
             "type": "string",
             "format": "default",
             "comments": "",

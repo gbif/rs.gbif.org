@@ -1,13 +1,13 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory-target-abundance",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/inventory-target-abundance.json",
-    "name": "inventory-target-abundance",
-    "title": "InventoryTargetAbundance",
-    "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of InventoryTargets.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey-target-abundance",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey-target-abundance.json",
+    "name": "survey-target-abundance",
+    "title": "SurveyTargetAbundance",
+    "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of SurveyTargets.",
     "fields": [
         {
-            "name": "inventoryTargetID",
-            "description": "The identifier for an InventoryTarget.",
+            "name": "surveyTargetID",
+            "description": "An identifier for an SurveyTarget.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -17,7 +17,7 @@
         },
         {
             "name": "observedTaxonID",
-            "description": "The dwc:taxonID of a dwc:Taxon for which the abundance is being reported. ",
+            "description": "A dwc:taxonID of a dwc:Taxon for which the abundance is being reported. ",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -27,7 +27,7 @@
         },
         {
             "name": "observedTaxon",
-            "description": "The dwc:scientificName of a dwc:Taxon for which the abundance is being reported.",
+            "description": "A dwc:scientificName of a dwc:Taxon for which the abundance is being reported.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -47,7 +47,7 @@
         },
         {
             "name": "organismQuantityType",
-            "description": "The type of quantification system used for the quantity of dwc:Organisms.",
+            "description": "A type of quantification system used for the quantity of dwc:Organisms.",
             "type": "string",
             "format": "default",
             "comments": "A dwc:organismQuantityType must have a corresponding dwc:organismQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -57,17 +57,17 @@
         },
         {
             "name": "organismQuantityTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the dwc:organismQuantity.",
+            "description": "The IRI of the controlled vocabulary value for the dwc:organismQuantityType.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
         },
         {
             "name": "organismQuantityTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for organismQuantityType are given.",
+            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:organismQuantityType are given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -77,16 +77,16 @@
         }
     ],
     "primaryKey": [
-        "inventoryTargetID",
+        "surveyTargetID",
         "observedTaxon",
         "observedTaxonID"
     ],
     "foreignKeys": [
         {
-            "fields": "inventoryTargetID",
+            "fields": "surveyTargetID",
             "reference": {
-                "resource": "inventory-target",
-                "fields": "inventoryTargetID"
+                "resource": "survey-target",
+                "fields": "surveyTargetID"
             }
         }
     ]

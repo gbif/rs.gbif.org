@@ -21,7 +21,7 @@
         },
         {
             "name": "mediaTargetID",
-            "description": "The identifier for the target subject of a Media instance.",
+            "description": "An identifier for the target subject of a Media instance.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -41,7 +41,7 @@
         },
         {
             "name": "mediaType",
-            "description": "A term to distinguish the type of Media.",
+            "description": "The category that best matches the nature of an instance of Media.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -54,7 +54,7 @@
             "description": "The IRI of the controlled vocabulary value for the type of Media.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -160,14 +160,14 @@
             "iri": "http://purl.org/dc/terms/modified"
         },
         {
-            "name": "language",
-            "description": "A language of the resource.",
+            "name": "mediaLanguage",
+            "description": "A language of the content of Media.",
             "type": "string",
             "format": "default",
-            "comments": "Language(s) of resource itself represented in the ISO639-2 three-letter language code. ISO639-1 two-letter codes are permitted but deprecated. An image may contain language such as superimposed labels. If an image is of a natural scene or organism, without any language included, the resource is language-neutral (ISO code \"zxx\"). Resources with present but unknown language are to be coded as undetermined (ISO code \"und\"). Regional dialects or other special cases should conform to the ISO639-5 Alpha-3 Code for Language Families and Groups, http://id.loc.gov/vocabulary/iso639-5.html, where possible or the IETF Best Practices for Tags Identifying Languages, https://tools.ietf.org/html/rfc5646, where not. See also the entry for dcterms:language in the Audiovisual Core term list document and see the DCMI FAQ on DC and DCTERMS Namespaces, https://web.archive.org/web/20171126043657/https://github.com/dcmi/repository/blob/master/mediawiki_wiki/FAQ/DC_and_DCTERMS_Namespaces.md, for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
-            "examples": "",
-            "namespace": "dc",
-            "iri": "http://purl.org/dc/elements/1.1/language"
+            "comments": "Recommended best prectice is to use an ISO639-2 three-letter language code.",
+            "examples": "`eng` (for Modern English); `spa` (for Castilian Standard Spanish)",
+            "namespace": "gum",
+            "iri": ""
         }
     ],
     "primaryKey": "mediaID",

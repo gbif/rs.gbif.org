@@ -31,10 +31,10 @@
         },
         {
             "name": "collectionTypeIRI",
-            "description": "The IRI of the term that best matches the nature of a Collection.",
+            "description": "The IRI of the controlled vocabulary value for the type of Collection.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
