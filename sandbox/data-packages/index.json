@@ -426,21 +426,21 @@
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
-          "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey.json",
+          "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey.json",
           "name": "survey",
           "title": "Survey",
           "description": "Information associated with dwc:Events that are biotic surveys."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey-target",
-          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
+          "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
           "name": "survey-target",
           "title": "SurveyTarget",
           "description": "Specifications of characteristics of dwc:Organisms that were included or excluded in a survey."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey-target-abundance",
-          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
+          "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
           "name": "survey-target-abundance",
           "title": "SurveyTargetAbundance",
           "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of SurveyTargets."
