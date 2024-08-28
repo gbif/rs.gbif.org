@@ -1,13 +1,13 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/inventory",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/inventory.json",
-    "name": "inventory",
-    "title": "Inventory",
-    "description": "Information associated with a dwc:Event that is an ecological Inventory.",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey.json",
+    "name": "survey",
+    "title": "Survey",
+    "description": "Information associated with dwc:Events that are biotic surveys.",
     "fields": [
         {
-            "name": "inventoryID",
-            "description": "The identifier for a dwc:Event that is an ecological Inventory.",
+            "name": "surveyID",
+            "description": "An identifier for a dwc:Event that is an biotic survey.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -269,7 +269,7 @@
         },
         {
             "name": "targetLifeStageScope",
-            "description": "The age classes or life stages of a dwc:Organisms targeted for sampling during a dwc:Event.",
+            "description": "The age classes or life stages of dwc:Organisms targeted for sampling during a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "This term is defined based on dwc:lifeStage (http://rs.tdwg.org/dwc/terms/lifeStage). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -279,7 +279,7 @@
         },
         {
             "name": "excludedLifeStageScope",
-            "description": "The age classes or life stages of a dwc:Organisms explicitly excluded from sampling during a dwc:Event.",
+            "description": "The age classes or life stages of dwc:Organisms explicitly excluded from sampling during a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "This term is defined based on dwc:lifeStage (http://rs.tdwg.org/dwc/terms/lifeStage). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -608,7 +608,7 @@
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortUnit"
         }
     ],
-    "primaryKey": "contextID",
+    "primaryKey": "surveyID",
     "foreignKeys": [
         {
             "fields": "identifiedByID",

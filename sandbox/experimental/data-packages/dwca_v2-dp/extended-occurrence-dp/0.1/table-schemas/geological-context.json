@@ -21,7 +21,7 @@
         },
         {
             "name": "gatheringEventID",
-            "description": "An identifier for a GatheringEvent in which a dwc:MaterialEntity was collected.",
+            "description": "An identifier for a dwc:Event in which a dwc:MaterialEntity was collected.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",

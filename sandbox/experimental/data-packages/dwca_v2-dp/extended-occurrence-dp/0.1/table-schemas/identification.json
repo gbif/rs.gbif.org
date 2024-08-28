@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
     "name": "identification",
     "title": "Identification",
-    "description": "Taxonomic determinations (e.g., assignments to dwc:Taxon).",
+    "description": "Taxonomic determinations (i.e., assignments of dwc:Taxon to dwc:Organisms).",
     "fields": [
         {
             "name": "identificationID",
@@ -21,7 +21,7 @@
         },
         {
             "name": "identificationBasedOnOccurrenceID",
-            "description": "The identifier for the Occurrence of a dwc:Organism for which the dwc:Identification was made.",
+            "description": "The identifier for a dwc:Occurrence for which the dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -51,7 +51,7 @@
         },
         {
             "name": "identificationType",
-            "description": "The nature of a dwc:Identification of a dwc:Organism.",
+            "description": "The category that best matches the nature of a dwc:Identification.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -61,10 +61,10 @@
         },
         {
             "name": "identificationTypeIRI",
-            "description": "The IRI of the term that best matches the nature of the a dwc:Identification of a dwc:Organism.",
+            "description": "The IRI of the controlled vocabulary value for the type of dwc:Identification.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary..",
             "examples": "`http://rs.tdwg.org/dwc/terms/MaterialEntity`; `http://purl.org/dc/dcmitype/Sound`; `http://purl.org/dc/dcmitype/StillImage`; `http://purl.org/dc/dcmitype/MovingImage`; `http://purl.org/dc/dcmitype/Text`; `http://rs.tdwg.org/dwc/terms/HumanObservation`; `http://rs.tdwg.org/dwc/terms/MachineObservation`",
             "namespace": "gum",
             "iri": ""
@@ -91,7 +91,7 @@
         },
         {
             "name": "taxonFormula",
-            "description": "A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification modifiers.",
+            "description": "A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary such as https://arctos.database.museum/info/ctDocumentation.cfm?table=cttaxa_formula.",
@@ -111,7 +111,7 @@
         },
         {
             "name": "typeDesignationType",
-            "description": "The reason why this specimen or name is designated as a type (e.g., \"monotypy\", \"original designation\", \"tautonomy\", etc.).",
+            "description": "The category that best matches the nature of a type designation.",
             "type": "string",
             "format": "default",
             "comments": " From https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml.",
@@ -221,7 +221,7 @@
         },
         {
             "name": "taxonRemarks",
-            "description": "Comments or notes about the dwc:Taxon.",
+            "description": "Comments or notes about a dwc:Taxon.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -254,7 +254,7 @@
             }
         },
         {
-            "fields": "identificationBsaedOnGeneticSequenceID",
+            "fields": "identificationBasedOnGeneticSequenceID",
             "reference": {
                 "resource": "genetic-sequence",
                 "fields": "geneticSequenceID"
