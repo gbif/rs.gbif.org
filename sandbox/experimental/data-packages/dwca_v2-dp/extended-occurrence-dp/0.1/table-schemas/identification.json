@@ -254,7 +254,7 @@
             }
         },
         {
-            "fields": "identificationBsaedOnGeneticSequenceID",
+            "fields": "identificationBasedOnGeneticSequenceID",
             "reference": {
                 "resource": "genetic-sequence",
                 "fields": "geneticSequenceID"
