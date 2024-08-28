@@ -3,14 +3,14 @@
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
     "name": "occurrence",
     "title": "Occurrence",
-    "description": "Occurrences of dwc:Organisms in place and time.",
+    "description": "Information about dwc:Organisms in a place during some time.",
     "fields": [
         {
             "name": "occurrenceID",
-            "description": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
+            "description": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a persistent, globally unique identifier.",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
             "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
@@ -18,16 +18,6 @@
                 "required": true,
                 "unique": true
             }
-        },
-        {
-            "name": "parentEventID",
-            "description": "An identifier for a broader dwc:Event that groups this and potentially other dwc:Events.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/parentEventID"
         },
         {
             "name": "organismQuantity",
@@ -41,7 +31,7 @@
         },
         {
             "name": "organismQuantityType",
-            "description": "The type of quantification system used for the quantity of dwc:Organisms.",
+            "description": "A type of quantification system used for the quantity of dwc:Organisms.",
             "type": "string",
             "format": "default",
             "comments": "A dwc:organismQuantityType must have a corresponding dwc:organismQuantity. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -51,7 +41,17 @@
         },
         {
             "name": "organismQuantityTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the dwc:organismQuantity.",
+            "description": "The IRI of the controlled vocabulary value for the dwc:organismQuantityType.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "organismQuantityTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:organismQuantityType are given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -117,7 +117,7 @@
             "comments": "Recommended best practice is to use a controlled vocabulary. Intended to be used with records having a dwc:basisOfRecord of PreservedSpecimen, MaterialEntity, MaterialSample, or HumanObservation. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
             "examples": "`alive`; `dead`; `mixedLot`; `uncertain`; notAssessed",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/vitality"
+            "iri": "http://rs.tdwg.org/dwc/terms/vitality"
         },
         {
             "name": "establishmentMeans",
@@ -181,20 +181,20 @@
         },
         {
             "name": "organismScope",
-            "description": "A description of the kind of dwc:Organism instance. Can be used to indicate whether a dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
+            "description": "A description of the kind of dwc:Organism instance.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "comments": "Recommended best practice is to use a controlled vocabulary. Can be used to indicate whether a dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
             "examples": "`multicellular organism`; `virus`; `clone`; `pack`; `colony`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/organismScope"
         },
         {
             "name": "organismScopeIRI",
-            "description": "The IRI leading to a description of the kind of dwc:Organism instance. Can be used to indicate whether a dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
+            "description": "The IRI of the controlled vocabulary value for the dwc:organismScope.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""

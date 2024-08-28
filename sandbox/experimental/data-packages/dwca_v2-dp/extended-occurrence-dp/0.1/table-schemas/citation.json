@@ -21,7 +21,7 @@
         },
         {
             "name": "citationTargetID",
-            "description": "The identifier for the target subject of a Citation.",
+            "description": "An identifier for the target subject of a Citation.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -54,7 +54,7 @@
             "description": "The IRI of the controlled vocabulary value for the type of Citation.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -101,7 +101,7 @@
         },
         {
             "name": "referenceType",
-            "description": "A term to distinguish the type of reference in which the Citation can be found.",
+            "description": "The category that best matches the nature of a reference.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -114,7 +114,7 @@
             "description": "The IRI of the controlled vocabulary value for the type of reference.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -135,7 +135,7 @@
             "type": "integer",
             "format": "default",
             "comments": "",
-            "examples": "2024",
+            "examples": "`2024`",
             "namespace": "gum",
             "iri": ""
         },
@@ -151,7 +151,7 @@
         },
         {
             "name": "citationRemarks",
-            "description": "Comments or notesabout a Citation.",
+            "description": "Comments or notes about a Citation.",
             "type": "string",
             "format": "default",
             "comments": "",

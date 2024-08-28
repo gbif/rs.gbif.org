@@ -3,11 +3,11 @@
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
     "name": "relationship",
     "title": "Relationship",
-    "description": "Generic structure to specify relationships between entities.",
+    "description": "Specifications of relationships between entities.",
     "fields": [
         {
             "name": "relationshipID",
-            "description": "An identifier for the relationship between two entities.",
+            "description": "An identifier for a Relationship between two entities.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -21,7 +21,7 @@
         },
         {
             "name": "subjectResourceID",
-            "description": "An identifier for the resource that is the subject of the relationship.",
+            "description": "An identifier for the resource that is the subject of a Relationship.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -41,7 +41,7 @@
         },
         {
             "name": "subjectResourceTypeIRI",
-            "description": "The IRI of the term that best matches the nature of an subject resource.",
+            "description": "The IRI of the controlled vocabulary value for the type of subject resource.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -71,7 +71,7 @@
         },
         {
             "name": "relationshipTypeIRI",
-            "description": "The IRI of the term that best matches the nature of the relationship.",
+            "description": "The IRI of the controlled vocabulary value for the type of Relationship.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -91,7 +91,7 @@
         },
         {
             "name": "relatedResourceID",
-            "description": "An identifier for the resource that is the object of the relationship.",
+            "description": "An identifier for the resource that is the object of the Relationship.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -111,7 +111,7 @@
         },
         {
             "name": "relatedResourceTypeIRI",
-            "description": "The IRI of the term that best matches the nature of an related resource.",
+            "description": "The IRI of the controlled vocabulary value for the type of related resource.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -131,7 +131,7 @@
         },
         {
             "name": "relationshipOrder",
-            "description": "The numerical position of an Relationship in a set of Relationships that have the same combination of subjectResourceID and relationshipType",
+            "description": "The numerical position of a Relationship in a set of Relationships that have the same combination of subjectResourceID and relationshipType.",
             "type": "integer",
             "format": "default",
             "comments": "One could use relationshipOrder to create an ordered list of authors for a Citation, for example. The first would have relationshipOrder=1, the second would have relationshipOrder=2.",
@@ -145,7 +145,7 @@
         },
         {
             "name": "relationshipEffectiveDate",
-            "description": "The date-time on which the relationship between two resources was established.",
+            "description": "The date on which the Relationship was established.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
@@ -155,7 +155,7 @@
         },
         {
             "name": "relationshipRemarks",
-            "description": "Comments or notes about a relationship between two resources.",
+            "description": "Comments or notes about a Relationship.",
             "type": "string",
             "format": "default",
             "comments": "",

@@ -3,11 +3,11 @@
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
     "name": "identification-taxon",
     "title": "IdentificationTaxon",
-    "description": "The components and positions of dwc:scientificNames in a dwc:Identifications.",
+    "description": "The components and positions of dwc:scientificNames in dwc:Identifications.",
     "fields": [
         {
             "name": "identificationID",
-            "description": "An identifier for a dwc:Identification (the body of information associated with the assignment of a scientific name). ",
+            "description": "An identifier for a dwc:Identification (the body of information associated with the assignment of a scientific name to a dwc:Organism). ",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -27,7 +27,7 @@
         },
         {
             "name": "taxonOrder",
-            "description": "The position of a dwc:Taxon in a taxonFormula (e.g., 1, 2, 3)",
+            "description": "The position of a dwc:Taxon in a taxonFormula.",
             "type": "integer",
             "format": "default",
             "comments": "",
@@ -71,7 +71,7 @@
         },
         {
             "name": "taxonRemarks",
-            "description": "Comments or notes about the dwc:Taxon.",
+            "description": "Comments or notes about a dwc:Taxon.",
             "type": "string",
             "format": "default",
             "comments": "",

@@ -3,7 +3,7 @@
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agentrole.json",
     "name": "agent-role",
     "title": "AgentRole",
-    "description": "Roles filled by Agents with respect to other entities",
+    "description": "Roles filled by Agents with respect to other entities.",
     "fields": [
         {
             "name": "agentRoleTargetID",
@@ -48,7 +48,7 @@
             "description": "The IRI of the controlled vocabulary value for the role of an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -89,7 +89,7 @@
         },
         {
             "name": "agentType",
-            "description": "The category that best matches the type of the Event.",
+            "description": "The category that best matches the type of an Agent.",
             "type": "string",
             "format": "default",
             "comments": "",

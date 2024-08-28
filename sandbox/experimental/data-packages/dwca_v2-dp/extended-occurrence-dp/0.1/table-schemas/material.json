@@ -31,10 +31,10 @@
         },
         {
             "name": "materialEntityTypeIRI",
-            "description": "The IRI of the term that best matches the nature of a dwc:MaterialEntity.",
+            "description": "The IRI of the controlled vocabulary value for the type of dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary..",
             "examples": "",
             "namespace": "gum",
             "iri": ""
@@ -51,7 +51,7 @@
         },
         {
             "name": "institutionID",
-            "description": "The identifier for an institution (Agent).",
+            "description": "An identifier for an institution (Agent).",
             "type": "string",
             "format": "default",
             "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
@@ -61,7 +61,7 @@
         },
         {
             "name": "institutionCode",
-            "description": "The name (or acronym) in use by an institution.",
+            "description": "A name (or acronym) in use by an institution.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -71,7 +71,7 @@
         },
         {
             "name": "ownerInstitutionCode",
-            "description": "The name (or acronym) in use by the institution having ownership of a dwc:MaterialEntity.",
+            "description": "A name (or acronym) in use by the institution having ownership of a dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -91,7 +91,7 @@
         },
         {
             "name": "collectionCode",
-            "description": "The name, acronym, coden, or initialism identifying a Collection.",
+            "description": "A name, acronym, coden, or initialism identifying a Collection.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -118,26 +118,6 @@
             "examples": "`FMNH:Mammal:1234`; `NPS YELLO6778 | MBG 33424`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/otherCatalogNumbers"
-        },
-        {
-            "name": "recordedBy",
-            "description": "The name of the Agent who recorded a dwc:Event in the field.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson` (where the value in recordNumber `OPP 7101` corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
-        },
-        {
-            "name": "recordedByID",
-            "description": "An identifier for the Agent who recorded a dwc:Event in the field.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "`https://orcid.org/0000-0002-1825-0097` (for an individual); `https://orcid.org/0000-0002-1825-0097 | https://orcid.org/0000-0002-1825-0098` (for a list of people)",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
         },
         {
             "name": "recordNumber",
@@ -190,6 +170,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/associatedSequences"
         },
         {
+            "name": "materialCitation",
+            "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`; `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "materialEntityRemarks",
             "description": "Comments or notes about a dwc:MaterialEntity.",
             "type": "string",
@@ -197,11 +187,11 @@
             "comments": "",
             "examples": "`found in association with charred remains`; `some original fragments missing`",
             "namespace": "dwc",
-            "iri": "materialEntityRemarks"
+            "iri": "http://rs.tdwg.org/dwc/terms/materialEntityRemarks"
         },
         {
             "name": "gatheringEventID",
-            "description": "An identifier for a GatheringEvent in which a dwc:MaterialEntity was collected.",
+            "description": "An identifier for a dwc:Event in which a dwc:MaterialEntity was gathered.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -211,7 +201,7 @@
         },
         {
             "name": "derivedFromMaterialEntityID",
-            "description": "The identifier for a dwc:MaterialEntity from which this dwc:MaterialEntity was derived.",
+            "description": "An identifier for a dwc:MaterialEntity from which this dwc:MaterialEntity was derived.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -221,7 +211,7 @@
         },
         {
             "name": "derivationType",
-            "description": "The category that best matches the nature of the derivation of a dwc:MaterialEntity from a dwc:MaterialEntity pointed to by derivedMaterialEntityID.",
+            "description": "The category that best matches the nature of the derivation of a dwc:MaterialEntity from a dwc:MaterialEntity pointed to by derivedFromMaterialEntityID.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -230,8 +220,28 @@
             "iri": ""
         },
         {
+            "name": "derivationTypeIRI",
+            "description": "The IRI of the controlled vocabulary value for the type of derivation.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "derivationTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for derivationType are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "partOfMaterialEntityID",
-            "description": "The identifier for a dwc:MaterialEntity that this dwc:MaterialEntity is part of.",
+            "description": "An identifier for a dwc:MaterialEntity that this dwc:MaterialEntity is part of.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -261,13 +271,6 @@
             "reference": {
                 "resource": "collection",
                 "fields": "collectionID"
-            }
-        },
-        {
-            "fields": "recordedByID",
-            "reference": {
-                "resource": "agent",
-                "fields": "agentID"
             }
         },
         {
