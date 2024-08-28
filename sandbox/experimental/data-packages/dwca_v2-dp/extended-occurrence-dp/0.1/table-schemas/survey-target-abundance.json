@@ -76,11 +76,7 @@
             "iri": ""
         }
     ],
-    "primaryKey": [
-        "surveyTargetID",
-        "observedTaxon",
-        "observedTaxonID"
-    ],
+    "primaryKey": "surveyTargetID",
     "foreignKeys": [
         {
             "fields": "surveyTargetID",
