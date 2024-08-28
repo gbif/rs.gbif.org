@@ -230,14 +230,5 @@
             "iri": "http://rs.tdwg.org/dwc/terms/organismRemarks"
         }
     ],
-    "primaryKey": "occurrenceID",
-    "foreignKeys": [
-        {
-            "fields": "parentEventID",
-            "reference": {
-                "resource": "event",
-                "fields": "eventID"
-            }
-        }
-    ]
+    "primaryKey": "occurrenceID"
 }
