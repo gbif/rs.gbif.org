@@ -1,7 +1,6 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/material",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
-    "name": "material",
+    "name": "http://rs.gbif.org/data-packages/dwca_v2/material",
+    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
     "title": "Material",
     "description": "Entities that can be identified, exist for some period of time, and consist in whole or in part of physical matter while they exist.",
     "fields": [

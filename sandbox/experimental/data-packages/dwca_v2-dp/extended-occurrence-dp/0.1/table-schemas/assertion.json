@@ -1,7 +1,6 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/assertion",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/assertion.json",
-    "name": "assertion",
+    "name": "http://rs.gbif.org/data-packages/dwca_v2/assertion",
+    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/assertion.json",
     "title": "Assertion",
     "description": "Assertions made by Agents about other entities.",
     "fields": [
@@ -102,7 +101,7 @@
         {
             "name": "assertionValueNumeric",
             "description": "An asserted value, if it is numeric.",
-            "type": "string",
+            "type": "number",
             "format": "default",
             "comments": "",
             "examples": "`0`; `1`; `14.5`",

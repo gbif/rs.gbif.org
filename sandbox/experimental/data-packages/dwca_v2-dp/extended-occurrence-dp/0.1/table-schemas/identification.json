@@ -1,7 +1,6 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
-    "name": "identification",
+    "name": "http://rs.gbif.org/data-packages/dwca_v2/identification",
+    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
     "title": "Identification",
     "description": "Taxonomic determinations (i.e., assignments of dwc:Taxon to dwc:Organisms).",
     "fields": [
