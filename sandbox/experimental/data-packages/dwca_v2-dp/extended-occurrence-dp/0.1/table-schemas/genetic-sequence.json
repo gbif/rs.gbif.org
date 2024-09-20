@@ -1,5 +1,5 @@
 {
-    "name": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence",
+    "name": "genetic-sequence",
     "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/genetic-sequence.json",
     "title": "GeneticSequence",
     "description": "Digital representations of nucleotide sequences.",

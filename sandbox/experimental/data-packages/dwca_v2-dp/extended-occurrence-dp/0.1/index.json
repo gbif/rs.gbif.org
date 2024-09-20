@@ -1,107 +1,107 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp",
+    "identifier": "extended-occurrence-dp",
     "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1",
     "name": "extended-occurrence-dp",
     "version": "0.1",
     "tableSchemas": [
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/event",
+            "name": "event",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/event.json",
             "title": "Event",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
+            "name": "occurrence",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
             "title": "Occurrence",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/identification",
+            "name": "identification",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
             "title": "Identification",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/identification-taxon",
+            "name": "identification-taxon",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
             "title": "IdentificationTaxon",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/material",
+            "name": "material",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
             "title": "Material",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/collection",
+            "name": "collection",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
             "title": "Collection",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence",
+            "name": "genetic-sequence",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/genetic-sequence.json",
             "title": "GeneticSequence",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age",
+            "name": "chronometric-age",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/chronometric-age.json",
             "title": "ChronometricAge",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/geological-context",
+            "name": "geological-context",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/geological-context.json",
             "title": "GeologicalContext",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/organism-interaction",
+            "name": "organism-interaction",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/organism-interaction.json",
             "title": "OrganismInteraction",
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
+            "identifier": "survey",
             "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey.json",
             "name": "survey",
             "title": "Survey",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/survey-target",
+            "name": "survey-target",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
             "title": "SurveyTarget",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/survey-target-abundance",
+            "name": "survey-target-abundance",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
             "title": "SurveyTargetAbundance",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/agent",
+            "name": "agent",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent.json",
             "title": "Agent",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/agent-role",
+            "name": "agent-role",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
             "title": "AgentRole",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/assertion",
+            "name": "assertion",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/assertion.json",
             "title": "Assertion",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/citation",
+            "name": "citation",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/citation.json",
             "title": "Citation",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/identifier",
+            "name": "identifier",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identifier.json",
             "title": "Identifier",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/media",
+            "name": "media",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/media.json",
             "title": "Media",
         },
         {
-            "name": "http://rs.gbif.org/data-packages/dwca_v2/relationship",
+            "name": "relationship",
             "path": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
             "title": "Relationship",
         }
@@ -109,6 +109,6 @@
     "title": "Darwin Core Archive version2",
     "shortTitle": "DwCAv2",
     "description": "A data package for sharing extended Occurrence data.",
-    "issued": "2024-08-28",
+    "issued": "2024-09-20",
     "isLatest": true
 }

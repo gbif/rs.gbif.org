@@ -1,5 +1,5 @@
 {
-    "name": "http://rs.gbif.org/data-packages/dwca_v2/event",
+    "name": "event",
     "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/event.json",
     "title": "Event",
     "description": "The spatiotemporal context (dwc:Event and dcterms:Location) of an activity.",

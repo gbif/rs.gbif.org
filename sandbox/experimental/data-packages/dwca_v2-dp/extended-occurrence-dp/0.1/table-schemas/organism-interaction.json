@@ -1,5 +1,5 @@
 {
-    "name": "http://rs.gbif.org/data-packages/dwca_v2/organism-interaction",
+    "name": "organism-interaction",
     "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/organism-interaction.json",
     "title": "OrganismInteraction",
     "description": "Events in which interactions between dwc:Organisms were recorded.",

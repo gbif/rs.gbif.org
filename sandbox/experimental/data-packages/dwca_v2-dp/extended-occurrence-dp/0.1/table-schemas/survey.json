@@ -1,5 +1,5 @@
 {
-    "name": "http://rs.gbif.org/data-packages/dwca_v2/survey",
+    "name": "survey",
     "path": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey.json",
     "title": "Survey",
     "description": "Information associated with dwc:Events that are biotic surveys.",
