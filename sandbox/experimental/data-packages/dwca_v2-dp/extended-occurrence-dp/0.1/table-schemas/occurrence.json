@@ -1,5 +1,7 @@
 {
     "name": "occurrence",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/occurrence",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
     "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
     "title": "Occurrence",
     "description": "Information about dwc:Organisms in a place during some time.",

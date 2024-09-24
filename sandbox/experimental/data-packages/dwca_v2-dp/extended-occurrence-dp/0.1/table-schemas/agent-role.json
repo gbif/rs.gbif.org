@@ -1,6 +1,8 @@
 {
     "name": "agent-role",
-    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agentrole.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/agent-role",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
+    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
     "title": "AgentRole",
     "description": "Roles filled by Agents with respect to other entities.",
     "fields": [

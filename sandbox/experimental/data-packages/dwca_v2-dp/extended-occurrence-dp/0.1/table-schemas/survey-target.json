@@ -1,5 +1,7 @@
 {
     "name": "survey-target",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey-target",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
     "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
     "title": "SurveyTarget",
     "description": "Specifications of characteristics of dwc:Organisms that were included or excluded in a survey.",
