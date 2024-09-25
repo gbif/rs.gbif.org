@@ -2,7 +2,6 @@
     "name": "identifier",
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/identifier",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identifier.json",
-    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identifier.json",
     "title": "Identifier",
     "description": "Additional identifiers for entities.",
     "fields": [

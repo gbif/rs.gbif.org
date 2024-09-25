@@ -2,7 +2,6 @@
     "name": "relationship",
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/relationship",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
-    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
     "title": "Relationship",
     "description": "Specifications of relationships between entities.",
     "fields": [

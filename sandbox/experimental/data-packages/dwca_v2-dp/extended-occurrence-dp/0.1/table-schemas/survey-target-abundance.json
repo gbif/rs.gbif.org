@@ -2,7 +2,6 @@
     "name": "survey-target-abundance",
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey-target-abundance",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
-    "path": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
     "title": "SurveyTargetAbundance",
     "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of SurveyTargets.",
     "fields": [
