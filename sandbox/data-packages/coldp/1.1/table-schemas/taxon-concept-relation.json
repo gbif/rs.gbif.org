@@ -1,0 +1,94 @@
+{
+    "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-concept-relation",
+    "name": "taxon-concept-relation",
+    "title": "Taxon Concept Relation",
+    "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/taxon-concept-relation.json",
+    "description": "A directed taxon relation representing RCC5 taxon concept assertions.",
+    "fields":
+    [
+        {
+            "name": "taxonID",
+            "type": "string",
+            "format": "default",
+            "title": "taxonID",
+            "description": "The subject taxon this relation originates from."
+        },
+        {
+            "name": "relatedTaxonID",
+            "type": "string",
+            "format": "default",
+            "title": "relatedTaxonID",
+            "description": "The object this taxon relates to."
+        },
+        {
+            "name": "sourceID",
+            "type": "string",
+            "format": "default",
+            "title": "sourceID"
+        },
+        {
+            "name": "type",
+            "type": "string",
+            "format": "default",
+            "title": "type",
+            "constraints":
+            {
+                "enum":
+                [
+                    "equals",
+                    "includes",
+                    "included in",
+                    "overlaps",
+                    "excludes"
+                ]
+            }
+        },
+        {
+            "name": "referenceID",
+            "type": "string",
+            "format": "default",
+            "title": "referenceID",
+            "description": "A reference where this relation was documented or who asserted it."
+        },
+        {
+            "name": "remarks",
+            "type": "string",
+            "format": "default",
+            "title": "remarks",
+            "description": "Remarks about the concept relation."
+        },
+        {
+            "name": "modified",
+            "type": "date",
+            "format": "default",
+            "title": "modified",
+            "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+        },
+        {
+            "name": "modifiedBy",
+            "type": "string",
+            "format": "default",
+            "title": "modifiedBy",
+            "description": "Author identifier indicating the person who has last modified the record."
+        }
+    ],
+    "foreignKeys":
+    [
+        {
+            "fields": "taxonID",
+            "reference":
+            {
+                "resource": "taxon",
+                "fields": "ID"
+            }
+        },
+        {
+            "fields": "referenceID",
+            "reference":
+            {
+                "resource": "reference",
+                "fields": "ID"
+            }
+        }
+    ]
+}

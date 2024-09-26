@@ -3,6 +3,11 @@
   "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.0",
   "name": "coldp",
   "version": "1.0",
+  "title": "Catalogue of Life Data Package (ColDP)",
+  "shortTitle": "ColDP",
+  "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
+  "issued": "2022-03-16",
+  "isLatest": false,
   "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
@@ -122,10 +127,5 @@
         "prohibited": ["name", "taxon", "synonym"]
       }
     ]
-  },
-  "title": "Catalogue of Life Data Package (ColDP)",
-  "shortTitle": "ColDP",
-  "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
-  "issued": "2022-03-16",
-  "isLatest": true
+  }
 }
