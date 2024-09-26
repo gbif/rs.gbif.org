@@ -64,13 +64,15 @@
             "name": "accordingToPage",
             "type": "string",
             "format": "default",
-            "title": "accordingToPage"
+            "title": "accordingToPage",
+            "description": "The exact single page number where the taxonomic concept was treated. If the treatment spans multiple pages, the first page should be given."
         },
         {
             "name": "accordingToPageLink",
             "type": "string",
             "format": "default",
-            "title": "accordingToPageLink"
+            "title": "accordingToPageLink",
+            "description": "A URL to the exact page where the taxonomic concept was published. If the treatment spans multiple pages, the link to the first page should be given."
         },
         {
             "name": "provisional",
