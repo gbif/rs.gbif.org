@@ -190,7 +190,7 @@
       "name": "author",
       "title": "Author",
       "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/author.json",
-      "description": "Normalised and structured authors that can be referred to by names, references and taxon scrutinizers. All entities also allow to specify a modifedBy field which must reference an Author identifier here.",
+      "description": "Normalised and structured authors that can be referred to by names, references and taxon scrutinizers. All entities also allow to specify a modifedBy field which must reference an Author identifier here."
     },
     {
   "name": "distribution",
