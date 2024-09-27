@@ -294,7 +294,6 @@
     "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
     "name": "vernacular-name",
     "title": "Vernacular Name",
-    "identifier": "http://rs.gbif.org/data-packages/coldp/",
     "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/vernacular-name.json",
     "description": "A vernacular or common name for a taxon.",
     },
@@ -341,7 +340,6 @@
           "title": "DigitalEntity",
           "description": "A digital manifestation of an entity."
         },
-        
         {
           "identifier": "http://rs.gbif.org/data-packages/material-dp/agent-identifier",
           "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/agent-identifier.json",
@@ -355,7 +353,7 @@
           "name": "material-entity-identifier",
           "title": "MaterialEntityIdentifier",
           "description": "An alternate identifier for a MaterialEntity."
-        },        
+        },
         {
           "identifier": "http://rs.gbif.org/data-packages/material-dp/digital-entity-assertion",
           "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/digital-entity-assertion.json",
@@ -369,21 +367,21 @@
           "name": "material-entity-assertion",
           "title": "MaterialEntityAssertion",
           "description": "An observation, measurement, or other statement made by an Agent with respect to a MaterialEntity."
-        },        
+        },
         {
           "identifier": "http://rs.gbif.org/data-packages/material-dp/gathering-event-assertion",
           "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/gathering-event-assertion.json",
           "name": "gathering-event-assertion",
           "title": "GatheringEventAssertion",
           "description": "An observation, measurement, or other statement made by an Agent with respect to a GatheringEvent."
-        },        
+        },
         {
           "identifier": "http://rs.gbif.org/data-packages/material-dp/material-entity-citation",
           "url": "http://rs.gbif.org/sandbox/data-packages/material-dp/0.1/table-schemas/material-entity-citation.json",
           "name": "material-entity-citation",
           "title": "MaterialEntityCitation",
           "description": "A record of citation against a material entity."
-        }        
+        }
       ],
       "title": "Darwin Core Material Data Package (Material DP)",
       "shortTitle": "Material DP",
