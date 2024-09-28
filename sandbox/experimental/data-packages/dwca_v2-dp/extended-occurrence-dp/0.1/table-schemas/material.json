@@ -255,8 +255,8 @@
         {
             "fields": "gatheringEventID",
             "reference": {
-                "resource": "occurrence",
-                "fields": "occurrenceID"
+                "resource": "event",
+                "fields": "eventID"
             }
         },
         {

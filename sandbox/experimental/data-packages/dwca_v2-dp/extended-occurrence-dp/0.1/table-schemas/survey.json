@@ -70,6 +70,10 @@
             "format": "default",
             "comments": "Geospatial scope refers to a dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.",
             "examples": "`25`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue"
         },
@@ -154,6 +158,10 @@
             "format": "default",
             "comments": "",
             "examples": "`An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/eventDurationValue"
         },
@@ -494,6 +502,10 @@
             "format": "default",
             "comments": "",
             "examples": "`300`; `700`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/abundanceCap"
         },

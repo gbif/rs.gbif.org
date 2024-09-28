@@ -16,7 +16,7 @@
             "iri": "http://purl.org/dc/terms/identifier",
             "constraints": {
                 "required": true,
-                "unique": true
+                "unique": false
             }
         },
         {
@@ -80,7 +80,6 @@
             "iri": ""
         }
     ],
-    "primaryKey": "identifier",
     "foreignKeys": [
         {
             "fields": "identifierTargetID",

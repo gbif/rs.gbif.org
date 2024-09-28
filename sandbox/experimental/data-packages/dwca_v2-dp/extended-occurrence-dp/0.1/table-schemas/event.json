@@ -70,6 +70,16 @@
             "iri": ""
         },
         {
+            "name": "fieldNumber",
+            "description": "An identifier given to the dwc:Event in the field.",
+            "type": "string",
+            "format": "default",
+            "comments": "Often serves as a link between field notes and the dwc:Event.",
+            "examples": "RV Sol 87-03-08",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/fieldNumber"
+        },
+        {
             "name": "recordedBy",
             "description": "The name of the Agent who recorded a dwc:Event in the field.",
             "type": "string",
@@ -318,6 +328,26 @@
             "examples": "",
             "namespace": "gum",
             "iri": ""
+        },
+        {
+            "name": "sampleSizeValue",
+            "description": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "A dwc:sampleSizeValue must have a corresponding dwc:sampleSizeUnit.",
+            "examples": "`5` (sampleSizeValue) with `metre` (sampleSizeUnit)",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeValue"
+        },
+        {
+            "name": "sampleSizeUnit",
+            "description": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., `5` for dwc:sampleSizeValue with `metre` for dwc:sampleSizeUnit.",
+            "examples": "`minute`; `hour`; `day`; `metre`; `square metre`; `cubic metre``",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeUnit"
         },
         {
             "name": "eventEffort",
@@ -710,13 +740,13 @@
         },
         {
             "name": "georeferencedByID",
-            "description": "An identifier for the Agent who georeferenced the dwc:Event.",
+            "description": "An identifier for the Agent who georeferenced a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "`https://orcid.org/0000-0002-1825-0097`",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/georeferencedBy"
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "georeferencedDate",
@@ -764,7 +794,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`point-radius`; `footprint`",
+            "examples": "`Point-radius`; `Footprint`",
             "namespace": "gum",
             "iri": ""
         }
