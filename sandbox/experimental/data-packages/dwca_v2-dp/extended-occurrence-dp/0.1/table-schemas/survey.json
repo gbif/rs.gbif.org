@@ -580,6 +580,20 @@
             "iri": "http://rs.tdwg.org/eco/terms/samplingPerformedBy"
         },
         {
+            "name": "samplingPerformedByID",
+            "description": "The identifier for the Agent that perfomed the sampling.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the sampling agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`",
+            "namespace": "gum",
+            "iri": ""
+        },
+            "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/identifiedByID"
+        {
             "name": "isSamplingEffortReported",
             "description": "The sampling effort associated with a dwc:Event was reported.",
             "type": "boolean",
@@ -606,6 +620,10 @@
             "format": "default",
             "comments": "This term is meant to capture the total sampling effort value. To express details of how the effort was determined use eco:samplingEffortProtocol. For compilations it is recommend not to infer effort. An eco:samplingEffortValue must have a corresponding eco:samplingEffortUnit.",
             "examples": "`1900`; `40`; `5.5`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortValue"
         },
