@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
-    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey.json",
     "name": "survey",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey",
+    "url": "http://rs.gbif.org/sandbox/data-packages/dwca_v2/0.1/table-schemas/extended-occurrence-dp/survey.json",
     "title": "Survey",
     "description": "Information associated with dwc:Events that are biotic surveys.",
     "fields": [
@@ -70,6 +70,10 @@
             "format": "default",
             "comments": "Geospatial scope refers to a dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.",
             "examples": "`25`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue"
         },
@@ -154,6 +158,10 @@
             "format": "default",
             "comments": "",
             "examples": "`An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/eventDurationValue"
         },
@@ -494,6 +502,10 @@
             "format": "default",
             "comments": "",
             "examples": "`300`; `700`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/abundanceCap"
         },
@@ -568,6 +580,16 @@
             "iri": "http://rs.tdwg.org/eco/terms/samplingPerformedBy"
         },
         {
+            "name": "samplingPerformedByID",
+            "description": "The identifier for the Agent that perfomed the sampling.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the sampling agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "isSamplingEffortReported",
             "description": "The sampling effort associated with a dwc:Event was reported.",
             "type": "boolean",
@@ -594,6 +616,10 @@
             "format": "default",
             "comments": "This term is meant to capture the total sampling effort value. To express details of how the effort was determined use eco:samplingEffortProtocol. For compilations it is recommend not to infer effort. An eco:samplingEffortValue must have a corresponding eco:samplingEffortUnit.",
             "examples": "`1900`; `40`; `5.5`",
+            "constraints": {
+                "required": false,
+                "minimum": 0
+            },
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortValue"
         },

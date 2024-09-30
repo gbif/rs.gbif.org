@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification-taxon",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
     "name": "identification-taxon",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/identification-taxon",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
     "title": "IdentificationTaxon",
     "description": "The components and positions of dwc:scientificNames in dwc:Identifications.",
     "fields": [

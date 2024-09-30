@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent.json",
     "name": "agent",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/agent",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent.json",
     "title": "Agent",
     "description": "People, groups, organizations and other entities that can act.",
     "fields": [

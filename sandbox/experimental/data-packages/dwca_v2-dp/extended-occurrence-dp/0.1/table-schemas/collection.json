@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/collection",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
     "name": "collection",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/collection",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
     "title": "Collection",
     "description": "Persistent formal repositories in which dwc:MaterialEntities and/or Media are preserved.",
     "fields": [

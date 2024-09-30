@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/chronometric-age.json",
     "name": "chronometric-age",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/chronometric-age",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/chronometric-age.json",
     "title": "ChronometricAge",
     "description": "Approximations of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that are supported by evidence.",
     "fields": [

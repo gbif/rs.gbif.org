@@ -1,7 +1,7 @@
 {
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/material",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
     "name": "material",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/material",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
     "title": "Material",
     "description": "Entities that can be identified, exist for some period of time, and consist in whole or in part of physical matter while they exist.",
     "fields": [
@@ -68,6 +68,16 @@
             "examples": "`MVZ`; `FMNH`; `CLO`; `UCMP`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/institutionCode"
+        },
+        {
+            "name": "ownerInstitutionID",
+            "description": "An identifier for an institution (Agent) that owns a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
+            "examples": "`https://ror.org/015hz7p22`; `http://grscicoll.org/institution/museum-southwestern-biology`; `https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381`",
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "ownerInstitutionCode",
@@ -255,8 +265,8 @@
         {
             "fields": "gatheringEventID",
             "reference": {
-                "resource": "occurrence",
-                "fields": "occurrenceID"
+                "resource": "event",
+                "fields": "eventID"
             }
         },
         {

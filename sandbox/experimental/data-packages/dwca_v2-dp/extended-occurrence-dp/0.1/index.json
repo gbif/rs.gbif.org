@@ -1,153 +1,153 @@
 {
+    "name": "extended-occurrence-dp",
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp",
     "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1",
-    "name": "extended-occurrence-dp",
     "version": "0.1",
     "tableSchemas": [
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/event",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/event.json",
             "name": "event",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/event",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/event.json",
             "title": "Event",
             "description": "The spatiotemporal context (dwc:Event and dcterms:Location) of an activity."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
             "name": "occurrence",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/occurrence",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/occurrence.json",
             "title": "Occurrence",
-            "description": "Information about dwc:Organisms in a place during some time."
+            "description": "Information about a dwc:Organism in a place during some time."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
             "name": "identification",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/identification",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification.json",
             "title": "Identification",
             "description": "Taxonomic determinations (i.e., assignments of dwc:Taxon to dwc:Organisms)."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification-taxon",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
             "name": "identification-taxon",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/identification-taxon",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identification-taxon.json",
             "title": "IdentificationTaxon",
             "description": "The components and positions of dwc:scientificNames in dwc:Identifications."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/material",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
             "name": "material",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/material",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/material.json",
             "title": "Material",
             "description": "Entities that can be identified, exist for some period of time, and consist in whole or in part of physical matter while they exist."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/collection",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
             "name": "collection",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/collection",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
             "title": "Collection",
             "description": "Persistent formal repositories in which dwc:MaterialEntities and/or Media are preserved."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/genetic-sequence",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/genetic-sequence.json",
             "name": "genetic-sequence",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/genetic-sequence",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/genetic-sequence.json",
             "title": "GeneticSequence",
             "description": "Digital representations of nucleotide sequences."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/chronometric-age",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/chronometric-age.json",
             "name": "chronometric-age",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/chronometric-age",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/chronometric-age.json",
             "title": "ChronometricAge",
             "description": "Approximations of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that are supported by evidence."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/geological-context",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/geological-context.json",
             "name": "geological-context",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/geological-context",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/geological-context.json",
             "title": "GeologicalContext",
             "description": "Geological information, such as stratigraphy, that qualifies a region or place."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/organism-interaction",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/organism-interaction.json",
             "name": "organism-interaction",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/orgnism-interaction",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/organism-interaction.json",
             "title": "OrganismInteraction",
             "description": "Events in which interactions between dwc:Organisms were recorded."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey.json",
             "name": "survey",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey.json",
             "title": "Survey",
             "description": "Information associated with dwc:Events that are biotic surveys."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey-target",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
             "name": "survey-target",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey-target",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target.json",
             "title": "SurveyTarget",
             "description": "Specifications of characteristics of dwc:Organisms that were included or excluded in a survey."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey-target-abundance",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
             "name": "survey-target-abundance",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey-target-abundance",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey-target-abundance.json",
             "title": "SurveyTargetAbundance",
             "description": "Reported quantities of observed dwc:Organisms of a given dwc:Taxon in a set of SurveyTargets."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent.json",
             "name": "agent",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/agent",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent.json",
             "title": "Agent",
             "description": "People, groups, organizations and other entities that can act."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent-role",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
             "name": "agent-role",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/agent-role",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
             "title": "AgentRole",
             "description": "Roles filled by Agents with respect to other entities."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/assertion",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/assertion.json",
             "name": "assertion",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/assertion",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/assertion.json",
             "title": "Assertion",
             "description": "Assertions made by Agents about other entities."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/citation",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/citation.json",
             "name": "citation",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/citation",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/citation.json",
             "title": "Citation",
             "description": "Citations related directly to other entities."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identifier",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identifier.json",
             "name": "identifier",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/identifier",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/identifier.json",
             "title": "Identifier",
             "description": "Additional identifiers for entities."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/media",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/media.json",
             "name": "media",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/media",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/media.json",
             "title": "Media",
             "description": "Media (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) about other entities."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/relationship",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
             "name": "relationship",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/relationship",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
             "title": "Relationship",
             "description": "Specifications of relationships between entities."
         }
     ],
-    "title": "Darwin Core Extended Occurrence Data Package",
-    "shortTitle": "Extended Occurrence DP",
-    "description": "A data package for sharing extended Occurrence data.",
-    "issued": "2024-08-28",
+    "title": "Extended Occurrence Data Package - Darwin Core Archive v2",
+    "shortTitle": "ExtendedOccurrenceDwCAv2",
+    "description": "A data package for sharing extended Occurrence data using Darwin Core Archives, version 2.",
+    "issued": "2024-09-24",
     "isLatest": true
 }
