@@ -111,7 +111,7 @@
           "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
           "name": "species-estimate",
           "title": "Species Estimate",
-          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/speciesestimate.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/specie-sestimate.json",
           "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist."
         },
         {
