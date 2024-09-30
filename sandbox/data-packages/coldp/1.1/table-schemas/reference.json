@@ -257,5 +257,5 @@
             "description": "Author identifier indicating the person who has last modified the record."
         }
     ],
-    "primaryKey": "ID",
+    "primaryKey": "ID"
 }
