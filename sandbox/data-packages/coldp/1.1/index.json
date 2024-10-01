@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.gbif.org/data-packages/coldp",
-  "url": "http://rs.gbif.org/sandbox/sandbox/data-packages/coldp/1.1",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1",
   "name": "coldp",
   "title": "Catalogue of Life Data Package (ColDP)",
   "shortTitle": "ColDP",
