@@ -63,6 +63,8 @@ def check_table_schemas(package_file_path, package_data):
     if package_file_path == 'sandbox/data-packages/index.json':
         return
 
+    print(f"Checking file: {package_file_path}")
+
     package_dir = os.path.dirname(package_file_path)
     table_schemas_dir = os.path.join(package_dir, 'table-schemas')
 
@@ -74,8 +76,65 @@ def check_table_schemas(package_file_path, package_data):
     #     print(f"Table schemas directory present: {table_schemas_dir}")
 
     declared_schemas = []
+    # To check no duplicates in the index file
+    table_schema_identifiers = set()
+    table_schema_urls = set()
+    table_schema_names = set()
+    table_schema_titles = set()
+    table_schema_descriptions = set()
+
     if "tableSchemas" in package_data:
-        declared_schemas = [os.path.basename(schema['url']) for schema in package_data['tableSchemas']]
+        for schema in package_data['tableSchemas']:
+            if 'identifier' in schema:
+                if schema['identifier'] in table_schema_identifiers:
+                    print(f"Error: Duplicate 'identifier' for table schema: {schema}")
+                    error_found = True
+                else:
+                    table_schema_identifiers.add(schema['identifier'])
+            else:
+                print(f"Error: Missing 'identifier' for table schema: {schema}")
+                error_found = True
+
+            if 'name' in schema:
+                if schema['name'] in table_schema_names:
+                    print(f"Error: Duplicate 'name' for table schema: {schema}")
+                    error_found = True
+                else:
+                    table_schema_names.add(schema['name'])
+            else:
+                print(f"Error: Missing 'name' for table schema: {schema}")
+                error_found = True
+
+            if 'title' in schema:
+                if schema['title'] in table_schema_titles:
+                    print(f"Error: Duplicate 'title' for table schema: {schema}")
+                    error_found = True
+                else:
+                    table_schema_titles.add(schema['title'])
+            else:
+                print(f"Error: Missing 'title' for table schema: {schema}")
+                error_found = True
+
+            if 'description' in schema:
+                if schema['description'] in table_schema_descriptions:
+                    print(f"Warning: Duplicate 'description' for table schema: {schema}")
+                else:
+                    table_schema_descriptions.add(schema['description'])
+            else:
+                print(f"Warning: Missing 'description' for table schema: {schema}")
+
+            if 'url' in schema:
+                if schema['url'] in table_schema_urls:
+                    print(f"Error: Duplicate 'url' for table schema: {schema}")
+                    error_found = True
+                else:
+                    table_schema_urls.add(schema['url'])
+
+                schema_file = os.path.basename(schema['url'])
+                declared_schemas.append(schema_file)
+            else:
+                print(f"Error: Missing 'url' for table schema: {schema}")
+                error_found = True
 
     actual_schemas = [f for f in os.listdir(table_schemas_dir) if f.endswith('.json')]
 
