@@ -583,6 +583,6 @@
       "description": "A data package for sharing extended Occurrence data using Darwin Core Archives, version 2.",
       "issued": "2024-09-24",
       "isLatest": true
-    },
+    }
   ]
 }
