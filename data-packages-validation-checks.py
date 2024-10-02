@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+#
+# Data packages validation checks
+#
+
 import json
 import os
 import requests
