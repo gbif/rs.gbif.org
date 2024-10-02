@@ -33,7 +33,11 @@
         "allOf": [
           {
             "description": "Required schemas must be present: deployments, media, observations",
-            "required": ["deployments", "media", "observations"]
+            "required": [
+              "deployments",
+              "media",
+              "observations"
+            ]
           }
         ]
       },
