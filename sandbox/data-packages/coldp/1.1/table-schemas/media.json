@@ -2,7 +2,7 @@
   "name": "media",
   "title": "Media",
   "identifier": "http://rs.gbif.org/data-packages/coldp/media",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/media.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/media.json",
   "description": "Multimedia items for a taxon such as an image, audio or video.",
   "fields":
   [

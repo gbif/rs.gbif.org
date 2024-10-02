@@ -2,7 +2,7 @@
     "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-property",
     "name": "taxon-property",
     "title": "Taxon Property",
-    "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/taxon-property.json",
+    "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/taxon-property.json",
     "description": "A flexible, generic way to assign arbitrary property values to a taxon. It can be used to share species profiles, traits, descriptions and any other dynamic information about a taxon. Every property value can optionally be referenced and ordered.",
     "fields":
     [

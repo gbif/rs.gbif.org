@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/name-usage",
   "name": "name-usage",
   "title": "Name Usage",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/name-usage.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/name-usage.json",
   "description": "As a simpler alternative to the 3 entities Name, Taxon and Synonym a single NameUsage entity can be supplied. A NameUsage record can either be an accepted Taxon or a Synonym and is easily distinguished by its status. A NameUsage.ID acts both as a taxonID and nameID if referred to from other table, e.g TypeMaterial or VernacularName. For synonyms the parentID field is used to link to the accepted taxon. All properties available in the individual entities can also be used for the single NameUsage:  There are two clashing properties that exist both on a Name and Taxon/Synonym, but which have a slightly different meaning. Therefore the following properties deviate slightly from their usage in their classic version:",
   "fields":
   [

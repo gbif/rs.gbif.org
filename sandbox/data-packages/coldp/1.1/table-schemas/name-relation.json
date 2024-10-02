@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
   "name": "name-relation",
   "title": "Name Relation",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/name-relation.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/name-relation.json",
   "description": "A directed nomenclatural name relation. See #name-relations for examples and definitions.",
   "fields":
   [
