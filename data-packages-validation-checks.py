@@ -76,6 +76,7 @@ def check_table_schemas(package_file_path, package_data):
     #     print(f"Table schemas directory present: {table_schemas_dir}")
 
     declared_schemas = []
+    declared_schemas_map = {}
     # To check no duplicates in the index file
     table_schema_identifiers = set()
     table_schema_urls = set()
@@ -132,6 +133,7 @@ def check_table_schemas(package_file_path, package_data):
 
                 schema_file = os.path.basename(schema['url'])
                 declared_schemas.append(schema_file)
+                declared_schemas_map[schema_file.replace(".json", "")] = schema
             else:
                 print(f"Error: Missing 'url' for table schema: {schema}")
                 error_found = True
@@ -152,6 +154,38 @@ def check_table_schemas(package_file_path, package_data):
         if not check_valid_json(schema_file_path):
             print(f"Error: Invalid table schema JSON: {schema_file_path}")
             error_found = True
+        else:
+            # check table schema file properties
+            with open(schema_file_path, 'r') as f:
+                table_schema = json.load(f)
+                table_schema_name = table_schema['name']
+
+                # Compare URLs from index.json and table-schema.json
+                declared_table_schema_url = declared_schemas_map[table_schema_name]['url']
+                actual_table_schema_url = table_schema['url']
+
+                if declared_table_schema_url != actual_table_schema_url:
+                    print(f"Error: urls do not match for table schema {table_schema_name}. "
+                          f"Declared: {declared_table_schema_url}, actual: {actual_table_schema_url}")
+                    error_found = True
+
+                # Compare identifiers from index.json and table-schema.json
+                declared_table_schema_identifier = declared_schemas_map[table_schema_name]['identifier']
+                actual_table_schema_identifier = table_schema['identifier']
+
+                if declared_table_schema_identifier != actual_table_schema_identifier:
+                    print(f"Error: identifiers do not match for table schema {table_schema_name}. "
+                          f"Declared: {declared_table_schema_identifier}, actual: {actual_table_schema_identifier}")
+                    error_found = True
+
+                # Compare names from index.json and table-schema.json
+                declared_table_schema_name = declared_schemas_map[table_schema_name]['name']
+                actual_table_schema_name = table_schema['name']
+
+                if declared_table_schema_name != actual_table_schema_name:
+                    print(f"Error: names do not match for table schema {table_schema_name}. "
+                          f"Declared: {declared_table_schema_name}, actual: {actual_table_schema_name}")
+                    error_found = True
 
 
 def find_package_files(directories):
