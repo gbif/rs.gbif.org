@@ -4,655 +4,637 @@
   "title": "Name Usage",
   "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/name-usage.json",
   "description": "As a simpler alternative to the 3 entities Name, Taxon and Synonym a single NameUsage entity can be supplied. A NameUsage record can either be an accepted Taxon or a Synonym and is easily distinguished by its status. A NameUsage.ID acts both as a taxonID and nameID if referred to from other table, e.g TypeMaterial or VernacularName. For synonyms the parentID field is used to link to the accepted taxon. All properties available in the individual entities can also be used for the single NameUsage:  There are two clashing properties that exist both on a Name and Taxon/Synonym, but which have a slightly different meaning. Therefore the following properties deviate slightly from their usage in their classic version:",
-  "fields":
-  [
-      {
-          "name": "ID",
-          "type": "string",
-          "format": "default",
-          "title": "ID",
-          "constraints":
-          {
-              "unique": true,
-              "required": true
-          }
-      },
-      {
-          "name": "alternativeID",
-          "type": "string",
-          "format": "default",
-          "title": "alternativeID"
-      },
-      {
-          "name": "nameAlternativeID",
-          "type": "string",
-          "format": "default",
-          "title": "nameAlternativeID"
-      },
-      {
-          "name": "sourceID",
-          "type": "string",
-          "format": "default",
-          "title": "sourceID"
-      },
-      {
-          "name": "parentID",
-          "type": "string",
-          "format": "default",
-          "title": "parentID"
-      },
-      {
-          "name": "basionymID",
-          "type": "string",
-          "format": "default",
-          "title": "basionymID"
-      },
-      {
-          "name": "status",
-          "type": "string",
-          "format": "default",
-          "title": "status",
-          "constraints":
-          {
-              "enum":
-              [
-                  "accepted",
-                  "provisionally accepted",
-                  "synonym",
-                  "ambiguous synonym",
-                  "misapplied",
-                  "bare name"
-              ]
-          }
-      },
-      {
-          "name": "scientificName",
-          "type": "string",
-          "format": "default",
-          "title": "scientificName",
-          "constraints":
-          {
-              "required": true
-          }
-      },
-      {
-          "name": "authorship",
-          "type": "string",
-          "format": "default",
-          "title": "authorship"
-      },
-      {
-          "name": "rank",
-          "type": "string",
-          "format": "default",
-          "title": "rank",
-          "constraints":
-          {
-              "enum":
-              [
-                  "superdomain",
-                  "domain",
-                  "subdomain",
-                  "infradomain",
-                  "empire",
-                  "realm",
-                  "subrealm",
-                  "superkingdom",
-                  "kingdom",
-                  "subkingdom",
-                  "infrakingdom",
-                  "superphylum",
-                  "phylum",
-                  "subphylum",
-                  "infraphylum",
-                  "parvphylum",
-                  "microphylum",
-                  "nanophylum",
-                  "claudius",
-                  "gigaclass",
-                  "megaclass",
-                  "superclass",
-                  "class",
-                  "subclass",
-                  "infraclass",
-                  "subterclass",
-                  "parvclass",
-                  "superdivision",
-                  "division",
-                  "subdivision",
-                  "infradivision",
-                  "superlegion",
-                  "legion",
-                  "sublegion",
-                  "infralegion",
-                  "megacohort",
-                  "supercohort",
-                  "cohort",
-                  "subcohort",
-                  "infracohort",
-                  "gigaorder",
-                  "magnorder",
-                  "grandorder",
-                  "mirorder",
-                  "superorder",
-                  "order",
-                  "nanorder",
-                  "hypoorder",
-                  "minorder",
-                  "suborder",
-                  "infraorder",
-                  "parvorder",
-                  "supersection zoology",
-                  "section zoology",
-                  "subsection zoology",
-                  "falanx",
-                  "gigafamily",
-                  "megafamily",
-                  "grandfamily",
-                  "superfamily",
-                  "epifamily",
-                  "family",
-                  "subfamily",
-                  "infrafamily",
-                  "supertribe",
-                  "tribe",
-                  "subtribe",
-                  "infratribe",
-                  "suprageneric name",
-                  "supergenus",
-                  "genus",
-                  "subgenus",
-                  "infragenus",
-                  "supersection botany",
-                  "section botany",
-                  "subsection botany",
-                  "superseries",
-                  "series",
-                  "subseries",
-                  "infrageneric name",
-                  "species aggregate",
-                  "species",
-                  "infraspecific name",
-                  "grex",
-                  "klepton",
-                  "subspecies",
-                  "cultivar group",
-                  "convariety",
-                  "infrasubspecific name",
-                  "proles",
-                  "natio",
-                  "aberration",
-                  "morph",
-                  "supervariety",
-                  "variety",
-                  "subvariety",
-                  "superform",
-                  "form",
-                  "subform",
-                  "pathovar",
-                  "biovar",
-                  "chemovar",
-                  "morphovar",
-                  "phagovar",
-                  "serovar",
-                  "chemoform",
-                  "forma specialis",
-                  "lusus",
-                  "cultivar",
-                  "mutatio",
-                  "strain",
-                  "other",
-                  "unranked"
-              ]
-          }
-      },
-      {
-          "name": "notho",
-          "type": "string",
-          "format": "default",
-          "title": "notho"
-      },
-      {
-          "name": "originalSpelling",
-          "type": "string",
-          "format": "default",
-          "title": "originalSpelling"
-      },
-      {
-          "name": "uninomial",
-          "type": "string",
-          "format": "default",
-          "title": "uninomial"
-      },
-      {
-          "name": "genericName",
-          "type": "string",
-          "format": "default",
-          "title": "genericName"
-      },
-      {
-          "name": "infragenericEpithet",
-          "type": "string",
-          "format": "default",
-          "title": "infragenericEpithet"
-      },
-      {
-          "name": "specificEpithet",
-          "type": "string",
-          "format": "default",
-          "title": "specificEpithet"
-      },
-      {
-          "name": "infraspecificEpithet",
-          "type": "string",
-          "format": "default",
-          "title": "infraspecificEpithet"
-      },
-      {
-          "name": "cultivarEpithet",
-          "type": "string",
-          "format": "default",
-          "title": "cultivarEpithet"
-      },
-      {
-          "name": "combinationAuthorship",
-          "type": "string",
-          "format": "default",
-          "title": "combinationAuthorship"
-      },
-      {
-          "name": "combinationAuthorshipID",
-          "type": "string",
-          "format": "default",
-          "title": "combinationAuthorshipID"
-      },
-      {
-          "name": "combinationExAuthorship",
-          "type": "string",
-          "format": "default",
-          "title": "combinationExAuthorship"
-      },
-      {
-          "name": "combinationExAuthorshipID",
-          "type": "string",
-          "format": "default",
-          "title": "combinationExAuthorshipID"
-      },
-      {
-          "name": "combinationAuthorshipYear",
-          "type": "string",
-          "format": "default",
-          "title": "combinationAuthorshipYear"
-      },
-      {
-          "name": "basionymAuthorship",
-          "type": "string",
-          "format": "default",
-          "title": "basionymAuthorship"
-      },
-      {
-          "name": "basionymAuthorshipID",
-          "type": "string",
-          "format": "default",
-          "title": "basionymAuthorshipID"
-      },
-      {
-          "name": "basionymExAuthorship",
-          "type": "string",
-          "format": "default",
-          "title": "basionymExAuthorship"
-      },
-      {
-          "name": "basionymExAuthorshipID",
-          "type": "string",
-          "format": "default",
-          "title": "basionymExAuthorshipID"
-      },
-      {
-          "name": "basionymAuthorshipYear",
-          "type": "string",
-          "format": "default",
-          "title": "basionymAuthorshipYear"
-      },
-      {
-          "name": "namePhrase",
-          "type": "string",
-          "format": "default",
-          "title": "namePhrase"
-      },
-      {
-          "name": "nameReferenceID",
-          "type": "string",
-          "format": "default",
-          "title": "nameReferenceID"
-      },
-      {
-          "name": "publishedInYear",
-          "type": "year",
-          "format": "default",
-          "title": "publishedInYear"
-      },
-      {
-          "name": "publishedInPage",
-          "type": "string",
-          "format": "default",
-          "title": "publishedInPage"
-      },
-      {
-          "name": "publishedInPageLink",
-          "type": "string",
-          "format": "default",
-          "title": "publishedInPageLink"
-      },
-      {
-          "name": "gender",
-          "type": "string",
-          "format": "default",
-          "title": "gender"
-      },
-      {
-          "name": "genderAgreement",
-          "type": "boolean",
-          "format": "default",
-          "title": "genderAgreement"
-      },
-      {
-          "name": "etymology",
-          "type": "string",
-          "format": "default",
-          "title": "etymology"
-      },
-      {
-          "name": "code",
-          "type": "string",
-          "format": "default",
-          "title": "code",
-          "constraints":
-          {
-              "enum":
-              [
-                  "bacterial",
-                  "botanical",
-                  "cultivars",
-                  "phyto",
-                  "virus",
-                  "zoological",
-                  "phylo"
-              ]
-          }
-      },
-      {
-          "name": "nameStatus",
-          "type": "string",
-          "format": "default",
-          "title": "nameStatus",
-          "constraints":
-          {
-              "enum":
-              [
-                  "established",
-                  "not established",
-                  "acceptable",
-                  "unacceptable",
-                  "conserved",
-                  "rejected",
-                  "doubtful",
-                  "manuscript",
-                  "chresonym"
-              ]
-          }
-      },
-      {
-          "name": "accordingToID",
-          "type": "string",
-          "format": "default",
-          "title": "accordingToID"
-      },
-      {
-          "name": "accordingToPage",
-          "type": "string",
-          "format": "default",
-          "title": "accordingToPage",
-          "description": "The exact single page number where the taxonomic concept was treated. If the treatment spans multiple pages, the first page should be given."
-      },
-      {
-          "name": "accordingToPageLink",
-          "type": "string",
-          "format": "default",
-          "title": "accordingToPageLink",
-          "description": "A URL to the exact page where the taxonomic concept was published. If the treatment spans multiple pages, the link to the first page should be given."
-      },
-      {
-          "name": "referenceID",
-          "type": "string",
-          "format": "default",
-          "title": "referenceID"
-      },
-      {
-          "name": "scrutinizer",
-          "type": "string",
-          "format": "default",
-          "title": "scrutinizer"
-      },
-      {
-          "name": "scrutinizerID",
-          "type": "string",
-          "format": "default",
-          "title": "scrutinizerID"
-      },
-      {
-          "name": "scrutinizerDate",
-          "type": "date",
-          "format": "default",
-          "title": "scrutinizerDate"
-      },
-      {
-          "name": "extinct",
-          "type": "boolean",
-          "format": "default",
-          "title": "extinct"
-      },
-      {
-          "name": "temporalRangeStart",
-          "type": "string",
-          "format": "default",
-          "title": "temporalRangeStart"
-      },
-      {
-          "name": "temporalRangeEnd",
-          "type": "string",
-          "format": "default",
-          "title": "temporalRangeEnd"
-      },
-      {
-          "name": "environment",
-          "type": "string",
-          "format": "default",
-          "title": "environment",
-          "constraints":
-          {
-              "enum":
-              [
-                  "brackish",
-                  "freshwater",
-                  "marine",
-                  "terrestrial"
-              ]
-          }
-      },
-      {
-          "name": "species",
-          "type": "string",
-          "format": "default",
-          "title": "species"
-      },
-      {
-          "name": "section",
-          "type": "string",
-          "format": "default",
-          "title": "section"
-      },
-      {
-          "name": "subgenus",
-          "type": "string",
-          "format": "default",
-          "title": "subgenus"
-      },
-      {
-          "name": "genus",
-          "type": "string",
-          "format": "default",
-          "title": "genus"
-      },
-      {
-          "name": "subtribe",
-          "type": "string",
-          "format": "default",
-          "title": "subtribe"
-      },
-      {
-          "name": "tribe",
-          "type": "string",
-          "format": "default",
-          "title": "tribe"
-      },
-      {
-          "name": "subfamily",
-          "type": "string",
-          "format": "default",
-          "title": "subfamily"
-      },
-      {
-          "name": "family",
-          "type": "string",
-          "format": "default",
-          "title": "family"
-      },
-      {
-          "name": "superfamily",
-          "type": "string",
-          "format": "default",
-          "title": "superfamily"
-      },
-      {
-          "name": "suborder",
-          "type": "string",
-          "format": "default",
-          "title": "suborder"
-      },
-      {
-          "name": "order",
-          "type": "string",
-          "format": "default",
-          "title": "order"
-      },
-      {
-          "name": "subclass",
-          "type": "string",
-          "format": "default",
-          "title": "subclass"
-      },
-      {
-          "name": "class",
-          "type": "string",
-          "format": "default",
-          "title": "class"
-      },
-      {
-          "name": "subphylum",
-          "type": "string",
-          "format": "default",
-          "title": "subphylum"
-      },
-      {
-          "name": "phylum",
-          "type": "string",
-          "format": "default",
-          "title": "phylum"
-      },
-      {
-          "name": "kingdom",
-          "type": "string",
-          "format": "default",
-          "title": "kingdom"
-      },
-      {
-          "name": "ordinal",
-          "type": "integer",
-          "format": "default",
-          "title": "ordinal"
-      },
-      {
-          "name": "branchLength",
-          "type": "number",
-          "format": "default",
-          "title": "branchLength"
-      },
-      {
-          "name": "link",
-          "type": "string",
-          "format": "uri",
-          "title": "link"
-      },
-      {
-          "name": "nameRemarks",
-          "type": "string",
-          "format": "default",
-          "title": "nameRemarks"
-      },
-      {
-          "name": "remarks",
-          "type": "string",
-          "format": "default",
-          "title": "remarks"
-      },
-      {
-          "name": "modified",
-          "type": "date",
-          "format": "default",
-          "title": "modified"
-      },
-      {
-          "name": "modifiedBy",
-          "type": "string",
-          "format": "default",
-          "title": "modifiedBy"
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "title": "ID",
+      "constraints": {
+        "unique": true,
+        "required": true
       }
+    },
+    {
+      "name": "alternativeID",
+      "type": "string",
+      "format": "default",
+      "title": "alternativeID"
+    },
+    {
+      "name": "nameAlternativeID",
+      "type": "string",
+      "format": "default",
+      "title": "nameAlternativeID"
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID"
+    },
+    {
+      "name": "parentID",
+      "type": "string",
+      "format": "default",
+      "title": "parentID"
+    },
+    {
+      "name": "basionymID",
+      "type": "string",
+      "format": "default",
+      "title": "basionymID"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "format": "default",
+      "title": "status",
+      "constraints": {
+        "enum": [
+          "accepted",
+          "provisionally accepted",
+          "synonym",
+          "ambiguous synonym",
+          "misapplied",
+          "bare name"
+        ]
+      }
+    },
+    {
+      "name": "scientificName",
+      "type": "string",
+      "format": "default",
+      "title": "scientificName",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "authorship",
+      "type": "string",
+      "format": "default",
+      "title": "authorship"
+    },
+    {
+      "name": "rank",
+      "type": "string",
+      "format": "default",
+      "title": "rank",
+      "constraints": {
+        "enum": [
+          "superdomain",
+          "domain",
+          "subdomain",
+          "infradomain",
+          "empire",
+          "realm",
+          "subrealm",
+          "superkingdom",
+          "kingdom",
+          "subkingdom",
+          "infrakingdom",
+          "superphylum",
+          "phylum",
+          "subphylum",
+          "infraphylum",
+          "parvphylum",
+          "microphylum",
+          "nanophylum",
+          "claudius",
+          "gigaclass",
+          "megaclass",
+          "superclass",
+          "class",
+          "subclass",
+          "infraclass",
+          "subterclass",
+          "parvclass",
+          "superdivision",
+          "division",
+          "subdivision",
+          "infradivision",
+          "superlegion",
+          "legion",
+          "sublegion",
+          "infralegion",
+          "megacohort",
+          "supercohort",
+          "cohort",
+          "subcohort",
+          "infracohort",
+          "gigaorder",
+          "magnorder",
+          "grandorder",
+          "mirorder",
+          "superorder",
+          "order",
+          "nanorder",
+          "hypoorder",
+          "minorder",
+          "suborder",
+          "infraorder",
+          "parvorder",
+          "supersection zoology",
+          "section zoology",
+          "subsection zoology",
+          "falanx",
+          "gigafamily",
+          "megafamily",
+          "grandfamily",
+          "superfamily",
+          "epifamily",
+          "family",
+          "subfamily",
+          "infrafamily",
+          "supertribe",
+          "tribe",
+          "subtribe",
+          "infratribe",
+          "suprageneric name",
+          "supergenus",
+          "genus",
+          "subgenus",
+          "infragenus",
+          "supersection botany",
+          "section botany",
+          "subsection botany",
+          "superseries",
+          "series",
+          "subseries",
+          "infrageneric name",
+          "species aggregate",
+          "species",
+          "infraspecific name",
+          "grex",
+          "klepton",
+          "subspecies",
+          "cultivar group",
+          "convariety",
+          "infrasubspecific name",
+          "proles",
+          "natio",
+          "aberration",
+          "morph",
+          "supervariety",
+          "variety",
+          "subvariety",
+          "superform",
+          "form",
+          "subform",
+          "pathovar",
+          "biovar",
+          "chemovar",
+          "morphovar",
+          "phagovar",
+          "serovar",
+          "chemoform",
+          "forma specialis",
+          "lusus",
+          "cultivar",
+          "mutatio",
+          "strain",
+          "other",
+          "unranked"
+        ]
+      }
+    },
+    {
+      "name": "notho",
+      "type": "string",
+      "format": "default",
+      "title": "notho"
+    },
+    {
+      "name": "originalSpelling",
+      "type": "string",
+      "format": "default",
+      "title": "originalSpelling"
+    },
+    {
+      "name": "uninomial",
+      "type": "string",
+      "format": "default",
+      "title": "uninomial"
+    },
+    {
+      "name": "genericName",
+      "type": "string",
+      "format": "default",
+      "title": "genericName"
+    },
+    {
+      "name": "infragenericEpithet",
+      "type": "string",
+      "format": "default",
+      "title": "infragenericEpithet"
+    },
+    {
+      "name": "specificEpithet",
+      "type": "string",
+      "format": "default",
+      "title": "specificEpithet"
+    },
+    {
+      "name": "infraspecificEpithet",
+      "type": "string",
+      "format": "default",
+      "title": "infraspecificEpithet"
+    },
+    {
+      "name": "cultivarEpithet",
+      "type": "string",
+      "format": "default",
+      "title": "cultivarEpithet"
+    },
+    {
+      "name": "combinationAuthorship",
+      "type": "string",
+      "format": "default",
+      "title": "combinationAuthorship"
+    },
+    {
+      "name": "combinationAuthorshipID",
+      "type": "string",
+      "format": "default",
+      "title": "combinationAuthorshipID"
+    },
+    {
+      "name": "combinationExAuthorship",
+      "type": "string",
+      "format": "default",
+      "title": "combinationExAuthorship"
+    },
+    {
+      "name": "combinationExAuthorshipID",
+      "type": "string",
+      "format": "default",
+      "title": "combinationExAuthorshipID"
+    },
+    {
+      "name": "combinationAuthorshipYear",
+      "type": "string",
+      "format": "default",
+      "title": "combinationAuthorshipYear"
+    },
+    {
+      "name": "basionymAuthorship",
+      "type": "string",
+      "format": "default",
+      "title": "basionymAuthorship"
+    },
+    {
+      "name": "basionymAuthorshipID",
+      "type": "string",
+      "format": "default",
+      "title": "basionymAuthorshipID"
+    },
+    {
+      "name": "basionymExAuthorship",
+      "type": "string",
+      "format": "default",
+      "title": "basionymExAuthorship"
+    },
+    {
+      "name": "basionymExAuthorshipID",
+      "type": "string",
+      "format": "default",
+      "title": "basionymExAuthorshipID"
+    },
+    {
+      "name": "basionymAuthorshipYear",
+      "type": "string",
+      "format": "default",
+      "title": "basionymAuthorshipYear"
+    },
+    {
+      "name": "namePhrase",
+      "type": "string",
+      "format": "default",
+      "title": "namePhrase"
+    },
+    {
+      "name": "nameReferenceID",
+      "type": "string",
+      "format": "default",
+      "title": "nameReferenceID"
+    },
+    {
+      "name": "publishedInYear",
+      "type": "year",
+      "format": "default",
+      "title": "publishedInYear"
+    },
+    {
+      "name": "publishedInPage",
+      "type": "string",
+      "format": "default",
+      "title": "publishedInPage"
+    },
+    {
+      "name": "publishedInPageLink",
+      "type": "string",
+      "format": "default",
+      "title": "publishedInPageLink"
+    },
+    {
+      "name": "gender",
+      "type": "string",
+      "format": "default",
+      "title": "gender"
+    },
+    {
+      "name": "genderAgreement",
+      "type": "boolean",
+      "format": "default",
+      "title": "genderAgreement"
+    },
+    {
+      "name": "etymology",
+      "type": "string",
+      "format": "default",
+      "title": "etymology"
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "format": "default",
+      "title": "code",
+      "constraints": {
+        "enum": [
+          "bacterial",
+          "botanical",
+          "cultivars",
+          "phyto",
+          "virus",
+          "zoological",
+          "phylo"
+        ]
+      }
+    },
+    {
+      "name": "nameStatus",
+      "type": "string",
+      "format": "default",
+      "title": "nameStatus",
+      "constraints": {
+        "enum": [
+          "established",
+          "not established",
+          "acceptable",
+          "unacceptable",
+          "conserved",
+          "rejected",
+          "doubtful",
+          "manuscript",
+          "chresonym"
+        ]
+      }
+    },
+    {
+      "name": "accordingToID",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToID"
+    },
+    {
+      "name": "accordingToPage",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToPage",
+      "description": "The exact single page number where the taxonomic concept was treated. If the treatment spans multiple pages, the first page should be given."
+    },
+    {
+      "name": "accordingToPageLink",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToPageLink",
+      "description": "A URL to the exact page where the taxonomic concept was published. If the treatment spans multiple pages, the link to the first page should be given."
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID"
+    },
+    {
+      "name": "scrutinizer",
+      "type": "string",
+      "format": "default",
+      "title": "scrutinizer"
+    },
+    {
+      "name": "scrutinizerID",
+      "type": "string",
+      "format": "default",
+      "title": "scrutinizerID"
+    },
+    {
+      "name": "scrutinizerDate",
+      "type": "date",
+      "format": "default",
+      "title": "scrutinizerDate"
+    },
+    {
+      "name": "extinct",
+      "type": "boolean",
+      "format": "default",
+      "title": "extinct"
+    },
+    {
+      "name": "temporalRangeStart",
+      "type": "string",
+      "format": "default",
+      "title": "temporalRangeStart"
+    },
+    {
+      "name": "temporalRangeEnd",
+      "type": "string",
+      "format": "default",
+      "title": "temporalRangeEnd"
+    },
+    {
+      "name": "environment",
+      "type": "string",
+      "format": "default",
+      "title": "environment",
+      "constraints": {
+        "enum": [
+          "brackish",
+          "freshwater",
+          "marine",
+          "terrestrial"
+        ]
+      }
+    },
+    {
+      "name": "species",
+      "type": "string",
+      "format": "default",
+      "title": "species"
+    },
+    {
+      "name": "section",
+      "type": "string",
+      "format": "default",
+      "title": "section"
+    },
+    {
+      "name": "subgenus",
+      "type": "string",
+      "format": "default",
+      "title": "subgenus"
+    },
+    {
+      "name": "genus",
+      "type": "string",
+      "format": "default",
+      "title": "genus"
+    },
+    {
+      "name": "subtribe",
+      "type": "string",
+      "format": "default",
+      "title": "subtribe"
+    },
+    {
+      "name": "tribe",
+      "type": "string",
+      "format": "default",
+      "title": "tribe"
+    },
+    {
+      "name": "subfamily",
+      "type": "string",
+      "format": "default",
+      "title": "subfamily"
+    },
+    {
+      "name": "family",
+      "type": "string",
+      "format": "default",
+      "title": "family"
+    },
+    {
+      "name": "superfamily",
+      "type": "string",
+      "format": "default",
+      "title": "superfamily"
+    },
+    {
+      "name": "suborder",
+      "type": "string",
+      "format": "default",
+      "title": "suborder"
+    },
+    {
+      "name": "order",
+      "type": "string",
+      "format": "default",
+      "title": "order"
+    },
+    {
+      "name": "subclass",
+      "type": "string",
+      "format": "default",
+      "title": "subclass"
+    },
+    {
+      "name": "class",
+      "type": "string",
+      "format": "default",
+      "title": "class"
+    },
+    {
+      "name": "subphylum",
+      "type": "string",
+      "format": "default",
+      "title": "subphylum"
+    },
+    {
+      "name": "phylum",
+      "type": "string",
+      "format": "default",
+      "title": "phylum"
+    },
+    {
+      "name": "kingdom",
+      "type": "string",
+      "format": "default",
+      "title": "kingdom"
+    },
+    {
+      "name": "ordinal",
+      "type": "integer",
+      "format": "default",
+      "title": "ordinal"
+    },
+    {
+      "name": "branchLength",
+      "type": "number",
+      "format": "default",
+      "title": "branchLength"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri",
+      "title": "link"
+    },
+    {
+      "name": "nameRemarks",
+      "type": "string",
+      "format": "default",
+      "title": "nameRemarks"
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks"
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified"
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy"
+    }
   ],
   "primaryKey": "ID",
-  "foreignKeys":
-  [
-      {
-          "fields": "parentID",
-          "reference":
-          {
-              "resource": "taxon",
-              "fields": "ID"
-          }
-      },
-      {
-          "fields": "basionymID",
-          "reference":
-          {
-              "resource": "name",
-              "fields": "ID"
-          }
-      },
-      {
-          "fields": "accordingToID",
-          "reference":
-          {
-              "resource": "reference",
-              "fields": "ID"
-          }
-      },
-      {
-          "fields": "referenceID",
-          "reference":
-          {
-              "resource": "reference",
-              "fields": "ID"
-          }
+  "foreignKeys": [
+    {
+      "fields": "parentID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
       }
+    },
+    {
+      "fields": "basionymID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "accordingToID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
   ]
 }
