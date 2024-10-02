@@ -104,10 +104,14 @@ def find_package_files(directories):
 all_package_files = find_package_files(directories_to_scan)
 
 for package_file in all_package_files:
+    # First, validate the JSON structure
+    if not check_valid_json(package_file):
+        continue  # Skip further checks for invalid JSON files
+
+    # If JSON is valid, load and perform the remaining checks
     with open(package_file, 'r') as f:
         package_data = json.load(f)
 
-    check_valid_json(package_file)
     check_urls_are_resolvable(package_data)
     check_table_schemas(package_file, package_data)
 
