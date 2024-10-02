@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 #
-# Data packages validation checks
+# Data packages validation checks (executed in Jenkins).
+# In the case of a PR is supposed to be run manually.
+# Checks are:
+# 1. Index and table schema files are valid JSON
+# 2. All URLs are resolvable
+# 3. Table schemas declarations are valid, all actual files are present
+# 4. No duplicate nodes in index.json
+# 5. Compares primary properties (identifier, url, name) between index.json and table schema file
 #
 
 import json
