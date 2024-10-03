@@ -169,8 +169,13 @@ def check_table_schemas(package_file_path, package_data):
                 table_schema_name = table_schema['name']
 
                 # Compare URLs from index.json and table-schema.json
-                declared_table_schema_url = declared_schemas_map[table_schema_name]['url']
-                actual_table_schema_url = table_schema['url']
+                if table_schema_name in declared_schemas_map:
+                    declared_table_schema_url = declared_schemas_map[table_schema_name]['url']
+                    actual_table_schema_url = table_schema['url']
+                else:
+                    print(f"Error: couldn't find table schema {table_schema_name}")
+                    error_found = True
+                    return
 
                 if declared_table_schema_url != actual_table_schema_url:
                     print(f"Error: urls do not match for table schema {table_schema_name}. "
