@@ -16,7 +16,8 @@ import requests
 import sys
 
 # Paths to the directories containing index.json files
-directories_to_scan = ['sandbox/data-packages', 'sandbox/experimental/data-packages']
+directories_to_scan_sandbox = ['sandbox/data-packages', 'sandbox/experimental/data-packages']
+directories_to_scan_prod = ['data-packages']
 
 # Flag to track errors
 error_found = False
@@ -67,7 +68,7 @@ def check_table_schemas(package_file_path, package_data):
     global error_found
 
     # Skip a directory with the main index.json file
-    if package_file_path == 'sandbox/data-packages/index.json':
+    if package_file_path == 'sandbox/data-packages/index.json' or package_file_path == 'data-packages/index.json':
         return
 
     print(f"Checking file: {package_file_path}")
@@ -206,9 +207,22 @@ def find_package_files(directories):
 
 
 # Validation: Check all package files and their schemas
-all_package_files = find_package_files(directories_to_scan)
+all_package_files_sandbox = find_package_files(directories_to_scan_sandbox)
+all_package_files_prod = find_package_files(directories_to_scan_prod)
 
-for package_file in all_package_files:
+for package_file in all_package_files_sandbox:
+    # First, validate the JSON structure
+    if not check_valid_json(package_file):
+        continue  # Skip further checks for invalid JSON files
+
+    # If JSON is valid, load and perform the remaining checks
+    with open(package_file, 'r') as f:
+        package_data = json.load(f)
+
+    check_urls_are_resolvable(package_data)
+    check_table_schemas(package_file, package_data)
+
+for package_file in all_package_files_prod:
     # First, validate the JSON structure
     if not check_valid_json(package_file):
         continue  # Skip further checks for invalid JSON files
