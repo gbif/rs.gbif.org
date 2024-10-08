@@ -600,6 +600,16 @@
             "iri": "http://rs.tdwg.org/eco/terms/isSamplingEffortReported"
         },
         {
+            "name": "samplingEffortProtocolID",
+            "description": "An identifier for a Protocol used to determine sampling effort.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "ecoiri",
+            "iri": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol"
+        },
+        {
             "name": "samplingEffortProtocol",
             "description": "A description of or reference (publication or URL) to the methods used to determine the sampling effort.",
             "type": "string",
@@ -641,6 +651,13 @@
             "reference": {
                 "resource": "agent",
                 "fields": "agentID"
+            }
+        },
+        {
+            "fields": "samplingEffortProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
             }
         }
     ]
