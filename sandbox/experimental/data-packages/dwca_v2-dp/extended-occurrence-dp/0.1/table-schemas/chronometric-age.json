@@ -40,6 +40,16 @@
             "iri": "http://rs.tdwg.org/chrono/terms/verbatimChronometricAge"
         },
         {
+            "name": "chronometricAgeProtocolID",
+            "description": "An identifier for the Protocol used to determine a ChronometricAge.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "chronometricAgeProtocol",
             "description": "A description of or reference to the methods used to determine a chrono:ChronometricAge.",
             "type": "string",
@@ -58,6 +68,16 @@
             "examples": "`1510 +/- 25 14C yr BP`; `16.26 Ma +/- 0.016`",
             "namespace": "chrono",
             "iri": "http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge"
+        },
+        {
+            "name": "chronometricAgeConversionProtocolID",
+            "description": "An identifier for the Protocol used to convert a chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in the chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem fields.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "chronometricAgeConversionProtocol",
@@ -224,6 +244,20 @@
             "reference": {
                 "resource": "event",
                 "fields": "eventID"
+            }
+        },
+        {
+            "fields": "chronometricAgeProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
+            }
+        },
+        {
+            "fields": "chronometricAgeConversionProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
             }
         }
     ]

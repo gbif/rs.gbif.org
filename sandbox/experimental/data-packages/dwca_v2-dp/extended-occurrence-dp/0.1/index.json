@@ -138,6 +138,13 @@
             "description": "Media (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) about other entities."
         },
         {
+            "name": "protocol",
+            "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/protocol",
+            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/protocol.json",
+            "title": "Protocol",
+            "description": "A method used during an action."
+        },
+        {
             "name": "relationship",
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/relationship",
             "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/relationship.json",
