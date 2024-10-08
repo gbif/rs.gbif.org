@@ -1,0 +1,124 @@
+{
+  "name": "media",
+  "title": "Media",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/media",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/media.json",
+  "description": "Multimedia items for a taxon such as an image, audio or video.",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default",
+      "title": "taxonID",
+      "description": "Pointer to the taxon referring to an existing Taxon.ID within this data package."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "format": "uri",
+      "title": "url",
+      "description": "The URL that resolves to the media item itself, not a webpage that depicts it."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "title": "type",
+      "description": "The MIME-type of the media item the url identifies. Preferably the full type/subtype combination, e.g image/jpeg, but the primary type alone is sufficient (image, video, audio).",
+      "constraints": {
+        "enum": [
+          "image",
+          "video",
+          "audio"
+        ]
+      }
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "format": "default",
+      "title": "format",
+      "constraints": {
+        "enum": [
+          "plain text",
+          "markdown",
+          "xml",
+          "html",
+          "tax pub",
+          "taxon x",
+          "rdf"
+        ]
+      }
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "format": "default",
+      "title": "title",
+      "description": "Optional title for the item."
+    },
+    {
+      "name": "created",
+      "type": "date",
+      "format": "default",
+      "title": "created"
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "format": "default",
+      "title": "creator",
+      "description": "Author of the media item."
+    },
+    {
+      "name": "license",
+      "type": "string",
+      "format": "default",
+      "title": "license"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri",
+      "title": "link",
+      "description": "Optional webpage from the source this media item is shown on."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the media item."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    }
+  ]
+}

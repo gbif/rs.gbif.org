@@ -1,0 +1,86 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
+  "name": "species-estimate",
+  "title": "Species Estimate",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/species-estimate.json",
+  "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist.",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default",
+      "title": "taxonID",
+      "description": "The higher taxon's ID that is the estimate refers to."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "estimate",
+      "type": "integer",
+      "format": "default",
+      "title": "estimate"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "title": "type",
+      "constraints": {
+        "enum": [
+          "species living",
+          "species extinct",
+          "estimated species"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "A mandatory reference ID that supports the estimate and also provides a temporal context."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the species estimate. Often used to explain the method used when the estimate is not directly taken from a publication."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

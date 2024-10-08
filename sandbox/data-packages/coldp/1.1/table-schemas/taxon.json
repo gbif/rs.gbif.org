@@ -1,0 +1,329 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/taxon",
+  "name": "taxon",
+  "title": "Taxon",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/taxon.json",
+  "description": "An accepted name with a taxonomic classification given either as a parent-child relation or as a flat, denormalized record.",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "title": "ID",
+      "description": "Unique taxon identifier that is referred to elsewhere via taxonID.",
+      "constraints": {
+        "unique": true,
+        "required": true
+      }
+    },
+    {
+      "name": "alternativeID",
+      "type": "string",
+      "format": "default",
+      "title": "alternativeID",
+      "description": "A comma concatenated list of alternative identifiers for the taxonomic concept. Every alternative identifier must be a URI/URN/URL or given in the form of scope:id. See identifiers for all details and common scopes."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "parentID",
+      "type": "string",
+      "format": "default",
+      "title": "parentID",
+      "description": "The direct parent taxon's ID in the classification. This is the preferred way of exchanging a hierarchy and takes precedence over any classification given in the denormalized fields."
+    },
+    {
+      "name": "nameID",
+      "type": "string",
+      "format": "default",
+      "title": "nameID",
+      "description": "Pointer to the accepted name referring to an existing Name.ID within this data package."
+    },
+    {
+      "name": "namePhrase",
+      "type": "string",
+      "format": "default",
+      "title": "namePhrase",
+      "description": "An optional, unrestricted, lose phrase appended to the name just for this taxon. E.g. the phrase \"sensu lato\" may be added to the name to describe this taxon more precisely."
+    },
+    {
+      "name": "accordingToID",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToID",
+      "description": "A reference ID to the publication that established the taxonomic concept used by this taxon. The author & year of the reference will be used to qualify the name with sensu AUTHOR, YEAR. The ID must refer to an existing Reference.ID within this data package."
+    },
+    {
+      "name": "accordingToPage",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToPage",
+      "description": "The exact single page number where the taxonomic concept was treated. If the treatment spans multiple pages, the first page should be given."
+    },
+    {
+      "name": "accordingToPageLink",
+      "type": "string",
+      "format": "default",
+      "title": "accordingToPageLink",
+      "description": "A URL to the exact page where the taxonomic concept was published. If the treatment spans multiple pages, the link to the first page should be given."
+    },
+    {
+      "name": "provisional",
+      "type": "boolean",
+      "format": "default",
+      "title": "provisional",
+      "description": "A flag indicating that the taxon is only provisionally accepted and should be handled with care."
+    },
+    {
+      "name": "scrutinizer",
+      "type": "string",
+      "format": "default",
+      "title": "scrutinizer",
+      "description": "Name of the person who is the latest scrutinizer who revised or reviewed the taxonomic concept."
+    },
+    {
+      "name": "scrutinizerID",
+      "type": "string",
+      "format": "default",
+      "title": "scrutinizerID",
+      "description": "Identifier for the scrutinizer. Highly recommended are ORCID ids."
+    },
+    {
+      "name": "scrutinizerDate",
+      "type": "date",
+      "format": "default",
+      "title": "scrutinizerDate"
+    },
+    {
+      "name": "extinct",
+      "type": "boolean",
+      "format": "default",
+      "title": "extinct",
+      "description": "Nullable flag indicating that the taxon is extinct (true) or extant (false). This includes species that died out recently."
+    },
+    {
+      "name": "temporalRangeStart",
+      "type": "string",
+      "format": "default",
+      "title": "temporalRangeStart",
+      "description": "Earliest appearance of the taxon in the geological time scale. Recommended values are geochronological names from the official International Commission on Stratigraphy (ICS) or million years before present, given with the unit Ma after the number, e.g. 17.4 Ma."
+    },
+    {
+      "name": "temporalRangeEnd",
+      "type": "string",
+      "format": "default",
+      "title": "temporalRangeEnd",
+      "description": "Latest appearance of the taxon in the geological time scale. Recommended values are geochronological names from the official International Commission on Stratigraphy (ICS) or million years before present, given with the unit Ma after the number, e.g. 17.4 Ma."
+    },
+    {
+      "name": "environment",
+      "type": "string",
+      "format": "default",
+      "title": "environment",
+      "constraints": {
+        "enum": [
+          "brackish",
+          "freshwater",
+          "marine",
+          "terrestrial"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "A comma concatenated list of reference IDs supporting the taxonomic concept that has been reviewed by the scrutinizer. Each ID must refer to an existing Reference.ID within this data package. See best practices for details on how to concatenate multi values."
+    },
+    {
+      "name": "species",
+      "type": "string",
+      "format": "default",
+      "title": "species",
+      "description": "The species binomial the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "section",
+      "type": "string",
+      "format": "default",
+      "title": "section",
+      "description": "The (botanical) section the taxon is classified in. Considered a botanical rank below subgenus, not a zoological above family. If parentID is given this field is ignored."
+    },
+    {
+      "name": "subgenus",
+      "type": "string",
+      "format": "default",
+      "title": "subgenus",
+      "description": "The subgenus the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "genus",
+      "type": "string",
+      "format": "default",
+      "title": "genus",
+      "description": "The genus the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "subtribe",
+      "type": "string",
+      "format": "default",
+      "title": "subtribe",
+      "description": "The subtribe the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "tribe",
+      "type": "string",
+      "format": "default",
+      "title": "tribe",
+      "description": "The tribe the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "subfamily",
+      "type": "string",
+      "format": "default",
+      "title": "subfamily",
+      "description": "The subfamily the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "family",
+      "type": "string",
+      "format": "default",
+      "title": "family",
+      "description": "The family the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "superfamily",
+      "type": "string",
+      "format": "default",
+      "title": "superfamily",
+      "description": "The superfamily the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "suborder",
+      "type": "string",
+      "format": "default",
+      "title": "suborder",
+      "description": "The suborder the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "order",
+      "type": "string",
+      "format": "default",
+      "title": "order",
+      "description": "The order the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "subclass",
+      "type": "string",
+      "format": "default",
+      "title": "subclass",
+      "description": "The subclass the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "class",
+      "type": "string",
+      "format": "default",
+      "title": "class",
+      "description": "The class the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "subphylum",
+      "type": "string",
+      "format": "default",
+      "title": "subphylum",
+      "description": "The subphylum the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "phylum",
+      "type": "string",
+      "format": "default",
+      "title": "phylum",
+      "description": "The phylum the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "kingdom",
+      "type": "string",
+      "format": "default",
+      "title": "kingdom",
+      "description": "The kingdom the taxon is classified in. If parentID is given this field is ignored."
+    },
+    {
+      "name": "ordinal",
+      "type": "integer",
+      "format": "default",
+      "title": "ordinal",
+      "description": "A integer to specify an optional custom sort order for sibling taxa sharing the same parentID in the datasets. This can be used to define a traditional ordering of orders and families for example and can be existing for parts of the dataset, e.g. higher ranks, only. The natural ordering of integers from small to large should be applied. Not that this does not have to be a unique, global index."
+    },
+    {
+      "name": "branchLength",
+      "type": "number",
+      "format": "default",
+      "title": "branchLength"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri",
+      "title": "link",
+      "description": "A link to a webpage provided by the source depicting the taxon."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Any further taxonomic remarks."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "primaryKey": "ID",
+  "foreignKeys": [
+    {
+      "fields": "parentID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "accordingToID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}
