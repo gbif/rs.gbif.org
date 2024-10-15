@@ -12,6 +12,7 @@
 
 import json
 import os
+import re
 import requests
 import sys
 
@@ -39,10 +40,16 @@ def check_urls_are_resolvable(package_data):
     global error_found
 
     def resolve_url(url):
+        global error_found
         try:
             response = requests.head(url, allow_redirects=True, timeout=5)
             if response.status_code >= 400:
-                print(f"Error: Unreachable URL: {url}")
+                relative_path = re.sub(r'^https?://rs\.gbif\.org', '', url)
+                if not os.path.exists(relative_path):
+                    print(f"Error: Unreachable URL: {url}")
+                    print(f"Error: File does not exist {relative_path}")
+
+                # Might be a new declaration, check a directory path
                 error_found = True
             # else:
             #     print(f"URL is valid: {url}")
