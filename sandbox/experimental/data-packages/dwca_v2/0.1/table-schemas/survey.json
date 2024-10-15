@@ -600,16 +600,6 @@
             "iri": "http://rs.tdwg.org/eco/terms/isSamplingEffortReported"
         },
         {
-            "name": "samplingEffortProtocolID",
-            "description": "An identifier for a Protocol used to determine sampling effort.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "ecoiri",
-            "iri": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol"
-        },
-        {
             "name": "samplingEffortProtocol",
             "description": "A description of or reference (publication or URL) to the methods used to determine the sampling effort.",
             "type": "string",
@@ -618,6 +608,16 @@
             "examples": "`40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period`; `2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours`; `A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way`",
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortProtocol"
+        },
+        {
+            "name": "samplingEffortProtocolID",
+            "description": "An identifier for a Protocol used to determine sampling effort.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "ecoiri",
+            "iri": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol"
         },
         {
             "name": "samplingEffortValue",

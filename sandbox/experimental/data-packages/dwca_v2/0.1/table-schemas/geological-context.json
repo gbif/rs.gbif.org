@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "gatheringEventID",
-            "description": "An identifier for a dwc:Event in which a dwc:MaterialEntity was collected.",
+            "name": "eventID",
+            "description": "An identifier for a dwc:Event for which a dwc:GeologicalContext was determined.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
