@@ -140,7 +140,7 @@
         {
             "name": "protocol",
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/protocol",
-            "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/protocol.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/protocol.json",
             "title": "Protocol",
             "description": "A method used during an action."
         },
@@ -148,7 +148,6 @@
             "name": "relationship",
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/relationship",
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/relationship.json",
-            "name": "relationship",
             "title": "Relationship",
             "description": "Specifications of relationships between entities."
         }
