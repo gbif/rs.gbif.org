@@ -1,7 +1,7 @@
 {
     "name": "media",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/media",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/media.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/media",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/media.json",
     "title": "Media",
     "description": "Media (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) about other entities.",
     "fields": [

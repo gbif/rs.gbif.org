@@ -1,7 +1,7 @@
 {
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1",
-    "name": "extended-occurrence-dp",
+    "name": "dwca_v2",
     "version": "0.1",
     "tableSchemas": [
         {
@@ -156,6 +156,6 @@
     "title": "Extended Occurrence Data Package - Darwin Core Archive v2",
     "shortTitle": "ExtendedOccurrenceDwCAv2",
     "description": "A data package for sharing extended Occurrence data using Darwin Core Archives, version 2.",
-    "issued": "2024-10-14",
+    "issued": "2024-10-15",
     "isLatest": true
 }
