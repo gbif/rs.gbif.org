@@ -90,6 +90,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/verbatimIdentification"
         },
         {
+            "name": "isAcceptedIdentification",
+            "description": "The dwc:Identification of a dwc:Organism is a currently accepted one.",
+            "type": "boolean",
+            "format": "default",
+            "comments": "",
+            "examples": "`true`; `false`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "taxonFormula",
             "description": "A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.",
             "type": "string",
