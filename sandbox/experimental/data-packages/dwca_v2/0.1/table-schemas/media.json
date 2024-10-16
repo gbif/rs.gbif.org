@@ -45,7 +45,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`Sound`; `StillImage`; `MovingImage`; `Text`",
+            "examples": "`Sound`; `Still Image`; `Moving Image`; `Text`",
             "namespace": "gum",
             "iri": ""
         },
@@ -178,6 +178,46 @@
             "examples": "`eng` (for Modern English); `spa` (for Castilian Standard Spanish)",
             "namespace": "gum",
             "iri": ""
+        },
+        {
+            "name": "mediaSubjectCategory",
+            "description": "A term to describe the content of the image by a value from a Controlled Vocabulary.",
+            "type": "string",
+            "format": "default",
+            "comments": "Controlled vocabulary of subjects to support broad classification of media items. Terms from various controlled vocabularies may be used. AC-recommended vocabularies are preferred and MAY be unqualified literals (not a full URI). For terms from other vocabularies either a precise URI SHOULD be used, or, as long as all unqualified terms in all vocabularies are unique, metadata SHOULD provide the source vocabularies using the Subject Category Vocabulary term. The value SHOULD be a string, whose text can also be in the form of a URL. These guidelines on value format are less restrictive than is specified by the IPTC guidelines.",
+            "examples": "`herbarium sheet scan`",
+            "namespace": "Iptc4xmpExt",
+            "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm"
+        },
+        {
+            "name": "mediaSubjectCategoryIRI",
+            "description": "The IRI of the controlled vocabulary value for the subject category of the Media instance.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "Iptc4xmpExt",
+            "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm"
+        },
+        {
+            "name": "mediaSubjectCategoryVocabulary",
+            "description": "Any vocabulary or formal classification from which terms in the Subject Category have been drawn.",
+            "type": "string",
+            "format": "default",
+            "comments": "The AC recommended vocabularies do not need to be cited here. There is no required linkage between individual Subject Category terms and the vocabulary; the mechanism is intended to support discovery of the normative URI for a term, but not guarantee it.",
+            "examples": "`herbarium sheet scan`",
+            "namespace": "ac",
+            "iri": "http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary"
+        },
+        {
+            "name": "mediaDescription",
+            "description": "An account of the Media subject matter.",
+            "type": "string",
+            "format": "default",
+            "comments": "Description of content of the resource, containing the Who, What, When, Where and Why as free-form text.",
+            "examples": "`herbarium sheet scan`",
+            "namespace": "dcterms",
+            "iri": "http://purl.org/dc/terms/description"
         }
     ],
     "primaryKey": "mediaID",
