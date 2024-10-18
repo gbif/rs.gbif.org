@@ -44,7 +44,7 @@ def check_urls_are_resolvable(package_data):
         try:
             response = requests.head(url, allow_redirects=True, timeout=5)
             if response.status_code >= 400:
-                relative_path = re.sub(r'^https?://rs\.gbif\.org', '', url)
+                relative_path = re.sub(r'^https?://rs\.gbif\.org/', '', url)
                 if not os.path.exists(relative_path):
                     print(f"Error: Unreachable URL: {url}")
                     print(f"Error: File does not exist {relative_path}")
