@@ -249,6 +249,13 @@
                 "resource": "genetic-sequence",
                 "fields": "geneticSequenceID"
             }
+        },
+        {
+            "fields": "identificationBasedOnMediaID",
+            "reference": {
+                "resource": "media",
+                "fields": "mediaID"
+            }
         }
     ]
 }
