@@ -80,22 +80,22 @@
             "iri": "http://rs.tdwg.org/dwc/terms/fieldNumber"
         },
         {
-            "name": "recordedBy",
-            "description": "The name of the Agent who recorded a dwc:Event in the field.",
+            "name": "eventConductedBy",
+            "description": "The name of the Agent most immediately responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson` (where the value in recordNumber `OPP 7101` corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
         },
         {
-            "name": "recordedByID",
-            "description": "An identifier for the Agent who recorded a dwc:Event in the field.",
+            "name": "eventConductedByID",
+            "description": "An identifier for the Agent most immediately responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "`https://orcid.org/0000-0002-1825-0097` (for an individual); `https://orcid.org/0000-0002-1825-0097 | https://orcid.org/0000-0002-1825-0098` (for a list of people)",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
         },
@@ -829,7 +829,7 @@
             }
         },
         {
-            "fields": "recordedByID",
+            "fields": "eventConductedByID",
             "reference": {
                 "resource": "agent",
                 "fields": "agentID"

@@ -152,9 +152,9 @@
             "description": "Specifications of relationships between entities."
         }
     ],
-    "title": "Extended Occurrence Data Package - Darwin Core Archive v2",
-    "shortTitle": "ExtendedOccurrenceDwCAv2",
-    "description": "A data package for sharing extended Occurrence data using Darwin Core Archives, version 2.",
-    "issued": "2024-10-15",
+    "title": "Darwin Core Archive v2",
+    "shortTitle": "DwCAv2",
+    "description": "A data package for sharing biodiversity data using Darwin Core Archives, version 2.",
+    "issued": "2024-10-22",
     "isLatest": true
 }

@@ -21,7 +21,7 @@
         },
         {
             "name": "identificationBasedOnOccurrenceID",
-            "description": "The identifier for a dwc:Occurrence for which the dwc:Identification was made.",
+            "description": "An identifier for a dwc:Occurrence for which the dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -31,7 +31,7 @@
         },
         {
             "name": "identificationBasedOnMaterialEntityID",
-            "description": "The identifier for the dwc:MaterialEntity for which the dwc:Identification was made.",
+            "description": "An identifier for a dwc:MaterialEntity based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -41,7 +41,7 @@
         },
         {
             "name": "identificationBasedOnGeneticSequenceID",
-            "description": "The identifier for the GeneticSequence for which the dwc:Identification was made.",
+            "description": "An identifier for a GeneticSequence based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -50,28 +50,8 @@
             "iri": ""
         },
         {
-            "name": "identificationType",
-            "description": "The category that best matches the nature of a dwc:Identification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary.",
-            "examples": "`GeneticSequence`; `TaxonDistribution`; `MaterialEntity`; `Sound`; `StillImage`; `MovingImage`; `Text`; `HumanObservation`; `MachineObservation`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of dwc:Identification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary..",
-            "examples": "`http://rs.tdwg.org/dwc/terms/MaterialEntity`; `http://purl.org/dc/dcmitype/Sound`; `http://purl.org/dc/dcmitype/StillImage`; `http://purl.org/dc/dcmitype/MovingImage`; `http://purl.org/dc/dcmitype/Text`; `http://rs.tdwg.org/dwc/terms/HumanObservation`; `http://rs.tdwg.org/dwc/terms/MachineObservation`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:identificationType are given.",
+            "name": "identificationBasedOnMediaID",
+            "description": "An identifier for a Media instance based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",

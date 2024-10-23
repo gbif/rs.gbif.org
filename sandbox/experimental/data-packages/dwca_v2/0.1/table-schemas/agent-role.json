@@ -78,6 +78,16 @@
             "iri": ""
         },
         {
+            "name": "agentRoleDate",
+            "description": "The interval during which the AgentRole was in effect.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+            "examples": "`2024-07-29`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "agentID",
             "description": "An identifier for an Agent.",
             "type": "string",
