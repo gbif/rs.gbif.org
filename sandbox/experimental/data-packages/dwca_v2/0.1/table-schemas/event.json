@@ -1,7 +1,7 @@
 {
     "name": "event",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/event",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/event.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/event",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/event.json",
     "title": "Event",
     "description": "The spatiotemporal context (dwc:Event and dcterms:Location) of an activity.",
     "fields": [
@@ -80,22 +80,22 @@
             "iri": "http://rs.tdwg.org/dwc/terms/fieldNumber"
         },
         {
-            "name": "recordedBy",
-            "description": "The name of the Agent who recorded a dwc:Event in the field.",
+            "name": "eventConductedBy",
+            "description": "The name of the Agent most immediately responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson` (where the value in recordNumber `OPP 7101` corresponds to the collector number for the specimen in the field catalog of Oliver P. Pearson)",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
         },
         {
-            "name": "recordedByID",
-            "description": "An identifier for the Agent who recorded a dwc:Event in the field.",
+            "name": "eventConductedByID",
+            "description": "An identifier for the Agent most immediately responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "`https://orcid.org/0000-0002-1825-0097` (for an individual); `https://orcid.org/0000-0002-1825-0097 | https://orcid.org/0000-0002-1825-0098` (for a list of people)",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
         },
@@ -291,7 +291,7 @@
         },
         {
             "name": "habitat",
-            "description": "A category or description of the habitat in which an Event occurred.",
+            "description": "A category or description of the habitat in which a dwc:Event occurred.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -300,34 +300,44 @@
             "iri": "http://rs.tdwg.org/dwc/terms/habitat"
         },
         {
+            "name": "protocolID",
+            "description": "An identifier for a Protocol used during a dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwciri",
+            "iri": "http://rs.tdwg.org/dwc/iri/samplingProtocol"
+        },
+        {
             "name": "protocolName",
-            "description": "The name of a method or protocol used during a dwc:Event.",
+            "description": "The name of a Protocol used during a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "http://rs.tdwg.org/dwc/terms/samplingProtocol"
         },
         {
             "name": "protocolDescription",
-            "description": "The names of, references to, or descriptions of the methods or protocols used during a dwc:Event.",
+            "description": "A description of a Protocol used during a dwc:Event.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary Event with multiple protocols, in which a specific protocol can not be attributed to specific child Events, the recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "comments": "Recommended best practice is describe a dwc:Event with no more than one sampling protocol. In the case of a summary dwc:Event with multiple protocols, in which a specific protocol can not be attributed to specific child dwc:Events, the recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
             "examples": "`UV light trap`; `mist net`; `bottom trawl`; `ad hoc observation | point count`; `Penguins from space: faecal stains reveal the location of emperor penguin colonies, https://doi.org/10.1111/j.1466-8238.2009.00467.x`; `Takats et al. 2001. Guidelines for Nocturnal Owl Monitoring in North America. Beaverhill Bird Observatory and Bird Studies Canada, Edmonton, Alberta. 32 pp., http://www.bsc-eoc.org/download/Owl.pdf`",
             "namespace": "gum",
             "iri": ""
         },
         {
-            "name": "protocolIRI",
-            "description": "The IRI leading to a protocolName and/or protocolDescription.",
+            "name": "protocolCitation",
+            "description": "A bibliographic citation for a Protocol used during a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "http://purl.org/dc/terms/bibliographicCitation"
         },
         {
             "name": "sampleSizeValue",
@@ -759,6 +769,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/georeferencedDate"
         },
         {
+            "name": "georeferenceProtocolID",
+            "description": "An identifier for a Protocol used to georeference a dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwciri",
+            "iri": "http://rs.tdwg.org/dwc/iri/georeferenceProtocol"
+        },
+        {
             "name": "georeferenceProtocol",
             "description": "A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties.",
             "type": "string",
@@ -809,10 +829,17 @@
             }
         },
         {
-            "fields": "recordedByID",
+            "fields": "eventConductedByID",
             "reference": {
                 "resource": "agent",
                 "fields": "agentID"
+            }
+        },
+        {
+            "fields": "eventProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
             }
         },
         {
@@ -820,6 +847,13 @@
             "reference": {
                 "resource": "agent",
                 "fields": "agentID"
+            }
+        },
+        {
+            "fields": "georeferenceProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
             }
         }
     ]

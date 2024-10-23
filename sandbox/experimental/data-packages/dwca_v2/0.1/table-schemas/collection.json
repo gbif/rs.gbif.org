@@ -1,7 +1,7 @@
 {
     "name": "collection",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/collection",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/collection.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/collection",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/collection.json",
     "title": "Collection",
     "description": "Persistent formal repositories in which dwc:MaterialEntities and/or Media are preserved.",
     "fields": [
@@ -50,16 +50,6 @@
             "iri": ""
         },
         {
-            "name": "institutionID",
-            "description": "The identifier for an institution (Agent).",
-            "type": "string",
-            "format": "default",
-            "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
-            "examples": "`https://ror.org/015hz7p22`; `http://grscicoll.org/institution/museum-southwestern-biology`; `https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381`",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/institutionID"
-        },
-        {
             "name": "institutionCode",
             "description": "The name (or acronym) in use by an institution.",
             "type": "string",
@@ -68,6 +58,16 @@
             "examples": "`MVZ`; `FMNH`; `CLO`; `UCMP`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/institutionCode"
+        },
+        {
+            "name": "institutionID",
+            "description": "The identifier for an institution (Agent).",
+            "type": "string",
+            "format": "default",
+            "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
+            "examples": "`https://ror.org/015hz7p22`; `http://grscicoll.org/institution/museum-southwestern-biology`; `https://www.gbif.org/grscicoll/institution/e3d4dcc4-81e2-444c-8a5c-41d1044b5381`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/institutionID"
         },
         {
             "name": "collectionName",
