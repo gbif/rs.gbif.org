@@ -220,6 +220,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID"
         },
         {
+            "name": "derivationEventID",
+            "description": "An identifier for a dwc:Event during which a dwc:MaterialEntity was derived from another dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID"
+        },
+        {
             "name": "derivedFromMaterialEntityID",
             "description": "An identifier for a dwc:MaterialEntity from which this dwc:MaterialEntity was derived.",
             "type": "string",
