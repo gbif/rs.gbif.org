@@ -1,7 +1,7 @@
 {
     "name": "survey",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/survey",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/survey.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/survey.json",
     "title": "Survey",
     "description": "Information associated with dwc:Events that are biotic surveys.",
     "fields": [
@@ -610,6 +610,16 @@
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortProtocol"
         },
         {
+            "name": "samplingEffortProtocolID",
+            "description": "An identifier for a Protocol used to determine sampling effort.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "ecoiri",
+            "iri": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol"
+        },
+        {
             "name": "samplingEffortValue",
             "description": "The numeric value for the sampling effort expended during a dwc:Event.",
             "type": "number",
@@ -641,6 +651,13 @@
             "reference": {
                 "resource": "agent",
                 "fields": "agentID"
+            }
+        },
+        {
+            "fields": "samplingEffortProtocolID",
+            "reference": {
+                "resource": "protocol",
+                "fields": "protocolID"
             }
         }
     ]

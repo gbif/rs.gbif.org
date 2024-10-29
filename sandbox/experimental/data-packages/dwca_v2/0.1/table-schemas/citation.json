@@ -1,7 +1,7 @@
 {
     "name": "citation",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/citation",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/citation.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/citation",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/citation.json",
     "title": "Citation",
     "description": "Citations related directly to other entities.",
     "fields": [

@@ -1,7 +1,7 @@
 {
     "name": "agent-role",
-    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/extended-occurrence-dp/agent-role",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2-dp/extended-occurrence-dp/0.1/table-schemas/agent-role.json",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent-role",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/agent-role.json",
     "title": "AgentRole",
     "description": "Roles filled by Agents with respect to other entities.",
     "fields": [
@@ -74,6 +74,16 @@
                 "minimum": 1
             },
             "examples": "`1`; `2`; `3`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "agentRoleDate",
+            "description": "The interval during which the AgentRole was in effect.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+            "examples": "`2024-07-29`",
             "namespace": "gum",
             "iri": ""
         },
