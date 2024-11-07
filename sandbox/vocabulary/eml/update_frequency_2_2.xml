@@ -17,6 +17,7 @@
             <term dc:title="Journalière" xml:lang="fr"/>
             <term dc:title="Diariamente" xml:lang="pt"/>
             <term dc:title="每日一次" xml:lang="zh"/>
+            <term dc:title="Ежедневно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -30,6 +31,7 @@
             <term dc:title="Quotidienne" xml:lang="fr"/>
             <term dc:title="Semanalmente" xml:lang="pt"/>
             <term dc:title="每周一次" xml:lang="zh"/>
+            <term dc:title="Еженедельно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -43,6 +45,7 @@
             <term dc:title="Mensuel" xml:lang="fr"/>
             <term dc:title="Mensalmente" xml:lang="pt"/>
             <term dc:title="每月一次" xml:lang="zh"/>
+            <term dc:title="Ежемесячно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -56,6 +59,7 @@
             <term dc:title="Bi-annuel" xml:lang="fr"/>
             <term dc:title="Bianual" xml:lang="pt"/>
             <term dc:title="兩年一次" xml:lang="zh"/>
+            <term dc:title="Дважды в год" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -69,6 +73,7 @@
             <term dc:title="Annuel" xml:lang="fr"/>
             <term dc:title="Atualmente" xml:lang="pt"/>
             <term dc:title="每年一次" xml:lang="zh"/>
+            <term dc:title="Ежегодно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -82,6 +87,7 @@
             <term dc:title="Quand cela est nécessaire" xml:lang="fr"/>
             <term dc:title="Quando necessário" xml:lang="pt"/>
             <term dc:title="需要時" xml:lang="zh"/>
+            <term dc:title="По мере необходимости" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -95,6 +101,7 @@
             <term dc:title="Continuellement" xml:lang="fr"/>
             <term dc:title="Continuamente" xml:lang="pt"/>
             <term dc:title="持續更新" xml:lang="zh"/>
+            <term dc:title="Постоянно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -108,6 +115,7 @@
             <term dc:title="Irrègulière" xml:lang="fr"/>
             <term dc:title="Irregular" xml:lang="pt"/>
             <term dc:title="依其他週期更新" xml:lang="zh"/>
+            <term dc:title="Нерегулярно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -121,6 +129,7 @@
             <term dc:title="Non planifié" xml:lang="fr"/>
             <term dc:title="Não plenejado" xml:lang="pt"/>
             <term dc:title="無計畫更新" xml:lang="zh"/>
+            <term dc:title="Не планируется" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -134,6 +143,7 @@
             <term dc:title="Inconnue" xml:lang="fr"/>
             <term dc:title="Desconhecido" xml:lang="pt"/>
             <term dc:title="有可能更新，但不確知何時" xml:lang="zh"/>
+            <term dc:title="Неизвестно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -147,6 +157,7 @@
             <term dc:title="Inconnue" xml:lang="fr"/>
             <term dc:title="Desconhecido" xml:lang="pt"/>
             <term dc:title="有可能更新，但不確知何時" xml:lang="zh"/>
+            <term dc:title="Неизвестно" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -160,6 +171,7 @@
             <term dc:title="Autre période de maintenance" xml:lang="fr"/>
             <term dc:title="Outro período de manutenção" xml:lang="pt"/>
             <term dc:title="其他更新週期" xml:lang="zh"/>
+            <term dc:title="Другой период обслуживания" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
