@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/terms/"
+	xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+	dc:title="Audiovisual Media Description" name="Multimedia" namespace="http://rs.tdwg.org/ac/terms/"
+	rowType="http://rs.tdwg.org/ac/terms/Multimedia"
+	dc:issued="2024-11-07"
+	dc:description="The Audiovisual Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them."
+	dc:relation="http://rs.tdwg.org/ac/doc/termlist/">
+	<!-- Audiovisual Media extension for IPT including selected fields from the
+	Audiovisual Core Term List -->
+	<!--Management Vocabulary-->
+	<property name="identifier" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/identifier" required="true" group="Management Vocabulary"
+		examples="&quot;http://www.morphbank.net/840303&quot;"
+		dc:description="An arbitrary code that is unique for the resource, with the resource being either a provider, collection, or media item."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_identifier"/>
+	<property name="type" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/type" required="false"
+		group="Management Vocabulary"
+		examples="&quot;Image&quot;, &quot;MovingImage&quot;, &quot;Sound&quot;"
+		dc:description="dc:type may take as value any type term from the DCMI Type Vocabulary. Recommended terms are Collection, StillImage, Sound, MovingImage, InteractiveResource, Text. Values may be used either in their literal form, or with a full namespace (e. g. http://purl.org/dc/dcmitype/StillImage) from a controlled vocabulary, but the best practice is to use the literal form when using dc:type and use dcterms:type when you can supply the URI from a controlled vocabulary and implementers may require this practice. At least one of dc:type and dcterms:type must be supplied but, when feasible, supplying both may make the metadata more widely useful. The values of each should designate the same type, but in case of ambiguity dcterms:type prevails."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_type"/>
+	<property name="type" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/type" required="false" group="Management Vocabulary"
+		examples="&quot;http://purl.org/dc/dcmitype/StillImage&quot;"
+		dc:description="A full URI preferably from among the type URIs specified in the DCMI Type Vocabulary. Recommended terms are those URIs whose labels are Collection, StillImage, Sound, MovingImage, InteractiveResource, or Text (e.g. http://purl.org/dc/dcmitype/Collection). Also recommended are the full URIs of ac:PanAndZoomImage, ac:3DStillImage, and ac: 3DMovingImage. Values MUST NOT be a string, but a URI with full namespace (e. g. http://purl.org/dc/dcmitype/StillImage) from a controlled vocabulary. Implementers and communities of practice may determine whether specific controlled vocabularies must be used. If the resource is a Collection, this item does not identify what types of objects it may contain. Following the DC recommendations at http://purl.org/dc/dcmitype/Text, images of text should be with this URI."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_type"/>
+	<property name="subtypeLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/subtypeLiteral" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="The subtype should provide more specialization than the type. Possible values are community-defined. For exmamples see the non-normative page AC_Subtype_Examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_subtypeLiteral"/> 
+	<property name="subtype" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/subtype" required="false"
+		group="Management Vocabulary"
+		examples="&quot;Photograph&quot;, &quot;Animation&quot;, &quot;Drawing&quot;"
+		dc:description="Any URI may be used that provides for more specialization than the type. Possible values are community-defined. For exmamples see the non-normative page AC_Subtype_Examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_subtype"/>
+	<property name="title" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/title" required="false" group="Management Vocabulary"
+		examples="&quot;Epistenia coeruleata: head frontal view&quot;"
+		dc:description="Concise title, name, or brief descriptive label of institution, resource collection, or individual resource. This field should include the complete title with all the subtitles, if any."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_title"/>
+	<property name="modified" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/modified" required="false" group="Management Vocabulary"
+		examples="&quot;2007-02-16&quot;"
+		dc:description="Date that the media resource was altered. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (&quot;forward slash&quot;, '/'). See also the wikipedia IS0 8601 entry for further explanation and examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_modified"/>
+	<property name="MetadataDate" namespace="http://ns.adobe.com/xap/1.0"
+		qualName="http://ns.adobe.com/xap/1.0/MetadataDate" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="Point in time recording when the last modification to metadata (not necessarily the media object itself) occurred. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (&quot;forward slash&quot;, '/'). See also the wikipedia IS0 8601 entry for further explanation and examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmp_MetadataDate"/>
+	<property name="metadataLanguageLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataLanguageLiteral" required="false"
+		group="Management Vocabulary" examples="&quot;eng&quot;, &quot;fre&quot;"
+		dc:description="Language of description and other metadata (but not necessarily of the image itself) represented as an ISO639-2 three letter language code. ISO639-1 two-letter codes are permitted but deprecated. Note: At least one of ac:metadataLanguage and ac:metadataLanguageLiteral must be supplied but, when feasible, supplying both may make the metadata more widely useful."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataLanguageLiteral"/>
+	<property name="metadataLanguage" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataLanguage" required="false"
+		group="Management Vocabulary"
+		examples="&quot;http://www.lexvo.org/page/iso639-3/eng&quot;, &quot;http://www.lexvo.org/page/iso639-3/fra&quot;"
+		dc:description="URI from the ISO639-2 list of URIs for ISO 3-letter language codes. Note: At least one of ac:metadataLanguage and ac:metadataLanguageLiteral must be supplied but, when feasible, supplying both may make the metadata more widely useful"
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataLanguage"/>
+	<property name="providerManagedID" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/providerManagedID" required="false"
+		group="Management Vocabulary"
+		examples="&quot;840303&quot;, &quot;http://www.morphbank.net/840303&quot;"
+		dc:description="A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) that is unique and meaningful primarily for the data provider."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_providerManagedID"/>
+	<property name="Rating" namespace="http://ns.adobe.com/xap/1.0"
+		qualName="http://ns.adobe.com/xap/1.0/Rating" required="false" group="Management Vocabulary"
+		examples=""
+		dc:description="A rating of the media resources, provided by record originators or editors, with -1 defining “rejected”, “0” defining “unrated”, and “1” (worst) to “5” (best)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmp_Rating"/>
+	<property name="commenterLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/commenterLiteral" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="A name or the literal &quot;anonymous&quot; (= anonymously commented)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_commenterLiteral"/>
+	<property name="commenter" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/commenter" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="A URI denoting a person, using some controlled vocabulary such as FOAF. Implementers and communities of practice may produce restrictions or recommendations on the choice of vocabularies. See also the entry for ac:commenterLiteral in this document and the section Namespaces, Prefixes and Term Names for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_commenter"/>
+	<property name="comments" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/comments" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="Any comment provided on the media resource, as free-form text. Best practice would also identify the commenter."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_comments"/>
+	<property name="reviewerLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/reviewerLiteral" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="String providing the name of a reviewer. If present, then resource is peer-reviewed, even if Reviewer Comments is absent or empty. Its presence tells whether an expert in the subject featured in the media has reviewed the media item or collection and approved its metadata description; must display a name or the literal &quot;anonymous&quot; (= anonymously reviewed)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_reviewerLiteral"/>
+	<property name="reviewer" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/reviewer" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="URI for a reviewer. If present, then resource is peer-reviewed, even if there are Reviewer Comments is absent or empty. Its presence tells whether an expert in the subject featured in the media has reviewed the media item or collection and approved its metadata description; must display a name or the literal &quot;anonymous&quot; (= anonymously reviewed)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_reviewer"/>
+	<property name="reviewerComments" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/reviewerComments" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="Any comment provided by a reviewer with expertise in the subject, as free-form text."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_reviewerComments"/>
+	<property name="available" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/available" required="false" group="Management Vocabulary"
+		examples="&quot;2007-02-16&quot;"
+		dc:description="The date (often a range) that the resource became or will become available. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (&quot;forward slash&quot;, '/'). See also the wikipedia IS0 8601 entry for further explanation and examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_available"/>
+	<property name="hasServiceAccessPoint" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/hasServiceAccessPoint" required="false"
+		group="Management Vocabulary" examples=""
+		dc:description="In a chosen serialization (RDF, XML Schema, etc.) the potentially multiple service access points (e.g., for different resolutions of an image) might be provided in a referenced or in a nested object. This property identifies one such access point. That is, each of potentially multiple values of hasServiceAccessPoint identifies a set of representation-dependent metadata using the properties defined under the section Service Access Point Vocabulary."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_hasServiceAccessPoint"/>
+	<!--Attribution Vocabulary-->
+	<property name="rights" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/rights" required="false"
+		group="Attribution Vocabulary"
+		examples="&quot;Copyright 2014 Ron Thomas&quot; or a URI like &quot;http://creativecommons.org/licenses/by/3.0/legalcode&quot;"
+		dc:description="Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , &quot;Public Domain.&quot;, &quot;Copyright unknown.&quot; Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_rights"/>
+	<property name="rights" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/rights" required="false" group="Attribution Vocabulary"
+		examples=""
+		dc:description="A URI pointing to structured information about rights held in and over the resource. Examples include http://creativecommons.org/licenses/by/3.0/legalcode and http://creativecommons.org/publicdomain/zero/1.0/. At least one of dcterms:rights and dc:rights must be supplied but, when feasible, supplying both may make the metadata more widely useful. They must specify the same rights. In case of ambiguity, dcterms:rights prevails."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_rights"/>
+	<property name="Owner" namespace="http://ns.adobe.com/xap/1.0/rights"
+		qualName="http://ns.adobe.com/xap/1.0/rights/Owner" required="false"
+		group="Attribution Vocabulary"
+		examples="&quot;The names of the owners &quot;Ron Thomas, Roz Thomas&quot; or a URI that identifies the owner&quot;"
+		dc:description="A list of the names of the owners of the copyright. 'Unknown' is an acceptable value, but 'Public Domain' is not."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmpRights_Owner"/>
+	<property name="UsageTerms" namespace="http://ns.adobe.com/xap/1.0/rights"
+		qualName="http://ns.adobe.com/xap/1.0/rights/UsageTerms" required="false"
+		group="Attribution Vocabulary" examples=""
+		dc:description="The license statement defining how resources may be used. Information on a collection applies to all contained objects unless the object has a different statement."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmpRights_UsageTerms"/>
+	<property name="WebStatement" namespace="http://ns.adobe.com/xap/1.0/rights"
+		qualName="http://ns.adobe.com/xap/1.0/rights/WebStatement" required="false"
+		group="Attribution Vocabulary"
+		examples="&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/us/&quot;"
+		dc:description="A URL defining or further elaborating on the license statement (e. g., a web page explaining the precise terms of use)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmpRights_WebStatement"/>
+	<property name="licenseLogoURL" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/licenseLogoURL" required="false"
+		group="Attribution Vocabulary"
+		examples="&quot;http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png&quot;"
+		dc:description="A URL providing access to a logo that symbolizes the License."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_licenseLogoURL"/>
+	<property name="Credit" namespace="http://ns.adobe.com/photoshop/1.0"
+		qualName="http://ns.adobe.com/photoshop/1.0/Credit" required="false"
+		group="Attribution Vocabulary" examples=""
+		dc:description="free text for &quot;Please cite this as…&quot;"
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#photoshop_Credit"/>
+	<property name="attributionLogoURL" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/attributionLogoURL" required="false"
+		group="Attribution Vocabulary"
+		examples="&quot;http://www.morphbank.net/images/userLogos/11a.jpg&quot;"
+		dc:description="The URL of the icon or logo image to appear in source attribution."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_attributionLogoURL"/>
+	<property name="attributionLinkURL" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/attributionLinkURL" required="false"
+		group="Attribution Vocabulary" examples=""
+		dc:description="The URL where information about ownership, attribution, etc. of the resource may be found."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_attributionLinkURL"/>
+	<property name="fundingAttribution" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/fundingAttribution" required="false"
+		group="Attribution Vocabulary" examples=""
+		dc:description="Organizations or individuals who funded the creation of the resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_fundingAttribution"/>
+	<property name="source" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/source" required="false"
+		group="Attribution Vocabulary" examples=""
+		dc:description="A string providing an identifiable source from which the described resources was derived."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_source"/>
+	<property name="source" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/source" required="false" group="Attribution Vocabulary"
+		examples="&quot;http://biocol.org/institution/australian-national-insect-collection&quot;"
+		dc:description="URI for an identifiable source from which the described resources was derived."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_source"/>
+	<!--Agents Vocabulary-->
+	<property name="creator" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/creator" required="false"
+		group="Agents Vocabulary" examples="&quot;Michael Gates&quot;"
+		dc:description="The person or organization responsible for creating the media resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_creator"/>
+	<property name="creator" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/creator" required="false" group="Agents Vocabulary"
+		examples="&quot;http://orcid.org/0000-0002-4879-3367&quot;"
+		dc:description="A URI representing the person or organization responsible for creating the media resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_creator"/>
+	<property name="providerLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/providerLiteral" required="false"
+		group="Agents Vocabulary" examples=""
+		dc:description="Person or organization responsible for presenting the media resource. If no separate Metadata Provider is given, this also attributes the metadata."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_providerLiteral"/>
+	<property name="provider" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/provider" required="false" group="Agents Vocabulary"
+		examples="&quot;http://morphbank.net&quot;"
+		dc:description="URI for person or organization responsible for presenting the media resource. If no separate Metadata Provider is given, this also attributes the metadata."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_provider"/>
+	<property name="metadataCreatorLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataCreatorLiteral" required="false"
+		group="Agents Vocabulary" examples="&quot;Michael Gates&quot;"
+		dc:description="Person or organization originally creating the resource metadata record."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataCreatorLiteral"/>
+	<property name="metadataCreator" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataCreator" required="false"
+		group="Agents Vocabulary" examples="&quot;http://www.morphbank.net/?id=77638&quot;"
+		dc:description="Person or organization originally creating the resource metadata record."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataCreator"/>
+	<property name="metadataProviderLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataProviderLiteral" required="false"
+		group="Agents Vocabulary" examples="&quot;Morphbank&quot;"
+		dc:description="Person or organization originally responsible for providing the resource metadata record."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataProviderLiteral"/>
+	<property name="metadataProvider" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/metadataProvider" required="false"
+		group="Agents Vocabulary" examples="&quot;http://morphbank.net&quot;"
+		dc:description="URI of person or organization originally responsible for providing the resource metadata record."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_metadataProvider"/>
+	<!--Content Coverage Vocabulary-->
+	<property name="description" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/description" required="false"
+		group="Content Coverage Vocabulary"
+		examples="&quot;Epistenia coeruleata: head frontal view&quot;"
+		dc:description="Description of collection or individual resource, containing the Who, What, When, Where and Why as free-form text. This normative document is silent on the nature of formatting in the text. It is the role of implementers of an AC concrete representation (e.g., an XML Schema, an RDF representation, etc.) to decide and document how formatting advice will be represented in descriptions serialized according to such representations."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_description"/>
+	<property name="caption" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/caption" required="false"
+		group="Content Coverage Vocabulary" examples=""
+		dc:description="As alternative or in addition to description, a caption is free-form text to be displayed together with (rather than instead of) a resource that is suitable for captions (especially images)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_caption"/>
+	<property name="language" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/language" required="false"
+		group="Content Coverage Vocabulary" examples="&quot;eng&quot;, &quot;fre&quot;"
+		dc:description="Language(s) of resource itself represented in the ISO639-2 three-letter language code. ISO639-1 two-letter codes are permitted but deprecated."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_language"/>
+	<property name="language" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/language" required="false"
+		group="Content Coverage Vocabulary" examples="&quot;http://lexvo.org/id/iso639-3/eng&quot;"
+		dc:description="URI from the ISO639-2 list of URIs for ISO 3-letter language codes."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_language"/>
+	<property name="physicalSetting" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/physicalSetting" required="false"
+		group="Content Coverage Vocabulary" examples=""
+		dc:description="The setting of the content represented in media such as images, sounds, and movies if the provider deems them relevant. Constrained vocabulary of: &quot;Natural&quot; = Object in its natural setting of the object (e. g. living organisms in their natural environment); &quot;Artificial&quot; = Object in an artificial environment (e. g. living organisms in an artificial environment such as a zoo, garden, greenhouse, or laboratory); &quot;Edited&quot; = Human media editing of a natural setting or media acquisition with a separate media background such as a photographic backdrop."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_physicalSetting"/>
+	<property name="CVterm" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm" required="false"
+		group="Content Coverage Vocabulary" examples=""
+		dc:description="Controlled vocabulary of subjects to support broad classification of media items. Terms from various controlled vocabularies may be used. AC-recommended vocabularies are preferred and may be unqualified literals (not a full URI). For terms from other vocabularies either a precise URI should be used, or, as long as all unqualified terms in all vocabularies are unique, metadata should provide the source vocabularies using the Subject Category Vocabulary term."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_CVterm"/>
+	<property name="subjectCategoryVocabulary" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary" required="false"
+		group="Content Coverage Vocabulary" examples=""
+		dc:description="Any vocabulary or formal classification from which terms in the Subject Category have been drawn."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_subjectCategoryVocabulary"/>
+	<property name="tag" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/tag" required="false"
+		group="Content Coverage Vocabulary" examples="&quot;head, wasp, eyes, blue&quot;"
+		dc:description="General keywords or tags."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_tag"/>
+	<!--Geography Vocabulary-->
+	<property name="LocationShown" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationShown" required="false"
+		group="Geography Vocabulary"
+		examples="&quot;Virginia: Essex County: 1 mi. SE Dunnsville&quot;"
+		dc:description="The location that is depicted the media content, irrespective of the location at which the resource has been created."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_LocationShown"/>
+	<property name="WorldRegion" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/WorldRegion" required="false"
+		group="Geography Vocabulary" examples=""
+		dc:description="Name of a world region in some high level classification, such as names for continents, waterbodies, or island groups, whichever is most appropriate. The terms preferably are derived from a controlled vocabulary."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_WorldRegion"/>
+	<property name="CountryCode" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode" required="false"
+		group="Geography Vocabulary" examples="&quot;US&quot;"
+		dc:description="The geographic location of the specific entity or entities documented by the media item, expressed through a constrained vocabulary of countries using ISO 3166-1-alpha-2 2-letter country codes (e. g. &quot;IT, SI&quot;)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_CountryCode"/>
+	<property name="CountryName" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName" required="false"
+		group="Geography Vocabulary" examples="&quot;United States&quot;"
+		dc:description="This field can be free text, but where possible, the use of http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode is preferred."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_CountryName"/>
+	<property name="ProvinceState" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/ProvinceState" required="false"
+		group="Geography Vocabulary" examples="&quot;Virginia&quot;"
+		dc:description="Optionally, the geographic unit immediately below the country level (individual states in federal countries, provinces, or other administrative units) in which the subject of the media resource (e. g., species, habitats, or events) were located (if such information is available in separate fields)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_ProvinceState"/>
+	<property name="City" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/City" required="false"
+		group="Geography Vocabulary" examples=""
+		dc:description="Optionally, the name of a city or place commonly found in gazetteers (such as a mountain or national park) in which the subjects (e. g., species, habitats, or events) were located."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_City"/>
+	<property name="Sublocation" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/Sublocation" required="false"
+		group="Geography Vocabulary" examples=""
+		dc:description="Free-form text location details of the location of the subjects, down to the village, forest, or geographic feature etc., below the Iptc4xmpExt:City place name, especially information that could not be found in a gazetteer."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_Sublocation"/>
+	<!--Temporal Coverage Vocabulary-->
+	<property name="temporal" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/temporal" required="false"
+		group="Temporal Coverage Vocabulary" examples=""
+		dc:description="The coverage (extent or scope) of the content of the resource. Temporal coverage will typically include temporal period (a period label, date, or date range) to which the subjects of the media or media collection relate. If dates are mentioned, they should follow ISO 8601. When the resource is a Collection, this refers to the temporal coverage of the collection. Following dcterms:temporal , the value must be a URI."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_temporal"/>
+	<property name="CreateDate" namespace="http://ns.adobe.com/xap/1.0"
+		qualName="http://ns.adobe.com/xap/1.0/CreateDate" required="false"
+		group="Temporal Coverage Vocabulary" examples=""
+		dc:description="The date of the creation of the original resource from which the digital media was derived or created. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (&quot;forward slash&quot;, '/'). See also the wikipedia IS0 8601 entry for further explanation and examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#xmp_CreateDate"/>
+	<property name="timeOfDay" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/timeOfDay" required="false"
+		group="Temporal Coverage Vocabulary" examples=""
+		dc:description="Free text information beyond exact clock times."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_timeOfDay"/>
+	<!--Taxonomic Coverage Vocabulary-->
+	<property name="taxonCoverage" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/taxonCoverage" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource (which may be a media item or a collection)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_taxonCoverage"/>
+	<property name="scientificName" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/scientificName" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;Epistenia coeruleata&quot;"
+		dc:description="Scientific names of taxa represented in the media resource (with date and name authorship information if available) of the lowest level taxonomic rank that can be applied."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_scientificName"/>
+	<property name="identificationQualifier" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/identificationQualifier" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="A brief phrase or a standard abbreviation (&quot;cf. genus&quot;, &quot;cf. species&quot;, &quot;cf. var.&quot;, &quot;aff. species&quot;, etc.) to express the determiner's doubts with respect to a specified taxonomic rank about the identification given in Scientific Taxon Name."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_identificationQualifier"/>
+	<property name="vernacularName" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/vernacularName" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="Common (= vernacular) names of the subject in one or several languages. The ISO language name should be given in parentheses after the name if not all names are given by values of the Metadata Language term."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_vernacularName"/>
+	<property name="nameAccordingTo" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/nameAccordingTo" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;Catalog of Life&quot;"
+		dc:description="The taxonomic authority used to apply the name to the taxon, e. g., a person, book or web service."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_nameAccordingTo"/>
+	<property name="scientificNameID" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/scientificNameID" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="An identifier for the nomenclatural (not taxonomic) details of a scientific name."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_scientificNameID"/>
+	<property name="otherScientificName" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/otherScientificName" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="One or several Scientific Taxon Names that are synonyms to the Scientific Taxon Name may be provided here."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_otherScientificName"/>
+	<property name="identifiedBy" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/identifiedBy" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;M. Gates&quot;"
+		dc:description="The name(s) of the person(s) who applied the Scientific Taxon Name to the media item or the occurrence represented in the media item."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_identifiedBy"/>
+	<property name="dateIdentified" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/dateIdentified" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;2007-01-15&quot;"
+		dc:description="The date on which the person(s) given under Identfied By applied a Scientific Taxon Name to the resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_dateIdentified"/>
+	<property name="taxonCount" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/taxonCount" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="An exact or estimated number of taxa at the lowest applicable taxon rank (usually species or infraspecific) represented by the media resource (item or collection)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_taxonCount"/>
+	<property name="subjectPart" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/subjectPart" required="false"
+		group="Taxonomic Coverage Vocabulary"
+		examples="&quot;head&quot;, &quot;herbarium sheet&quot;, &quot;habitat&quot;"
+		dc:description="The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_subjectPart"/>
+	<property name="sex" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/sex" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;female&quot;"
+		dc:description="A description of the sex of any organisms featured within the media, when relevant to the subject of the media, e. g., male, female, hermaphrodite, dioecious."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_sex"/>
+	<property name="lifeStage" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/lifeStage" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="A description of the life-cycle stage of any organisms featured within the media, when relevant to the subject of the media, e. g., larvae, juvenile, adult."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_lifeStage"/>
+	<property name="subjectOrientation" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/subjectOrientation" required="false"
+		group="Taxonomic Coverage Vocabulary" examples="&quot;frontal&quot;, &quot;dorsal&quot;"
+		dc:description="Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_subjectOrientation"/>
+	<property name="preparations" namespace="http://rs.tdwg.org/dwc/terms"
+		qualName="http://rs.tdwg.org/dwc/terms/preparations" required="false"
+		group="Taxonomic Coverage Vocabulary" examples=""
+		dc:description="Free form text describing the techniques used to prepare the subject of the media, prior to or while creating the media resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dwc_preparations"/>
+	<!--Resource Creation Vocabulary-->
+	<property name="LocationCreated" namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29"
+		qualName="http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationCreated" required="false"
+		group="Resource Creation Vocabulary" examples=""
+		dc:description="The location at which the media recording instrument was placed when the media was created."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#Iptc4xmpExt_LocationCreated"/>
+	<property name="digitizationDate" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/digitizationDate" required="false"
+		group="Resource Creation Vocabulary" examples=""
+		dc:description="Date the first digital version was created, if different from Original Date and Time found in the Temporal Coverage Vocabulary. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (&quot;forward slash&quot;, '/'). See also the wikipedia IS0 8601 entry for further explanation and examples."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_digitizationDate"/>
+	<property name="captureDevice" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/captureDevice" required="false"
+		group="Resource Creation Vocabulary" examples="&quot;digital camera, UV pass filter&quot;"
+		dc:description="Free form text describing the device or devices used to create the resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_captureDevice"/>
+	<property name="resourceCreationTechnique" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/resourceCreationTechnique" required="false"
+		group="Resource Creation Vocabulary" examples="&quot;Cleared in KOH, platinum-coated&quot;"
+		dc:description="Information about technical aspects of the creation and digitization process of the resource. This includes modification steps (&quot;retouching&quot;) after the initial resource capture."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_resourceCreationTechnique"/>
+	<!--Related Resources Vocabulary-->
+	<property name="IDofContainingCollection" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/IDofContainingCollection" required="false"
+		group="Related Resources Vocabulary"
+		examples="&quot;http://www.morphbank.net/?id=110401&quot;"
+		dc:description="If the resource is contained in a Collection, this field identifies that Collection uniquely. Its form is not specified by this normative document, but is left to implementers of specific implementations."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_IDofContainingCollection"/>
+	<property name="relatedResourceID" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/relatedResourceID" required="false"
+		group="Related Resources Vocabulary" examples=""
+		dc:description="Resource related in ways not specified through a collection, e.g., before-after images; time-lapse series; different orientations/angles of view"
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_relatedResourceID"/>
+	<property name="providerID" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/providerID" required="false"
+		group="Related Resources Vocabulary" examples="&quot;http://www.morphbank.net/110401&quot;"
+		dc:description="A globally unique ID of the provider of the current AC metadata record."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_providerID"/>
+	<property name="derivedFrom" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/derivedFrom" required="false"
+		group="Related Resources Vocabulary" examples=""
+		dc:description="A reference to an original resource from which the current one is derived."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_derivedFrom"/>
+	<property name="associatedSpecimenReference" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/associatedSpecimenReference" required="false"
+		group="Related Resources Vocabulary" examples="&quot;http://www.morphbank.net/135231&quot;"
+		dc:description="A reference to a specimen associated with this resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_associatedSpecimenReference"/>
+	<property name="associatedObservationReference" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/associatedObservationReference" required="false"
+		group="Related Resources Vocabulary" examples=""
+		dc:description="A reference to an observation associated with this resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_associatedObservationReference"/>
+	<!--Service Access Point Vocabulary-->
+	<property name="accessURI" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/accessURI" required="false"
+		group="Service Access Point Vocabulary"
+		examples="&quot;http://images.morphbank.net/?id=135233&amp;imgType=jpeg&quot;"
+		dc:description="A URI that uniquely identifies a service that provides a representation of the underlying resource. If this resource can be acquired by an http request, its http URL should be given. If not, but it has some URI in another URI scheme, that may be given here."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_accessURI"/>
+	<property name="format" namespace="http://purl.org/dc/elements/1.1"
+		qualName="http://purl.org/dc/elements/1.1/format" required="false"
+		group="Service Access Point Vocabulary" examples="&quot;tiff&quot;, &quot;jpeg&quot;"
+		dc:description="A string describing the technical format of the resource (file format or physical medium)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dc_format"/>
+	<property name="format" namespace="http://purl.org/dc/terms"
+		qualName="http://purl.org/dc/terms/format" required="false"
+		group="Service Access Point Vocabulary"
+		examples="&quot;http://mediatypes.appspot.com/jpeg&quot;"
+		dc:description="URI referencing the technical format of the resource (file format or physical medium)."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#dcterms_format"/>
+	<property name="variantLiteral" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/variantLiteral" required="false"
+		group="Service Access Point Vocabulary" examples="&quot;Best Quality&quot;"
+		dc:description="Text that describes this Service Access Point variant."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_variantLiteral"/>
+	<property name="variant" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/variant" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="A URI designating what this Service Access Point provides. Some suggested values are the URIs ac:Thumbnail, ac:Trailer, ac:LowerQuality, ac:MediumQuality, ac:GoodQuality, ac:BestQuality, and ac:Offline. Additional URIs from communities of practice may be introduced."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_variant"/>
+	<property name="variantDescription" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/variantDescription" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="Text that describes this Service Access Point variant"
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_variantDescription"/>
+	<property name="furtherInformationURL" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/furtherInformationURL" required="false"
+		group="Service Access Point Vocabulary"
+		examples="&quot;http://www.morphbank.net/135233&quot;"
+		dc:description="The URL of a Web site that provides additional information about the version of the media resource that is provided by the Service Access Point."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_furtherInformationURL"/>
+	<property name="licensingException" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/licensingException" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="The licensing statement for this variant of the media resource if different from that given in the License Statement property of the resource."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_licensingException"/>
+	<property name="serviceExpectation" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/serviceExpectation" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="A term that describes what service expectations users may have of the ac:accessURL. Recommended terms include online (denotes that the URL is expected to deliver the resource), authenticate (denotes that the URL delivers a login or other authentication interface requiring completion before delivery of the resource) published(non digital) (denotes that the URL is the identifier of a non-digital published work, for example a doi.) Communities should develop their own controlled vocabularies for Service Expectations."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_serviceExpectation"/>
+	<property name="hashFunction" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/hashFunction" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="The cryptographic hash function used to compute the value given in the Hash Value."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_hashFunction"/>
+	<property name="hashValue" namespace="http://rs.tdwg.org/ac/terms"
+		qualName="http://rs.tdwg.org/ac/terms/hashValue" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="The value computed by a hash function applied to the media that will be delivered at the access point."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#ac_hashValue"/>
+	<property name="PixelXDimension" namespace="http://ns.adobe.com/exif/1.0"
+		qualName="http://ns.adobe.com/exif/1.0/PixelXDimension" required="false"
+		group="Service Access Point Vocabulary" examples="&quot;2000 x 1500&quot;"
+		dc:description="The width in pixels of the media specified by the access point."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#exif_PixelXDimension"/>
+	<property name="PixelYDimension" namespace="http://ns.adobe.com/exif/1.0"
+		qualName="http://ns.adobe.com/exif/1.0/PixelYDimension" required="false"
+		group="Service Access Point Vocabulary" examples=""
+		dc:description="The height in pixels of the media specified by the access point."
+		dc:relation="http://rs.tdwg.org/ac/doc/termlist/#exif_PixelYDimension"/>
+</extension>
