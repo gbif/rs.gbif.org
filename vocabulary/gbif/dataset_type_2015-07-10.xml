@@ -18,6 +18,7 @@
             <term dc:title="出現紀錄" xml:lang="zh"/>
             <term dc:title="Ocorrência" xml:lang="pt"/>
             <term dc:title="オカレンス（観察データと標本)" xml:lang="ja"/>
+            <term dc:title="Находка" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -32,6 +33,7 @@
             <term dc:title="名錄" xml:lang="zh"/>
             <term dc:title="Checklist" xml:lang="pt"/>
             <term dc:title="チェックリスト" xml:lang="ja"/>
+            <term dc:title="Таксономический список" xml:lang="ru"/>
         </preferred>
         <alternative>
             <term dc:title="Liste de noms taxonomiques" xml:lang="fr"/>
@@ -47,6 +49,7 @@
             <term dc:title="Evento de muestreo" xml:lang="es"/>
             <term dc:title="Données d'échantillonnage" xml:lang="fr"/>
             <term dc:title="Evento de amostragem" xml:lang="pt"/>
+            <term dc:title="Событие отбора проб" xml:lang="ru"/>
         </preferred>
     </concept>
     <concept dc:identifier="metadata" dc:URI="http://rs.gbif.org/vocabulary/gbif/datasetType/metadata"
@@ -59,6 +62,7 @@
             <term dc:title="元數據" xml:lang="zh"/>
             <term dc:title="Somente metadatos" xml:lang="pt"/>
             <term dc:title="メタデータ" xml:lang="ja"/>
+            <term dc:title="Только метаданные" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -73,6 +77,7 @@
             <term dc:title="其它" xml:lang="zh"/>
             <term dc:title="Outro" xml:lang="pt"/>
             <term dc:title="その他" xml:lang="ja"/>
+            <term dc:title="Другое" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>

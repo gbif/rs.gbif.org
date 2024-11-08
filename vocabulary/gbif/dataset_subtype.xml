@@ -18,6 +18,7 @@
             <term dc:title="分類權威" xml:lang="zh"/>
             <term dc:title="Autoridade Taxonômica" xml:lang="pt"/>
             <term dc:title="正式な生物分類" xml:lang="ja"/>
+            <term dc:title="Таксономический авторитет" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -32,6 +33,7 @@
             <term dc:title="命名權威" xml:lang="zh"/>
             <term dc:title="Autoridade Nomenclatural" xml:lang="pt"/>
             <term dc:title="正式な学名命名" xml:lang="ja"/>
+            <term dc:title="Номенклатурный авторитет" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -46,6 +48,7 @@
             <term dc:title="主題性清冊" xml:lang="zh"/>
             <term dc:title="Inventário Temático" xml:lang="pt"/>
             <term dc:title="主題目録" xml:lang="ja"/>
+            <term dc:title="Тематическая инвентаризация" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -60,6 +63,7 @@
             <term dc:title="區域性清冊" xml:lang="zh"/>
             <term dc:title="Inventário Regional" xml:lang="pt"/>
             <term dc:title="地域目録" xml:lang="ja"/>
+            <term dc:title="Региональная инвентаризация" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -74,6 +78,7 @@
             <term dc:title="全球物種資料集" xml:lang="zh"/>
             <term dc:title="Conjunto de Dados Mundial de Espécies" xml:lang="pt"/>
             <term dc:title="地球規模生物種データセット" xml:lang="ja"/>
+            <term dc:title="Набор глобальных данных" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -88,6 +93,7 @@
             <term dc:title="取自物種出現紀錄" xml:lang="zh"/>
             <term dc:title="Derivado de Ocorrência" xml:lang="pt"/>
             <term dc:title="オカレンス由来の生物分類" xml:lang="ja"/>
+            <term dc:title="На основе находок" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -102,6 +108,7 @@
             <term dc:title="標本" xml:lang="zh"/>
             <term dc:title="Espécime" xml:lang="pt"/>
             <term dc:title="標本" xml:lang="ja"/>
+            <term dc:title="Образец" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
@@ -116,6 +123,7 @@
             <term dc:title="觀測" xml:lang="zh"/>
             <term dc:title="Observação" xml:lang="pt"/>
             <term dc:title="観察" xml:lang="ja"/>
+            <term dc:title="Наблюдение" xml:lang="ru"/>
         </preferred>
         <alternative>
         </alternative>
