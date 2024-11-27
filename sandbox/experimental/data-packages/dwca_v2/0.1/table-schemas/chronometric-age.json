@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "gatheringEventID",
-            "description": "An identifier for a GatheringEvent in which a dwc:MaterialEntity was collected.",
+            "name": "materialGatheringID",
+            "description": "An identifier for a MaterialGathering Event in which a dwc:MaterialEntity was collected.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -240,10 +240,10 @@
             }
         },
         {
-            "fields": "gatheringEventID",
+            "fields": "materialGatheringID",
             "reference": {
-                "resource": "event",
-                "fields": "eventID"
+                "resource": "material_gathering",
+                "fields": "materialGatheringID"
             }
         },
         {

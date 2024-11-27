@@ -200,7 +200,7 @@
             "iri": "http://rs.tdwg.org/dwc/terms/materialEntityRemarks"
         },
         {
-            "name": "gatheringEventID",
+            "name": "materialGatheringID",
             "description": "An identifier for a dwc:Event in which a dwc:MaterialEntity was gathered.",
             "type": "string",
             "format": "default",
@@ -283,7 +283,7 @@
     "primaryKey": "materialEntityID",
     "foreignKeys": [
         {
-            "fields": "gatheringEventID",
+            "fields": "materialGatheringID",
             "reference": {
                 "resource": "event",
                 "fields": "eventID"

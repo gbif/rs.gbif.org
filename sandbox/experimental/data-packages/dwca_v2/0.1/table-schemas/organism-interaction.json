@@ -3,11 +3,11 @@
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/organism-interaction",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/organism-interaction.json",
     "title": "OrganismInteraction",
-    "description": "Events in which interactions between dwc:Organisms were recorded.",
+    "description": "An Event in which an interactions between dwc:Organisms was recorded.",
     "fields": [
         {
             "name": "organismInteractionID",
-            "description": "An identifier for an instance of a dwc:Event that is an OrganismInteraction.",
+            "description": "An identifier for a dwc:Event that is an OrganismInteraction.",
             "type": "string",
             "format": "default",
             "comments": "",

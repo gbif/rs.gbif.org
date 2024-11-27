@@ -3,11 +3,11 @@
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/occurrence.json",
     "title": "Occurrence",
-    "description": "Information about a dwc:Organism in a place during some time.",
+    "description": "An Event establishing the presence or absence of a dwc:Organism within a place and during an interval of time.",
     "fields": [
         {
             "name": "occurrenceID",
-            "description": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).",
+            "description": "An identifier for a dwc:Event that is a dwc:Occurrence.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
