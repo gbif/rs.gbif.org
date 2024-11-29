@@ -442,14 +442,14 @@
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/event.json",
           "name": "event",
           "title": "Event",
-          "description": "The spatiotemporal context (dwc:Event and dcterms:Location) of an activity."
+          "description": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time)."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/occurrence",
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/occurrence.json",
           "name": "occurrence",
           "title": "Occurrence",
-          "description": "Information about a dwc:Organism in a place during some time."
+          "description": "An identifier for a dwc:Event that is a dwc:Occurrence."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/identification",
@@ -471,6 +471,13 @@
           "name": "material",
           "title": "Material",
           "description": "Entities that can be identified, exist for some period of time, and consist in whole or in part of physical matter while they exist."
+        },
+        {
+          "identifier": "http://rs.gbif.org/data-packages/dwca_v2/material-gathering",
+          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/material-gathering.json",
+          "name": "material-gathering",
+          "title": "MaterialGathering",
+          "description": "An Event in which a dwc:MaterialEntity was gathered."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/collection",
@@ -505,7 +512,7 @@
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/organism-interaction.json",
           "name": "organism-interaction",
           "title": "OrganismInteraction",
-          "description": "Events in which interactions between dwc:Organisms were recorded."
+          "description": "An Event in which interactions between dwc:Organisms was recorded."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
@@ -582,13 +589,13 @@
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/relationship",
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/relationship.json",
           "title": "Relationship",
-          "description": "Specifications of relationships between entities."
+          "description": "Specifications of relationships between instances of entities."
         }
       ],
       "title": "Darwin Core Archive v2",
       "shortTitle": "DwCAv2",
       "description": "A data package for sharing biodiversity data using Darwin Core Archives, version 2.",
-      "issued": "2024-10-28",
+      "issued": "2024-11-27",
       "isLatest": true
     }
   ]

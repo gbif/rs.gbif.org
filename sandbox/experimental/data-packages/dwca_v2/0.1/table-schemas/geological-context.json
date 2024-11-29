@@ -203,7 +203,7 @@
     "primaryKey": "geologicalContextID",
     "foreignKeys": [
         {
-            "fields": "gatheringEventID",
+            "fields": "eventID",
             "reference": {
                 "resource": "event",
                 "fields": "eventID"

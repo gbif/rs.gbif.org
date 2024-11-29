@@ -3,11 +3,11 @@
     "identifier": "http://rs.gbif.org/data-packages/dwca_v2/relationship",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/relationship.json",
     "title": "Relationship",
-    "description": "Specifications of relationships between entities.",
+    "description": "Specifications of relationships between instances of entities.",
     "fields": [
         {
             "name": "relationshipID",
-            "description": "An identifier for a Relationship between two entities.",
+            "description": "An identifier for a Relationship between two instances of entities.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -140,6 +140,26 @@
                 "minimum": 1
             },
             "examples": "`1`; `2`; `3`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "relationshipAccordingTo",
+            "description": "The name of the Agent most immediately responsible for asserting the Relationship.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/relationshipAccordingTo"
+        },
+        {
+            "name": "relationshipAccordingToID",
+            "description": "An identifier for the Agent most immediately responsible for asserting the Relationship.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
             "namespace": "gum",
             "iri": ""
         },
@@ -318,6 +338,13 @@
             "reference": {
                 "resource": "organism-interaction",
                 "fields": "organismInteractionID"
+            }
+        },
+        {
+            "fields": "relationshipAccordingToID",
+            "reference": {
+                "resource": "agent",
+                "fields": "agentID"
             }
         }
     ]
