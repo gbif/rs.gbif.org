@@ -20,5 +20,5 @@
             }
         }
     ],
-    "primaryKey": "materialGatheringID",
+    "primaryKey": "materialGatheringID"
 }
