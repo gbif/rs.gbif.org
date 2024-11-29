@@ -512,7 +512,7 @@
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/organism-interaction.json",
           "name": "organism-interaction",
           "title": "OrganismInteraction",
-          "description": "An Event in which an interactions between dwc:Organisms was recorded."
+          "description": "An Event in which interactions between dwc:Organisms was recorded."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
