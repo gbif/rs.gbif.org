@@ -1,27 +1,16 @@
 {
-  "identifier": "http://rs.gbif.org/data-packages/coldp/type-material",
-  "name": "type-material",
-  "title": "Type Material",
-  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.1/table-schemas/type-material.json",
-  "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination.",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
+  "name": "vernacular-name",
+  "title": "Vernacular Name",
+  "url": "http://rs.gbif.org/data-packages/coldp/1.1/table-schemas/vernacular-name.json",
+  "description": "A vernacular or common name for a taxon.",
   "fields": [
     {
-      "name": "ID",
+      "name": "taxonID",
       "type": "string",
       "format": "default",
-      "title": "ID",
-      "description": "Optional unique identifier for the specimen. If possible use the existing specimen identifier, e.g. the collection/institution code and catalogue number. If coming from a Darwin Core world dwc:occurrenceID is a great fit.",
-      "constraints": {
-        "unique": true,
-        "required": true
-      }
-    },
-    {
-      "name": "nameID",
-      "type": "string",
-      "format": "default",
-      "title": "nameID",
-      "description": "A comma concatenated list of name IDs pointing to the typified name of this specimen. Each ID must refer to an existing Name.ID within this data package. See best practices for details on how to concatenate multi values."
+      "title": "taxonID",
+      "description": "Pointer to the taxon referring to an existing Taxon.ID within this data package."
     },
     {
       "name": "sourceID",
@@ -31,76 +20,38 @@
       "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
     },
     {
-      "name": "citation",
+      "name": "name",
       "type": "string",
       "format": "default",
-      "title": "citation",
-      "description": "Material citation of the type material, i.e. type specimen. The citation is ideally given in the verbatim form as it was used in the original publication of the name or the subsequent designation. Otherwise it is recommended to follow the material citation guidelines published by European Journal of Taxonomy. If atomized fields below are given a citation is not needed. Otherwise it is required."
+      "title": "name",
+      "description": "The vernacular name in the original script."
     },
     {
-      "name": "status",
+      "name": "transliteration",
       "type": "string",
       "format": "default",
-      "title": "status",
-      "constraints": {
-        "enum": [
-          "epitype",
-          "ergatotype",
-          "ex type",
-          "hapantotype",
-          "holotype",
-          "iconotype",
-          "lectotype",
-          "neotype",
-          "original material",
-          "paratype",
-          "pathotype",
-          "syntype",
-          "topotype",
-          "isotype",
-          "isoepitype",
-          "isolectotype",
-          "isoneotype",
-          "isoparatype",
-          "isosyntype",
-          "paralectotype",
-          "paraneotype",
-          "allolectotype",
-          "alloneotype",
-          "allotype",
-          "plastoholotype",
-          "plastoisotype",
-          "plastolectotype",
-          "plastoneotype",
-          "plastoparatype",
-          "plastosyntype",
-          "plastotype",
-          "plesiotype",
-          "homoeotype",
-          "other"
-        ]
-      }
+      "title": "transliteration",
+      "description": "An optional transliteration of the vernacular name into the latin script."
     },
     {
-      "name": "referenceID",
+      "name": "language",
       "type": "string",
       "format": "default",
-      "title": "referenceID",
-      "description": "A referenceID pointing to the Reference table indicating the publication of the type designation. Most often this is equivalent to the original names referenceID, but for subsequent designations a later reference should be cited."
+      "title": "language",
+      "description": "Language of the vernacular name given as an ISO 639-3 letter code."
     },
     {
-      "name": "page",
-      "type": "string",
+      "name": "preferred",
+      "type": "boolean",
       "format": "default",
-      "title": "page",
-      "description": "The exact single page number where the type designation was published in the linked reference. If the value spans multiple pages, the first page should be given."
+      "title": "preferred"
     },
     {
       "name": "country",
       "type": "string",
       "format": "default",
       "title": "country",
-      "description": "The country of the type locality. Preferably as ISO codes.",
+      "description": "Country this vernacular name is used in given as an ISO 3166-2 letter code.",
       "constraints": {
         "enum": [
           "AF",
@@ -358,38 +309,18 @@
       }
     },
     {
-      "name": "locality",
+      "name": "area",
       "type": "string",
       "format": "default",
-      "title": "locality",
-      "description": "The type locality. Ideally from largest area to smallest."
-    },
-    {
-      "name": "latitude",
-      "type": "string",
-      "format": "default",
-      "title": "latitude",
-      "description": "Decimal latitude of the type locality given in WGS84"
-    },
-    {
-      "name": "longitude",
-      "type": "string",
-      "format": "default",
-      "title": "longitude",
-      "description": "Decimal longitude of the type locality given in WGS84"
-    },
-    {
-      "name": "altitude",
-      "type": "string",
-      "format": "default",
-      "title": "altitude",
-      "description": "Altitude of the type locality. Ideally given as meters above mean seal level. Depth should be given as negative altitudes."
+      "title": "area",
+      "description": "Optional area describing the geographic use of the vernacular name in free text within the given country."
     },
     {
       "name": "sex",
       "type": "string",
       "format": "default",
       "title": "sex",
+      "description": "Optional sex of the organism this vernacular name is restricted to.",
       "constraints": {
         "enum": [
           "female",
@@ -399,59 +330,18 @@
       }
     },
     {
-      "name": "host",
+      "name": "referenceID",
       "type": "string",
       "format": "default",
-      "title": "host",
-      "description": "Indicates the host organism from which the type specimen was obtained (symbiotype)."
-    },
-    {
-      "name": "associatedSequences",
-      "type": "string",
-      "format": "default",
-      "title": "associatedSequences"
-    },
-    {
-      "name": "date",
-      "type": "string",
-      "format": "default",
-      "title": "date",
-      "description": "Date the type material was gathered. Recommended to be given as ISO 8601 dates."
-    },
-    {
-      "name": "collector",
-      "type": "string",
-      "format": "default",
-      "title": "collector",
-      "description": "The collectors name"
-    },
-    {
-      "name": "institutionCode",
-      "type": "string",
-      "format": "default",
-      "title": "institutionCode",
-      "description": "The name or acronym in use by the institution having custody of the material."
-    },
-    {
-      "name": "catalogNumber",
-      "type": "string",
-      "format": "default",
-      "title": "catalogNumber",
-      "description": "The identifier for the specimen in a collection."
-    },
-    {
-      "name": "link",
-      "type": "string",
-      "format": "uri",
-      "title": "link",
-      "description": "A link to further information about the specimen, e.g. as provided by the institute holding the collection."
+      "title": "referenceID",
+      "description": "Pointer to the reference that supports this vernacular name. Refers to an existing Reference.ID within this data package."
     },
     {
       "name": "remarks",
       "type": "string",
       "format": "default",
       "title": "remarks",
-      "description": "Any further remarks on the type material."
+      "description": "Remarks about the vernacular name."
     },
     {
       "name": "modified",
@@ -468,12 +358,11 @@
       "description": "Author identifier indicating the person who has last modified the record."
     }
   ],
-  "primaryKey": "ID",
   "foreignKeys": [
     {
-      "fields": "nameID",
+      "fields": "taxonID",
       "reference": {
-        "resource": "name",
+        "resource": "taxon",
         "fields": "ID"
       }
     },
