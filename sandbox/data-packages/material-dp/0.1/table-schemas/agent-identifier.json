@@ -32,7 +32,7 @@
     "foreignKeys": [{
             "fields": "agentID",
             "reference": {
-                "resource": "agemt",
+                "resource": "agent",
                 "fields": "agentID"
             }
         }
