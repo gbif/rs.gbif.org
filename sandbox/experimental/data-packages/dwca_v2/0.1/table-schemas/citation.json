@@ -27,7 +27,11 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "citationTargetType",
@@ -35,7 +39,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
+            "examples": "`ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`",
             "namespace": "gum",
             "iri": ""
         },
@@ -208,7 +212,7 @@
             "fields": "citationTargetID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {
