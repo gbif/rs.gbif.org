@@ -370,7 +370,7 @@
             "iri": "http://rs.tdwg.org/dwc/terms/eventRemarks"
         },
         {
-            "name": "protocolID",
+            "name": "eventProtocolID",
             "description": "An identifier for a Protocol used during a dwc:Event.",
             "type": "string",
             "format": "default",
