@@ -25,7 +25,7 @@
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can have an AgentRole.",
-            "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
+            "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `Identification`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`",
             "namespace": "gum",
             "iri": "",
             "constraints": {
@@ -186,7 +186,7 @@
             "fields": "agentRoleTargetID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {

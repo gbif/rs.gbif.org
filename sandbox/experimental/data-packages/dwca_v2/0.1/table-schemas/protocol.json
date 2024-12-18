@@ -27,7 +27,11 @@
             "comments": "",
             "examples": "gum",
             "namespace": "",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "protocolTargetType",
@@ -35,7 +39,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`ChronometricAge`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`; `Survey`",
+            "examples": "`ChronometricAge`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`; `Survey`",
             "namespace": "gum",
             "iri": ""
         },
@@ -127,63 +131,63 @@
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "event",
                 "fields": "eventID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "genetic-sequence",
                 "fields": "geneticSequenceID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "geological-context",
                 "fields": "geologicalContextID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "identification",
                 "fields": "identificationID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "media",
                 "fields": "mediaID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "occurrence",
                 "fields": "occurrenceID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "organism-interaction",
                 "fields": "organismInteractionID"
             }
         },
         {
-            "fields": "assertionTargetID",
+            "fields": "protocolTargetID",
             "reference": {
                 "resource": "survey",
                 "fields": "surveyID"

@@ -27,7 +27,11 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "mediaTargetType",
@@ -35,7 +39,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`",
+            "examples": "`Agent`; `ChronometricAge`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`",
             "namespace": "gum",
             "iri": ""
         },
@@ -275,7 +279,7 @@
             "fields": "mediaTargetID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {
