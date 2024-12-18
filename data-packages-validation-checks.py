@@ -15,6 +15,7 @@ import os
 import re
 import requests
 import sys
+from pathlib import Path
 
 # Paths to the directories containing index.json files
 directories_to_scan_sandbox = ['sandbox/data-packages', 'sandbox/experimental/data-packages']
@@ -217,6 +218,64 @@ def find_package_files(directories):
     return package_files
 
 
+def check_foreign_keys(package_file, package_data):
+    global error_found
+
+    # print(f"Checking foreign keys for {package_file}")
+
+    if package_file == 'sandbox/data-packages/index.json' or package_file == 'data-packages/index.json':
+        # print("Skipping foreign keys check")
+        return
+
+    if "tableSchemas" in package_data:
+        for schema in package_data['tableSchemas']:
+            table_schema_name = schema['name']
+            table_schema_file = package_file.replace("index.json", "table-schemas/" + schema['name'] + ".json")
+            # print(f"Checking table schema {table_schema_name}")
+
+            try:
+                with open(table_schema_file, 'r') as f:
+                    table_schema_json = json.load(f)
+
+                if "foreignKeys" in table_schema_json:
+                    for foreign_key in table_schema_json['foreignKeys']:
+                        fk_field = foreign_key['fields']
+                        fk_reference_resource = foreign_key['reference']['resource']
+                        fk_reference_field = foreign_key['reference']['fields']
+
+                        # print(f"Foreign key: {fk_field} references "
+                        #       f"to {fk_reference_resource}/{fk_reference_field}")
+
+                        is_field_present = any(field['name'] == fk_field for field in table_schema_json['fields'])
+
+                        if not is_field_present:
+                            print(f"Error: There is no field {fk_field} in the table schema file {table_schema_file}")
+                            error_found = True
+
+                        reference_table_schema_file = (
+                            package_file.replace("index.json", "table-schemas/" + fk_reference_resource + ".json"))
+
+                        reference_table_schema_file_path = Path(reference_table_schema_file)
+
+                        if reference_table_schema_file_path.exists():
+                            with open(reference_table_schema_file, 'r') as f:
+                                reference_table_schema_json = json.load(f)
+
+                            is_fk_reference_field_present = (any(field['name'] == fk_reference_field for field in reference_table_schema_json['fields']))
+
+                            if not is_fk_reference_field_present:
+                                print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
+                                      f"field {fk_reference_resource}/{fk_reference_field}")
+                                error_found = True
+                        else:
+                            print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
+                                  f"table schema {fk_reference_resource}")
+                            error_found = True
+            except (json.JSONDecodeError, FileNotFoundError) as e:
+                print(f"Error: {type(e).__name__} occurred. Missing or invalid file: {table_schema_file}")
+                error_found = True
+
+
 # Validation: Check all package files and their schemas
 all_package_files_sandbox = find_package_files(directories_to_scan_sandbox)
 all_package_files_prod = find_package_files(directories_to_scan_prod)
@@ -232,6 +291,7 @@ for package_file in all_package_files_sandbox:
 
     check_urls_are_resolvable(package_data)
     check_table_schemas(package_file, package_data)
+    check_foreign_keys(package_file, package_data)
 
 for package_file in all_package_files_prod:
     # First, validate the JSON structure
@@ -244,6 +304,7 @@ for package_file in all_package_files_prod:
 
     check_urls_are_resolvable(package_data)
     check_table_schemas(package_file, package_data)
+    check_foreign_keys(package_file, package_data)
 
 if error_found:
     print("Validation failed. Please fix the issues above.")
