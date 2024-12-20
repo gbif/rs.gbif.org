@@ -221,13 +221,6 @@
                 "resource": "identification",
                 "fields": "identificationID"
             }
-        },
-        {
-            "fields": "recordedByID",
-            "reference": {
-                "resource": "agent",
-                "fields": "agentID"
-            }
         }
     ]
 }
