@@ -79,7 +79,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/organism-interaction.json",
             "name": "organism-interaction",
             "title": "OrganismInteraction",
-            "description": "An Event in which interactions between dwc:Organisms was recorded."
+            "description": "An Event in which an interaction between dwc:Organisms was recorded."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwca_v2/survey",
@@ -162,6 +162,6 @@
     "title": "Darwin Core Archive v2",
     "shortTitle": "DwCAv2",
     "description": "A data package for sharing biodiversity data using Darwin Core Archives, version 2.",
-    "issued": "2024-11-27",
+    "issued": "2024-12-17",
     "isLatest": true
 }

@@ -242,7 +242,7 @@
         {
             "fields": "materialGatheringID",
             "reference": {
-                "resource": "material_gathering",
+                "resource": "material-gathering",
                 "fields": "materialGatheringID"
             }
         },

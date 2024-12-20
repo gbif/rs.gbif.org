@@ -27,7 +27,11 @@
             "comments": "",
             "examples": "",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/resourceID"
+            "iri": "http://rs.tdwg.org/dwc/terms/resourceID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "subjectResourceType",
@@ -35,7 +39,7 @@
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary consisting of the classes of resources that can be related to each other.",
-            "examples": "`Agent`; `AgentRole`; `Assertion`; `ChronometricAge`; `Citation`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Identifier``; `Inventory`; `Material`; `Media`; `Occurrence`; `OrganismInteraction`; `PhylogeneticTree`; `Taxon`; `TaxonDistribution`",
+            "examples": "`Agent`; `AgentRole`; `Assertion`; `ChronometricAge`; `Citation`; `Collection`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Identifier``; `Inventory`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`; `PhylogeneticTree`; `Taxon`; `TaxonDistribution`",
             "namespace": "gum",
             "iri": ""
         },
@@ -97,7 +101,11 @@
             "comments": "",
             "examples": "",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/relatedResourceID"
+            "iri": "http://rs.tdwg.org/dwc/terms/relatedResourceID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "relatedResourceType",
@@ -239,7 +247,7 @@
             "fields": "subjectResourceID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {
@@ -316,7 +324,7 @@
             "fields": "relatedResourceID",
             "reference": {
                 "resource": "material",
-                "fields": "materialID"
+                "fields": "materialEntityID"
             }
         },
         {
