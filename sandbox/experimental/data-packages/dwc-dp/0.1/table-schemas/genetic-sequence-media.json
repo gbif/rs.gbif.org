@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-media",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-media.json",
     "title": "GeneticSequenceMedia",
-    "description": "A link establishing a GeneticSequence as content in a Media entity."
+    "description": "A link establishing a GeneticSequence as content in a Media entity.",
     "fields": [
         {
             "name": "mediaID",

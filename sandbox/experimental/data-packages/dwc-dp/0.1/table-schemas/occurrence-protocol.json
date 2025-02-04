@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/occurrence-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
     "title": "OccurrenceProtocol",
-    "description": "A method used in relation to a dwc:Occurrence."
+    "description": "A method used in relation to a dwc:Occurrence.",
     "fields": [
         {
             "name": "protocolID",

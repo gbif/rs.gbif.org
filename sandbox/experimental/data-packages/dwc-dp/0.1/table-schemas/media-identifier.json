@@ -78,7 +78,7 @@
         {
             "fields": "mediaID",
             "reference": {
-                "resource": "material-entity",
+                "resource": "material",
                 "fields": "mediaID"
             }
         }

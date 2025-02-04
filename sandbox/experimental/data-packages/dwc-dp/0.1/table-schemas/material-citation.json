@@ -159,7 +159,7 @@
         {
             "fields": "materialEntityID",
             "reference": {
-                "resource": "material-entity",
+                "resource": "material",
                 "fields": "materialEntityID"
             }
         }

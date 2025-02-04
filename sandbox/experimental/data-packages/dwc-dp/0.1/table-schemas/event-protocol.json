@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/event-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
     "title": "EventProtocol",
-    "description": "A method used in relation to a dwc:Event."
+    "description": "A method used in relation to a dwc:Event.",
     "fields": [
         {
             "name": "protocolID",
