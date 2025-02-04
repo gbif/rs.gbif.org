@@ -48,7 +48,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/chronometric-age-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-assertion.json",
             "name": "chronometric-age-assertion",
             "title": "ChronometricAgeAssertion",
             "description": "An Assertion made by an Agent about a chrono:ChronometricAge."
@@ -90,7 +90,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/collection-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-assertion.json",
             "name": "collection-assertion",
             "title": "CollectionAssertion",
             "description": "An Assertion made by an Agent about a Collection."
@@ -118,7 +118,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/event-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-assertion.json",
             "name": "event-assertion",
             "title": "EventAssertion",
             "description": "An Assertion made by an Agent about a dwc:Event."
@@ -167,7 +167,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-assertion.json",
             "name": "genetic-sequence-assertion",
             "title": "GeneticSequenceAssertion",
             "description": "An Assertion made by an Agent about a GeneticSequence."
@@ -243,7 +243,7 @@
             "description": "A role filled by an Agent with respect to a dwc:MaterialEntity."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/material_assertion",
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/material-assertion",
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
             "name": "material-assertion",
             "title": "MaterialAssertion",
@@ -292,7 +292,7 @@
             "description": "A role filled by an Agent with respect to a Media entity."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/media_assertion",
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/media-assertion",
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-assertion.json",
             "name": "media-assertion",
             "title": "MediaAssertion",
@@ -321,7 +321,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/occurrence-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-assertion.json",
             "name": "occurrence-assertion",
             "title": "OccurrenceAssertion",
             "description": "An Assertion made by an Agent about a dwc:Occurrence."
@@ -370,7 +370,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/organism-interaction-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-assertion.json",
             "name": "organism-interaction-assertion",
             "title": "OrganismInteractionAssertion",
             "description": "An Assertion made by an Agent about an OrganismInteraction."
@@ -398,7 +398,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/phylogenetic-tree-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-assertion.json",
             "name": "phylogenetic-tree-assertion",
             "title": "PhylogeneticTreeAssertion",
             "description": "An Assertion made by an Agent about a PhylogeneticTree."
@@ -482,7 +482,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey_assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-assertion.json",
             "name": "survey-assertion",
             "title": "SurveyAssertion",
             "description": "An Assertion made by an Agent about a Survey."
