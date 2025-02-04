@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/agent-media",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-media.json",
     "title": "AgentMedia",
-    "description": "A link establishing an Agent as content in a Media entity."
+    "description": "A link establishing an Agent as content in a Media entity.",
     "fields": [
         {
             "name": "mediaID",

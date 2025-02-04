@@ -1,7 +1,7 @@
 {
-    "name": "agent_identifier",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/agent_identifier",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent_identifier.json",
+    "name": "agent-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/agent-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-identifier.json",
     "title": "AgentIdentifier",
     "description": "An identifier for an Agent.",
     "fields": [

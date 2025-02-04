@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/chronometric-age-media",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-media.json",
     "title": "ChronometricAgeMedia",
-    "description": "A link establishing a chrono:ChronometricAge as content of a Media entity."
+    "description": "A link establishing a chrono:ChronometricAge as content of a Media entity.",
     "fields": [
         {
             "name": "mediaID",

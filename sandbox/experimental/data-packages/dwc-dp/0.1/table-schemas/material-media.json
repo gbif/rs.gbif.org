@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/material-media",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-media.json",
     "title": "MaterialMedia",
-    "description": "A link establishing a dwc:MaterialEntity as content in a Media entity."
+    "description": "A link establishing a dwc:MaterialEntity as content in a Media entity.",
     "fields": [
         {
             "name": "mediaID",
@@ -75,7 +75,7 @@
         {
             "fields": "materialEntityID",
             "reference": {
-                "resource": "material-entity",
+                "resource": "material",
                 "fields": "materialEntityID"
             }
         }
