@@ -440,7 +440,7 @@
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/phylogenetic-tree-tip-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree_tip-assertion.json",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-tip-assertion.json",
             "name": "phylogenetic-tree-tip-assertion",
             "title": "PhylogeneticTreeTipAssertion",
             "description": "An Assertion made by an Agent about a PhylogeneticTreeTip."
