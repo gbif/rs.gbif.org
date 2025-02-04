@@ -1,7 +1,7 @@
 {
-    "name": "media_identifier",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/media_identifier",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media_identifier.json",
+    "name": "media-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/media-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-identifier.json",
     "title": "MediaIdentifier",
     "description": "An identifier for a Media entity.",
     "fields": [
@@ -78,7 +78,7 @@
         {
             "fields": "mediaID",
             "reference": {
-                "resource": "material",
+                "resource": "media",
                 "fields": "mediaID"
             }
         }

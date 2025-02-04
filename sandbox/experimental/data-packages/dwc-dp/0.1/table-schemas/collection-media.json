@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/collection-media",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-media.json",
     "title": "CollecionMedia",
-    "description": "A link establishing a Collection as content in a Media entity."
+    "description": "A link establishing a Collection as content in a Media entity.",
     "fields": [
         {
             "name": "mediaID",

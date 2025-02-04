@@ -1,7 +1,7 @@
 {
-    "name": "phylogenetic-tree_identifier",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/phylogenetic-tree_identifier",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree_identifier.json",
+    "name": "phylogenetic-tree-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/phylogenetic-tree-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-identifier.json",
     "title": "PhylogeneticTreeIdentifier",
     "description": "An identifier for a PhylogeneticTree.",
     "fields": [

@@ -1,7 +1,7 @@
 {
-    "name": "survey_identifier",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey_identifier",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey_identifier.json",
+    "name": "survey-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-identifier.json",
     "title": "SurveyIdentifier",
     "description": "An identifier for a Survey.",
     "fields": [

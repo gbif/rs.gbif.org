@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/identification",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification.json",
     "title": "Identification",
-    "description": "A taxonomic determination (i.e., the assignment of dwc:Taxa to dwc:Organisms)."
+    "description": "A taxonomic determination (i.e., the assignment of dwc:Taxa to dwc:Organisms).",
     "fields": [
         {
             "name": "identificationID",
