@@ -1,7 +1,7 @@
 {
-    "name": "occurrence_identifier",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/occurrence_identifier",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence_identifier.json",
+    "name": "occurrence-identifier",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/occurrence-identifier",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-identifier.json",
     "title": "OccurrenceIdentifier",
     "description": "An identifier for a dwc:Occurrence.",
     "fields": [
