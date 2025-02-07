@@ -94,6 +94,26 @@
             "iri": ""
         },
         {
+            "name": "assertionValueIRI",
+            "description": "The IRI of the controlled vocabulary value for the value of an Assertion.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "`https://vocab.nerc.ac.uk/collection/S10/current/S103/`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "assertionValueVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for assertionValue are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`https://vocab.nerc.ac.uk/collection/S10/current/`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "assertionValueNumeric",
             "description": "An asserted value, if it is numeric.",
             "type": "number",
