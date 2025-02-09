@@ -27,7 +27,12 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
+
         },
         {
             "name": "surveyTargetType",
@@ -127,7 +132,12 @@
             "comments": "Recommended best practice is use a controlled vocabulary consisting of 'include' and 'exclude' only.",
             "examples": "`include`; `exclude`",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
+
         },
         {
             "name": "isSurveyTargetFullyReported",
@@ -137,7 +147,12 @@
             "comments": "",
             "examples": "`true`; `false`",
             "namespace": "gum",
-            "iri": ""
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
+
         }
     ],
     "primaryKey": "surveyTargetID",
