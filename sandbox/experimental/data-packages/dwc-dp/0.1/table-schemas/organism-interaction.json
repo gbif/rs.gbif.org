@@ -27,7 +27,11 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": "http://rs.tdwg.org/dwc/terms/resourceID"
+            "iri": "http://rs.tdwg.org/dwc/terms/resourceID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "subjectOrganismPart",
@@ -77,7 +81,11 @@
             "comments": "",
             "examples": "",
             "namespace": "gum",
-            "iri": "http://rs.tdwg.org/dwc/terms/relatedResourceID"
+            "iri": "http://rs.tdwg.org/dwc/terms/relatedResourceID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "objectOrganismPart",
