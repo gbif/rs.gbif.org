@@ -1,0 +1,65 @@
+{
+    "name": "agent",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/agent",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/agent.json",
+    "title": "Agent",
+    "description": "People, groups, organizations and other entities that can act.",
+    "fields": [
+        {
+            "name": "agentID",
+            "description": "An identifier for an Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "agentType",
+            "description": "The category that best matches the type of an Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`person`; `group`; `organization`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "agentTypeIRI",
+            "description": "The IRI of the controlled vocabulary value for the type of Agent.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "agentTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for agentType are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "preferredAgentName",
+            "description": "The name of an Agent preferred in searches and results.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        }
+    ],
+    "primaryKey": "agentID",
+    "foreignKeys": []
+}

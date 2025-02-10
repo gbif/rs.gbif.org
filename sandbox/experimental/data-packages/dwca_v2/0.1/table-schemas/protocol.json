@@ -1,0 +1,197 @@
+{
+    "name": "protocol",
+    "identifier": "http://rs.gbif.org/data-packages/dwca_v2/protocol",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwca_v2/0.1/table-schemas/protocol.json",
+    "title": "Protocol",
+    "description": "A method used during an action.",
+    "fields": [
+        {
+            "name": "protocolID",
+            "description": "An identifier for a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
+        {
+            "name": "protocolTargetID",
+            "description": "An identifier for the target of a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "gum",
+            "namespace": "",
+            "iri": "",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
+        },
+        {
+            "name": "protocolTargetType",
+            "description": "The class of the target of a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`ChronometricAge`; `Event`; `GeneticSequence`; `GeologicalContext`; `Identification`; `Material`; `Material Gathering`; `Media`; `Occurrence`; `OrganismInteraction`; `Survey`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolType",
+            "description": "The category that best matches the nature of a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary.",
+            "examples": "`Measurement`; `Georeference`; `Chronometric Age`; `Chronometric Age Conversion`; `Sampling Effort`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolTypeIRI",
+            "description": "The IRI of the controlled vocabulary value for the type of Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolTypeVocabulary",
+            "description": "The reference to the controlled vocabulary where the definitions of values for protocolType are given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolName",
+            "description": "The name of a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": " `ad hoc observation`; `bottom trawl`; `point count`; `UV light trap`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolDescription",
+            "description": "A description of a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "protocolCitation",
+            "description": "A bibliographic citation for a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": "http://purl.org/dc/terms/bibliographicCitation"
+        },
+        {
+            "name": "protocolRemarks",
+            "description": "Comments or notes about a Protocol.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        }
+    ],
+    "primaryKey": "protocolID",
+    "foreignKeys": [
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "assertion",
+                "fields": "assertionID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "chronometric-age",
+                "fields": "chronometricAgeID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "event",
+                "fields": "eventID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "genetic-sequence",
+                "fields": "geneticSequenceID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "geological-context",
+                "fields": "geologicalContextID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "identification",
+                "fields": "identificationID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "material",
+                "fields": "materialEntityID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "media",
+                "fields": "mediaID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "occurrence",
+                "fields": "occurrenceID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "organism-interaction",
+                "fields": "organismInteractionID"
+            }
+        },
+        {
+            "fields": "protocolTargetID",
+            "reference": {
+                "resource": "survey",
+                "fields": "surveyID"
+            }
+        }
+    ]
+}
