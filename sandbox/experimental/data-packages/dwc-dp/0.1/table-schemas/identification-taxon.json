@@ -13,7 +13,11 @@
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/identificationID"
+            "iri": "http://rs.tdwg.org/dwc/terms/identificationID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
         },
         {
             "name": "taxonID",

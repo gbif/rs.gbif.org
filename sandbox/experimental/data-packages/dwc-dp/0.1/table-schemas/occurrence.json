@@ -27,7 +27,12 @@
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
             "namespace": "gum",
-            "iri": "http://rs.tdwg.org/dwc/terms/eventID"
+            "iri": "http://rs.tdwg.org/dwc/terms/eventID",
+            "constraints": {
+                "required": true,
+                "unique": false
+            }
+
         },
         {
             "name": "organismQuantity",
