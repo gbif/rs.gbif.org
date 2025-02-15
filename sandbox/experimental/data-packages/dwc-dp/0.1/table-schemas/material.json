@@ -144,6 +144,26 @@
             "iri": "http://rs.tdwg.org/dwc/terms/otherCatalogNumbers"
         },
         {
+            "name": "collectedBy",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for collecting a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
+        },
+        {
+            "name": "collectedByID",
+            "description": "An identifier for the Agent responsible for collecting a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
+        },
+        {
             "name": "recordNumber",
             "description": "An identifier given to a dwc:MaterialEntity at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity, such as a specimen collector's number.",
             "type": "string",
@@ -202,6 +222,26 @@
             "examples": "`Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`; `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`",
             "namespace": "gum",
             "iri": ""
+        },
+        {
+            "name": "informationWithheld",
+            "description": "Additional information that exists, but that has not been shared in the given record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld"
+        },
+        {
+            "name": "dataGeneralizations",
+            "description": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
         },
         {
             "name": "materialEntityRemarks",

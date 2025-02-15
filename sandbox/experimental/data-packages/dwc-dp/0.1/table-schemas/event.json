@@ -769,6 +769,26 @@
             "iri": "http://rs.tdwg.org/dwc/terms/georeferenceRemarks"
         },
         {
+            "name": "informationWithheld",
+            "description": "Additional information that exists, but that has not been shared in the given record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld"
+        },
+        {
+            "name": "dataGeneralizations",
+            "description": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
+        },
+        {
             "name": "preferredSpatialRepresentation",
             "description": "An indication of which spatial representation best represents the dcterms:Location.",
             "type": "string",

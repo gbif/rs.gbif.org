@@ -35,6 +35,26 @@
 
         },
         {
+            "name": "recordedBy",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording a dwc:Occurrence.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
+        },
+        {
+            "name": "recordedByID",
+            "description": "An identifier for the Agent responsible for recording a dwc:Occurrence.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
+        },
+        {
             "name": "organismQuantity",
             "description": "A number or enumeration value for the quantity of dwc:Organisms.",
             "type": "string",
@@ -173,6 +193,26 @@
             "examples": "`present`; `absent`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceStatus"
+        },
+        {
+            "name": "informationWithheld",
+            "description": "Additional information that exists, but that has not been shared in the given record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld"
+        },
+        {
+            "name": "dataGeneralizations",
+            "description": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
         },
         {
             "name": "occurrenceRemarks",
