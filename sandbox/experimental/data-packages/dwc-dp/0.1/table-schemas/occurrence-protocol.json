@@ -24,7 +24,7 @@
             "description": "An identifier for a dwc:Occurrence.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
             "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",

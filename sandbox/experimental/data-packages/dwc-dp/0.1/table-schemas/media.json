@@ -41,7 +41,7 @@
         },
         {
             "name": "mediaTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for mediaType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in mediaType is given.",
             "type": "string",
             "format": "default",
             "comments": "",

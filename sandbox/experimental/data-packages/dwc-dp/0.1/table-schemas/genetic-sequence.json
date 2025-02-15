@@ -65,7 +65,7 @@
         },
         {
             "name": "geneticSequenceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for geneticSequenceType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in geneticSequenceType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -85,7 +85,7 @@
         },
         {
             "name": "geneticSequenceCitation",
-            "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the GeneticSequence.",
+            "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with a GeneticSequence.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",

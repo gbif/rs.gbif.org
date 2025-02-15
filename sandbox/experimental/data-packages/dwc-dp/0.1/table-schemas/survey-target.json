@@ -36,7 +36,7 @@
         },
         {
             "name": "surveyTargetType",
-            "description": "The type of scope the SurveyTarget describes.",
+            "description": "The type of scope a SurveyTarget describes.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -46,7 +46,7 @@
         },
         {
             "name": "surveyTargetTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the surveyTargetType.",
+            "description": "The IRI of the controlled vocabulary value for the type of survey target.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -56,7 +56,7 @@
         },
         {
             "name": "surveyTargetTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for surveyTargetType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -76,7 +76,7 @@
         },
         {
             "name": "surveyTargetValueIRI",
-            "description": "The IRI for the value of the surveyTargetValue",
+            "description": "The IRI of the controlled vocabulary value for the type of survey target value.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -86,7 +86,7 @@
         },
         {
             "name": "surveyTargetValueVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for surveyTargetValue are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetValue is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -106,7 +106,7 @@
         },
         {
             "name": "surveyTargetUnitIRI",
-            "description": "The IRI for the units of the surveyTargetValue",
+            "description": "The IRI of the controlled vocabulary value for the type of survey target unit.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -116,7 +116,7 @@
         },
         {
             "name": "surveyTargetUnitVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for surveyTargetUnit are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetUnit is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -126,7 +126,7 @@
         },
         {
             "name": "includeOrExclude",
-            "description": "A term to declare whether the instance of the SurveyTarget is an included scope or an excluded scope. Combinations of SurveyTarget records of inclusions and exclusions can define complex scopes such as all 'Aves' except 'Passeriformes'.",
+            "description": "A term to declare whether an instance of the SurveyTarget is an included scope or an excluded scope. Combinations of SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is use a controlled vocabulary consisting of 'include' and 'exclude' only.",
@@ -141,7 +141,7 @@
         },
         {
             "name": "isSurveyTargetFullyReported",
-            "description": "A declaration of whether the counts for the instance of the SurveyTarget report everything that matches the declared SurveyTarget. If they do, this enables inference of absence of detection for everything in that SurveyTarget that is included but that does not appear in the count.",
+            "description": "A declaration of whether the counts for an instance of the SurveyTarget report everything that matches the declared SurveyTarget. If they do, this enables inference of absence of detection for everything in that SurveyTarget that is included but that does not appear in the count.",
             "type": "boolean",
             "format": "default",
             "comments": "",

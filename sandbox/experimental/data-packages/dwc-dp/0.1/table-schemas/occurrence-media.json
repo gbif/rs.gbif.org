@@ -24,7 +24,7 @@
             "description": "An identifier for a dwc:Occurrence.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
             "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
@@ -35,7 +35,7 @@
         },
         {
             "name": "mediaSubjectCategory",
-            "description": "A term to describe the content of the image by a value from a Controlled Vocabulary.",
+            "description": "A term to describe the content of the image by a value from a controlled vocabulary.",
             "type": "string",
             "format": "default",
             "comments": "Controlled vocabulary of subjects to support broad classification of media items. Terms from various controlled vocabularies may be used. AC-recommended vocabularies are preferred and MAY be unqualified literals (not a full URI). For terms from other vocabularies either a precise URI SHOULD be used, or, as long as all unqualified terms in all vocabularies are unique, metadata SHOULD provide the source vocabularies using the Subject Category Vocabulary term. The value SHOULD be a string, whose text can also be in the form of a URL. These guidelines on value format are less restrictive than is specified by the IPTC guidelines.",

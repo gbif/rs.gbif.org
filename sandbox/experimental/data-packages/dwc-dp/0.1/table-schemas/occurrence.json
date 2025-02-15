@@ -10,7 +10,7 @@
             "description": "An identifier for a dwc:Occurrence.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
             "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
@@ -56,7 +56,7 @@
         },
         {
             "name": "organismQuantityTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the dwc:organismQuantityType.",
+            "description": "The IRI of the controlled vocabulary value for an organism quantity type.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -66,7 +66,7 @@
         },
         {
             "name": "organismQuantityTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:organismQuantityType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:organismQuantityType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -76,7 +76,7 @@
         },
         {
             "name": "sex",
-            "description": "The sex of the biological individual(s) represented in a dwc:Occurrence.",
+            "description": "The sex of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -86,7 +86,7 @@
         },
         {
             "name": "lifeStage",
-            "description": "The age class or life stage of a dwc:Organism(s) at the time a dwc:Occurrence was recorded.",
+            "description": "The age class or life stage of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -96,7 +96,7 @@
         },
         {
             "name": "reproductiveCondition",
-            "description": "The reproductive condition of the biological individual(s) represented in a dwc:Occurrence.",
+            "description": "The reproductive condition a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -106,7 +106,7 @@
         },
         {
             "name": "caste",
-            "description": "Categorisation of individuals for eusocial species (including some mammals and arthropods).",
+            "description": "The social caste of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary that aligns best with a dwc:Taxon. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -116,7 +116,7 @@
         },
         {
             "name": "behavior",
-            "description": "The behavior shown by the subject at the time a dwc:Occurrence was recorded.",
+            "description": "The behavior shown by a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -146,7 +146,7 @@
         },
         {
             "name": "degreeOfEstablishment",
-            "description": "The degree to which a dwc:Organism survives, reproduces, and expands its range at the given place and time.",
+            "description": "The degree to which a dwc:Organism survives, reproduces, and expands its range at a given place and time.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/doe/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -166,7 +166,7 @@
         },
         {
             "name": "occurrenceStatus",
-            "description": "A statement about the presence or absence of a dwc:Taxon at a dcterms:Location.",
+            "description": "A statement about the presence or absence of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "For dwc:Occurrences, the default vocabulary is recommended to consist of present and absent, but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
@@ -196,7 +196,7 @@
         },
         {
             "name": "organismScope",
-            "description": "A description of the kind of dwc:Organism instance.",
+            "description": "A description of the type of dwc:Organism instance.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary. Can be used to indicate whether a dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
@@ -206,7 +206,7 @@
         },
         {
             "name": "organismScopeIRI",
-            "description": "The IRI of the controlled vocabulary value for the dwc:organismScope.",
+            "description": "The IRI of the controlled vocabulary value for an organism scope.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
@@ -216,7 +216,7 @@
         },
         {
             "name": "organismScopeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:organismScope are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:organismScope is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -226,7 +226,7 @@
         },
         {
             "name": "organismName",
-            "description": "A textual name or label assigned to a dwc:Organism.",
+            "description": "A name or label assigned to a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -246,7 +246,7 @@
         },
         {
             "name": "identifiedBy",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -256,7 +256,7 @@
         },
         {
             "name": "identifiedByID",
-            "description": "The identifier for the Agent that asserted the dwc:Identification.",
+            "description": "The identifier for the Agent who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -266,7 +266,7 @@
         },
         {
             "name": "dateIdentified",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned a dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
@@ -276,13 +276,33 @@
         },
         {
             "name": "identificationVerificationStatus",
-            "description": "A categorical indicator of the extent to which the taxonomic identification has been verified to be correct.",
+            "description": "A categorical indicator of the extent to which the taxonomic determination has been verified to be correct.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.",
             "examples": "`0` ('unverified' in HISPID/ABCD)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
+        },
+        {
+            "name": "identificationVerificationStatusIRI",
+            "description": "The IRI of the controlled vocabulary value for an identification verification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identificationVerificationStatusVocabulary",
+            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:identificationVerificationStatus is given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "identificationRemarks",
@@ -306,7 +326,7 @@
         },
         {
             "name": "kingdom",
-            "description": "The full scientific name of the kingdom in which the dwc:scientificName is classified.",
+            "description": "The full scientific name of the kingdom in which a dwc:scientificName is classified.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -316,7 +336,7 @@
         },
         {
             "name": "scientificName",
-            "description": "The full scientific name, with authorship and date information if known. When forming part of a dc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:verbatimIdentification term.",
+            "description": "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in dwc:verbatimIdentification.",
             "type": "string",
             "format": "default",
             "comments": "",

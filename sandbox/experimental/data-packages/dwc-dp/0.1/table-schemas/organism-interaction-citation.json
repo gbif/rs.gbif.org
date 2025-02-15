@@ -55,7 +55,7 @@
         },
         {
             "name": "citationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for citationType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for citationType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -115,7 +115,7 @@
         },
         {
             "name": "referenceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for referenceType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for referenceType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -135,7 +135,7 @@
         },
         {
             "name": "isPeerReviewed",
-            "description": "An indication of whether the reference for the Citation was peer reviewed.",
+            "description": "An indication of whether the reference for a Citation was peer reviewed.",
             "type": "boolean",
             "format": "default",
             "comments": "",

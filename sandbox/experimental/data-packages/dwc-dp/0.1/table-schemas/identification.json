@@ -21,7 +21,7 @@
         },
         {
             "name": "identificationBasedOnOccurrenceID",
-            "description": "An identifier for a dwc:Occurrence based on which the dwc:Identification was made.",
+            "description": "An identifier for a dwc:Occurrence based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -81,7 +81,7 @@
         },
         {
             "name": "identificationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:identificationType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in identificationType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -141,7 +141,7 @@
         },
         {
             "name": "identifiedBy",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -151,7 +151,7 @@
         },
         {
             "name": "identifiedByID",
-            "description": "The identifier for the Agent that asserted the dwc:Identification.",
+            "description": "The identifier for the Agent who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -161,7 +161,7 @@
         },
         {
             "name": "dateIdentified",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned a dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
@@ -171,7 +171,7 @@
         },
         {
             "name": "identificationReferences",
-            "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.",
+            "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in a dwc:Identification.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -188,6 +188,26 @@
             "examples": "`0` ('unverified' in HISPID/ABCD)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
+        },
+        {
+            "name": "identificationVerificationStatusIRI",
+            "description": "The IRI of the controlled vocabulary value for an identification verification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identificationVerificationStatusVocabulary",
+            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:identificationVerificationStatus is given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "identificationRemarks",
@@ -211,7 +231,7 @@
         },
         {
             "name": "kingdom",
-            "description": "The full scientific name of the kingdom in which the dwc:scientificName is classified.",
+            "description": "The full scientific name of the kingdom in which a dwc:scientificName is classified.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -221,7 +241,7 @@
         },
         {
             "name": "scientificName",
-            "description": "The full scientific name, with authorship and date information if known. When forming part of a dc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:verbatimIdentification term.",
+            "description": "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in dwc:verbatimIdentification.",
             "type": "string",
             "format": "default",
             "comments": "",

@@ -41,7 +41,7 @@
         },
         {
             "name": "agentTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for agentType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in agentType is given.",
             "type": "string",
             "format": "default",
             "comments": "",

@@ -38,7 +38,7 @@
             "description": "The category that best matches the nature of a role of an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource the AgentRole is related to.",
+            "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource an AgentRole is related to.",
             "examples": "`collector`; `preparator`; `organizer`; `author`; `creator`; `owner`; `observer`; `director`; `husband`",
             "namespace": "gum",
             "iri": ""
@@ -55,7 +55,7 @@
         },
         {
             "name": "agentRoleVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for agentRole are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for agentRole is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -79,7 +79,7 @@
         },
         {
             "name": "agentRoleDate",
-            "description": "The interval during which the AgentRole was in effect.",
+            "description": "The interval during which an AgentRole was in effect.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",

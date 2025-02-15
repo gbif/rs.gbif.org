@@ -61,7 +61,7 @@
         },
         {
             "name": "eventTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for dwc:eventType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in dwc:eventType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -71,17 +71,17 @@
         },
         {
             "name": "fieldNumber",
-            "description": "An identifier given to the dwc:Event in the field.",
+            "description": "An identifier given to a dwc:Event in the field.",
             "type": "string",
             "format": "default",
-            "comments": "Often serves as a link between field notes and the dwc:Event.",
+            "comments": "Often serves as a link between field notes and a dwc:Event.",
             "examples": "RV Sol 87-03-08",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/fieldNumber"
         },
         {
             "name": "eventConductedBy",
-            "description": "The name of the Agent most immediately responsible for conducting or recording a dwc:Event.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -91,7 +91,7 @@
         },
         {
             "name": "eventConductedByID",
-            "description": "An identifier for the Agent most immediately responsible for conducting or recording a dwc:Event.",
+            "description": "An identifier for the Agent responsible for conducting or recording a dwc:Event.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -261,7 +261,7 @@
         },
         {
             "name": "verbatimCoordinateSystem",
-            "description": "The coordinate format for the dwc:verbatimLatitude and dwc:verbatimLongitude or the dwc:verbatimCoordinates of a dcterms:Location.",
+            "description": "The coordinate format for dwc:verbatimLatitude and dwc:verbatimLongitude or dwc:verbatimCoordinates.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -381,7 +381,7 @@
         },
         {
             "name": "higherGeography",
-            "description": "A list (concatenated and separated) of geographic names less specific than the information captured in the dwc:locality term.",
+            "description": "A list (concatenated and separated) of geographic names less specific than the information captured in dwc:locality.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `), with terms in order from least specific to most specific.",
@@ -700,7 +700,7 @@
         },
         {
             "name": "georeferencedBy",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for a dcterms:Location.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who determined a georeference (spatial representation) for a dcterms:Location.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",

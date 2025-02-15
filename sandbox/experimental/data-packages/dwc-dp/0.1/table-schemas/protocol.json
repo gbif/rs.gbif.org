@@ -41,7 +41,7 @@
         },
         {
             "name": "protocolTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for protocolType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for protocolType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
