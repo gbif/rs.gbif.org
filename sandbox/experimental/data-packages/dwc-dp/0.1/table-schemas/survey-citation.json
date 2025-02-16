@@ -24,10 +24,10 @@
             "description": "An identifier for a Survey.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
-            "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier.",
+            "examples": "",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+            "iri": "gum",
             "constraints": {
                 "required": true,
                 "unique": false
@@ -157,10 +157,10 @@
     "primaryKey": "citationID",
     "foreignKeys": [
         {
-            "fields": "occurrenceID",
+            "fields": "surveyID",
             "reference": {
-                "resource": "occurrence",
-                "fields": "occurrenceID"
+                "resource": "survey",
+                "fields": "surveyID"
             }
         }
     ]

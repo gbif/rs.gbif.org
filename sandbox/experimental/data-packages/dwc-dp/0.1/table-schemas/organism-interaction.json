@@ -108,7 +108,7 @@
             }
         },
         {
-            "fields": "objectOccurrenceID",
+            "fields": "relatedOccurrenceID",
             "reference": {
                 "resource": "occurrence",
                 "fields": "occurrenceID"
