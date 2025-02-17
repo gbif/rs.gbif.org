@@ -21,7 +21,7 @@
         },
         {
             "name": "subjectOccurrenceID",
-            "description": "A unique identifier for the subject dwc:Occurrence in an OrganismInteraction.",
+            "description": "A unique identifier for a subject dwc:Occurrence in an OrganismInteraction.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -65,7 +65,7 @@
         },
         {
             "name": "organismInteractionTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for organismInteractionType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for organismInteractionType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -74,8 +74,8 @@
             "iri": ""
         },
         {
-            "name": "objectOccurrenceID",
-            "description": "A unique identifier for the object dwc:Occurrence in an OrganismInteraction.",
+            "name": "relatedOccurrenceID",
+            "description": "A unique identifier for an related dwc:Occurrence in an OrganismInteraction.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -88,7 +88,7 @@
             }
         },
         {
-            "name": "objectOrganismPart",
+            "name": "relatedOrganismPart",
             "description": "A part of a object dwc:Organism involved in an OrganismInteraction.",
             "type": "string",
             "format": "default",
@@ -108,7 +108,7 @@
             }
         },
         {
-            "fields": "objectOccurrenceID",
+            "fields": "relatedOccurrenceID",
             "reference": {
                 "resource": "occurrence",
                 "fields": "occurrenceID"

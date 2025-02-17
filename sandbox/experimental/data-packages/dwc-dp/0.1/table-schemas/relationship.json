@@ -55,7 +55,7 @@
         },
         {
             "name": "subjectResourceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for subjectResourceType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for subjectResourceType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -85,7 +85,7 @@
         },
         {
             "name": "relationshipTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for relationshipType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for relationshipType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -95,7 +95,7 @@
         },
         {
             "name": "relatedResourceID",
-            "description": "An identifier for the resource that is the object of a Relationship.",
+            "description": "An identifier for the related resource (the object) of a Relationship.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -129,7 +129,7 @@
         },
         {
             "name": "relatedResourceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for relatedResourceType are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for relatedResourceType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -139,7 +139,7 @@
         },
         {
             "name": "relationshipOrder",
-            "description": "The numerical position of a Relationship in a set of Relationships that have the same combination of subjectResourceID and relationshipType.",
+            "description": "The numerical position of a Relationship in a set of Relationships that have the same combination of subjectResourceID, relatedResourceID, relationshipType, relationshipType, and relationshipTypeVocabulary.",
             "type": "integer",
             "format": "default",
             "comments": "One could use relationshipOrder to create an ordered list of authors for a Citation, for example. The first would have relationshipOrder=1, the second would have relationshipOrder=2.",
@@ -153,7 +153,7 @@
         },
         {
             "name": "relationshipAccordingTo",
-            "description": "The name of the Agent most immediately responsible for asserting the Relationship.",
+            "description": "The name of an Agent responsible for asserting a Relationship.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -163,7 +163,7 @@
         },
         {
             "name": "relationshipAccordingToID",
-            "description": "An identifier for the Agent most immediately responsible for asserting the Relationship.",
+            "description": "An identifier for an Agent responsible for asserting a Relationship.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -173,7 +173,7 @@
         },
         {
             "name": "relationshipEffectiveDate",
-            "description": "The date on which the Relationship was established.",
+            "description": "The date on which a Relationship was established.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",

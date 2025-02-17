@@ -55,7 +55,7 @@
         },
         {
             "name": "identifierTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for identifierType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in identifierType is given.",
             "type": "string",
             "format": "default",
             "comments": "",

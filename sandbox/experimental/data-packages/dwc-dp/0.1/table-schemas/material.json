@@ -48,14 +48,14 @@
             "description": "The IRI of the controlled vocabulary value for the type of dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary..",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
             "namespace": "gum",
             "iri": ""
         },
         {
             "name": "materialEntityTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for materialEntityType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in materialEntityType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -65,7 +65,7 @@
         },
         {
             "name": "institutionCode",
-            "description": "A name (or acronym) in use by an institution.",
+            "description": "The name (or acronym) in use by an institution.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -75,7 +75,7 @@
         },
         {
             "name": "institutionID",
-            "description": "An identifier for an institution (Agent).",
+            "description": "An identifier for an institution.",
             "type": "string",
             "format": "default",
             "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
@@ -85,7 +85,7 @@
         },
         {
             "name": "ownerInstitutionCode",
-            "description": "A name (or acronym) in use by the institution having ownership of a dwc:MaterialEntity.",
+            "description": "The name (or acronym) in use by the institution having ownership of a dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -95,7 +95,7 @@
         },
         {
             "name": "ownerInstitutionID",
-            "description": "An identifier for an institution (Agent) that owns a dwc:MaterialEntity.",
+            "description": "An identifier for an institution that owns a dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
             "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR) or the GBIF Registry of Scientific Collections (https://www.gbif.org/grscicoll).",
@@ -105,7 +105,7 @@
         },
         {
             "name": "collectionCode",
-            "description": "A name, acronym, coden, or initialism identifying a Collection.",
+            "description": "The name, acronym, coden, or initialism identifying a Collection.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -144,8 +144,28 @@
             "iri": "http://rs.tdwg.org/dwc/terms/otherCatalogNumbers"
         },
         {
+            "name": "collectedBy",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations responsible for collecting a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
+        },
+        {
+            "name": "collectedByID",
+            "description": "An identifier for the Agent responsible for collecting a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
+        },
+        {
             "name": "recordNumber",
-            "description": "An identifier given to a dwc:MaterialEntity at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity record, such as a specimen collector's number.",
+            "description": "An identifier given to a dwc:MaterialEntity at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity, such as a specimen collector's number.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -202,6 +222,26 @@
             "examples": "`Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`; `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`",
             "namespace": "gum",
             "iri": ""
+        },
+        {
+            "name": "informationWithheld",
+            "description": "Additional information that exists, but that has not been shared in the given record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld"
+        },
+        {
+            "name": "dataGeneralizations",
+            "description": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
         },
         {
             "name": "materialEntityRemarks",
@@ -265,7 +305,7 @@
         },
         {
             "name": "derivationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for derivationType are given.",
+            "description": "The reference to the controlled vocabulary in which the definition of the value in derivationType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -275,7 +315,7 @@
         },
         {
             "name": "partOfMaterialEntityID",
-            "description": "An identifier for a dwc:MaterialEntity that this dwc:MaterialEntity is part of.",
+            "description": "An identifier for a dwc:MaterialEntity of which this dwc:MaterialEntity is a part.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -285,7 +325,7 @@
         },
         {
             "name": "identifiedBy",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -295,7 +335,7 @@
         },
         {
             "name": "identifiedByID",
-            "description": "The identifier for the Agent that asserted the dwc:Identification.",
+            "description": "The identifier for the Agent who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -305,13 +345,53 @@
         },
         {
             "name": "dateIdentified",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned a dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
             "examples": "`2023-05-04`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/dateIdentified"
+        },
+        {
+            "name": "identificationVerificationStatus",
+            "description": "A categorical indicator of the extent to which the taxonomic determination has been verified to be correct.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary such as that used in HISPID and ABCD.",
+            "examples": "`0` ('unverified' in HISPID/ABCD)",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
+        },
+        {
+            "name": "identificationVerificationStatusIRI",
+            "description": "The IRI of the controlled vocabulary value for an identification verification.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identificationVerificationStatusVocabulary",
+            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:identificationVerificationStatus is given.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
+            "name": "identificationRemarks",
+            "description": "Comments or notes about a dwc:Identification.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/identificationRemarks"
         },
         {
             "name": "taxonID",
@@ -325,7 +405,7 @@
         },
         {
             "name": "kingdom",
-            "description": "The full scientific name of the kingdom in which the dwc:scientificName is classified.",
+            "description": "The full scientific name of the kingdom in which a dwc:scientificName is classified.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -335,7 +415,7 @@
         },
         {
             "name": "scientificName",
-            "description": "The full scientific name, with authorship and date information if known. When forming part of a dc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:verbatimIdentification term.",
+            "description": "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in dwc:verbatimIdentification.",
             "type": "string",
             "format": "default",
             "comments": "",

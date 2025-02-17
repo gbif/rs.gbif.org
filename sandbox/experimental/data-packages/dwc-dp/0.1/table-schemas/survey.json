@@ -50,7 +50,7 @@
         },
         {
             "name": "siteNestingDescription",
-            "description": "Textual description of the hierarchical sampling design.",
+            "description": "Textual description of a hierarchical sampling design.",
             "type": "string",
             "format": "default",
             "comments": "Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.",
@@ -60,7 +60,7 @@
         },
         {
             "name": "verbatimSiteDescriptions",
-            "description": "Original textual description of the site(s).",
+            "description": "Original textual description of site(s).",
             "type": "string",
             "format": "default",
             "comments": "Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).",
@@ -80,7 +80,7 @@
         },
         {
             "name": "geospatialScopeAreaValue",
-            "description": "The numeric value for the total area of the geospatial scope of a dwc:Event.",
+            "description": "The numeric value for the total area of a geospatial scope of a dwc:Event.",
             "type": "number",
             "format": "default",
             "comments": "Geospatial scope refers to a dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.",
@@ -402,7 +402,7 @@
         },
         {
             "name": "identifiedBy",
-            "description": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.",
+            "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -412,7 +412,7 @@
         },
         {
             "name": "identifiedByID",
-            "description": "The identifier for the Agent that asserted the dwc:Identification.",
+            "description": "The identifier for the Agent who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -422,7 +422,7 @@
         },
         {
             "name": "identificationReferences",
-            "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification.",
+            "description": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in a dwc:Identification.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -596,7 +596,7 @@
         },
         {
             "name": "samplingPerformedByID",
-            "description": "The identifier for the Agent that perfomed the sampling.",
+            "description": "The identifier for the Agent who performed the sampling.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the sampling agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
@@ -657,6 +657,26 @@
             "examples": "`trapHours`; `personHours`; `trapDays`",
             "namespace": "eco",
             "iri": "http://rs.tdwg.org/eco/terms/samplingEffortUnit"
+        },
+        {
+            "name": "informationWithheld",
+            "description": "Additional information that exists, but that has not been shared in the given record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld"
+        },
+        {
+            "name": "dataGeneralizations",
+            "description": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
         }
     ],
     "primaryKey": "surveyID",

@@ -921,6 +921,13 @@
           "description": "An Assertion made by an Agent about a Survey."
         },
         {
+          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-citation",
+          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-citation.json",
+          "name": "survey-citation",
+          "title": "SurveyCitation",
+          "description": "A citation of a Survey in a bibliographic reference."
+        },
+        {
           "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-identifier",
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-identifier.json",
           "name": "survey-identifier",
@@ -945,7 +952,7 @@
       "title": "Darwin Core Data Package",
       "shortTitle": "dwc-dp",
       "description": "A data package for sharing biodiversity data using Darwin Core.",
-      "issued": "2025-02-03",
+      "issued": "2025-02-16",
       "isLatest": true
     }
   ]

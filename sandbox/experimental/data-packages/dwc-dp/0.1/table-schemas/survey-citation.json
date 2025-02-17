@@ -1,9 +1,9 @@
 {
-    "name": "event-citation",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/event-citation",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-citation.json",
-    "title": "EventCitation",
-    "description": "A citation of a dwc:Event in a bibliographic reference.",
+    "name": "survey-citation",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-citation",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-citation.json",
+    "title": "SurveyCitation",
+    "description": "A citation of a Survey in a bibliographic reference.",
     "fields": [
         {
             "name": "citationID",
@@ -20,14 +20,14 @@
             }
         },
         {
-            "name": "eventID",
-            "description": "An identifier for a dwc:Event.",
+            "name": "surveyID",
+            "description": "An identifier for a Survey.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "comments": "Recommended best practice is to use a persistent, globally unique identifier.",
             "examples": "",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/eventID",
+            "iri": "gum",
             "constraints": {
                 "required": true,
                 "unique": false
@@ -55,7 +55,7 @@
         },
         {
             "name": "citationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in citationType is given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for citationType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -115,7 +115,7 @@
         },
         {
             "name": "referenceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in referenceType is given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for referenceType is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -157,10 +157,10 @@
     "primaryKey": "citationID",
     "foreignKeys": [
         {
-            "fields": "eventID",
+            "fields": "surveyID",
             "reference": {
-                "resource": "event",
-                "fields": "eventID"
+                "resource": "survey",
+                "fields": "surveyID"
             }
         }
     ]

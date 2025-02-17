@@ -38,7 +38,7 @@
             "description": "The category that best matches the nature of a role of an Agent.",
             "type": "string",
             "format": "default",
-            "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource the AgentRole is related to.",
+            "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource an AgentRole is related to.",
             "examples": "`collector`; `preparator`; `organizer`; `author`; `creator`; `owner`; `observer`; `director`; `husband`",
             "namespace": "gum",
             "iri": ""
@@ -55,7 +55,7 @@
         },
         {
             "name": "agentRoleVocabulary",
-            "description": "The reference to the controlled vocabulary where the definitions of values for agentRole are given.",
+            "description": "The reference to the controlled vocabulary where the definition of the value for agentRole is given.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -65,10 +65,10 @@
         },
         {
             "name": "agentRoleOrder",
-            "description": "The numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRoleTargetID and agentRoleTargetType.",
+            "description": "The numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRole, agentRoleIRI, agentRoleVocabulary and related target.",
             "type": "integer",
             "format": "default",
-            "comments": "One could use agentRoleOrder to create an ordered list of collectors for a dwc:MaterialEntity, for example. The first would have agentRoleOrder=1, the second would have agentRoleOrder=2.",
+            "comments": "One could use agentRoleOrder to create an ordered list of collectors (agentRole = 'collector') for a dwc:MaterialEntity, for example. The first would have agentRoleOrder=1, the second would have agentRoleOrder=2.",
             "constraints": {
                 "required": false,
                 "minimum": 1
@@ -79,7 +79,7 @@
         },
         {
             "name": "agentRoleDate",
-            "description": "The interval during which the AgentRole was in effect.",
+            "description": "The interval during which an AgentRole was in effect.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
