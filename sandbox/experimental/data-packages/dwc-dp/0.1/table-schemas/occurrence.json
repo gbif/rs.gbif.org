@@ -285,6 +285,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/organismRemarks"
         },
         {
+            "name": "verbatimIdentification",
+            "description": "A string representing the taxonomic identification as it appeared in the original record.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/verbatimIdentification"
+        },
+        {
             "name": "identifiedBy",
             "description": "A list (concatenated and separated) of names of people, groups, or organizations who made a taxonomic determination of a dwc:Organism.",
             "type": "string",
