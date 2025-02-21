@@ -70,16 +70,6 @@
             "iri": ""
         },
         {
-            "name": "datasetID",
-            "description": "An identifier for a dataset from which data originated.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/datasetID"
-        },
-        {
             "name": "datasetName",
             "description": "A name for a dataset from which data originated.",
             "type": "string",
@@ -88,6 +78,16 @@
             "examples": "",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/datasetName"
+        },
+        {
+            "name": "datasetID",
+            "description": "An identifier for a dataset from which data originated.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a globally unique identifier.",
+            "examples": "",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/datasetID"
         },
         {
             "name": "fieldNumber",
