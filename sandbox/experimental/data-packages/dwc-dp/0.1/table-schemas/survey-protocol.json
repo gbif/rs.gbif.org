@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
     "title": "SurveyProtocol",
-    "description": "A method used in relation to a Survey.",
+    "description": "A link establishing a Protocol used in a Survey.",
     "fields": [
         {
             "name": "protocolID",

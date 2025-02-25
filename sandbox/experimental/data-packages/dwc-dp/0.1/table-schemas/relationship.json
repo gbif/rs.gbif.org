@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/relationship",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/relationship.json",
     "title": "Relationship",
-    "description": "A specification for a relationship of a subject entity to a releted entity.",
+    "description": "A specification for a relationship of a subject entity to a related entity.",
     "fields": [
         {
             "name": "relationshipID",

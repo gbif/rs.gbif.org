@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-protocol.json",
     "title": "GeneticSequenceProtocol",
-    "description": "A method used in relation to a GeneticSequence.",
+    "description": "A link establishing a Protocol used in the determination of a GeneticSequence.",
     "fields": [
         {
             "name": "protocolID",

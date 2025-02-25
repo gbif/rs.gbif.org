@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/chronometric-age-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
     "title": "ChronometricAgeProtocol",
-    "description": "A method used in relation to a chrono:ChronometricAge.",
+    "description": "A link establishing a Protocol used in the determination of a chrono:ChronometricAge.",
     "fields": [
         {
             "name": "protocolID",

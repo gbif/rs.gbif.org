@@ -37,7 +37,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age.json",
             "name": "chronometric-age",
             "title": "ChronometricAge",
-            "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that are supported by evidence."
+            "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported by evidence."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/chronometric-age-agent-role",
@@ -72,7 +72,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
             "name": "chronometric-age-protocol",
             "title": "ChronometricAgeProtocol",
-            "description": "A method used in relation to a chrono:ChronometricAge."
+            "description": "A link establishing a Protocol used in the determination of a chrono:ChronometricAge."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/collection",
@@ -149,7 +149,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
             "name": "event-protocol",
             "title": "EventProtocol",
-            "description": "A method used in relation to a dwc:Event."
+            "description": "A link establishing a Protocol used in a dwc:Event."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence",
@@ -191,7 +191,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-protocol.json",
             "name": "genetic-sequence-protocol",
             "title": "GeneticSequenceProtocol",
-            "description": "A method used in relation to a GeneticSequence."
+            "description": ""A link establishing a Protocol used in the determination of a GeneticSequence."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/geological-context",
@@ -275,7 +275,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
             "name": "material-protocol",
             "title": "MaterialProtocol",
-            "description": "A method used in relation to a dwc:MaterialEntity."
+            "description": "A link establishing a Protocol used in the treatment of a dwc:MaterialEntity."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/media",
@@ -352,7 +352,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
             "name": "occurrence-protocol",
             "title": "OccurrenceProtocol",
-            "description": "A method used in relation to a dwc:Occurrence."
+            "description": "A link establishing a Protocol used in the determination of a dwc:Occurrence."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/organism-interaction",
@@ -429,7 +429,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-protocol.json",
             "name": "phylogenetic-tree-protocol",
             "title": "PhylogeneticTreeProtocol",
-            "description": "A method used in relation to a PhylogeneticTree."
+            "description": "A link establishing a Protocol used in the determination of a PhylogeneticTree."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/phylogenetic-tree-tip",
@@ -464,7 +464,7 @@
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/relationship",
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/relationship.json",
             "title": "Relationship",
-            "description": "A specification for a relationship of a subject entity to a releted entity."
+            "description": "A specification for a relationship of a subject entity to a related entity."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey",
@@ -506,7 +506,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
             "name": "survey-protocol",
             "title": "SurveyProtocol",
-            "description": "A method used in relation to a Survey."
+            "description": ""A link establishing a Protocol used in a Survey."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-target",
@@ -519,6 +519,6 @@
     "title": "Darwin Core Data Package",
     "shortTitle": "dwc-dp",
     "description": "A data package for sharing biodiversity data using Darwin Core.",
-    "issued": "2025-02-20",
+    "issued": "2025-02-24",
     "isLatest": true
 }
