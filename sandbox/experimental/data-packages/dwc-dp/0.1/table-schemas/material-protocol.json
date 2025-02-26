@@ -3,7 +3,7 @@
     "identifier": "http://rs.gbif.org/data-packages/dwc-dp/material-protocol",
     "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
     "title": "MaterialProtocol",
-    "description": "A method used in relation to a dwc:MaterialEntity.",
+    "description": "A link establishing a Protocol used in the treatment of a dwc:MaterialEntity.",
     "fields": [
         {
             "name": "protocolID",

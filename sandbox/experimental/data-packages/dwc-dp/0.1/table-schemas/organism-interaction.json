@@ -20,6 +20,16 @@
             }
         },
         {
+            "name": "organismInteractionDescription",
+            "description": "A verbatim description of an OrganismInteraction.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`Mallophora ruficauda capturing an Apis mellifera worker in flight`",
+            "namespace": "dcterms",
+            "iri": "http://purl.org/dc/terms/description"
+        },
+        {
             "name": "subjectOccurrenceID",
             "description": "A unique identifier for a subject dwc:Occurrence in an OrganismInteraction.",
             "type": "string",
