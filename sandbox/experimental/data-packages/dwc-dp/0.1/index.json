@@ -506,7 +506,7 @@
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
             "name": "survey-protocol",
             "title": "SurveyProtocol",
-            "description": ""A link establishing a Protocol used in a Survey."
+            "description": "A link establishing a Protocol used in a Survey."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/survey-target",
@@ -519,6 +519,6 @@
     "title": "Darwin Core Data Package",
     "shortTitle": "dwc-dp",
     "description": "A data package for sharing biodiversity data using Darwin Core.",
-    "issued": "2025-02-24",
+    "issued": "2025-02-26",
     "isLatest": true
 }
