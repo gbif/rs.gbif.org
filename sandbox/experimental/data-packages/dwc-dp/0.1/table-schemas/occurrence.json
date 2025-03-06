@@ -205,6 +205,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/occurrenceStatus"
         },
         {
+            "name": "occurrenceCitation",
+            "description": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with a dwc:Occurrence.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+            "examples": "`Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`; `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "informationWithheld",
             "description": "Additional information that exists, but that has not been shared in the given record.",
             "type": "string",

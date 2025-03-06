@@ -174,6 +174,16 @@
             "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
         },
         {
+            "name": "objectCount",
+            "description": "The number of distinct objects comprising a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`0`; `1`; `25`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/individualCount"
+        },
+        {
             "name": "recordNumber",
             "description": "An identifier given to a dwc:MaterialEntity at the time it was recorded. Often serves as a link between field notes and a dwc:MaterialEntity, such as a specimen collector's number.",
             "type": "string",
