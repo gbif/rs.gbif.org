@@ -34,8 +34,18 @@
             }
         },
         {
+            "name": "materialCategory",
+            "description": "The broad category that best matches the nature of a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a limited, tightly controlled vocabulary.",
+            "examples": "`preserved`; `living`; `fossilized`; `tissue`; `DNA extract`; `non-biological`; `human-made`",
+            "namespace": "gum",
+            "iri": ""
+        },
+        {
             "name": "materialEntityType",
-            "description": "The category that best matches the nature of a dwc:MaterialEntity.",
+            "description": "The narrow category that best matches the nature of a dwc:MaterialEntity.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
@@ -162,6 +172,16 @@
             "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
+        },
+        {
+            "name": "objectCount",
+            "description": "The number of distinct objects comprising a dwc:MaterialEntity.",
+            "type": "string",
+            "format": "default",
+            "comments": "",
+            "examples": "`0`; `1`; `25`",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/individualCount"
         },
         {
             "name": "recordNumber",
@@ -332,6 +352,16 @@
             "examples": "",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/verbatimIdentification"
+        },
+        {
+            "name": "taxonFormula",
+            "description": "A string representing the pattern to use to construct a dwc:Identification from dwc:Taxon names and identification qualifiers.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a controlled vocabulary such as https://arctos.database.museum/info/ctDocumentation.cfm?table=cttaxa_formula.",
+            "examples": "`A`; `A ?`; `A or B`; `A and B`; `A x B`; `A cf.`; `A aff.`",
+            "namespace": "gum",
+            "iri": ""
         },
         {
             "name": "identifiedBy",

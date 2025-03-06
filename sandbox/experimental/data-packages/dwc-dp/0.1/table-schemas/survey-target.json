@@ -16,7 +16,7 @@
             "iri": "",
             "constraints": {
                 "required": true,
-                "unique": true
+                "unique": false
             }
         },
         {
