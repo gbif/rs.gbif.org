@@ -26,7 +26,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -36,7 +36,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -46,7 +46,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -56,7 +56,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -66,27 +66,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
             "examples": "`GeneticSequence`; `TaxonDistribution`; `MaterialEntity`; `Sound`; `StillImage`; `MovingImage`; `Text`; `HumanObservation`; `MachineObservation`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of dwc:Identification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary..",
-            "examples": "`http://rs.tdwg.org/dwc/terms/MaterialEntity`; `http://purl.org/dc/dcmitype/Sound`; `http://purl.org/dc/dcmitype/StillImage`; `http://purl.org/dc/dcmitype/MovingImage`; `http://purl.org/dc/dcmitype/Text`; `http://rs.tdwg.org/dwc/terms/HumanObservation`; `http://rs.tdwg.org/dwc/terms/MachineObservation`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in identificationType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -95,7 +75,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "`Ctenomys sociabilis`; `social tuco-tuco`; `Peromyscus sp.`; `Ministrymon sp. nov. 1`; `Anser anser × Branta canadensis`; `Pachyporidae?`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/verbatimIdentification"
         },
@@ -106,7 +86,7 @@
             "format": "default",
             "comments": "",
             "examples": "`true`; `false`",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -116,8 +96,11 @@
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary such as https://arctos.database.museum/info/ctDocumentation.cfm?table=cttaxa_formula.",
             "examples": "`A`; `A ?`; `A or B`; `A and B`; `A x B`; `A cf.`; `A aff.`",
-            "namespace": "gum",
-            "iri": ""
+            "namespace": "dwcdp",
+            "iri": "",
+            "constraints": {
+                "tdwgutility:default": "A"
+            }            
         },
         {
             "name": "typeStatus",
@@ -136,7 +119,7 @@
             "format": "default",
             "comments": " From https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml.",
             "examples": "`monotypy`; `original designation`; `tautonomy`",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -190,26 +173,6 @@
             "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
         },
         {
-            "name": "identificationVerificationStatusIRI",
-            "description": "The IRI of the controlled vocabulary value for an identification verification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationVerificationStatusVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:identificationVerificationStatus is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
             "name": "identificationRemarks",
             "description": "Comments or notes about a dwc:Identification.",
             "type": "string",
@@ -235,7 +198,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "Animalia",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/kingdom"
         },
@@ -245,7 +208,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "`Coleoptera` (order); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship); `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
         },
@@ -255,7 +218,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/taxonRank"
         },
@@ -265,7 +228,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`this name is a misspelling in common use`",
+            "examples": "`This name is a misspelling in common use.`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
         }

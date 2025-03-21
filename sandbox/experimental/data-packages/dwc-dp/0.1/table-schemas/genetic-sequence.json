@@ -12,7 +12,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": "",
             "constraints": {
                 "required": true,
@@ -40,7 +40,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -50,27 +50,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
             "examples": "`16S`; `cytochrome b`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "geneticSequenceTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of GeneticSequence.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "geneticSequenceTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in geneticSequenceType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -80,7 +60,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -90,7 +70,7 @@
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -100,7 +80,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         }
     ],

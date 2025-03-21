@@ -26,13 +26,12 @@
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": "http://rs.tdwg.org/dwc/terms/eventID",
             "constraints": {
                 "required": true,
                 "unique": false
             }
-
         },
         {
             "name": "surveyTargetID",
@@ -41,7 +40,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -50,7 +49,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`, `FMNH`",
+            "examples": "`José E. Crespo`; `Oliver P. Pearson | Anita K. Pearson`; `FMNH`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedBy"
         },
@@ -60,7 +59,7 @@
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "`https://orcid.org/0000-0002-1825-0097`, `https://ror.org/00mh9zx15`",
+            "examples": "`https://orcid.org/0000-0002-1825-0097`; `https://ror.org/00mh9zx15`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/recordedByID"
         },
@@ -83,26 +82,6 @@
             "examples": "`27` (organismQuantity) with `individuals` (organismQuantityType); `12.5` (organismQuantity) with `% biomass` (organismQuantityType); `r` (organismQuantity) with `Braun-Blanquet Scale` (organismQuantityType); `many` (organismQuantity) with `individuals` (organismQuantityType)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/organismQuantity"
-        },
-        {
-            "name": "organismQuantityTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for an organism quantity type.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "organismQuantityTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:organismQuantityType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
         },
         {
             "name": "sex",
@@ -196,13 +175,16 @@
         },
         {
             "name": "occurrenceStatus",
-            "description": "A statement about the presence or absence of a dwc:Organism.",
+            "description": "A statement about the detection or non-detection of a dwc:Organism.",
             "type": "string",
             "format": "default",
-            "comments": "For dwc:Occurrences, the default vocabulary is recommended to consist of present and absent, but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
-            "examples": "`present`; `absent`",
+            "comments": "For dwc:Occurrences, the default vocabulary is recommended to consist of 'detected' and 'notDetected', but can be extended by implementers with good justification. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.",
+            "examples": "`detected`; `notDetected`",
             "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/occurrenceStatus"
+            "iri": "http://rs.tdwg.org/dwc/terms/occurrenceStatus",
+            "constraints": {
+                "tdwgutility:default": "detected"
+            }
         },
         {
             "name": "occurrenceCitation",
@@ -211,7 +193,7 @@
             "format": "default",
             "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
             "examples": "`Christopher J. Conroy, Jennifer L. Neuwald. 2008. Phylogeographic study of the California vole, Microtus californicus Journal of Mammalogy, 89(3):755-767.`; `Steven R. Hoofer and Ronald A. Van Den Bussche. 2001. Phylogenetic Relationships of Plecotine Bats and Allies Based on Mitochondrial Ribosomal Sequences. Journal of Mammalogy 82(1):131-137. | Walker, Faith M., Jeffrey T. Foster, Kevin P. Drees, Carol L. Chambers. 2014. Spotted bat (Euderma maculatum) microsatellite discovery using illumina sequencing. Conservation Genetics Resources.`",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -265,26 +247,6 @@
             "iri": "http://rs.tdwg.org/dwc/terms/organismScope"
         },
         {
-            "name": "organismScopeIRI",
-            "description": "The IRI of the controlled vocabulary value for an organism scope.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "organismScopeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:organismScope is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
             "name": "organismName",
             "description": "A name or label assigned to a dwc:Organism.",
             "type": "string",
@@ -321,8 +283,11 @@
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary such as https://arctos.database.museum/info/ctDocumentation.cfm?table=cttaxa_formula.",
             "examples": "`A`; `A ?`; `A or B`; `A and B`; `A x B`; `A cf.`; `A aff.`",
-            "namespace": "gum",
-            "iri": ""
+            "namespace": "dwcdp",
+            "iri": "",
+            "constraints": {
+                "tdwgutility:default": "A"
+            }            
         },
         {
             "name": "identifiedBy",
@@ -373,26 +338,6 @@
             "examples": "`0` ('unverified' in HISPID/ABCD)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus"
-        },
-        {
-            "name": "identificationVerificationStatusIRI",
-            "description": "The IRI of the controlled vocabulary value for an identification verification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "identificationVerificationStatusVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for dwc:identificationVerificationStatus is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
         },
         {
             "name": "identificationRemarks",

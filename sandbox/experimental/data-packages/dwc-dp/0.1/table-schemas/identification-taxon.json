@@ -40,7 +40,7 @@
                 "required": false,
                 "minimum": 1
             },
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -49,7 +49,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "Animalia",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/kingdom"
         },
@@ -59,7 +59,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "`Coleoptera` (order); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship); `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
         },
@@ -69,7 +69,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "",
+            "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/taxonRank"
         },
@@ -79,7 +79,7 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`this name is a misspelling in common use`",
+            "examples": "`This name is a misspelling in common use.`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
         }

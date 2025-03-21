@@ -12,7 +12,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": "",
             "constraints": {
                 "required": true,
@@ -25,8 +25,8 @@
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
-            "examples": "`person`; `group`; `organization`",
-            "namespace": "gum",
+            "examples": "`person`; `group`; `organization`; `camera`",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -36,7 +36,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -46,7 +46,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -56,7 +56,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         }
     ],
