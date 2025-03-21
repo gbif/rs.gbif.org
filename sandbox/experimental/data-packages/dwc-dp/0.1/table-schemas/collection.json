@@ -26,27 +26,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
             "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "collectionTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of Collection.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "collectionTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in collectionType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -56,7 +36,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -86,7 +66,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {

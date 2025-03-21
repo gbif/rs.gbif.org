@@ -26,7 +26,7 @@
             "format": "default",
             "comments": "Recommended best practice is to use a globally unique identifier.",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": "http://rs.tdwg.org/dwc/terms/eventID"
         },
         {

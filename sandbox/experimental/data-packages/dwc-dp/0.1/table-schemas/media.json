@@ -12,7 +12,7 @@
             "format": "default",
             "comments": "",
             "examples": "",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": "",
             "constraints": {
                 "required": true,
@@ -25,28 +25,8 @@
             "type": "string",
             "format": "default",
             "comments": "",
-            "examples": "`Sound`; `Still Image`; `Moving Image`; `Text`",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "mediaTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of Media.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "gum",
-            "iri": ""
-        },
-        {
-            "name": "mediaTypeVocabulary",
-            "description": "The reference to the controlled vocabulary in which the definition of the value in mediaType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "gum",
+            "examples": "`Sound`; `StillImage`; `MovingImage`; `Text`",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
@@ -135,7 +115,7 @@
             "type": "string",
             "format": "default",
             "comments": "The date of the creation of the original resource from which the digital media was derived or created. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004, https://www.iso.org/standard/40874.html. AC datetime values MAY also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (\"forward slash\", '/'). When applied to a media resource with temporal extent such as audio or video, this property indicates the startTime of the recording. What constitutes \"original\" is determined by the metadata author. Example: Digitization of a photographic slide of a map would normally give the date at which the map was created; however a photographic work of art including the same map as its content may give the date of the original photographic exposure. Imprecise or unknown dates can be represented as ISO dates or ranges. Compare also Date and Time Digitized in the Resource Creation Vocabulary. See also the wikipedia IS0 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
-            "examples": "",
+            "examples": "2025-03-20T17:28-03:00",
             "namespace": "xmp",
             "iri": "http://ns.adobe.com/xap/1.0/CreateDate"
         },
@@ -145,7 +125,7 @@
             "type": "string",
             "format": "default",
             "comments": "Date that the media resource was altered. The date and time MUST comply with the World Wide Web Consortium (W3C) datetime practice, https://www.w3.org/TR/NOTE-datetime, which requires that date and time representation correspond to ISO 8601:1998, https://www.iso.org/standard/40874.html, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values MAY also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (\"forward slash\", '/'). dcterms:modified permits all modification dates to be recorded, or if only one is recorded, it is assumed to be the latest. See also the wikipedia IS0 8601 entry, https://en.wikipedia.org/wiki/ISO_8601, for further explanation and examples.",
-            "examples": "",
+            "examples": "`14:07-06:00` (2:07pm in the time zone six hours earlier than UTC); `08:40:21Z` (8:40:21am UTC); `13:00:00Z/15:30:00Z` (the interval between 1pm UTC and 3:30pm UTC)",
             "namespace": "dcterms",
             "iri": "http://purl.org/dc/terms/modified"
         },
@@ -156,7 +136,7 @@
             "format": "default",
             "comments": "Recommended best prectice is to use an ISO639-2 three-letter language code.",
             "examples": "`eng` (for Modern English); `spa` (for Castilian Standard Spanish)",
-            "namespace": "gum",
+            "namespace": "dwcdp",
             "iri": ""
         },
         {
