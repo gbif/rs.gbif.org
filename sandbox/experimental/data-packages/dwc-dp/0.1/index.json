@@ -152,6 +152,20 @@
             "description": "A link establishing a Protocol used in a dwc:Event."
         },
         {
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-analysis",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-analysis.json",
+            "name": "genetic-analysis",
+            "title": "GeneticAnalysis",
+            "description": "A link between a DNA sequence and the event and material from which it was derived, using a specified protocol."
+        },
+        {
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol.json",
+            "name": "genetic-protocol",
+            "title": "Geneticrotocol",
+            "description": "A protocol used to derive and identify dna sequences from material."
+        },
+        {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence",
             "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence.json",
             "name": "genetic-sequence",
@@ -185,13 +199,6 @@
             "name": "genetic-sequence-media",
             "title": "GeneticSequenceMedia",
             "description": "A link establishing a GeneticSequence as content of a Media entity."
-        },
-        {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-protocol",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-protocol.json",
-            "name": "genetic-sequence-protocol",
-            "title": "GeneticSequenceProtocol",
-            "description": "A link establishing a Protocol used in the determination of a GeneticSequence."
         },
         {
             "identifier": "http://rs.gbif.org/data-packages/dwc-dp/geological-context",
