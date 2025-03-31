@@ -121,7 +121,8 @@
     [
       "eventID",
       "geneticProtocolID",
-      "geneticSequenceID"
+      "geneticSequenceID",
+      "materialEntityID"
     ]
   ],
   "uniqueNulls": true
