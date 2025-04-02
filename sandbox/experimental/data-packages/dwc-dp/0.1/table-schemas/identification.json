@@ -20,7 +20,7 @@
             }
         },
         {
-            "name": "identificationBasedOnOccurrenceID",
+            "name": "basedOnOccurrenceID",
             "description": "An identifier for a dwc:Occurrence based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
@@ -30,7 +30,7 @@
             "iri": ""
         },
         {
-            "name": "identificationBasedOnMaterialEntityID",
+            "name": "basedOnMaterialEntityID",
             "description": "An identifier for a dwc:MaterialEntity based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
@@ -40,7 +40,7 @@
             "iri": ""
         },
         {
-            "name": "identificationBasedOnGeneticSequenceID",
+            "name": "basedOnGeneticSequenceID",
             "description": "An identifier for a GeneticSequence based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
@@ -50,7 +50,7 @@
             "iri": ""
         },
         {
-            "name": "identificationBasedOnGeneticAnalysisID",
+            "name": "basedOnGeneticAnalysisID",
             "description": "An identifier for a GeneticAnalysis based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
@@ -60,7 +60,7 @@
             "iri": ""
         },
         {
-            "name": "identificationBasedOnMediaID",
+            "name": "basedOnMediaID",
             "description": "An identifier for a Media instance based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
@@ -256,35 +256,35 @@
     "primaryKey": "identificationID",
     "foreignKeys": [
         {
-            "fields": "identificationBasedOnOccurrenceID",
+            "fields": "basedOnOccurrenceID",
             "reference": {
                 "resource": "occurrence",
                 "fields": "occurrenceID"
             }
         },
         {
-            "fields": "identificationBasedOnMaterialEntityID",
+            "fields": "basedOnMaterialEntityID",
             "reference": {
                 "resource": "material",
                 "fields": "materialEntityID"
             }
         },
         {
-            "fields": "identificationBasedOnGeneticSequenceID",
+            "fields": "basedOnGeneticSequenceID",
             "reference": {
                 "resource": "genetic-sequence",
                 "fields": "geneticSequenceID"
             }
         },
         {
-            "fields": "identificationBasedOnGeneticAnalysisID",
+            "fields": "basedOnGeneticAnalysisID",
             "reference": {
                 "resource": "genetic-analysis",
                 "fields": "geneticAnalysisID"
             }
         },
         {
-            "fields": "identificationBasedOnMediaID",
+            "fields": "basedOnMediaID",
             "reference": {
                 "resource": "media",
                 "fields": "mediaID"
