@@ -620,13 +620,6 @@
           "description": "A link establishing a GeneticSequence as content of a Media entity."
         },
         {
-          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-protocol",
-          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-protocol.json",
-          "name": "genetic-sequence-protocol",
-          "title": "GeneticSequenceProtocol",
-          "description": "A link establishing a Protocol used in the determination of a GeneticSequence."
-        },
-        {
           "identifier": "http://rs.gbif.org/data-packages/dwc-dp/geological-context",
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context.json",
           "name": "geological-context",
