@@ -1,9 +1,9 @@
 {
-    "name": "genetic-sequence-citation",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-citation",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-citation.json",
-    "title": "GeneticSequenceCitation",
-    "description": "A citation of a GeneticSequence in a bibliographic reference.",
+    "name": "genetic-protocol-citation",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-citation",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-citation.json",
+    "title": "GeneticProtocolCitation",
+    "description": "A citation of a GeneticProtocol in a bibliographic reference.",
     "fields": [
         {
             "name": "citationID",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a GeneticSequence.",
+            "name": "geneticProtocolID",
+            "description": "An identifier for a GeneticProtocol.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -157,10 +157,10 @@
     "primaryKey": "citationID",
     "foreignKeys": [
         {
-            "fields": "geneticSequenceID",
+            "fields": "geneticProtocolID",
             "reference": {
-                "resource": "genetic-sequence",
-                "fields": "geneticSequenceID"
+                "resource": "genetic-protocol",
+                "fields": "geneticProtocolID"
             }
         }
     ]
