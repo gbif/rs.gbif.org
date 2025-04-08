@@ -592,12 +592,12 @@
           "description": "A digital representation of a nucleotide sequence."
         },
         {
-          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-agent-role",
-          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-agent-role.json",
-          "name": "genetic-sequence-agent-role",
-          "title": "GeneticSequenceAgentRole",
-          "description": "A role filled by an Agent with respect to a GeneticSequence."
-        },
+          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-agent-role",
+          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-agent-role.json",
+          "name": "genetic-protocol-agent-role",
+          "title": "GeneticProtocolAgentRole",
+          "description": "A role filled by an Agent with respect to a GeneticProtocol."
+      },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-assertion",
           "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-assertion.json",
@@ -613,11 +613,11 @@
           "description": "A citation of a GeneticSequence in a bibliographic reference."
         },
         {
-          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-media",
-          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-media.json",
-          "name": "genetic-sequence-media",
-          "title": "GeneticSequenceMedia",
-          "description": "A link establishing a GeneticSequence as content of a Media entity."
+          "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-protocol",
+          "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-protocol.json",
+          "name": "genetic-sequence-protocol",
+          "title": "GeneticSequenceProtocol",
+          "description": "A link establishing a Protocol used in the determination of a GeneticSequence."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/dwc-dp/geological-context",
