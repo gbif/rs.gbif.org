@@ -1,13 +1,13 @@
 {
-  "name": "genetic-protocol",
-  "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol.json",
-  "title": "GeneticProtocol",
-  "description": "A protocol used to derive and identify dna sequences from material.",
+  "name": "molecular-protocol",
+  "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
+  "title": "MolecularProtocol",
+  "description": "A protocol used to derive and identify nucleotide sequences from material.",
   "fields": [
     {
-      "name": "geneticProtocolID",
-      "description": "An identifier for a GeneticProtocol.",
+      "name": "molecularProtocolID",
+      "description": "An identifier for a MolecularProtocol.",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -18,6 +18,16 @@
         "required": true,
         "unique": true
       }
+    },
+    {
+      "name": "assayType",
+      "description": "The method used in the study to detect taxon/taxa of interest in the sample.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use this controlled vocabulary: `targeted | metabarcoding | sanger sequencing | genome skimming | whole genome sequencing | metagenomic | other`",
+      "examples": "`targeted`; `metabarcoding`; `sanger sequencing`; `genome skimming`; `whole genome sequencing`; `metagenomic`; `other`",
+      "namespace": "dwcdp",
+      "iri": ""
     },
     {
       "name": "samp_name",
@@ -1240,5 +1250,5 @@
       "iri": "http://rs.gbif.org/terms/miqe/pcr_primer_loq"
     }
   ],
-  "primaryKey": "geneticProtocolID"
+  "primaryKey": "molecularProtocolID"
 }

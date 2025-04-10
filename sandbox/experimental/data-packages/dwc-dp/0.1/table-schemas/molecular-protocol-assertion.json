@@ -1,9 +1,9 @@
 {
-    "name": "genetic-sequence-assertion",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-assertion",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-assertion.json",
-    "title": "GeneticSequenceAssertion",
-    "description": "An Assertion made by an Agent about a GeneticSequence.",
+    "name": "molecular-protocol-assertion",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-assertion",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
+    "title": "MolecularProtocolAssertion",
+    "description": "An Assertion made by an Agent about a MolecularProtocol.",
     "fields": [
         {
             "name": "assertionID",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a GeneticSequence.",
+            "name": "molecularProtocolID",
+            "description": "An identifier for a MolecularProtocol.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -217,10 +217,10 @@
     "primaryKey": "assertionID",
     "foreignKeys": [
         {
-            "fields": "geneticSequenceID",
+            "fields": "molecularProtocolID",
             "reference": {
-                "resource": "genetic-sequence",
-                "fields": "geneticSequenceID"
+                "resource": "molecular-protocol",
+                "fields": "molecularProtocolID"
             }
         },
         {

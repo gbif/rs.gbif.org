@@ -40,8 +40,8 @@
             "iri": ""
         },
         {
-            "name": "basedOnGeneticSequenceID",
-            "description": "An identifier for a GeneticSequence based on which a dwc:Identification was made.",
+            "name": "basedOnNucleotideSequenceID",
+            "description": "An identifier for a NucleotideSequence based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -50,8 +50,8 @@
             "iri": ""
         },
         {
-            "name": "basedOnGeneticAnalysisID",
-            "description": "An identifier for a GeneticAnalysis based on which a dwc:Identification was made.",
+            "name": "basedOnNucleotideAnalysisID",
+            "description": "An identifier for a NucleotideAnalysis based on which a dwc:Identification was made.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -270,17 +270,17 @@
             }
         },
         {
-            "fields": "basedOnGeneticSequenceID",
+            "fields": "basedOnNucleotideSequenceID",
             "reference": {
-                "resource": "genetic-sequence",
-                "fields": "geneticSequenceID"
+                "resource": "nucleotide-sequence",
+                "fields": "nucleotideSequenceID"
             }
         },
         {
-            "fields": "basedOnGeneticAnalysisID",
+            "fields": "basedOnNucleotideAnalysisID",
             "reference": {
-                "resource": "genetic-analysis",
-                "fields": "geneticAnalysisID"
+                "resource": "nucleotide-analysis",
+                "fields": "nucleotideAnalysisID"
             }
         },
         {

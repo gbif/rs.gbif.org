@@ -1,13 +1,13 @@
 {
-    "name": "genetic-sequence",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence.json",
-    "title": "GeneticSequence",
+    "name": "nucleotide-sequence",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/nucleotide-sequence",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
+    "title": "NucleotideSequence",
     "description": "A digital representation of a nucleotide sequence.",
     "fields": [
         {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a GeneticSequence.",
+            "name": "nucleotideSequenceID",
+            "description": "An identifier for a NucleotideSequence.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -20,7 +20,7 @@
             }
         },
         {
-            "name": "geneticSequence",
+            "name": "nucleotideSequence",
             "description": "A string representing nucleotide base pairs.",
             "type": "string",
             "format": "default",
@@ -30,8 +30,8 @@
             "iri": ""
         },
         {
-            "name": "geneticSequenceRemarks",
-            "description": "Comments or notes about a GeneticSequence.",
+            "name": "nucleotideSequenceRemarks",
+            "description": "Comments or notes about a NucleotideSequence.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -40,5 +40,5 @@
             "iri": ""
         }
     ],
-    "primaryKey": "geneticSequenceID"
+    "primaryKey": "nucleotideSequenceID"
 }

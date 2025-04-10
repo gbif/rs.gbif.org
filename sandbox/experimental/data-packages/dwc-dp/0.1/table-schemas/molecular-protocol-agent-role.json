@@ -1,9 +1,9 @@
 {
-    "name": "genetic-sequence-agent-role",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence-agent-role",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence-agent-role.json",
-    "title": "GeneticSequenceAgentRole",
-    "description": "A role filled by an Agent with respect to a GeneticSequence.",
+    "name": "molecular-protocol-agent-role",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-agent-role",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
+    "title": "MolecularProtocolAgentRole",
+    "description": "A role filled by an Agent with respect to a MolecularProtocol.",
     "fields": [
         {
             "name": "agentID",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a GeneticSequence.",
+            "name": "molecularProtocolID",
+            "description": "An identifier for a MolecularProtocol.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -97,10 +97,10 @@
             }
         },
         {
-            "fields": "geneticSequenceID",
+            "fields": "molecularProtocolID",
             "reference": {
-                "resource": "genetic-sequence",
-                "fields": "geneticSequenceID"
+                "resource": "molecular-protocol",
+                "fields": "molecularProtocolID"
             }
         }
     ]
