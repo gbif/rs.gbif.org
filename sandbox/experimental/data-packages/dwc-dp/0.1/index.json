@@ -152,52 +152,52 @@
             "description": "A link establishing a Protocol used in a dwc:Event."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-analysis",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-analysis.json",
-            "name": "genetic-analysis",
-            "title": "GeneticAnalysis",
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/nucleotide-analysis",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis.json",
+            "name": "nucleotide-analysis",
+            "title": "NucleotideAnalysis",
             "description": "A link between a DNA sequence and the event and material from which it was derived, using a specified protocol."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-analysis-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-analysis-assertion.json",
-            "name": "genetic-analysis-assertion",
-            "title": "GeneticAnalysisAssertion",
-            "description": "An Assertion made by an Agent about a GeneticAnalysis."
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/nucleotide-analysis-assertion",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
+            "name": "nucleotide-analysis-assertion",
+            "title": "NucleotideAnalysisAssertion",
+            "description": "An Assertion made by an Agent about a NucleotideAnalysis."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol.json",
-            "name": "genetic-protocol",
-            "title": "Geneticrotocol",
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
+            "name": "molecular-protocol",
+            "title": "MolecularProtocol",
             "description": "A protocol used to derive and identify dna sequences from material."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-agent-role",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-agent-role.json",
-            "name": "genetic-protocol-agent-role",
-            "title": "GeneticProtocolAgentRole",
-            "description": "A role filled by an Agent with respect to a GeneticProtocol."
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-agent-role",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
+            "name": "molecular-protocol-agent-role",
+            "title": "MolecularProtocolAgentRole",
+            "description": "A role filled by an Agent with respect to a MolecularProtocol."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-assertion",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-assertion.json",
-            "name": "genetic-protocol-assertion",
-            "title": "GeneticProtocolAssertion",
-            "description": "An Assertion made by an Agent about a GeneticProtocol."
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-assertion",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
+            "name": "molecular-protocol-assertion",
+            "title": "MolecularProtocolAssertion",
+            "description": "An Assertion made by an Agent about a MolecularProtocol."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-citation",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-citation.json",
-            "name": "genetic-protocol-citation",
-            "title": "GeneticProtocolCitation",
-            "description": "A citation of a GeneticProtocol in a bibliographic reference."
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-citation",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-citation.json",
+            "name": "molecular-protocol-citation",
+            "title": "MolecularProtocolCitation",
+            "description": "A citation of a MolecularProtocol in a bibliographic reference."
         },
         {
-            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-sequence",
-            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-sequence.json",
-            "name": "genetic-sequence",
-            "title": "GeneticSequence",
+            "identifier": "http://rs.gbif.org/data-packages/dwc-dp/nucleotide-sequence",
+            "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
+            "name": "nucleotide-sequence",
+            "title": "NucleotideSequence",
             "description": "A digital representation of a nucleotide sequence."
         },
         {

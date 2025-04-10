@@ -1,9 +1,9 @@
 {
-    "name": "genetic-analysis-assertion",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-analysis-assertion",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-analysis-assertion.json",
-    "title": "GeneticAnalysisAssertion",
-    "description": "An Assertion made by an Agent about a GeneticAnalysis.",
+    "name": "nucleotide-analysis-assertion",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/nucleotide-analysis-assertion",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
+    "title": "NucleotideAnalysisAssertion",
+    "description": "An Assertion made by an Agent about a NucleotideAnalysis.",
     "fields": [
         {
             "name": "assertionID",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "geneticAnalysisID",
-            "description": "An identifier for a GeneticAnalysis.",
+            "name": "nucleotideAnalysisID",
+            "description": "An identifier for a NucleotideAnalysis.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -217,10 +217,10 @@
     "primaryKey": "assertionID",
     "foreignKeys": [
         {
-            "fields": "geneticAnalysisID",
+            "fields": "nucleotideAnalysisID",
             "reference": {
-                "resource": "genetic-analysis",
-                "fields": "geneticAnalysisID"
+                "resource": "nucleotide-analysis",
+                "fields": "nucleotideAnalysisID"
             }
         },
         {

@@ -1,9 +1,9 @@
 {
-    "name": "genetic-protocol-citation",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/genetic-protocol-citation",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/genetic-protocol-citation.json",
-    "title": "GeneticProtocolCitation",
-    "description": "A citation of a GeneticProtocol in a bibliographic reference.",
+    "name": "molecular-protocol-citation",
+    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/molecular-protocol-citation",
+    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-citation.json",
+    "title": "MolecularProtocolCitation",
+    "description": "A citation of a MolecularProtocol in a bibliographic reference.",
     "fields": [
         {
             "name": "citationID",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "name": "geneticProtocolID",
-            "description": "An identifier for a GeneticProtocol.",
+            "name": "molecularProtocolID",
+            "description": "An identifier for a MolecularProtocol.",
             "type": "string",
             "format": "default",
             "comments": "",
@@ -157,10 +157,10 @@
     "primaryKey": "citationID",
     "foreignKeys": [
         {
-            "fields": "geneticProtocolID",
+            "fields": "molecularProtocolID",
             "reference": {
-                "resource": "genetic-protocol",
-                "fields": "geneticProtocolID"
+                "resource": "molecular-protocol",
+                "fields": "molecularProtocolID"
             }
         }
     ]
