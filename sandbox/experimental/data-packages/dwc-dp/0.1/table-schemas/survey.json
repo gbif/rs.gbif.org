@@ -448,6 +448,26 @@
             "iri": "http://rs.tdwg.org/eco/terms/materialSampleTypes"
         },
         {
+            "name": "sampleSizeValue",
+            "description": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "A dwc:sampleSizeValue must have a corresponding dwc:sampleSizeUnit.",
+            "examples": "`5` (sampleSizeValue) with `metre` (sampleSizeUnit)",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeValue"
+        },
+        {
+            "name": "sampleSizeUnit",
+            "description": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., `5` for dwc:sampleSizeValue with `metre` for dwc:sampleSizeUnit.",
+            "examples": "`minute`; `hour`; `day`; `metre`; `square metre`; `cubic metre``",
+            "namespace": "dwc",
+            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeUnit"
+        },
+        {
             "name": "samplingPerformedBy",
             "description": "A person, group, or organization that performed the sampling.",
             "type": "string",

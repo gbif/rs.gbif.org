@@ -45,26 +45,6 @@
             "iri": ""
         },
         {
-            "name": "surveyTargetTypeIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of survey target.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-            "examples": "",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
-            "name": "surveyTargetTypeVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetType is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
             "name": "surveyTargetValue",
             "description": "The value of a characteristic sought for the surveyTarget for a given surveyTargetType.",
             "type": "string",
@@ -75,52 +55,12 @@
             "iri": ""
         },
         {
-            "name": "surveyTargetValueIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of survey target value.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
-            "name": "surveyTargetValueVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetValue is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
             "name": "surveyTargetUnit",
             "description": "The units associated with the surveyTargetValue.",
             "type": "string",
             "format": "default",
             "comments": "Recommended best practice is to use a controlled vocabulary.",
             "examples": "`m`; `g`; `years`",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
-            "name": "surveyTargetUnitIRI",
-            "description": "The IRI of the controlled vocabulary value for the type of survey target unit.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
-            "name": "surveyTargetUnitVocabulary",
-            "description": "The reference to the controlled vocabulary where the definition of the value for surveyTargetUnit is given.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "",
             "namespace": "dwcdp",
             "iri": ""
         },

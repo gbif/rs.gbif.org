@@ -78,8 +78,8 @@
             }
         },
         {
-            "name": "geneticSequenceID",
-            "description": "An identifier for a GeneticSequence.",
+            "name": "nucleotideSequenceID",
+            "description": "An identifier for a NucleotideSequence.",
             "type": "string",
             "format": "default",
             "comments": "",

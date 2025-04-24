@@ -40,6 +40,16 @@
             "iri": ""
         },
         {
+            "name": "eventCategory",
+            "description": "The broad category that best matches the nature of a dwc:Event.",
+            "type": "string",
+            "format": "default",
+            "comments": "Recommended best practice is to use a limited, tightly controlled vocabulary.",
+            "examples": "`observation`; `material gathering`; `organism interation`; `survey`; `nucleotide analysis`",
+            "namespace": "dwcdp",
+            "iri": ""
+        },
+        {
             "name": "eventType",
             "description": "The category that best matches the nature of a dwc:Event.",
             "type": "string",
@@ -298,26 +308,6 @@
             "examples": "`oak savanna`; `pre-cordilleran steppe`",
             "namespace": "dwc",
             "iri": "http://rs.tdwg.org/dwc/terms/habitat"
-        },
-        {
-            "name": "sampleSizeValue",
-            "description": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
-            "type": "string",
-            "format": "default",
-            "comments": "A dwc:sampleSizeValue must have a corresponding dwc:sampleSizeUnit.",
-            "examples": "`5` (sampleSizeValue) with `metre` (sampleSizeUnit)",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeValue"
-        },
-        {
-            "name": "sampleSizeUnit",
-            "description": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event.",
-            "type": "string",
-            "format": "default",
-            "comments": "A dwc:sampleSizeUnit must have a corresponding dwc:sampleSizeValue, e.g., `5` for dwc:sampleSizeValue with `metre` for dwc:sampleSizeUnit.",
-            "examples": "`minute`; `hour`; `day`; `metre`; `square metre`; `cubic metre``",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeUnit"
         },
         {
             "name": "eventEffort",
