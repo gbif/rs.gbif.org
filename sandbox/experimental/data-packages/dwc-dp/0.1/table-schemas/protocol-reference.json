@@ -1,10 +1,25 @@
 {
-  "name": "survey-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
-  "title": "SurveyProtocol",
-  "description": "A link establishing a Protocol used in a Survey.",
+  "name": "protocol-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol-reference.json",
+  "title": "ProtocolReference",
+  "description": "A bibliographic reference in which a Protocol is mentioned.",
   "fields": [
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "namespace": "dwcdp",
+      "iri": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
     {
       "name": "protocolID",
       "title": "Protocol ID",
@@ -19,36 +34,15 @@
         "required": true,
         "unique": false
       }
-    },
-    {
-      "name": "surveyID",
-      "title": "Survey ID",
-      "description": "An identifier for a Survey.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
-      "constraints": {
-        "required": true,
-        "unique": false
-      }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
     {
       "fields": "protocolID",
       "reference": {
         "resource": "protocol",
         "fields": "protocolID"
-      }
-    },
-    {
-      "fields": "surveyID",
-      "reference": {
-        "resource": "survey",
-        "fields": "surveyID"
       }
     }
   ]

@@ -1,23 +1,23 @@
 {
-  "name": "phylogenetic-tree-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-protocol.json",
-  "title": "PhylogeneticTreeProtocol",
-  "description": "A link establishing a Protocol used in the determination of a PhylogeneticTree.",
+  "name": "phylogenetic-tree-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-reference.json",
+  "title": "PhylogeneticTreeReference",
+  "description": "A bibliographic reference in which a PhylogeneticTree is mentioned.",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "comments": "",
       "examples": "",
       "namespace": "dwcdp",
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     },
     {
@@ -36,14 +36,8 @@
       }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
-    {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
     {
       "fields": "phylogeneticTreeID",
       "reference": {

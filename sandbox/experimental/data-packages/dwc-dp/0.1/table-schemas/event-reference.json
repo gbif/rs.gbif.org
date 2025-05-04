@@ -1,23 +1,23 @@
 {
-  "name": "event-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
-  "title": "EventProtocol",
-  "description": "A link establishing a Protocol used in a dwc:Event.",
+  "name": "event-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
+  "title": "EventReference",
+  "description": "A bibliographic reference in which a dwc:Event is mentioned.",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "comments": "",
       "examples": "",
       "namespace": "dwcdp",
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     },
     {
@@ -32,18 +32,12 @@
       "iri": "http://rs.tdwg.org/dwc/terms/eventID",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
-    {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
     {
       "fields": "eventID",
       "reference": {
