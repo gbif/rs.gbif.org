@@ -1,7 +1,7 @@
 {
   "name": "agent",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
   "title": "Agent",
   "description": "A person, group, organization or other entity that can act.",
   "fields": [

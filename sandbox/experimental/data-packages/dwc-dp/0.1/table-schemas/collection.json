@@ -1,7 +1,7 @@
 {
   "name": "collection",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/collection",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection.json",
   "title": "Collection",
   "description": "A persistent formal repository in which dwc:MaterialEntities and/or Media are preserved.",
   "fields": [

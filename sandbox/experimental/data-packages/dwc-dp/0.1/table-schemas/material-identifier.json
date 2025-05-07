@@ -1,7 +1,7 @@
 {
   "name": "material-identifier",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-identifier",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-identifier.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-identifier.json",
   "title": "MaterialIdentifier",
   "description": "An identifier for a dwc:MaterialEntity.",
   "fields": [

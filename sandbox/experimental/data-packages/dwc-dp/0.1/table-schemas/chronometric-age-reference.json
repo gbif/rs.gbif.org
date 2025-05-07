@@ -1,7 +1,7 @@
 {
   "name": "chronometric-age-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
   "title": "ChronometricAgeReference",
   "description": "A bibliographic reference in which a chrono:ChronometricAge is mentioned.",
   "fields": [

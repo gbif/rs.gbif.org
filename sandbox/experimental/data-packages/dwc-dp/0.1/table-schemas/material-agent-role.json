@@ -1,7 +1,7 @@
 {
   "name": "material-agent-role",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-agent-role",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-agent-role.json",
   "title": "MaterialAgentRole",
   "description": "A role filled by an Agent with respect to a dwc:MaterialEntity.",
   "fields": [

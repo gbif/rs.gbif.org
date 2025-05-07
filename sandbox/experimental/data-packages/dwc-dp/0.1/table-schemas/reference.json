@@ -1,7 +1,7 @@
 {
   "name": "reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/reference",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/reference.json",
   "title": "Reference",
   "description": "A bibliographic reference in which an entity is mentioned.",
   "fields": [

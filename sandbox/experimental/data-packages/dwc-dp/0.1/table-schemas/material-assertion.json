@@ -1,7 +1,7 @@
 {
   "name": "material-assertion",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
   "title": "MaterialAssertion",
   "description": "An Assertion made by an Agent about a dwc:MaterialEntity.",
   "fields": [

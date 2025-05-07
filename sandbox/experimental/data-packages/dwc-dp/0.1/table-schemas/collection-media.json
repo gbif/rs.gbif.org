@@ -1,7 +1,7 @@
 {
   "name": "collection-media",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/collection-media",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-media.json",
   "title": "CollectionMedia",
   "description": "A link establishing a Collection as content of a Media entity.",
   "fields": [

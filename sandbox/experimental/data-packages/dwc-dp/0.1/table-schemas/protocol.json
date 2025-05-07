@@ -1,7 +1,7 @@
 {
   "name": "protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol.json",
   "title": "Protocol",
   "description": "A method used during an action.",
   "fields": [
