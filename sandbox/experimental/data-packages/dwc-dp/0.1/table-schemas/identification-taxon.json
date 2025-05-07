@@ -1,96 +1,114 @@
 {
-    "name": "identification-taxon",
-    "identifier": "http://rs.gbif.org/data-packages/dwc-dp/identification-taxon",
-    "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
-    "title": "IdentificationTaxon",
-    "description": "The components and positions of dwc:scientificNames in dwc:Identifications.",
-    "fields": [
-        {
-            "name": "identificationID",
-            "description": "An identifier for a dwc:Identification.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/identificationID",
-            "constraints": {
-                "required": true,
-                "unique": false
-            }
-        },
-        {
-            "name": "taxonID",
-            "description": "An identifier for a dwc:Taxon.",
-            "type": "string",
-            "format": "default",
-            "comments": "Recommended best practice is to use a globally unique identifier.",
-            "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/taxonID"
-        },
-        {
-            "name": "taxonOrder",
-            "description": "The position of a dwc:Taxon in a taxonFormula.",
-            "type": "integer",
-            "format": "default",
-            "comments": "",
-            "examples": "`1`; `2`; `3`",
-            "constraints": {
-                "required": false,
-                "minimum": 1
-            },
-            "namespace": "dwcdp",
-            "iri": ""
-        },
-        {
-            "name": "kingdom",
-            "description": "The full scientific name of the kingdom in which a dwc:scientificName is classified.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "Animalia",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/kingdom"
-        },
-        {
-            "name": "scientificName",
-            "description": "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in dwc:verbatimIdentification.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "`Coleoptera` (order); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship); `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
-        },
-        {
-            "name": "taxonRank",
-            "description": "The taxonomic rank of the most specific name in a dwc:scientificName.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/taxonRank"
-        },
-        {
-            "name": "taxonRemarks",
-            "description": "Comments or notes about a dwc:Taxon.",
-            "type": "string",
-            "format": "default",
-            "comments": "",
-            "examples": "`This name is a misspelling in common use.`",
-            "namespace": "dwc",
-            "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
-        }
-    ],
-    "foreignKeys": [
-        {
-            "fields": "identificationID",
-            "reference": {
-                "resource": "identification",
-                "fields": "identificationID"
-            }
-        }
-    ]
+  "name": "identification-taxon",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-taxon",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
+  "title": "IdentificationTaxon",
+  "description": "A construct of components and positions of dwc:scientificNames in a dwc:Identification.",
+  "fields": [
+    {
+      "name": "identificationID",
+      "title": "Identification ID",
+      "description": "An identifier for a dwc:Identification.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "taxonID",
+      "title": "Taxon ID",
+      "description": "An identifier for a dwc:Taxon.",
+      "type": "string",
+      "format": "default",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/taxonID"
+    },
+    {
+      "name": "taxonOrder",
+      "title": "Taxon Order",
+      "description": "A numerical position of a dwc:Taxon in a taxonFormula.",
+      "type": "integer",
+      "format": "default",
+      "comments": "",
+      "examples": "`1`; `2`; `3`",
+      "constraints": {
+        "required": false,
+        "minimum": 1
+      },
+      "namespace": "dwcdp",
+      "iri": ""
+    },
+    {
+      "name": "higherClassificationName",
+      "title": "Higher Classification Name",
+      "description": "A full scientific name at a higher rank than the taxonRank of dwc:scientificName.",
+      "type": "string",
+      "format": "default",
+      "comments": "A higherClassificationName must have a corresponding higherClassificationRank.",
+      "examples": "`Animalia` (higherClassificationName) with `kingdom` (higherClassificationRank); `Laphriinae`  (higherClassificationName) with `subfamily` (higherClassificationRank)",
+      "namespace": "dwcdp",
+      "iri": ""
+    },
+    {
+      "name": "higherClassificationRank",
+      "title": "Higher Classification Rank",
+      "description": "A taxonomic rank of the higherClassificationName.",
+      "type": "string",
+      "format": "default",
+      "comments": "A higherClassificationRank must have a corresponding higherClassificationName.",
+      "examples": "`Acanthaceae` (higherClassificationName) with `family` (higherClassificationRank); `Pyrenomycetes` (higherClassificationName) with `class` (higherClassificationRank",
+      "namespace": "dwcdp",
+      "iri": ""
+    },
+    {
+      "name": "scientificName",
+      "title": "Scientific Name",
+      "description": "A full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in dwc:verbatimIdentification.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "`Coleoptera` (order); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship); `Quercus agrifolia var. oxyadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship)",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
+    },
+    {
+      "name": "taxonRank",
+      "title": "Taxon Rank",
+      "description": "A taxonomic rank of the most specific name in a dwc:scientificName.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "`subspecies`; `varietas`; `forma`; `species`; `genus`; `nothogenus`; `nothospecies`; `nothosubspecies`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/taxonRank"
+    },
+    {
+      "name": "taxonRemarks",
+      "title": "Taxon Remarks",
+      "description": "Comments or notes about a dwc:Taxon.",
+      "type": "string",
+      "format": "default",
+      "comments": "",
+      "examples": "`This name is a misspelling in common use.`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "identificationID",
+      "reference": {
+        "resource": "identification",
+        "fields": "identificationID"
+      }
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
-  "name": "chronometric-age-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
-  "title": "ChronometricAgeProtocol",
-  "description": "A link establishing a Protocol used in the determination of a chrono:ChronometricAge.",
+  "name": "chronometric-age-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
+  "title": "ChronometricAgeReference",
+  "description": "A bibliographic reference in which a chrono:ChronometricAge is mentioned.",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -17,7 +17,7 @@
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     },
     {
@@ -36,14 +36,8 @@
       }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
-    {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
     {
       "fields": "chronometricAgeID",
       "reference": {

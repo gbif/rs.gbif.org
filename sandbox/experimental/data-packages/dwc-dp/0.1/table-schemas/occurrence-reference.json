@@ -1,14 +1,14 @@
 {
-  "name": "occurrence-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
-  "title": "OccurrenceProtocol",
-  "description": "A link establishing a Protocol used in the determination of a dwc:Occurrence.",
+  "name": "occurrence-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-reference.json",
+  "title": "OccurrenceReference",
+  "description": "A bibliographic reference in which a dwc:Occurrence is mentioned.",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -17,7 +17,7 @@
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     },
     {
@@ -36,14 +36,8 @@
       }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
-    {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
     {
       "fields": "occurrenceID",
       "reference": {

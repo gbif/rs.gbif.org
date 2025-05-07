@@ -1,14 +1,14 @@
 {
-  "name": "material-protocol",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-protocol",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
-  "title": "MaterialProtocol",
-  "description": "A link establishing a Protocol used in the treatment of a dwc:MaterialEntity.",
+  "name": "material-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
+  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
+  "title": "MaterialReference",
+  "description": "A bibliographic reference in which a dwc:MaterialEntity is mentioned.",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a Reference.",
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -17,7 +17,7 @@
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     },
     {
@@ -32,18 +32,12 @@
       "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
       "constraints": {
         "required": true,
-        "unique": false
+        "unique": true
       }
     }
   ],
+  "primaryKey": "referenceID",
   "foreignKeys": [
-    {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
     {
       "fields": "materialEntityID",
       "reference": {
