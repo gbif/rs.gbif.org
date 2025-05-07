@@ -1,7 +1,7 @@
 {
   "name": "survey-agent-role",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-agent-role",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-agent-role.json",
   "title": "SurveyAgentRole",
   "description": "A role filled by an Agent with respect to a Survey.",
   "fields": [

@@ -1,7 +1,7 @@
 {
   "name": "material-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
   "title": "MaterialReference",
   "description": "A bibliographic reference in which a dwc:MaterialEntity is mentioned.",
   "fields": [

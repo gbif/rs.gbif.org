@@ -1,7 +1,7 @@
 {
   "name": "media",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
   "title": "Media",
   "description": "A dcmi:MediaType (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) with other entities as content.",
   "fields": [

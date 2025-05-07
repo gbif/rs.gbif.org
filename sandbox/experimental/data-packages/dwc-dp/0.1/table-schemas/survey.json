@@ -1,7 +1,7 @@
 {
   "name": "survey",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
   "title": "Survey",
   "description": "A biotic survey.",
   "fields": [

@@ -1,7 +1,7 @@
 {
   "name": "collection-assertion",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/collection-assertion",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-assertion.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/collection-assertion.json",
   "title": "CollectionAssertion",
   "description": "An Assertion made by an Agent about a Collection.",
   "fields": [

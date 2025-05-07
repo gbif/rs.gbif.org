@@ -1,7 +1,7 @@
 {
   "name": "occurrence-media",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-media",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-media.json",
   "title": "OccurrenceMedia",
   "description": "A link establishing a dwc:Occurrence as content of a Media entity.",
   "fields": [

@@ -1,7 +1,7 @@
 {
   "name": "organism-interaction-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-reference",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
   "title": "OrganismInteractionReference",
   "description": "A bibliographic reference in which an OrganismInteraction is mentioned.",
   "fields": [

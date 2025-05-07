@@ -1,7 +1,7 @@
 {
   "name": "event-identifier",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-identifier",
-  "url": "http://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-identifier.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-identifier.json",
   "title": "EventIdentifier",
   "description": "An identifier for a dwc:Event.",
   "fields": [
