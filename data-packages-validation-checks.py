@@ -6,6 +6,7 @@
 # 1. Index and table schema files are valid JSON
 # 2. All URLs are resolvable
 # 3. Table schemas declarations are valid, all actual files are present
+# 4. Valid frictionless schema
 # 4. No duplicate nodes in index.json
 # 5. Compares primary properties (identifier, url, name) between index.json and table schema file
 #
@@ -16,6 +17,7 @@ import re
 import requests
 import sys
 from pathlib import Path
+from frictionless import Schema
 
 # Paths to the directories containing index.json files
 directories_to_scan_sandbox = ['sandbox/data-packages', 'sandbox/experimental/data-packages']
@@ -208,6 +210,17 @@ def check_table_schemas(package_file_path, package_data):
                     error_found = True
 
 
+def check_valid_frictionless(index_file_str):
+    table_schema_files = find_package_table_schemas(index_file_str)
+
+    for file in table_schema_files:
+        try:
+            Schema.from_descriptor(file)
+            # print(f"{file}: Valid frictionless")
+        except Exception as e:
+            print(f"{file}: Error - {str(e)}")
+
+
 def find_package_files(directories):
     package_files = []
     for base_dir in directories:
@@ -216,6 +229,14 @@ def find_package_files(directories):
                 package_file_path = os.path.join(root, 'index.json')
                 package_files.append(package_file_path)
     return package_files
+
+
+def find_package_table_schemas(index_file_str):
+    index_path_parent = Path(index_file_str).parent
+    table_schemas_dir = index_path_parent / 'table-schemas'
+    table_schemas = [tsf for tsf in table_schemas_dir.rglob('*') if tsf.is_file()]
+
+    return table_schemas
 
 
 def check_foreign_keys(package_file, package_data):
@@ -291,6 +312,7 @@ for package_file in all_package_files_sandbox:
 
     check_urls_are_resolvable(package_data)
     check_table_schemas(package_file, package_data)
+    check_valid_frictionless(package_file)
     check_foreign_keys(package_file, package_data)
 
 for package_file in all_package_files_prod:
@@ -304,6 +326,7 @@ for package_file in all_package_files_prod:
 
     check_urls_are_resolvable(package_data)
     check_table_schemas(package_file, package_data)
+    check_valid_frictionless(package_file)
     check_foreign_keys(package_file, package_data)
 
 if error_found:
