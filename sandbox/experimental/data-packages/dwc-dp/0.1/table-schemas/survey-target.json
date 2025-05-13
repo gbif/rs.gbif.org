@@ -78,10 +78,10 @@
       "examples": "`include`; `exclude`",
       "namespace": "dwcdp",
       "iri": "",
+      "default": "include",
       "constraints": {
         "required": true,
-        "unique": false,
-        "tdwgutility:default": "include"
+        "unique": false
       }
     },
     {

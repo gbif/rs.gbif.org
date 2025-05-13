@@ -199,9 +199,7 @@
       "examples": "`detected`; `notDetected`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/occurrenceStatus",
-      "constraints": {
-        "tdwgutility:default": "detected"
-      }
+      "default": "detected"
     },
     {
       "name": "occurrenceReferences",
@@ -312,9 +310,7 @@
       "examples": "`A`; `A ?`; `A or B`; `A and B`; `A x B`; `A cf.`; `A aff.`",
       "namespace": "dwcdp",
       "iri": "",
-      "constraints": {
-        "tdwgutility:default": "A"
-      }
+      "default": "A"
     },
     {
       "name": "identifiedBy",

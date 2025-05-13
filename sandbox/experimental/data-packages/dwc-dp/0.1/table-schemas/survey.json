@@ -193,9 +193,7 @@
       "examples": "`notReported`; `reportedComplete`; `reportedIncomplete`",
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/taxonCompletenessReported",
-      "constraints": {
-        "tdwgutility:default": "notReported"
-      }
+      "default": "notReported"
     },
     {
       "name": "taxonCompletenessProtocols",
