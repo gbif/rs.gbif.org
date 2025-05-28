@@ -133,13 +133,13 @@
      </xsl:template>
 
      <xsl:template mode="table-row" match="ext:property">
-          <a>
-               <xsl:attribute name="id">
-                    <xsl:value-of select="@name"/>
-               </xsl:attribute>
-          </a>
           <tr>
-               <th><xsl:value-of select="@name"/></th>
+               <th>
+                    <xsl:attribute name="id">
+                         <xsl:value-of select="@name"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="@name"/>
+               </th>
                <td>
                     <div class="description">
                          <xsl:value-of select="@dc:description"/>
@@ -200,13 +200,13 @@
      </xsl:template>
 
      <xsl:template mode="table-row" match="voc:concept">
-          <a>
-               <xsl:attribute name="id">
-                    <xsl:value-of select="@dc:identifier"/>
-               </xsl:attribute>
-          </a>
           <tr>
-               <th><xsl:value-of select="@dc:identifier"/></th>
+               <th>
+                    <xsl:attribute name="id">
+                         <xsl:value-of select="@dc:identifier"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="@dc:identifier"/>
+               </th>
                <td>
                     <div class="description">
                          <xsl:value-of select="@dc:description"/>
