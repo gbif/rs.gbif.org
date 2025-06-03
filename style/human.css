@@ -168,37 +168,46 @@ table.definition {
 	border-spacing: 2px 10px;
 	border-collapse: separate;
 }
-table.definition th {
+table.definition > tbody > tr > th {
 	text-align: left;
 	vertical-align: top;
 	background-color: #f1f1f1;
 }
-table.definition td {
+table.definition > tbody > tr > td {
 	border-style: none;
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
 	background-color: #ffffff;
 }
+table.definition :target {
+    outline: 2px solid #d1628e;
+}
+table.definition :target > th {
+    background: #F1D0DD;
+}
+table.definition :target > td {
+    background: #F6E0E8;
+}
 
-.examples{
+.examples {
 	padding-top: 10px;
 	word-wrap: anywhere;
 }
-.vocabulary, .vocabulary a{
+.vocabulary, .vocabulary a {
 	color: black;
 	padding-top: 10px;
 }
-.technical{
+.technical {
 	padding-top: 10px;
 	font-size: smaller;
 }
-.technical table{
+.technical table {
 	margin: 0;
 	padding: 0;
 }
-.technical table th, .technical td{
+.technical table th, .technical td {
 	color: #999;
-	background-color: white;
-	padding:0px 10px 0px 0px;
+	background-color: transparent;
+	padding: 0px 10px 0px 0px;
 }
