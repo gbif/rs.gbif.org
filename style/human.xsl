@@ -134,10 +134,10 @@
 
      <xsl:template mode="table-row" match="ext:property">
           <tr>
+               <xsl:attribute name="id">
+                    <xsl:value-of select="@name"/>
+               </xsl:attribute>
                <th>
-                    <xsl:attribute name="id">
-                         <xsl:value-of select="@name"/>
-                    </xsl:attribute>
                     <xsl:value-of select="@name"/>
                </th>
                <td>
@@ -201,10 +201,10 @@
 
      <xsl:template mode="table-row" match="voc:concept">
           <tr>
+               <xsl:attribute name="id">
+                    <xsl:value-of select="@dc:identifier"/>
+               </xsl:attribute>
                <th>
-                    <xsl:attribute name="id">
-                         <xsl:value-of select="@dc:identifier"/>
-                    </xsl:attribute>
                     <xsl:value-of select="@dc:identifier"/>
                </th>
                <td>
