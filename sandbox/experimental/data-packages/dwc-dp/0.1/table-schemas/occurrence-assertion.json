@@ -36,13 +36,24 @@
       }
     },
     {
+      "name": "verbatimAssertionType",
+      "title": "Verbatim Assertion Type",
+      "description": "A string representing the type of Assertion as it appeared in the original record.",
+      "type": "string",
+      "format": "default",
+      "comments": "This term is meant to allow the capture of an unaltered original name for an Assertion type. This term is meant to be used in addition to dwc:assertionType, not instead of it.",
+      "examples": "`water_temp`; `Fish biomass`; `sampling net mesh size`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/verbatimMeasurementType"
+    },
+    {
       "name": "assertionType",
       "title": "Assertion Type",
       "description": "A category that best matches the nature of an Assertion.",
       "type": "string",
       "format": "default",
       "comments": "",
-      "examples": "`mass`; `mean mass`; `weight standard deviation`; `minimum organism quantity`; `water temperature`; `salinity`",
+      "examples": "`mass`; `mean mass`; `weight standard deviation`; `minimum organism quantity`; `Temperature of the water body`; `salinity`; `Mesh size of sample collector`",
       "namespace": "dwcdp",
       "iri": ""
     },
@@ -53,7 +64,7 @@
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
-      "examples": "",
+      "examples": "`http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/`;`http://vocab.nerc.ac.uk/collection/P01/current/SDBIOL05/`;`http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/`",
       "namespace": "dwcdp",
       "iri": ""
     },
@@ -64,7 +75,7 @@
       "type": "string",
       "format": "default",
       "comments": "",
-      "examples": "",
+      "examples": "http://vocab.nerc.ac.uk/collection/P01/current/",
       "namespace": "dwcdp",
       "iri": ""
     },
@@ -241,6 +252,13 @@
       "reference": {
         "resource": "occurrence",
         "fields": "occurrenceID"
+      }
+    },
+    {
+      "fields": "assertionByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
       }
     },
     {

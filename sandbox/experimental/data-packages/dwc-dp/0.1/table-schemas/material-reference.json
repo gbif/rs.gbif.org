@@ -17,7 +17,7 @@
       "iri": "",
       "constraints": {
         "required": true,
-        "unique": true
+        "unique": false
       }
     },
     {
@@ -36,8 +36,14 @@
       }
     }
   ],
-  "primaryKey": "referenceID",
   "foreignKeys": [
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "referenceID"
+      }
+    },
     {
       "fields": "materialEntityID",
       "reference": {

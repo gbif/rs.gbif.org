@@ -165,5 +165,27 @@
     }
   ],
   "primaryKey": "referenceID",
-  "foreignKeys": []
+  "foreignKeys": [
+    {
+      "fields": "parentReferenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "referenceID"
+      }
+    },
+    {
+      "fields": "creatorID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "publisherID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
 }

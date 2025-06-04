@@ -60,7 +60,7 @@
     {
       "name": "chronometricAgeProtocolID",
       "title": "Chronometric Age Protocol ID",
-      "description": "An identifier for a Protocol used to determine a ChronometricAge.",
+      "description": "An identifier for a Protocol used to determine a chrono:ChronometricAge.",
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
@@ -266,13 +266,6 @@
       }
     },
     {
-      "fields": "materialDatedID",
-      "reference": {
-        "resource": "material",
-        "fields": "materialEntityID"
-      }
-    },
-    {
       "fields": "chronometricAgeProtocolID",
       "reference": {
         "resource": "protocol",
@@ -284,6 +277,20 @@
       "reference": {
         "resource": "protocol",
         "fields": "protocolID"
+      }
+    },
+    {
+      "fields": "materialDatedID",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "chronometricAgeDeterminedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
       }
     }
   ]

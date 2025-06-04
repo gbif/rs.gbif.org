@@ -289,7 +289,7 @@
       "description": "A list (concatenated and separated) of names of Agents responsible for making a taxonomic determination of a dwc:Organism.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
       "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy"
@@ -300,7 +300,7 @@
       "description": "An identifier for an Agent responsible for making a taxonomic determination of a dwc:Organism.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
       "examples": "`https://orcid.org/0000-0002-1825-0097`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identifiedByID"
@@ -311,7 +311,7 @@
       "description": "A list (concatenated and separated) of identifiers for References (publication, bibliographic reference, global unique identifier, URI, metabarcoding reference database) used in a dwc:Identification.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
       "examples": "`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identificationReferences"
@@ -436,7 +436,7 @@
       "description": "The total detected quantity for a dwc:Taxon (including subcategories thereof) in a dwc:Event is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon.",
       "type": "boolean",
       "format": "default",
-      "comments": "Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see http://rs.tdwg.org/eco/docs/inclusive/.",
+      "comments": "Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see http://rs.tdwg.org/dwc/doc/inclusive/.",
       "examples": "`true`; `false`",
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive"
@@ -613,6 +613,27 @@
   ],
   "primaryKey": "surveyID",
   "foreignKeys": [
+    {
+      "fields": "eventID",
+      "reference": {
+        "resource": "event",
+        "fields": "eventID"
+      }
+    },
+    {
+      "fields": "identifiedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "samplingPerformedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
     {
       "fields": "samplingEffortProtocolID",
       "reference": {

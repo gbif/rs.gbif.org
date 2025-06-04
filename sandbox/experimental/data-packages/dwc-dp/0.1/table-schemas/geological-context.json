@@ -29,7 +29,11 @@
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
       "namespace": "dwcdp",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID"
+      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
     },
     {
       "name": "earliestEonOrLowestEonothem",
@@ -166,7 +170,7 @@
     {
       "name": "lithostratigraphicTerms",
       "title": "Lithostratigraphic Terms",
-      "description": "A combination of all litho-stratigraphic names for a rock from which a dwc:MaterialEntity was collected.",
+      "description": "A combination of all lithostratigraphic names for a rock from which a dwc:MaterialEntity was collected.",
       "type": "string",
       "format": "default",
       "comments": "",
