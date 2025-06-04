@@ -66,5 +66,13 @@
     }
   ],
   "primaryKey": "phylogeneticTreeID",
-  "foreignKeys": []
+  "foreignKeys": [
+    {
+      "fields": "phylogeneticTreeProtocolID",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocolID"
+      }
+    }
+  ]
 }

@@ -310,7 +310,7 @@
       "description": "An ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in dwc:verbatimLatitude and dwc:verbatimLongitude, or dwc:verbatimCoordinates are based.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`.",
+      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `not recorded`.",
       "examples": "`not recorded`; `EPSG:4326`; `WGS84`; `NAD27`; `Campo Inchauspe`; `European 1950`; `Clarke 1866`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/verbatimSRS"
@@ -475,8 +475,8 @@
       "description": "A standard code for a country in which a dcterms:Location occurs.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use an ISO 3166-1-alpha-2 country code. Recommended best practice is to leave this field blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.",
-      "examples": "`AR`; `SV`",
+      "comments": "Recommended best practice is to use an ISO 3166-1-alpha-2 country code, or 'ZZ' (for an unknown location or a location unassignable to a single country code), or 'XZ' (for the high seas beyond national jurisdictions). Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.",
+      "examples": "`AR`; `SV`; `XZ`; `ZZ`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/countryCode"
     },
@@ -563,7 +563,7 @@
       "type": "string",
       "format": "default",
       "comments": "Recommended best practice is to use a controlled vocabulary.",
-      "examples": "`EGM84`; `EGM96`; `EGM2008`; `PGM2000A`; `PGM2004`; `PGM2006`; `PGM2007`; `epsg:7030`; `unknown`",
+      "examples": "`EGM84`; `EGM96`; `EGM2008`; `PGM2000A`; `PGM2004`; `PGM2006`; `PGM2007`; `EPSG:7030`; `not recorded`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/verticalDatum"
     },
@@ -670,7 +670,7 @@
       "description": "An ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude as based.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`.",
+      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `not recorded`.",
       "examples": "`EPSG:4326`; `WGS84`; `NAD27`; `Campo Inchauspe`; `European 1950`; `Clarke 1866`; `not recorded`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/geodeticDatum"
@@ -679,7 +679,7 @@
       "name": "coordinateUncertaintyInMeters",
       "title": "Coordinate Uncertainty In Meters",
       "description": "A horizontal distance (in meters) from a given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location.",
-      "type": "integer",
+      "type": "number",
       "format": "default",
       "comments": "Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.",
       "examples": "`30` (reasonable lower limit on or after 2000-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time); `100` (reasonable lower limit before 2000-05-01 of a GPS reading under good conditions if the actual precision was not recorded at the time); `71` (uncertainty for a UTM coordinate having 100 meter precision and a known spatial reference system)",
@@ -734,8 +734,8 @@
       "description": "An ellipsoid, geodetic datum, or spatial reference system (SRS) upon which a geometry given in dwc:footprintWKT is based.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of a dwc:decimalLatitude and dwc:decimalLongitude, nor of any verbatim coordinates - use dwc:geodeticDatum and dwc:verbatimSRS instead.",
-      "examples": "`epsg:4326`; `GEOGCS['GCS_WGS_1984', DATUM['D_WGS_1984', SPHEROID['WGS_1984',6378137,298.257223563]], PRIMEM['Greenwich',0], UNIT['Degree',0.0174532925199433]]` (WKT for the standard WGS84 Spatial Reference System EPSG:4326)",
+      "comments": "Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `not recorded`. It is also permitted to provide the SRS in Well-Known-Text, especially if no EPSG code provides the necessary values for the attributes of the SRS. Do not use this term to describe the SRS of a dwc:decimalLatitude and dwc:decimalLongitude, nor of any verbatim coordinates - use dwc:geodeticDatum and dwc:verbatimSRS instead.",
+      "examples": "`EPSG:4326`; `GEOGCS['GCS_WGS_1984', DATUM['D_WGS_1984', SPHEROID['WGS_1984',6378137,298.257223563]], PRIMEM['Greenwich',0], UNIT['Degree',0.0174532925199433]]` (WKT for the standard WGS84 Spatial Reference System EPSG:4326)",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/footprintSRS"
     },
@@ -859,6 +859,61 @@
       "examples": "`point-radius`; `footprint`",
       "namespace": "dwcdp",
       "iri": ""
+    },
+    {
+      "name": "projectID",
+      "title": "Project ID",
+      "description": "A list (concatenated and separated) of identifiers for projects that contributed to a dwc:Event.",
+      "type": "string",
+      "format": "default",
+      "comments": "A projectID can be may be shared in multiple distinct datasets. The nature of the association can be described in the metadata project description element. This term should be used to provide a globally unique identifier (GUID) for a project, if available. This could be a DOI, URI, or any other persistent identifier that ensures a project can be uniquely distinguished from others. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "examples": "`RCN276730`; `RCN276730 | Artsproject_7-24`; `OC202405`; `https://arvenetternansen.com/`; `https://doi.org/10.3030/101180559`; `https://doi.org/10.26259/3b15eca7`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/projectID"
+    },
+    {
+      "name": "projectTitle",
+      "title": "Project Title",
+      "description": "A list (concatenated and separated) of titles or names for projects that contributed to a dwc:Event.",
+      "type": "string",
+      "format": "default",
+      "comments": "Use this term to provide the official name or title of a project as it is commonly known and cited. Avoid abbreviations unless they are widely understood. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "examples": "`The Nansen Legacy`; `Scalidophora i Noreg`; `Arctic Deep`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/projectTitle"
+    },
+    {
+      "name": "fundingAttribution",
+      "title": "Funding Attribution",
+      "description": "A list (concatenated and separated) of names of the funding organizations or agencies that provided funding for the project.",
+      "type": "string",
+      "format": "default",
+      "comments": "Specify the full official name of the funding body. This should include the complete name without abbreviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). The recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "examples": "`Norges forskningsråd`; `Artsdatabanken`; `Ocean Census | Nippon Foundation`",
+      "namespace": "ac",
+      "iri": "http://rs.tdwg.org/ac/terms/fundingAttribution"
+    },
+    {
+      "name": "fundingAttributionID",
+      "title": "Funding Attribution ID",
+      "description": "A list (concatenated and separated) of the globally unique identifiers for the funding organizations or agencies that supported the project.",
+      "type": "string",
+      "format": "default",
+      "comments": "Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "examples": "`https://ror.org/00epmv149`; `https://ror.org/00epmv149 | https://ror.org/04jnzhb65`; `https://www.wikidata.org/wiki/Q13102615`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/fundingAttributionID"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "Provide a unique identifier for the funding body, such as an identifier used in governmental or international databases. If no official identifier exists, use a persistent and unique identifier within your organization or dataset. The recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "examples": "`https://ror.org/00epmv149`; `https://ror.org/00epmv149 | https://ror.org/04jnzhb65`; `https://www.wikidata.org/wiki/Q13102615`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "eventID",
@@ -871,10 +926,31 @@
       }
     },
     {
+      "fields": "eventConductedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "georeferencedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
       "fields": "georeferenceProtocolID",
       "reference": {
         "resource": "protocol",
         "fields": "protocolID"
+      }
+    },
+    {
+      "fields": "fundingAttributionID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
       }
     }
   ]
