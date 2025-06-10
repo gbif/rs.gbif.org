@@ -3,7 +3,7 @@
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis.json",
   "title": "NucleotideAnalysis",
-  "description": "A link between a NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified Protocol.",
+  "description": "A link between a NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified MolecularProtocol.",
   "fields": [
     {
       "name": "nucleotideAnalysisID",

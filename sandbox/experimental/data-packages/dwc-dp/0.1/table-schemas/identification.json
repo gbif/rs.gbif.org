@@ -143,23 +143,12 @@
       "iri": "http://rs.gbif.org/terms/1.0/typeDesignationType"
     },
     {
-      "name": "typifiedName",
-      "title": "Typified Name",
-      "description": "A scientific name for which a specimen or other name is the type.",
-      "type": "string",
-      "format": "default",
-      "comments": " From https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml.",
-      "examples": "`monotypy`; `original designation`; `tautonomy`",
-      "namespace": "tcs",
-      "iri": "http://rs.tdwg.org/tcs/terms/typifiedName"
-    },
-    {
       "name": "identifiedBy",
       "title": "Identified By",
       "description": "A list (concatenated and separated) of names of Agents responsible for making a taxonomic determination of a dwc:Organism.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
       "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy"
@@ -170,7 +159,7 @@
       "description": "An identifier for the Agent responsible for making a taxonomic determination of a dwc:Organism.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
       "examples": "`https://orcid.org/0000-0002-1825-0097`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identifiedByID"
@@ -192,7 +181,7 @@
       "description": "A list (concatenated and separated) of identifiers for References (publication, bibliographic reference, global unique identifier, URI, metabarcoding reference database) used in a dwc:Identification.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
       "examples": "`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.` ; `UNITE v10.0, https://doi.org/10.15156/BIO/3301231`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identificationReferences"
@@ -236,8 +225,8 @@
       "description": "An identifier for a dwc:Taxon.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
+      "comments": "In DwC-DP, the taxonID is always an external link to a taxon record. As such, if present, it should be a resolvable globally unique identifier. See the Identifiers section of https://github.com/CatalogueOfLife/coldp/blob/master/README.md.",
+      "examples": "`col:6W3C4`; `worms:212808`; `ipni:320035-2`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonID"
     },
@@ -295,6 +284,17 @@
       "examples": "`This name is a misspelling in common use.`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "identificationID",
@@ -332,6 +332,13 @@
       "reference": {
         "resource": "media",
         "fields": "mediaID"
+      }
+    },
+    {
+      "fields": "identifiedByID",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
       }
     }
   ]

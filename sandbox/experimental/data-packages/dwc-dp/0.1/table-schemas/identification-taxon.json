@@ -26,14 +26,14 @@
       "description": "An identifier for a dwc:Taxon.",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "`8fa58e08-08de-4ac1-b69c-1235340b7001`; `32567`; `https://www.gbif.org/species/212`",
+      "comments": "In DwC-DP, the taxonID is always an external link to a taxon record. As such, if present, it should be a resolvable globally unique identifier. See the Identifiers section of https://github.com/CatalogueOfLife/coldp/blob/master/README.md.",
+      "examples": "`col:6W3C4`; `worms:212808`; `ipni:320035-2`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonID"
     },
     {
-      "name": "taxonOrder",
-      "title": "Taxon Order",
+      "name": "taxonSortOrder",
+      "title": "Taxon Sort Order",
       "description": "A numerical position of a dwc:Taxon in a taxonFormula.",
       "type": "integer",
       "format": "default",
