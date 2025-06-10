@@ -1,7 +1,7 @@
 {
   "name": "chronometric-age",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age.json",
   "title": "ChronometricAge",
   "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported by evidence.",
   "fields": [

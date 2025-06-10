@@ -1,7 +1,7 @@
 {
   "name": "phylogenetic-tree",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree.json",
   "title": "PhylogeneticTree",
   "description": "A branching diagram that shows the evolutionary relationships between dwc:Organisms.",
   "fields": [

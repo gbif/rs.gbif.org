@@ -1,7 +1,7 @@
 {
   "name": "survey",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey.json",
   "title": "Survey",
   "description": "A biotic survey.",
   "fields": [
@@ -609,6 +609,17 @@
       "examples": "`coordinates generalized from original GPS coordinates to the nearest half degree grid cell`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "surveyID",

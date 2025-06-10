@@ -1,7 +1,7 @@
 {
   "name": "occurrence",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence.json",
   "title": "Occurrence",
   "description": "A state of a dwc:Organism in a dwc:Event.",
   "fields": [
@@ -290,6 +290,17 @@
       "iri": "http://rs.tdwg.org/dwc/terms/organismName"
     },
     {
+      "name": "causeOfDeath",
+      "title": "Cause Of Death",
+      "description": "An indication of the known or suspected cause of death of a dwc:Organism.",
+      "type": "string",
+      "format": "default",
+      "comments": "The cause may be due to natural causes (e.g., disease, predation), human-related activities (e.g., roadkill, pollution), or other environmental factors (e.g., extreme weather events).",
+      "examples": "`trapped`; `poisoned`; `starved`; `drowned`; `shot`; `old age`; `roadkill`; `disease`; `herbicide`; `burned`; `infanticide`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/causeOfDeath"
+    },
+    {
       "name": "organismRemarks",
       "title": "Organism Remarks",
       "description": "Comments or notes about a dwc:Organism.",
@@ -329,7 +340,7 @@
       "description": "A list (concatenated and separated) of names of Agents responsible for making a taxonomic determination of a dwc:Organism.",
       "type": "string",
       "format": "default",
-      "comments": "When used in the context of an Event (such as in the Humboldt Extension), the subject consists of all of the dwc:Organisms related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
+      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Event. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
       "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy"
@@ -454,6 +465,17 @@
       "examples": "`this name is a misspelling in common use`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "occurrenceID",

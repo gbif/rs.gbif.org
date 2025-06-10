@@ -1,7 +1,7 @@
 {
   "name": "identification-taxon",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-taxon",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/identification-taxon.json",
   "title": "IdentificationTaxon",
   "description": "A construct of components and positions of dwc:scientificNames in a dwc:Identification.",
   "fields": [

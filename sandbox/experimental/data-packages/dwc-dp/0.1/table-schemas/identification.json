@@ -1,7 +1,7 @@
 {
   "name": "identification",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/identification.json",
   "title": "Identification",
   "description": "A taxonomic determination (i.e., the assignment of dwc:Taxa to dwc:Organisms).",
   "fields": [
@@ -284,6 +284,17 @@
       "examples": "`This name is a misspelling in common use.`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "identificationID",

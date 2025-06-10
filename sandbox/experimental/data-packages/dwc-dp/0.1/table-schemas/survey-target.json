@@ -1,7 +1,7 @@
 {
   "name": "survey-target",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-target",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-target.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-target.json",
   "title": "SurveyTarget",
   "description": "A specification of a characteristic of dwc:Occurrence that was included or excluded in a Survey.",
   "fields": [

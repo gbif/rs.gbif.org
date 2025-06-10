@@ -1,7 +1,7 @@
 {
   "name": "phylogenetic-tree-assertion",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-assertion",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-assertion.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-assertion.json",
   "title": "PhylogeneticTreeAssertion",
   "description": "An Assertion made by an Agent about a PhylogeneticTree.",
   "fields": [

@@ -1,7 +1,7 @@
 {
   "name": "survey-assertion",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-assertion",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-assertion.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-assertion.json",
   "title": "SurveyAssertion",
   "description": "An Assertion made by an Agent about a Survey.",
   "fields": [

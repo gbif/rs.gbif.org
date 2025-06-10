@@ -1,7 +1,7 @@
 {
   "name": "molecular-protocol-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-reference",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
   "title": "MolecularProtocolReference",
   "description": "A bibliographic reference in which a MolecularProtocol is mentioned.",
   "fields": [

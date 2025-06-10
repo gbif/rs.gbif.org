@@ -1,7 +1,7 @@
 {
   "name": "material",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material.json",
   "title": "Material",
   "description": "An entity that can be identified, exist for some period of time, and consist in whole or in part of physical matter while it exists.",
   "fields": [
@@ -552,6 +552,17 @@
       "examples": "`This name is a misspelling in common use.`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/taxonRemarks"
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "materialEntityID",

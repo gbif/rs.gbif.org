@@ -1,7 +1,7 @@
 {
   "name": "molecular-protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol.json",
   "title": "MolecularProtocol",
   "description": "A protocol used to derive and identify a nucleotide sequence from a dwc:MaterialEntity.",
   "fields": [

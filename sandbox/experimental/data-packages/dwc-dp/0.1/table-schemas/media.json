@@ -1,7 +1,7 @@
 {
   "name": "media",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
+  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media.json",
   "title": "Media",
   "description": "A dcmi:MediaType (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) with other entities as content.",
   "fields": [
@@ -28,24 +28,13 @@
       "format": "default",
       "comments": "",
       "examples": "`Sound`; `StillImage`; `MovingImage`; `Text`",
-      "namespace": "dwcdp",
-      "iri": ""
-    },
-    {
-      "name": "type",
-      "title": "Type",
-      "description": "A full URI preferably from among the type URIs specified in the DCMI Type Vocabulary. Recommended terms are those URIs whose labels are Collection, StillImage, Sound, MovingImage, InteractiveResource, or Text (e.g. http://purl.org/dc/dcmitype/Collection). Also recommended are the full URIs of ac:PanAndZoomImage, ac:3DStillImage, and ac: 3DMovingImage. Values MUST NOT be a string, but a URI with full namespace (e. g. http://purl.org/dc/dcmitype/StillImage) from a controlled vocabulary. Implementers and communities of practice may determine whether specific controlled vocabularies must be used. If the resource is a Collection, this item does not identify what types of objects it may contain. Following the DC recommendations at http://purl.org/dc/dcmitype/Text, images of text should be with this URI.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://purl.org/dc/dcmitype/StillImage`",
       "namespace": "dcterms",
       "iri": "http://purl.org/dc/terms/type"
     },
     {
       "name": "subtypeLiteral",
       "title": "SubtypeLiteral",
-      "description": "The subtype should provide more specialization than the type. Possible values are community-defined. For exmamples see the non-normative page AC_Subtype_Examples.",
+      "description": "The subtype should provide more specialization than the type. Possible values are community-defined. For examples see the non-normative page AC_Subtype_Examples.",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -118,28 +107,6 @@
       "examples": "`http://www.lexvo.org/page/iso639-3/eng`; `http://www.lexvo.org/page/iso639-3/fra`",
       "namespace": "ac",
       "iri": "http://rs.tdwg.org/ac/terms/metadataLanguage"
-    },
-    {
-      "name": "providerManagedID",
-      "title": "ProviderManagedID",
-      "description": "A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) that is unique and meaningful primarily for the data provider.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`840303`; `http://www.morphbank.net/840303`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/providerManagedID"
-    },
-    {
-      "name": "Rating",
-      "title": "Rating",
-      "description": "A rating of the media resources, provided by record originators or editors, with -1 defining “rejected”, “0” defining “unrated”, and “1” (worst) to “5” (best).",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "xmp",
-      "iri": "http://ns.adobe.com/xap/1.0/Rating"
     },
     {
       "name": "commenterLiteral",
@@ -232,7 +199,7 @@
     {
       "name": "rights",
       "title": "Rights",
-      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: \u201cCopyright XY 2008, all rights reserved\u201d, \u201c\u00a9 2008 XY Museum\u201d , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -298,7 +265,7 @@
     {
       "name": "Credit",
       "title": "Credit",
-      "description": "free text for `Please cite this as…`",
+      "description": "free text for `Please cite this as\u2026`",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -505,40 +472,6 @@
       "iri": "http://purl.org/dc/terms/language"
     },
     {
-      "name": "physicalSetting",
-      "title": "PhysicalSetting",
-      "description": "The setting of the content represented in media such as images, sounds, and movies if the provider deems them relevant. Constrained vocabulary of: `Natural` = Object in its natural setting of the object (e. g. living organisms in their natural environment); `Artificial` = Object in an artificial environment (e. g. living organisms in an artificial environment such as a zoo, garden, greenhouse, or laboratory); `Edited` = Human media editing of a natural setting or media acquisition with a separate media background such as a photographic backdrop.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/physicalSetting"
-    },
-    {
-      "name": "CVterm",
-      "title": "CVterm",
-      "description": "Controlled vocabulary of subjects to support broad classification of media items. Terms from various controlled vocabularies may be used. AC-recommended vocabularies are preferred and may be unqualified literals (not a full URI). For terms from other vocabularies either a precise URI should be used, or, as long as all unqualified terms in all vocabularies are unique, metadata should provide the source vocabularies using the Subject Category Vocabulary term.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm",
-      "constraints": {}
-    },
-    {
-      "name": "subjectCategoryVocabulary",
-      "title": "SubjectCategoryVocabulary",
-      "description": "Any vocabulary or formal classification from which terms in the Subject Category have been drawn.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary"
-    },
-    {
       "name": "tag",
       "title": "Tag",
       "description": "General keywords or tags.",
@@ -548,101 +481,6 @@
       "examples": "`head, wasp, eyes, blue`",
       "namespace": "ac",
       "iri": "http://rs.tdwg.org/ac/terms/tag"
-    },
-    {
-      "name": "LocationShown",
-      "title": "LocationShown",
-      "description": "The location that is depicted the media content, irrespective of the location at which the resource has been created.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "\"Virginia: Essex County: 1 mi. SE Dunnsville\"",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationShown",
-      "constraints": {}
-    },
-    {
-      "name": "WorldRegion",
-      "title": "WorldRegion",
-      "description": "Name of a world region in some high level classification, such as names for continents, waterbodies, or island groups, whichever is most appropriate. The terms preferably are derived from a controlled vocabulary.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/WorldRegion",
-      "constraints": {}
-    },
-    {
-      "name": "CountryCode",
-      "title": "CountryCode",
-      "description": "The geographic location of the specific entity or entities documented by the media item, expressed through a constrained vocabulary of countries using ISO 3166-1-alpha-2 2-letter country codes (e. g. \"IT, SI\").",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "\"US\"",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode",
-      "constraints": {}
-    },
-    {
-      "name": "CountryName",
-      "title": "CountryName",
-      "description": "This field can be free text, but where possible, the use of http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode is preferred.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "\"United States\"",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName",
-      "constraints": {}
-    },
-    {
-      "name": "ProvinceState",
-      "title": "ProvinceState",
-      "description": "Optionally, the geographic unit immediately below the country level (individual states in federal countries, provinces, or other administrative units) in which the subject of the media resource (e. g., species, habitats, or events) were located (if such information is available in separate fields).",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "\"Virginia\"",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/ProvinceState",
-      "constraints": {}
-    },
-    {
-      "name": "City",
-      "title": "City",
-      "description": "Optionally, the name of a city or place commonly found in gazetteers (such as a mountain or national park) in which the subjects (e. g., species, habitats, or events) were located.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/City",
-      "constraints": {}
-    },
-    {
-      "name": "Sublocation",
-      "title": "Sublocation",
-      "description": "Free-form text location details of the location of the subjects, down to the village, forest, or geographic feature etc., below the Iptc4xmpExt:City place name, especially information that could not be found in a gazetteer.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/Sublocation",
-      "constraints": {}
-    },
-    {
-      "name": "temporal",
-      "title": "Temporal",
-      "description": "The coverage (extent or scope) of the content of the resource. Temporal coverage will typically include temporal period (a period label, date, or date range) to which the subjects of the media or media collection relate. If dates are mentioned, they should follow ISO 8601. When the resource is a Collection, this refers to the temporal coverage of the collection. Following dcterms:temporal , the value must be a URI.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/temporal"
     },
     {
       "name": "CreateDate",
@@ -667,205 +505,6 @@
       "iri": "http://rs.tdwg.org/ac/terms/timeOfDay"
     },
     {
-      "name": "taxonCoverage",
-      "title": "TaxonCoverage",
-      "description": "A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource (which may be a media item or a collection).",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/taxonCoverage"
-    },
-    {
-      "name": "scientificName",
-      "title": "ScientificName",
-      "description": "Scientific names of taxa represented in the media resource (with date and name authorship information if available) of the lowest level taxonomic rank that can be applied.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Epistenia coeruleata`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/scientificName"
-    },
-    {
-      "name": "identificationQualifier",
-      "title": "IdentificationQualifier",
-      "description": "A brief phrase or a standard abbreviation (`cf. genus`; `cf. species`; `cf. var.`; `aff. species`; etc.) to express the determiner's doubts with respect to a specified taxonomic rank about the identification given in Scientific Taxon Name.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationQualifier"
-    },
-    {
-      "name": "vernacularName",
-      "title": "VernacularName",
-      "description": "Common (= vernacular) names of the subject in one or several languages. The ISO language name should be given in parentheses after the name if not all names are given by values of the Metadata Language term.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/vernacularName"
-    },
-    {
-      "name": "nameAccordingTo",
-      "title": "NameAccordingTo",
-      "description": "The taxonomic authority used to apply the name to the taxon, e. g., a person, book or web service.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`Catalog of Life`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/nameAccordingTo"
-    },
-    {
-      "name": "scientificNameID",
-      "title": "ScientificNameID",
-      "description": "An identifier for the nomenclatural (not taxonomic) details of a scientific name.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/scientificNameID"
-    },
-    {
-      "name": "otherScientificName",
-      "title": "OtherScientificName",
-      "description": "One or several Scientific Taxon Names that are synonyms to the Scientific Taxon Name may be provided here.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/otherScientificName"
-    },
-    {
-      "name": "identifiedBy",
-      "title": "IdentifiedBy",
-      "description": "The name(s) of the person(s) who applied the Scientific Taxon Name to the media item or the occurrence represented in the media item.",
-      "type": "string",
-      "format": "default",
-      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to separate the values in a list with space vertical bar space ( | ).",
-      "examples": "`James L. Patton`; `Theodore Pappenfuss | Robert Macey`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy"
-    },
-    {
-      "name": "identifiedByID",
-      "title": "Identified By ID",
-      "description": "An identifier for the Agent responsible for making a taxonomic determination of a dwc:Organism.",
-      "type": "string",
-      "format": "default",
-      "comments": "When used in the context of a Survey, the subject consists of all of the dwc:Identifications related to the Survey. Recommended best practice is to provide a single identifier that disambiguates the details of the identifying agent. If a list is used, the order of the identifiers on the list should not be assumed to convey any semantics. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
-      "examples": "`https://orcid.org/0000-0002-1825-0097`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identifiedByID"
-    },
-    {
-      "name": "dateIdentified",
-      "title": "DateIdentified",
-      "description": "The date on which the person(s) given under Identfied By applied a Scientific Taxon Name to the resource.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`2007-01-15`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/dateIdentified"
-    },
-    {
-      "name": "taxonCount",
-      "title": "TaxonCount",
-      "description": "An exact or estimated number of taxa at the lowest applicable taxon rank (usually species or infraspecific) represented by the media resource (item or collection).",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/taxonCount"
-    },
-    {
-      "name": "subjectPart",
-      "title": "SubjectPart",
-      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`head`; `herbarium sheet`; `habitat`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectPart"
-    },
-    {
-      "name": "sex",
-      "title": "Sex",
-      "description": "A description of the sex of any organisms featured within the media, when relevant to the subject of the media, e. g., male, female, hermaphrodite, dioecious.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`female`",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/sex"
-    },
-    {
-      "name": "lifeStage",
-      "title": "LifeStage",
-      "description": "A description of the life-cycle stage of any organisms featured within the media, when relevant to the subject of the media, e. g., larvae, juvenile, adult.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/lifeStage"
-    },
-    {
-      "name": "subjectOrientation",
-      "title": "SubjectOrientation",
-      "description": "Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`frontal`; `dorsal`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectOrientation"
-    },
-    {
-      "name": "preparations",
-      "title": "Preparations",
-      "description": "Free form text describing the techniques used to prepare the subject of the media, prior to or while creating the media resource.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/preparations"
-    },
-    {
-      "name": "LocationCreated",
-      "title": "LocationCreated",
-      "description": "The location at which the media recording instrument was placed when the media was created.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "iptc",
-      "iri": "http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationCreated",
-      "constraints": {}
-    },
-    {
-      "name": "digitizationDate",
-      "title": "DigitizationDate",
-      "description": "Date the first digital version was created, if different from Original Date and Time found in the Temporal Coverage Vocabulary. The date and time must comply with the World Wide Web Consortium (W3C) datetime practice, which requires that date and time representation correspond to ISO 8601:1998, but with year fields always comprising 4 digits. This makes datetime records compliant with 8601:2004. AC datetime values may also follow 8601:2004 for ranges by separating two IS0 8601 datetime fields by a solidus (`forward slash`; '/'). See also the wikipedia IS0 8601 entry for further explanation and examples.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/digitizationDate"
-    },
-    {
       "name": "captureDevice",
       "title": "CaptureDevice",
       "description": "Free form text describing the device or devices used to create the resource.",
@@ -888,37 +527,26 @@
       "iri": "http://rs.tdwg.org/ac/terms/resourceCreationTechnique"
     },
     {
-      "name": "IDofContainingCollection",
-      "title": "IDofContainingCollection",
-      "description": "If the resource is contained in a Collection, this field identifies that Collection uniquely. Its form is not specified by this normative document, but is left to implementers of specific implementations.",
+      "name": "collectionCode",
+      "title": "Collection Code",
+      "description": "A name, acronym, coden, or initialism identifying a Collection.",
       "type": "string",
       "format": "default",
       "comments": "",
-      "examples": "`http://www.morphbank.net/?id=110401`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/IDofContainingCollection"
+      "examples": "`Mammals`; `Hildebrandt`; `EBIRD`; `VP`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/collectionCode"
     },
     {
-      "name": "relatedResourceID",
-      "title": "RelatedResourceID",
-      "description": "Resource related in ways not specified through a collection, e.g., before-after images; time-lapse series; different orientations/angles of view",
+      "name": "collectionID",
+      "title": "Collection ID",
+      "description": "An identifier for a Collection.",
       "type": "string",
       "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/relatedResourceID"
-    },
-    {
-      "name": "providerID",
-      "title": "ProviderID",
-      "description": "A globally unique ID of the provider of the current AC metadata record.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://www.morphbank.net/110401`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/providerID"
+      "comments": "For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Global Registry of Scientific Collections (https://scientific-collections.gbif.org/).",
+      "examples": "`https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c`",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/collectionID"
     },
     {
       "name": "derivedFrom",
@@ -930,28 +558,6 @@
       "examples": "",
       "namespace": "ac",
       "iri": "http://rs.tdwg.org/ac/terms/derivedFrom"
-    },
-    {
-      "name": "associatedSpecimenReference",
-      "title": "AssociatedSpecimenReference",
-      "description": "A reference to a specimen associated with this resource.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "`http://www.morphbank.net/135231`",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/associatedSpecimenReference"
-    },
-    {
-      "name": "associatedObservationReference",
-      "title": "AssociatedObservationReference",
-      "description": "A reference to an observation associated with this resource.",
-      "type": "string",
-      "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/associatedObservationReference"
     },
     {
       "name": "accessURI",
@@ -1083,7 +689,11 @@
       "comments": "",
       "examples": "`2000 x 1500`",
       "namespace": "exif",
-      "iri": "http://ns.adobe.com/exif/1.0/PixelXDimension"
+      "iri": "http://ns.adobe.com/exif/1.0/PixelXDimension",
+      "constraint": {
+        "required": "FALSE",
+        "minimum": 1
+      }
     },
     {
       "name": "PixelYDimension",
@@ -1094,7 +704,22 @@
       "comments": "",
       "examples": "",
       "namespace": "exif",
-      "iri": "http://ns.adobe.com/exif/1.0/PixelYDimension"
+      "iri": "http://ns.adobe.com/exif/1.0/PixelYDimension",
+      "constraint": {
+        "required": "FALSE", 
+        "minimum": 1
+      }
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "",
+      "type": "string",
+      "format": "default",
+      "comments": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "examples": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL"
     }
   ],
   "primaryKey": "mediaID",
@@ -1146,34 +771,6 @@
       "reference": {
         "resource": "agent",
         "fields": "agentID"
-      }
-    },
-    {
-      "fields": "identifiedByID",
-      "reference": {
-        "resource": "agent",
-        "fields": "agentID"
-      }
-    },
-    {
-      "fields": "providerID",
-      "reference": {
-        "resource": "agent",
-        "fields": "agentID"
-      }
-    },
-    {
-      "fields": "associatedSpecimenReference",
-      "reference": {
-        "resource": "material",
-        "fields": "materialEntityID"
-      }
-    },
-    {
-      "fields": "associatedObservationReference",
-      "reference": {
-        "resource": "occurrence",
-        "fields": "occurrenceID"
       }
     }
   ]
