@@ -1,12 +1,12 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1",
   "name": "dwc-dp",
   "version": "0.1",
   "tableSchemas": [
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/agent.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
       "name": "agent",
       "title": "Agent",
       "description": "A person, group, organization, machine, software or other entity that can act.",
@@ -17,7 +17,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/agent-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-agent-role.json",
       "name": "agent-agent-role",
       "title": "AgentAgentRole",
       "description": "A role filled by an Agent with respect to another Agent.",
@@ -28,7 +28,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/agent-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-identifier.json",
       "name": "agent-identifier",
       "title": "AgentIdentifier",
       "description": "An identifier for an Agent.",
@@ -39,7 +39,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/agent-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-media.json",
       "name": "agent-media",
       "title": "AgentMedia",
       "description": "A link establishing an Agent as content in a Media entity.",
@@ -50,7 +50,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age.json",
       "name": "chronometric-age",
       "title": "ChronometricAge",
       "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported by evidence.",
@@ -61,7 +61,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-agent-role.json",
       "name": "chronometric-age-agent-role",
       "title": "ChronometricAgeAgentRole",
       "description": "A role filled by an Agent with respect to a chrono:ChronometricAge.",
@@ -72,7 +72,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-assertion.json",
       "name": "chronometric-age-assertion",
       "title": "ChronometricAgeAssertion",
       "description": "An Assertion made by an Agent about a chrono:ChronometricAge.",
@@ -83,7 +83,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
       "name": "chronometric-age-reference",
       "title": "ChronometricAgeReference",
       "description": "A bibliographic reference in which a chrono:ChronometricAge is mentioned.",
@@ -94,7 +94,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-media.json",
       "name": "chronometric-age-media",
       "title": "ChronometricAgeMedia",
       "description": "A link establishing a chrono:ChronometricAge as content of a Media entity.",
@@ -105,7 +105,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
       "name": "chronometric-age-protocol",
       "title": "ChronometricAgeProtocol",
       "description": "A link establishing a Protocol used in the determination of a chrono:ChronometricAge.",
@@ -116,7 +116,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event.json",
       "name": "event",
       "title": "Event",
       "description": "An action, process, or set of circumstances occurring at a dcterms:Location during a period of time.",
@@ -127,7 +127,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-agent-role.json",
       "name": "event-agent-role",
       "title": "EventAgentRole",
       "description": "A role filled by an Agent with respect to a dwc:Event.",
@@ -138,7 +138,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-assertion.json",
       "name": "event-assertion",
       "title": "EventAssertion",
       "description": "An Assertion made by an Agent about a dwc:Event.",
@@ -149,7 +149,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
       "name": "event-reference",
       "title": "EventReference",
       "description": "A bibliographic reference in which a dwc:Event is mentioned.",
@@ -160,7 +160,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-identifier.json",
       "name": "event-identifier",
       "title": "EventIdentifier",
       "description": "An identifier for a dwc:Event.",
@@ -171,7 +171,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-media.json",
       "name": "event-media",
       "title": "EventMedia",
       "description": "A link establishing a dwc:Event as content of a Media entity.",
@@ -182,7 +182,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/event-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
       "name": "event-protocol",
       "title": "EventProtocol",
       "description": "A link establishing a Protocol used in a dwc:Event.",
@@ -193,7 +193,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/geological-context.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context.json",
       "name": "geological-context",
       "title": "GeologicalContext",
       "description": "A set of geological designations, such as stratigraphy, that qualifies a region or place.",
@@ -204,7 +204,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/geological-context-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context-media.json",
       "name": "geological-context-media",
       "title": "GeologicalContextMedia",
       "description": "A link establishing a dwc:GeologicalContext as content of a Media entity.",
@@ -215,7 +215,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/identification.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification.json",
       "name": "identification",
       "title": "Identification",
       "description": "A taxonomic determination (i.e., the assignment of dwc:Taxa to dwc:Organisms).",
@@ -226,7 +226,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/identification-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-agent-role.json",
       "name": "identification-agent-role",
       "title": "IdentificationAgentRole",
       "description": "A role filled by an Agent with respect to a dwc:Identification.",
@@ -237,7 +237,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-taxon",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/identification-taxon.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
       "name": "identification-taxon",
       "title": "IdentificationTaxon",
       "description": "A construct of components and positions of dwc:scientificNames in a dwc:Identification.",
@@ -248,7 +248,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material.json",
       "name": "material",
       "title": "Material",
       "description": "An entity that can be identified, exist for some period of time, and consist in whole or in part of physical matter while it exists.",
@@ -259,7 +259,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-agent-role.json",
       "name": "material-agent-role",
       "title": "MaterialAgentRole",
       "description": "A role filled by an Agent with respect to a dwc:MaterialEntity.",
@@ -270,7 +270,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
       "name": "material-assertion",
       "title": "MaterialAssertion",
       "description": "An Assertion made by an Agent about a dwc:MaterialEntity.",
@@ -281,7 +281,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
       "name": "material-reference",
       "title": "MaterialReference",
       "description": "A bibliographic reference in which a dwc:MaterialEntity is mentioned.",
@@ -292,7 +292,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-identifier.json",
       "name": "material-identifier",
       "title": "MaterialIdentifier",
       "description": "An identifier for a dwc:MaterialEntity.",
@@ -303,7 +303,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-media.json",
       "name": "material-media",
       "title": "MaterialMedia",
       "description": "A link establishing a dwc:MaterialEntity as content of a Media entity.",
@@ -314,7 +314,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/material-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
       "name": "material-protocol",
       "title": "MaterialProtocol",
       "description": "A link establishing a Protocol used in the treatment of a dwc:MaterialEntity.",
@@ -325,7 +325,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
       "name": "media",
       "title": "Media",
       "description": "A dcmi:MediaType (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) with other entities as content.",
@@ -336,7 +336,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-agent-role.json",
       "name": "media-agent-role",
       "title": "MediaAgentRole",
       "description": "A role filled by an Agent with respect to a Media entity.",
@@ -347,7 +347,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-assertion.json",
       "name": "media-assertion",
       "title": "MediaAssertion",
       "description": "An Assertion made by an Agent about a Media entity.",
@@ -358,7 +358,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-identifier.json",
       "name": "media-identifier",
       "title": "MediaIdentifier",
       "description": "An identifier for a Media entity.",
@@ -369,7 +369,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
       "name": "molecular-protocol",
       "title": "MolecularProtocol",
       "description": "A protocol used to derive and identify a nucleotide sequence from a dwc:MaterialEntity.",
@@ -380,7 +380,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
       "name": "molecular-protocol-agent-role",
       "title": "MolecularProtocolAgentRole",
       "description": "A role filled by an Agent with respect to a MolecularProtocol.",
@@ -391,7 +391,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
       "name": "molecular-protocol-assertion",
       "title": "MolecularProtocolAssertion",
       "description": "An Assertion made by an Agent about a MolecularProtocol.",
@@ -402,7 +402,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
       "name": "molecular-protocol-reference",
       "title": "MolecularProtocolReference",
       "description": "A bibliographic reference in which a MolecularProtocol is mentioned.",
@@ -413,7 +413,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/nucleotide-analysis.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis.json",
       "name": "nucleotide-analysis",
       "title": "NucleotideAnalysis",
       "description": "A link between a NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified Protocol.",
@@ -424,7 +424,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
       "name": "nucleotide-analysis-assertion",
       "title": "NucleotideAnalysisAssertion",
       "description": "An Assertion made by an Agent about a NucleotideAnalysis.",
@@ -435,7 +435,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-sequence",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
       "name": "nucleotide-sequence",
       "title": "NucleotideSequence",
       "description": "A digital representation of a nucleotide sequence.",
@@ -446,7 +446,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence.json",
       "name": "occurrence",
       "title": "Occurrence",
       "description": "A state of a dwc:Organism in a dwc:Event.",
@@ -457,7 +457,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-agent-role.json",
       "name": "occurrence-agent-role",
       "title": "OccurrenceAgentRole",
       "description": "A role filled by an Agent with respect to a dwc:Occurrence.",
@@ -468,7 +468,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-assertion.json",
       "name": "occurrence-assertion",
       "title": "OccurrenceAssertion",
       "description": "An Assertion made by an Agent about a dwc:Occurrence.",
@@ -479,7 +479,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-reference.json",
       "name": "occurrence-reference",
       "title": "OccurrenceReference",
       "description": "A bibliographic reference in which a dwc:Occurrence is mentioned.",
@@ -490,7 +490,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-identifier.json",
       "name": "occurrence-identifier",
       "title": "OccurrenceIdentifier",
       "description": "An identifier for a dwc:Occurrence.",
@@ -501,7 +501,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-media.json",
       "name": "occurrence-media",
       "title": "OccurrenceMedia",
       "description": "A link establishing a dwc:Occurrence as content of a Media entity.",
@@ -512,7 +512,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
       "name": "occurrence-protocol",
       "title": "OccurrenceProtocol",
       "description": "A link establishing a Protocol used in the determination of a dwc:Occurrence.",
@@ -523,7 +523,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction.json",
       "name": "organism-interaction",
       "title": "OrganismInteraction",
       "description": "An interaction between two dwc:Organisms during a dwc:Event.",
@@ -534,7 +534,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-agent-role.json",
       "name": "organism-interaction-agent-role",
       "title": "OrganismInteractionAgentRole",
       "description": "A role filled by an Agent with respect to an OrganismInteraction.",
@@ -545,7 +545,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-assertion.json",
       "name": "organism-interaction-assertion",
       "title": "OrganismInteractionAssertion",
       "description": "An Assertion made by an Agent about an OrganismInteraction.",
@@ -556,7 +556,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
       "name": "organism-interaction-reference",
       "title": "OrganismInteractionReference",
       "description": "A bibliographic reference in which an OrganismInteraction is mentioned.",
@@ -567,7 +567,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-media.json",
       "name": "organism-interaction-media",
       "title": "OrganismInteractionMedia",
       "description": "A link establishing an OrganismInteraction as content of a Media entity.",
@@ -578,7 +578,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree.json",
       "name": "phylogenetic-tree",
       "title": "PhylogeneticTree",
       "description": "A branching diagram that shows the evolutionary relationships between dwc:Organisms.",
@@ -589,7 +589,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-assertion.json",
       "name": "phylogenetic-tree-assertion",
       "title": "PhylogeneticTreeAssertion",
       "description": "An Assertion made by an Agent about a PhylogeneticTree.",
@@ -600,7 +600,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-reference.json",
       "name": "phylogenetic-tree-reference",
       "title": "PhylogeneticTreeReference",
       "description": "A bibliographic reference in which a PhylogeneticTree is mentioned.",
@@ -611,7 +611,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-identifier.json",
       "name": "phylogenetic-tree-identifier",
       "title": "PhylogeneticTreeIdentifier",
       "description": "An identifier for a PhylogeneticTree.",
@@ -622,7 +622,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-media",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-media.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-media.json",
       "name": "phylogenetic-tree-media",
       "title": "PhylogeneticTreeMedia",
       "description": "A link establishing a PhylogeneticTree as content of a Media entity.",
@@ -633,7 +633,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-protocol.json",
       "name": "phylogenetic-tree-protocol",
       "title": "PhylogeneticTreeProtocol",
       "description": "A link establishing a Protocol used in the determination of a PhylogeneticTree.",
@@ -644,7 +644,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-tip",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-tip.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-tip.json",
       "name": "phylogenetic-tree-tip",
       "title": "PhylogeneticTreeTip",
       "description": "A group of Taxa at the end of a branch of a PhylogeneticTree as determined from relationships between dwc:Organisms.",
@@ -655,7 +655,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/phylogenetic-tree-tip-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/phylogenetic-tree-tip-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/phylogenetic-tree-tip-assertion.json",
       "name": "phylogenetic-tree-tip-assertion",
       "title": "PhylogeneticTreeTipAssertion",
       "description": "An Assertion made by an Agent about a PhylogeneticTreeTip.",
@@ -666,7 +666,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol.json",
       "name": "protocol",
       "title": "Protocol",
       "description": "A method used during an action.",
@@ -677,7 +677,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/protocol-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol-reference.json",
       "name": "protocol-reference",
       "title": "ProtocolReference",
       "description": "A bibliographic reference in which a Protocol is mentioned.",
@@ -688,7 +688,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/reference.json",
       "name": "reference",
       "title": "Reference",
       "description": "A bibliographic reference in which an entity is mentioned.",
@@ -700,7 +700,7 @@
     {
       "name": "relationship",
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/relationship",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/relationship.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/relationship.json",
       "title": "Relationship",
       "description": "A specification for a relationship of a subject entity to a related entity.",
       "comments": "",
@@ -710,7 +710,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
       "name": "survey",
       "title": "Survey",
       "description": "A biotic survey.",
@@ -721,7 +721,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-agent-role",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-agent-role.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-agent-role.json",
       "name": "survey-agent-role",
       "title": "SurveyAgentRole",
       "description": "A role filled by an Agent with respect to a Survey.",
@@ -732,7 +732,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-assertion",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-assertion.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-assertion.json",
       "name": "survey-assertion",
       "title": "SurveyAssertion",
       "description": "An Assertion made by an Agent about a Survey.",
@@ -743,7 +743,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-reference",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-reference.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-reference.json",
       "name": "survey-reference",
       "title": "SurveyReference",
       "description": "A bibliographic reference in which a Survey is mentioned.",
@@ -754,7 +754,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-identifier",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-identifier.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-identifier.json",
       "name": "survey-identifier",
       "title": "SurveyIdentifier",
       "description": "An identifier for a Survey.",
@@ -765,7 +765,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-protocol.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
       "name": "survey-protocol",
       "title": "SurveyProtocol",
       "description": "A link establishing a Protocol used in a Survey.",
@@ -776,7 +776,7 @@
     },
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-target",
-      "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-target.json",
+      "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-target.json",
       "name": "survey-target",
       "title": "SurveyTarget",
       "description": "A specification of a characteristic of dwc:Occurrence that was included or excluded in a Survey.",

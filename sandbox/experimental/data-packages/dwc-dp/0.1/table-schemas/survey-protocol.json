@@ -1,7 +1,7 @@
 {
   "name": "survey-protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/survey-protocol.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
   "title": "SurveyProtocol",
   "description": "A link establishing a Protocol used in a Survey.",
   "fields": [

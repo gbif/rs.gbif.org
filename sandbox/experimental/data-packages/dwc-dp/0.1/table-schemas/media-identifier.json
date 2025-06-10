@@ -1,7 +1,7 @@
 {
   "name": "media-identifier",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-identifier",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media-identifier.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-identifier.json",
   "title": "MediaIdentifier",
   "description": "An identifier for a Media entity.",
   "fields": [

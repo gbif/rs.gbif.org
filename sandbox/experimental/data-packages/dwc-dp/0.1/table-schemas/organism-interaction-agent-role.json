@@ -1,7 +1,7 @@
 {
   "name": "organism-interaction-agent-role",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-agent-role",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/organism-interaction-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-agent-role.json",
   "title": "OrganismInteractionAgentRole",
   "description": "A role filled by an Agent with respect to an OrganismInteraction.",
   "fields": [

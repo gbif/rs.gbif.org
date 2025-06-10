@@ -1,7 +1,7 @@
 {
   "name": "media",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
   "title": "Media",
   "description": "A dcmi:MediaType (dcmi:Sounds, dcmi:StillImages, dcmi:MovingImages or dcmi:Text) with other entities as content.",
   "fields": [
@@ -199,7 +199,7 @@
     {
       "name": "rights",
       "title": "Rights",
-      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: \u201cCopyright XY 2008, all rights reserved\u201d, \u201c\u00a9 2008 XY Museum\u201d , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -265,7 +265,7 @@
     {
       "name": "Credit",
       "title": "Credit",
-      "description": "free text for `Please cite this as\u2026`",
+      "description": "free text for `Please cite this as…`",
       "type": "string",
       "format": "default",
       "comments": "",
@@ -706,7 +706,7 @@
       "namespace": "exif",
       "iri": "http://ns.adobe.com/exif/1.0/PixelYDimension",
       "constraint": {
-        "required": "FALSE", 
+        "required": "FALSE",
         "minimum": 1
       }
     },

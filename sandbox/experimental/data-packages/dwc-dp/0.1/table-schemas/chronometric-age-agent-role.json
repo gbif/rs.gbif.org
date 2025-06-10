@@ -1,7 +1,7 @@
 {
   "name": "chronometric-age-agent-role",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-agent-role",
-  "url": "https://github.com/gbif/dwc-dp/blob/master/dwc-dp/0.1/table-schemas/chronometric-age-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-agent-role.json",
   "title": "ChronometricAgeAgentRole",
   "description": "A role filled by an Agent with respect to a chrono:ChronometricAge.",
   "fields": [
