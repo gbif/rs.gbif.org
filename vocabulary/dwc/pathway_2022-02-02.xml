@@ -4,11 +4,11 @@
   dc:URI='http://rs.gbif.org/vocabulary/dwc/pathway/'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:pathway'
   dc:title='Darwin Core Pathway Vocabulary'
-  dc:issued='2022-02-02'
+  dc:issued='2025-06-12'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-  xsi:schemaLocation='http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd'>
+  xsi:schemaLocation='http://rs.gbif.org/thesaurus/ http://rs.gbif.org/schema/thesaurus.xsd'>
 
   <concept
     dc:identifier='biologicalControl'
@@ -20,6 +20,11 @@
     comments='Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='biological control' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='biologická ochrana' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='control biológico' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contrôle biologique' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='생물학적 방제' xml:lang='ko'/>
+      <term dc:source='Darwin Core' dc:title='生物防治' xml:lang='zh-Hant'/>
     </preferred>
   </concept>
 
@@ -33,6 +38,10 @@
     comments='Probably only applicable to plants. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='erosion control' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='ochrana proti erozi' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='control de erosión' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contrôle de l’érosion' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='침식 조절' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -46,6 +55,10 @@
     comments='Largely applicable to freshwater and anadromous fish. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='fishery in the wild' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='rybolov ve volné přírodě' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='pesca silvestre' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='pêche en milieu naturel' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='어장' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -59,6 +72,11 @@
     comments='Largely applicable to terrestrial vertebrates. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hunting' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='lov' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='caza' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='chasse' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='사냥' xml:lang='ko'/>
+      <term dc:source='Darwin Core' dc:title='狩獵' xml:lang='zh-Hant'/>
     </preferred>
   </concept>
 
@@ -72,6 +90,10 @@
     comments='&quot;Improvement&quot; in this context is intended for introductions for the purpose of aesthetic enhancement of the landscape, as opposed to practical introductions for the purpose of erosion control, agriculture, forestry etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='landscape improvement' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='úprava krajiny' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='mejoramiento de paisaje' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='aménagement paysager' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='경관개선' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -85,6 +107,10 @@
     comments='The organism was released with the intention of improving the conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='conservation or wildlife management' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='ochrana přírody nebo správa volně žijících živočichů' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='conservación o manejo de vida silvestre' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='conservation ou gestion de la vie sauvage' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='보존 및 관리' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -98,6 +124,10 @@
     comments='This term refers to organisms intentionally and directly released into the wild to serve a specific purpose. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='released for use' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='uvolněno k užití' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='liberado para uso' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='libération pour usage' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='용도를 위한 방출' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -111,6 +141,10 @@
     comments='Compare with &quot;other escape from confinement&quot;. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other intentional release' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='jiné záměrné uvolnění' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='otra liberación intencional' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='autre libération volontaire' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='기타 의도적 방출' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -124,6 +158,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='agriculture (including biofuel feedstocks)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='zemědělství (včetně surovin pro biopaliva)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='agricultura (incluyendo materia prima para biocombustibles)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='agriculture (y compris les matières premières des biocarburants)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='경작(바이오에너지, 사료작물 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -137,6 +175,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='aquaculture/mariculture' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='akvakultura/marikultura' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='acuicultura/maricultura' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='aquaculture/mariculture' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='수경재배/양식' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -150,6 +192,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='botanic garden/zoo/aquaria (excluding domestic aquaria)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='botanická zahrada/zoologická zahrada/akvárium (kromě domácích akvárií)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='jardín botánico/zoológico/acuarios (excluyendo acuarios domésticos)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='jardin botanique/zoo/aquarium (à l'exclusion des aquariums domestiques)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='식물원/동물원/수족관(국내용 수족관제외)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -160,9 +206,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Privately kept animals.'
-    comments='Animals kept for hunting, such as falcons and ferrets SHOULD be included here, not under the hunting term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='pet/aquarium/terrarium species (including live food for such species)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='druhy v zájmovém chovu/akváriích/teráriích (včetně živé potravy pro tyto druhy)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='especies mascota/de acuario/de terrario (incluyendo comida viva para esas especies)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='plantes ornementales, animaux de compagnie, organismes d’aquarium ainsi que leurs aliments vivants' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='반려동물/수조/테라리움 사육종(생식먹이 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -176,6 +226,10 @@
     comments='Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='farmed animals (including animals left under limited control)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='hospodářská zvířata (včetně zvířat ponechaných pod omezenou kontrolou)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='animales de granja (incluyendo animales dejados bajo control limitado)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='animaux d'élevage (y compris les animaux laissés sous contrôle limité)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='사육된동물(통제되고 있는 동물 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -189,6 +243,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='forestry (including reforestation)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='lesnictví (včetně zalesňování)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='silvicultura (incluyendo reforestación)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='foresterie (y compris la reforestation)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='산림관리(조림포함)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -202,6 +260,10 @@
     comments='Probably only applicable to vertebrates raised for their pelts and skins. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='fur farms' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kožešinové farmy' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='granjas de pieles' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='ferme à fourrure' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='모피 농장' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -212,9 +274,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Plants distributed by the ornamental and decorative plants industry.'
-    comments='This term excludes plants and other organisms from aquaria and terrariums, which SHOULD be classified under the pet/aquarium/terrarium term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='horticulture' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='zahradnictví' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='horticultura' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='horticulture' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='원예' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -228,6 +294,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ornamental purpose other than horticulture' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='okrasné účely jiné než zahradnické' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='con fin ornamental distinto a horticultura' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='usage ornemental autre que l'horticulture' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='원예 이외의 장식 목적' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -241,6 +311,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='research and ex-situ breeding (in facilities)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='výzkum a chov ex-situ (v zařízeních)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='investigación y cría ex-situ (en instalaciones)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='recherche et élevage ex-situ' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='연구 및 현지 외 교배(시설 내)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -254,6 +328,10 @@
     comments='Live food, such as mealworms, for the organisms kept as pets should be classified under the pet term. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='live food and live bait' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='živá krmiva a živé návnady' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='alimento vivo y cebo vivo' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='nourriture et appât vivant' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='식용생물 및 생미끼' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -267,6 +345,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other escape from confinement' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='jiný únik z uzavřeného prostoru' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='otros escapes de confinamiento' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='autre evasion de confinement' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='탈출' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -280,6 +362,10 @@
     comments='These may be other plants, diseases, fungi and animals. They may be attached to the plant or within the soil. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant nursery material' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminovaný školkařský materiál' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='material de vivero contaminante' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contaminant de matériel de pépinière' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='묘목재료' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -293,6 +379,10 @@
     comments='Typical examples include crustaceans, cephalopods and molluscs. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminated bait' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminovaná návnada' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='cebo contaminado' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='appât contaminé' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='오염된 미끼' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -306,6 +396,10 @@
     comments='This term includes unintentional introduction of contaminants such as diseases on those foods and in the case of plants, should include seeds. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='food contaminant (including of live food)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminant potravin (včetně živých potravin)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='contaminante de alimentos (incluyendo alimento vivo)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contamination alimentaire (y compris de la nourriture vivante)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='식품을 통한 오염물질' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -316,9 +410,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants carried either on or in the body of transported animals.'
-    comments='This term excludes parasites and pathogens, which SHOULD be classified under their own specific term (&quot;parasites on animals&quot;). Transported animals carry other organisms in their coats, in their guts and in soil on their hooves and feet. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Transported animals carry other organisms in their coats, in their guts and in soil on their hooves and feet. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant on animals (except parasites, organisms transported by host/vector)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminant na zvířatech (kromě parazitů, organismů přenášených hostitelem/vektorem)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='contaminante de animales (excepto parásitos, organismos transportados por hospedador/vector)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contamination des animaux (sauf les parasites et les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='동물을 통한 감염물질' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -332,6 +430,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='parasites on animals (including organisms transported by host and vector)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='parazité na zvířatech (včetně organismů přenášených hostitelem a přenašečem)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='parásitos de animales (incluyendo organismos transportados por hospedador y vector)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='parasites d'animaux (y compris les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='동물기생충(숙주를 통해 옮겨진 유기체 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -342,9 +444,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported on plant material.'
-    comments='This term excludes organisms carried on contaminant nursery material, seed contaminants, and the material from the timber trade, which SHOULD be classified under their own pathway terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='contaminant on plants (except parasites, species transported by host/vector)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminant na rostlinách (kromě parazitů, druhů přenášených hostitelem/vektorem)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='contaminante de plantas (excepto parásitos, especies transportadas por hospedador/vector)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contaminateur de végétaux (sauf les parasites et les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='식물틀 통한 오염물질(기생동물, 숙주를 통해 옮겨진 종 제외)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -358,6 +464,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='parasites on plants (including species transported by host and vector)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='parazité na rostlinách (včetně druhů přenášených hostitelem a přenašečem)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='parásitos de plantas (incluyendo especies transportadas por hospedador y vector)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='parasites de végétaux (y compris les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='식물 기생충' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -371,6 +481,10 @@
     comments='These may be parasites or pathogens of seeds or species that eat seeds, whether intended to be transported or not. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='seed contaminant' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontaminant osiva' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='contaminante de semillas' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contaminant de semences' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='종자 오염물' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -381,9 +495,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Contaminants on unprocessed timber, processed wood and wood-derived products.'
-    comments='This term excludes packing material and habitat material made from wood that SHOULD be included under their own terms (&quot;packing material&quot; and &quot;transportation of habitat material&quot;). Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='timber trade' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='obchod se dřevem' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='comercio maderero' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='commerce du bois' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='목재 교역' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -397,6 +515,10 @@
     comments='Examples include materials such as soil, vegetation, straw and wood chips. Unless these materials are sterilised the organisms can be transported with their habitat to a new location. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transportation of habitat material (soil, vegetation, wood etc)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='přeprava materiálu stanoviště (půda, vegetace, dřevo atd.)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='transporte de material del hábitat (suelo, vegetación, madera, etc.)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='transport des matériaux de l'habitat (terre, végétation, bois, etc.)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='서식지물질이동' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -410,6 +532,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='angling/fishing equipment' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='rybářské vybavení' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='equipamiento de pesca' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='équipement de pêche/pêche à la ligne' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='낚시 장비' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -423,6 +549,10 @@
     comments='The difference between this category and others, such as &quot;hitchhikers on ship/boat&quot;, is that the organism embarked and disembarked from the container rather than the ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='container/bulk' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='kontejner/lodní kontejner' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='contenedores de carga' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='conteneur/transport en masse de marchandises' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='컨테이너/벌크' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -436,6 +566,10 @@
     comments='This term does not apply to organisms that embarked in containers that were subsequently loaded onto an aircraft. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hitchhikers in or on airplane' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='černí pasažéři v letadle nebo na palubě letadla' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='autostopista sobre o dentro de aeronave' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='passager clandestin sur ou dans un avion' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='항공기 편승' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -449,6 +583,10 @@
     comments='This term does not apply to organisms that embarked in containers that are subsequently loaded onto the ship, nor to contaminants of products loaded onto the ship. The term is intended for organisms that directly interact with the boat or ship. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='hitchhikers on ship/boat (excluding ballast water and hull fouling)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='černí pasažéři na lodi/člunu (kromě balastní vody a znečištění trupu)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='autostopista sobre embarcación (excluyendo agua de lastre y organismos adheridos al casco)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='passager clandestin sur un navire/bateau (à l'exclusion des eaux de ballast et de la contamination de la coque)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='배/선박 편승' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -462,6 +600,10 @@
     comments='This includes military equipment, farm machinery and manufacturing equipment. This term does not include products carried by vehicles. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='machinery/equipment' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='stroje/zařízení' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='maquinaria/equipamiento' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='machinerie/équipement' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='중장비/장비류' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -472,9 +614,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms transported on people and/or their personal luggage.'
-    comments='This term excludes recreational angling equipment, which SHOULD be classified under its own term (&quot;angling/fishing equipment&quot;). Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='people and their luggage/equipment (in particular tourism)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='lidé a jejich zavazadla/vybavení (zejména v cestovním ruchu)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='personas y su equipaje/equipamiento (en particular turismo)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='personnes et leurs bagages/équipements (en particulier les touristes)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='인간/수화물(관광)' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -488,6 +634,10 @@
     comments='Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='organic packing material, in particular wood packaging' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='organický obalový materiál, zejména dřevěné obaly' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='material orgánico de embalaje, en particular embalaje de madera' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='matériau d'emballage organique, notamment en bois' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='유기적 포장재료, 특히 목재 포장' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -501,6 +651,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ship/boat ballast water' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='balastní voda z lodí/člunů' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='agua de lastre de embarcación' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='eau de ballast des bateaux/navires' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='배/선박 평형수' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -514,6 +668,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='ship/boat hull fouling' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='zanášení trupu lodi/člunu' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='organismos adheridos a casco de embarcación' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='encrassement de coque de bateau' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='배/선박 선체 부착물' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -527,6 +685,10 @@
     comments='These organisms may be carried on or within the vehicle. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='vehicles (car, train, etc.)' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='vozidla (auto, vlak atd.)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='vehículos (automóvil, tren, etc.)' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='véhicules (voiture, train, etc.)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='이동수단' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -537,9 +699,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='A catch-all term for any transport related dispersal that is not covered in other terms.'
-    comments='Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.) See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='other means of transport' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='jiné dopravní prostředky' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='otros medios de transporte' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='autre moyen de transport' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='기타이동수단' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -550,9 +716,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.'
-    comments='Organisms transported along these corridors in ballast, on as hull fouling SHOULD be categorised under the &quot;ship/boat ballast water&quot; or &quot;ship/boat hull fouling&quot; terms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='interconnected waterways/basins/seas' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='propojené vodní cesty/povodí/moře' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='vías navegables/cuencas/mares interconectados' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='voies navigables/bassins/mers interconnectés' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='연결된 수로/유역/바다' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -566,6 +736,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='tunnels and land bridges' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='tunely a pozemní mosty' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='túneles y puentes terrestres' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='tunnels et ponts terrestres' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='터널 및 교량' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -576,9 +750,13 @@
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
     dc:description='Dispersal of organisms to new regions by natural dispersal from regions in which they are alien.'
-    comments='These are alien species that have previously been introduced through one of these pathways: release in nature, excape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
+    comments='These are alien species that have previously been introduced through one of these pathways: release in nature, escape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='natural dispersal across borders of invasive alien organisms' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='přirozené šíření invazních cizích organismů přes hranice' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='dispersión natural a través de fronteras de organismos exóticos invasores' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='dispersion naturelle d'organismes exotiques envahissants à travers les frontières' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='침입외래생물의 국외 확산' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -592,6 +770,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='release in nature' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='vypuštění do přírody' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='liberado en la naturaleza' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='relâchement dans la nature' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='방출' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -605,6 +787,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='escape from confinement' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='útěk ze zajetí' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='escape de confinamiento' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='fuite de confinement' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='탈출' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -614,10 +800,14 @@
     dc:subject='http://rs.tdwg.org/dwcpw/values/p047'
     dc:relation='https://doi.org/10.3897/biss.3.38084'
     dc:issued='2020-10-13'
-    dc:description='An umbrella term for all species transported as contaninents in other products.'
+    dc:description='An umbrella term for all species transported as contaminants in other products.'
     comments='An alien species is a contaminant if it had a trophic or biotic relationship to organisms or items being transported and was to some extent dependent on them for survival. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transport-contaminant' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='transport-contaminant' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='transporte contaminante' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='contamination lors du transport' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='수송중오염물' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -631,6 +821,10 @@
     comments='A stowaway has no trophic or biotic relationship to the organisms or items being transported. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='transport-stowaway' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='transport-stowaway' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='polizón en transporte' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='passager clandestin' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='수송중밀반입' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -644,6 +838,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='corridor' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='koridor' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='corredor' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='couloir' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='통로' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -657,6 +855,9 @@
     comments='The term refers to secondary dispersal from an area where the taxon is also alien. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='unaided' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='bez lidské pomoci' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='sans assistance' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='자력' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -670,6 +871,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='intentional' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='záměrný' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='intencional' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='volontaire' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='의도적' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -683,6 +888,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='unintentional' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='neúmyslné' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='no intencional' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='involontaire' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='비의도적' xml:lang='ko'/>
     </preferred>
   </concept>
 
@@ -696,6 +905,10 @@
     comments='See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='corridor and dispersal' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='koridor a šíření' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='corredor y dispersión' xml:lang='es'/>
+      <term dc:source='Darwin Core' dc:title='couloir et dispersion' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='통로 및 확산' xml:lang='ko'/>
     </preferred>
   </concept>
 
