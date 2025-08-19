@@ -194,7 +194,7 @@
       <term dc:source='Darwin Core' dc:title='botanic garden/zoo/aquaria (excluding domestic aquaria)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='botanická zahrada/zoologická zahrada/akvárium (kromě domácích akvárií)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='jardín botánico/zoológico/acuarios (excluyendo acuarios domésticos)' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='jardin botanique/zoo/aquarium (à l'exclusion des aquariums domestiques)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='jardin botanique/zoo/aquarium (à l&#x27;exclusion des aquariums domestiques)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='식물원/동물원/수족관(국내용 수족관제외)' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -228,7 +228,7 @@
       <term dc:source='Darwin Core' dc:title='farmed animals (including animals left under limited control)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='hospodářská zvířata (včetně zvířat ponechaných pod omezenou kontrolou)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='animales de granja (incluyendo animales dejados bajo control limitado)' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='animaux d'élevage (y compris les animaux laissés sous contrôle limité)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='animaux d&#x27;élevage (y compris les animaux laissés sous contrôle limité)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='사육된동물(통제되고 있는 동물 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -296,7 +296,7 @@
       <term dc:source='Darwin Core' dc:title='ornamental purpose other than horticulture' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='okrasné účely jiné než zahradnické' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='con fin ornamental distinto a horticultura' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='usage ornemental autre que l'horticulture' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='usage ornemental autre que l&#x27;horticulture' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='원예 이외의 장식 목적' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -432,7 +432,7 @@
       <term dc:source='Darwin Core' dc:title='parasites on animals (including organisms transported by host and vector)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='parazité na zvířatech (včetně organismů přenášených hostitelem a přenašečem)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='parásitos de animales (incluyendo organismos transportados por hospedador y vector)' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='parasites d'animaux (y compris les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='parasites d&#x27;animaux (y compris les organismes transportés par un hôte/vecteur)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='동물기생충(숙주를 통해 옮겨진 유기체 포함)' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -517,7 +517,7 @@
       <term dc:source='Darwin Core' dc:title='transportation of habitat material (soil, vegetation, wood etc)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='přeprava materiálu stanoviště (půda, vegetace, dřevo atd.)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='transporte de material del hábitat (suelo, vegetación, madera, etc.)' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='transport des matériaux de l'habitat (terre, végétation, bois, etc.)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='transport des matériaux de l&#x27;habitat (terre, végétation, bois, etc.)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='서식지물질이동' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -585,7 +585,7 @@
       <term dc:source='Darwin Core' dc:title='hitchhikers on ship/boat (excluding ballast water and hull fouling)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='černí pasažéři na lodi/člunu (kromě balastní vody a znečištění trupu)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='autostopista sobre embarcación (excluyendo agua de lastre y organismos adheridos al casco)' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='passager clandestin sur un navire/bateau (à l'exclusion des eaux de ballast et de la contamination de la coque)' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='passager clandestin sur un navire/bateau (à l&#x27;exclusion des eaux de ballast et de la contamination de la coque)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='배/선박 편승' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -636,7 +636,7 @@
       <term dc:source='Darwin Core' dc:title='organic packing material, in particular wood packaging' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='organický obalový materiál, zejména dřevěné obaly' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='material orgánico de embalaje, en particular embalaje de madera' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='matériau d'emballage organique, notamment en bois' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='matériau d&#x27;emballage organique, notamment en bois' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='유기적 포장재료, 특히 목재 포장' xml:lang='ko'/>
     </preferred>
   </concept>
@@ -755,7 +755,7 @@
       <term dc:source='Darwin Core' dc:title='natural dispersal across borders of invasive alien organisms' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='přirozené šíření invazních cizích organismů přes hranice' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='dispersión natural a través de fronteras de organismos exóticos invasores' xml:lang='es'/>
-      <term dc:source='Darwin Core' dc:title='dispersion naturelle d'organismes exotiques envahissants à travers les frontières' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='dispersion naturelle d&#x27;organismes exotiques envahissants à travers les frontières' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='침입외래생물의 국외 확산' xml:lang='ko'/>
     </preferred>
   </concept>
