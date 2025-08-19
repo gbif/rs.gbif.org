@@ -23,7 +23,7 @@
       <term dc:source='Darwin Core' dc:title='nativní (původní)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='nativo (autóctono)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='natif (indigène)' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='原生' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='原生' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Native' xml:lang='en'  />
@@ -46,7 +46,7 @@
       <term dc:source='Darwin Core' dc:title='nativní: reintrodukovaný' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='nativo: reintroducido' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='natif : réintroduit' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='原生：再引進' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='原生：再引進' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Reintroduced' xml:lang='en'  />
@@ -67,7 +67,7 @@
       <term dc:source='Darwin Core' dc:title='zavlečený (introdukovaný, cizí, exotický, nepůvodní)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='introducido (exótico, no-nativo, no-autóctono)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='introduit (exotique, non-natif, non-indigène)' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='引進（外來、非原生、非原住）' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='引進（外來、非原生、非原住）' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Alien' xml:lang='en'  />
@@ -93,7 +93,7 @@
       <term dc:source='Darwin Core' dc:title='zaveden: asistovaná kolonizace' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='introducido: colonización asistida' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='introduit : colonisation assistée' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='引進（協助拓殖）' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='引進（協助拓殖）' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Assisted colonisation' xml:lang='en'  />
@@ -114,7 +114,7 @@
       <term dc:source='Darwin Core' dc:title='kočovný (příležitostný)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='vagabundo (incidental)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='erratique (occasionnel)' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='流浪的' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='流浪的' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Casual' xml:lang='en'  />
@@ -137,7 +137,7 @@
       <term dc:source='Darwin Core' dc:title='nejistý (neznámý, kryptogenní)' xml:lang='cs'/>
       <term dc:source='Darwin Core' dc:title='incierto (desconocido, criptogénico)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='incertain (inconnu, cryptogénique)' xml:lang='fr'/>
-      <term dc:source='Darwin Core' dc:title='不確定的（未知、隱源性）' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='不確定的（未知、隱源性）' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Uncertain' xml:lang='en'  />

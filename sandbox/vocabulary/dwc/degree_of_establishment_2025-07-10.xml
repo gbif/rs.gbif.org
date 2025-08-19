@@ -24,7 +24,7 @@
       <term dc:source='Darwin Core' dc:title='nativo (categoría A)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='indigène (catégorie A)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='토착' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='原生（類別 A）' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='原生（類別 A）' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -42,7 +42,7 @@
       <term dc:source='Darwin Core' dc:title='en cautividad (categoría B1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='captif (catégorie B1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='포획' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='收容（類別 B1）' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='收容（類別 B1）' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -60,7 +60,7 @@
       <term dc:source='Darwin Core' dc:title='cultivado (categoría B2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='cultivé (catégorie B2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='경작' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='栽培' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='栽培' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -78,7 +78,7 @@
       <term dc:source='Darwin Core' dc:title='liberado (categoría B3)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='relâché (catégorie B3)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='방출' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='野放' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='野放' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -96,7 +96,7 @@
       <term dc:source='Darwin Core' dc:title='en peligro (categoría C0)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='échec (catégorie C0)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='실패' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='衰退中' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='衰退中' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -114,7 +114,7 @@
       <term dc:source='Darwin Core' dc:title='ocasional (categoría C1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='moyen (catégorie C1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='임시' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='偶然出現的' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='偶然出現的' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -132,7 +132,7 @@
       <term dc:source='Darwin Core' dc:title='en reprodución (categoría C2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='reproduction (catégorie C2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='재생산' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='繁殖中' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='繁殖中' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -150,7 +150,7 @@
       <term dc:source='Darwin Core' dc:title='establecida (categoría C3)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='implanté (catégorie C3)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='정착' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='歸化' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='歸化' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -168,7 +168,7 @@
       <term dc:source='Darwin Core' dc:title='colonizadora (categoría D1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='colonisant (catégorie D1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='서식' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='拓殖中' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='拓殖中' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -186,7 +186,7 @@
       <term dc:source='Darwin Core' dc:title='invasivo (categoría D2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='envahissant (catégorie D2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='침입' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='入侵' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='入侵' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -204,7 +204,7 @@
       <term dc:source='Darwin Core' dc:title='invasivo generalizado (categoría E)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='largement envahissant (catégorie E)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='광범위한 침입' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='廣泛入侵' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='廣泛入侵' xml:lang='zh'/>
     </preferred>
   </concept>
 

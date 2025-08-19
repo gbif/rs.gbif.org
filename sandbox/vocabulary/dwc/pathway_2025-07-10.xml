@@ -24,7 +24,7 @@
       <term dc:source='Darwin Core' dc:title='control biológico' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='contrôle biologique' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='생물학적 방제' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='生物防治' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='生物防治' xml:lang='zh'/>
     </preferred>
   </concept>
 
@@ -76,7 +76,7 @@
       <term dc:source='Darwin Core' dc:title='caza' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='chasse' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='사냥' xml:lang='ko'/>
-      <term dc:source='Darwin Core' dc:title='狩獵' xml:lang='zh-Hant'/>
+      <term dc:source='Darwin Core' dc:title='狩獵' xml:lang='zh'/>
     </preferred>
   </concept>
 
