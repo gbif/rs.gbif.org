@@ -21,9 +21,12 @@
     dc:description='A specimen that has been preserved.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Preserved Specimen' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Uchovaný exemplář' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Spécimen en collection' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Espécime Preservado' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Espécimen preservado' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='保存標本' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='保存標本' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -39,9 +42,12 @@
     dc:description='A preserved specimen that is a fossil.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Fossil Specimen' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Fosilní exemplář' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Spécimen fossile' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Espécime Fóssil' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Espécimen fósil' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='化石標本' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='化石標本' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -57,9 +63,12 @@
     dc:description='A specimen that is alive.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Living Specimen' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Živý exemplář' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Spécimen vivant' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Espécime Vivo' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Espécimen vivo' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='生体標本' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='活體標本' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -75,9 +84,12 @@
     dc:description='An output of a human observation process.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Human Observation' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Pozorování člověkem' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Observation humaine' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Observação por Humano' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Observación humana' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='人による観察' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='人為觀測' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -93,9 +105,12 @@
     dc:description='An output of a machine observation process.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Machine Observation' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Strojové pozorování' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Observation faite par une machine' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Observação por Máquina' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Observación con máquina' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='機械観測' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='機器觀測' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -111,9 +126,12 @@
     dc:description='An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Entity' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Materiální entita' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Entité matérielle' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Entidad Material' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Entidade Material' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='物質的な実体' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='材料實體' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -129,9 +147,12 @@
     dc:description='A material entity that represents an entity of interest in whole or in part.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Sample' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Vzorek materiálu' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Échantillon matériel' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Amostra' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Muestra' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='試料' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='材料樣本資訊' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Sample' xml:lang='en'/>
@@ -148,9 +169,12 @@
     dc:description='An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Occurrence' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Výskyt' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Occurrence' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='Ocorrência' xml:lang='pt'/>
       <term dc:source='Darwin Core' dc:title='Observación' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='オカレンス' xml:lang='ja'/>
+      <term dc:source='Darwin Core' dc:title='出現紀錄' xml:lang='zh'/>
     </preferred>
     <alternative>
     </alternative>
@@ -166,6 +190,9 @@
     dc:description='A reference to or citation of one, a part of, or multiple specimens in scholarly publications.'>
     <preferred>
       <term dc:source='Darwin Core' dc:title='Material Citation' xml:lang='en'/>
+      <term dc:source='Darwin Core' dc:title='Citace materiálu' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='Référence à un matériel' xml:lang='fr'/>
+      <term dc:source='Darwin Core' dc:title='文獻紀錄' xml:lang='zh'/>
     </preferred>
     <alternative>
       <term dc:title='Literature' xml:lang='en'/>
