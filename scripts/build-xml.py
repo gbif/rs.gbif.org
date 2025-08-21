@@ -250,7 +250,7 @@ class DwcaXml:
                         #        print("No translations in "+lang, term_data)
 
                     if hasLang:
-                        s += "    </property/>\n"
+                        s += "    </property>\n"
                     else:
                         s += "/>\n"
 
