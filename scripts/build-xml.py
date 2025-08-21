@@ -232,7 +232,7 @@ class DwcaXml:
 
                         if l_label is not None or l_comments is not None or l_description is not None or l_examples is not None:
                             if not hasLang:
-                                s += "/>\n"
+                                s += ">\n"
                                 hasLang = True
 
                             s += f"      <translation xml:lang='{xmllang}'"
