@@ -177,6 +177,7 @@ table.definition > tbody > tr > * {
 }
 table.definition > tbody > tr.translation > * {
 	border-top: 1px dotted black;
+	font-size: 0.9rem;
 }
 table.definition > tbody > tr > th {
 	text-align: left;
@@ -197,8 +198,11 @@ table.definition :target > td {
 }
 
 .description, .comments, .examples {
-	padding: 5px 0 5px;
+	padding: 5px 0;
 	word-wrap: anywhere;
+}
+.translation .description, .translaiton .comments, .translation .examples {
+	padding: 2.5px 0;
 }
 .vocabulary, .vocabulary a {
 	color: black;
