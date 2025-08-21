@@ -1,0 +1,116 @@
+group,iri,type,thesaurus,description,comments,examples,required
+Management Vocabulary,http://purl.org/dc/terms/identifier,,,,,,true
+Management Vocabulary,http://purl.org/dc/elements/1.1/type,,,,,,false
+Management Vocabulary,http://purl.org/dc/terms/type,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/subtypeLiteral,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/subtype,,,,,,false
+Management Vocabulary,http://purl.org/dc/terms/title,,,,,,false
+Management Vocabulary,http://purl.org/dc/terms/modified,,,,,,false
+Management Vocabulary,http://ns.adobe.com/xap/1.0/MetadataDate,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/metadataLanguageLiteral,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/metadataLanguage,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/providerManagedID,,,,,,false
+Management Vocabulary,http://ns.adobe.com/xap/1.0/Rating,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/commenterLiteral,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/commenter,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/comments,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/reviewerLiteral,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/reviewer,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/reviewerComments,,,,,,false
+Management Vocabulary,http://purl.org/dc/terms/available,,,,,,false
+Management Vocabulary,http://rs.tdwg.org/ac/terms/hasServiceAccessPoint,,,,,,false
+Attribution Vocabulary,http://purl.org/dc/elements/1.1/rights,,,,,,false
+Attribution Vocabulary,http://purl.org/dc/terms/rights,,,,,,false
+Attribution Vocabulary,http://ns.adobe.com/xap/1.0/rights/Owner,,,,,,false
+Attribution Vocabulary,http://ns.adobe.com/xap/1.0/rights/UsageTerms,,,,,,false
+Attribution Vocabulary,http://ns.adobe.com/xap/1.0/rights/WebStatement,,,,,,false
+Attribution Vocabulary,http://rs.tdwg.org/ac/terms/licenseLogoURL,,,,,,false
+Attribution Vocabulary,http://ns.adobe.com/photoshop/1.0/Credit,,,,,,false
+Attribution Vocabulary,http://rs.tdwg.org/ac/terms/attributionLogoURL,,,,,,false
+Attribution Vocabulary,http://rs.tdwg.org/ac/terms/attributionLinkURL,,,,,,false
+Attribution Vocabulary,http://rs.tdwg.org/ac/terms/fundingAttribution,,,,,,false
+Attribution Vocabulary,http://purl.org/dc/elements/1.1/source,,,,,,false
+Attribution Vocabulary,http://purl.org/dc/terms/source,,,,,,false
+Agents Vocabulary,http://purl.org/dc/elements/1.1/creator,,,,,,false
+Agents Vocabulary,http://purl.org/dc/terms/creator,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/providerLiteral,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/provider,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/metadataCreatorLiteral,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/metadataCreator,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/metadataProviderLiteral,,,,,,false
+Agents Vocabulary,http://rs.tdwg.org/ac/terms/metadataProvider,,,,,,false
+Content Coverage Vocabulary,http://purl.org/dc/terms/description,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/caption,,,,,,false
+Content Coverage Vocabulary,http://purl.org/dc/elements/1.1/language,,,,,,false
+Content Coverage Vocabulary,http://purl.org/dc/terms/language,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/physicalSetting,,,,,,false
+Content Coverage Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/tag,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/freqHigh,,,,,,false
+Content Coverage Vocabulary,http://rs.tdwg.org/ac/terms/freqLow,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationShown,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/WorldRegion,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/ProvinceState,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/City,,,,,,false
+Geography Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/Sublocation,,,,,,false
+Temporal Coverage Vocabulary,http://purl.org/dc/terms/temporal,,,,,,false
+Temporal Coverage Vocabulary,http://ns.adobe.com/xap/1.0/CreateDate,,,,,,false
+Temporal Coverage Vocabulary,http://rs.tdwg.org/ac/terms/timeOfDay,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/taxonCoverage,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/scientificName,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/identificationQualifier,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/vernacularName,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/nameAccordingTo,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/scientificNameID,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/otherScientificName,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/identifiedBy,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/dateIdentified,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/taxonCount,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/subjectPart,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/subjectPartLiteral,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/sex,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/lifeStage,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/subjectOrientation,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/ac/terms/subjectOrientationLiteral,,,,,,false
+Taxonomic Coverage Vocabulary,http://rs.tdwg.org/dwc/terms/preparations,,,,,,false
+Resource Creation Vocabulary,http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationCreated,,,,,,false
+Resource Creation Vocabulary,http://rs.tdwg.org/ac/terms/digitizationDate,,,,,,false
+Resource Creation Vocabulary,http://rs.tdwg.org/ac/terms/captureDevice,,,,,,false
+Resource Creation Vocabulary,http://rs.tdwg.org/ac/terms/resourceCreationTechnique,,,,,,false
+Resource Creation Vocabulary,http://rs.tdwg.org/ac/terms/frameRate,,,,,,false
+Resource Creation Vocabulary,http://purl.org/ontology/mo/sample_rate,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/IDofContainingCollection,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/relatedResourceID,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/providerID,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/derivedFrom,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/associatedSpecimenReference,,,,,,false
+Related Resources Vocabulary,http://rs.tdwg.org/ac/terms/associatedObservationReference,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/accessURI,,,,,,false
+Service Access Point Vocabulary,http://purl.org/dc/elements/1.1/format,,,,,,false
+Service Access Point Vocabulary,http://purl.org/dc/terms/format,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/variantLiteral,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/variant,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/variantDescription,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/furtherInformationURL,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/licensingException,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/serviceExpectation,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/hashFunction,,,,,,false
+Service Access Point Vocabulary,http://rs.tdwg.org/ac/terms/hashValue,,,,,,false
+Service Access Point Vocabulary,http://ns.adobe.com/exif/1.0/PixelXDimension,,,,,,false
+Service Access Point Vocabulary,http://ns.adobe.com/exif/1.0/PixelYDimension,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/hasROI,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/isROIOf,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/xFrac,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/yFrac,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/widthFrac,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/heightFrac,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/radius,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/startTime,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/endTime,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/startTimestamp,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/endTimestamp,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/mediaDuration,,,,,,false
+Region of Interest Vocabulary,http://rs.tdwg.org/ac/terms/mediaSpeed,,,,,,false
