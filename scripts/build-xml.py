@@ -1,0 +1,489 @@
+#!/usr/bin/env python3
+#
+# Script to build DWCA XML definition files.
+# Based on an earlier script by John Wieczorek: https://github.com/tdwg/dwc/blob/8ea35d29e321c623002475744c080080ded9e388/build/xml/build_extension.py
+
+import re
+import requests
+import json
+import os
+import sys
+import pandas as pd
+import html
+
+import dwcterms
+
+# -----------------
+# Configuration section
+# -----------------
+languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# Only allow creating a new version (new file) if this flag is present.
+permitNewVersion = '--permit-new-version' in opts
+
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+ac = False
+
+class DwcaXml:
+    def __init__(self, terms, xmlTemplate, xmlTerms=None, gbifAlternatives=None):
+        """
+        Tables of terms.
+
+        Keyword arguments:
+        terms -- the loaded dwcterms term lists
+        xmlTemplate -- XML header
+        xmlTerms -- terms to include
+        gbifAlternatives -- vocabulary server URL template
+        """
+
+        self.terms = terms
+        self.xmlTemplate = xmlTemplate
+        self.xmlTerms = xmlTerms
+        self.gbifAlternatives = gbifAlternatives
+        pass
+
+    def t_val(self, row, key, l):
+        """
+        Retrieve the value of the given term in the given locale.  Fall back to English.
+        """
+        if key+l in row and row[key+l] != '':
+            return row[key+l]
+        else:
+            return row[key]
+
+    def get_term_definition(self, locale, term_iri):
+        """Extract the required information from the terms table to use in
+        the XML of a single term by using the term_iri as the identifier
+        """
+
+        if locale == 'en':
+            l = ''
+        else:
+            l = '_' + locale
+
+        term_data = {}
+
+        term = self.terms.terms_sorted_by_localname.loc[self.terms.terms_sorted_by_localname['term_iri'] == term_iri].iloc[0]
+
+        term_data["label"] = term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
+        term_data["iri"] = term['pref_ns_uri'] + term['term_localName']
+        term_data["class"] = term['tdwgutility_organizedInClass']
+        term_data["definition"] = self.t_val(term, 'rdfs_comment', l)
+        term_data["comments"] = self.t_val(term, 'dcterms_description', l)
+        term_data["examples"] = self.t_val(term, 'examples', l)
+        term_data["rdf_type"] = term['rdf_type']
+        term_data["namespace"] = term['pref_ns_prefix']
+        return term_data
+
+    def create_extension_xml(self, languages, file_template):
+        """Build a Darwin Core Extension XML file"""
+
+        ratification_date = self.terms.document_configuration_yaml['doc_modified']
+
+        file_output = file_template + ratification_date + ".xml"
+        if not os.path.isfile(file_output) and not permitNewVersion:
+            raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required." % file_output)
+
+        with open(file_output, 'w', encoding='utf-8') as output_file:
+            # Open the XML declaration file
+            template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
+            # Write the entire XML declaration section to the output file
+            header = template_file.read()
+            header = header.replace('{ratification_date}', ratification_date)
+            if ac:
+                header = header.replace("'", '"').replace('    ', '        ')
+            output_file.write(header)
+            # Process the list of terms for the extension combining properties from the
+            # extension term list with the properties of the term definitions from Darwin
+            # Core.
+
+            # Load the terms from the Extension term list file
+            termlist = pd.read_csv(scriptDir + '/' + self.xmlTerms)
+            termlist = termlist.replace({float("NaN"): None})
+            previous_group = 'None'
+
+            for term_index,term in termlist.iterrows():
+                # Process each row in the extension term list. The file must have the
+                # following fields in the given order:
+                #     class,iri,type,thesaurus,description,comments,examples,required
+                # 1) The iri field must be populated.
+                # 2) If there is supposed to be a datatype other than string for the term,
+                #    that type must be provided.
+                # 3) If there is supposed to be a controlled vocabulary for the term, the
+                #    URL to the location of the controlled vocabulary must be provided.
+                # 4) If there is supposed to be a definition, comment, or example for the
+                #    term that differs from that in the standard, the custom value must be
+                #    provided.
+                # 5) If a term is required to be mapped to a field, the column 'required'
+                #    must be populated with 'true'.
+
+                # Split the term iri to extract the label and namespace
+                term_parts = term['iri'].split('/')
+
+                # Always set the group based on the value in the Extension term list
+                group = term['group']
+
+                # Get the term name from the last part of the iri field from the Extension
+                # term list file
+                name = term_parts[-1]
+
+                # The datatype, if it is other than 'string' must come from the type field
+                # in the Extension term list file
+                datatype = None
+                try:
+                    datatype = term['type']
+                except:
+                    pass
+
+                # The thesaurus, if there is one, must come from the type field in the
+                # Extension term list file
+                thesaurus = None
+                try:
+                    thesaurus = term['thesaurus']
+                except:
+                    pass
+
+                # Get the term namespace from the part of the iri field from the Extension
+                # term list file up to the term name
+                namespace = term['iri'][0:term['iri'].find(term_parts[-1])]
+
+                # Get the term qualified name from the iri field from the Extension term
+                # list file
+                qualName = term['iri']
+
+                # Create a dc:relation to the URL for the term in the Quick Reference
+                # Guide, if there is one
+                dc_relation = None
+                if namespace=='http://rs.tdwg.org/dwc/terms/':
+                    # Example: https://dwc.tdwg.org/terms/#dwc:behavior
+                    dc_relation = f'https://dwc.tdwg.org/terms/#dwc:{name}'
+                elif namespace=='http://rs.tdwg.org/dwc/iri/':
+                    # Example: https://dwc.tdwg.org/terms/#dwciri:recordedBy
+                    dc_relation = f'https://dwc.tdwg.org/terms/#dwciri:{name}'
+                elif namespace=='http://purl.org/dc/elements/1.1/':
+                    # Example: https://dwc.tdwg.org/terms/#dc:type
+                    dc_relation = f'https://dwc.tdwg.org/terms/#dc:{name}'
+                elif namespace=='http://purl.org/dc/terms/':
+                    # Example: https://dwc.tdwg.org/terms/#dcterms:references
+                    dc_relation = f'https://dwc.tdwg.org/terms/#dcterms:{name}'
+                elif namespace=='http://purl.org/chrono/terms/':
+                    # Example: https://chrono.tdwg.org/terms/#chrono:materialDated
+                    dc_relation = f'https://chrono.tdwg.org/terms/#chrono:{name}'
+                elif namespace=='http://rs.tdwg.org/eco/terms/':
+                    # Example: https://eco.tdwg.org/terms/#eco:samplingPerformedBy
+                    dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
+
+                # Get the term definition (dc:description) from the description field of
+                # the Extension term list file. Later we'll check if this is blank, and
+                # if so, fill it from the standard.
+                dc_description = term['description']
+
+                # Get the term usage comments from the description field of the Extension
+                # term list file. Later we'll check if this is blank, and if so, fill it
+                # from the standard.
+                comments = term['comments']
+
+                # Get the term examples from the description field of the Extension term
+                # list file. Later we'll check if this is blank, and if so, fill it from
+                # the standard.
+                examples = term['examples']
+
+                # Set the attribute 'required' to 'false' unless it is provided in the
+                # Extension term list file
+                required = term['required']
+                if required is None or not required:
+                    required = 'false'
+                else:
+                    required = 'true'
+
+                # Try to find the term from the standard
+                term_data = self.get_term_definition('en', term['iri'])
+
+                if ac:
+                    prefix = term_data['namespace']
+                    dc_relation = f'http://rs.tdwg.org/ac/doc/termlist/#{prefix}_{name}'
+
+                # Fill in dc:description, comments, or examples from the standard if it is
+                # not given in the Extension term list file
+                if dc_description is None:
+                    dc_description = term_data['definition']
+                if comments is None:
+                    comments = term_data['comments']
+                if examples is None:
+                    examples = term_data['examples']
+                # Transform description, comment, and examples for HMTL encodings
+                dc_description = html.escape(dc_description)
+                comments = html.escape(comments)
+                examples = html.escape(examples)
+
+                if ac:
+                    # Temp while working on AC.
+                    s = f"        <property name='{name}'\n"
+                    s += f"                namespace='{namespace}'\n"
+                    s += f"                qualName='{qualName}'\n"
+                    s += f"                required='{required}'\n"
+                    s += f"                group='{group}'\n"
+                    s += f"                examples='{examples}'\n"
+                    s += f"                dc:description='{dc_description}'\n"
+                    s += f"                dc:relation='{dc_relation}'\n"
+
+                    if datatype is not None and datatype.strip()!='':
+                        s += f"                type='{datatype}'\n"
+                    if thesaurus is not None and thesaurus.strip()!='':
+                        s += f"                thesaurus='{thesaurus}'\n"
+                    s += f"                comments='{comments}'"
+                    s += '/>\n'
+                    s = s.replace("'", '"')
+                else:
+                    # Construct the property entry for the output file
+                    s = f"    <property group='{group}' "
+                    s += f"name='{name}' "
+                    if datatype is not None and datatype.strip()!='':
+                        s += f"type='{datatype}' "
+                    if thesaurus is not None and thesaurus.strip()!='':
+                        s += f"thesaurus='{thesaurus}' "
+                    s += f"namespace='{namespace}' "
+                    s += f"qualName='{qualName}' "
+                    s += f"dc:relation='{dc_relation}' "
+                    s += f"dc:description='{dc_description}' "
+                    s += f"comments='{comments}' "
+                    s += f"examples='{examples}'"
+                    s += f" required='{required}'"
+                    s += '/>\n'
+                if group != previous_group:
+                    output_file.write(f'\n    <!-- {group} -->\n')
+                output_file.write(s)
+                previous_group = group
+
+            output_file.write("</extension>\n")
+            output_file.close()
+
+    def create_vocabulary_xml(self, languages, file_output):
+        """Build an Darwin Core Vocabulary XML file
+
+        Parameters
+        -----------
+        xml_template : str
+            The relative path to the file containing the declaration for the xml file
+            (e.g., "./occurrence_core.tmpl")
+        termlist : str
+            The relative path to the file in which the list of terms to include in the
+            extension are located (e.g., "./occurrence_core.lst").
+        file_output : str
+            The relative path to the file to write the resulting file.
+            (e.g., "../ext/dwc_occurrence.xml")
+        """
+        ratification_date = self.terms.document_configuration_yaml['doc_modified']
+
+        with open(file_output + ratification_date + ".xml", 'w', encoding='utf-8') as output_file:
+            # Open the XML declaration file
+            template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
+            # Write the entire XML declaration section to the output file
+            header = template_file.read()
+            header = header.replace('{ratification_date}', ratification_date)
+            output_file.write(header)
+            output_file.write("\n")
+            # Process the list of terms for the extension combining properties from the
+            # extension term list with the properties of the term definitions from Darwin
+            # Core.
+
+            # Load the terms from the Extension term list file
+            #termlist = pd.read_csv(self.xmlTerms)
+            #termlist = termlist.replace({float("NaN"): None})
+
+            for term_index,term in self.terms.terms_sorted_by_localname.iterrows():
+                # Process each row in the vocabulary term list. The file must have the
+                # following fields in the given order:
+                #     class,iri,type,thesaurus,description,comments,examples,required
+                # 1) The iri field must be populated.
+                # 2) If there is supposed to be a datatype other than string for the term,
+                #    that type must be provided.
+                # 3) If there is supposed to be a controlled vocabulary for the term, the
+                #    URL to the location of the controlled vocabulary must be provided.
+                # 4) If there is supposed to be a definition, comment, or example for the
+                #    term that differs from that in the standard, the custom value must be
+                #    provided.
+                # 5) If a term is required to be mapped to a field, the column 'required'
+                #    must be populated with 'true'.
+
+                name = term['term_localName']
+                namespace = term['pref_ns_uri']
+                qualName = term['term_iri']
+                controlled_value_string = term['controlled_value_string']
+                dc_issued = term['term_created']
+                dc_title = html.escape(term['label'])
+                dc_description = html.escape(term['definition'])
+                comments = html.escape(term['notes'])
+                usage = html.escape(term['usage'])
+
+                if controlled_value_string == '':
+                    continue
+
+                s  = f"  <concept\n"
+                s += f"    dc:identifier='{controlled_value_string}'\n"
+                s += f"    dc:URI='{qualName}'\n"
+                s += f"    dc:subject='{qualName}'\n"
+                s += f"    dc:relation='https://doi.org/10.3897/biss.3.38084'\n"
+                s += f"    dc:issued='{dc_issued}'\n"
+                s += f"    dc:description='{dc_description}'\n"
+                s += f"    comments='{comments}'>\n"
+
+                s += f"    <preferred>\n"
+                for lang in languages:
+                    if 'label_'+lang in term:
+                        title_lang = html.escape(term['label_'+lang])
+                        # Currently the IPT only supports Traditional Chinese with the code zh.
+                        if lang == 'zh-Hant':
+                            lang = 'zh'
+                        elif lang == 'zh-Hans':
+                            continue
+                        if title_lang.strip() != '':
+                            s += f"      <term dc:source='Darwin Core' dc:title='{title_lang}' xml:lang='{lang}'/>\n"
+                s += f"    </preferred>\n"
+
+
+                alternatives = requests.get(self.gbifAlternatives % controlled_value_string)
+                if (alternatives.status_code == 200):
+                    alternatives_json = alternatives.json()['results']
+                    present = False
+                    for alt in alternatives_json:
+                        if not present:
+                            s += f"    <alternative>\n"
+                            present = True
+                        title = html.escape(alt['value'])
+                        lang = alt['language'].split('-')[0]
+                        s += f"      <term dc:title='{title}' xml:lang='{lang}'  />\n"
+                    if present:
+                        s += f"    </alternative>\n"
+
+                s += f"  </concept>\n"
+                s += f"\n"
+
+                output_file.write(s)
+
+            output_file.write("</thesaurus>\n")
+            output_file.close()
+
+# Darwin Core
+dwc = dwcterms.DwcTerms(
+    termLists = ['terms', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
+    docMetadataFilePath = 'dwc_doc_list/')
+
+# Occurrence Core
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/occurrence_core.tmpl",
+    xmlTerms = "xml/occurrence_core_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'core/dwc_occurrence_')
+
+# Darwin Core Taxon Core
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/taxon_core.tmpl",
+    xmlTerms = "xml/taxon_core_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'core/dwc_taxon_')
+
+# Darwin Core Event Core
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/event_core.tmpl",
+    xmlTerms = "xml/event_core_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'core/dwc_event_')
+
+# Darwin Core Resource Relationship extension
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/resource_relationship.tmpl",
+    xmlTerms = "xml/resource_relationship_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'extension/dwc/resource_relationship_')
+
+# Darwin Core Measurements or Facts extension
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/measurements_or_facts.tmpl",
+    xmlTerms = "xml/measurements_or_facts_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'extension/dwc/measurements_or_facts_')
+
+# Darwin Core Identification History extension
+dwc_xml = DwcaXml(
+    terms = dwc,
+    xmlTemplate = "xml/identification_history.tmpl",
+    xmlTerms = "xml/identification_history_list.csv"
+    )
+dwc_xml.create_extension_xml(languages, 'extension/dwc/identification_history_')
+
+
+# Humboldt
+eco = dwcterms.DwcTerms(
+    termLists = ['terms', 'humboldt'],
+    docMetadataFilePath = 'dwc_doc_eco/')
+
+# Humboldt Extension
+eco_xml = DwcaXml(
+    terms = eco,
+    xmlTemplate = "xml/humboldt_eco.tmpl",
+    xmlTerms = "xml/humboldt_eco_list.csv"
+    )
+eco_xml.create_extension_xml(languages, 'extension/eco/humboldt_')
+
+
+# Establishment Means Vocabulary
+em = dwcterms.DwcTerms(
+    termLists = ['establishmentMeans'],
+    docMetadataFilePath = 'dwc_doc_em/')
+em_xml = DwcaXml(
+    terms = em,
+    xmlTemplate = "xml/establishment_means.tmpl",
+    gbifAlternatives = "https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels")
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/establishment_means_')
+
+
+# Degree of Establishment Vocabulary
+em = dwcterms.DwcTerms(
+    termLists = ['degreeOfEstablishment'],
+    docMetadataFilePath = 'dwc_doc_doe/')
+em_xml = DwcaXml(
+    terms = em,
+    xmlTemplate = "xml/degree_of_establishment.tmpl",
+    gbifAlternatives = "https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels")
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/degree_of_establishment_')
+
+
+# Pathway Vocabulary
+em = dwcterms.DwcTerms(
+    termLists = ['pathway'],
+    docMetadataFilePath = 'dwc_doc_pw/')
+em_xml = DwcaXml(
+    terms = em,
+    xmlTemplate = "xml/pathway.tmpl",
+    gbifAlternatives = "https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels")
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/pathway_')
+
+
+# Audiovisual Core
+ac = dwcterms.DwcTerms(
+    termLists = ['audubon', 'dc-for-ac', 'dcterms-for-ac', 'dwc-for-ac', 'exif-for-ac', 'Iptc4xmpExt-for-ac', 'mo-for-ac', 'photoshop-for-ac', 'xmp-for-ac', 'xmpRights-for-ac'],
+    docMetadataFilePath = 'ac_doc_termlist/')
+
+# Audiovisual Extension
+ac_xml = DwcaXml(
+    terms = ac,
+    xmlTemplate = "xml/audiovisual.tmpl",
+    xmlTerms = "xml/audiovisual_list.csv"
+    )
+ac = True
+#ac_xml.create_extension_xml(languages, 'extension/ac/audiovisual_')
+ac = False
