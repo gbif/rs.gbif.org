@@ -331,7 +331,7 @@ class DwcaXml:
                             present = True
                         title = html.escape(alt['value'])
                         lang = alt['language'].split('-')[0]
-                        s += f"      <term dc:title='{title}' xml:lang='{lang}'  />\n"
+                        s += f"      <term dc:source='GBIF Vocabulary Server' dc:title='{title}' xml:lang='{lang}'/>\n"
                     if present:
                         s += f"    </alternative>\n"
 
