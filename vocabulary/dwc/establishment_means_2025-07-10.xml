@@ -26,10 +26,10 @@
       <term dc:source='Darwin Core' dc:title='原生' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Native' xml:lang='en'  />
-      <term dc:title='Indigenous' xml:lang='en'  />
-      <term dc:title='Autóctona' xml:lang='es'  />
-      <term dc:title='Nativa' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Native' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Indigenous' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Autóctona' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Nativa' xml:lang='es'/>
     </alternative>
   </concept>
 
@@ -49,8 +49,8 @@
       <term dc:source='Darwin Core' dc:title='原生：再引進' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Reintroduced' xml:lang='en'  />
-      <term dc:title='Reintroducida' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Reintroduced' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Reintroducida' xml:lang='es'/>
     </alternative>
   </concept>
 
@@ -70,13 +70,13 @@
       <term dc:source='Darwin Core' dc:title='引進（外來、非原生、非原住）' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Alien' xml:lang='en'  />
-      <term dc:title='Introduced' xml:lang='en'  />
-      <term dc:title='Nonindigenous' xml:lang='en'  />
-      <term dc:title='Exotic' xml:lang='en'  />
-      <term dc:title='Non-native' xml:lang='en'  />
-      <term dc:title='No-nativa' xml:lang='es'  />
-      <term dc:title='Exótica' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Alien' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Introduced' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Nonindigenous' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Exotic' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Non-native' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='No-nativa' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Exótica' xml:lang='es'/>
     </alternative>
   </concept>
 
@@ -96,8 +96,8 @@
       <term dc:source='Darwin Core' dc:title='引進（協助拓殖）' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Assisted colonisation' xml:lang='en'  />
-      <term dc:title='Colonización asistida' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Assisted colonisation' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Colonización asistida' xml:lang='es'/>
     </alternative>
   </concept>
 
@@ -117,10 +117,10 @@
       <term dc:source='Darwin Core' dc:title='流浪的' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Casual' xml:lang='en'  />
-      <term dc:title='Vagrant' xml:lang='en'  />
-      <term dc:title='Transitoria' xml:lang='es'  />
-      <term dc:title='Casual' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Casual' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Vagrant' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Transitoria' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Casual' xml:lang='es'/>
     </alternative>
   </concept>
 
@@ -140,11 +140,11 @@
       <term dc:source='Darwin Core' dc:title='不確定的（未知、隱源性）' xml:lang='zh'/>
     </preferred>
     <alternative>
-      <term dc:title='Uncertain' xml:lang='en'  />
-      <term dc:title='Unknown' xml:lang='en'  />
-      <term dc:title='Cryptogenic' xml:lang='en'  />
-      <term dc:title='Incierto' xml:lang='es'  />
-      <term dc:title='Desconocido' xml:lang='es'  />
+      <term dc:source='GBIF Vocabulary Server' dc:title='Uncertain' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Unknown' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Cryptogenic' xml:lang='en'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Incierto' xml:lang='es'/>
+      <term dc:source='GBIF Vocabulary Server' dc:title='Desconocido' xml:lang='es'/>
     </alternative>
   </concept>
 
