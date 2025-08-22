@@ -112,17 +112,13 @@
                                    <xsl:when test="/ext:extension">
                                         <h2>Properties</h2>
                                         <table class="definition">
-                                             <xsl:apply-templates mode="table-row" select="//ext:extension/ext:property">
-                                                  <!--xsl:value-of select="@group"/-->
-                                             </xsl:apply-templates>
+                                             <xsl:apply-templates mode="table-row" select="//ext:extension/ext:property"/>
                                         </table>
                                    </xsl:when>
                                    <xsl:otherwise>
                                         <h2>Concepts</h2>
                                         <table class="definition">
-                                             <xsl:apply-templates mode="table-row" select="//voc:thesaurus/voc:concept">
-                                                  <!--xsl:value-of select="@identifier"/-->
-                                             </xsl:apply-templates>
+                                             <xsl:apply-templates mode="table-row" select="//voc:thesaurus/voc:concept"/>
                                         </table>
                                    </xsl:otherwise>
                               </xsl:choose>
@@ -153,6 +149,14 @@
                               </a>
                          </xsl:if>
                     </div>
+                    <xsl:if test="@comments != ''">
+                         <div class="comments">
+                              <em>Comments</em>:
+                              <xsl:call-template name="FormatCode">
+                                   <xsl:with-param name="InputString"><xsl:value-of select="@comments"/></xsl:with-param>
+                              </xsl:call-template>
+                         </div>
+                    </xsl:if>
                     <xsl:if test="@examples != ''">
                          <div class="examples">
                               <em>Examples</em>:
@@ -195,6 +199,42 @@
                               <tr><th>Required</th><td><xsl:value-of select="@required"/></td></tr>
                          </table>
                     </div>
+               </td>
+          </tr>
+          <xsl:if test="ext:translation">
+               <xsl:apply-templates mode="table-row" select="ext:translation"/>
+          </xsl:if>
+     </xsl:template>
+
+     <xsl:template mode="table-row" match="ext:translation">
+          <tr class="translation">
+               <xsl:attribute name="lang">
+                    <xsl:value-of select="@xml:lang"/>
+               </xsl:attribute>
+               <th>
+                    <xsl:value-of select="@xml:lang"/>:
+                    <xsl:value-of select="@label"/>
+               </th>
+               <td>
+                    <div class="description">
+                         <xsl:value-of select="@dc:description"/>
+                    </div>
+                    <xsl:if test="@comments != ''">
+                         <div class="comments">
+                              <em lang="en">Comments</em>:
+                              <xsl:call-template name="FormatCode">
+                                   <xsl:with-param name="InputString"><xsl:value-of select="@comments"/></xsl:with-param>
+                              </xsl:call-template>
+                         </div>
+                    </xsl:if>
+                    <xsl:if test="@examples != ''">
+                         <div class="examples">
+                              <em lang="en">Examples</em>:
+                              <xsl:call-template name="FormatCode">
+                                   <xsl:with-param name="InputString"><xsl:value-of select="@examples"/></xsl:with-param>
+                              </xsl:call-template>
+                         </div>
+                    </xsl:if>
                </td>
           </tr>
      </xsl:template>

@@ -55,8 +55,13 @@ table {
 	font-size:100%;
 	max-width: 100%;
 }
-th {text-align:left; font-weight:bold;}
-th, td {padding:3px 7px;}
+th {
+	text-align:left;
+	font-weight:bold;
+}
+th, td {
+	padding: 3px 7px;
+}
 
 ul {
 	margin-top: 1.5em;
@@ -165,8 +170,14 @@ table.grey tr.line {
 /* @end */
 
 table.definition {
-	border-spacing: 2px 10px;
 	border-collapse: separate;
+}
+table.definition > tbody > tr > * {
+	border-top: 2px solid black;
+}
+table.definition > tbody > tr.translation > * {
+	border-top: 1px dotted black;
+	font-size: 0.9rem;
 }
 table.definition > tbody > tr > th {
 	text-align: left;
@@ -174,10 +185,6 @@ table.definition > tbody > tr > th {
 	background-color: #f1f1f1;
 }
 table.definition > tbody > tr > td {
-	border-style: none;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
 	background-color: #ffffff;
 }
 table.definition :target {
@@ -190,9 +197,12 @@ table.definition :target > td {
     background: #F6E0E8;
 }
 
-.examples {
-	padding-top: 10px;
+.description, .comments, .examples {
+	padding: 5px 0;
 	word-wrap: anywhere;
+}
+.translation .description, .translaiton .comments, .translation .examples {
+	padding: 2.5px 0;
 }
 .vocabulary, .vocabulary a {
 	color: black;
