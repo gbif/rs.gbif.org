@@ -263,7 +263,7 @@ class DwcaXml:
             output_file.write("</extension>\n")
             output_file.close()
 
-    def create_vocabulary_xml(self, languages, file_output):
+    def create_vocabulary_xml(self, languages, file_template):
         """Build an Darwin Core Vocabulary XML file
 
         Parameters
@@ -272,9 +272,15 @@ class DwcaXml:
             The relative path to the file to write the resulting file.
             (e.g., "vocabulary/dwc/pathway_")
         """
+
+        # Use ratification date in filenames for stability.
         ratification_date = self.terms.document_configuration_yaml['doc_modified']
 
-        with open(file_output + ratification_date + ".xml", 'w', encoding='utf-8') as output_file:
+        file_output = file_template + ratification_date + ".xml"
+        if not os.path.isfile(file_output) and not permitNewVersion:
+            raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required." % file_output)
+
+        with open(file_output, 'w', encoding='utf-8') as output_file:
             # Open the XML declaration file
             template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
             # Write the entire XML declaration section to the output file
@@ -418,7 +424,7 @@ em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/establishment_means.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels")
-em_xml.create_vocabulary_xml(languages, 'sandbox/vocabulary/dwc/establishment_means_')
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/establishment_means_')
 
 
 # Degree of Establishment Vocabulary
@@ -429,7 +435,7 @@ em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/degree_of_establishment.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts/%s/alternativeLabels")
-em_xml.create_vocabulary_xml(languages, 'sandbox/vocabulary/dwc/degree_of_establishment_')
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/degree_of_establishment_')
 
 
 # Pathway Vocabulary
@@ -440,7 +446,7 @@ em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/pathway.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels")
-em_xml.create_vocabulary_xml(languages, 'sandbox/vocabulary/dwc/pathway_')
+em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/pathway_')
 
 
 # Audiovisual Core
