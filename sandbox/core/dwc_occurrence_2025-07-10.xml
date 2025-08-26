@@ -180,6 +180,7 @@
     </property>
     <property group='Occurrence' name='behavior' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/behavior' dc:relation='https://dwc.tdwg.org/terms/#dwc:behavior' dc:description='The behavior shown by the subject at the time the dwc:Occurrence was recorded.' comments='This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`roosting`; `foraging`; `running`' required='false'>
       <translation xml:lang='cs' label='Chování' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.' dc:description='Chování, které subjekt vykazoval v době, kdy byla zaznamenána událost dwc:Occurrence.'/>
+      <translation xml:lang='es' label='Comportamiento'/>
       <translation xml:lang='fr' label='Comportement' comments='Ce terme a un équivalent dans le dwciri: namespace qui n&#x27;autorise qu&#x27;un IRI comme valeur, alors que ce terme autorise n&#x27;importe quelle valeur sous forme de chaîne de caractères.' dc:description='Le comportement du sujet de l&#x27;observation au moment où la dwc:Occurrence a été enregistrée.'/>
       <translation xml:lang='zh' label='行為' dc:description='該筆紀錄的生物被觀察時，正進行的行為。'/>
     </property>
@@ -254,6 +255,7 @@
     </property>
     <property group='Organism' name='organismName' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/organismName' dc:relation='https://dwc.tdwg.org/terms/#dwc:organismName' dc:description='A textual name or label assigned to a dwc:Organism instance.' comments='' examples='`Huberta`; `Boab Prison Tree`; `J pod`' required='false'>
       <translation xml:lang='cs' label='Název organismu' dc:description='Textový název nebo označení přiřazené instanci dwc:Organism.'/>
+      <translation xml:lang='es' label='Nombre del organismo' dc:description='El nombre textual dado a un dwc:organismo en un estudio o el nombre en la etiqueta asignada originalmente.'/>
       <translation xml:lang='fr' label='Nom de l&#x27;organisme' dc:description='Nom littéral ou étiquette attribuée à une instance de dwc:Organism.'/>
       <translation xml:lang='zh' label='生物體名' dc:description='給該生物體取的名字或標籤。'/>
     </property>
