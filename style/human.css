@@ -175,7 +175,15 @@ table.definition {
 table.definition > tbody > tr > * {
 	border-top: 2px solid black;
 }
-table.definition > tbody > tr.translation > * {
+table.definition > tbody > tr > th:has(code) {
+	font-size: 120%;
+	text-align: center;
+	padding: 8px 0 10px 0;
+}
+table.definition > tbody > tr > th:has(code) code {
+	color: black;
+}
+table.definition > tbody > tr.continuation > * {
 	border-top: 1px dotted black;
 	font-size: 0.9rem;
 }
@@ -188,13 +196,13 @@ table.definition > tbody > tr > td {
 	background-color: #ffffff;
 }
 table.definition :target {
-    outline: 2px solid #d1628e;
+	outline: 2px solid #d1628e;
 }
 table.definition :target > th {
-    background: #F1D0DD;
+	background: #F1D0DD;
 }
 table.definition :target > td {
-    background: #F6E0E8;
+	background: #F6E0E8;
 }
 
 .description, .comments, .examples {

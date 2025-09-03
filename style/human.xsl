@@ -133,8 +133,13 @@
                <xsl:attribute name="id">
                     <xsl:value-of select="@name"/>
                </xsl:attribute>
+               <th colspan="3">
+                    <code><xsl:value-of select="@name"/></code>
+               </th>
+          </tr>
+          <tr class="continuation">
                <th>
-                    <xsl:value-of select="@name"/>
+                    en: <xsl:value-of select="@label"/>
                </th>
                <td>
                     <div class="description">
@@ -207,7 +212,7 @@
      </xsl:template>
 
      <xsl:template mode="table-row" match="ext:translation">
-          <tr class="translation">
+          <tr class="continuation">
                <xsl:attribute name="lang">
                     <xsl:value-of select="@xml:lang"/>
                </xsl:attribute>
@@ -245,7 +250,7 @@
                     <xsl:value-of select="@dc:identifier"/>
                </xsl:attribute>
                <th>
-                    <xsl:value-of select="@dc:identifier"/>
+                    <code><xsl:value-of select="@dc:identifier"/></code>
                </th>
                <td>
                     <div class="description">
