@@ -122,6 +122,9 @@ class DwcaXml:
                 # Extension term list file
                 thesaurus = ext_item['thesaurus']
 
+                # The English label for the term
+                label = term_data['label']
+
                 # Create a dc:relation to the URL for the term in the Quick Reference
                 # Guide, if there is one
                 dc_relation = None
@@ -186,6 +189,7 @@ class DwcaXml:
                     s += f"                qualName='{qualName}'\n"
                     s += f"                required='{required}'\n"
                     s += f"                group='{group}'\n"
+                    s += f"                label='{label}'\n"
                     s += f"                examples='{examples}'\n"
                     s += f"                dc:description='{dc_description}'\n"
                     s += f"                dc:relation='{dc_relation}'\n"
@@ -207,6 +211,7 @@ class DwcaXml:
                         s += f"thesaurus='{thesaurus}' "
                     s += f"namespace='{namespace}' "
                     s += f"qualName='{qualName}' "
+                    s += f"label='{label}' "
                     s += f"dc:relation='{dc_relation}' "
                     s += f"dc:description='{dc_description}' "
                     s += f"comments='{comments}' "

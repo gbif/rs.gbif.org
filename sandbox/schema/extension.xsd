@@ -21,7 +21,7 @@
                         </xs:sequence>
                         <xs:attribute name="name" type="xs:NCName" use="required">
                             <xs:annotation>
-                                <xs:documentation>lowerCamelCase, whitespace less simple name for the property that can for example be used to generate XML tags or json attribute names</xs:documentation>
+                                <xs:documentation>lowerCamelCase, whitespace-less simple name for the property that can for example be used to generate XML tags or JSON attribute names</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
                         <xs:attribute name="namespace" type="xs:anyURI" use="required">
@@ -36,13 +36,18 @@
                         </xs:attribute>
                         <xs:attribute name="group" type="xs:string" use="optional">
                             <xs:annotation>
-                                <xs:documentation>Optional group name to organise properties in extensions in case there are many</xs:documentation>
+                                <xs:documentation>Optional group name to organize properties in extensions in case there are many</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
                         <xs:attribute name="columnLength" type="xs:positiveInteger" default="128"/>
                         <xs:attribute name="type" type="ext:dataType" default="string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>The data type for the property. Defaults to a string.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="label" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>English label for the property.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
                         <xs:attribute name="comments" type="xs:string" use="optional">
@@ -60,7 +65,7 @@
                         <xs:attribute ref="dc:description" use="optional"> </xs:attribute>
                         <xs:attribute name="thesaurus" type="xs:anyURI">
                             <xs:annotation>
-                                <xs:documentation>A uri identifying a vocabulary to be used for property values</xs:documentation>
+                                <xs:documentation>A URI identifying a vocabulary to be used for property values</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
                         <xs:attribute name="required" type="xs:boolean" default="false"/>
@@ -69,17 +74,17 @@
             </xs:sequence>
             <xs:attribute ref="dc:title" use="required">
                 <xs:annotation>
-                    <xs:documentation>The human readable english title for the entire extension</xs:documentation>
+                    <xs:documentation>The human-readable English title for the entire extension</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
             <xs:attribute name="name" type="xs:NCName" use="required">
                 <xs:annotation>
-                    <xs:documentation>Capital, whitespace less simple name for the extension that can for example be used to generate XML tags</xs:documentation>
+                    <xs:documentation>Capital, whitespace-less simple name for the extension that can for example be used to generate XML tags</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
             <xs:attribute name="namespace" type="xs:anyURI" use="required">
                 <xs:annotation>
-                    <xs:documentation>The namespace this extension belongs to</xs:documentation>
+                    <xs:documentation>The namespace this extension belongs to.</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
             <xs:attribute name="rowType" type="xs:anyURI" use="required">

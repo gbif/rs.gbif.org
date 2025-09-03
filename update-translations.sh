@@ -12,10 +12,10 @@ else
     python3 scripts/build-xml.py
 fi
 
-# If an extension file has only one line updated, it's the "issued" date and there's no need to release that.
+# If an extension file has only the "issued" date changed, there's no need to release that.
 # Undo the change in that case.
 for i in $(git status --short | grep '^ M ' | awk '{print $2}'); do
-    if [[ "$(git diff --numstat -Gdc:issued $i)" = "$(git diff --numstat $i)" ]]; then
+    if [[ -z "$(git diff --numstat --ignore-matching-lines='^  dc:issued' $i)" ]]; then
         echo "No change in translations for $i"
         git checkout --quiet $i
     else
