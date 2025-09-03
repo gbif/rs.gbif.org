@@ -10,6 +10,7 @@ import os
 import sys
 import pandas as pd
 import html
+from datetime import date
 
 import dwcterms
 
@@ -73,7 +74,7 @@ class DwcaXml:
             template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
             # Write the entire XML declaration section to the output file
             header = template_file.read()
-            header = header.replace('{ratification_date}', ratification_date)
+            header = header.replace('{issued_date}', date.today().isoformat())
             if ac:
                 header = header.replace("'", '"').replace('    ', '        ')
             output_file.write(header)
@@ -285,7 +286,7 @@ class DwcaXml:
             template_file = open(scriptDir + '/' + self.xmlTemplate, 'r')
             # Write the entire XML declaration section to the output file
             header = template_file.read()
-            header = header.replace('{ratification_date}', ratification_date)
+            header = header.replace('{issued_date}', date.today().isoformat())
             output_file.write(header)
             output_file.write("\n")
 

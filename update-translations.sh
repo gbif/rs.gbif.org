@@ -11,3 +11,14 @@ if [[ -d ../tdwg/rs.tdwg.org ]]; then
 else
     python3 scripts/build-xml.py
 fi
+
+# If an extension file has only one line updated, it's the "issued" date and there's no need to release that.
+# Undo the change in that case.
+for i in $(git status --short | grep '^ M ' | awk '{print $2}'); do
+    if [[ "$(git diff --numstat -Gdc:issued $i)" = "$(git diff --numstat $i)" ]]; then
+        echo "No change in translations for $i"
+        git checkout --quiet $i
+    else
+        echo "New/changed translations for $i"
+    fi
+done
