@@ -7,7 +7,7 @@
     dc:title='Darwin Core Measurement or Facts'
     name='MeasurementOrFacts' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/MeasurementOrFact'
-    dc:issued='2025-09-10'
+    dc:issued='2025-09-11'
     dc:subject='dwc:Occurrence dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/MeasurementOrFact'
     dc:description='Extended support for multiple measurements or facts associated with a Darwin Core Occurrence, Event, or Taxon Core.'>
@@ -34,6 +34,7 @@
     </property>
     <property group='MeasurementOrFact' name='measurementValue' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/measurementValue' label='Measurement Value' dc:relation='https://dwc.tdwg.org/terms/#dwc:measurementValue' dc:description='The value of the measurement, fact, characteristic, or assertion.' comments='This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`45`; `20`; `1`; `14.5`; `UV-light`' required='false'>
       <translation xml:lang='cs' label='Hodnota měření' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.' dc:description='Hodnota měření, skutečnosti, vlastnosti nebo tvrzení.'/>
+      <translation xml:lang='es' comments='Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre.'/>
       <translation xml:lang='fr' label='Valeur de la mesure' comments='Ce terme a un équivalent dans le dwciri: namespace qui n&#x27;autorise qu&#x27;un IRI comme valeur, alors que ce terme autorise n&#x27;importe quelle valeur sous forme de chaîne de caractères.' dc:description='La valeur de la mesure, du fait, de l&#x27;affirmation ou de la caractéristique.'/>
       <translation xml:lang='zh' label='測量值'/>
     </property>
@@ -60,6 +61,7 @@
     </property>
     <property group='MeasurementOrFact' name='measurementMethod' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/measurementMethod' label='Measurement Method' dc:relation='https://dwc.tdwg.org/terms/#dwc:measurementMethod' dc:description='A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.' comments='This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`minimum convex polygon around burrow entrances` (for a home range area); `barometric altimeter` (for an elevation)' required='false'>
       <translation xml:lang='cs' label='Metoda měření' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.' examples='`minimální konvexní polygon kolem vchodů do nory` (pro oblast domovského okrsku); `barometrický výškoměr` (pro nadmořskou výšku)' dc:description='Popis nebo odkaz na (publikaci, URI) metodu nebo protokol použitý k určení měření, skutečnosti, vlastnosti nebo tvrzení.'/>
+      <translation xml:lang='es' comments='Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre.'/>
       <translation xml:lang='fr' label='Méthode de mesure' comments='Ce terme a un équivalent dans le dwciri: namespace qui n&#x27;autorise qu&#x27;un IRI comme valeur, alors que ce terme autorise n&#x27;importe quelle valeur sous forme de chaîne de caractères.' examples='`polygone convexe minimal autour des entrées de terriers` (pour un territoire) ; `altimètre barométrique` (pour une altitude)' dc:description='Une description ou référence (publication, URI) de la méthode ou du protocole utilisé pour déterminer la mesure, le fait, la caractéristique ou l&#x27;affirmation.'/>
       <translation xml:lang='zh' label='測量方法'/>
     </property>
