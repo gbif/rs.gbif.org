@@ -7,7 +7,7 @@
     dc:title='Darwin Core Taxon'
     name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Taxon'
-    dc:issued='2025-09-12'
+    dc:issued='2025-09-13'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Taxon'
     dc:description='Support for Darwin Core Taxon-based records.'>
