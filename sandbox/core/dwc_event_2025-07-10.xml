@@ -61,6 +61,7 @@
     </property>
     <property group='Record-level' name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' label='Dataset ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:datasetID' dc:description='An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.' comments='' examples='`b15d4952-7d20-46f1-8a3e-556a512b04c5`' required='false'>
       <translation xml:lang='cs' label='ID datové sady' dc:description='Identifikátor datové sady. Může to být globální jedinečný identifikátor nebo identifikátor specifický pro sbírku nebo instituci.'/>
+      <translation xml:lang='es' label='ID del conjunto de datos' dc:description='Un identificador para conjunto o sub conjunto de datos. Puede ser un identificador único global como un DOI o un identificador específico de una colección o institución.'/>
       <translation xml:lang='fr' label='Identifiant du jeu de données' dc:description='Un identifiant pour le jeu de données. Il peut s&#x27;agir d&#x27;un identifiant unique global (GUI) ou d&#x27;un identifiant spécifique à une collection ou à une institution.'/>
       <translation xml:lang='zh' label='資料集ID'/>
     </property>
@@ -71,6 +72,7 @@
     </property>
     <property group='Record-level' name='datasetName' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetName' label='Dataset Name' dc:relation='https://dwc.tdwg.org/terms/#dwc:datasetName' dc:description='The name identifying the data set from which the record was derived.' comments='' examples='`Grinnell Resurvey Mammals`; `Lacey Ctenomys Recaptures`' required='false'>
       <translation xml:lang='cs' label='Název datové sady' dc:description='Název identifikující datovou sadu, ze které byl záznam odvozen.'/>
+      <translation xml:lang='es' label='Nombre del conjunto de datos' dc:description='El título que identifica el conjunto de datos al que pertenece el registro.'/>
       <translation xml:lang='fr' label='Nom du jeu de données' dc:description='Le nom identifiant le jeu de données à partir duquel l&#x27;enregistrement a été obtenu.'/>
       <translation xml:lang='zh' label='資料集名稱'/>
     </property>
@@ -137,6 +139,7 @@
     </property>
     <property group='Event' name='endDayOfYear' type='integer' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/endDayOfYear' label='End Day Of Year' dc:relation='https://dwc.tdwg.org/terms/#dwc:endDayOfYear' dc:description='The latest integer day of the year on which the dwc:Event occurred (1 for January 1, 365 for December 31, except in a leap year, in which case it is 366).' comments='' examples='`1` (1 January); `32` (1 February); `366` (31 December); `365` (30 December in a leap year, 31 December in a non-leap year)' required='false'>
       <translation xml:lang='cs' label='Poslední den roku' examples='`1` (1. ledna); `32` (1. února); `366` (31. prosince); `365` (30. prosince v přestupném roce, 31. prosince v nepřestupném roce)' dc:description='Poslední celý den roku, kdy dwc:Event nastala (1 pro 1. leden, 365 pro 31. prosinec, s výjimkou přestupného roku, kdy je to 366).'/>
+      <translation xml:lang='es' label='Día final del año' dc:description='Día final del año en el que ocurrió el evento (dwc:Event), contando a partir del primer día del año del evento y documentado en formato de números ordinales (siendo “1” el primero de enero y “365” el 31 de diciembre, excepto en año bisiesto, en cuyo caso es &quot;366&quot;).'/>
       <translation xml:lang='fr' label='Numéro du jour de fin' examples='`1` (1er janvier) ; `32` (1er février) ; `366` (31 décembre) ; `365` (30 décembre d&#x27;une année bissextile, 31 décembre d&#x27;une année commune)' dc:description='Le dernier jour entier de l&#x27;année où le dwc:Event s&#x27;est produit (1 pour le 1er janvier, 365 pour le 31 décembre, sauf si l&#x27;année est bissextile, auquel cas le 31 décembre aura le numéro 366).'/>
     </property>
     <property group='Event' name='year' type='integer' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/year' label='Year' dc:relation='https://dwc.tdwg.org/terms/#dwc:year' dc:description='The four-digit year in which the dwc:Event occurred, according to the Common Era Calendar.' comments='' examples='`1160`; `2008`' required='false'>
@@ -151,6 +154,7 @@
     </property>
     <property group='Event' name='day' type='integer' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/day' label='Day' dc:relation='https://dwc.tdwg.org/terms/#dwc:day' dc:description='The integer day of the month on which the dwc:Event occurred.' comments='' examples='`9`; `28`' required='false'>
       <translation xml:lang='cs' label='Den' dc:description='Celé číslo dne v měsíci, kdy k dwc:Event došlo.'/>
+      <translation xml:lang='es' label='Día' dc:description='El día en números enteros durante el cual se produjo el evento de observación o colecta de un organismo o muestra.'/>
       <translation xml:lang='fr' label='Jour' dc:description='Le jour (nombre entier) du mois au cours duquel le dwc:Event s&#x27;est produit.'/>
       <translation xml:lang='zh' label='日'/>
     </property>
