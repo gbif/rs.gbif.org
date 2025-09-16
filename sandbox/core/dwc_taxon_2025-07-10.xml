@@ -284,11 +284,13 @@
     </property>
     <property group='Record-level' name='datasetID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetID' label='Dataset ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:datasetID' dc:description='An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution.' comments='' examples='`b15d4952-7d20-46f1-8a3e-556a512b04c5`' required='false'>
       <translation xml:lang='cs' label='ID datové sady' dc:description='Identifikátor datové sady. Může to být globální jedinečný identifikátor nebo identifikátor specifický pro sbírku nebo instituci.'/>
+      <translation xml:lang='es' label='ID del conjunto de datos' dc:description='Un identificador para conjunto o sub conjunto de datos. Puede ser un identificador único global como un DOI o un identificador específico de una colección o institución.'/>
       <translation xml:lang='fr' label='Identifiant du jeu de données' dc:description='Un identifiant pour le jeu de données. Il peut s&#x27;agir d&#x27;un identifiant unique global (GUI) ou d&#x27;un identifiant spécifique à une collection ou à une institution.'/>
       <translation xml:lang='zh' label='資料集ID'/>
     </property>
     <property group='Record-level' name='datasetName' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/datasetName' label='Dataset Name' dc:relation='https://dwc.tdwg.org/terms/#dwc:datasetName' dc:description='The name identifying the data set from which the record was derived.' comments='' examples='`Grinnell Resurvey Mammals`; `Lacey Ctenomys Recaptures`' required='false'>
       <translation xml:lang='cs' label='Název datové sady' dc:description='Název identifikující datovou sadu, ze které byl záznam odvozen.'/>
+      <translation xml:lang='es' label='Nombre del conjunto de datos' dc:description='El título que identifica el conjunto de datos al que pertenece el registro.'/>
       <translation xml:lang='fr' label='Nom du jeu de données' dc:description='Le nom identifiant le jeu de données à partir duquel l&#x27;enregistrement a été obtenu.'/>
       <translation xml:lang='zh' label='資料集名稱'/>
     </property>
