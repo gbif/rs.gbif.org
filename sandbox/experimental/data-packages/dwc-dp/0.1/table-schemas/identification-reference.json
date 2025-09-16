@@ -1,0 +1,80 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/identification-reference",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-reference.json",
+  "name": "identification-reference",
+  "title": "Identification Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Identification.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "identificationID",
+      "title": "Identification ID",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identificationID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "identificationID",
+      "predicate": "used for",
+      "reference": {
+        "resource": "identification",
+        "fields": "identificationID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "used",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
+      }
+    }
+  ]
+}

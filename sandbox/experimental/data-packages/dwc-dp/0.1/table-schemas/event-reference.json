@@ -1,54 +1,79 @@
 {
-  "name": "event-reference",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
-  "title": "EventReference",
-  "description": "A bibliographic reference in which a dwc:Event is mentioned.",
+  "name": "event-reference",
+  "title": "Event Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Event.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
-      "name": "referenceID",
-      "title": "Reference ID",
-      "description": "An identifier for a Reference.",
+      "name": "eventID",
+      "title": "Event ID",
+      "description": "An identifier for a dwc:Event.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "eventID",
-      "title": "Event ID",
-      "description": "An identifier for a dwc:Event.",
-      "type": "string",
-      "format": "default",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
+      "type": "string",
+      "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
-        "unique": true
+        "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
-      "fields": "referenceID",
-      "reference": {
-        "resource": "reference",
-        "fields": "referenceID"
-      }
-    },
-    {
       "fields": "eventID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "event",
         "fields": "eventID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
       }
     }
   ]

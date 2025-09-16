@@ -1,35 +1,45 @@
 {
-  "name": "agent-identifier",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-identifier",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-identifier",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-identifier.json",
-  "title": "AgentIdentifier",
-  "description": "An identifier for an Agent.",
+  "name": "agent-identifier",
+  "title": "Agent Identifier",
+  "description": "An adms:Identifier for a dcterms:Agent.",
+  "comments": "An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.",
+  "examples": "`an ORCID`; `a Wikidata Q-number`; `an Index Herbariorum Institution Code`; `an International Standard Name Identifier`",
+  "namespace": "adms",
+  "iri": "http://www.w3.org/ns/adms#Identifier",
+  "iri_version": "",
+  "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal.",
   "fields": [
     {
-      "name": "identifier",
-      "title": "Identifier",
-      "description": "An unambiguous reference to a resource within a given context.",
+      "name": "agentID",
+      "title": "Agent ID",
+      "description": "An identifier for a dcterms:Agent.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to identify a resource by means of a string conforming to a formal identification system.",
-      "examples": "",
-      "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/identifier",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "agentID",
-      "title": "Agent ID",
-      "description": "An identifier for an Agent.",
+      "name": "identifier",
+      "title": "Identifier",
+      "description": "An unambiguous reference to a resource within a given context.",
+      "comments": "Recommended best practice is to identify a resource by means of a string conforming to a formal identification system.",
+      "examples": "`https://orcid.org/0000-0002-1825-0097`; `https://ror.org/00mh9zx15`",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "namespace": "skos",
+      "iri": "http://www.w3.org/2004/02/skos/core#notation",
+      "iri_version": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notation",
+      "rdfs:comment": "A notation is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme.",
       "constraints": {
         "required": true,
         "unique": false
@@ -38,51 +48,60 @@
     {
       "name": "identifierType",
       "title": "Identifier Type",
-      "description": "A category or system that best matches the nature of an Identifier.",
-      "type": "string",
-      "format": "default",
+      "description": "A category or system that best matches the nature of an identifier (skos:notation).",
       "comments": "Recommended best practice is to use a controlled vocabulary.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/type",
+      "iri_version": "",
+      "rdfs:comment": "The nature or genre of the resource."
     },
     {
       "name": "identifierTypeIRI",
       "title": "Identifier Type IRI",
-      "description": "An IRI of a controlled vocabulary value for a type of Identifier.",
-      "type": "string",
-      "format": "default",
+      "description": "An IRI of a controlled vocabulary value for a type of identifier.",
       "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
-    },
-    {
-      "name": "identifierTypeVocabulary",
-      "title": "Identifier Type Vocabulary",
-      "description": "A reference to a controlled vocabulary in which the definition of a value in identifierType is given.",
       "type": "string",
       "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/type",
+      "iri_version": "",
+      "rdfs:comment": "The nature or genre of the resource."
+    },
+    {
+      "name": "identifierTypeSource",
+      "title": "Identifier Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:identifierType is given.",
       "comments": "",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/source",
+      "iri_version": "",
+      "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
       "name": "identifierLanguage",
       "title": "Identifier Language",
-      "description": "A language in which an Identifier is presented.",
+      "description": "A language in which an identifier is presented.",
+      "comments": "Recommended best practice is to use an ISO639-2 three-letter language code.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best prectice is to use an ISO639-2 three-letter language code.",
-      "examples": "`eng` (for Modern English); `spa` (for Castilian Standard Spanish)",
-      "namespace": "dwcdp",
-      "iri": ""
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/language",
+      "iri_version": "",
+      "rdfs:comment": "A language of the resource."
     }
   ],
   "foreignKeys": [
     {
       "fields": "agentID",
+      "predicate": "for",
       "reference": {
         "resource": "agent",
         "fields": "agentID"

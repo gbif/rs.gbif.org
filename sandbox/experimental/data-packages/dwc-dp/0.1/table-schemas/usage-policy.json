@@ -1,0 +1,254 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/usage-policy",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/usage-policy.json",
+  "name": "usage-policy",
+  "title": "Usage Policy",
+  "description": "Information about rights, usage, and attribution statements applicable to an entity.",
+  "comments": "This is a convenience class to group related properties.",
+  "examples": "",
+  "namespace": "dwc",
+  "iri": "http://rs.tdwg.org/dwc/terms/UsagePolicy",
+  "iri_version": "",
+  "rdfs:comment": "Rights and attribution statements applicable to an entity.",
+  "fields": [
+    {
+      "name": "usagePolicyID",
+      "title": "Usage Policy ID",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "rights",
+      "title": "Rights",
+      "description": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.",
+      "comments": "",
+      "examples": "`Copyright 2014 Ron Thomas` or a URI like `http://creativecommons.org/licenses/by/3.0/legalcode`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/rights",
+      "iri_version": "",
+      "rdfs:comment": "Information about rights held in and over the resource. A full-text, readable copyright statement, as required by the national legislation of the copyright holder. On collections, this applies to all contained objects, unless the object itself has a different statement. Examples: “Copyright XY 2008, all rights reserved”, “© 2008 XY Museum” , `Public Domain.`; `Copyright unknown.` Do not place just the name of the copyright holder(s) here! That belongs in a list in the xmpRights:Owner field, which should be supplied if dc:rights is not 'Public Domain', which is appropriate only if the resource is known to be not under copyright. See also the entry for dcterms:rights in this document and see the DCMI FAQ on DC and DCTERMS Namespaces for discussion of the rationale for terms in two namespaces. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions."
+    },
+    {
+      "name": "rightsIRI",
+      "title": "Rights IRI",
+      "description": "A URI pointing to structured information about rights held in and over the resource. Examples include http://creativecommons.org/licenses/by/3.0/legalcode and http://creativecommons.org/publicdomain/zero/1.0/. At least one of dcterms:rights and dc:rights must be supplied but, when feasible, supplying both may make the metadata more widely useful. They must specify the same rights. In case of ambiguity, dcterms:rights prevails.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/rights",
+      "iri_version": "",
+      "rdfs:comment": "A URI pointing to structured information about rights held in and over the resource. Examples include http://creativecommons.org/licenses/by/3.0/legalcode and http://creativecommons.org/publicdomain/zero/1.0/. At least one of dcterms:rights and dc:rights must be supplied but, when feasible, supplying both may make the metadata more widely useful. They must specify the same rights. In case of ambiguity, dcterms:rights prevails."
+    },
+    {
+      "name": "rightsHolder",
+      "title": "Rights Holder",
+      "description": "A name of a dcterms:Agent that owns or manages rights over a resource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/rightsHolder",
+      "iri_version": "",
+      "rdfs:comment": "A person or organization owning or managing rights over the resource."
+    },
+    {
+      "name": "rightsHolderID",
+      "title": "Rights Holder ID",
+      "description": "An identifier for a dcterms:Agent that owns or manages rights over a resource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/rightsHolder",
+      "iri_version": "",
+      "rdfs:comment": "A person or organization owning or managing rights over the resource.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "owner",
+      "title": "Owner",
+      "description": "A name of a dcterms:Agent that owns the copyright for a resource.",
+      "comments": "`unknown`",
+      "examples": "`The names of the owners `Ron Thomas, Roz Thomas` or a URI that identifies the owner`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "iri": "http://ns.adobe.com/xap/1.0/rights/Owner",
+      "iri_version": "",
+      "rdfs:comment": "A list of the names of the owners of the copyright. 'Unknown' is an acceptable value, but 'Public Domain' is not."
+    },
+    {
+      "name": "ownerID",
+      "title": "Owner ID",
+      "description": "An identifier for a dcterms:Agent that owns the copyright for a resource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "iri": "http://ns.adobe.com/xap/1.0/rights/Owner",
+      "iri_version": "",
+      "rdfs:comment": "A list of the names of the owners of the copyright. 'Unknown' is an acceptable value, but 'Public Domain' is not.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "usageTerms",
+      "title": "Usage Terms",
+      "description": "A license statement defining how resources may be used. Information on a collection applies to all contained objects unless an object has a different statement.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "iri": "http://ns.adobe.com/xap/1.0/rights/UsageTerms",
+      "iri_version": "",
+      "rdfs:comment": "The license statement defining how resources may be used. Information on a collection applies to all contained objects unless the object has a different statement."
+    },
+    {
+      "name": "webStatement",
+      "title": "Web Statement",
+      "description": "A URL defining or further elaborating on a license statement (e.g., a web page explaining the precise terms of use).",
+      "comments": "",
+      "examples": "`http://creativecommons.org/licenses/by-nc-sa/3.0/us/`",
+      "type": "string",
+      "format": "default",
+      "namespace": "xmprights",
+      "iri": "http://ns.adobe.com/xap/1.0/rights/WebStatement",
+      "iri_version": "",
+      "rdfs:comment": "A URL defining or further elaborating on the license statement (e. g., a web page explaining the precise terms of use)."
+    },
+    {
+      "name": "accessRights",
+      "title": "Access Rights",
+      "description": "Information about who can access the resource or an indication of its security status.",
+      "comments": "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/accessRights",
+      "iri_version": "",
+      "rdfs:comment": "Information about who access the resource or an indication of its security status."
+    },
+    {
+      "name": "license",
+      "title": "License",
+      "description": "A legal document giving official permission to do something with a resource.",
+      "comments": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/license",
+      "iri_version": "",
+      "rdfs:comment": "A legal document giving official permission to do something with the resource."
+    },
+    {
+      "name": "licenseLogoURL",
+      "title": "License Logo URL",
+      "description": "A URL providing access to a logo that symbolizes a dcterms:license.",
+      "comments": "The originating metadata provider is strongly urged to choose a suitable logo as a graphical representation of the license. Failure to do so may leave downstream aggregators in a difficult position to supply a logo that adequately represents the professional, legal, or social aims of the licensors (license givers). Example: http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png provides access to a logo image.",
+      "examples": "`http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "iri": "http://rs.tdwg.org/ac/terms/licenseLogoURL",
+      "iri_version": "http://rs.tdwg.org/ac/terms/version/licenseLogoURL-2020-01-27",
+      "rdfs:comment": "A URL providing access to a logo that symbolizes the License."
+    },
+    {
+      "name": "licensingException",
+      "title": "Licensing Exception",
+      "description": "The licensing statement for this variant of the dwc:Media resource if different from that given in the dcterms:license property of the resource.",
+      "comments": "Required only if this version has different licensing than that of a corresponding dwc:Media resource. For example, the highest resolution version may be more restricted than lower resolution versions.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "iri": "http://rs.tdwg.org/ac/terms/licensingException",
+      "iri_version": "http://rs.tdwg.org/ac/terms/version/licensingException-2020-01-27",
+      "rdfs:comment": "The licensing statement for this variant of the media resource if different from that given in the License Statement property of the resource."
+    },
+    {
+      "name": "credit",
+      "title": "Credit",
+      "description": "Free text describing how credit should be attributed.",
+      "comments": "For example, `Please cite this as…`.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "photoshop",
+      "iri": "http://ns.adobe.com/photoshop/1.0/Credit",
+      "iri_version": "",
+      "rdfs:comment": "Free text for `Please cite this as…`"
+    },
+    {
+      "name": "attributionLogoURL",
+      "title": "Attribution Logo URL",
+      "description": "The URL of the icon or logo image to appear in source attribution.",
+      "comments": "",
+      "examples": "`http://www.morphbank.net/images/userLogos/11a.jpg`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "iri": "http://rs.tdwg.org/ac/terms/attributionLogoURL",
+      "iri_version": "http://rs.tdwg.org/ac/terms/version/attributionLogoURL-2020-01-27",
+      "rdfs:comment": "The URL of the icon or logo image to appear in source attribution."
+    },
+    {
+      "name": "attributionLinkURL",
+      "title": "Attribution Link URL",
+      "description": "The URL where information about ownership, attribution, etc. of the resource may be found.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "iri": "http://rs.tdwg.org/ac/terms/attributionLinkURL",
+      "iri_version": "http://rs.tdwg.org/ac/terms/version/attributionLinkURL-2020-01-27",
+      "rdfs:comment": "The URL where information about ownership, attribution, etc. of the resource may be found."
+    }
+  ],
+  "primaryKey": "usagePolicyID",
+  "foreignKeys": [
+    {
+      "fields": "rightsHolderID",
+      "predicate": "rights held by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "ownerID",
+      "predicate": "owned by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

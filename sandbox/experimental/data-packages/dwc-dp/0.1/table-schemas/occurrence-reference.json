@@ -1,54 +1,79 @@
 {
-  "name": "occurrence-reference",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-reference.json",
-  "title": "OccurrenceReference",
-  "description": "A bibliographic reference in which a dwc:Occurrence is mentioned.",
+  "name": "occurrence-reference",
+  "title": "Occurrence Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Occurrence.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
-    {
-      "name": "referenceID",
-      "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
-      "constraints": {
-        "required": true,
-        "unique": false
-      }
-    },
     {
       "name": "occurrenceID",
       "title": "Occurrence ID",
       "description": "An identifier for a dwc:Occurrence.",
+      "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
-      "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
-      "fields": "referenceID",
-      "reference": {
-        "resource": "reference",
-        "fields": "referenceID"
-      }
-    },
-    {
       "fields": "occurrenceID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "occurrence",
         "fields": "occurrenceID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
       }
     }
   ]

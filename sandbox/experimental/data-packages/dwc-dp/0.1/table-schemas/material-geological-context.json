@@ -1,0 +1,67 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-geological-context",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-geological-context.json",
+  "name": "material-geological-context",
+  "title": "Material Geological Context",
+  "description": "A dwc:GeologicalContext from which a dwc:MaterialEntify was derived.",
+  "comments": "Use this table to establish one or more GeologicalContexts represented in a dwc:MaterialEntity.",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "materialEntityID",
+      "title": "Material Entity ID",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "comments": "Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (a dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "geologicalContextID",
+      "title": "Geological Context ID",
+      "description": "An identifier for a dwc:GeologicalContext.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/geologicalContextID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/geologicalContextID-2023-06-28",
+      "rdfs:comment": "An identifier for the set of information associated with a dwc:GeologicalContext (the location within a geological context, such as stratigraphy). May be a globally unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "materialEntityID",
+      "predicate": "for",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntityID"
+      }
+    },
+    {
+      "fields": "geologicalContextID",
+      "predicate": "within",
+      "reference": {
+        "resource": "geological-context",
+        "fields": "geologicalContextID"
+      }
+    }
+  ]
+}

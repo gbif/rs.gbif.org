@@ -1,46 +1,58 @@
 {
-  "name": "nucleotide-sequence",
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-sequence",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-sequence",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
-  "title": "NucleotideSequence",
+  "name": "nucleotide-sequence",
+  "title": "Nucleotide Sequence",
   "description": "A digital representation of a nucleotide sequence.",
+  "comments": "",
+  "examples": "",
+  "namespace": "dwc",
+  "iri": "http://rs.tdwg.org/dwc/terms/NucleotideSequence",
+  "iri_version": "",
+  "rdfs:comment": "A digital representation of a nucleotide sequence.",
   "fields": [
     {
       "name": "nucleotideSequenceID",
       "title": "Nucleotide Sequence ID",
-      "description": "An identifier for a NucleotideSequence.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dwc:NucleotideSequence.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": true
       }
     },
     {
-      "name": "nucleotideSequence",
-      "title": "Nucleotide Sequence",
+      "name": "sequence",
+      "title": "Sequence",
       "description": "A string representing nucleotide base pairs.",
-      "type": "string",
-      "format": "default",
       "comments": "",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": ""
     },
     {
       "name": "nucleotideSequenceRemarks",
       "title": "Nucleotide Sequence Remarks",
-      "description": "Comments or notes about a NucleotideSequence.",
-      "type": "string",
-      "format": "default",
+      "description": "Comments or notes about a dwc:NucleotideSequence.",
       "comments": "",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": ""
     }
   ],
   "primaryKey": "nucleotideSequenceID"
