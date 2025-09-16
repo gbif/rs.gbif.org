@@ -1,0 +1,98 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism.json",
+  "name": "organism",
+  "title": "Organism",
+  "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
+  "comments": "Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.",
+  "examples": "`a specific bird`; `a specific wolf pack`; `a specific instance of a bacterial culture`",
+  "namespace": "dwc",
+  "iri": "http://rs.tdwg.org/dwc/terms/Organism",
+  "iri_version": "http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18",
+  "rdfs:comment": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
+  "fields": [
+    {
+      "name": "organismID",
+      "title": "Organism ID",
+      "description": "An identifier for a dwc:Organism.",
+      "comments": "Recommended best practice is to use a persistent, globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/organismID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Organism instance (as opposed to a particular digital record of the dwc:Organism). May be a globally unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "organismScope",
+      "title": "Organism Scope",
+      "description": "A description of the type of a dwc:Organism instance.",
+      "comments": "Recommended best practice is to use a controlled vocabulary. Can be used to indicate whether a dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation.",
+      "examples": "`multicellular organism`; `virus`; `clone`; `pack`; `colony`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/organismScope",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismScope-2023-06-28",
+      "rdfs:comment": "A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation."
+    },
+    {
+      "name": "organismName",
+      "title": "Organism Name",
+      "description": "A name or label assigned to a dwc:Organism.",
+      "comments": "",
+      "examples": "`Huberta`; `Boab Prison Tree`; `J pod`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/organismName",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismName-2023-06-28",
+      "rdfs:comment": "A textual name or label assigned to a dwc:Organism instance."
+    },
+    {
+      "name": "causeOfDeath",
+      "title": "Cause Of Death",
+      "description": "An indication of the known or suspected cause of death of a dwc:Organism.",
+      "comments": "The cause may be due to natural causes (e.g., disease, predation), human-related activities (e.g., roadkill, pollution), or other environmental factors (e.g., extreme weather events).",
+      "examples": "`trapped`; `poisoned`; `starved`; `drowned`; `shot`; `old age`; `roadkill`; `disease`; `herbicide`; `burned`; `infanticide`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/causeOfDeath",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/causeOfDeath-2025-06-12",
+      "rdfs:comment": "An indication of the known or suspected cause of death of a dwc:Organism."
+    },
+    {
+      "name": "associatedOrganisms",
+      "title": "Associated Organisms",
+      "description": "A list (concatenated and separated) of identifiers of other dwc:Organisms and the associations of this dwc:Organism to each of them.",
+      "comments": "This term can be used to provide a list of associations to other dwc:Organisms. Note that the dwc:ResourceRelationship class is an alternative means of representing associations, and with more detail. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).",
+      "examples": "`\"sibling of\":\"http://arctos.database.museum/guid/DMNS:Mamm:14171\"`; `\"parent of\":\"http://arctos.database.museum/guid/MSB:Mamm:196208\" | \"parent of\":\"http://arctos.database.museum/guid/MSB:Mamm:196523\" | \"sibling of\":\"http://arctos.database.museum/guid/MSB:Mamm:142638\"`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/associatedOrganisms",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/associatedOrganisms-2023-06-28",
+      "rdfs:comment": "A list (concatenated and separated) of identifiers of other dwc:Organisms and the associations of this dwc:Organism to each of them."
+    },
+    {
+      "name": "organismRemarks",
+      "title": "Organism Remarks",
+      "description": "Comments or notes about a dwc:Organism.",
+      "comments": "",
+      "examples": "`One of a litter of six`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/organismRemarks",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismRemarks-2023-06-28",
+      "rdfs:comment": "Comments or notes about the dwc:Organism instance."
+    }
+  ],
+  "primaryKey": "organismID"
+}

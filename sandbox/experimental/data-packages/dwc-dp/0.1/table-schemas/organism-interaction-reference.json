@@ -1,54 +1,79 @@
 {
-  "name": "organism-interaction-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
-  "title": "OrganismInteractionReference",
-  "description": "A bibliographic reference in which an OrganismInteraction is mentioned.",
+  "name": "organism-interaction-reference",
+  "title": "Organism Interaction Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:OrganismInteraction.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
-      "name": "referenceID",
-      "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
+      "name": "organismInteractionID",
+      "title": "Organism Interaction ID",
+      "description": "An identifier for a dwc:OrganismInteraction.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "organismInteractionID",
-      "title": "Organism Interaction ID",
-      "description": "An identifier for an OrganismInteraction.",
-      "type": "string",
-      "format": "default",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
-      "fields": "referenceID",
-      "reference": {
-        "resource": "reference",
-        "fields": "referenceID"
-      }
-    },
-    {
       "fields": "organismInteractionID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "organism-interaction",
         "fields": "organismInteractionID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
       }
     }
   ]

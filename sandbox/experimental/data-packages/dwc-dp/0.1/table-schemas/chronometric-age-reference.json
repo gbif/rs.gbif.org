@@ -1,54 +1,79 @@
 {
-  "name": "chronometric-age-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
-  "title": "ChronometricAgeReference",
-  "description": "A bibliographic reference in which a chrono:ChronometricAge is mentioned.",
+  "name": "chronometric-age-reference",
+  "title": "Chronometric Age Reference",
+  "description": "A dcterms:BibliographicResource related to a chrono:ChronometricAge.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
-    {
-      "name": "referenceID",
-      "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
-      "constraints": {
-        "required": true,
-        "unique": false
-      }
-    },
     {
       "name": "chronometricAgeID",
       "title": "Chronometric Age ID",
       "description": "An identifier for a chrono:ChronometricAge.",
-      "type": "string",
-      "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
+      "type": "string",
+      "format": "default",
       "namespace": "chrono",
       "iri": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "iri_version": "http://rs.tdwg.org/chrono/terms/version/chronometricAgeID-2025-06-12",
+      "rdfs:comment": "An identifier for the set of information associated with a chrono:ChronometricAge.",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
-      "fields": "referenceID",
-      "reference": {
-        "resource": "reference",
-        "fields": "referenceID"
-      }
-    },
-    {
       "fields": "chronometricAgeID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "chronometric-age",
         "fields": "chronometricAgeID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
       }
     }
   ]

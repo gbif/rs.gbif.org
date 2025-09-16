@@ -1,54 +1,79 @@
 {
-  "name": "protocol-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol-reference.json",
-  "title": "ProtocolReference",
-  "description": "A bibliographic reference in which a Protocol is mentioned.",
+  "name": "protocol-reference",
+  "title": "Protocol Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Protocol.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
-      "name": "referenceID",
-      "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
+      "name": "protocolID",
+      "title": "Protocol ID",
+      "description": "An identifier for a dwc:Protocol.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
-      "type": "string",
-      "format": "default",
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
-      "fields": "referenceID",
-      "reference": {
-        "resource": "reference",
-        "fields": "referenceID"
-      }
-    },
-    {
       "fields": "protocolID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "protocol",
         "fields": "protocolID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
       }
     }
   ]

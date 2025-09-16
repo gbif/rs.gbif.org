@@ -1,35 +1,45 @@
 {
-  "name": "chronometric-age-protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
-  "title": "ChronometricAgeProtocol",
-  "description": "A link establishing a Protocol used in the determination of a chrono:ChronometricAge.",
+  "name": "chronometric-age-protocol",
+  "title": "Chronometric Age Protocol",
+  "description": "A dwc:Protocol used for a chrono:ChronometricAge.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "chronometricAgeID",
+      "title": "Chronometric Age ID",
+      "description": "An identifier for a chrono:ChronometricAge.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "namespace": "chrono",
+      "iri": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "iri_version": "http://rs.tdwg.org/chrono/terms/version/chronometricAgeID-2025-06-12",
+      "rdfs:comment": "An identifier for the set of information associated with a chrono:ChronometricAge.",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "chronometricAgeID",
-      "title": "Chronometric Age ID",
-      "description": "An identifier for a chrono:ChronometricAge.",
+      "name": "protocolID",
+      "title": "Protocol ID",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
-      "namespace": "chrono",
-      "iri": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -38,17 +48,19 @@
   ],
   "foreignKeys": [
     {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
-    {
       "fields": "chronometricAgeID",
+      "predicate": "used for",
       "reference": {
         "resource": "chronometric-age",
         "fields": "chronometricAgeID"
+      }
+    },
+    {
+      "fields": "protocolID",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocolID"
       }
     }
   ]

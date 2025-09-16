@@ -1,0 +1,67 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-usage-policy",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-usage-policy.json",
+  "name": "media-usage-policy",
+  "title": "Media Usage Policy",
+  "description": "Rights, usage, and attribution statements applicable to dwc:Media entity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "usagePolicyID",
+      "title": "Usage Policy ID",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "mediaID",
+      "title": "Media ID",
+      "description": "An identifier for a dwc:Media resource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "usagePolicyID",
+      "predicate": "has",
+      "reference": {
+        "resource": "usage-policy",
+        "fields": "usagePolicyID"
+      }
+    },
+    {
+      "fields": "mediaID",
+      "predicate": "for",
+      "reference": {
+        "resource": "media",
+        "fields": "mediaID"
+      }
+    }
+  ]
+}

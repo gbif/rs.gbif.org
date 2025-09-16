@@ -1,0 +1,330 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/bibliographic-resource",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/bibliographic-resource.json",
+  "name": "bibliographic-resource",
+  "title": "Bibliographic Resource",
+  "description": "A book, article, or other documentary resource.",
+  "comments": "",
+  "examples": "",
+  "namespace": "dcterms",
+  "iri": "http://purl.org/dc/terms/BibliographicResource",
+  "iri_version": "",
+  "rdfs:comment": "A book, article, or other documentary resource.",
+  "fields": [
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "parentReferenceID",
+      "title": "Parent Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource that this dcterms:BibliographicResource is a part of.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "referenceType",
+      "title": "Reference Type",
+      "description": "A category that best matches the nature of a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "bibliographicCitation",
+      "title": "Bibliographic Citation",
+      "description": "A bibliographic reference for a dcterms:BibliographicResource.",
+      "comments": "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible. The intended usage of this term in Darwin Core is to provide the preferred way to cite the resource itself. Note that the intended usage of dcterms:references in Darwin Core, by contrast, is to point to the definitive source representation of the resource, if one is available.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/bibliographicCitation",
+      "iri_version": "",
+      "rdfs:comment": "A bibliographic reference for the resource."
+    },
+    {
+      "name": "title",
+      "title": "Title",
+      "description": "A name given to a resource.",
+      "comments": "Typically, a dc:title will be a name by which the resource is formally known.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/title",
+      "iri_version": "",
+      "rdfs:comment": "A name given to the resource."
+    },
+    {
+      "name": "author",
+      "title": "Author",
+      "description": "A name of a dcterms:Agent primarily responsible for creating a dcterms:BibliographicResource.",
+      "comments": "Examples of a dcterms:creator include a person, an organization, or a service.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/creator",
+      "iri_version": "",
+      "rdfs:comment": "An entity primarily responsible for making the resource."
+    },
+    {
+      "name": "authorID",
+      "title": "Author ID",
+      "description": "An identifier for a dcterms:Agent primarily responsible for making a dcterms:BibliographicResource.",
+      "comments": "Examples of a dcterms:creator include a person, an organization, or a service.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/creator",
+      "iri_version": "",
+      "rdfs:comment": "An entity primarily responsible for making the resource.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "editor",
+      "title": "Editor",
+      "description": "A name of a dcterms:Agent having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/editor",
+      "iri_version": "",
+      "rdfs:comment": "A person having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication."
+    },
+    {
+      "name": "editorID",
+      "title": "Editor ID",
+      "description": "An identifier for a dcterms:Agent having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/editor",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "publisher",
+      "title": "Publisher",
+      "description": "A name of a dcterms:Agent responsible for making a dcterms:BibliographicResource available.",
+      "comments": "Examples of a dcterms:publisher include a person, an organization, or a service. Typically, the name of a dcterms:publisher should be used to indicate the entity.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/publisher",
+      "iri_version": "",
+      "rdfs:comment": "An entity responsible for making the resource available."
+    },
+    {
+      "name": "publisherID",
+      "title": "Publisher ID",
+      "description": "An identifier for a dcterms:Agent responsible for making a Reference available.",
+      "comments": "Examples of a dcterms:publisher include a person, an organization, or a service.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/publisher",
+      "iri_version": "",
+      "rdfs:comment": "An entity responsible for making the resource available.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "volume",
+      "title": "Volume",
+      "description": "A volume number of a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/volume",
+      "iri_version": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "issue",
+      "title": "Issue",
+      "description": "An issue number of a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/issue",
+      "iri_version": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "edition",
+      "title": "Edition",
+      "description": "An edition of a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/edition",
+      "iri_version": "",
+      "rdfs:comment": "The name defining a special edition of a document."
+    },
+    {
+      "name": "pages",
+      "title": "Pages",
+      "description": "A range of pages within a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/pages",
+      "iri_version": "",
+      "rdfs:comment": "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."
+    },
+    {
+      "name": "version",
+      "title": "Version",
+      "description": "A version number of a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "pav",
+      "iri": "http://purl.org/pav/version",
+      "iri_version": "",
+      "rdfs:comment": "The version number of a resource. This is a freetext string, typical values are \"1.5\" or \"21\". The URI identifying the previous version can be provided using prov:previousVersion."
+    },
+    {
+      "name": "issued",
+      "title": "Issued",
+      "description": "Date of formal issuance of a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "iri": "http://purl.org/dc/terms/issued",
+      "iri_version": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "accessed",
+      "title": "Accessed",
+      "description": "The resource is related to a source which was originally accessed or consulted on the given date as part of creating or authoring the resource. The source(s) should be specified using pav:sourceAccessedAt.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "pav",
+      "iri": "http://purl.org/pav/sourceAccessedOn",
+      "iri_version": "",
+      "rdfs:comment": "The resource is related to a source which was originally accessed or consulted on the given date as part of creating or authoring the resource. The source(s) should be specified using pav:sourceAccessedAt."
+    },
+    {
+      "name": "peerReviewStatus",
+      "title": "Peer Review Status",
+      "description": "An indication of whether a dcterms:BibliographicResource was peer reviewed.",
+      "comments": "",
+      "examples": "",
+      "type": "boolean",
+      "format": "default",
+      "namespace": "bibo",
+      "iri": "http://purl.org/ontology/bibo/status",
+      "iri_version": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "referenceRemarks",
+      "title": "Reference Remarks",
+      "description": "Comments or notes about a dcterms:BibliographicResource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": ""
+    }
+  ],
+  "primaryKey": "referenceID",
+  "foreignKeys": [
+    {
+      "fields": "parentReferenceID",
+      "predicate": "part of",
+      "reference": {
+        "resource": "",
+        "fields": "referenceID"
+      }
+    },
+    {
+      "fields": "authorID",
+      "predicate": "authored by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "editorID",
+      "predicate": "edited by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    },
+    {
+      "fields": "publisherID",
+      "predicate": "published by",
+      "reference": {
+        "resource": "agent",
+        "fields": "agentID"
+      }
+    }
+  ]
+}

@@ -1,35 +1,45 @@
 {
-  "name": "occurrence-protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
-  "title": "OccurrenceProtocol",
-  "description": "A link establishing a Protocol used in the determination of a dwc:Occurrence.",
+  "name": "occurrence-protocol",
+  "title": "Occurrence Protocol",
+  "description": "A dwc:Protocol used for a dwc:Occurrence.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
-      "name": "protocolID",
-      "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
+      "name": "occurrenceID",
+      "title": "Occurrence ID",
+      "description": "An identifier for a dwc:Occurrence.",
+      "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a globally unique identifier.",
-      "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
       "constraints": {
         "required": true,
         "unique": false
       }
     },
     {
-      "name": "occurrenceID",
-      "title": "Occurrence ID",
-      "description": "An identifier for a dwc:Occurrence.",
+      "name": "protocolID",
+      "title": "Protocol ID",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a persistent, globally unique identifier. In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make a dwc:occurrenceID globally unique.",
-      "examples": "`http://arctos.database.museum/guid/MSB:Mamm:233627`",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -38,17 +48,19 @@
   ],
   "foreignKeys": [
     {
-      "fields": "protocolID",
-      "reference": {
-        "resource": "protocol",
-        "fields": "protocolID"
-      }
-    },
-    {
       "fields": "occurrenceID",
+      "predicate": "used during",
       "reference": {
         "resource": "occurrence",
         "fields": "occurrenceID"
+      }
+    },
+    {
+      "fields": "protocolID",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocolID"
       }
     }
   ]

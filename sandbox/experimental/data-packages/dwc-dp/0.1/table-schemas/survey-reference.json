@@ -1,20 +1,28 @@
 {
-  "name": "survey-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-reference.json",
-  "title": "SurveyReference",
-  "description": "A bibliographic reference in which a Survey is mentioned.",
+  "name": "survey-reference",
+  "title": "Survey Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Survey.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
       "name": "referenceID",
       "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -23,29 +31,46 @@
     {
       "name": "surveyID",
       "title": "Survey ID",
-      "description": "An identifier for a Survey.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dwc:Survey.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
       "fields": "referenceID",
+      "predicate": "mentioned in",
       "reference": {
-        "resource": "reference",
+        "resource": "bibliographic-resource",
         "fields": "referenceID"
       }
     },
     {
       "fields": "surveyID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "survey",
         "fields": "surveyID"

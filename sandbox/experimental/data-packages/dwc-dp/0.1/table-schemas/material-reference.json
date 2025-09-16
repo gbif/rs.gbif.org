@@ -1,20 +1,28 @@
 {
-  "name": "material-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
-  "title": "MaterialReference",
-  "description": "A bibliographic reference in which a dwc:MaterialEntity is mentioned.",
+  "name": "material-reference",
+  "title": "Material Reference",
+  "description": "A dcterms:BibliographicResource relatd to a dwc:MaterialEntity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
   "fields": [
     {
       "name": "referenceID",
       "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
       "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -24,28 +32,45 @@
       "name": "materialEntityID",
       "title": "Material Entity ID",
       "description": "An identifier for a dwc:MaterialEntity.",
-      "type": "string",
-      "format": "default",
       "comments": "Values of dwc:materialEntityID are intended to uniquely and persistently identify a particular dwc:MaterialEntity within some context. Examples of context include a particular sample collection, an organization, or the worldwide scale. Recommended best practice is to use a persistent, globally unique identifier. The identifier is bound to a physical object (a dwc:MaterialEntity) as opposed to a particular digital record (representation) of that physical object.",
       "examples": "",
+      "type": "string",
+      "format": "default",
       "namespace": "dwc",
       "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": true,
-        "unique": true
+        "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
       "fields": "referenceID",
+      "predicate": "mentioned in",
       "reference": {
-        "resource": "reference",
+        "resource": "bibliographic-resource",
         "fields": "referenceID"
       }
     },
     {
       "fields": "materialEntityID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "material",
         "fields": "materialEntityID"

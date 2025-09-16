@@ -1,0 +1,67 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-provenance",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-provenance.json",
+  "name": "media-provenance",
+  "title": "Media Provenance",
+  "description": "A dwc:Provenance for a dwc:Media entity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "iri": "",
+  "iri_version": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "provenanceID",
+      "title": "Provenance ID",
+      "description": "An identifier for a dwc:Provenance.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "mediaID",
+      "title": "Media ID",
+      "description": "An identifier for a dwc:Media resource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "iri": "",
+      "iri_version": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "provenanceID",
+      "predicate": "has",
+      "reference": {
+        "resource": "provenance",
+        "fields": "provenanceID"
+      }
+    },
+    {
+      "fields": "mediaID",
+      "predicate": "for",
+      "reference": {
+        "resource": "media",
+        "fields": "mediaID"
+      }
+    }
+  ]
+}
