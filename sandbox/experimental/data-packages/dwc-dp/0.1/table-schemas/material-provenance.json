@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-provenance",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-provenance",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-provenance.json",
   "name": "material-provenance",
   "title": "Material Provenance",

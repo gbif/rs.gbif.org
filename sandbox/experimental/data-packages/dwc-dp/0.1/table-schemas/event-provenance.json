@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-provenance",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-provenance",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-provenance.json",
   "name": "event-provenance",
   "title": "Event Provenance",

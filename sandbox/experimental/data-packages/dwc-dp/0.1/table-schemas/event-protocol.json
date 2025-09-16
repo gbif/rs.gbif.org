@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-protocol",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
   "name": "event-protocol",
   "title": "Event Protocol",

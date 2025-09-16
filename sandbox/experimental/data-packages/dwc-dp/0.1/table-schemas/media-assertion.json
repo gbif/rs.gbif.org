@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-assertion",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-assertion",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-assertion.json",
   "name": "media-assertion",
   "title": "Media Assertion",

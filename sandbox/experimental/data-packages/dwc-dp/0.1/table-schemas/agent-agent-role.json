@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-agent-role",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-agent-role",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-agent-role.json",
   "name": "agent-agent-role",
   "title": "Agent Agent Role",

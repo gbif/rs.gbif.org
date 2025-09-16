@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/resource-relationship",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/resource-relationship",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/resource-relationship.json",
   "name": "resource-relationship",
   "title": "Resource Relationship",

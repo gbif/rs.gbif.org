@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-media",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction-media",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-media.json",
   "name": "organism-interaction-media",
   "title": "Organism Interaction Media",

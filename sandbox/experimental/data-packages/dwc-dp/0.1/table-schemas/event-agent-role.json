@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-agent-role",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-agent-role",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-agent-role.json",
   "name": "event-agent-role",
   "title": "Event Agent Role",

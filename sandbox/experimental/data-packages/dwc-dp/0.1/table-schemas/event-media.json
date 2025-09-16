@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-media",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-media",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-media.json",
   "name": "event-media",
   "title": "Event Media",

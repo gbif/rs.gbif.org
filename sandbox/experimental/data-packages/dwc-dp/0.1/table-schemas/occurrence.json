@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence.json",
   "name": "occurrence",
   "title": "Occurrence",

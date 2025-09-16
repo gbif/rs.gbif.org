@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
   "name": "molecular-protocol",
   "title": "Molecular Protocol",

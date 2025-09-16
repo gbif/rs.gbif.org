@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-assertion",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol-assertion",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
   "name": "molecular-protocol-assertion",
   "title": "Molecular Protocol Assertion",

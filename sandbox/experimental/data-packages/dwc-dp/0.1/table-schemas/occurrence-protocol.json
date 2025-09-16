@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
   "name": "occurrence-protocol",
   "title": "Occurrence Protocol",

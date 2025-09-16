@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis-assertion",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-analysis-assertion",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
   "name": "nucleotide-analysis-assertion",
   "title": "Nucleotide Analysis Assertion",

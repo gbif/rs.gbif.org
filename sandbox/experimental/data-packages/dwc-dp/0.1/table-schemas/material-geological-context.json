@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-geological-context",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-geological-context",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-geological-context.json",
   "name": "material-geological-context",
   "title": "Material Geological Context",

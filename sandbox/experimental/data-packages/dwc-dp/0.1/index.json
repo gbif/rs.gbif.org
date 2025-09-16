@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp",
-  "url": "index.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/index.json",
   "name": "dwc-dp",
   "version": "0.1",
   "title": "Darwin Core Data Package",
@@ -10,7 +10,7 @@
   "isLatest": true,
   "tableSchemas": [
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
       "name": "agent",
       "title": "Agent",
@@ -23,7 +23,7 @@
       "rdfs:comment": "A resource that acts or has the power to act."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-agent-role.json",
       "name": "agent-agent-role",
       "title": "Agent Agent Role",
@@ -36,7 +36,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-identifier.json",
       "name": "agent-identifier",
       "title": "Agent Identifier",
@@ -49,7 +49,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-media.json",
       "name": "agent-media",
       "title": "Agent Media",
@@ -62,7 +62,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/bibliographic-resource",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/bibliographic-resource",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/bibliographic-resource.json",
       "name": "bibliographic-resource",
       "title": "Bibliographic Resource",
@@ -75,7 +75,7 @@
       "rdfs:comment": "A book, article, or other documentary resource."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age.json",
       "name": "chronometric-age",
       "title": "Chronometric Age",
@@ -88,7 +88,7 @@
       "rdfs:comment": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported by evidence."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-agent-role.json",
       "name": "chronometric-age-agent-role",
       "title": "Chronometric Age Agent Role",
@@ -101,7 +101,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-assertion.json",
       "name": "chronometric-age-assertion",
       "title": "Chronometric Age Assertion",
@@ -114,7 +114,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-media.json",
       "name": "chronometric-age-media",
       "title": "Chronometric Age Media",
@@ -127,7 +127,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
       "name": "chronometric-age-protocol",
       "title": "Chronometric Age Protocol",
@@ -140,7 +140,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
       "name": "chronometric-age-reference",
       "title": "Chronometric Age Reference",
@@ -153,7 +153,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event.json",
       "name": "event",
       "title": "Event",
@@ -166,7 +166,7 @@
       "rdfs:comment": "An action that occurs at some location during some time."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-agent-role.json",
       "name": "event-agent-role",
       "title": "Event Agent Role",
@@ -179,7 +179,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-assertion.json",
       "name": "event-assertion",
       "title": "Event Assertion",
@@ -192,7 +192,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-identifier.json",
       "name": "event-identifier",
       "title": "Event Identifier",
@@ -205,7 +205,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-media.json",
       "name": "event-media",
       "title": "Event Media",
@@ -218,7 +218,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-protocol.json",
       "name": "event-protocol",
       "title": "Event Protocol",
@@ -231,7 +231,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-provenance",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-provenance",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-provenance.json",
       "name": "event-provenance",
       "title": "Event Provenance",
@@ -244,7 +244,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
       "name": "event-reference",
       "title": "Event Reference",
@@ -257,7 +257,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/geological-context",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context.json",
       "name": "geological-context",
       "title": "Geological Context",
@@ -270,7 +270,7 @@
       "rdfs:comment": "Geological information, such as stratigraphy, that qualifies a region or place."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/geological-context-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context-media.json",
       "name": "geological-context-media",
       "title": "Geological Context Media",
@@ -283,7 +283,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/identification",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification.json",
       "name": "identification",
       "title": "Identification",
@@ -296,7 +296,7 @@
       "rdfs:comment": "A taxonomic determination (e.g., the assignment to a dwc:Taxon)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/identification-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-agent-role.json",
       "name": "identification-agent-role",
       "title": "Identification Agent Role",
@@ -309,11 +309,11 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/identification-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-reference.json",
       "name": "identification-reference",
       "title": "Identification Reference",
-      "description": "A dcterms:BibliographicResource related to a dwc:Event.",
+      "description": "A dcterms:BibliographicResource related to a dwc:Identification.",
       "comments": "",
       "examples": "",
       "namespace": "",
@@ -322,7 +322,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-taxon",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/identification-taxon",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
       "name": "identification-taxon",
       "title": "Identification Taxon",
@@ -335,7 +335,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material.json",
       "name": "material",
       "title": "Material",
@@ -348,7 +348,7 @@
       "rdfs:comment": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-agent-role.json",
       "name": "material-agent-role",
       "title": "Material Agent Role",
@@ -361,7 +361,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
       "name": "material-assertion",
       "title": "Material Assertion",
@@ -374,7 +374,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-geological-context",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-geological-context",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-geological-context.json",
       "name": "material-geological-context",
       "title": "Material Geological Context",
@@ -387,7 +387,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-identifier.json",
       "name": "material-identifier",
       "title": "Material Identifier",
@@ -400,7 +400,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-media.json",
       "name": "material-media",
       "title": "Material Media",
@@ -413,7 +413,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
       "name": "material-protocol",
       "title": "Material Protocol",
@@ -426,7 +426,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-provenance",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-provenance",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-provenance.json",
       "name": "material-provenance",
       "title": "Material Provenance",
@@ -439,7 +439,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
       "name": "material-reference",
       "title": "Material Reference",
@@ -452,7 +452,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-usage-policy",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-usage-policy.json",
       "name": "material-usage-policy",
       "title": "Material Usage Policy",
@@ -465,7 +465,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
       "name": "media",
       "title": "Media",
@@ -478,7 +478,7 @@
       "rdfs:comment": "A dcmi:MediaType or other media type with other entities as content."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-agent-role.json",
       "name": "media-agent-role",
       "title": "Media Agent Role",
@@ -491,7 +491,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-assertion.json",
       "name": "media-assertion",
       "title": "Media Assertion",
@@ -504,7 +504,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-identifier.json",
       "name": "media-identifier",
       "title": "Media Identifier",
@@ -517,7 +517,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-provenance",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-provenance",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-provenance.json",
       "name": "media-provenance",
       "title": "Media Provenance",
@@ -530,7 +530,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-usage-policy",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-usage-policy.json",
       "name": "media-usage-policy",
       "title": "Media Usage Policy",
@@ -543,7 +543,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol.json",
       "name": "molecular-protocol",
       "title": "Molecular Protocol",
@@ -556,7 +556,7 @@
       "rdfs:comment": "A protocol used to derive and identify a nucleotide sequence from a dwc:MaterialEntity."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
       "name": "molecular-protocol-agent-role",
       "title": "Molecular Protocol Agent Role",
@@ -569,7 +569,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-assertion.json",
       "name": "molecular-protocol-assertion",
       "title": "Molecular Protocol Assertion",
@@ -582,7 +582,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/molecular-protocol-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
       "name": "molecular-protocol-reference",
       "title": "Molecular Protocol Reference",
@@ -595,7 +595,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-analysis",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis.json",
       "name": "nucleotide-analysis",
       "title": "Nucleotide Analysis",
@@ -608,7 +608,7 @@
       "rdfs:comment": "A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-analysis-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-analysis-assertion.json",
       "name": "nucleotide-analysis-assertion",
       "title": "Nucleotide Analysis Assertion",
@@ -621,7 +621,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-sequence",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-sequence",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
       "name": "nucleotide-sequence",
       "title": "Nucleotide Sequence",
@@ -634,7 +634,7 @@
       "rdfs:comment": "A digital representation of a nucleotide sequence."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence.json",
       "name": "occurrence",
       "title": "Occurrence",
@@ -647,7 +647,7 @@
       "rdfs:comment": "An existence of a dwc:Organism at a particular place at a particular time."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-agent-role.json",
       "name": "occurrence-agent-role",
       "title": "Occurrence Agent Role",
@@ -660,7 +660,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-assertion.json",
       "name": "occurrence-assertion",
       "title": "Occurrence Assertion",
@@ -673,7 +673,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-identifier.json",
       "name": "occurrence-identifier",
       "title": "Occurrence Identifier",
@@ -686,7 +686,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-media.json",
       "name": "occurrence-media",
       "title": "Occurrence Media",
@@ -699,7 +699,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-protocol.json",
       "name": "occurrence-protocol",
       "title": "Occurrence Protocol",
@@ -712,7 +712,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-reference.json",
       "name": "occurrence-reference",
       "title": "Occurrence Reference",
@@ -725,7 +725,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism.json",
       "name": "organism",
       "title": "Organism",
@@ -738,7 +738,7 @@
       "rdfs:comment": "A particular organism or defined group of organisms considered to be taxonomically homogeneous."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-assertion.json",
       "name": "organism-assertion",
       "title": "Organism Assertion",
@@ -751,7 +751,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-identifier.json",
       "name": "organism-identifier",
       "title": "Organism Identifier",
@@ -764,7 +764,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction.json",
       "name": "organism-interaction",
       "title": "Organism Interaction",
@@ -777,7 +777,7 @@
       "rdfs:comment": "An interaction between two dwc:Organisms during a dwc:Event."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-agent-role.json",
       "name": "organism-interaction-agent-role",
       "title": "Organism Interaction Agent Role",
@@ -790,7 +790,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-assertion.json",
       "name": "organism-interaction-assertion",
       "title": "Organism Interaction Assertion",
@@ -803,7 +803,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-media",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction-media",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-media.json",
       "name": "organism-interaction-media",
       "title": "Organism Interaction Media",
@@ -816,7 +816,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-reference.json",
       "name": "organism-interaction-reference",
       "title": "Organism Interaction Reference",
@@ -829,7 +829,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-reference.json",
       "name": "organism-reference",
       "title": "Organism Reference",
@@ -842,7 +842,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-relationship",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-relationship",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-relationship.json",
       "name": "organism-relationship",
       "title": "Organism Relationship",
@@ -855,7 +855,7 @@
       "rdfs:comment": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol.json",
       "name": "protocol",
       "title": "Protocol",
@@ -868,7 +868,7 @@
       "rdfs:comment": "A method used during an action."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/protocol-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol-reference.json",
       "name": "protocol-reference",
       "title": "Protocol Reference",
@@ -881,7 +881,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/provenance",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/provenance",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/provenance.json",
       "name": "provenance",
       "title": "Provenance",
@@ -894,7 +894,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/resource-relationship",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/resource-relationship",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/resource-relationship.json",
       "name": "resource-relationship",
       "title": "Resource Relationship",
@@ -907,7 +907,7 @@
       "rdfs:comment": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
       "name": "survey",
       "title": "Survey",
@@ -920,7 +920,7 @@
       "rdfs:comment": "A biotic survey or inventory."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-agent-role",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-agent-role",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-agent-role.json",
       "name": "survey-agent-role",
       "title": "Survey Agent Role",
@@ -933,7 +933,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-assertion",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-assertion",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-assertion.json",
       "name": "survey-assertion",
       "title": "Survey Assertion",
@@ -946,7 +946,7 @@
       "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource)."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-identifier",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-identifier",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-identifier.json",
       "name": "survey-identifier",
       "title": "Survey Identifier",
@@ -959,7 +959,7 @@
       "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-protocol",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
       "name": "survey-protocol",
       "title": "Survey Protocol",
@@ -972,7 +972,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-reference",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-reference",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-reference.json",
       "name": "survey-reference",
       "title": "Survey Reference",
@@ -985,7 +985,7 @@
       "rdfs:comment": ""
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-target",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-target",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-target.json",
       "name": "survey-target",
       "title": "Survey Target",
@@ -998,7 +998,7 @@
       "rdfs:comment": "A specification of a characteristics of dwc:Occurrences that were included or excluded in an eco:Survey."
     },
     {
-      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/usage-policy",
+      "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/usage-policy",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/usage-policy.json",
       "name": "usage-policy",
       "title": "Usage Policy",

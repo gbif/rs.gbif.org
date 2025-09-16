@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-assertion",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/occurrence-assertion",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-assertion.json",
   "name": "occurrence-assertion",
   "title": "Occurrence Assertion",

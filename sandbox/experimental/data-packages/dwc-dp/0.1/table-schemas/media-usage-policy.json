@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-usage-policy",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-usage-policy",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-usage-policy.json",
   "name": "media-usage-policy",
   "title": "Media Usage Policy",

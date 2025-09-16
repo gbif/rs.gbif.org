@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/event-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
   "name": "event-reference",
   "title": "Event Reference",

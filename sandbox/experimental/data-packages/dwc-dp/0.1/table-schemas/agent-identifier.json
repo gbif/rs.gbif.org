@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-identifier",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-identifier",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-identifier.json",
   "name": "agent-identifier",
   "title": "Agent Identifier",

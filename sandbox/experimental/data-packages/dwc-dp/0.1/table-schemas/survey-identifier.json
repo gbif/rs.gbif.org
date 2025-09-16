@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-identifier",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-identifier",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-identifier.json",
   "name": "survey-identifier",
   "title": "Survey Identifier",

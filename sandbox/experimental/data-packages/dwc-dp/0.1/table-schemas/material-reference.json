@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
   "name": "material-reference",
   "title": "Material Reference",

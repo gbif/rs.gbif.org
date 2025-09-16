@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/chronometric-age-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-reference.json",
   "name": "chronometric-age-reference",
   "title": "Chronometric Age Reference",
