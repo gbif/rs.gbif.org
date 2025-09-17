@@ -39,10 +39,7 @@
       "namespace": "dwc",
       "iri": "",
       "iri_version": "",
-      "rdfs:comment": "",
-      "constraints": {
-        "minimum": true
-      }
+      "rdfs:comment": ""
     },
     {
       "name": "taxonID",

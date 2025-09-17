@@ -56,10 +56,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/siteCount",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-28",
-      "rdfs:comment": "Total number of individual sites surveyed during the dwc:Event.",
-      "constraints": {
-        "minimum": true
-      }
+      "rdfs:comment": "Total number of individual sites surveyed during the dwc:Event."
     },
     {
       "name": "siteNestingDescription",
@@ -111,10 +108,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-28",
-      "rdfs:comment": "The numeric value for the total area of the geospatial scope of the dwc:Event.",
-      "constraints": {
-        "minimum": false
-      }
+      "rdfs:comment": "The numeric value for the total area of the geospatial scope of the dwc:Event."
     },
     {
       "name": "geospatialScopeAreaUnit",
@@ -153,10 +147,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/totalAreaSampledValue",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-28",
-      "rdfs:comment": "The numeric value for the total area surveyed during the dwc:Event.",
-      "constraints": {
-        "minimum": false
-      }
+      "rdfs:comment": "The numeric value for the total area surveyed during the dwc:Event."
     },
     {
       "name": "reportedExtremeConditions",
@@ -195,10 +186,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/eventDurationValue",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-28",
-      "rdfs:comment": "The numeric value for the duration of the dwc:Event.",
-      "constraints": {
-        "minimum": false
-      }
+      "rdfs:comment": "The numeric value for the duration of the dwc:Event."
     },
     {
       "name": "eventDurationUnit",
@@ -488,10 +476,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/abundanceCap",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-28",
-      "rdfs:comment": "The reported maximum number of dwc:Organisms.",
-      "constraints": {
-        "minimum": false
-      }
+      "rdfs:comment": "The reported maximum number of dwc:Organisms."
     },
     {
       "name": "isVegetationCoverReported",
@@ -681,10 +666,7 @@
       "namespace": "eco",
       "iri": "http://rs.tdwg.org/eco/terms/samplingEffortValue",
       "iri_version": "http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-28",
-      "rdfs:comment": "The numeric value for the sampling effort expended during the dwc:Event.",
-      "constraints": {
-        "minimum": false
-      }
+      "rdfs:comment": "The numeric value for the sampling effort expended during the dwc:Event."
     },
     {
       "name": "samplingEffortUnit",
