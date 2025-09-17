@@ -138,7 +138,10 @@
       "namespace": "dwc",
       "iri": "",
       "iri_version": "",
-      "rdfs:comment": ""
+      "rdfs:comment": "",
+      "constraints": {
+        "minimum": 1
+      }
     },
     {
       "name": "relationshipAccordingTo",
