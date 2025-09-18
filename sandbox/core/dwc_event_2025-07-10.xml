@@ -102,6 +102,7 @@
     <!-- Event -->
     <property group='Event' name='eventID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventID' label='Event ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:eventID' dc:description='An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.' comments='' examples='`INBO:VIS:Ev:00009375`' required='false'>
       <translation xml:lang='cs' label='ID události' dc:description='Identifikátor souboru informací spojených s dwc:Event (něco, co nastane v určitém místě a čase). Může to být globální jedinečný identifikátor nebo identifikátor specifický pro datovou sadu.'/>
+      <translation xml:lang='es' label='ID del evento' dc:description='Un identificador único para la información asociada al Evento de muestreo (dwc:Event), que ocurre en un lugar y tiempo determinado.'/>
       <translation xml:lang='fr' label='Identifiant de l&#x27;événement' dc:description='Un identifiant pour l&#x27;ensemble des informations associées à un dwc:Event (quelque chose qui se produit à un endroit et à un temps donnés). Il peut s&#x27;agir d&#x27;un identifiant unique global ou d&#x27;un identifiant spécifique à un jeu de données.'/>
       <translation xml:lang='zh' label='調查活動ID' dc:description='調查活動識別碼，可設定有意義的組合格式，或使用全球唯一辨識碼(GUID)或通用唯一辨識碼(UUID)，序號不可有重複。'/>
     </property>
@@ -129,7 +130,7 @@
     </property>
     <property group='Event' name='eventTime' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventTime' label='Event Time' dc:relation='https://dwc.tdwg.org/terms/#dwc:eventTime' dc:description='The time or interval during which a dwc:Event occurred.' comments='Recommended best practice is to use a time of day that conforms to ISO 8601-1:2019.' examples='`14:07-06:00` (at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `08:40:21Z` (at or after 8:40:21am and before 8:41:22am UTC); `13:00:00Z/15:30:00Z` (at or after 1pm and before 3:30pm UTC)' required='false'>
       <translation xml:lang='cs' label='Čas události' comments='Doporučeným osvědčeným postupem je používat denní dobu, která odpovídá normě ISO 8601-1:2019.' examples='`14:07-06:00` (v 14:07 nebo později a před 14:08 v časovém pásmu o šest hodin dříve než UTC); `08:40:21Z` (v 8:40:21 nebo později a před 8:41:22 UTC); `13:00:00Z/15:30:00Z` (v 13:00 nebo později a před 15:30 UTC)' dc:description='Čas nebo interval, během kterého došlo k události dwc:Event.'/>
-      <translation xml:lang='es' examples='`14:07-06:00` (a las 14:07 o después y antes de las 14:08 en la zona horaria seis horas anterior a UTC); `08:40:21Z` (a las 08:40:21 o después y antes de las 08:41:22 UTC); `13:00:00Z/15:30:00Z` (a las 13:00 o después y antes de las 15:30 UTC)'/>
+      <translation xml:lang='es' label='Hora del evento' examples='`14:07-06:00` (a las 14:07 o después y antes de las 14:08 en la zona horaria seis horas anterior a UTC); `08:40:21Z` (a las 08:40:21 o después y antes de las 08:41:22 UTC); `13:00:00Z/15:30:00Z` (a las 13:00 o después y antes de las 15:30 UTC)'/>
       <translation xml:lang='fr' label='Heure de l&#x27;événement' comments='La pratique optimale recommandée est d&#x27;utiliser une heure conforme à la norme ISO 8601-1:2019.' examples='`14:07-06:00` (à ou après 14h07 et avant 14h08 dans le fuseau horaire six heures plus tôt que UTC) ; `08:40:21Z` (à ou après 8h40m21s et avant 8h41m22s UTC) ; `13:00:00Z/15:30:00Z` (à ou après 13h00 et avant 15h30 UTC)' dc:description='Le moment ou l&#x27;intervalle de temps pendant lequel un dwc:Event s&#x27;est produit.'/>
       <translation xml:lang='zh' label='調查時間' comments='建議格式參考 ISO 8601-1:2019。' dc:description='該筆資料被記錄的時間。'/>
     </property>
@@ -197,6 +198,7 @@
     </property>
     <property group='Event' name='eventRemarks' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventRemarks' label='Event Remarks' dc:relation='https://dwc.tdwg.org/terms/#dwc:eventRemarks' dc:description='Comments or notes about the dwc:Event.' comments='' examples='`After the recent rains the river is nearly at flood stage.`' required='false'>
       <translation xml:lang='cs' label='Poznámky k události' dc:description='Komentáře nebo poznámky k dwc:Event.'/>
+      <translation xml:lang='es' label='Comentarios del evento' dc:description='Comentarios o anotaciones sobre el evento (dwc:Event).'/>
       <translation xml:lang='fr' label='Remarques sur l&#x27;événement' dc:description='Commentaires ou notes sur le dwc:Event.'/>
       <translation xml:lang='zh' label='調查活動註記' dc:description='可註記天氣或調查狀況等任何文字資訊。'/>
     </property>
