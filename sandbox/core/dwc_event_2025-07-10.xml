@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-09-19'
+    dc:issued='2025-09-20'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -130,7 +130,7 @@
     </property>
     <property group='Event' name='eventTime' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/eventTime' label='Event Time' dc:relation='https://dwc.tdwg.org/terms/#dwc:eventTime' dc:description='The time or interval during which a dwc:Event occurred.' comments='Recommended best practice is to use a time of day that conforms to ISO 8601-1:2019.' examples='`14:07-06:00` (at or after 2:07pm and before 2:08pm in the time zone six hours earlier than UTC); `08:40:21Z` (at or after 8:40:21am and before 8:41:22am UTC); `13:00:00Z/15:30:00Z` (at or after 1pm and before 3:30pm UTC)' required='false'>
       <translation xml:lang='cs' label='Čas události' comments='Doporučeným osvědčeným postupem je používat denní dobu, která odpovídá normě ISO 8601-1:2019.' examples='`14:07-06:00` (v 14:07 nebo později a před 14:08 v časovém pásmu o šest hodin dříve než UTC); `08:40:21Z` (v 8:40:21 nebo později a před 8:41:22 UTC); `13:00:00Z/15:30:00Z` (v 13:00 nebo později a před 15:30 UTC)' dc:description='Čas nebo interval, během kterého došlo k události dwc:Event.'/>
-      <translation xml:lang='es' label='Hora del evento' examples='`14:07-06:00` (a las 14:07 o después y antes de las 14:08 en la zona horaria seis horas anterior a UTC); `08:40:21Z` (a las 08:40:21 o después y antes de las 08:41:22 UTC); `13:00:00Z/15:30:00Z` (a las 13:00 o después y antes de las 15:30 UTC)'/>
+      <translation xml:lang='es' label='Hora del evento' comments='La práctica recomendada es utilizar una fecha en el esquema de codificación ISO 8601.' examples='`14:07-06:00` (a las 14:07 o después y antes de las 14:08 en la zona horaria seis horas anterior a UTC); `08:40:21Z` (a las 08:40:21 o después y antes de las 08:41:22 UTC); `13:00:00Z/15:30:00Z` (a las 13:00 o después y antes de las 15:30 UTC)' dc:description='La hora o el intervalo de horas en la cual se produjo el evento (dwc:Event).'/>
       <translation xml:lang='fr' label='Heure de l&#x27;événement' comments='La pratique optimale recommandée est d&#x27;utiliser une heure conforme à la norme ISO 8601-1:2019.' examples='`14:07-06:00` (à ou après 14h07 et avant 14h08 dans le fuseau horaire six heures plus tôt que UTC) ; `08:40:21Z` (à ou après 8h40m21s et avant 8h41m22s UTC) ; `13:00:00Z/15:30:00Z` (à ou après 13h00 et avant 15h30 UTC)' dc:description='Le moment ou l&#x27;intervalle de temps pendant lequel un dwc:Event s&#x27;est produit.'/>
       <translation xml:lang='zh' label='調查時間' comments='建議格式參考 ISO 8601-1:2019。' dc:description='該筆資料被記錄的時間。'/>
     </property>
