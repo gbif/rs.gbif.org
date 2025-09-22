@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-09-21'
+    dc:issued='2025-09-22'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
