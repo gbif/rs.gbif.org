@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
-  "url": "table-schemas/survey-protocol.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
   "name": "survey-protocol",
   "title": "Survey Protocol",
   "description": "A dwc:Protocol used for an eco:Survey.",

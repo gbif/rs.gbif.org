@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-taxon",
-  "url": "table-schemas/identification-taxon.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-taxon.json",
   "name": "identification-taxon",
   "title": "Identification Taxon",
   "description": "A construct of components and positions of dwc:Taxa in a dwc:Identification.",

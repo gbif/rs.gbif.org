@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-media",
-  "url": "table-schemas/material-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-media.json",
   "name": "material-media",
   "title": "Material Media",
   "description": "A dwc:MaterialEntity as content in a dwc:Media entity.",

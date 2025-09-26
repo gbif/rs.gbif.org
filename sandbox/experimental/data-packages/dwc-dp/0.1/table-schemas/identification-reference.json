@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-reference",
-  "url": "table-schemas/identification-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-reference.json",
   "name": "identification-reference",
   "title": "Identification Reference",
   "description": "A dcterms:BibliographicResource related to a dwc:Identification.",

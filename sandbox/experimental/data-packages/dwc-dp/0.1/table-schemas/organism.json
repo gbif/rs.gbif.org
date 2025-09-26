@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism",
-  "url": "table-schemas/organism.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism.json",
   "name": "organism",
   "title": "Organism",
   "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",

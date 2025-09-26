@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-usage-policy",
-  "url": "table-schemas/material-usage-policy.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-usage-policy.json",
   "name": "material-usage-policy",
   "title": "Material Usage Policy",
   "description": "Rights, usage, and attribution statements applicable to dwc:MaterialEntity.",

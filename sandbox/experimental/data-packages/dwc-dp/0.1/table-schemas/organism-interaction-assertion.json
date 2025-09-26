@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-assertion",
-  "url": "table-schemas/organism-interaction-assertion.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction-assertion.json",
   "name": "organism-interaction-assertion",
   "title": "Organism Interaction Assertion",
   "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:OrganismInteraction.",

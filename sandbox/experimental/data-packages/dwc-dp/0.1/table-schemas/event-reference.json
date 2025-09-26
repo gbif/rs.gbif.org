@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-reference",
-  "url": "table-schemas/event-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-reference.json",
   "name": "event-reference",
   "title": "Event Reference",
   "description": "A dcterms:BibliographicResource related to a dwc:Event.",

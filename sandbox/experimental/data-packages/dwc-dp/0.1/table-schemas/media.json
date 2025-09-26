@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
-  "url": "table-schemas/media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
   "name": "media",
   "title": "Media",
   "description": "A dcmi:MediaType or other media type with other entities as subject matter.",

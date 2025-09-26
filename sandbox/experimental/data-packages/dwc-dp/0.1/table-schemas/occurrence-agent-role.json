@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-agent-role",
-  "url": "table-schemas/occurrence-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-agent-role.json",
   "name": "occurrence-agent-role",
   "title": "Occurrence Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to a dwc:Occurrence.",

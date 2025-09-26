@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-reference",
-  "url": "table-schemas/organism-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-reference.json",
   "name": "organism-reference",
   "title": "Organism Reference",
   "description": "A dcterms:BibliographicResource related to a dwc:Organism.",

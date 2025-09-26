@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-reference",
-  "url": "table-schemas/occurrence-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence-reference.json",
   "name": "occurrence-reference",
   "title": "Occurrence Reference",
   "description": "A dcterms:BibliographicResource related to a dwc:Occurrence.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-agent-role",
-  "url": "table-schemas/molecular-protocol-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-agent-role.json",
   "name": "molecular-protocol-agent-role",
   "title": "Molecular Protocol Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to a dwc:MolecularProtocol.",

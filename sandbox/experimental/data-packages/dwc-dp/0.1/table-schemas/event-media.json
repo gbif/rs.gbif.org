@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-media",
-  "url": "table-schemas/event-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-media.json",
   "name": "event-media",
   "title": "Event Media",
   "description": "A dwc:Event as content in a dwc:Media entity.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
-  "url": "table-schemas/agent.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
   "name": "agent",
   "title": "Agent",
   "description": "A resource that acts or has the power to act.",

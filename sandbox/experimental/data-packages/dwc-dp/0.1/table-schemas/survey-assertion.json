@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-assertion",
-  "url": "table-schemas/survey-assertion.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-assertion.json",
   "name": "survey-assertion",
   "title": "Survey Assertion",
   "description": "A dwc:Assertion made by a dcterms:Agent about an eco:Survey.",

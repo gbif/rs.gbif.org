@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-reference",
-  "url": "table-schemas/survey-reference.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-reference.json",
   "name": "survey-reference",
   "title": "Survey Reference",
   "description": "A dcterms:BibliographicResource related to a dwc:Survey.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-protocol",
-  "url": "table-schemas/material-protocol.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-protocol.json",
   "name": "material-protocol",
   "title": "Material Protocol",
   "description": "A dwc:Protocol used for a dwc:MaterialEntity.",

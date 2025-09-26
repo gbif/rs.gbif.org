@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction",
-  "url": "table-schemas/organism-interaction.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction.json",
   "name": "organism-interaction",
   "title": "Organism Interaction",
   "description": "An interaction between two dwc:Organisms during a dwc:Event.",

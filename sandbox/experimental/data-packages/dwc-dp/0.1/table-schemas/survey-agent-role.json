@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-agent-role",
-  "url": "table-schemas/survey-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-agent-role.json",
   "name": "survey-agent-role",
   "title": "Survey Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to an eco:Survey.",

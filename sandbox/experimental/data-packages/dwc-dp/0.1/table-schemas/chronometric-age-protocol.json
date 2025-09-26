@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
-  "url": "table-schemas/chronometric-age-protocol.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-protocol.json",
   "name": "chronometric-age-protocol",
   "title": "Chronometric Age Protocol",
   "description": "A dwc:Protocol used for a chrono:ChronometricAge.",

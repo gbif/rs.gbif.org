@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-usage-policy",
-  "url": "table-schemas/media-usage-policy.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-usage-policy.json",
   "name": "media-usage-policy",
   "title": "Media Usage Policy",
   "description": "Rights, usage, and attribution statements applicable to dwc:Media entity.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence",
-  "url": "table-schemas/occurrence.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/occurrence.json",
   "name": "occurrence",
   "title": "Occurrence",
   "description": "A state of a dwc:Organism in a dwc:Event.",

@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification",
-  "url": "table-schemas/identification.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification.json",
   "name": "identification",
   "title": "Identification",
   "description": "A classification of a resource according to a classification scheme.",

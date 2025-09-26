@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-agent-role",
-  "url": "table-schemas/agent-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-agent-role.json",
   "name": "agent-agent-role",
   "title": "Agent Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to another dcterms:Agent.",

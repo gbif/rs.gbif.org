@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-agent-role",
-  "url": "table-schemas/identification-agent-role.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-agent-role.json",
   "name": "identification-agent-role",
   "title": "Identification Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to a dwc:Identification.",

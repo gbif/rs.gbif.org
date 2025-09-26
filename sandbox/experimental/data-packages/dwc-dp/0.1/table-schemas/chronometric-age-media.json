@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-media",
-  "url": "table-schemas/chronometric-age-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/chronometric-age-media.json",
   "name": "chronometric-age-media",
   "title": "Chronometric Age Media",
   "description": "A chrono:ChronometricAge as content in a dwc:Media entity.",

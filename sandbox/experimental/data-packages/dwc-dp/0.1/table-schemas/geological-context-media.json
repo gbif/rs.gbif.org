@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context-media",
-  "url": "table-schemas/geological-context-media.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context-media.json",
   "name": "geological-context-media",
   "title": "Geological Context Media",
   "description": "A dwc:GeologicalContext as content in a dwc:Media entity.",

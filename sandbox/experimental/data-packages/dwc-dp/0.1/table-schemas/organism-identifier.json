@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-identifier",
-  "url": "table-schemas/organism-identifier.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-identifier.json",
   "name": "organism-identifier",
   "title": "Organism Identifier",
   "description": "An adms:Identifier for a dwc:Organism.",

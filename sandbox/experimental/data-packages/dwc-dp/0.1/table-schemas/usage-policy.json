@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/usage-policy",
-  "url": "table-schemas/usage-policy.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/usage-policy.json",
   "name": "usage-policy",
   "title": "Usage Policy",
   "description": "Information about rights, usage, and attribution statements applicable to an entity.",

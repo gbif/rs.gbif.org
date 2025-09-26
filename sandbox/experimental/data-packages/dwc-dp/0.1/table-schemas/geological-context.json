@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context",
-  "url": "table-schemas/geological-context.json",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context.json",
   "name": "geological-context",
   "title": "Geological Context",
   "description": "A set of geological designations, such as stratigraphy, that qualifies a dcterms:Location.",
