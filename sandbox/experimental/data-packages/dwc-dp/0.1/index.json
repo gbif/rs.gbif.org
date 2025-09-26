@@ -1,6 +1,6 @@
 {
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp",
-  "url": "",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/index.json",
   "name": "dwc-dp",
   "version": "0.1",
   "title": "Darwin Core Data Package",
