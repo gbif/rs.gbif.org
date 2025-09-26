@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-reference",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-reference.json",
   "name": "material-reference",
   "title": "Material Reference",
@@ -7,8 +7,8 @@
   "comments": "",
   "examples": "",
   "namespace": "",
-  "iri": "",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//material-reference",
+  "dcterms:references": "",
   "rdfs:comment": "",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
       "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
       "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],

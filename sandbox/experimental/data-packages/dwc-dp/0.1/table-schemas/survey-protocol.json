@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey-protocol",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
   "name": "survey-protocol",
   "title": "Survey Protocol",
@@ -7,8 +7,8 @@
   "comments": "",
   "examples": "",
   "namespace": "",
-  "iri": "",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//survey-protocol",
+  "dcterms:references": "",
   "rdfs:comment": "",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/surveyID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,

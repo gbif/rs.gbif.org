@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/provenance",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/provenance",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/provenance.json",
   "name": "provenance",
   "title": "Provenance",
@@ -7,8 +7,8 @@
   "comments": "This is a convenience class to group related properties.",
   "examples": "",
   "namespace": "dwc",
-  "iri": "",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending/dwc/provenance",
+  "dcterms:references": "",
   "rdfs:comment": "",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/provenanceID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/datasetID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/datasetID-2017-10-06",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/datasetID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/datasetID-2017-10-06",
       "rdfs:comment": "An identifier for the set of data. May be a global unique identifier or an identifier specific to a collection or institution."
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/fundingAttribution",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/fundingAttribution",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/fundingAttribution-2020-01-27",
       "rdfs:comment": "A list (concatenated and separated) of the globally unique identifiers for the funding organizations or agencies that supported the project."
     },
     {
@@ -63,8 +63,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/fundingAttributionID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/fundingAttributionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/fundingAttributionID-2025-06-12",
       "rdfs:comment": "An identifier for a dcterms:Agent that financially supported a project.",
       "constraints": {
         "required": false,
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/source",
+      "dcterms:references": "",
       "rdfs:comment": "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/creator",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/creator",
+      "dcterms:references": "",
       "rdfs:comment": "An entity primarily responsible for making the resource."
     },
     {
@@ -119,8 +119,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/creator",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/creator",
+      "dcterms:references": "",
       "rdfs:comment": "An entity primarily responsible for making the resource.",
       "constraints": {
         "required": false,
@@ -136,8 +136,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/providerLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/providerLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/providerLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/providerLiteral-2023-09-05",
       "rdfs:comment": "Name of the person or organization responsible for presenting the media resource."
     },
     {
@@ -149,8 +149,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/provider",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/provider-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/provider",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/provider-2023-09-05",
       "rdfs:comment": "URI for person or organization responsible for presenting the media resource.",
       "constraints": {
         "required": false,
@@ -166,8 +166,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataCreatorLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataCreatorLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataCreatorLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataCreatorLiteral-2023-09-05",
       "rdfs:comment": "Name of the person or organization originally creating the resource metadata record."
     },
     {
@@ -179,8 +179,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataCreator",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataCreator-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataCreator",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataCreator-2023-09-05",
       "rdfs:comment": "A URI representing a person or organization originally creating the resource metadata record.",
       "constraints": {
         "required": false,
@@ -196,8 +196,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataProviderLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataProviderLiteral-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataProviderLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataProviderLiteral-2020-01-27",
       "rdfs:comment": "Name of the person or organization originally responsible for providing the resource metadata record."
     },
     {
@@ -209,8 +209,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataProvider",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataProvider-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataProvider",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataProvider-2023-09-05",
       "rdfs:comment": "URI of person or organization originally responsible for providing the resource metadata record.",
       "constraints": {
         "required": false,
@@ -226,8 +226,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/furtherInformationURL",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/furtherInformationURL-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/furtherInformationURL",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/furtherInformationURL-2020-01-27",
       "rdfs:comment": "The URL of a Web site that provides additional information about the version of the media resource that is provided by the Service Access Point."
     },
     {
@@ -239,8 +239,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
       "rdfs:comment": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record."
     },
     {
@@ -252,8 +252,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/references",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/references",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
     },
     {
@@ -265,8 +265,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/bibliographicCitation",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/bibliographicCitation",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -278,8 +278,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/projectID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/projectID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/projectID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/projectID-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of identifiers for projects that contributed to a dwc:Event."
     },
     {
@@ -291,8 +291,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/projectTitle",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/projectTitle-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/projectTitle",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/projectTitle-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of titles or names for projects that contributed to a dwc:Event."
     }
   ],

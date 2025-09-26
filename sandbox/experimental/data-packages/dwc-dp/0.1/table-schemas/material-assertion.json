@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material-assertion",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-assertion",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material-assertion.json",
   "name": "material-assertion",
   "title": "Material Assertion",
@@ -7,8 +7,8 @@
   "comments": "",
   "examples": "",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
-  "iri_version": "http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-09-13",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/MeasurementOrFact-2023-09-13",
   "rdfs:comment": "A measurement of or fact about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource).",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
       "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": true,
@@ -37,11 +37,11 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
-        "required": true,
+        "required": false,
         "unique": true
       }
     },
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/verbatimAssertionType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/assertionTypeIRI",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionMadeDate",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -119,8 +119,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionEffectiveDate",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -132,8 +132,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionValue",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -145,8 +145,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/assertionValueIRI",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -158,8 +158,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -171,34 +171,34 @@
       "type": "number",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionValueNumeric",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
       "name": "assertionUnit",
       "title": "Assertion Unit",
-      "description": "Units associated with the value in dwc:assertionValue or dwc:assertionValueNumeric.",
+      "description": "Unit associated with the value in dwc:assertionValue or dwc:assertionValueNumeric.",
       "comments": "Recommended best practice is to use a controlled vocabulary such as the Ontology of Units of Measure http://www.wurvoc.org/vocabularies/om-1.8/ of SI units, derived units, or other non-SI units accepted for use within the SI. For units that are composed of multiple parts, use the patterns as given in \"A Primer for Communicating Mathematics via Plain Text\" (https://cse.sc.edu/~fenner/latex-ASCII.pdf) by Stephen Fenner (e.g., `g/cm^3` for grams per cubic centimeter). For other units, provide the value as a recognizable standard (e.g., '%') or written out in full and in the plural (e.g., `individuals`). It is fine to provide non-SI units in the original language of the dataset.",
       "examples": "`m`; `s`; `g`; `ml`",
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionUnit",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
       "name": "assertionUnitIRI",
       "title": "Assertion Unit (IRI)",
-      "description": "An IRI of a controlled vocabulary value for the units of a dwc:AssertionValueNumeric.",
+      "description": "An IRI of a controlled vocabulary value for the unit of a dwc:assertionValue or a dwc:assertionValueNumeric.",
       "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
       "examples": "",
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/assertionUnitIRI",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -210,8 +210,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -223,8 +223,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionError",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -236,8 +236,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionBy",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -249,8 +249,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/assertionByID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -266,8 +266,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionProtocols",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -279,8 +279,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/assertionProtocolID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -296,8 +296,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionReferences",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -309,8 +309,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/assertionRemarks",
+      "dcterms:references": "",
       "rdfs:comment": ""
     }
   ],

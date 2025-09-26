@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-interaction",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-interaction.json",
   "name": "organism-interaction",
   "title": "Organism Interaction",
@@ -7,8 +7,8 @@
   "comments": "Supports only primary observed interactions, not habitual or derived taxon-level interactions. Pairwise interactions must be used to represent multi-organism interactions. When possible, typify the action rather than the state from which an action is inferred, with the actor as the subject dwc:Occurrence and the acted-upon as the related dwc:Occurrence. Only one direction of a two-way interaction is necessary, though both are permissible as distinct OrganismInteractions with distint subject dwc:Occurrences.",
   "examples": "`a bee visiting a flower`; `a Mallophora ruficauda hunting an Apis mellifera in flight`; `a viral infection in a plant`; `a female spider mating with a male spider`; `a lion cub nursing from its mother`; `a mosquito sucking blood from a chimpanzee's arm`; `a slug eating a fungus growing on decomposing stump (2 interactions)`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/OrganismInteraction",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/OrganismInteraction",
+  "dcterms:references": "",
   "rdfs:comment": "An interaction between two dwc:Organisms during a dwc:Event.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/organismInteractionID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
       "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/organismInteractionDescription",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
       "constraints": {
         "required": true,
@@ -84,8 +84,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/subjectOrganismPart",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -97,8 +97,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/organismInteractionType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -110,8 +110,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
       "constraints": {
         "required": false,
@@ -127,8 +127,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique."
     },
     {
@@ -140,8 +140,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -153,8 +153,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/relatedOrganismPart",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -166,8 +166,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
       "rdfs:comment": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record."
     }
   ],

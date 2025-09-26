@@ -1,5 +1,5 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent.json",
   "name": "agent",
   "title": "Agent",
@@ -7,8 +7,8 @@
   "comments": "A person, group, organization, machine, software or other entity that can act. Membership in the dcterms:Agent class is determined by the capacity to act, even if not doing so in a specific context. To act: To participate in an event or process by contributing through behavior, operation, or an effect resulting from active participation — regardless of whether that contribution is intentional, volitional, or conscious.",
   "examples": "`Carl Linnaeus`; `The Terra Nova Expedition`; `The National Science Foundation`; `The El Yunque National Forest ARBIMON System`; `ChatGPT`",
   "namespace": "dcterms",
-  "iri": "http://purl.org/dc/terms/Agent",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://purl.org/dc/terms/Agent",
+  "dcterms:references": "",
   "rdfs:comment": "A resource that acts or has the power to act.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/title",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title",
+      "dcterms:references": "",
       "rdfs:comment": "A name given to the resource."
     },
     {
@@ -63,8 +63,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentRemarks",
+      "dcterms:references": "",
       "rdfs:comment": ""
     }
   ],
