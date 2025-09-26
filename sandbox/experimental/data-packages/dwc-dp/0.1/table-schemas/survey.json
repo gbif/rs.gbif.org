@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/survey",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey",
+  "url": "table-schemas/survey.json",
   "name": "survey",
   "title": "Survey",
   "description": "A biotic survey or inventory.",
   "comments": "This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget.",
   "examples": "`a botanical survey of a protected area to assess native and invasive plant species`; `a wetland vegetation mapping`; `a camera trap deployment in a rainforest to monitor large mammals`; `a frog call survey in wetlands across breeding seasons`; `a coverboard survey for reptiles in forested environments`; `a pollinator survey in an agricultural landscape`; `a macroinvertebrate sampling in a freshwater stream to assess water quality`; `a habitat- or ecosystem-level survey (e.g., coral reef health assessment, forest biodiversity assessment)`; `an environmental impact assessment (e.g., pre-construction biological baseline survey for a wind farm project)`",
   "namespace": "eco",
-  "iri": "http://rs.tdwg.org/eco/terms/Survey",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/Survey",
+  "dcterms:references": "",
   "rdfs:comment": "A biotic survey or inventory.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/surveyID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
       "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/siteCount",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/siteCount",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-28",
       "rdfs:comment": "Total number of individual sites surveyed during the dwc:Event.",
       "constraints": {
         "minimum": 1
@@ -70,8 +70,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/siteNestingDescription",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/siteNestingDescription",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-28",
       "rdfs:comment": "Textual description of the hierarchical sampling design."
     },
     {
@@ -83,8 +83,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-28",
       "rdfs:comment": "Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | )."
     },
     {
@@ -96,8 +96,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/verbatimSiteNames",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/verbatimSiteNames",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-28",
       "rdfs:comment": "A list (concatenated and separated) of original site names."
     },
     {
@@ -109,8 +109,8 @@
       "type": "number",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-28",
       "rdfs:comment": "The numeric value for the total area of the geospatial scope of the dwc:Event.",
       "constraints": {
         "minimum": 0
@@ -125,8 +125,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2025-07-10",
       "rdfs:comment": "The units associated with eco:geospatialScopeAreaValue."
     },
     {
@@ -138,8 +138,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/totalAreaSampledUnit",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/totalAreaSampledUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2025-07-10",
       "rdfs:comment": "The units associated with eco:totalAreaSampledValue."
     },
     {
@@ -151,8 +151,8 @@
       "type": "number",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/totalAreaSampledValue",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/totalAreaSampledValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-28",
       "rdfs:comment": "The numeric value for the total area surveyed during the dwc:Event.",
       "constraints": {
         "minimum": 0
@@ -167,8 +167,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/reportedExtremeConditions",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/reportedExtremeConditions",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-28",
       "rdfs:comment": "A description of any extreme weather or environmental conditions that may have affected the dwc:Event."
     },
     {
@@ -180,8 +180,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/reportedWeather",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/reportedWeather",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-28",
       "rdfs:comment": "A list of weather or climatic conditions present during the dwc:Event."
     },
     {
@@ -193,8 +193,8 @@
       "type": "number",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/eventDurationValue",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/eventDurationValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-28",
       "rdfs:comment": "The numeric value for the duration of the dwc:Event.",
       "constraints": {
         "minimum": 0
@@ -209,8 +209,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/eventDurationUnit",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/eventDurationUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2025-07-10",
       "rdfs:comment": "The units associated with the eco:eventDurationValue."
     },
     {
@@ -222,8 +222,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/taxonCompletenessReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/taxonCompletenessReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2025-07-10",
       "rdfs:comment": "Statement about whether the taxonomic completeness of the dwc:Event was assessed."
     },
     {
@@ -235,8 +235,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2025-07-10",
       "rdfs:comment": "A description of or reference (publication, URL) to the methods used to determine eco:taxonCompletenessReported."
     },
     {
@@ -248,8 +248,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isAbsenceReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isAbsenceReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-28",
       "rdfs:comment": "Taxonomic absences were reported."
     },
     {
@@ -261,8 +261,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/absentTaxa",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/absentTaxa-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/absentTaxa",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/absentTaxa-2025-07-10",
       "rdfs:comment": "A list (concatenated and separated) of taxa reported absent during the dwc:Event."
     },
     {
@@ -274,8 +274,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/hasNonTargetTaxa",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/hasNonTargetTaxa",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-28",
       "rdfs:comment": "One or more dwc:Organisms of taxa outside the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) were detected and reported for this dwc:Event."
     },
     {
@@ -287,8 +287,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/nonTargetTaxa",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/nonTargetTaxa",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2025-07-10",
       "rdfs:comment": "A list (concatenated and separated) of taxa reported during the dwc:Event that are outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope)."
     },
     {
@@ -300,8 +300,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2025-06-12",
       "rdfs:comment": "Every dwc:Organism that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during the dwc:Event, and that was detectable using the given protocol (given in eco:protocolDescriptions and dwc:samplingProtocol), was reported."
     },
     {
@@ -313,8 +313,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-28",
       "rdfs:comment": "One or more dwc:Organisms outside the target organismal scopes (eco:targetDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:targetLifeStageScope) were detected and reported for this dwc:Event."
     },
     {
@@ -326,8 +326,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/verbatimTargetScope",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/verbatimTargetScope",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-28",
       "rdfs:comment": "The verbatim original description of the dwc:Event scope."
     },
     {
@@ -339,8 +339,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identifiedBy-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identifiedBy",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identifiedBy-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject."
     },
     {
@@ -352,8 +352,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "http://rs.tdwg.org/dwc/iri/identifiedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/iri/identifiedBy",
+      "dcterms:references": "http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for assigning the dwc:Taxon to the subject.",
       "constraints": {
         "required": false,
@@ -369,8 +369,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationReferences",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationReferences",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification."
     },
     {
@@ -382,8 +382,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/compilationTypes",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/compilationTypes-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/compilationTypes",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/compilationTypes-2025-07-10",
       "rdfs:comment": "A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both."
     },
     {
@@ -395,8 +395,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/compilationSourceTypes",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/compilationSourceTypes",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10",
       "rdfs:comment": "The types of data sources contributing to the compilation reported."
     },
     {
@@ -408,8 +408,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/inventoryTypes",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/inventoryTypes-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/inventoryTypes",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/inventoryTypes-2025-07-10",
       "rdfs:comment": "The types of search processes used to conduct the inventory."
     },
     {
@@ -421,8 +421,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/protocolNames",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/protocolNames-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolNames",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/protocolNames-2025-07-10",
       "rdfs:comment": "Categorical descriptive names for the methods used during the dwc:Event."
     },
     {
@@ -434,8 +434,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/protocolDescriptions",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolDescriptions",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-28",
       "rdfs:comment": "A detailed description of the methods used during the dwc:Event."
     },
     {
@@ -447,8 +447,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/protocolReferences",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolReferences",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28",
       "rdfs:comment": "The references to the methods used during the dwc:Event."
     },
     {
@@ -460,8 +460,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isAbundanceReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isAbundanceReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-28",
       "rdfs:comment": "The number of dwc:Organisms collected or observed was reported."
     },
     {
@@ -473,8 +473,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isAbundanceCapReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isAbundanceCapReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-28",
       "rdfs:comment": "A maximum number of dwc:Organisms was reported, as specified or restricted by the dwc:Protocol used."
     },
     {
@@ -486,8 +486,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/abundanceCap",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/abundanceCap",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-28",
       "rdfs:comment": "The reported maximum number of dwc:Organisms.",
       "constraints": {
         "minimum": 0
@@ -502,8 +502,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isVegetationCoverReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isVegetationCoverReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-28",
       "rdfs:comment": "A vegetation cover metric was reported."
     },
     {
@@ -515,8 +515,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2025-06-12",
       "rdfs:comment": "The total detected quantity for a dwc:Taxon (including subcategories thereof) in a dwc:Event is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon."
     },
     {
@@ -528,8 +528,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/hasVouchers",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/hasVouchers",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-28",
       "rdfs:comment": "Specimen vouchers were collected during the dwc:Event."
     },
     {
@@ -541,8 +541,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/voucherInstitutions",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/voucherInstitutions",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-28",
       "rdfs:comment": "A list (concatenated and separated) of the names or acronyms of the institutions where vouchers collected during the dwc:Event were deposited."
     },
     {
@@ -554,8 +554,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/hasMaterialSamples",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/hasMaterialSamples",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-28",
       "rdfs:comment": "Material samples were collected during the dwc:Event."
     },
     {
@@ -567,8 +567,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/materialSampleTypes",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/materialSampleTypes",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2025-07-10",
       "rdfs:comment": "A list (concatenated and separated) of material sample types collected during the dwc:Event."
     },
     {
@@ -580,8 +580,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeValue",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/sampleSizeValue-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/sampleSizeValue",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/sampleSizeValue-2023-06-28",
       "rdfs:comment": "A numeric value for a measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event."
     },
     {
@@ -593,8 +593,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/sampleSizeUnit",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/sampleSizeUnit-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/sampleSizeUnit",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/sampleSizeUnit-2023-06-28",
       "rdfs:comment": "The unit of measurement of the size (time duration, length, area, or volume) of a sample in a sampling dwc:Event."
     },
     {
@@ -606,8 +606,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/samplingPerformedBy",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/samplingPerformedBy",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-07-10",
       "rdfs:comment": "A person, group, or organization responsible for recording the dwc:Event."
     },
     {
@@ -619,8 +619,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/samplingPerformedByID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -636,8 +636,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/isSamplingEffortReported",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/isSamplingEffortReported",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-28",
       "rdfs:comment": "The sampling effort associated with the dwc:Event was reported."
     },
     {
@@ -649,8 +649,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/samplingEffortProtocol",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/samplingEffortProtocol",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10",
       "rdfs:comment": "A description of or reference (publication or URL) to the methods used to determine the sampling effort."
     },
     {
@@ -662,8 +662,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ecoiri",
-      "iri": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol",
-      "iri_version": "http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/iri/samplingEffortProtocol",
+      "dcterms:references": "http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10",
       "rdfs:comment": "A method or protocol used to determine the sampling effort, denoted by an IRI.",
       "constraints": {
         "required": false,
@@ -679,8 +679,8 @@
       "type": "number",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/samplingEffortValue",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/samplingEffortValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-28",
       "rdfs:comment": "The numeric value for the sampling effort expended during the dwc:Event.",
       "constraints": {
         "minimum": 0
@@ -695,8 +695,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/samplingEffortUnit",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2025-07-10",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/samplingEffortUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2025-07-10",
       "rdfs:comment": "The units associated with the eco:samplingEffortValue."
     },
     {
@@ -708,8 +708,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/informationWithheld",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28",
       "rdfs:comment": "Additional information that exists, but that has not been shared in the given record."
     },
     {
@@ -721,8 +721,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/dataGeneralizations",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28",
       "rdfs:comment": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request."
     },
     {
@@ -734,8 +734,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
       "rdfs:comment": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record."
     }
   ],

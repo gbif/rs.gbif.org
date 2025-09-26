@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media",
+  "url": "table-schemas/media.json",
   "name": "media",
   "title": "Media",
   "description": "A dcmi:MediaType or other media type with other entities as subject matter.",
   "comments": "An instance of digital textual media may be better represented as a dcterms:BibliographicResource.",
   "examples": "`dcmi:Sound`; `dcmi:StillImage`; `dcmi:MovingImage`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/Media",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Media",
+  "dcterms:references": "",
   "rdfs:comment": "A dcmi:MediaType or other media type with other entities as content.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/mediaID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/derivedFromMediaID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/isROIOf",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/isROIOf-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/isROIOf",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/isROIOf-2021-10-05",
       "rdfs:comment": "The media item within which a region of interest is located."
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/title",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title",
+      "dcterms:references": "",
       "rdfs:comment": "A name given to the resource."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/description",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/description",
+      "dcterms:references": "",
       "rdfs:comment": "An account of the resource."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/caption",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/caption-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/caption",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/caption-2021-10-05",
       "rdfs:comment": "As alternative or in addition to description, a caption is free-form text to be displayed together with (rather than instead of) a resource that is suitable for captions (especially images)."
     },
     {
@@ -119,8 +119,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subtypeLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subtypeLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subtypeLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subtypeLiteral-2023-09-05",
       "rdfs:comment": "A class, represented by a controlled value string, that provides for more specialization of the media item type than dc:type."
     },
     {
@@ -132,8 +132,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subtype",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subtype-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subtype",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subtype-2023-09-05",
       "rdfs:comment": "A class, represented by an IRI, that provides for more specialization of the media item type than dcterms:type."
     },
     {
@@ -145,8 +145,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/collectionCode",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionCode",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28",
       "rdfs:comment": "The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived."
     },
     {
@@ -158,8 +158,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/collectionID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12",
       "rdfs:comment": "An identifier for the collection or dataset from which the record was derived."
     },
     {
@@ -171,8 +171,8 @@
       "type": "string",
       "format": "default",
       "namespace": "xmp",
-      "iri": "http://ns.adobe.com/xap/1.0/CreateDate",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/CreateDate",
+      "dcterms:references": "",
       "rdfs:comment": "The date and time the resource was created. For a digital file, this need not match a file-system creation time. For a freshly created resource, it should be close to that time, modulo the time taken to write the file. Later file transfer, copying, and so on, can make the file-system time arbitrarily different."
     },
     {
@@ -184,8 +184,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/timeOfDay",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/timeOfDay-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/timeOfDay",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/timeOfDay-2020-01-27",
       "rdfs:comment": "Free text information beyond exact clock times."
     },
     {
@@ -197,8 +197,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/digitizationDate",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/digitizationDate-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/digitizationDate",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/digitizationDate-2020-01-27",
       "rdfs:comment": "Date the first digital version was created, if different from Original Date and Time found in the Temporal Coverage Vocabulary."
     },
     {
@@ -210,8 +210,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/captureDevice",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/captureDevice-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/captureDevice",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/captureDevice-2020-01-27",
       "rdfs:comment": "Free form text describing the device or devices used to create the resource."
     },
     {
@@ -223,8 +223,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/frameRate",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/frameRate-2022-02-23",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/frameRate",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/frameRate-2022-02-23",
       "rdfs:comment": "The decimal fraction representing the frequency (rate) at which consecutive images (frames) were captured in real time for a moving image, expressed as the number of frames per second."
     },
     {
@@ -236,8 +236,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/resourceCreationTechnique",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/resourceCreationTechnique-2020-10-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/resourceCreationTechnique",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/resourceCreationTechnique-2020-10-13",
       "rdfs:comment": "Information about technical aspects of the creation and digitization process of the resource. This includes modification steps (\"retouching\") after the initial resource capture."
     },
     {
@@ -249,8 +249,8 @@
       "type": "number",
       "format": "default",
       "namespace": "mo",
-      "iri": "http://purl.org/ontology/mo/sample_rate",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/mo/sample_rate",
+      "dcterms:references": "",
       "rdfs:comment": "Associates a digital signal to its sample rate. It might be easier to express it this way instead of defining a timeline map:-) Range is xsd:float."
     },
     {
@@ -262,8 +262,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/modified",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/modified",
+      "dcterms:references": "",
       "rdfs:comment": "Date on which the resource was changed."
     },
     {
@@ -275,8 +275,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/language",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/language",
+      "dcterms:references": "",
       "rdfs:comment": "A language of the resource."
     },
     {
@@ -288,8 +288,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/language",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/language",
+      "dcterms:references": "",
       "rdfs:comment": "A language of the resource."
     },
     {
@@ -301,8 +301,8 @@
       "type": "string",
       "format": "default",
       "namespace": "xmp",
-      "iri": "http://ns.adobe.com/xap/1.0/MetadataDate",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/MetadataDate",
+      "dcterms:references": "",
       "rdfs:comment": "The date and time that any metadata for this resource was last changed. It should be the same as or more recent than xmp:ModifyDate."
     },
     {
@@ -314,8 +314,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataLanguageLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataLanguageLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataLanguageLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataLanguageLiteral-2023-09-05",
       "rdfs:comment": "Language of description and other metadata (but not necessarily of the image itself) represented as an ISO639-2 three letter language code."
     },
     {
@@ -327,8 +327,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/metadataLanguage",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/metadataLanguage-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/metadataLanguage",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/metadataLanguage-2023-09-05",
       "rdfs:comment": "The URI of the language of description and other metadata (but not necessarily of the image itself) , from the ISO639-2 list of URIs for ISO 3-letter language codes, http://id.loc.gov/vocabulary/iso639-2."
     },
     {
@@ -340,8 +340,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/providerManagedID",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/providerManagedID-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/providerManagedID",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/providerManagedID-2020-01-27",
       "rdfs:comment": "A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) for the resource that is unique and meaningful primarily for the data provider."
     },
     {
@@ -353,8 +353,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/available",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/available",
+      "dcterms:references": "",
       "rdfs:comment": "Date (often a range) that the resource became or will become available."
     },
     {
@@ -366,8 +366,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/hasServiceAccessPoint",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/hasServiceAccessPoint-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hasServiceAccessPoint",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/hasServiceAccessPoint-2023-09-05",
       "rdfs:comment": "In a chosen serialization (RDF, XML Schema, etc.) the potentially multiple service access points (e.g., for different resolutions of an image) might be provided in a referenced or in a nested object. This property identifies one such access point. That is, each of potentially multiple values of hasServiceAccessPoint identifies a set of representation-dependent metadata using the properties defined under the Service Access Point Vocabulary section of the Audiovisual Core Term List document."
     },
     {
@@ -379,8 +379,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/serviceExpectation",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/serviceExpectation-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/serviceExpectation",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/serviceExpectation-2023-09-05",
       "rdfs:comment": "A term that describes what service expectations users may have of the ac:accessURI."
     },
     {
@@ -392,8 +392,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/accessURI",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/accessURI-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/accessURI",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/accessURI-2020-01-27",
       "rdfs:comment": "A URI that uniquely identifies a service that provides a representation of the underlying resource."
     },
     {
@@ -405,8 +405,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/format",
-      "iri_version": "http://dublincore.org/usage/terms/history/#format-007",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/format",
+      "dcterms:references": "http://dublincore.org/usage/terms/history/#format-007",
       "rdfs:comment": "The file format, physical medium, or dimensions of the resource."
     },
     {
@@ -418,8 +418,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/format",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/format",
+      "dcterms:references": "",
       "rdfs:comment": "The file format, physical medium, or dimensions of the resource."
     },
     {
@@ -431,8 +431,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/variantLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/variantLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variantLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/variantLiteral-2023-09-05",
       "rdfs:comment": "The category describing this Service Access Point variant, denoted by a controlled value string."
     },
     {
@@ -444,8 +444,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/variant",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/variant-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variant",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/variant-2023-09-05",
       "rdfs:comment": "The category describing this Service Access Point variant, denoted by an IRI."
     },
     {
@@ -457,8 +457,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/variantDescription",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/variantDescription-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/variantDescription",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/variantDescription-2020-01-27",
       "rdfs:comment": "Text that describes this Service Access Point variant"
     },
     {
@@ -470,8 +470,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "exif",
-      "iri": "http://ns.adobe.com/exif/1.0/PixelXDimension",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://ns.adobe.com/exif/1.0/PixelXDimension",
+      "dcterms:references": "",
       "rdfs:comment": "Information specific to compressed data. When a compressed file is recorded, the valid width of the meaningful image shall be recorded in this tag, whether or not there is padding data or a restart marker. This tag shall not exist in an uncompressed file.",
       "constraints": {
         "minimum": 1
@@ -486,8 +486,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "exif",
-      "iri": "http://ns.adobe.com/exif/1.0/PixelYDimension",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://ns.adobe.com/exif/1.0/PixelYDimension",
+      "dcterms:references": "",
       "rdfs:comment": "Information specific to compressed data. When a compressed file is recorded, the valid height of the meaningful image shall be recorded in this tag, whether or not there is padding data or a restart marker. This tag shall not exist in an uncompressed file.",
       "constraints": {
         "minimum": 1
@@ -502,8 +502,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/hashFunction",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/hashFunction-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hashFunction",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/hashFunction-2020-01-27",
       "rdfs:comment": "The cryptographic hash function used to compute the value given in the Hash Value."
     },
     {
@@ -515,8 +515,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/hashValue",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/hashValue-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/hashValue",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/hashValue-2020-01-27",
       "rdfs:comment": "The value computed by a hash function applied to the media that will be delivered at the access point."
     },
     {
@@ -528,8 +528,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/furtherInformationURL",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/furtherInformationURL-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/furtherInformationURL",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/furtherInformationURL-2020-01-27",
       "rdfs:comment": "The URL of a Web site that provides additional information about the version of the media resource that is provided by the Service Access Point."
     },
     {
@@ -541,8 +541,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/commenterLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/commenterLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/commenterLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/commenterLiteral-2023-09-05",
       "rdfs:comment": "The name of a person who created a comment, or the literal \"anonymous\" (= anonymously commented)."
     },
     {
@@ -554,8 +554,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/commenter",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/commenter-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/commenter",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/commenter-2023-09-05",
       "rdfs:comment": "A URI denoting a person who created a comment."
     },
     {
@@ -567,8 +567,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/comments",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/comments-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/comments",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/comments-2020-01-27",
       "rdfs:comment": "Any comment provided on the media resource, as free-form text."
     },
     {
@@ -580,8 +580,8 @@
       "type": "string",
       "format": "default",
       "namespace": "xmp",
-      "iri": "http://ns.adobe.com/xap/1.0/Rating",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://ns.adobe.com/xap/1.0/Rating",
+      "dcterms:references": "",
       "rdfs:comment": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates \"rejected\" and 0 indicates \"unrated\". If xmp:Rating is not present, a value of 0 should be assumed."
     },
     {
@@ -593,8 +593,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/reviewerLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/reviewerLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/reviewerLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/reviewerLiteral-2023-09-05",
       "rdfs:comment": "String providing the name of a reviewer."
     },
     {
@@ -606,8 +606,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/reviewer",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/reviewer-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/reviewer",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/reviewer-2023-09-05",
       "rdfs:comment": "URI for a reviewer."
     },
     {
@@ -619,8 +619,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/reviewerComments",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/reviewerComments-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/reviewerComments",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/reviewerComments-2020-01-27",
       "rdfs:comment": "Any comment provided by a reviewer with expertise in the subject, as free-form text."
     },
     {
@@ -632,8 +632,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/physicalSetting",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/physicalSetting-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/physicalSetting",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/physicalSetting-2020-01-27",
       "rdfs:comment": "The setting of the content represented in a dwc:Media resource, such as images, sounds, and movies if the provider deems them relevant. Constrained vocabulary of: `Natural` = Object in its natural setting of the object (e. g. living organisms in their natural environment); `Artificial` = Object in an artificial environment (e. g. living organisms in an artificial environment such as a zoo, garden, greenhouse, or laboratory); `Edited` = Human media editing of a natural setting or media acquisition with a separate media background such as a photographic backdrop."
     },
     {
@@ -645,8 +645,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/subjectCategory",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -658,8 +658,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/subjectCategoryIRI",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -671,8 +671,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectCategorySource",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subjectCategorySource-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectCategorySource",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectCategorySource-2020-01-27",
       "rdfs:comment": "Any vocabulary or formal classification from which terms in the Subject Category have been drawn."
     },
     {
@@ -684,8 +684,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/tag",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/tag-2020-01-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/tag",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/tag-2020-01-27",
       "rdfs:comment": "General keywords or tags."
     },
     {
@@ -697,8 +697,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectPartLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subjectPartLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPartLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPartLiteral-2023-09-05",
       "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by a controlled value string."
     },
     {
@@ -710,8 +710,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectPart",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subjectPart-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPart-2023-09-05",
       "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by an IRI."
     },
     {
@@ -723,8 +723,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectOrientationLiteral",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subjectOrientationLiteral-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientationLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectOrientationLiteral-2023-09-05",
       "rdfs:comment": "Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device, denoted by a controlled value string."
     },
     {
@@ -736,8 +736,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/subjectOrientation",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/subjectOrientation-2023-09-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientation",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectOrientation-2023-09-05",
       "rdfs:comment": "Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device, denoted by a controlled value string."
     },
     {
@@ -749,8 +749,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/startTime",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/startTime-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/startTime",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/startTime-2021-10-05",
       "rdfs:comment": "The beginning of a temporal region, specified as an absolute offset relative to the beginning of the media item (this corresponds to Normal Play Time RFC 2326), specified as seconds, with an optional fractional part to indicate milliseconds or finer.",
       "constraints": {
         "minimum": 0
@@ -765,8 +765,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/endTime",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/endTime-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/endTime",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/endTime-2021-10-05",
       "rdfs:comment": "The end of a temporal region, specified as an absolute offset relative to the beginning of the media item (this corresponds to Normal Play Time RFC 2326), specified as seconds, with an optional fractional part to indicate milliseconds or finer.",
       "constraints": {
         "minimum": 0
@@ -781,8 +781,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/startTimestamp",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/startTimestamp-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/startTimestamp",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/startTimestamp-2021-10-05",
       "rdfs:comment": "The beginning of a temporal region, specified as real-world clock time ISO 8601 timestamps, using UTC timezone, with an optional fractional part to indicate milliseconds or finer. There is no limit on the number of decimal places for the decimal fraction."
     },
     {
@@ -794,8 +794,8 @@
       "type": "string",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/endTimestamp",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/endTimestamp-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/endTimestamp",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/endTimestamp-2021-10-05",
       "rdfs:comment": "The end of a temporal region, specified as real-world clock time ISO 8601 timestamps, using UTC timezone, with an optional fractional part to indicate milliseconds or finer. There is no limit on the number of decimal places for the decimal fraction."
     },
     {
@@ -807,8 +807,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/mediaDuration",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/mediaDuration-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/mediaDuration",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/mediaDuration-2021-10-05",
       "rdfs:comment": "The playback duration of an audio or video file in seconds.",
       "constraints": {
         "minimum": 0
@@ -823,8 +823,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/mediaSpeed",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/mediaSpeed-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/mediaSpeed",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/mediaSpeed-2021-10-05",
       "rdfs:comment": "The decimal fraction representing the natural speed over the encoded speed."
     },
     {
@@ -836,8 +836,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/freqHigh",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/freqHigh-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/freqHigh",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/freqHigh-2021-10-05",
       "rdfs:comment": "The highest frequency of the phenomena reflected in the multimedia item or Region of Interest."
     },
     {
@@ -849,8 +849,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/freqLow",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/freqLow-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/freqLow",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/freqLow-2021-10-05",
       "rdfs:comment": "The lowest frequency of the phenomena reflected in the multimedia item or Region of Interest."
     },
     {
@@ -862,8 +862,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/xFrac",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/xFrac-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/xFrac",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/xFrac-2021-10-05",
       "rdfs:comment": "The horizontal position of a reference point, measured from the left side of the media item and expressed as a decimal fraction of the width of the media item.",
       "constraints": {
         "minimum": 0,
@@ -879,8 +879,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/yFrac",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/yFrac-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/yFrac",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/yFrac-2021-10-05",
       "rdfs:comment": "The vertical position of a reference point, measured from the top of the media item and expressed as a decimal fraction of the height of the media item.",
       "constraints": {
         "minimum": 0,
@@ -896,8 +896,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/heightFrac",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/heightFrac-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/heightFrac",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/heightFrac-2021-10-05",
       "rdfs:comment": "The height of the bounding rectangle, expressed as a decimal fraction of the height of the media item.",
       "constraints": {
         "minimum": 0,
@@ -913,8 +913,8 @@
       "type": "number",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/widthFrac",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/widthFrac-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/widthFrac",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/widthFrac-2021-10-05",
       "rdfs:comment": "The width of the bounding rectangle, expressed as a decimal fraction of the width of the media item.",
       "constraints": {
         "minimum": 0,
@@ -930,8 +930,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "ac",
-      "iri": "http://rs.tdwg.org/ac/terms/radius",
-      "iri_version": "http://rs.tdwg.org/ac/terms/version/radius-2021-10-05",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/radius",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/radius-2021-10-05",
       "rdfs:comment": "The radius of a bounding circle or arc, expressed as a fraction of the width of the media item.",
       "constraints": {
         "minimum": 0

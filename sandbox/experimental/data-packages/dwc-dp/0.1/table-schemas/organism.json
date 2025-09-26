@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism",
+  "url": "table-schemas/organism.json",
   "name": "organism",
   "title": "Organism",
   "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
   "comments": "Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.",
   "examples": "`a specific bird`; `a specific wolf pack`; `a specific instance of a bacterial culture`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/Organism",
-  "iri_version": "http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Organism",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18",
   "rdfs:comment": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/organismID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Organism instance (as opposed to a particular digital record of the dwc:Organism). May be a globally unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/organismScope",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismScope-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismScope",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismScope-2023-06-28",
       "rdfs:comment": "A description of the kind of dwc:Organism instance. Can be used to indicate whether the dwc:Organism instance represents a discrete organism or if it represents a particular type of aggregation."
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/organismName",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismName-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismName",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismName-2023-06-28",
       "rdfs:comment": "A textual name or label assigned to a dwc:Organism instance."
     },
     {
@@ -63,8 +63,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/causeOfDeath",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/causeOfDeath-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/causeOfDeath",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/causeOfDeath-2025-06-12",
       "rdfs:comment": "An indication of the known or suspected cause of death of a dwc:Organism."
     },
     {
@@ -76,8 +76,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/associatedOrganisms",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/associatedOrganisms-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/associatedOrganisms",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/associatedOrganisms-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of identifiers of other dwc:Organisms and the associations of this dwc:Organism to each of them."
     },
     {
@@ -89,8 +89,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/organismRemarks",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismRemarks-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismRemarks-2023-06-28",
       "rdfs:comment": "Comments or notes about the dwc:Organism instance."
     }
   ],

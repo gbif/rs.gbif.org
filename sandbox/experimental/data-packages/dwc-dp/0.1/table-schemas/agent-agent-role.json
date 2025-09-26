@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/agent-agent-role",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/agent-agent-role.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent-agent-role",
+  "url": "table-schemas/agent-agent-role.json",
   "name": "agent-agent-role",
   "title": "Agent Agent Role",
   "description": "A role filled by a dcterms:Agent with respect to another dcterms:Agent.",
   "comments": "",
   "examples": "`an instance of a dcterms:Agent that is a person is the director of another instance of a dcterms:Agent that is an organization`; `an instance of a dcterms:Agent that is a person is a member of another instance of a dcterms:Agent that is a group`; `an instance of a dcterms:Agent that is a person is the author of another instance of a dcterms:Agent that is software`",
   "namespace": "",
-  "iri": "",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//agent-agent-role",
+  "dcterms:references": "",
   "rdfs:comment": "",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/relatedAgentID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
       "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/agentRoleIRI",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -93,8 +93,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentRoleOrder",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "minimum": 1
@@ -109,8 +109,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
       "rdfs:comment": "The date-time on which the relationship between the two resources was established."
     }
   ],

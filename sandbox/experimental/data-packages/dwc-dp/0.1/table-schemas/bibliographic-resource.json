@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/bibliographic-resource",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/bibliographic-resource.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/bibliographic-resource",
+  "url": "table-schemas/bibliographic-resource.json",
   "name": "bibliographic-resource",
   "title": "Bibliographic Resource",
   "description": "A book, article, or other documentary resource.",
   "comments": "",
   "examples": "",
   "namespace": "dcterms",
-  "iri": "http://purl.org/dc/terms/BibliographicResource",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://purl.org/dc/terms/BibliographicResource",
+  "dcterms:references": "",
   "rdfs:comment": "A book, article, or other documentary resource.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/parentReferenceID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/bibliographicCitation",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/bibliographicCitation",
+      "dcterms:references": "",
       "rdfs:comment": "A bibliographic reference for the resource."
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/title",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/title",
+      "dcterms:references": "",
       "rdfs:comment": "A name given to the resource."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/creator",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/creator",
+      "dcterms:references": "",
       "rdfs:comment": "An entity primarily responsible for making the resource."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/creator",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/creator",
+      "dcterms:references": "",
       "rdfs:comment": "An entity primarily responsible for making the resource.",
       "constraints": {
         "required": false,
@@ -123,8 +123,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/editor",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/editor",
+      "dcterms:references": "",
       "rdfs:comment": "A person having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication."
     },
     {
@@ -136,8 +136,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/editor",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/editor",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -153,8 +153,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/publisher",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/publisher",
+      "dcterms:references": "",
       "rdfs:comment": "An entity responsible for making the resource available."
     },
     {
@@ -166,8 +166,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/publisher",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/publisher",
+      "dcterms:references": "",
       "rdfs:comment": "An entity responsible for making the resource available.",
       "constraints": {
         "required": false,
@@ -183,8 +183,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/volume",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/volume",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -196,8 +196,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/issue",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/issue",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -209,8 +209,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/edition",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/edition",
+      "dcterms:references": "",
       "rdfs:comment": "The name defining a special edition of a document."
     },
     {
@@ -222,8 +222,8 @@
       "type": "string",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/pages",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/pages",
+      "dcterms:references": "",
       "rdfs:comment": "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."
     },
     {
@@ -235,8 +235,8 @@
       "type": "string",
       "format": "default",
       "namespace": "pav",
-      "iri": "http://purl.org/pav/version",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/pav/version",
+      "dcterms:references": "",
       "rdfs:comment": "The version number of a resource. This is a freetext string, typical values are \"1.5\" or \"21\". The URI identifying the previous version can be provided using prov:previousVersion."
     },
     {
@@ -248,8 +248,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/issued",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/issued",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -261,8 +261,8 @@
       "type": "string",
       "format": "default",
       "namespace": "pav",
-      "iri": "http://purl.org/pav/sourceAccessedOn",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/pav/sourceAccessedOn",
+      "dcterms:references": "",
       "rdfs:comment": "The resource is related to a source which was originally accessed or consulted on the given date as part of creating or authoring the resource. The source(s) should be specified using pav:sourceAccessedAt."
     },
     {
@@ -274,8 +274,8 @@
       "type": "boolean",
       "format": "default",
       "namespace": "bibo",
-      "iri": "http://purl.org/ontology/bibo/status",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/ontology/bibo/status",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -287,8 +287,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceRemarks",
+      "dcterms:references": "",
       "rdfs:comment": ""
     }
   ],

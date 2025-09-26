@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/nucleotide-sequence",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/nucleotide-sequence.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-sequence",
+  "url": "table-schemas/nucleotide-sequence.json",
   "name": "nucleotide-sequence",
   "title": "Nucleotide Sequence",
   "description": "A digital representation of a nucleotide sequence.",
   "comments": "",
   "examples": "",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/NucleotideSequence",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/NucleotideSequence",
+  "dcterms:references": "",
   "rdfs:comment": "A digital representation of a nucleotide sequence.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/nucleotideSequenceID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/sequence",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/nucleotideSequenceRemarks",
+      "dcterms:references": "",
       "rdfs:comment": ""
     }
   ],

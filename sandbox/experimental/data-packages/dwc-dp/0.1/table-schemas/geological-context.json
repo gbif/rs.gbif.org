@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/geological-context",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/geological-context.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/geological-context",
+  "url": "table-schemas/geological-context.json",
   "name": "geological-context",
   "title": "Geological Context",
   "description": "A set of geological designations, such as stratigraphy, that qualifies a dcterms:Location.",
   "comments": "",
   "examples": "`a particular lithostratigraphic layer`; `a specific chronostratigraphic unit`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/GeologicalContext",
-  "iri_version": "http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2023-09-18",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/GeologicalContext",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2023-09-18",
   "rdfs:comment": "Geological information, such as stratigraphy, that qualifies a region or place.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/geologicalContextID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/geologicalContextID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/geologicalContextID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/geologicalContextID-2023-06-28",
       "rdfs:comment": "An identifier for the set of information associated with a dwc:GeologicalContext (the location within a geological context, such as stratigraphy). May be a globally unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEonOrLowestEonothem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/earliestEonOrLowestEonothem-2023-09-13",
       "rdfs:comment": "The full name of the earliest possible geochronologic eon or lowest chronostratigraphic eonothem or the informal name (Precambrian) attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEonOrHighestEonothem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/latestEonOrHighestEonothem-2025-06-12",
       "rdfs:comment": "The full name of the latest possible geochronologic eon or highest chronostratigraphic eonothem or the informal name (Precambrian) attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -63,8 +63,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEraOrLowestErathem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/earliestEraOrLowestErathem-2023-09-13",
       "rdfs:comment": "The full name of the earliest possible geochronologic era or lowest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -76,8 +76,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEraOrHighestErathem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/latestEraOrHighestErathem-2023-09-13",
       "rdfs:comment": "The full name of the latest possible geochronologic era or highest chronostratigraphic erathem attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -89,8 +89,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestPeriodOrLowestSystem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/earliestPeriodOrLowestSystem-2023-09-13",
       "rdfs:comment": "The full name of the earliest possible geochronologic period or lowest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -102,8 +102,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestPeriodOrHighestSystem",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/latestPeriodOrHighestSystem-2023-09-13",
       "rdfs:comment": "The full name of the latest possible geochronologic period or highest chronostratigraphic system attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -115,8 +115,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestEpochOrLowestSeries",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/earliestEpochOrLowestSeries-2023-09-13",
       "rdfs:comment": "The full name of the earliest possible geochronologic epoch or lowest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -128,8 +128,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestEpochOrHighestSeries",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/latestEpochOrHighestSeries-2023-09-13",
       "rdfs:comment": "The full name of the latest possible geochronologic epoch or highest chronostratigraphic series attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -141,8 +141,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/earliestAgeOrLowestStage",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/earliestAgeOrLowestStage-2023-09-13",
       "rdfs:comment": "The full name of the earliest possible geochronologic age or lowest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -154,8 +154,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/latestAgeOrHighestStage",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/latestAgeOrHighestStage-2023-09-13",
       "rdfs:comment": "The full name of the latest possible geochronologic age or highest chronostratigraphic stage attributable to the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -167,8 +167,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/lowestBiostratigraphicZone-2023-09-13",
       "rdfs:comment": "The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -180,8 +180,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/highestBiostratigraphicZone-2023-09-13",
       "rdfs:comment": "The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected."
     },
     {
@@ -193,8 +193,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/lithostratigraphicTerms-2025-06-12",
       "rdfs:comment": "The combination of all lithostratigraphic names for the rock from which the dwc:MaterialEntity was collected."
     },
     {
@@ -206,8 +206,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/group",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/group-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/group",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/group-2023-09-13",
       "rdfs:comment": "The full name of the lithostratigraphic group from which the dwc:MaterialEntity was collected."
     },
     {
@@ -219,8 +219,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/formation",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/formation-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/formation",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/formation-2023-09-13",
       "rdfs:comment": "The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected."
     },
     {
@@ -232,8 +232,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/member",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/member-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/member",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/member-2023-09-13",
       "rdfs:comment": "The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected."
     },
     {
@@ -245,8 +245,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/bed",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/bed-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/bed",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/bed-2023-09-13",
       "rdfs:comment": "The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected."
     }
   ],

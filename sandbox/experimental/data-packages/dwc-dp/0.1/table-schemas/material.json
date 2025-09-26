@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/material",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/material.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material",
+  "url": "table-schemas/material.json",
   "name": "material",
   "title": "Material",
   "description": "An entity that can be identified, exist for some period of time, and consist in whole or in part of physical matter while it exists.",
   "comments": "The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term.",
   "examples": "`the entire contents of a trawl`; `a subset of the contents of a trawl`; `the body of a fish`; `the stomach contents of a fish`; `a rock containing fossils`; `a fossil within a rock`; `an herbarium sheet with its attached plant specimen`; `a flower on a plant specimen`; `a pollen grain`; `a specific water sample`; `an isolated molecule of DNA`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/MaterialEntity",
-  "iri_version": "http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/MaterialEntity",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13",
   "rdfs:comment": "An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
       "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/digitalSpecimenID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/digitalSpecimenID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/digitalSpecimenID-2025-06-12",
       "rdfs:comment": "An identifier for a particular instance of a Digital Specimen."
     },
     {
@@ -50,8 +50,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
       "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/materialCategory",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/discipline",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/discipline-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/discipline",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/discipline-2025-06-12",
       "rdfs:comment": "The primary branch or branches of knowledge represented by the record."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityType",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityType-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityType",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityType-2025-06-12",
       "rdfs:comment": "A category that best matches the nature of a dwc:MaterialEntity."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/institutionCode",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/institutionCode-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/institutionCode",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/institutionCode-2023-06-28",
       "rdfs:comment": "A name (or acronym) an organization."
     },
     {
@@ -119,8 +119,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/institutionID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/institutionID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/institutionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/institutionID-2025-06-12",
       "rdfs:comment": "An identifier for the institution having custody of the object(s) or information referred to in the record.",
       "constraints": {
         "required": false,
@@ -136,8 +136,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/ownerInstitutionCode",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/ownerInstitutionCode",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2023-06-28",
       "rdfs:comment": "The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record."
     },
     {
@@ -149,8 +149,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/ownerInstitutionID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": false,
@@ -166,8 +166,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/collectionCode",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionCode",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/collectionCode-2023-06-28",
       "rdfs:comment": "The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived."
     },
     {
@@ -179,8 +179,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/collectionID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/collectionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/collectionID-2025-06-12",
       "rdfs:comment": "The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived."
     },
     {
@@ -192,8 +192,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/catalogNumber",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/catalogNumber-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/catalogNumber",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/catalogNumber-2023-06-28",
       "rdfs:comment": "An identifier (preferably unique) for the record within the data set or collection."
     },
     {
@@ -205,8 +205,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/otherCatalogNumbers",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/otherCatalogNumbers",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/otherCatalogNumbers-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of previous or alternate fully qualified catalog numbers or other human-used identifiers for the same dwc:Occurrence, whether in the current or any other data set or collection."
     },
     {
@@ -218,8 +218,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/recordedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/recordedBy-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/recordedBy",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/recordedBy-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original dwc:Occurrence. The primary collector or observer, especially one who applies a personal identifier (dwc:recordNumber), should be listed first."
     },
     {
@@ -230,10 +230,10 @@
       "examples": "`https://orcid.org/0000-0002-1825-0097`; `https://ror.org/00mh9zx15`",
       "type": "string",
       "format": "default",
-      "namespace": "dwciri",
-      "iri": "http://rs.tdwg.org/dwc/iri/recordedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/iri/version/recordedBy-2025-07-10",
-      "rdfs:comment": "A person, group, or organization responsible for recording the original dwc:Occurrence.",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/recordedByID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/recordedByID-2023-06-28",
+      "rdfs:comment": "A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for recording the original dwc:Occurrence.",
       "constraints": {
         "required": false,
         "unique": false
@@ -248,8 +248,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/objectQuantity",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -261,8 +261,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/objectQuantityType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -274,8 +274,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/recordNumber",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/recordNumber-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/recordNumber",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/recordNumber-2023-06-28",
       "rdfs:comment": "An identifier given to the dwc:Occurrence at the time it was recorded. Often serves as a link between field notes and a dwc:Occurrence record, such as a specimen collector's number."
     },
     {
@@ -287,8 +287,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/preparations",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/preparations-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/preparations",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/preparations-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of preparations and preservation methods for a dwc:MaterialEntity."
     },
     {
@@ -300,21 +300,21 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/disposition",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/disposition",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/disposition-2023-09-13",
       "rdfs:comment": "The current state of a dwc:MaterialEntity with respect to a collection."
     },
     {
       "name": "verbatimLabel",
       "title": "Verbatim Label",
       "description": "A verbatim original representation of the written information affixed or related to a dwc:MaterialEntity.",
-      "comments": "The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks. Examples can be found at https://dwc.tdwg.org/examples/verbatimLabel.",
+      "comments": "The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:materialEntityRemarks. Examples can be found at https://dwc.tdwg.org/examples/verbatimLabel.",
       "examples": "",
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/verbatimLabel",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/verbatimLabel",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/verbatimLabel-2023-09-13",
       "rdfs:comment": "The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment “verbatimLabel derived from human transcription” in dwc:occurrenceRemarks."
     },
     {
@@ -326,8 +326,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/associatedSequences",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/associatedSequences",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/associatedSequences-2023-09-13",
       "rdfs:comment": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity."
     },
     {
@@ -339,8 +339,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/associatedReferences",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/associatedReferences-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/associatedReferences",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/associatedReferences-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the dwc:Occurrence."
     },
     {
@@ -352,8 +352,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/informationWithheld",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/informationWithheld",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28",
       "rdfs:comment": "Additional information that exists, but that has not been shared in the given record."
     },
     {
@@ -365,8 +365,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/dataGeneralizations",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/dataGeneralizations",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28",
       "rdfs:comment": "Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request."
     },
     {
@@ -378,8 +378,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityRemarks",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityRemarks-2023-09-13",
       "rdfs:comment": "Comments or notes about the dwc:MaterialEntity instance."
     },
     {
@@ -391,8 +391,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/occurrenceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.",
       "constraints": {
         "required": false,
@@ -408,8 +408,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
       "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": false,
@@ -425,8 +425,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/eventID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
       "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": false,
@@ -436,14 +436,14 @@
     {
       "name": "derivationType",
       "title": "Derivation Type",
-      "description": "A category that best matches the nature of the derivation of a dwc:MaterialEntity from a dwc:MaterialEntity pointed to by dwc:derivedFromMaterialEntityID.",
-      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "description": "A category that best matches the nature of the derivation of one dwc:MaterialEntity from another dwc:MaterialEntity.",
+      "comments": "Recommended best practice is to use a controlled vocabulary. Not expected to be used in Simple Darwin Core",
       "examples": "`sampledFrom`; `included`",
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/derivationType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -455,8 +455,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/materialEntityID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
       "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
       "constraints": {
         "required": false,
@@ -472,8 +472,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/verbatimIdentification",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/verbatimIdentification-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/verbatimIdentification",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/verbatimIdentification-2023-06-28",
       "rdfs:comment": "A string representing the taxonomic identification as it appeared in the original record."
     },
     {
@@ -485,8 +485,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/typeStatus",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/typeStatus-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/typeStatus",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/typeStatus-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject."
     },
     {
@@ -498,21 +498,21 @@
       "type": "string",
       "format": "default",
       "namespace": "gbif",
-      "iri": "http://rs.gbif.org/terms/1.0/typeDesignationType",
-      "iri_version": "https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml",
+      "dcterms:isVersionOf": "http://rs.gbif.org/terms/1.0/typeDesignationType",
+      "dcterms:references": "https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml",
       "rdfs:comment": "The reason why this specimen or name is designated as a type."
     },
     {
       "name": "typifiedName",
       "title": "Typified Name",
       "description": "A scientific name for which a specimen or other name is the type.",
-      "comments": "From https://rs.gbif.org/extension/gbif/1.0/typesandspecimen.xml.",
+      "comments": "Recommended best practice is also to indicate the dwc:typeStatus of the specimen.",
       "examples": "`Polysiphonia amphibolis Womersley`",
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/version/typifiedName",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/typifiedName-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/version/typifiedName",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/typifiedName-2025-06-12",
       "rdfs:comment": "A scientific name that is based on a type specimen."
     },
     {
@@ -524,8 +524,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identifiedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identifiedBy-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identifiedBy",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identifiedBy-2023-06-28",
       "rdfs:comment": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject."
     },
     {
@@ -537,8 +537,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwciri",
-      "iri": "http://rs.tdwg.org/dwc/iri/identifiedBy",
-      "iri_version": "http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/iri/identifiedBy",
+      "dcterms:references": "http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12",
       "rdfs:comment": "A person, group, or organization who assigned the dwc:Taxon to the subject.",
       "constraints": {
         "required": false,
@@ -554,8 +554,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/dateIdentified",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/dateIdentified-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/dateIdentified",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/dateIdentified-2025-06-12",
       "rdfs:comment": "The date on which the subject was determined as representing the dwc:Taxon."
     },
     {
@@ -567,8 +567,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationReferences",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationReferences",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identificationReferences-2025-06-12",
       "rdfs:comment": "A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the dwc:Identification."
     },
     {
@@ -580,8 +580,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus",
-      "iri_version": "http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2015-03-27",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationVerificationStatus",
+      "dcterms:references": "http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2015-03-27",
       "rdfs:comment": "A categorical indicator of the extent to which the taxonomic identification has been verified to be correct."
     },
     {
@@ -593,8 +593,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationRemarks",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/identificationRemarks-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identificationRemarks-2023-06-28",
       "rdfs:comment": "Comments or notes about the dwc:Identification."
     },
     {
@@ -606,8 +606,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/taxonID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/taxonID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/taxonID-2023-06-28",
       "rdfs:comment": "An identifier for the set of dwc:Taxon information. May be a global unique identifier or an identifier specific to the data set."
     },
     {
@@ -619,8 +619,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/scientificNameID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/scientificNameID-2017-10-06",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificNameID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/scientificNameID-2017-10-06",
       "rdfs:comment": "An identifier for the nomenclatural (not taxonomic) details of a scientific name."
     },
     {
@@ -632,8 +632,8 @@
       "type": "string",
       "format": "default",
       "namespace": "minext",
-      "iri": "http://rs.tdwg.org/mineralogy/terms/classificationCode",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/mineralogy/terms/classificationCode",
+      "dcterms:references": "",
       "rdfs:comment": "Alphanumeric pattern that adheres to a defined encoding scheme that identifies a particular term in a classification scheme."
     },
     {
@@ -645,8 +645,8 @@
       "type": "string",
       "format": "default",
       "namespace": "minext",
-      "iri": "http://rs.tdwg.org/mineralogy/terms/name",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/mineralogy/terms/name",
+      "dcterms:references": "",
       "rdfs:comment": "A human-readable lexical label assigned to a mineral includes both informal (e.g., variety, synonym) and formal (classification) forms."
     },
     {
@@ -658,8 +658,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/scientificName",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/scientificName-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificName",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/scientificName-2023-06-28",
       "rdfs:comment": "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationQualifier term."
     },
     {
@@ -671,8 +671,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/scientificNameAuthorship-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/scientificNameAuthorship-2023-06-28",
       "rdfs:comment": "The authorship information for the dwc:scientificName formatted according to the conventions of the applicable dwc:nomenclaturalCode."
     },
     {
@@ -684,8 +684,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/vernacularName",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/vernacularName-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/vernacularName",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/vernacularName-2023-06-28",
       "rdfs:comment": "A common or vernacular name."
     },
     {
@@ -697,8 +697,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/taxonRank",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/taxonRank-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/taxonRank",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/taxonRank-2023-06-28",
       "rdfs:comment": "The taxonomic rank of the most specific name in the dwc:scientificName."
     },
     {
@@ -710,8 +710,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -723,8 +723,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/feedbackURL",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
       "rdfs:comment": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record."
     }
   ],

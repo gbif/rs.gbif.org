@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/media-usage-policy",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/media-usage-policy.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-usage-policy",
+  "url": "table-schemas/media-usage-policy.json",
   "name": "media-usage-policy",
   "title": "Media Usage Policy",
   "description": "Rights, usage, and attribution statements applicable to dwc:Media entity.",
   "comments": "",
   "examples": "",
   "namespace": "",
-  "iri": "",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//media-usage-policy",
+  "dcterms:references": "",
   "rdfs:comment": "",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/usagePolicyID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/mediaID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,

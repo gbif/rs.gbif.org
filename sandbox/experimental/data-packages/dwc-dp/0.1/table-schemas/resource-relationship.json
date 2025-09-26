@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/resource-relationship",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/resource-relationship.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/resource-relationship",
+  "url": "table-schemas/resource-relationship.json",
   "name": "resource-relationship",
   "title": "Resource Relationship",
   "description": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.",
   "comments": "Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of dwc:Occurrence, dwc:Organism, dwc:MaterialEntity, dwc:Event, dcterms:Location, dwc:GeologicalContext, dwc:Identification, or dwc:Taxon.",
   "examples": "`an instance of a dwc:Organism is the mother of another instance of a dwc:Organism`; `a uniquely identified dwc:Occurrence represents the same dwc:Occurrence as another uniquely identified dwc:Occurrence`; `a dwc:MaterialEntity is a subsample of another dwc:MaterialEntity`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
-  "iri_version": "http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-09-13",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/ResourceRelationship",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2023-09-13",
   "rdfs:comment": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/resourceRelationshipID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/resourceRelationshipID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2023-06-28",
       "rdfs:comment": "An identifier for an instance of relationship between one resource (the subject) and another (dwc:relatedResource, the object).",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/resourceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/resourceID-2018-09-06",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/resourceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/resourceID-2018-09-06",
       "rdfs:comment": "An identifier for the resource that is the subject of the relationship.",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
       "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     },
     {
@@ -106,8 +106,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResourceID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResourceID-2023-06-28",
       "rdfs:comment": "An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID."
     },
     {
@@ -119,8 +119,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -132,8 +132,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relatedResourceID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2018-09-06",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relatedResourceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relatedResourceID-2018-09-06",
       "rdfs:comment": "An identifier for a related resource (the object, rather than the subject of the relationship)."
     },
     {
@@ -145,8 +145,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/identifier",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "dcterms:references": "",
       "rdfs:comment": "An unambiguous reference to the resource within a given context."
     },
     {
@@ -158,8 +158,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -171,8 +171,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -184,8 +184,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -197,8 +197,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -210,8 +210,8 @@
       "type": "integer",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/relationshipOrder",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "minimum": 1
@@ -226,8 +226,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipAccordingTo",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipAccordingTo-2018-09-06",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipAccordingTo",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipAccordingTo-2018-09-06",
       "rdfs:comment": "The source (person, organization, publication, reference) establishing the relationship between the two resources."
     },
     {
@@ -239,8 +239,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/relationshipAccordingToID",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -252,8 +252,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
       "rdfs:comment": "The date-time on which the relationship between the two resources was established."
     },
     {
@@ -265,8 +265,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/relationshipRemarks",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/relationshipRemarks-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipRemarks-2023-06-28",
       "rdfs:comment": "Comments or notes about the relationship between the two resources."
     }
   ],

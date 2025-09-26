@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/protocol",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/protocol.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol",
+  "url": "table-schemas/protocol.json",
   "name": "protocol",
   "title": "Protocol",
   "description": "A method used during an action.",
   "comments": "",
   "examples": "`a pitfall trap method for sampling ground-dwelling arthropods`; `a point-radius georeferencing method`; `a linear regression model to estimate body mass from skeletal measurements`; `a Bayesian phylogenetic inference method`",
   "namespace": "dwc",
-  "iri": "http://rs.tdwg.org/dwc/terms/Protocol",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Protocol",
+  "dcterms:references": "",
   "rdfs:comment": "A method used during an action.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolID",
+      "dcterms:references": "",
       "rdfs:comment": "",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolType",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -49,10 +49,10 @@
       "examples": "",
       "type": "string",
       "format": "default",
-      "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
-      "rdfs:comment": ""
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title",
+      "dcterms:references": "",
+      "rdfs:comment": "A name given to the resource."
     },
     {
       "name": "protocolDescription",
@@ -63,8 +63,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolDescription",
+      "dcterms:references": "",
       "rdfs:comment": ""
     },
     {
@@ -76,8 +76,8 @@
       "type": "string",
       "format": "default",
       "namespace": "eco",
-      "iri": "http://rs.tdwg.org/eco/terms/protocolReferences",
-      "iri_version": "http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolReferences",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28",
       "rdfs:comment": "The references to the methods used during the dwc:Event."
     },
     {
@@ -89,8 +89,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolRemarks",
+      "dcterms:references": "",
       "rdfs:comment": ""
     }
   ],

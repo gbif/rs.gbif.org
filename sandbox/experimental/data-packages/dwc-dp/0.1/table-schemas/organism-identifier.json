@@ -1,14 +1,14 @@
 {
-  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/table-schemas/organism-identifier",
-  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-identifier.json",
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-identifier",
+  "url": "table-schemas/organism-identifier.json",
   "name": "organism-identifier",
   "title": "Organism Identifier",
   "description": "An adms:Identifier for a dwc:Organism.",
   "comments": "An important point to note is that properties of the adms:Identifier class are properties of the Identifier, not the resource that it identifies or the agency that issued it.",
   "examples": "",
   "namespace": "adms",
-  "iri": "http://www.w3.org/ns/adms#Identifier",
-  "iri_version": "",
+  "dcterms:isVersionOf": "http://www.w3.org/ns/adms#Identifier",
+  "dcterms:references": "",
   "rdfs:comment": "In RDF this is expressed using the adms:Identifier class with the following properties: 1) the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); 2) use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal.",
   "fields": [
     {
@@ -20,8 +20,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/organismID",
-      "iri_version": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
       "rdfs:comment": "An identifier for the dwc:Organism instance (as opposed to a particular digital record of the dwc:Organism). May be a globally unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
@@ -37,8 +37,8 @@
       "type": "string",
       "format": "default",
       "namespace": "skos",
-      "iri": "http://www.w3.org/2004/02/skos/core#notation",
-      "iri_version": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notation",
+      "dcterms:isVersionOf": "http://www.w3.org/2004/02/skos/core#notation",
+      "dcterms:references": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notation",
       "rdfs:comment": "A notation is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme.",
       "constraints": {
         "required": true,
@@ -54,8 +54,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -67,8 +67,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/type",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type",
+      "dcterms:references": "",
       "rdfs:comment": "The nature or genre of the resource."
     },
     {
@@ -80,8 +80,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dc",
-      "iri": "http://purl.org/dc/elements/1.1/source",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
       "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
@@ -93,8 +93,8 @@
       "type": "string",
       "format": "default",
       "namespace": "dcterms",
-      "iri": "http://purl.org/dc/terms/language",
-      "iri_version": "",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/language",
+      "dcterms:references": "",
       "rdfs:comment": "A language of the resource."
     }
   ],
