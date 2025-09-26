@@ -9,3 +9,5 @@ sandbox/vocabularies.json
 vocabularies.html
 vocabularies.json
 /.idea/
+/venv/
+__pycache__
