@@ -337,7 +337,7 @@
     </property>
     <property group='MaterialEntity' name='associatedSequences' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/associatedSequences' label='Associated Sequences' dc:relation='https://dwc.tdwg.org/terms/#dwc:associatedSequences' dc:description='A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the dwc:MaterialEntity.' comments='' examples='`http://www.ncbi.nlm.nih.gov/nuccore/U34853.1`; `http://www.ncbi.nlm.nih.gov/nuccore/GU328060 | http://www.ncbi.nlm.nih.gov/nuccore/AF326093`' required='false'>
       <translation xml:lang='cs' label='Související sekvence' dc:description='Seznam (spojený a oddělený) identifikátorů (publikace, globální jedinečný identifikátor, URI) informací o genetické sekvenci přidružených k dwc:MaterialEntity.'/>
-      <translation xml:lang='es' label='Secuencias asociadas'/>
+      <translation xml:lang='es' label='Secuencias asociadas' dc:description='Una lista (concatenada y separada) de los identificadores (publicación, identificador global único, URI) de información de secuencias genéticas asociadas con el dwc:MaterialEntity.'/>
       <translation xml:lang='fr' label='Séquences associées' dc:description='Une liste (concaténée et séparée) d&#x27;identifiants (publication, identifiant unique global (GUI), URI) d&#x27;informations sur la séquence génétique associée à la dwc:MaterialEntity.'/>
       <translation xml:lang='zh' label='相關基因序列' dc:description='與此出現紀錄相關的遺傳序列(如出版刊物、全球唯一識別碼或URI等)列表(使用標點符號分隔)。'/>
     </property>
