@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-09-25'
+    dc:issued='2025-09-26'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -516,5 +516,6 @@
       <translation xml:lang='cs' label='Podloží' dc:description='Úplný název litostratigrafického podloží, z něhož byl dwc:MaterialEntity odebrán.'/>
       <translation xml:lang='es' label='Capa'/>
       <translation xml:lang='fr' label='Lit' dc:description='Le nom complet du lit lithostratigraphique à partir de laquelle l&#x27;entité dwc:MaterialEntity a été collectée.'/>
+      <translation xml:lang='zh' label='岩床'/>
     </property>
 </extension>
