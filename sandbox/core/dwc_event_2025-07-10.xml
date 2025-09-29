@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-09-26'
+    dc:issued='2025-09-29'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -222,7 +222,7 @@
     </property>
     <property group='Location' name='continent' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/continent' label='Continent' dc:relation='https://dwc.tdwg.org/terms/#dwc:continent' dc:description='The name of the continent in which the dcterms:Location occurs.' comments='Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. Recommended best practice is to leave this field blank if the dcterms:Location spans multiple entities at this administrative level or if the dcterms:Location might be in one or another of multiple possible entities at this level. Multiplicity and uncertainty of the geographic entity can be captured either in the term dwc:higherGeography or in the term dwc:locality, or both.' examples='`Africa`; `Antarctica`; `Asia`; `Europe`; `North America`; `Oceania`; `South America`' required='false'>
       <translation xml:lang='cs' label='Kontinent' comments='Doporučeným osvědčeným postupem je použití řízeného slovníku, jako je například Getty Thesaurus of Geographic Names. Doporučeným osvědčeným postupem je ponechat toto pole prázdné, pokud dcterms:Location pokrývá více entit na této administrativní úrovni nebo pokud dcterms:Location může být v jedné nebo jiné z více možných entit na této úrovni. Násobnost a neurčitost geografické entity lze zachytit buď v termínu dwc:higherGeography, nebo v termínu dwc:locality, případně v obou.' dc:description='Název kontinentu, ve kterém se dcterms:Location vyskytuje.'/>
-      <translation xml:lang='es' label='Continente'/>
+      <translation xml:lang='es' label='Continente' dc:description='El nombre del continente en el que se encuentra dcterms:Location.'/>
       <translation xml:lang='fr' label='Continent' comments='La pratique optimale recommandée est d&#x27;utiliser un vocabulaire contrôlé tel que le Getty Thesaurus of Geographic Names. La pratique optimale recommandée est de laisser ce champ vide si la dcterms:Location recouvre plusieurs entités à ce niveau administratif ou si la dcterms:Location pourrait se trouver dans l&#x27;une ou l&#x27;autre des multiples entités possibles à ce niveau. La multiplicité et l&#x27;incertitude de l&#x27;entité géographique peuvent être renseignées soit dans le terme dwc:higherGeography, soit dans le terme dwc:locality, soit dans les deux.' dc:description='Le nom du continent dans lequel se trouve la dcterms:Location.'/>
       <translation xml:lang='zh' label='大洲' dc:description='大洲名稱。'/>
     </property>
