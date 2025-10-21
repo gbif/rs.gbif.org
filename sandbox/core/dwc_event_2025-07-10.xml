@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-10-01'
+    dc:issued='2025-10-21'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -528,7 +528,7 @@
     </property>
     <property group='GeologicalContext' name='bed' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/bed' label='Bed' dc:relation='https://dwc.tdwg.org/terms/#dwc:bed' dc:description='The full name of the lithostratigraphic bed from which the dwc:MaterialEntity was collected.' comments='' examples='`Harlem coal`' required='false'>
       <translation xml:lang='cs' label='Podloží' dc:description='Úplný název litostratigrafického podloží, z něhož byl dwc:MaterialEntity odebrán.'/>
-      <translation xml:lang='es' label='Capa'/>
+      <translation xml:lang='es' label='Capa' dc:description='El nombre completo de la capa litoestratigráfica de la cual se colectó el dwc:MaterialEntity.'/>
       <translation xml:lang='fr' label='Lit' dc:description='Le nom complet du lit lithostratigraphique à partir de laquelle l&#x27;entité dwc:MaterialEntity a été collectée.'/>
       <translation xml:lang='zh' label='岩床'/>
     </property>
