@@ -7,7 +7,7 @@
     dc:title='Darwin Core Taxon'
     name='Taxon' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Taxon'
-    dc:issued='2025-09-26'
+    dc:issued='2025-10-21'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Taxon'
     dc:description='Support for Darwin Core Taxon-based records.'>
@@ -296,7 +296,7 @@
     </property>
     <property group='Record-level' name='informationWithheld' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/informationWithheld' label='Information Withheld' dc:relation='https://dwc.tdwg.org/terms/#dwc:informationWithheld' dc:description='Additional information that exists, but that has not been shared in the given record.' comments='This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`location information not given for endangered species`; `collector identities withheld | ask about tissue samples`' required='false'>
       <translation xml:lang='cs' label='Zatajené informace' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.' dc:description='Další informace, které existují, ale nebyly sdíleny v daném záznamu.'/>
-      <translation xml:lang='es' comments='Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre.'/>
+      <translation xml:lang='es' label='Información retenida' comments='Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre.' dc:description='Información adicional que existe sobre el registro, pero que no ha sido compartida en la publicación.'/>
       <translation xml:lang='fr' label='Information non renseignée' comments='Ce terme a un équivalent dans le dwciri: namespace qui n&#x27;autorise qu&#x27;un IRI comme valeur, alors que ce terme autorise n&#x27;importe quelle valeur sous forme de chaîne de caractères.' dc:description='Informations supplémentaires qui existent, mais qui n&#x27;ont pas été partagées dans l&#x27;enregistrement correspondant.'/>
       <translation xml:lang='zh' label='隱藏資訊'/>
     </property>
