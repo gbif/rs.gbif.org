@@ -7,7 +7,7 @@
     dc:title='Darwin Core Occurrence'
     name='Occurrence' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Occurrence'
-    dc:issued='2025-10-21'
+    dc:issued='2025-11-04'
     dc:subject='dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/Occurrence'
     dc:description='Support for Darwin Core Occurrence-based records.'>
@@ -66,7 +66,7 @@
     </property>
     <property group='Record-level' name='collectionID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/collectionID' label='Collection ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:collectionID' dc:description='An identifier for the collection or dataset from which the record was derived.' comments='For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Global Registry of Scientific Collections (https://scientific-collections.gbif.org/).' examples='`https://scientific-collections.gbif.org/collection/fbd3ed74-5a21-4e01-b86a-33d36f032d9c`' required='false'>
       <translation xml:lang='cs' label='ID sbírky' comments='U fyzických exemplářů je doporučeným osvědčeným postupem použití celosvětově jedinečného a rozlišitelného identifikátoru z registru sbírek, jako je Globální registr vědeckých sbírek (https://scientific-collections.gbif.org/).' dc:description='Identifikátor sbírky nebo datové sady, ze které byl záznam odvozen.'/>
-      <translation xml:lang='es' comments='Para los especímenes físicos, la mejor práctica recomendada es utilizar un identificador único y resoluble a nivel global de un registro de colecciones, como el Registro Global de Colecciones Científicas (https://scientific-collections.gbif.org/).'/>
+      <translation xml:lang='es' label='ID de Colección' comments='Para los especímenes físicos, la mejor práctica recomendada es utilizar un identificador único y resoluble a nivel global de un registro de colecciones, como el Registro Global de Colecciones Científicas (https://scientific-collections.gbif.org/).' dc:description='Un identificador para la colección o conjunto de datos desde el cual se deriva el registro.'/>
       <translation xml:lang='fr' label='Identifiant de la collection' comments='Pour les spécimens physiques, la pratique optimale recommandée est d&#x27;utiliser un identifiant unique et résoluble à l&#x27;échelle mondiale provenant d&#x27;un registre de collections tel que le Global Registry of Scientific Collections (https://scientific-collections.gbif.org).' dc:description='Un identifiant de la collection ou la série de données à partir desquelles l&#x27;enregistrement a été obtenu.'/>
       <translation xml:lang='zh' label='館藏ID' comments='若為實體標本，建議使用通用名冊中的識別碼，例如：Global Registry of Biodiversity Repositories (https://scientific-collections.gbif.org/)。'/>
     </property>
@@ -83,6 +83,7 @@
     </property>
     <property group='Record-level' name='collectionCode' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/collectionCode' label='Collection Code' dc:relation='https://dwc.tdwg.org/terms/#dwc:collectionCode' dc:description='The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.' comments='' examples='`Mammals`; `Hildebrandt`; `EBIRD`; `VP`' required='false'>
       <translation xml:lang='cs' label='Kód sbírky' dc:description='Název, zkratka, kód nebo iniciála identifikující sbírku nebo soubor dat, z nichž byl záznam odvozen.'/>
+      <translation xml:lang='es' label='Código de Colección' dc:description='El nombre, acrónimo, coden o inicialismo que identifica a la colección o conjunto de datos desde el cual el registro fue derivado.'/>
       <translation xml:lang='fr' label='Code de la collection' dc:description='Le nom, l&#x27;acronyme, le coden ou le sigle identifiant la collection ou la série de données à partir desquelles l&#x27;enregistrement a été obtenu.'/>
       <translation xml:lang='zh' label='典藏代碼' dc:description='該筆紀錄來源的代稱、代碼或縮寫，如典藏機構的標本分類代碼。'/>
     </property>
@@ -117,6 +118,7 @@
     </property>
     <property group='Record-level' name='dynamicProperties' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/dynamicProperties' label='Dynamic Properties' dc:relation='https://dwc.tdwg.org/terms/#dwc:dynamicProperties' dc:description='A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.' comments='Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.' examples='`{&quot;heightInMeters&quot;:1.5}`; `{&quot;targusLengthInMeters&quot;:0.014, &quot;weightInGrams&quot;:120}`; `{&quot;natureOfID&quot;:&quot;expert identification&quot;, &quot;identificationEvidence&quot;:&quot;cytochrome B sequence&quot;}`; `{&quot;relativeHumidity&quot;:28, &quot;airTemperatureInCelsius&quot;:22, &quot;sampleSizeInKilograms&quot;:10}`; `{&quot;aspectHeading&quot;:277, &quot;slopeInDegrees&quot;:6}`; `{&quot;iucnStatus&quot;:&quot;vulnerable&quot;, &quot;taxonDistribution&quot;:&quot;Neuquén, Argentina&quot;}`' required='false'>
       <translation xml:lang='cs' label='Dynamické vlastnosti' comments='Doporučeným osvědčeným postupem je použití schématu kódování klíč:hodnota pro formát výměny dat, jako je JSON.' dc:description='Seznam dalších měření, skutečností, charakteristik nebo tvrzení o záznamu. Slouží jako mechanismus pro strukturovaný obsah.'/>
+      <translation xml:lang='es' label='Propiedades Dinámicas' dc:description='Una lista de medidas, hechos, características o aserciones adicionales sobre el registro. Destinado a ofrecer un mecanismo para contenido estructurado.'/>
       <translation xml:lang='fr' label='Propriétés dynamiques' comments='La pratique optimale recommandée est d&#x27;utiliser un encodage clé:valeur pour un format d&#x27;échange de données tel que JSON.' dc:description='Une liste de mesures, de faits, de caractéristiques ou d&#x27;affirmations supplémentaires concernant le document. Il s&#x27;agit d&#x27;un mécanisme permettant de structurer le contenu.'/>
       <translation xml:lang='zh' label='動態屬性'/>
     </property>

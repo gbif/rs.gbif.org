@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-10-21'
+    dc:issued='2025-11-04'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -95,6 +95,7 @@
     </property>
     <property group='Record-level' name='dynamicProperties' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/dynamicProperties' label='Dynamic Properties' dc:relation='https://dwc.tdwg.org/terms/#dwc:dynamicProperties' dc:description='A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.' comments='Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.' examples='`{&quot;heightInMeters&quot;:1.5}`; `{&quot;targusLengthInMeters&quot;:0.014, &quot;weightInGrams&quot;:120}`; `{&quot;natureOfID&quot;:&quot;expert identification&quot;, &quot;identificationEvidence&quot;:&quot;cytochrome B sequence&quot;}`; `{&quot;relativeHumidity&quot;:28, &quot;airTemperatureInCelsius&quot;:22, &quot;sampleSizeInKilograms&quot;:10}`; `{&quot;aspectHeading&quot;:277, &quot;slopeInDegrees&quot;:6}`; `{&quot;iucnStatus&quot;:&quot;vulnerable&quot;, &quot;taxonDistribution&quot;:&quot;Neuquén, Argentina&quot;}`' required='false'>
       <translation xml:lang='cs' label='Dynamické vlastnosti' comments='Doporučeným osvědčeným postupem je použití schématu kódování klíč:hodnota pro formát výměny dat, jako je JSON.' dc:description='Seznam dalších měření, skutečností, charakteristik nebo tvrzení o záznamu. Slouží jako mechanismus pro strukturovaný obsah.'/>
+      <translation xml:lang='es' label='Propiedades Dinámicas' dc:description='Una lista de medidas, hechos, características o aserciones adicionales sobre el registro. Destinado a ofrecer un mecanismo para contenido estructurado.'/>
       <translation xml:lang='fr' label='Propriétés dynamiques' comments='La pratique optimale recommandée est d&#x27;utiliser un encodage clé:valeur pour un format d&#x27;échange de données tel que JSON.' dc:description='Une liste de mesures, de faits, de caractéristiques ou d&#x27;affirmations supplémentaires concernant le document. Il s&#x27;agit d&#x27;un mécanisme permettant de structurer le contenu.'/>
       <translation xml:lang='zh' label='動態屬性'/>
     </property>
