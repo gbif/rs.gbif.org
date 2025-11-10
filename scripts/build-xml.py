@@ -466,5 +466,5 @@ ac_xml = DwcaXml(
     xmlTerms = "xml/audiovisual_list.csv"
     )
 ac = True
-#ac_xml.create_extension_xml(languages, 'extension/ac/audiovisual_')
+ac_xml.create_extension_xml(languages, 'sandbox/extension/ac/audiovisual_')
 ac = False
