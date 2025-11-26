@@ -4,7 +4,7 @@
   dc:URI='http://rs.gbif.org/vocabulary/dwc/degree_of_establishment/'
   dc:relation='https://dwc.tdwg.org/terms/#dwc:degreeOfEstablishment'
   dc:title='Darwin Core Degree of Establishment Vocabulary'
-  dc:issued='2025-07-10'
+  dc:issued='2025-11-26'
   xmlns='http://rs.gbif.org/thesaurus/'
   xmlns:dc='http://purl.org/dc/terms/'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
@@ -21,6 +21,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='native (category A)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='původní (kategorie A)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='einheimisch' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='nativo (categoría A)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='indigène (catégorie A)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='토착' xml:lang='ko'/>
@@ -39,6 +40,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='captive (category B1)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='v zajetí (kategorie B1)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='gefangen' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='en cautividad (categoría B1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='captif (catégorie B1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='포획' xml:lang='ko'/>
@@ -57,6 +59,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='cultivated (category B2)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='pěstované (kategorie B2)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='gezüchtet' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='cultivado (categoría B2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='cultivé (catégorie B2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='경작' xml:lang='ko'/>
@@ -75,6 +78,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='released (category B3)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='vypuštěn (kategorie B3)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='ausgesetzt' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='liberado (categoría B3)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='relâché (catégorie B3)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='방출' xml:lang='ko'/>
@@ -93,6 +97,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='failing (category C0)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='neúspěšný (kategorie C0)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='erfolglos' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='en peligro (categoría C0)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='échec (catégorie C0)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='실패' xml:lang='ko'/>
@@ -111,6 +116,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='casual (category C1)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='běžný (kategorie C1)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='unbeständig' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='ocasional (categoría C1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='moyen (catégorie C1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='임시' xml:lang='ko'/>
@@ -129,6 +135,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='reproducing (category C2)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='rozmnožující se (kategorie C2)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='fortpflanzend' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='en reprodución (categoría C2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='reproduction (catégorie C2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='재생산' xml:lang='ko'/>
@@ -147,6 +154,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='established (category C3)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='zaveden (kategorie C3)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='etabliert' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='establecida (categoría C3)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='implanté (catégorie C3)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='정착' xml:lang='ko'/>
@@ -165,6 +173,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='colonising (category D1)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='kolonizující (kategorie D1)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='kolonisierend' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='colonizadora (categoría D1)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='colonisant (catégorie D1)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='서식' xml:lang='ko'/>
@@ -183,6 +192,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='invasive (category D2)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='invazívní (kategorie D2)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='invasiv' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='invasivo (categoría D2)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='envahissant (catégorie D2)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='침입' xml:lang='ko'/>
@@ -201,6 +211,7 @@
     <preferred>
       <term dc:source='Darwin Core' dc:title='widespread invasive (category E)' xml:lang='en'/>
       <term dc:source='Darwin Core' dc:title='rozšířená invazivní (kategorie E)' xml:lang='cs'/>
+      <term dc:source='Darwin Core' dc:title='verbreitet invasiv' xml:lang='de'/>
       <term dc:source='Darwin Core' dc:title='invasivo generalizado (categoría E)' xml:lang='es'/>
       <term dc:source='Darwin Core' dc:title='largement envahissant (catégorie E)' xml:lang='fr'/>
       <term dc:source='Darwin Core' dc:title='광범위한 침입' xml:lang='ko'/>
