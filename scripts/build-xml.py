@@ -17,7 +17,7 @@ import dwcterms
 # -----------------
 # Configuration section
 # -----------------
-languages = ['en', 'cs', 'es', 'fr', 'ja', 'ko', 'zh-Hant']
+languages = ['en', 'cs', 'de', 'es', 'fr', 'ja', 'ko', 'pt', 'zh-Hant']
 
 # -----------------
 # Command line arguments
@@ -75,8 +75,6 @@ class DwcaXml:
             # Write the entire XML declaration section to the output file
             header = template_file.read()
             header = header.replace('{issued_date}', date.today().isoformat())
-            if ac:
-                header = header.replace("'", '"').replace('    ', '        ')
             output_file.write(header)
 
             # Process the list of terms for the extension combining properties from the
@@ -182,83 +180,63 @@ class DwcaXml:
                 comments = html.escape(comments)
                 examples = html.escape(examples)
 
-                if ac:
-                    # Temp while working on AC.
-                    s = f"        <property name='{name}'\n"
-                    s += f"                namespace='{namespace}'\n"
-                    s += f"                qualName='{qualName}'\n"
-                    s += f"                required='{required}'\n"
-                    s += f"                group='{group}'\n"
-                    s += f"                label='{label}'\n"
-                    s += f"                examples='{examples}'\n"
-                    s += f"                dc:description='{dc_description}'\n"
-                    s += f"                dc:relation='{dc_relation}'\n"
+                # Construct the property entry for the output file
+                s = f"    <property group='{group}' "
+                s += f"name='{name}' "
+                if datatype is not None and datatype.strip()!='':
+                    s += f"type='{datatype}' "
+                if thesaurus is not None and thesaurus.strip()!='':
+                    s += f"thesaurus='{thesaurus}' "
+                s += f"namespace='{namespace}' "
+                s += f"qualName='{qualName}' "
+                s += f"label='{label}' "
+                s += f"dc:relation='{dc_relation}' "
+                s += f"dc:description='{dc_description}' "
+                s += f"comments='{comments}' "
+                s += f"examples='{examples}' "
+                s += f"required='{required}'"
 
-                    if datatype is not None and datatype.strip()!='':
-                        s += f"                type='{datatype}'\n"
-                    if thesaurus is not None and thesaurus.strip()!='':
-                        s += f"                thesaurus='{thesaurus}'\n"
-                    s += f"                comments='{comments}'"
-                    s += '/>\n'
-                    s = s.replace("'", '"')
-                else:
-                    # Construct the property entry for the output file
-                    s = f"    <property group='{group}' "
-                    s += f"name='{name}' "
-                    if datatype is not None and datatype.strip()!='':
-                        s += f"type='{datatype}' "
-                    if thesaurus is not None and thesaurus.strip()!='':
-                        s += f"thesaurus='{thesaurus}' "
-                    s += f"namespace='{namespace}' "
-                    s += f"qualName='{qualName}' "
-                    s += f"label='{label}' "
-                    s += f"dc:relation='{dc_relation}' "
-                    s += f"dc:description='{dc_description}' "
-                    s += f"comments='{comments}' "
-                    s += f"examples='{examples}' "
-                    s += f"required='{required}'"
-
-                    # Add translations
-                    hasLang = False
-                    for lang in languages:
-                        # Currently the IPT only supports Traditional Chinese with the code zh.
-                        if lang == 'en':
-                            continue
-                        elif lang == 'zh-Hant':
-                            xmllang = 'zh'
-                        elif lang == 'zh-Hans':
-                            continue
-                        else:
-                            xmllang = lang
-
-                        l_label = self.t_xml(term_data, 'label_', lang)
-                        l_description = self.t_xml(term_data, 'rdfs_comment_', lang)
-                        l_comments = self.t_xml(term_data, 'dcterms_description_', lang)
-                        l_examples = self.t_xml(term_data, 'examples_', lang)
-
-                        if l_label is not None or l_comments is not None or l_description is not None or l_examples is not None:
-                            if not hasLang:
-                                s += ">\n"
-                                hasLang = True
-
-                            s += f"      <translation xml:lang='{xmllang}'"
-                            if l_label is not None:
-                                s += f" label='{l_label}'"
-                            if l_comments is not None:
-                                s += f" comments='{l_comments}'"
-                            if l_examples is not None:
-                                s += f" examples='{l_examples}'"
-                            if l_description is not None:
-                                s += f" dc:description='{l_description}'"
-                            s += "/>\n"
-                        #else:
-                        #    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-                        #        print("No translations in "+lang, term_data)
-
-                    if hasLang:
-                        s += "    </property>\n"
+                # Add translations
+                hasLang = False
+                for lang in languages:
+                    # Currently the IPT only supports Traditional Chinese with the code zh.
+                    if lang == 'en':
+                        continue
+                    elif lang == 'zh-Hant':
+                        xmllang = 'zh'
+                    elif lang == 'zh-Hans':
+                        continue
                     else:
+                        xmllang = lang
+
+                    l_label = self.t_xml(term_data, 'label_', lang)
+                    l_description = self.t_xml(term_data, 'rdfs_comment_', lang)
+                    l_comments = self.t_xml(term_data, 'dcterms_description_', lang)
+                    l_examples = self.t_xml(term_data, 'examples_', lang)
+
+                    if l_label is not None or l_comments is not None or l_description is not None or l_examples is not None:
+                        if not hasLang:
+                            s += ">\n"
+                            hasLang = True
+
+                        s += f"      <translation xml:lang='{xmllang}'"
+                        if l_label is not None:
+                            s += f" label='{l_label}'"
+                        if l_comments is not None:
+                            s += f" comments='{l_comments}'"
+                        if l_examples is not None:
+                            s += f" examples='{l_examples}'"
+                        if l_description is not None:
+                            s += f" dc:description='{l_description}'"
                         s += "/>\n"
+                    #else:
+                    #    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+                    #        print("No translations in "+lang, term_data)
+
+                if hasLang:
+                    s += "    </property>\n"
+                else:
+                    s += "/>\n"
 
                 if group != previous_group:
                     output_file.write(f'\n    <!-- {group} -->\n')
