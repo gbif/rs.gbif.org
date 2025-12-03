@@ -846,7 +846,7 @@
       <translation xml:lang='cs' label='Podloží' dc:description='Úplný název litostratigrafického podloží, z něhož byl dwc:MaterialEntity odebrán.'/>
       <translation xml:lang='es' label='Capa' dc:description='El nombre completo de la capa litoestratigráfica de la cual se colectó el dwc:MaterialEntity.'/>
       <translation xml:lang='fr' label='Lit' dc:description='Le nom complet du lit lithostratigraphique à partir de laquelle l&#x27;entité dwc:MaterialEntity a été collectée.'/>
-      <translation xml:lang='zh' label='岩床'/>
+      <translation xml:lang='zh' label='岩床' dc:description='採集地所在岩床的全名。'/>
     </property>
 
     <!-- Identification -->
@@ -1016,7 +1016,7 @@
       <translation xml:lang='cs' label='Třída' dc:description='Úplný vědecký název třídy, do které je dwc:Taxon zařazen.'/>
       <translation xml:lang='es' label='Clase' dc:description='El nombre científico completo de la clase en el que se clasifica el dwc:Taxon.'/>
       <translation xml:lang='fr' label='Classe' dc:description='Le nom scientifique complet de la classe dans laquelle le dwc:Taxon est classé.'/>
-      <translation xml:lang='zh' label='綱'/>
+      <translation xml:lang='zh' label='綱' dc:description='分類所屬的完整綱名。'/>
     </property>
     <property group='Taxon' name='order' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/order' label='Order' dc:relation='https://dwc.tdwg.org/terms/#dwc:order' dc:description='The full scientific name of the order in which the dwc:Taxon is classified.' comments='' examples='`Carnivora`; `Monocleales`' required='false'>
       <translation xml:lang='cs' label='Řazení' dc:description='Úplný vědecký název řádu, do kterého je dwc:Taxon zařazen.'/>
