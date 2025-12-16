@@ -1,20 +1,28 @@
 {
-  "name": "identification-agent-role",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/identification-agent-role",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/identification-agent-role.json",
-  "title": "IdentificationAgentRole",
-  "description": "A role filled by an Agent with respect to a dwc:Identification.",
+  "name": "identification-agent-role",
+  "title": "Identification Agent Role",
+  "description": "A role filled by a dcterms:Agent with respect to a dwc:Identification.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//identification-agent-role",
+  "dcterms:references": "",
+  "rdfs:comment": "",
   "fields": [
     {
       "name": "agentID",
       "title": "Agent ID",
-      "description": "An identifier for an Agent.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dcterms:Agent.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -24,12 +32,14 @@
       "name": "identificationID",
       "title": "Identification ID",
       "description": "An identifier for a dwc:Identification.",
-      "type": "string",
-      "format": "default",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
+      "type": "string",
+      "format": "default",
       "namespace": "dwc",
-      "iri": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/identificationID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/identificationID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.",
       "constraints": {
         "required": true,
         "unique": false
@@ -38,66 +48,76 @@
     {
       "name": "agentRole",
       "title": "Agent Role",
-      "description": "A category that best matches the nature of a role of an Agent.",
+      "description": "A category that best matches the nature of a role of a dcterms:Agent.",
+      "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource a dcterms:AgentRole is related to.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource an AgentRole is related to.",
-      "examples": "`collector`; `preparator`; `organizer`; `author`; `creator`; `owner`; `observer`; `director`; `husband`",
-      "namespace": "dwcdp",
-      "iri": ""
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentRole",
+      "dcterms:references": "",
+      "rdfs:comment": ""
     },
     {
       "name": "agentRoleIRI",
       "title": "Agent Role IRI",
-      "description": "An IRI of the controlled vocabulary value for a role of an Agent.",
-      "type": "string",
-      "format": "default",
+      "description": "An IRI of the controlled vocabulary value for a role of a dcterms:Agent.",
       "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
-    },
-    {
-      "name": "agentRoleVocabulary",
-      "title": "Agent Role Vocabulary",
-      "description": "A reference to a controlled vocabulary in which the definition of a value in agentRole is given.",
       "type": "string",
       "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwciri/agentRoleIRI",
+      "dcterms:references": "",
+      "rdfs:comment": ""
+    },
+    {
+      "name": "agentRoleSource",
+      "title": "Agent Role Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:agentRole is given.",
       "comments": "",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": ""
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "dcterms:references": "",
+      "rdfs:comment": "A related resource from which the described resource is derived."
     },
     {
       "name": "agentRoleOrder",
       "title": "Agent Role Order",
-      "description": "A numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRole, agentRoleIRI, agentRoleVocabulary and related target.",
+      "description": "A numerical position of a dcterms:AgentRole in a set of dcterms:AgentRoles that have the same combination of dwc:agentRole, dwc:agentRoleIRI, dwc:agentRoleSource and related target.",
+      "comments": "One could use dwc:agentRoleOrder to create an ordered list of collectors (dwc:agentRole = 'collector') for a dwc:MaterialEntity, for example. The first would have dwc:agentRoleOrder=1, the second would have dwc:agentRoleOrder=2.",
+      "examples": "",
       "type": "integer",
       "format": "default",
-      "comments": "One could use agentRoleOrder to create an ordered list of collectors (agentRole = 'collector') for a dwc:MaterialEntity, for example. The first would have agentRoleOrder=1, the second would have agentRoleOrder=2.",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/agentRoleOrder",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
-        "required": false,
         "minimum": 1
-      },
-      "examples": "`1`; `2`; `3`",
-      "namespace": "dwcdp",
-      "iri": ""
+      }
     },
     {
       "name": "agentRoleDate",
       "title": "Agent Role Date",
-      "description": "An interval during which an AgentRole was in effect.",
+      "description": "An interval during which a dcterms:AgentRole was in effect.",
+      "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
       "type": "string",
       "format": "default",
-      "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
-      "examples": "`2024-07-29`",
-      "namespace": "dwcdp",
-      "iri": ""
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
+      "rdfs:comment": "The date-time on which the relationship between the two resources was established."
     }
   ],
   "foreignKeys": [
     {
       "fields": "agentID",
+      "predicate": "role holder",
       "reference": {
         "resource": "agent",
         "fields": "agentID"
@@ -105,6 +125,7 @@
     },
     {
       "fields": "identificationID",
+      "predicate": "role for",
       "reference": {
         "resource": "identification",
         "fields": "identificationID"

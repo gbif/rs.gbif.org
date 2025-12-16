@@ -1,0 +1,67 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/event-provenance",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/event-provenance.json",
+  "name": "event-provenance",
+  "title": "Event Provenance",
+  "description": "A dwc:Provenance for a dwc:Event.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//event-provenance",
+  "dcterms:references": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "provenanceID",
+      "title": "Provenance ID",
+      "description": "An identifier for a dwc:Provenance.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/provenanceID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "eventID",
+      "title": "Event ID",
+      "description": "An identifier for a dwc:Event.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2023-06-28",
+      "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "provenanceID",
+      "predicate": "has",
+      "reference": {
+        "resource": "provenance",
+        "fields": "provenanceID"
+      }
+    },
+    {
+      "fields": "eventID",
+      "predicate": "for",
+      "reference": {
+        "resource": "event",
+        "fields": "eventID"
+      }
+    }
+  ]
+}

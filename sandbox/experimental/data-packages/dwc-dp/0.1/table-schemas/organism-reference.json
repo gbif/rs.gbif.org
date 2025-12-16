@@ -1,0 +1,80 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-reference",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/organism-reference.json",
+  "name": "organism-reference",
+  "title": "Organism Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:Organism.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//organism-reference",
+  "dcterms:references": "",
+  "rdfs:comment": "",
+  "fields": [
+    {
+      "name": "organismID",
+      "title": "Organism ID",
+      "description": "An identifier for a dwc:Organism.",
+      "comments": "Recommended best practice is to use a persistent, globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismID-2023-06-28",
+      "rdfs:comment": "An identifier for the dwc:Organism instance (as opposed to a particular digital record of the dwc:Organism). May be a globally unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "referenceID",
+      "title": "Reference ID",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "organismID",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "organism",
+        "fields": "organismID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "predicate": "mentioned",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "referenceID"
+      }
+    }
+  ]
+}

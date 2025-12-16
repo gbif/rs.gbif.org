@@ -264,6 +264,10 @@ def check_foreign_keys(package_file, package_data):
                         fk_reference_resource = foreign_key['reference']['resource']
                         fk_reference_field = foreign_key['reference']['fields']
 
+                        # empty resource is a self-reference
+                        if fk_reference_resource == '':
+                            fk_reference_resource = table_schema_name
+
                         # print(f"Foreign key: {fk_field} references "
                         #       f"to {fk_reference_resource}/{fk_reference_field}")
 

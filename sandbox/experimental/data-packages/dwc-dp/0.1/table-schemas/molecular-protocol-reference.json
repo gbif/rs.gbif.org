@@ -1,20 +1,28 @@
 {
-  "name": "molecular-protocol-reference",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-reference",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/molecular-protocol-reference.json",
-  "title": "MolecularProtocolReference",
-  "description": "A bibliographic reference in which a MolecularProtocol is mentioned.",
+  "name": "molecular-protocol-reference",
+  "title": "Molecular Protocol Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:MolecularProtocol.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//molecular-protocol-reference",
+  "dcterms:references": "",
+  "rdfs:comment": "",
   "fields": [
     {
       "name": "referenceID",
       "title": "Reference ID",
-      "description": "An identifier for a Reference.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dcterms:BibliographicResource.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/referenceID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -23,29 +31,46 @@
     {
       "name": "molecularProtocolID",
       "title": "Molecular Protocol ID",
-      "description": "An identifier for a MolecularProtocol.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dwc:MolecularProtocol.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/molecularProtocolID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
       }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
     }
   ],
   "foreignKeys": [
     {
       "fields": "referenceID",
+      "predicate": "mentioned in",
       "reference": {
-        "resource": "reference",
+        "resource": "bibliographic-resource",
         "fields": "referenceID"
       }
     },
     {
       "fields": "molecularProtocolID",
+      "predicate": "mentioned",
       "reference": {
         "resource": "molecular-protocol",
         "fields": "molecularProtocolID"

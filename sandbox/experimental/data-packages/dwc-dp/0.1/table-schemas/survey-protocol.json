@@ -1,20 +1,28 @@
 {
-  "name": "survey-protocol",
   "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
   "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/0.1/table-schemas/survey-protocol.json",
-  "title": "SurveyProtocol",
-  "description": "A link establishing a Protocol used in a Survey.",
+  "name": "survey-protocol",
+  "title": "Survey Protocol",
+  "description": "A dwc:Protocol used for an eco:Survey.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//survey-protocol",
+  "dcterms:references": "",
+  "rdfs:comment": "",
   "fields": [
     {
       "name": "protocolID",
       "title": "Protocol ID",
-      "description": "An identifier for a Protocol.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dwc:Protocol.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/protocolID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -23,13 +31,15 @@
     {
       "name": "surveyID",
       "title": "Survey ID",
-      "description": "An identifier for a Survey.",
-      "type": "string",
-      "format": "default",
+      "description": "An identifier for a dwc:Survey.",
       "comments": "Recommended best practice is to use a globally unique identifier.",
       "examples": "",
-      "namespace": "dwcdp",
-      "iri": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://example.com/term-pending/dwc/surveyID",
+      "dcterms:references": "",
+      "rdfs:comment": "",
       "constraints": {
         "required": true,
         "unique": false
@@ -39,6 +49,7 @@
   "foreignKeys": [
     {
       "fields": "protocolID",
+      "predicate": "followed",
       "reference": {
         "resource": "protocol",
         "fields": "protocolID"
@@ -46,6 +57,7 @@
     },
     {
       "fields": "surveyID",
+      "predicate": "used during",
       "reference": {
         "resource": "survey",
         "fields": "surveyID"
