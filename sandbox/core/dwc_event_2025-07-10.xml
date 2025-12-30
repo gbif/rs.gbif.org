@@ -7,7 +7,7 @@
     dc:title='Darwin Core Event'
     name='Event' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Event'
-    dc:issued='2025-12-16'
+    dc:issued='2025-12-30'
     dc:subject=''
     dc:relation='http://rs.tdwg.org/dwc/terms/Event'
     dc:description='Support for Darwin Core Event-based records.'>
@@ -152,7 +152,7 @@
       <translation xml:lang='zh' label='年' dc:description='事件發生的四位數西元年。'/>
     </property>
     <property group='Event' name='month' type='integer' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/month' label='Month' dc:relation='https://dwc.tdwg.org/terms/#dwc:month' dc:description='The integer month in which the dwc:Event occurred.' comments='' examples='`1` (January); `10` (October)' required='false'>
-      <translation xml:lang='es' label='Mes' examples='`1` (enero); `10` (octubre)'/>
+      <translation xml:lang='es' label='Mes' examples='`1` (enero); `10` (octubre)' dc:description='El mes en números enteros en que ocurrió durante el cual se produjo el evento de observación o colecta de un organismo o muestra.'/>
       <translation xml:lang='fr' label='Mois' examples='`1` (janvier) ; `10` (octobre)' dc:description='Le mois (nombre entier) au cours duquel le dwc:Event s&#x27;est produit.'/>
       <translation xml:lang='ru' label='Месяц' examples='`1` (Январь); `10` (Октябрь)' dc:description='Порядковый номер месяца, в котором произошло dwc:Event.'/>
       <translation xml:lang='zh' label='月'/>
