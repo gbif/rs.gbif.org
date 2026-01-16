@@ -7,7 +7,7 @@
   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"
   dc:title="Quantity Type Vocabulary"
   dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType"
-  dc:issued="2015-07-10"
+  dc:issued="2023-02-28"
   dc:description="The quantityType Vocabulary is a recommended set of values to use for the Darwin Core quantityType property.">
 
   <concept dc:identifier="percentageOfSpecies"
@@ -62,7 +62,7 @@
            dc:URI="http://rs.gbif.org/vocabulary/gbif/quantityType/individuals"
            dc:relation=""
            dc:description="a measurement type where the quantity of a species in a
-    sample is recorded as the number of individuals (e.g. per litre, 
+    sample is recorded as the number of individuals (e.g. per litre,
     per square metre, per cubic metre, per hour, per day)">
     <preferred>
       <term dc:source="" dc:title="individuals" xml:lang="en"/>
