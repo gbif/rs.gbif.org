@@ -1,0 +1,257 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
+  "name": "reference",
+  "title": "Reference",
+  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/reference.json",
+  "description": "Structured bibliographic references with a unique id to refer to from other entities. References can be given either as a simple, single citation string, or in a structured form. ColDP supports fully parsed references in CSV based on the CSL-JSON format. Alternatively references can also be provided in the native file formats for the well established BibTex or CSL-JSON formats. See the sections below with for how to share alternative formats that do not conform to tabular CSV/TSV files.",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string",
+      "format": "default",
+      "title": "ID",
+      "description": "The local identifier for the reference as used in referenceID in other entities.",
+      "constraints": {
+        "unique": true,
+        "required": true
+      }
+    },
+    {
+      "name": "alternativeID",
+      "type": "string",
+      "format": "default",
+      "title": "alternativeID",
+      "description": "A comma concatenated list of alternative identifiers for the reference. Every alternative identifier must be a URI/URN/URL or given in the form of scope:id. See identifiers for all details and common scopes."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "citation",
+      "type": "string",
+      "format": "default",
+      "title": "citation",
+      "description": "Full bibliographic citation as one single string as an alternative to the rest of the more structured fields. If individual fields are given the full citation can be ignored."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "title": "type",
+      "constraints": {
+        "enum": [
+          "article",
+          "article journal",
+          "article magazine",
+          "article newspaper",
+          "bill",
+          "book",
+          "broadcast",
+          "chapter",
+          "dataset",
+          "entry",
+          "entry dictionary",
+          "entry encyclopedia",
+          "figure",
+          "graphic",
+          "interview",
+          "legal case",
+          "legislation",
+          "manuscript",
+          "map",
+          "motion picture",
+          "musical score",
+          "pamphlet",
+          "paper conference",
+          "patent",
+          "personal communication",
+          "post",
+          "post weblog",
+          "report",
+          "review",
+          "review book",
+          "song",
+          "speech",
+          "thesis",
+          "treaty",
+          "webpage"
+        ]
+      }
+    },
+    {
+      "name": "author",
+      "type": "string",
+      "format": "default",
+      "title": "author",
+      "description": "The author(s) of the work. If multiple authors use a style that can safely be parsed. Recommended are 2 common forms:"
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "format": "default",
+      "title": "editor",
+      "description": "The editor(s) of the work. See author for recommendations how to supply person names."
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "format": "default",
+      "title": "title",
+      "description": "The title of the work. In case of journal articles the article title, not the journal itself."
+    },
+    {
+      "name": "titleShort",
+      "type": "string",
+      "format": "default",
+      "title": "titleShort",
+      "description": "The abbreviated title of the work."
+    },
+    {
+      "name": "containerAuthor",
+      "type": "string",
+      "format": "default",
+      "title": "containerAuthor",
+      "description": "Author(s) of the container holding the item, e.g. the book author for a book chapter. See author for recommendations how to supply person names."
+    },
+    {
+      "name": "containerTitle",
+      "type": "string",
+      "format": "default",
+      "title": "containerTitle",
+      "description": "Title of the container holding the item, e.g. the book title for a book chapter, the journal title for a journal article. The containerTitle should exclude volume, edition, pages and other specifics."
+    },
+    {
+      "name": "containerTitleShort",
+      "type": "string",
+      "format": "default",
+      "title": "containerTitleShort",
+      "description": "The abbreviated container title."
+    },
+    {
+      "name": "issued",
+      "type": "date",
+      "format": "default",
+      "title": "issued"
+    },
+    {
+      "name": "accessed",
+      "type": "date",
+      "format": "default",
+      "title": "accessed"
+    },
+    {
+      "name": "collectionTitle",
+      "type": "string",
+      "format": "default",
+      "title": "collectionTitle",
+      "description": "Title of the collection holding the item, e.g. the series title for a book."
+    },
+    {
+      "name": "collectionEditor",
+      "type": "string",
+      "format": "default",
+      "title": "collectionEditor",
+      "description": "Editor(s) of the collection holding the item, e.g. the series editor for a book."
+    },
+    {
+      "name": "volume",
+      "type": "string",
+      "format": "default",
+      "title": "volume"
+    },
+    {
+      "name": "issue",
+      "type": "string",
+      "format": "default",
+      "title": "issue"
+    },
+    {
+      "name": "edition",
+      "type": "string",
+      "format": "default",
+      "title": "edition"
+    },
+    {
+      "name": "page",
+      "type": "string",
+      "format": "default",
+      "title": "page",
+      "description": "Range of pages the item (e.g. a journal article) covers in a container (e.g. a journal issue)"
+    },
+    {
+      "name": "publisher",
+      "type": "string",
+      "format": "default",
+      "title": "publisher",
+      "description": "Name of the publisher"
+    },
+    {
+      "name": "publisherPlace",
+      "type": "string",
+      "format": "default",
+      "title": "publisherPlace",
+      "description": "Geographic location of the publisher"
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "format": "default",
+      "title": "version",
+      "description": "Version of the item or dataset"
+    },
+    {
+      "name": "isbn",
+      "type": "string",
+      "format": "default",
+      "title": "isbn",
+      "description": "International Standard Book Number"
+    },
+    {
+      "name": "issn",
+      "type": "string",
+      "format": "default",
+      "title": "issn",
+      "description": "International Standard Serial Number"
+    },
+    {
+      "name": "doi",
+      "type": "string",
+      "format": "default",
+      "title": "doi",
+      "description": "The DOI of the reference"
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "format": "uri",
+      "title": "link",
+      "description": "A URL link to the reference. A link to a webpage for electronic resources. url in CSL-JSON terminology, but we prefer link to be consistent with other ColDP entities."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Additional comments about the reference. note in CSL-JSON terminology, but we prefer remarks to be consistent with other ColDP entities."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "primaryKey": "ID"
+}

@@ -1,0 +1,142 @@
+{
+  "name": "distribution",
+  "title": "Distribution",
+  "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
+  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/distribution.json",
+  "description": "A structured distribution record for a taxon in a given area.",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default",
+      "title": "taxonID",
+      "description": "Pointer to the taxon referring to an existing Taxon.ID within this data package."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "areaID",
+      "type": "string",
+      "format": "default",
+      "title": "areaID",
+      "description": "The identifier/code for the geographic area this distribution record is about. The value must be taken from the gazetteer this record declares. E.g. country codes, TDWG codes or TEOW identifiers. If the TEXT gazetteer is used only the free text area should be given with no areaID."
+    },
+    {
+      "name": "area",
+      "type": "string",
+      "format": "default",
+      "title": "area",
+      "description": "The geographic area this distribution record is about. The value provides a human label for the area specified by areaID. Free text values can be provided here when the gazetteer is set to TEXT."
+    },
+    {
+      "name": "gazetteer",
+      "type": "string",
+      "format": "default",
+      "title": "gazetteer",
+      "description": "The geographic gazetteer the area is defined in. If none is given defaults to free TEXT.",
+      "constraints": {
+        "enum": [
+          "tdwg",
+          "iso",
+          "fao",
+          "longhurst",
+          "teow",
+          "iho",
+          "mrgid",
+          "text"
+        ]
+      }
+    },
+    {
+        "name": "establishmentMeans",
+        "type": "string",
+        "format": "default",
+        "title": "establishmentMeans"
+    },
+    {
+        "name": "degreeOfEstablishment",
+        "type": "string",
+        "format": "default",
+        "title": "degreeOfEstablishment"
+    },
+    {
+        "name": "pathway",
+        "type": "string",
+        "format": "default",
+        "title": "pathway"
+    },
+    {
+        "name": "threatStatus",
+        "type": "string",
+        "format": "default",
+        "title": "threatStatus"
+    },
+    {
+        "name": "year",
+        "type": "string",
+        "format": "default",
+        "title": "year"
+    },
+    {
+        "name": "season",
+        "type": "string",
+        "format": "default",
+        "title": "season"
+    },
+    {
+        "name": "lifeStage",
+        "type": "string",
+        "format": "default",
+        "title": "lifeStage"
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "Pointer to the reference that supports this distribution. Refers to an existing Reference.ID within this data package."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the distribution."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

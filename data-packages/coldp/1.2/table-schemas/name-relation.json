@@ -1,0 +1,108 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
+  "name": "name-relation",
+  "title": "Name Relation",
+  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/name-relation.json",
+  "description": "A directed nomenclatural name relation. See #name-relations for examples and definitions.",
+  "fields": [
+    {
+      "name": "nameID",
+      "type": "string",
+      "format": "default",
+      "title": "nameID",
+      "description": "The subject name this relation originates from. Refers to an existing Name.ID or NameUsage.ID within this data package."
+    },
+    {
+      "name": "relatedNameID",
+      "type": "string",
+      "format": "default",
+      "title": "relatedNameID",
+      "description": "The object name this relation relates to. Refers to an existing Name.ID or NameUsage.ID within this data package."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "title": "type",
+      "description": "The kind of directed nomenclatural relation.",
+      "constraints": {
+        "enum": [
+          "spelling correction",
+          "basionym",
+          "based on",
+          "replacement name",
+          "conserved",
+          "later homonym",
+          "superfluous",
+          "homotypic",
+          "type"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "The reference or nomenclatural act where this nomenclatural relation was established."
+    },
+    {
+      "name": "page",
+      "type": "string",
+      "format": "default",
+      "title": "page",
+      "description": "The exact single page number where the nomenclatural relation was published in the linked reference. If the value spans multiple pages, the first page should be given."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the relation."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "nameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "relatedNameID",
+      "reference": {
+        "resource": "name",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}

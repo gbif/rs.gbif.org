@@ -1,0 +1,135 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/species-interaction",
+  "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset.",
+  "name": "species-interaction",
+  "title": "Species Interaction",
+  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/species-interaction.json",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default",
+      "title": "taxonID",
+      "description": "The subject taxon the species interaction is about. Always required to point to an existing taxonID in the local dataset."
+    },
+    {
+      "name": "relatedTaxonID",
+      "type": "string",
+      "format": "default",
+      "title": "relatedTaxonID",
+      "description": "The related taxon this interaction is describing. If given it must refer to a local taxonID from the dataset. If missing, the 'relatedTaxonScientificName' must be given instead."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "relatedTaxonScientificName",
+      "type": "string",
+      "format": "default",
+      "title": "relatedTaxonScientificName",
+      "description": "The scientificName of the related taxon this interaction is describing. Includes the authorship if known. It is mutually exclusive with relatedTaxonID and if given no relatedTaxonID should exist. The relatedTaxonScientificName can be used to document species interactions without the need to have full blown name and taxon records."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "format": "default",
+      "title": "type",
+      "description": "The kind of directed species interaction. Each interaction exists also in reverse to allow the alternative relatedTaxonScientificName field to be used. Species interaction types are heavily inspired by https://www.globalbioticinteractions.org and the OBO Relation Ontology http://www.ontobee.org/ontology/RO to which all entries are mapped.",
+      "constraints": {
+        "enum": [
+          "related to",
+          "co occurs with",
+          "interacts with",
+          "adjacent to",
+          "symbiont of",
+          "eats",
+          "eaten by",
+          "kills",
+          "killed by",
+          "preys upon",
+          "preyed upon by",
+          "host of",
+          "has host",
+          "parasite of",
+          "has parasite",
+          "pathogen of",
+          "has pathogen",
+          "vector of",
+          "has vector",
+          "endoparasite of",
+          "has endoparasite",
+          "ectoparasite of",
+          "has ectoparasite",
+          "hyperparasite of",
+          "has hyperparasite",
+          "kleptoparasite of",
+          "has kleptoparasite",
+          "parasitoid of",
+          "has parasitoid",
+          "hyperparasitoid of",
+          "has hyperparasitoid",
+          "visits",
+          "visited by",
+          "visits flowers of",
+          "flowers visited by",
+          "pollinates",
+          "pollinated by",
+          "lays eggs on",
+          "has eggs layed on by",
+          "epiphyte of",
+          "has epiphyte",
+          "commensalist of",
+          "mutualist of"
+        ]
+      }
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "A reference where the interaction was documented."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the species interaction."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}
