@@ -1,0 +1,95 @@
+{
+  "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-property",
+  "name": "taxon-property",
+  "title": "Taxon Property",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/taxon-property.json",
+  "description": "A flexible, generic way to assign arbitrary property values to a taxon. It can be used to share species profiles, traits, descriptions and any other dynamic information about a taxon. Every property value can optionally be referenced and ordered.",
+  "fields": [
+    {
+      "name": "taxonID",
+      "type": "string",
+      "format": "default",
+      "title": "taxonID",
+      "description": "The subject taxon the property is about."
+    },
+    {
+      "name": "sourceID",
+      "type": "string",
+      "format": "default",
+      "title": "sourceID",
+      "description": "Optional identifier for the source this record came from as listed in the metadata.yaml"
+    },
+    {
+      "name": "property",
+      "type": "string",
+      "format": "default",
+      "title": "property",
+      "description": "The required name of the property the value is assigned to. For example a text label like \"Biology\" or \"Illustration\", a Plinian core term or some Wikidata P value like P2974."
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "format": "default",
+      "title": "value",
+      "description": "A required free text value for the given property. If markup is needed Markdown is preferred."
+    },
+    {
+      "name": "ordinal",
+      "type": "integer",
+      "format": "default",
+      "title": "ordinal",
+      "description": "An integer to specify an optional custom sort order for property values sharing the same taxonID in the dataset."
+    },
+    {
+      "name": "referenceID",
+      "type": "string",
+      "format": "default",
+      "title": "referenceID",
+      "description": "An optional reference where this property value was documented or who asserted it."
+    },
+    {
+      "name": "page",
+      "type": "string",
+      "format": "default",
+      "title": "page",
+      "description": "The exact single page number where the property value was published in the linked reference. If the value spans multiple pages, the first page should be given."
+    },
+    {
+      "name": "remarks",
+      "type": "string",
+      "format": "default",
+      "title": "remarks",
+      "description": "Remarks about the property value."
+    },
+    {
+      "name": "modified",
+      "type": "date",
+      "format": "default",
+      "title": "modified",
+      "description": "UTC timestamp in ISO format to represent the time the record was last modified."
+    },
+    {
+      "name": "modifiedBy",
+      "type": "string",
+      "format": "default",
+      "title": "modifiedBy",
+      "description": "Author identifier indicating the person who has last modified the record."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "taxonID",
+      "reference": {
+        "resource": "taxon",
+        "fields": "ID"
+      }
+    },
+    {
+      "fields": "referenceID",
+      "reference": {
+        "resource": "reference",
+        "fields": "ID"
+      }
+    }
+  ]
+}
