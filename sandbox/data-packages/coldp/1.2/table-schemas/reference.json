@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
   "name": "reference",
   "title": "Reference",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/reference.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/reference.json",
   "description": "Structured bibliographic references with a unique id to refer to from other entities. References can be given either as a simple, single citation string, or in a structured form. ColDP supports fully parsed references in CSV based on the CSL-JSON format. Alternatively references can also be provided in the native file formats for the well established BibTex or CSL-JSON formats. See the sections below with for how to share alternative formats that do not conform to tabular CSV/TSV files.",
   "fields": [
     {

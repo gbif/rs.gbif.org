@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
   "name": "vernacular-name",
   "title": "Vernacular Name",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/vernacular-name.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/vernacular-name.json",
   "description": "A vernacular or common name for a taxon.",
   "fields": [
     {

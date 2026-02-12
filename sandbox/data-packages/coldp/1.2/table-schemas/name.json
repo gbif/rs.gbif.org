@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/name",
   "name": "name",
   "title": "Name",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/name.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/name.json",
   "description": "Names can be shared in a structured way using various fields, but rank, scientificName and authorship alone are sufficient. See for examples and rationales. A structured scientificName can be given using the following fields:",
   "fields": [
     {

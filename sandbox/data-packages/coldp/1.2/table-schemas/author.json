@@ -2,7 +2,7 @@
   "identifier": "http://rs.gbif.org/data-packages/coldp/author",
   "name": "author",
   "title": "Author",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/author.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/author.json",
   "description": "Normalised and structured authors that can be referred to by names, references and taxon scrutinizers. All entities also allow to specify a modifedBy field which must reference an Author identifier here.",
   "fields": [
     {

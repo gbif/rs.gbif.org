@@ -3,7 +3,7 @@
   "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset.",
   "name": "species-interaction",
   "title": "Species Interaction",
-  "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/species-interaction.json",
+  "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/species-interaction.json",
   "fields": [
     {
       "name": "taxonID",
