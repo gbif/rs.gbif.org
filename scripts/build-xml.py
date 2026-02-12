@@ -17,7 +17,7 @@ import dwcterms
 # -----------------
 # Configuration section
 # -----------------
-languages = ['en', 'ar'  'cs', 'de', 'es', 'fr', 'ja', 'ko', 'pt', 'ru', 'zh-Hant']
+languages = ['en', 'ar', 'cs', 'de', 'es', 'fr', 'ja', 'ko', 'pt', 'ru', 'zh-Hant']
 
 # -----------------
 # Command line arguments
@@ -155,7 +155,7 @@ class DwcaXml:
                 if dc_description is None:
                     dc_description = term_data['rdfs_comment']
 
-                # Get the term usage comments from the description field of the Extension
+                # Get the term comments from the description field of the Extension
                 # term list file. Otherwise use the comments from the standard.
                 comments = ext_item['comments']
                 if comments is None:
@@ -192,8 +192,10 @@ class DwcaXml:
                 s += f"label='{label}' "
                 s += f"dc:relation='{dc_relation}' "
                 s += f"dc:description='{dc_description}' "
-                s += f"comments='{comments}' "
-                s += f"examples='{examples}' "
+                if comments:
+                    s += f"comments='{comments}' "
+                if examples:
+                    s += f"examples='{examples}' "
                 s += f"required='{required}'"
 
                 # Add translations
@@ -288,14 +290,16 @@ class DwcaXml:
                 if controlled_value_string == '':
                     continue
 
-                s  = f"  <concept\n"
-                s += f"    dc:identifier='{controlled_value_string}'\n"
-                s += f"    dc:URI='{qualName}'\n"
-                s += f"    dc:subject='{qualName}'\n"
-                s += f"    dc:relation='https://doi.org/10.3897/biss.3.38084'\n"
-                s += f"    dc:issued='{dc_issued}'\n"
-                s += f"    dc:description='{dc_description}'\n"
-                s += f"    comments='{comments}'>\n"
+                s  = f"  <concept"
+                s += f"\n    dc:identifier='{controlled_value_string}'"
+                s += f"\n    dc:URI='{qualName}'"
+                s += f"\n    dc:subject='{qualName}'"
+                s += f"\n    dc:relation='https://doi.org/10.3897/biss.3.38084'"
+                s += f"\n    dc:issued='{dc_issued}'"
+                s += f"\n    dc:description='{dc_description}'"
+                if comments:
+                    s += f"\n    comments='{comments}'"
+                s += f">\n"
 
                 s += f"    <preferred>\n"
                 for lang in languages:
