@@ -1,6 +1,6 @@
     {
       "identifier": "http://rs.gbif.org/data-packages/coldp",
-      "url": "http://rs.gbif.org/data-packages/coldp/1.2",
+      "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2",
       "name": "coldp",
       "title": "Catalogue of Life Data Package (ColDP)",
       "shortTitle": "ColDP",
@@ -13,56 +13,56 @@
           "identifier": "http://rs.gbif.org/data-packages/coldp/author",
           "name": "author",
           "title": "Author",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/author.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/author.json",
           "description": "Normalised and structured authors that can be referred to by names, references and taxon scrutinizers. All entities also allow to specify a modifedBy field which must reference an Author identifier here."
         },
         {
           "name": "distribution",
           "title": "Distribution",
           "identifier": "http://rs.gbif.org/data-packages/coldp/distribution",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/distribution.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/distribution.json",
           "description": "A structured distribution record for a taxon in a given area."
         },
         {
           "name": "media",
           "title": "Media",
           "identifier": "http://rs.gbif.org/data-packages/coldp/media",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/media.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/media.json",
           "description": "Multimedia items for a taxon such as an image, audio or video."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/name-relation",
           "name": "name-relation",
           "title": "Name Relation",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/name-relation.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/name-relation.json",
           "description": "A directed nomenclatural name relation. See #name-relations for examples and definitions."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/name-usage",
           "name": "name-usage",
           "title": "Name Usage",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/name-usage.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/name-usage.json",
           "description": "As a simpler alternative to the 3 entities Name, Taxon and Synonym a single NameUsage entity can be supplied. A NameUsage record can either be an accepted Taxon or a Synonym and is easily distinguished by its status. A NameUsage.ID acts both as a taxonID and nameID if referred to from other table, e.g TypeMaterial or VernacularName. For synonyms the parentID field is used to link to the accepted taxon. All properties available in the individual entities can also be used for the single NameUsage:  There are two clashing properties that exist both on a Name and Taxon/Synonym, but which have a slightly different meaning. Therefore the following properties deviate slightly from their usage in their classic version:"
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/name",
           "name": "name",
           "title": "Name",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/name.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/name.json",
           "description": "Names can be shared in a structured way using various fields, but rank, scientificName and authorship alone are sufficient. See for examples and rationales. A structured scientificName can be given using the following fields:"
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/reference",
           "name": "reference",
           "title": "Reference",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/reference.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/reference.json",
           "description": "Structured bibliographic references with a unique id to refer to from other entities. References can be given either as a simple, single citation string, or in a structured form. ColDP supports fully parsed references in CSV based on the CSL-JSON format. Alternatively references can also be provided in the native file formats for the well established BibTex or CSL-JSON formats. See the sections below with for how to share alternative formats that do not conform to tabular CSV/TSV files."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/species-estimate",
           "name": "species-estimate",
           "title": "Species Estimate",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/species-estimate.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/species-estimate.json",
           "description": "An estimation of the number of species for a given higher taxon, e.g. a family. The estimation must be based on a reference and should give the number of species according to a certain \"type\" that is expected to exist."
         },
         {
@@ -70,55 +70,55 @@
           "description": "A directed taxon relation representing species interactions. Different to a TaxonConceptRelation a species interaction can also point to a species (name) outside of the local dataset.",
           "name": "species-interaction",
           "title": "Species Interaction",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/species-interaction.json"
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/species-interaction.json"
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/synonym",
           "name": "synonym",
           "title": "Synonym",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/synonym.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/synonym.json",
           "description": "A synonymous name for a taxon. Note that the same name can be linked to multiple taxa by having several Synonym records to model pro parte synonyms."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-concept-relation",
           "name": "taxon-concept-relation",
           "title": "Taxon Concept Relation",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/taxon-concept-relation.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/taxon-concept-relation.json",
           "description": "A directed taxon relation representing RCC5 taxon concept assertions."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/taxon-property",
           "name": "taxon-property",
           "title": "Taxon Property",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/taxon-property.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/taxon-property.json",
           "description": "A flexible, generic way to assign arbitrary property values to a taxon. It can be used to share species profiles, traits, descriptions and any other dynamic information about a taxon. Every property value can optionally be referenced and ordered."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/taxon",
           "name": "taxon",
           "title": "Taxon",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/taxon.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/taxon.json",
           "description": "An accepted name with a taxonomic classification given either as a parent-child relation or as a flat, denormalized record."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/treatment",
           "name": "treatment",
           "title": "Treatment",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/treatment.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/treatment.json",
           "description": "Treatments are parts of publications that \"treat\" a single taxon. They can be an original description for a new species, but also subsequent taxonomic works and usually include several sections such as a diagnosis, description, material examined, distribution, etc. ColDP captures an entire treatment either as an TXT, HTML or XML document that lives as an individual file in a subfolder treatments and is named by the corresponding taxonID of the name usage it describes. The taxons accordingToID should always point to the reference the treatment is published in. Example: treatments/19854332.html would be an html document which is the marked up treatment for the taxon with ID 19854332."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/type-material",
           "name": "type-material",
           "title": "Type Material",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/type-material.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/type-material.json",
           "description": "Type material designated to names. Type material should only be associated with the original name, not with a recombination."
         },
         {
           "identifier": "http://rs.gbif.org/data-packages/coldp/vernacular-name",
           "name": "vernacular-name",
           "title": "Vernacular Name",
-          "url": "http://rs.gbif.org/data-packages/coldp/1.2/table-schemas/vernacular-name.json",
+          "url": "http://rs.gbif.org/sandbox/data-packages/coldp/1.2/table-schemas/vernacular-name.json",
           "description": "A vernacular or common name for a taxon."
         }
       ],
