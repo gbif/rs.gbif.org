@@ -67,7 +67,7 @@ class DwcaXml:
 
         file_output = file_template + ratification_date + ".xml"
         if not os.path.isfile(file_output) and not permitNewVersion:
-            raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required." % file_output)
+            raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required, e.g. touch the file %s and rerun." % (file_output, file_output))
 
         with open(file_output, 'w', encoding='utf-8') as output_file:
             # Open the XML declaration file
