@@ -7,7 +7,7 @@
   "version": "1.1",
   "description": "The recommended exchange format for data to and from COL ChecklistBank is a tabular text format with a fixed set of files and columns.",
   "issued": "2024-09-26",
-  "isLatest": true,
+  "isLatest": false,
   "tableSchemas": [
     {
       "identifier": "http://rs.gbif.org/data-packages/coldp/author",
