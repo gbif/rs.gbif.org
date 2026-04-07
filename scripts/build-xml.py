@@ -32,6 +32,20 @@ permitNewVersion = '--permit-new-version' in opts
 scriptDir = os.path.dirname(os.path.realpath(__file__))
 ac = False
 
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
+if '--rs-path' in opts:
+    rsPath = args[opts.index('--rs-path')]
+else:
+    rsPath = None
+
 class DwcaXml:
     def __init__(self, terms, xmlTemplate, xmlTerms=None, gbifAlternatives=None):
         """
@@ -340,7 +354,8 @@ class DwcaXml:
 # Darwin Core
 dwc = dwcterms.DwcTerms(
     termLists = ['terms', 'dc-for-dwc', 'dcterms-for-dwc', 'ac-for-dwc'],
-    docMetadataFilePath = 'dwc_doc_list/')
+    docMetadataFilePath = 'dwc_doc_list/',
+    rsPath = rsPath)
 
 # Occurrence Core
 dwc_xml = DwcaXml(
@@ -394,7 +409,8 @@ dwc_xml.create_extension_xml(languages, 'sandbox/extension/dwc/identification_hi
 # Humboldt
 eco = dwcterms.DwcTerms(
     termLists = ['terms', 'humboldt'],
-    docMetadataFilePath = 'dwc_doc_eco/')
+    docMetadataFilePath = 'dwc_doc_eco/',
+    rsPath = rsPath)
 # Humboldt Extension
 eco_xml = DwcaXml(
     terms = eco,
@@ -407,7 +423,8 @@ eco_xml.create_extension_xml(languages, 'sandbox/extension/eco/humboldt_')
 # Establishment Means Vocabulary
 em = dwcterms.DwcTerms(
     termLists = ['establishmentMeans'],
-    docMetadataFilePath = 'dwc_doc_em/')
+    docMetadataFilePath = 'dwc_doc_em/',
+    rsPath = rsPath)
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/establishment_means.tmpl",
@@ -418,7 +435,8 @@ em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/establishment_means_')
 # Degree of Establishment Vocabulary
 em = dwcterms.DwcTerms(
     termLists = ['degreeOfEstablishment'],
-    docMetadataFilePath = 'dwc_doc_doe/')
+    docMetadataFilePath = 'dwc_doc_doe/',
+    rsPath = rsPath)
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/degree_of_establishment.tmpl",
@@ -429,7 +447,8 @@ em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/degree_of_establishment_
 # Pathway Vocabulary
 em = dwcterms.DwcTerms(
     termLists = ['pathway'],
-    docMetadataFilePath = 'dwc_doc_pw/')
+    docMetadataFilePath = 'dwc_doc_pw/',
+    rsPath = rsPath)
 em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/pathway.tmpl",
@@ -440,7 +459,8 @@ em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/pathway_')
 # Audiovisual Core
 ac = dwcterms.DwcTerms(
     termLists = ['audubon', 'dc-for-ac', 'dcterms-for-ac', 'dwc-for-ac', 'exif-for-ac', 'Iptc4xmpExt-for-ac', 'mo-for-ac', 'photoshop-for-ac', 'xmp-for-ac', 'xmpRights-for-ac'],
-    docMetadataFilePath = 'ac_doc_termlist/')
+    docMetadataFilePath = 'ac_doc_termlist/',
+    rsPath = rsPath)
 # Audiovisual Extension
 ac_xml = DwcaXml(
     terms = ac,
