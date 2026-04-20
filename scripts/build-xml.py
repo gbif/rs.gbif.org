@@ -363,7 +363,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/occurrence_core.tmpl",
     xmlTerms = "xml/occurrence_core_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/core/dwc_occurrence_')
+dwc_xml.create_extension_xml(languages, 'core/dwc_occurrence_')
 
 # Darwin Core Taxon Core
 dwc_xml = DwcaXml(
@@ -371,7 +371,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/taxon_core.tmpl",
     xmlTerms = "xml/taxon_core_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/core/dwc_taxon_')
+dwc_xml.create_extension_xml(languages, 'core/dwc_taxon_')
 
 # Darwin Core Event Core
 dwc_xml = DwcaXml(
@@ -379,7 +379,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/event_core.tmpl",
     xmlTerms = "xml/event_core_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/core/dwc_event_')
+dwc_xml.create_extension_xml(languages, 'core/dwc_event_')
 
 # Darwin Core Resource Relationship extension
 dwc_xml = DwcaXml(
@@ -387,7 +387,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/resource_relationship.tmpl",
     xmlTerms = "xml/resource_relationship_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/extension/dwc/resource_relationship_')
+dwc_xml.create_extension_xml(languages, 'extension/dwc/resource_relationship_')
 
 # Darwin Core Measurements or Facts extension
 dwc_xml = DwcaXml(
@@ -395,7 +395,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/measurements_or_facts.tmpl",
     xmlTerms = "xml/measurements_or_facts_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/extension/dwc/measurements_or_facts_')
+dwc_xml.create_extension_xml(languages, 'extension/dwc/measurements_or_facts_')
 
 # Darwin Core Identification History extension
 dwc_xml = DwcaXml(
@@ -403,7 +403,7 @@ dwc_xml = DwcaXml(
     xmlTemplate = "xml/identification_history.tmpl",
     xmlTerms = "xml/identification_history_list.csv"
     )
-dwc_xml.create_extension_xml(languages, 'sandbox/extension/dwc/identification_history_')
+dwc_xml.create_extension_xml(languages, 'extension/dwc/identification_history_')
 
 
 # Humboldt
@@ -417,7 +417,7 @@ eco_xml = DwcaXml(
     xmlTemplate = "xml/humboldt_eco.tmpl",
     xmlTerms = "xml/humboldt_eco_list.csv"
     )
-eco_xml.create_extension_xml(languages, 'sandbox/extension/eco/humboldt_')
+eco_xml.create_extension_xml(languages, 'extension/eco/humboldt_')
 
 
 # Establishment Means Vocabulary
