@@ -429,7 +429,7 @@ em_xml = DwcaXml(
     terms = em,
     xmlTemplate = "xml/establishment_means.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts/%s/alternativeLabels")
-em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/establishment_means_')
+em_xml.create_vocabulary_xml(languages, 'sandbox/vocabulary/dwc/establishment_means_')
 
 
 # Degree of Establishment Vocabulary
