@@ -1,0 +1,71 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-sequence",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/nucleotide-sequence.json",
+  "name": "nucleotide-sequence",
+  "title": "Nucleotide Sequence",
+  "description": "A digital representation of a nucleotide sequence.",
+  "comments": "",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/NucleotideSequence",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/NucleotideSequence-2026-05-26",
+  "rdfs:comment": "A digital representation of a nucleotide sequence.",
+  "fields": [
+    {
+      "name": "nucleotideSequence_pk",
+      "title": "Nucleotide Sequence (Primary Key)",
+      "description": "A unique identifier for a dwc:NucleotideSequence.",
+      "comments": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "nucleotideSequenceID",
+      "title": "Nucleotide Sequence ID",
+      "description": "An identifier for a dwc:NucleotideSequence.",
+      "comments": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context."
+    },
+    {
+      "name": "sequence",
+      "title": "Sequence",
+      "description": "A string representing nucleotide base pairs.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/sequence",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/sequence-2026-05-26",
+      "rdfs:comment": "A string representing nucleotide base pairs."
+    },
+    {
+      "name": "nucleotideSequenceRemarks",
+      "title": "Nucleotide Sequence Remarks",
+      "description": "Comments or notes about a dwc:NucleotideSequence.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/nucleotideSequenceRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/nucleotideSequenceRemarks-2026-05-26",
+      "rdfs:comment": "Comments or notes about a dwc:NucleotideSequence."
+    }
+  ],
+  "primaryKey": "nucleotideSequence_pk",
+  "weakPrimaryKey": "nucleotideSequenceID"
+}

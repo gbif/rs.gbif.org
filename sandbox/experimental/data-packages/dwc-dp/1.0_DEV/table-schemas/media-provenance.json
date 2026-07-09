@@ -1,0 +1,63 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/media-provenance",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/media-provenance.json",
+  "name": "media-provenance",
+  "title": "Media Provenance",
+  "description": "A dwc:Provenance for an ac:Media entity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//media-provenance",
+  "fields": [
+    {
+      "name": "provenance_fk",
+      "title": "Provenance (Foreign Key)",
+      "description": "An identifier for a dwc:Provenance.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "media_fk",
+      "title": "Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "provenance_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "provenance",
+        "fields": "provenance_pk"
+      }
+    },
+    {
+      "fields": "media_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "media",
+        "fields": "media_pk"
+      }
+    }
+  ]
+}

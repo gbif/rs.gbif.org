@@ -1,0 +1,65 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/chronometric-age-protocol",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/chronometric-age-protocol.json",
+  "name": "chronometric-age-protocol",
+  "title": "Chronometric Age Protocol",
+  "description": "A dwc:Protocol used for a chrono:ChronometricAge.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//chronometric-age-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Protocol.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "chronometricAge_fk",
+      "title": "Chronometric Age (Foreign Key)",
+      "description": "An identifier for a chrono:ChronometricAge.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "`https://www.canadianarchaeology.ca/samples/70673`",
+      "type": "string",
+      "format": "default",
+      "namespace": "chrono",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/chrono/terms/chronometricAgeID",
+      "dcterms:references": "http://rs.tdwg.org/chrono/terms/version/chronometricAgeID-2025-06-12",
+      "rdfs:comment": "An approximation of a temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported via evidence.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "chronometricAge_fk",
+      "predicate": "used for",
+      "reference": {
+        "resource": "chronometric-age",
+        "fields": "chronometricAge_pk"
+      }
+    }
+  ]
+}

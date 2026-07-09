@@ -1,0 +1,171 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-target-descriptor",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/survey-target-descriptor.json",
+  "name": "survey-target-descriptor",
+  "title": "Survey Target Descriptor",
+  "description": "A combination of a survey target value and a survey target type for given eco:SurveyTarget.",
+  "comments": "",
+  "examples": "`taxon: Aves`; `pathway: transportContaminant`; `minimumTotalLength: 20 cm`",
+  "namespace": "eco",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/SurveyTargetDescriptor",
+  "rdfs:comment": "A combination of a survey target value and a survey target type for given eco:SurveyTarget.",
+  "fields": [
+    {
+      "name": "surveyTarget_fk",
+      "title": "Survey Target (Foreign Key)",
+      "description": "An identifier for an eco:SurveyTarget.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetID",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-05-26",
+      "rdfs:comment": "An identifier for an eco:SurveyTarget.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "surveyTargetType",
+      "title": "Survey Target Type",
+      "description": "A category that best matches the nature of a scope in an eco:SurveyTarget.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`taxon`; `habitat`; `establishmentMeans`; `growthForm`; `sex`; `lifeStage`; `minimum length`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetType",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-05-26",
+      "rdfs:comment": "A category that best matches the nature of a scope in an eco:SurveyTarget."
+    },
+    {
+      "name": "surveyTargetTypeIRI",
+      "title": "Survey Target Type IRI",
+      "description": "An IRI of a controlled vocabulary value for a type of target.",
+      "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/type",
+      "rdfs:comment": "The nature or genre of the resource."
+    },
+    {
+      "name": "surveyTargetTypeSource",
+      "title": "Survey Target Type Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in eco:SurveyTargetType is given.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "rdfs:comment": "A related resource from which the described resource is derived."
+    },
+    {
+      "name": "surveyTargetValue",
+      "title": "Survey Target Value",
+      "description": "A value to include or exclude in a scope categorized by eco:surveyTargetType.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`Aves`; `oak savannah`; `native`; `tree`; `female`; `adult`; `height`; `weight`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-05-26",
+      "rdfs:comment": "A value to include or exclude in a scope categorized by eco:surveyTargetType."
+    },
+    {
+      "name": "surveyTargetValueIRI",
+      "title": "Survey Target Value IRI",
+      "description": "A value to include or exclude in a scope categorized by eco:surveyTargetType.",
+      "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ecoiri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/iri/surveyTargetValue",
+      "dcterms:references": "http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-05-26",
+      "rdfs:comment": "A value to include or exclude in a scope categorized by eco:surveyTargetType."
+    },
+    {
+      "name": "surveyTargetValueSource",
+      "title": "Survey Target Value Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in eco:SurveyTargetValue is given.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "rdfs:comment": "A related resource from which the described resource is derived."
+    },
+    {
+      "name": "surveyTargetUnit",
+      "title": "Survey Target Unit",
+      "description": "Unit associated with a value in eco:surveyTargetValue.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`m`; `g`; `years`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyTargetUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-05-26",
+      "rdfs:comment": "Unit associated with a value in eco:surveyTargetValue."
+    },
+    {
+      "name": "surveyTargetUnitIRI",
+      "title": "Survey Target Unit IRI",
+      "description": "Unit associated with a value in eco:surveyTargetValue.",
+      "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ecoiri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/iri/surveyTargetUnit",
+      "dcterms:references": "http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26",
+      "rdfs:comment": "Unit associated with a value in eco:surveyTargetValue."
+    },
+    {
+      "name": "surveyTargetUnitSource",
+      "title": "Survey Target Unit Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in eco:SurveyTargetUnit is given.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "rdfs:comment": "A related resource from which the described resource is derived."
+    },
+    {
+      "name": "includeOrExclude",
+      "title": "Include Or Exclude",
+      "description": "Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.",
+      "comments": "Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.",
+      "examples": "`include`; `exclude`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/includeOrExclude",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/includeOrExclude-2026-05-26",
+      "rdfs:comment": "Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "surveyTarget_fk",
+      "predicate": "for target",
+      "reference": {
+        "resource": "survey-target",
+        "fields": "surveyTarget_pk"
+      }
+    }
+  ]
+}

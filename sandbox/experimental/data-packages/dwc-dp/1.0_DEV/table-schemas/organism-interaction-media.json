@@ -1,0 +1,168 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-media",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/organism-interaction-media.json",
+  "name": "organism-interaction-media",
+  "title": "Organism Interaction Media",
+  "description": "A dwc:OrganismInteraction as content in an ac:Media entity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//organism-interaction-media",
+  "fields": [
+    {
+      "name": "media_fk",
+      "title": "Media (Foreign Key)",
+      "description": "An identifier for an ac:Media resource.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "organismInteraction_fk",
+      "title": "Organism Interaction (Foreign Key)",
+      "description": "An identifier for a dwc:OrganismInteraction.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:OrganismInteraction.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "subjectCategory",
+      "title": "Subject Category",
+      "description": "A term to describe the content of a image or a region of interest within an image using a controlled value string.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/CVtermLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/CVtermLiteral-2026-01-23",
+      "rdfs:comment": "A term to describe the content of a image or a region of interest within an image using a controlled value string."
+    },
+    {
+      "name": "subjectCategoryIRI",
+      "title": "Subject Category IRI",
+      "description": "An IRI of a controlled vocabulary value for the subject category of an ac:Media resource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/CVterm",
+      "dcterms:references": "pending",
+      "rdfs:comment": "A term to describe the content of the image by a value from a Controlled Vocabulary."
+    },
+    {
+      "name": "subjectCategoryVocabulary",
+      "title": "Subject Category Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:subjectCategory is given.",
+      "comments": "The Audiovisual Core recommended vocabularies do not need to be cited here. There is no required linkage between individual Subject Category terms and the vocabulary; the mechanism is intended to support discovery of the normative URI for a term, but not guarantee it.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectCategoryVocabulary-2026-01-23",
+      "rdfs:comment": "Any controlled vocabulary from which values for ac:CVtermLiteral have been drawn."
+    },
+    {
+      "name": "subjectPartLiteral",
+      "title": "Subject Part Literal",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource, denoted by a controlled value string.",
+      "comments": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectPart. It is best practice to use ac:subjectPart instead of ac:subjectPartLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPartLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPartLiteral-2023-09-05",
+      "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by a controlled value string."
+    },
+    {
+      "name": "subjectPart",
+      "title": "Subject Part",
+      "description": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the ac:Media resource.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPart-2023-09-05",
+      "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by an IRI."
+    },
+    {
+      "name": "subjectOrientationLiteral",
+      "title": "Subject Orientation Literal",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device, denoted by a controlled value string.",
+      "comments": "Values SHOULD be selected from the Controlled Vocabulary for ac:subjectOrientation. It is best practice to use ac:subjectOrientation instead of ac:subjectOrientationLiteral whenever practical.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientationLiteral",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectOrientationLiteral-2023-09-05",
+      "rdfs:comment": "Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device, denoted by a controlled value string."
+    },
+    {
+      "name": "subjectOrientation",
+      "title": "Subject Orientation",
+      "description": "Specific orientation (= direction, view angle) of the subject represented in the ac:Media resource with respect to the acquisition device.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectOrientation",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectOrientation-2023-09-05",
+      "rdfs:comment": "Specific orientation (= direction, view angle) of the subject represented in the media resource with respect to the acquisition device, denoted by an IRI."
+    },
+    {
+      "name": "physicalSetting",
+      "title": "Physical Setting",
+      "description": "The setting of the content represented in an ac:Media resource, such as images, sounds, and movies if the provider deems them relevant.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/physicalSetting",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/physicalSetting-2026-02-24",
+      "rdfs:comment": "The setting of the content represented in media such as images, sounds, and movies if the provider deems them relevant."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "media_fk",
+      "predicate": "this media instance",
+      "reference": {
+        "resource": "media",
+        "fields": "media_pk"
+      }
+    },
+    {
+      "fields": "organismInteraction_fk",
+      "predicate": "about",
+      "reference": {
+        "resource": "organism-interaction",
+        "fields": "organismInteraction_pk"
+      }
+    }
+  ]
+}

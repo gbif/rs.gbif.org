@@ -1,0 +1,64 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/material-usage-policy",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/material-usage-policy.json",
+  "name": "material-usage-policy",
+  "title": "Material Usage Policy",
+  "description": "Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//material-usage-policy",
+  "fields": [
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "usagePolicy_fk",
+      "title": "Usage Policy (Foreign Key)",
+      "description": "An identifier for a dwc:UsagePolicy.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "for",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    },
+    {
+      "fields": "usagePolicy_fk",
+      "predicate": "has",
+      "reference": {
+        "resource": "usage-policy",
+        "fields": "usagePolicy_pk"
+      }
+    }
+  ]
+}

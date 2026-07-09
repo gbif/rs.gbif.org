@@ -1,0 +1,111 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/protocol",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/protocol.json",
+  "name": "protocol",
+  "title": "Protocol",
+  "description": "A method used during an action.",
+  "comments": "",
+  "examples": "`a pitfall trap method for sampling ground-dwelling arthropods`; `a point-radius georeferencing method`; `a linear regression model to estimate body mass from skeletal measurements`; `a Bayesian phylogenetic inference method`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/Protocol",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/Protocol-2026-05-26",
+  "rdfs:comment": "A method used during an action.",
+  "fields": [
+    {
+      "name": "protocol_pk",
+      "title": "Protocol (Primary Key)",
+      "description": "A unique identifier for a dwc:Protocol.",
+      "comments": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Protocol.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "protocolID",
+      "title": "Protocol ID",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Protocol."
+    },
+    {
+      "name": "protocolType",
+      "title": "Protocol Type",
+      "description": "A category that best matches the nature of a dwc:Protocol.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`measurement`; `georeference`; `chronometric age`; `chronometric age conversion`; `sampling effort`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolType",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolType-2026-05-26",
+      "rdfs:comment": "A category that best matches the nature of a dwc:Protocol."
+    },
+    {
+      "name": "protocolName",
+      "title": "Protocol Name",
+      "description": "A name of a dwc:Protocol.",
+      "comments": "`ad hoc observation`; `bottom trawl`; `point count`; `UV light trap`",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title",
+      "rdfs:comment": "A name given to the resource."
+    },
+    {
+      "name": "protocolDescription",
+      "title": "Protocol Description",
+      "description": "A detailed description of a dwc:Protocol.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolDescription",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolDescription-2026-05-26",
+      "rdfs:comment": "A detailed description of a dwc:Protocol."
+    },
+    {
+      "name": "protocolReferences",
+      "title": "Protocol References",
+      "description": "A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol.",
+      "comments": "Recommended best practice is to separate multiple values in a list with space vertical bar space (` | `).",
+      "examples": "`Penguins from space: faecal stains reveal the location of emperor penguin colonies, https://doi.org/10.1111/j.1466-8238.2009.00467.x`",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/protocolReferences",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28",
+      "rdfs:comment": "A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Protocol."
+    },
+    {
+      "name": "protocolRemarks",
+      "title": "Protocol Remarks",
+      "description": "Comments or notes about a dwc:Protocol.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolRemarks-2026-05-26",
+      "rdfs:comment": "Comments or notes about a dwc:Protocol."
+    }
+  ],
+  "primaryKey": "protocol_pk",
+  "weakPrimaryKey": "protocolID"
+}

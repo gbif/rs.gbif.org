@@ -1,0 +1,65 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/occurrence-protocol",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/occurrence-protocol.json",
+  "name": "occurrence-protocol",
+  "title": "Occurrence Protocol",
+  "description": "A dwc:Protocol used for a dwc:Occurrence.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//occurrence-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Occurrence Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Protocol.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "occurrence_fk",
+      "title": "Occurrence (Foreign Key)",
+      "description": "An identifier for a dwc:Occurrence.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "occurrence_fk",
+      "predicate": "used during",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrence_pk"
+      }
+    }
+  ]
+}

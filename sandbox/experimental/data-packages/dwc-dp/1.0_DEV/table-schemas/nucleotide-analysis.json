@@ -1,0 +1,172 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/nucleotide-analysis",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/nucleotide-analysis.json",
+  "name": "nucleotide-analysis",
+  "title": "Nucleotide Analysis",
+  "description": "A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.",
+  "comments": "",
+  "examples": "",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/NucleotideAnalysis",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/NucleotideAnalysis-2026-05-26",
+  "rdfs:comment": "A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.",
+  "fields": [
+    {
+      "name": "nucleotideAnalysis_pk",
+      "title": "Nucleotide Analysis (Primary Key)",
+      "description": "A unique identifier for a dwc:NucleotideAnalysis.",
+      "comments": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "nucleotideAnalysisID",
+      "title": "Nucleotide Analysis ID",
+      "description": "An identifier for a dwc:NucleotideAnalysis.",
+      "comments": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context."
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2026-05-26",
+      "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "molecularProtocol_fk",
+      "title": "Molecular Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:MolecularProtocol.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/molecularProtocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:MolecularProtocol.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "nucleotideSequence_fk",
+      "title": "Nucleotide Sequence (Foreign Key)",
+      "description": "An identifier for a dwc:NucleotideSequence.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/identifier",
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "materialEntity_fk",
+      "title": "Material Entity (Foreign Key)",
+      "description": "An identifier for a dwc:MaterialEntity.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/materialEntityID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/materialEntityID-2023-09-13",
+      "rdfs:comment": "An identifier for a particular instance of a dwc:MaterialEntity.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "readCount",
+      "title": "Read Count",
+      "description": "The number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.",
+      "comments": "",
+      "examples": "`325`; `73591`; `8302`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/readCount",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/readCount-2026-05-26",
+      "rdfs:comment": "The number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis."
+    },
+    {
+      "name": "processedTotalReadCount",
+      "title": "Processed Total Read Count",
+      "description": "The total number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis.",
+      "comments": "",
+      "examples": "`50638`; `345987`; `764032`",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/processedTotalReadCount",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/processedTotalReadCount-2026-05-26",
+      "rdfs:comment": "The total number of reads obtained for a processed dwc:NucleotideSequence during a dwc:NucleotideAnalysis."
+    }
+  ],
+  "primaryKey": "nucleotideAnalysis_pk",
+  "weakPrimaryKey": "nucleotideAnalysisID",
+  "foreignKeys": [
+    {
+      "fields": "event_fk",
+      "predicate": "material collected during",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    },
+    {
+      "fields": "molecularProtocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "molecular-protocol",
+        "fields": "molecularProtocol_pk"
+      }
+    },
+    {
+      "fields": "nucleotideSequence_fk",
+      "predicate": "produced",
+      "reference": {
+        "resource": "nucleotide-sequence",
+        "fields": "nucleotideSequence_pk"
+      }
+    },
+    {
+      "fields": "materialEntity_fk",
+      "predicate": "based on",
+      "reference": {
+        "resource": "material",
+        "fields": "materialEntity_pk"
+      }
+    }
+  ]
+}

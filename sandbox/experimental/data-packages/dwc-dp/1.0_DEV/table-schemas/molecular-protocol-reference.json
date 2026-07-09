@@ -1,0 +1,78 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/molecular-protocol-reference",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/molecular-protocol-reference.json",
+  "name": "molecular-protocol-reference",
+  "title": "Molecular Protocol Reference",
+  "description": "A dcterms:BibliographicResource related to a dwc:MolecularProtocol.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//molecular-protocol-reference",
+  "fields": [
+    {
+      "name": "reference_fk",
+      "title": "Reference ID (Foreign Key)",
+      "description": "An identifier for a dcterms:BibliographicResource.",
+      "comments": "The value in this field MAY refer to a dcterms:BibliographicResource within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/referenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/referenceID-2026-05-26",
+      "rdfs:comment": "An identifier for a dcterms:BibliographicResource.",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "molecularProtocol_fk",
+      "title": "Molecular Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:MolecularProtocol.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/molecularProtocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/molecularProtocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:MolecularProtocol.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "relationshipType",
+      "title": "Relationship Type",
+      "description": "A relationship of a subject resource to a dcterms:BibliographicResource.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`cited in`; `referenced`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "reference_fk",
+      "predicate": "mentioned in",
+      "reference": {
+        "resource": "bibliographic-resource",
+        "fields": "reference_pk"
+      }
+    },
+    {
+      "fields": "molecularProtocol_fk",
+      "predicate": "mentioned",
+      "reference": {
+        "resource": "molecular-protocol",
+        "fields": "molecularProtocol_pk"
+      }
+    }
+  ]
+}

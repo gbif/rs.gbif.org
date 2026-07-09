@@ -1,0 +1,65 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/survey-protocol",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/survey-protocol.json",
+  "name": "survey-protocol",
+  "title": "Survey Protocol",
+  "description": "A dwc:Protocol used for an eco:Survey.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//survey-protocol",
+  "fields": [
+    {
+      "name": "protocol_fk",
+      "title": "Protocol (Foreign Key)",
+      "description": "An identifier for a dwc:Protocol.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/protocolID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/protocolID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Protocol.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "survey_fk",
+      "title": "Survey (Foreign Key)",
+      "description": "An identifier for an eco:Survey.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "eco",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/eco/terms/surveyID",
+      "dcterms:references": "http://rs.tdwg.org/eco/terms/version/surveyID-2026-05-26",
+      "rdfs:comment": "An identifier for an eco:Survey.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "protocol_fk",
+      "predicate": "followed",
+      "reference": {
+        "resource": "protocol",
+        "fields": "protocol_pk"
+      }
+    },
+    {
+      "fields": "survey_fk",
+      "predicate": "used during",
+      "reference": {
+        "resource": "survey",
+        "fields": "survey_pk"
+      }
+    }
+  ]
+}
