@@ -1,0 +1,84 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/agent.json",
+  "name": "agent",
+  "title": "Agent",
+  "description": "A resource that acts or has the power to act.",
+  "comments": "A person, group, organization, machine, software or other entity that can act. Membership in the dcterms:Agent class is determined by the capacity to act, even if not doing so in a specific context. To act: To participate in an event or process by contributing through behavior, operation, or an effect resulting from active participation — regardless of whether that contribution is intentional, volitional, or conscious.",
+  "examples": "`Carl Linnaeus`; `The Terra Nova Expedition`; `The National Science Foundation`; `The El Yunque National Forest ARBIMON System`; `ChatGPT`",
+  "namespace": "dcterms",
+  "dcterms:isVersionOf": "http://purl.org/dc/terms/Agent",
+  "rdfs:comment": "A resource that acts or has the power to act.",
+  "fields": [
+    {
+      "name": "agent_pk",
+      "title": "Agent (Primary Key)",
+      "description": "A unique identifier for a dcterms:Agent.",
+      "comments": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/agentID-2026-05-26",
+      "rdfs:comment": "An identifier for a dcterms:Agent.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "agentID",
+      "title": "Agent ID",
+      "description": "An identifier for a dcterms:Agent.",
+      "comments": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/agentID-2026-05-26",
+      "rdfs:comment": "An identifier for a dcterms:Agent."
+    },
+    {
+      "name": "agentType",
+      "title": "Agent Type",
+      "description": "A category that best matches the nature of a dcterms:Agent.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`person`; `group`; `organization`; `camera`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentType",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/agentType-2026-05-26",
+      "rdfs:comment": "A category that best matches the nature of a dcterms:Agent."
+    },
+    {
+      "name": "preferredAgentName",
+      "title": "Preferred Agent Name",
+      "description": "A name of a dcterms:Agent preferred in searches and results.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dcterms",
+      "dcterms:isVersionOf": "http://purl.org/dc/terms/title",
+      "rdfs:comment": "A name given to the resource."
+    },
+    {
+      "name": "agentRemarks",
+      "title": "Agent Remarks",
+      "description": "Comments or notes about a dcterms:Agent.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentRemarks",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/agentRemarks-2026-05-26",
+      "rdfs:comment": "Comments or notes about a dcterms:Agent."
+    }
+  ],
+  "primaryKey": "agent_pk",
+  "weakPrimaryKey": "agentID"
+}

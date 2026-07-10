@@ -1,0 +1,133 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction-agent-role",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/organism-interaction-agent-role.json",
+  "name": "organism-interaction-agent-role",
+  "title": "Organism Interaction Agent Role",
+  "description": "A role filled by a dcterms:Agent with respect to a dwc:OrganismInteraction.",
+  "comments": "",
+  "examples": "",
+  "namespace": "",
+  "dcterms:isVersionOf": "http://example.com/term-pending//organism-interaction-agent-role",
+  "fields": [
+    {
+      "name": "organismInteraction_fk",
+      "title": "Organism Interaction (Foreign Key)",
+      "description": "An identifier for a dwc:OrganismInteraction.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:OrganismInteraction.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "agent_fk",
+      "title": "Agent (Foreign Key)",
+      "description": "An identifier for a dcterms:Agent.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/agentID-2026-05-26",
+      "rdfs:comment": "An identifier for a dcterms:Agent.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "agentRole",
+      "title": "Agent Role",
+      "description": "A category that best matches the nature of a role of a dcterms:Agent.",
+      "comments": "Recommended best practice is to use a controlled vocabulary for the roles appropriate to the class of resource a dcterms:AgentRole is related to.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResource",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28",
+      "rdfs:comment": "The relationship of the subject (identified by dwc:resourceID) to the object (identified by dwc:relatedResourceID)."
+    },
+    {
+      "name": "agentRoleIRI",
+      "title": "Agent Role IRI",
+      "description": "An IRI of the controlled vocabulary value for a role of a dcterms:Agent.",
+      "comments": "Recommended best practice is to use an IRI for a term in a controlled vocabulary.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwciri",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipOfResourceID-2023-06-28",
+      "rdfs:comment": "An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID."
+    },
+    {
+      "name": "agentRoleSource",
+      "title": "Agent Role Source",
+      "description": "A reference to a controlled vocabulary in which the definition of a value in dwc:agentRole is given.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "rdfs:comment": "A related resource from which the described resource is derived."
+    },
+    {
+      "name": "agentRoleOrder",
+      "title": "Agent Role Order",
+      "description": "A numerical position of an AgentRole in a set of AgentRoles that have the same combination of agentRole, agentRoleIRI, agentRoleSource and related target identifier.",
+      "comments": "One could use dwc:agentRoleOrder to create an ordered list of collectors (dwc:agentRole = 'collector') for a dwc:MaterialEntity, for example. The first would have dwc:agentRoleOrder=1, the second would have dwc:agentRoleOrder=2.",
+      "examples": "",
+      "type": "integer",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/agentRoleOrder",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/agentRoleOrder-2026-05-26",
+      "rdfs:comment": "A numerical position of an AgentRole in a set of AgentRoles.",
+      "constraints": {
+        "required": true,
+        "minimum": 1
+      }
+    },
+    {
+      "name": "agentRoleDate",
+      "title": "Agent Role Date",
+      "description": "An interval during which a dcterms:AgentRole was in effect.",
+      "comments": "Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2025-06-12",
+      "rdfs:comment": "The date-time on which the relationship between the two resources was established."
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "organismInteraction_fk",
+      "predicate": "role for",
+      "reference": {
+        "resource": "organism-interaction",
+        "fields": "organismInteraction_pk"
+      }
+    },
+    {
+      "fields": "agent_fk",
+      "predicate": "role holder",
+      "reference": {
+        "resource": "agent",
+        "fields": "agent_pk"
+      }
+    }
+  ]
+}

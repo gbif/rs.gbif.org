@@ -1,0 +1,216 @@
+{
+  "identifier": "http://rs.tdwg.org/dwc/dwc-dp/organism-interaction",
+  "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/table-schemas/organism-interaction.json",
+  "name": "organism-interaction",
+  "title": "Organism Interaction",
+  "description": "An interaction between two dwc:Organisms during a dwc:Event.",
+  "comments": "Supports only primary observed interactions, not habitual or derived taxon-level interactions. Pairwise interactions must be used to represent multi-organism interactions. When possible, typify the action rather than the state from which an action is inferred, with the actor as the subject dwc:Occurrence and the acted-upon as the related dwc:Occurrence. Only one direction of a two-way interaction is necessary, though both are permissible as distinct OrganismInteractions with distinct subject dwc:Occurrences.",
+  "examples": "`a bee visiting a flower`; `a Mallophora ruficauda hunting an Apis mellifera in flight`; `a viral infection in a plant`; `a female spider mating with a male spider`; `a lion cub nursing from its mother`; `a mosquito sucking blood from a chimpanzee's arm`; `a slug eating a fungus growing on decomposing stump (2 interactions)`",
+  "namespace": "dwc",
+  "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/OrganismInteraction",
+  "dcterms:references": "http://rs.tdwg.org/dwc/terms/OrganismInteraction-2026-05-26",
+  "rdfs:comment": "An interaction between two dwc:Organisms during a dwc:Event.",
+  "fields": [
+    {
+      "name": "organismInteraction_pk",
+      "title": "Organism Interaction (Primary Key)",
+      "description": "A unique identifier for a dwc:OrganismInteraction.",
+      "comments": "The value in this field MAY be changed in aggregation to guarantee uniqueness.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:OrganismInteraction.",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "organismInteractionID",
+      "title": "Organism Interaction ID",
+      "description": "An identifier for a dwc:OrganismInteraction.",
+      "comments": "The value in this field MUST be preserved in aggregation. Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:OrganismInteraction."
+    },
+    {
+      "name": "event_fk",
+      "title": "Event (Foreign Key)",
+      "description": "An identifier for a dwc:Event.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/eventID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/eventID-2026-05-26",
+      "rdfs:comment": "An identifier for the set of information associated with a dwc:Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "organismInteractionDescription",
+      "title": "Organism Interaction Description",
+      "description": "A verbatim description of a dwc:OrganismInteraction.",
+      "comments": "",
+      "examples": "`Mallophora ruficauda capturing an Apis mellifera worker in flight.`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionDescription",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionDescription-2026-05-26",
+      "rdfs:comment": "A verbatim description of a dwc:OrganismInteraction."
+    },
+    {
+      "name": "subjectOccurrence_fk",
+      "title": "Subject Occurrence (Foreign Key)",
+      "description": "An identifier for a subject dwc:Occurrence in a dwc:OrganismInteraction.",
+      "comments": "The value in this field MAY be changed in aggregation to preserve the relationship to the (Primary Key).",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).",
+      "constraints": {
+        "required": true,
+        "unique": false
+      }
+    },
+    {
+      "name": "subjectOrganismPart",
+      "title": "Subject Organism Part",
+      "description": "A part of a subject dwc:Organism involved in a dwc:OrganismInteraction.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`leaf`; `stomach`; `stamen`; `leg`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPart-2023-09-05",
+      "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by an IRI."
+    },
+    {
+      "name": "organismInteractionType",
+      "title": "Organism Interaction Type",
+      "description": "A category that best matches the nature of a dwc:OrganismInteraction.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`visited flower of`; `pollinated by`; `parasitoid of`; `mated with`; `was attached to`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/organismInteractionType",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/organismInteractionType-2026-05-26",
+      "rdfs:comment": "A category that best matches the nature of a dwc:OrganismInteraction."
+    },
+    {
+      "name": "relatedOccurrenceID",
+      "title": "Related Occurrence ID",
+      "description": "An identifier for a related dwc:Occurrence in a dwc:OrganismInteraction.",
+      "comments": "The value in this field MAY refer to a dwc:Occurrence within or external to the dataset in which this record originated.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence).",
+      "constraints": {
+        "required": false,
+        "unique": false
+      }
+    },
+    {
+      "name": "externalRelatedOccurrenceID",
+      "title": "External Related Occurrence ID",
+      "description": "An identifier for a related dwc:Occurrence (the object) of a dwc:ResourceRelationship that is not within the same dataset.",
+      "comments": "Recommended best practice is to use a globally unique identifier.",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/occurrenceID",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/occurrenceID-2026-05-26",
+      "rdfs:comment": "An identifier for a dwc:Occurrence (as opposed to a particular digital record of a dwc:Occurrence)."
+    },
+    {
+      "name": "externalRelatedOccurrenceSource",
+      "title": "External Related Occurrence Source",
+      "description": "A reference to a source outside the dataset where the related dwc:Occurrence record can be found.",
+      "comments": "",
+      "examples": "",
+      "type": "string",
+      "format": "default",
+      "namespace": "dc",
+      "dcterms:isVersionOf": "http://purl.org/dc/elements/1.1/source",
+      "rdfs:comment": "A related resource from which the described resource is derived."
+    },
+    {
+      "name": "relatedOrganismPart",
+      "title": "Related Organism Part",
+      "description": "A part of a object dwc:Organism involved in a dwc:OrganismInteraction.",
+      "comments": "Recommended best practice is to use a controlled vocabulary.",
+      "examples": "`leaf`; `stomach`; `stamen`; `leg`",
+      "type": "string",
+      "format": "default",
+      "namespace": "ac",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/ac/terms/subjectPart",
+      "dcterms:references": "http://rs.tdwg.org/ac/terms/version/subjectPart-2023-09-05",
+      "rdfs:comment": "The portion or product of organism morphology, behaviour, environment, etc. that is either predominantly shown or particularly well exemplified by the media resource, denoted by an IRI."
+    },
+    {
+      "name": "feedbackURL",
+      "title": "Feedback URL",
+      "description": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record.",
+      "comments": "Recommended best practice is to optionally include query strings that act to pre-populate web page form elements and communicate the context.",
+      "examples": "`https://example.com/new?title=New+issue&body=This+comment+is+about+CAN12345`",
+      "type": "string",
+      "format": "default",
+      "namespace": "dwc",
+      "dcterms:isVersionOf": "http://rs.tdwg.org/dwc/terms/feedbackURL",
+      "dcterms:references": "http://rs.tdwg.org/dwc/terms/version/feedbackURL-2025-06-12",
+      "rdfs:comment": "A uniform resource locator (URL) that points to a webpage on which a form may be submitted to gather feedback about the record."
+    }
+  ],
+  "primaryKey": "organismInteraction_pk",
+  "weakPrimaryKey": "organismInteractionID",
+  "foreignKeys": [
+    {
+      "fields": "event_fk",
+      "predicate": "happened during",
+      "reference": {
+        "resource": "event",
+        "fields": "event_pk"
+      }
+    },
+    {
+      "fields": "subjectOccurrence_fk",
+      "predicate": "by",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrence_pk"
+      }
+    }
+  ],
+  "weakForeignKeys": [
+    {
+      "fields": "relatedOccurrenceID",
+      "predicate": "with",
+      "reference": {
+        "resource": "occurrence",
+        "fields": "occurrenceID"
+      }
+    }
+  ]
+}
