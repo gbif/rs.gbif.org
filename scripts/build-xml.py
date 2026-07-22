@@ -30,7 +30,27 @@ args = [arg for arg in arg_vals if not arg.startswith('-')]
 permitNewVersion = '--permit-new-version' in opts
 
 scriptDir = os.path.dirname(os.path.realpath(__file__))
+repoRoot = os.path.dirname(scriptDir)
 ac = False
+
+
+def is_missing(value):
+    """Return True for None, pandas NaN/NA, or an empty string."""
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return value == ''
+    try:
+        return bool(pd.isna(value))
+    except (TypeError, ValueError):
+        return False
+
+
+def xml_escape(value):
+    """Convert a scalar value to XML-safe text; missing values become empty."""
+    if is_missing(value):
+        return ''
+    return html.escape(str(value))
 
 # -----------------
 # Command line arguments
@@ -68,8 +88,8 @@ class DwcaXml:
         """
         Retrieve the value of the given term in the given locale, escaped for XML.
         """
-        if key+l in row and row[key+l] != '':
-            return html.escape(row[key+l])
+        if key+l in row and not is_missing(row[key+l]):
+            return xml_escape(row[key+l])
         else:
             return None
 
@@ -79,7 +99,12 @@ class DwcaXml:
         # Use ratification date in filenames for stability.
         ratification_date = self.terms.document_configuration_yaml['doc_modified']
 
-        file_output = file_template + ratification_date + ".xml"
+        file_output = os.path.join(
+            repoRoot,
+            file_template + ratification_date + ".xml"
+        )
+        os.makedirs(os.path.dirname(file_output), exist_ok=True)
+
         if not os.path.isfile(file_output) and not permitNewVersion:
             raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required, e.g. touch the file %s and rerun." % (file_output, file_output))
 
@@ -96,8 +121,10 @@ class DwcaXml:
             # Core.
 
             # Load the terms from the Extension term list file
-            termlist = pd.read_csv(scriptDir + '/' + self.xmlTerms)
-            termlist = termlist.replace({float("NaN"): None})
+            termlist = pd.read_csv(
+                scriptDir + '/' + self.xmlTerms,
+                keep_default_na=False
+            )
             previous_group = 'None'
 
             for ext_index,ext_item in termlist.iterrows():
@@ -116,7 +143,16 @@ class DwcaXml:
                 #    must be populated with 'true'.
 
                 # Find the term from the rs.tdwg.org data
-                term_data = self.terms.get_term(ext_item['iri'])
+                term_iri = str(ext_item['iri']).strip()
+
+                try:
+                    term_data = self.terms.get_term(term_iri)
+                except (ValueError, IndexError) as exc:
+                    raise ValueError(
+                        f"Unable to build extension field {ext_index}. "
+                        f"The IRI from {self.xmlTerms} was not found in the loaded term metadata:\n"
+                        f"  {term_iri!r}"
+                    ) from exc
 
                 # Always set the group based on the value in the Extension term list
                 group = ext_item['group']
@@ -166,33 +202,33 @@ class DwcaXml:
                 # Get the term definition (dc:description) from the description field of
                 # the Extension term list file. Otherwise use the description from the standard.
                 dc_description = ext_item['description']
-                if dc_description is None:
+                if is_missing(dc_description):
                     dc_description = term_data['rdfs_comment']
 
                 # Get the term comments from the description field of the Extension
                 # term list file. Otherwise use the comments from the standard.
                 comments = ext_item['comments']
-                if comments is None:
+                if is_missing(comments):
                     comments = term_data['dcterms_description']
 
                 # Get the term examples from the description field of the Extension term
                 # list file. Otherwise use the examples from the standard.
                 examples = ext_item['examples']
-                if examples is None:
+                if is_missing(examples):
                     examples = term_data['examples']
 
                 # Set the attribute 'required' to 'false' unless it is provided in the
                 # Extension term list file
                 required = ext_item['required']
-                if required is None or not required:
+                if is_missing(required) or not required:
                     required = 'false'
                 else:
                     required = 'true'
 
                 # HTML encode description, comment, and examples
-                dc_description = html.escape(dc_description)
-                comments = html.escape(comments)
-                examples = html.escape(examples)
+                dc_description = xml_escape(dc_description)
+                comments = xml_escape(comments)
+                examples = xml_escape(examples)
 
                 # Construct the property entry for the output file
                 s = f"    <property group='{group}' "
@@ -276,7 +312,12 @@ class DwcaXml:
         # Use ratification date in filenames for stability.
         ratification_date = self.terms.document_configuration_yaml['doc_modified']
 
-        file_output = file_template + ratification_date + ".xml"
+        file_output = os.path.join(
+            repoRoot,
+            file_template + ratification_date + ".xml"
+        )
+        os.makedirs(os.path.dirname(file_output), exist_ok=True)
+
         if not os.path.isfile(file_output) and not permitNewVersion:
             raise Exception("Standard has a new version, but %s doesn't exist.  Manual review/sandbox required." % file_output)
 
@@ -296,10 +337,10 @@ class DwcaXml:
                 qualName = term['term_iri']
                 controlled_value_string = term['controlled_value_string']
                 dc_issued = term['term_created']
-                dc_title = html.escape(term['label'])
-                dc_description = html.escape(term['definition'])
-                comments = html.escape(term['notes'])
-                usage = html.escape(term['usage'])
+                dc_title = xml_escape(term['label'])
+                dc_description = xml_escape(term['definition'])
+                comments = xml_escape(term['notes'])
+                usage = xml_escape(term['usage'])
 
                 if controlled_value_string == '':
                     continue
@@ -318,7 +359,7 @@ class DwcaXml:
                 s += f"    <preferred>\n"
                 for lang in languages:
                     if 'label_'+lang in term:
-                        title_lang = html.escape(term['label_'+lang])
+                        title_lang = xml_escape(term['label_'+lang])
                         # Currently the IPT only supports Traditional Chinese with the code zh.
                         if lang == 'zh-Hant':
                             lang = 'zh'
@@ -337,7 +378,7 @@ class DwcaXml:
                         if not present:
                             s += f"    <alternative>\n"
                             present = True
-                        title = html.escape(alt['value'])
+                        title = xml_escape(alt['value'])
                         lang = alt['language'].split('-')[0]
                         s += f"      <term dc:source='GBIF Vocabulary Server' dc:title='{title}' xml:lang='{lang}'/>\n"
                     if present:
@@ -418,6 +459,24 @@ eco_xml = DwcaXml(
     xmlTerms = "xml/humboldt_eco_list.csv"
     )
 eco_xml.create_extension_xml(languages, 'sandbox/extension/eco/humboldt_')
+
+
+# Chronometric Age
+chrono = dwcterms.DwcTerms(
+    termLists = ['terms', 'chronometricage'],
+    docMetadataFilePath = 'dwc_doc_chrono/',
+    rsPath = rsPath)
+
+# Chronometric Age Extension
+chrono_xml = DwcaXml(
+    terms = chrono,
+    xmlTemplate = "xml/chronometric_age.tmpl",
+    xmlTerms = "xml/chronometric_age_list.csv"
+    )
+chrono_xml.create_extension_xml(
+    languages,
+    'sandbox/extension/chrono/chronometric_age_'
+    )
 
 
 # Establishment Means Vocabulary

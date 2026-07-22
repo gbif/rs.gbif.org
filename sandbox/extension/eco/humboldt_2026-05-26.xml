@@ -7,7 +7,7 @@
     dc:title='Humboldt Ecological Inventory'
     name="HumboldtEcologicalInventory" namespace='http://rs.tdwg.org/eco/terms/'
     rowType='http://rs.tdwg.org/eco/terms/Event'
-    dc:issued='2026-06-09'
+    dc:issued='2026-07-21'
     dc:subject='dwc:Event'
     dc:relation='http://rs.tdwg.org/eco/terms/Event'
     dc:description='Extended support for Darwin Core Events related to ecological inventories.'>
@@ -208,14 +208,14 @@
     <!-- Identification -->
     <property group='Identification' name='identifiedBy' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/identifiedBy' label='Identified By' dc:relation='https://dwc.tdwg.org/terms/#dwc:identifiedBy' dc:description='A name for a dcterms:Agent responsible for making a dwc:Identification.' comments='When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (` | `). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`James L. Patton`; `Theodore Pappenfuss | Robert Macey`; `MegaDetector V5`' required='false'>
       <translation xml:lang='cs' label='Identifikováno kým'/>
-      <translation xml:lang='es' label='Identificado por'/>
+      <translation xml:lang='es' label='Identificado por' comments='Cuando se utiliza en el contexto de un eco:Survey, el sujeto está constituido por todos los dwc:Identifications relacionados con dicho eco:Survey. La práctica recomendada consiste en separar los valores de la lista mediante la secuencia espacio-barra vertical-espacio (` | `). Este término tiene un equivalente en el espacio de nombres dwciri: que admite únicamente un IRI como valor, mientras que este término permite cualquier valor de tipo cadena de texto (string literal).' dc:description='El nombre de un dcterms:Agent responsable de realizar una dwc:Identification.'/>
       <translation xml:lang='fr' label='Identifié par'/>
       <translation xml:lang='ru' label='Кем идентифицировано'/>
       <translation xml:lang='zh' label='鑑定者'/>
     </property>
     <property group='Identification' name='identificationReferences' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/identificationReferences' label='Identification References' dc:relation='https://dwc.tdwg.org/terms/#dwc:identificationReferences' dc:description='A list (concatenated and separated) of dcterms:BibliographicResources used in a dwc:Identification.' comments='When used in the context of an eco:Survey, the subject consists of all of the dwc:Identifications related to the eco:Survey. Recommended best practice is to separate the values in a list with space vertical bar space (` | `).' examples='`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`' required='false'>
       <translation xml:lang='cs' label='Odkazy na identifikaci'/>
-      <translation xml:lang='es' label='Referencias de la identificación'/>
+      <translation xml:lang='es' label='Referencias de la identificación' comments='Cuando se utiliza en el contexto de un eco:Survey, el sujeto está constituido por todos los dwc:Identifications relacionados con dicho eco:Survey. La mejor práctica recomendada consiste en separar los valores de la lista mediante un espacio, una barra vertical y otro espacio (` | `).' dc:description='Una lista (concatenada y separada) de dcterms:BibliographicResources utilizados en una dwc:Identification.'/>
       <translation xml:lang='fr' label='Références associées à l&#x27;identification'/>
       <translation xml:lang='ru' label='Источники, использованные в ходе идентификации'/>
     </property>

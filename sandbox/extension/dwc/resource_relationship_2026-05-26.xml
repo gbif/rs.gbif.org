@@ -7,7 +7,7 @@
     dc:title='Darwin Core Resource Relationship'
     name='ResourceRelationship' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/ResourceRelationship'
-    dc:issued='2026-06-09'
+    dc:issued='2026-07-21'
     dc:subject='dwc:Occurrence dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/ResourceRelationship'
     dc:description='Extended support for relationships between resources in a Darwin Core Occurrence, Event, or Taxon Core to resources in an extension or external to the data set. The identifiers for subject (resourceID) and object (relatedResourceID) may exist in the dataset or be accessible via an externally resolvable identifiers.'>
@@ -15,6 +15,7 @@
     <!-- ResourceRelationship -->
     <property group='ResourceRelationship' name='resourceRelationshipID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/resourceRelationshipID' label='Resource Relationship ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:resourceRelationshipID' dc:description='An identifier for a dwc:ResourceRelationship.' comments='Recommended best practice is to use a globally unique identifier.' required='false'>
       <translation xml:lang='cs' label='ID vztahu mezi zdroji'/>
+      <translation xml:lang='es' comments='La mejor práctica recomendada es utilizar un identificador único a nivel global.' dc:description='Un identificador para una dwc:ResourceRelationship.'/>
       <translation xml:lang='fr' label='Identifiant de relation entre les ressources'/>
       <translation xml:lang='ru' label='ID Связи между ресурсами'/>
       <translation xml:lang='zh' label='紀錄之間的關係資訊ID'/>
@@ -33,6 +34,7 @@
     </property>
     <property group='ResourceRelationship' name='relatedResourceID' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/relatedResourceID' label='Related Resource ID' dc:relation='https://dwc.tdwg.org/terms/#dwc:relatedResourceID' dc:description='An identifier for the related resource (the object) of a dwc:ResourceRelationship.' comments='Recommended best practice is to use a globally unique identifier.' examples='`dc609808-b09b-11e8-96f8-529269fb1459`' required='true'>
       <translation xml:lang='cs' label='ID souvisejícího zdroje'/>
+      <translation xml:lang='es' comments='La mejor práctica recomendada es utilizar un identificador único a nivel global.' dc:description='Un identificador para el recurso relacionado (el objeto) de una dwc:ResourceRelationship.'/>
       <translation xml:lang='fr' label='Identifiant de la ressource liée'/>
       <translation xml:lang='ru' label='ID связанного ресурса'/>
       <translation xml:lang='zh' label='與主體有關係的對象ID'/>
