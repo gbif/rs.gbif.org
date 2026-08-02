@@ -1,6 +1,8 @@
 group,iri,type,thesaurus,description,comments,examples,required
 Identification,http://rs.tdwg.org/dwc/terms/identificationID,,,,,,
+Identification,http://rs.tdwg.org/dwc/terms/identificationType,,,,,,
 Identification,http://rs.tdwg.org/dwc/terms/verbatimIdentification,,,,,,
+Identification,http://rs.tdwg.org/dwc/terms/isAcceptedIdentification,,,,,,
 Identification,http://rs.tdwg.org/dwc/terms/identificationQualifier,,,,,,
 Identification,http://rs.tdwg.org/dwc/terms/typeStatus,,,,,,
 Identification,http://rs.tdwg.org/dwc/terms/identifiedBy,,,,,,
