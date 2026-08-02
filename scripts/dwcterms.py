@@ -70,15 +70,7 @@ class DwcTerms:
         if self.localGithub:
             with open(contributors_yaml_url) as file: contributors_yaml = file.read()
         else:
-            response = requests.get(contributors_yaml_url, timeout=30)
-            print("Loading contributors YAML:", contributors_yaml_url)
-            print("HTTP status:", response.status_code)
-            print("Content-Type:", response.headers.get("Content-Type"))
-            contributors_yaml = response.text
-            if response.status_code != 200:
-                print("Response (first 500 chars):")
-                print(contributors_yaml[:500])
-                response.raise_for_status()
+            contributors_yaml = requests.get(contributors_yaml_url).text
         if contributors_yaml == '404: Not Found':
             print('Contributors YAML file not found. Check the URL.')
             print(contributors_yaml_url)
