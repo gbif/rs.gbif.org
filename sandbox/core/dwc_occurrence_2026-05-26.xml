@@ -7,7 +7,7 @@
     dc:title='Darwin Core Occurrence'
     name='Occurrence' namespace='http://rs.tdwg.org/dwc/terms/'
     rowType='http://rs.tdwg.org/dwc/terms/Occurrence'
-    dc:issued='2026-07-21'
+    dc:issued='2026-08-14'
     dc:subject='dwc:Event dwc:Taxon'
     dc:relation='http://rs.tdwg.org/dwc/terms/Occurrence'
     dc:description='Support for Darwin Core Occurrence-based records.'>
@@ -209,14 +209,14 @@
       <translation xml:lang='zh' label='生殖狀態'/>
     </property>
     <property group='Occurrence' name='caste' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/caste' label='Caste' dc:relation='https://dwc.tdwg.org/terms/#dwc:caste' dc:description='A social caste of a dwc:Organism.' comments='Recommended best practice is to use a controlled vocabulary that aligns best with a dwc:Taxon. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`queen`; `male alate`; `intercaste`; `minor worker`; `soldier`; `ergatoid`' required='false'>
-      <translation xml:lang='cs' label='Kasta'/>
+      <translation xml:lang='cs' label='Kasta' comments='Doporučeným osvědčeným postupem je použití řízeného slovníku, který nejlépe odpovídá dwc:Taxon. Tento termín má ekvivalent ve jmenném prostoru dwciri:, který umožňuje jako hodnotu pouze IRI, zatímco tento termín umožňuje jakoukoli řetězcovou literální hodnotu.'/>
       <translation xml:lang='es' label='Casta' comments='La mejor práctica recomendada consiste en utilizar un vocabulario controlado que se ajuste de la mejor manera a dwc:Taxon. Este término tiene un equivalente en el espacio de nombres dwciri: que solo admite una IRI como valor, mientras que este término permite cualquier valor de tipo cadena de texto (*string literal*).' dc:description='Una casta social de un dwc:Organism.'/>
       <translation xml:lang='fr' label='Caste'/>
       <translation xml:lang='ru' label='Каста'/>
       <translation xml:lang='zh' label='社會性生物的職能分工'/>
     </property>
     <property group='Occurrence' name='behavior' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/behavior' label='Behavior' dc:relation='https://dwc.tdwg.org/terms/#dwc:behavior' dc:description='A behavior shown by a dwc:Organism.' comments='This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.' examples='`roosting`; `foraging`; `running`' required='false'>
-      <translation xml:lang='cs' label='Chování' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.'/>
+      <translation xml:lang='cs' label='Chování' comments='Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje zadat jakoukoli řetězcovou literální hodnotu.' dc:description='Chování, které vykazuje objekt typu dwc:Organism.'/>
       <translation xml:lang='es' label='Comportamiento' comments='Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre.' dc:description='Un comportamiento exhibido por un dwc:Organism.'/>
       <translation xml:lang='fr' label='Comportement' comments='Ce terme a un équivalent dans le dwciri: namespace qui n&#x27;autorise qu&#x27;un IRI comme valeur, alors que ce terme autorise n&#x27;importe quelle valeur sous forme de chaîne de caractères.'/>
       <translation xml:lang='ru' label='Поведение' comments='Этот термин имеет эквивалент в пространстве имён dwciri:, который допускает только IRI в качестве значения, в то время как данный термин допускает использование любой строки в качестве литерала.'/>
@@ -384,7 +384,7 @@
       <translation xml:lang='zh' label='字面上標籤'/>
     </property>
     <property group='MaterialEntity' name='associatedSequences' namespace='http://rs.tdwg.org/dwc/terms/' qualName='http://rs.tdwg.org/dwc/terms/associatedSequences' label='Associated Sequences' dc:relation='https://dwc.tdwg.org/terms/#dwc:associatedSequences' dc:description='A list (concatenated and separated) of dcterms:BibliographicResources for dwc:NucleotideSequences associated with a dwc:MaterialEntity.' examples='`http://www.ncbi.nlm.nih.gov/nuccore/U34853.1`; `http://www.ncbi.nlm.nih.gov/nuccore/GU328060 | http://www.ncbi.nlm.nih.gov/nuccore/AF326093`' required='false'>
-      <translation xml:lang='cs' label='Související sekvence'/>
+      <translation xml:lang='cs' label='Související sekvence' dc:description='Seznam (zřetězený a rozdělený) termínů typu dcterms:BibliographicResources pro dwc:NucleotideSequences spojených s entitou dwc:MaterialEntity.'/>
       <translation xml:lang='es' label='Secuencias asociadas' dc:description='Una lista (concatenada y separada) de dcterms:BibliographicResources para dwc:NucleotideSequences asociados a una dwc:MaterialEntity.'/>
       <translation xml:lang='fr' label='Séquences associées'/>
       <translation xml:lang='ru' label='Связанные генетические последовательности'/>
