@@ -163,20 +163,19 @@ class DwcaXml:
                 group = ext_item['group']
 
                 # Get the term name, namespace etc
-                name = term_data['term_localName']
+                qualName = ext_item['iri']
                 namespace = term_data['pref_ns_uri']
 
-                # The qualified name normally is the namespace plus the term's local name,
-                # which is what the 'iri' column of the Extension term list file holds.
-                # Some borrowed namespaces mint opaque IRIs that do not contain the name
-                # used as a Darwin Core Archive column heading - MIxS identifies samp_name
-                # as https://w3id.org/mixs/0001107 - so those terms carry the real IRI in
-                # the optional 'qualname' column and use 'iri' only as the lookup key.
-                qualName = ext_item['qualname'] if 'qualname' in ext_item.index else ''
-                if is_missing(qualName) or not str(qualName).strip():
-                    qualName = ext_item['iri']
+                # The Darwin Core Archive column heading normally is the term's local
+                # name. Some namespaces mint IRIs that do not contain the heading - MIxS
+                # identifies samp_name as https://w3id.org/mixs/0001107, and GBIF mints
+                # DNA_sequence as http://rs.gbif.org/terms/dna_sequence - so those terms
+                # supply the heading in the optional 'name' column of the term list file.
+                name = ext_item['name'] if 'name' in ext_item.index else ''
+                if is_missing(name) or not str(name).strip():
+                    name = term_data['term_localName']
                 else:
-                    qualName = str(qualName).strip()
+                    name = str(name).strip()
 
                 # The datatype, if it is other than 'string' must come from the type field
                 # in the Extension term list file
@@ -212,10 +211,10 @@ class DwcaXml:
                     dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
                 elif namespace == 'https://w3id.org/mixs/':
                     # MIxS term pages are keyed by the numeric identifier, which is the
-                    # local part of the real term IRI rather than the name used as a column
-                    # heading. Example for samp_name, MIXS:0001107:
+                    # term's local name rather than the column heading. Example for
+                    # samp_name, MIXS:0001107:
                     # https://genomicsstandardsconsortium.github.io/mixs/0001107/
-                    mixs_id = str(qualName).rstrip('/').rsplit('/', 1)[-1]
+                    mixs_id = str(term_data['term_localName']).strip()
                     dc_relation = f'https://genomicsstandardsconsortium.github.io/mixs/{mixs_id}/'
                 elif namespace == 'http://data.ggbn.org/schemas/ggbn/terms/':
                     # Example: https://terms.tdwg.org/wiki/ggbn:concentration
