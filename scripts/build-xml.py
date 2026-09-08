@@ -222,10 +222,6 @@ class DwcaXml:
                 elif namespace in ('http://rs.gbif.org/terms/', 'http://rs.gbif.org/terms/miqe/'):
                     # GBIF-minted terms have no separate quick reference guide page.
                     dc_relation = ''
-                # Fall back to an empty attribute rather than the literal string 'None'
-                # for any namespace not listed above.
-                if dc_relation is None:
-                    dc_relation = ''
                 # Different for the AC documentation
                 if ac:
                     prefix = term_data['pref_ns_prefix']
