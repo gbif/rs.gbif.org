@@ -61,8 +61,13 @@ opts = [opt for opt in arg_vals if opt.startswith('-')]
 args = [arg for arg in arg_vals if not arg.startswith('-')]
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-if '--rs-path' in opts:
-    rsPath = args[opts.index('--rs-path')]
+# Read the value that follows --rs-path in the raw argument list. (Indexing args by the
+# position of the flag within opts only worked when --rs-path was the first flag given.)
+if '--rs-path' in arg_vals:
+    rsPathIndex = arg_vals.index('--rs-path') + 1
+    if rsPathIndex >= len(arg_vals):
+        raise SystemExit('--rs-path requires a path argument')
+    rsPath = arg_vals[rsPathIndex]
 else:
     rsPath = None
 
@@ -158,9 +163,20 @@ class DwcaXml:
                 group = ext_item['group']
 
                 # Get the term name, namespace etc
-                qualName = ext_item['iri']
                 name = term_data['term_localName']
                 namespace = term_data['pref_ns_uri']
+
+                # The qualified name normally is the namespace plus the term's local name,
+                # which is what the 'iri' column of the Extension term list file holds.
+                # Some borrowed namespaces mint opaque IRIs that do not contain the name
+                # used as a Darwin Core Archive column heading - MIxS identifies samp_name
+                # as https://w3id.org/mixs/0001107 - so those terms carry the real IRI in
+                # the optional 'qualname' column and use 'iri' only as the lookup key.
+                qualName = ext_item['qualname'] if 'qualname' in ext_item.index else ''
+                if is_missing(qualName) or not str(qualName).strip():
+                    qualName = ext_item['iri']
+                else:
+                    qualName = str(qualName).strip()
 
                 # The datatype, if it is other than 'string' must come from the type field
                 # in the Extension term list file
@@ -194,6 +210,23 @@ class DwcaXml:
                 elif namespace == 'http://rs.tdwg.org/eco/terms/':
                     # Example: https://eco.tdwg.org/terms/#eco:samplingPerformedBy
                     dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
+                elif namespace == 'https://w3id.org/mixs/':
+                    # MIxS term pages are keyed by the numeric identifier, which is the
+                    # local part of the real term IRI rather than the name used as a column
+                    # heading. Example for samp_name, MIXS:0001107:
+                    # https://genomicsstandardsconsortium.github.io/mixs/0001107/
+                    mixs_id = str(qualName).rstrip('/').rsplit('/', 1)[-1]
+                    dc_relation = f'https://genomicsstandardsconsortium.github.io/mixs/{mixs_id}/'
+                elif namespace == 'http://data.ggbn.org/schemas/ggbn/terms/':
+                    # Example: https://terms.tdwg.org/wiki/ggbn:concentration
+                    dc_relation = f'https://terms.tdwg.org/wiki/ggbn:{name}'
+                elif namespace in ('http://rs.gbif.org/terms/', 'http://rs.gbif.org/terms/miqe/'):
+                    # GBIF-minted terms have no separate quick reference guide page.
+                    dc_relation = ''
+                # Fall back to an empty attribute rather than the literal string 'None'
+                # for any namespace not listed above.
+                if dc_relation is None:
+                    dc_relation = ''
                 # Different for the AC documentation
                 if ac:
                     prefix = term_data['pref_ns_prefix']
@@ -513,6 +546,23 @@ em_xml = DwcaXml(
     xmlTemplate = "xml/pathway.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels")
 em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/pathway_')
+
+
+# DNA derived data
+# NOTE: this block must stay ABOVE the Audiovisual Core section. The module-global 'ac'
+# is used both as a DwcTerms object and as a boolean flag consulted when building
+# dc:relation, so anything added after it is built would silently get AC-style values.
+dna = dwcterms.DwcTerms(
+    termLists = ['terms', 'mixs-for-dna', 'miqe-for-dna', 'gbif-for-dna', 'ggbn-for-dna'],
+    docMetadataFilePath = 'dwc_doc_dna/',
+    rsPath = rsPath)
+# DNA derived data Extension
+dna_xml = DwcaXml(
+    terms = dna,
+    xmlTemplate = "xml/dna_derived_data.tmpl",
+    xmlTerms = "xml/dna_derived_data_list.csv"
+    )
+dna_xml.create_extension_xml(languages, 'sandbox/extension/gbif/1.0/dna_derived_data_')
 
 
 # Audiovisual Core

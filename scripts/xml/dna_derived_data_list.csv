@@ -1,0 +1,124 @@
+group,iri,qualname,type,thesaurus,description,comments,examples,required
+,https://w3id.org/mixs/samp_name,https://w3id.org/mixs/0001107,,,,,,false
+,http://rs.tdwg.org/dwc/terms/occurrenceID,,,,,,,false
+investigation,https://w3id.org/mixs/project_name,https://w3id.org/mixs/0000092,,,,,,false
+investigation,https://w3id.org/mixs/experimental_factor,https://w3id.org/mixs/0000008,,,,,,false
+investigation,https://w3id.org/mixs/samp_taxon_id,https://w3id.org/mixs/0001320,,,,,,false
+investigation,https://w3id.org/mixs/neg_cont_type,https://w3id.org/mixs/0001321,,,,,,false
+investigation,https://w3id.org/mixs/pos_cont_type,https://w3id.org/mixs/0001322,,,,,,false
+environment,https://w3id.org/mixs/env_broad_scale,https://w3id.org/mixs/0000012,,,,,,false
+environment,https://w3id.org/mixs/env_local_scale,https://w3id.org/mixs/0000013,,,,,,false
+environment,https://w3id.org/mixs/env_medium,https://w3id.org/mixs/0000014,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/subspecf_gen_lin,https://w3id.org/mixs/0000020,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/ploidy,https://w3id.org/mixs/0000021,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/num_replicons,https://w3id.org/mixs/0000022,integer,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/extrachrom_elements,https://w3id.org/mixs/0000023,integer,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/estimated_genome_size,https://w3id.org/mixs/0000024,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/ref_biomaterial,https://w3id.org/mixs/0000025,uri,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/source_mat_id,https://w3id.org/mixs/0000026,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/pathogenicity,https://w3id.org/mixs/0000027,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/biotic_relationship,https://w3id.org/mixs/0000028,,https://rs.gbif.org/vocabulary/dna/biotic_relationship.xml,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/specific_host,https://w3id.org/mixs/0000029,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/host_spec_range,https://w3id.org/mixs/0000030,integer,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/host_disease_stat,https://w3id.org/mixs/0000031,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/trophic_level,https://w3id.org/mixs/0000032,,https://rs.gbif.org/vocabulary/dna/trophic_level.xml,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/propagation,https://w3id.org/mixs/0000033,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/encoded_traits,https://w3id.org/mixs/0000034,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/rel_to_oxygen,https://w3id.org/mixs/0000015,,https://rs.gbif.org/vocabulary/dna/rel_to_oxygen.xml,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/isol_growth_condt,https://w3id.org/mixs/0000003,uri,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/samp_collect_device,https://w3id.org/mixs/0000002,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/samp_collect_method,https://w3id.org/mixs/0001225,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/samp_mat_process,https://w3id.org/mixs/0000016,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/size_frac,https://w3id.org/mixs/0000017,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/samp_size,https://w3id.org/mixs/0000001,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/samp_vol_we_dna_ext,https://w3id.org/mixs/0000111,,,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/source_uvig,https://w3id.org/mixs/0000035,,https://rs.gbif.org/vocabulary/dna/source_uvig.xml,,,,false
+nucleic acid sequence source,https://w3id.org/mixs/virus_enrich_appr,https://w3id.org/mixs/0000036,,https://rs.gbif.org/vocabulary/dna/virus_enrich_appr.xml,,,,false
+sequencing,https://w3id.org/mixs/nucl_acid_ext,https://w3id.org/mixs/0000037,uri,,,,,false
+sequencing,https://w3id.org/mixs/nucl_acid_amp,https://w3id.org/mixs/0000038,uri,,,,,false
+sequencing,https://w3id.org/mixs/lib_size,https://w3id.org/mixs/0000039,integer,,,,,false
+sequencing,https://w3id.org/mixs/lib_reads_seqd,https://w3id.org/mixs/0000040,integer,,,,,false
+sequencing,https://w3id.org/mixs/lib_layout,https://w3id.org/mixs/0000041,,https://rs.gbif.org/vocabulary/dna/lib_layout.xml,,,,false
+sequencing,https://w3id.org/mixs/lib_vector,https://w3id.org/mixs/0000042,,,,,,false
+sequencing,https://w3id.org/mixs/lib_screen,https://w3id.org/mixs/0000043,,,,,,false
+sequencing,https://w3id.org/mixs/target_gene,https://w3id.org/mixs/0000044,,,,,,false
+sequencing,https://w3id.org/mixs/target_subfragment,https://w3id.org/mixs/0000045,,,,,,false
+sequencing,https://w3id.org/mixs/pcr_primers,https://w3id.org/mixs/0000046,,,,,,false
+sequencing,https://w3id.org/mixs/mid,https://w3id.org/mixs/0000047,,,,,,false
+sequencing,https://w3id.org/mixs/adapters,https://w3id.org/mixs/0000048,,,,,,false
+sequencing,https://w3id.org/mixs/pcr_cond,https://w3id.org/mixs/0000049,,,,,,false
+sequencing,https://w3id.org/mixs/seq_meth,https://w3id.org/mixs/0000050,,https://rs.gbif.org/vocabulary/dna/seq_meth.xml,,,,false
+sequencing,https://w3id.org/mixs/seq_quality_check,https://w3id.org/mixs/0000051,,,,,,false
+sequencing,https://w3id.org/mixs/chimera_check,https://w3id.org/mixs/0000052,,,,,,false
+sequencing,https://w3id.org/mixs/tax_ident,https://w3id.org/mixs/0000053,,https://rs.gbif.org/vocabulary/dna/tax_ident.xml,,,,false
+sequencing,https://w3id.org/mixs/assembly_qual,https://w3id.org/mixs/0000056,,https://rs.gbif.org/vocabulary/dna/assembly_qual.xml,,,,false
+sequencing,https://w3id.org/mixs/assembly_name,https://w3id.org/mixs/0000057,,,,,,false
+sequencing,https://w3id.org/mixs/assembly_software,https://w3id.org/mixs/0000058,,,,,,false
+sequencing,https://w3id.org/mixs/annot,https://w3id.org/mixs/0000059,,,,,,false
+sequencing,https://w3id.org/mixs/number_contig,https://w3id.org/mixs/0000060,integer,,,,,false
+sequencing,https://w3id.org/mixs/feat_pred,https://w3id.org/mixs/0000061,,,,,,false
+sequencing,https://w3id.org/mixs/ref_db,https://w3id.org/mixs/0000062,,,,,,false
+sequencing,https://w3id.org/mixs/sim_search_meth,https://w3id.org/mixs/0000063,,,,,,false
+sequencing,https://w3id.org/mixs/tax_class,https://w3id.org/mixs/0000064,,,,,,false
+sequencing,https://w3id.org/mixs/x16s_recover,https://w3id.org/mixs/0000065,boolean,,,,,false
+sequencing,https://w3id.org/mixs/x16s_recover_software,https://w3id.org/mixs/0000066,,,,,,false
+sequencing,https://w3id.org/mixs/trnas,https://w3id.org/mixs/0000067,integer,,,,,false
+sequencing,https://w3id.org/mixs/trna_ext_software,https://w3id.org/mixs/0000068,,,,,,false
+sequencing,https://w3id.org/mixs/compl_score,https://w3id.org/mixs/0000069,,,,,,false
+sequencing,https://w3id.org/mixs/compl_software,https://w3id.org/mixs/0000070,,,,,,false
+sequencing,https://w3id.org/mixs/compl_appr,https://w3id.org/mixs/0000071,,https://rs.gbif.org/vocabulary/dna/compl_appr.xml,,,,false
+sequencing,https://w3id.org/mixs/contam_score,https://w3id.org/mixs/0000072,,,,,,false
+sequencing,https://w3id.org/mixs/contam_screen_input,https://w3id.org/mixs/0000005,,https://rs.gbif.org/vocabulary/dna/contam_screen_input.xml,,,,false
+sequencing,https://w3id.org/mixs/contam_screen_param,https://w3id.org/mixs/0000073,,,,,,false
+sequencing,https://w3id.org/mixs/decontam_software,https://w3id.org/mixs/0000074,,https://rs.gbif.org/vocabulary/dna/decontam_software.xml,,,,false
+sequencing,https://w3id.org/mixs/sort_tech,https://w3id.org/mixs/0000075,,https://rs.gbif.org/vocabulary/dna/sort_tech.xml,,,,false
+sequencing,https://w3id.org/mixs/sc_lysis_approach,https://w3id.org/mixs/0000076,,https://rs.gbif.org/vocabulary/dna/single_cell_lysis_appr.xml,,,,false
+sequencing,https://w3id.org/mixs/sc_lysis_method,https://w3id.org/mixs/0000054,,,,,,false
+sequencing,https://w3id.org/mixs/wga_amp_appr,https://w3id.org/mixs/0000055,,https://rs.gbif.org/vocabulary/dna/wga_amp_appr.xml,,,,false
+sequencing,https://w3id.org/mixs/wga_amp_kit,https://w3id.org/mixs/0000006,,,,,,false
+sequencing,https://w3id.org/mixs/bin_param,https://w3id.org/mixs/0000077,,https://rs.gbif.org/vocabulary/dna/bin_param.xml,,,,false
+sequencing,https://w3id.org/mixs/bin_software,https://w3id.org/mixs/0000078,,https://rs.gbif.org/vocabulary/dna/bin_software.xml,,,,false
+sequencing,https://w3id.org/mixs/reassembly_bin,https://w3id.org/mixs/0000079,boolean,,,,,false
+sequencing,https://w3id.org/mixs/mag_cov_software,https://w3id.org/mixs/0000080,,https://rs.gbif.org/vocabulary/dna/mag_cov_software.xml,,,,false
+sequencing,https://w3id.org/mixs/vir_ident_software,https://w3id.org/mixs/0000081,,,,,,false
+sequencing,https://w3id.org/mixs/pred_genome_type,https://w3id.org/mixs/0000082,,https://rs.gbif.org/vocabulary/dna/pred_genome_type.xml,,,,false
+sequencing,https://w3id.org/mixs/pred_genome_struc,https://w3id.org/mixs/0000083,,https://rs.gbif.org/vocabulary/dna/pred_genome_struc.xml,,,,false
+sequencing,https://w3id.org/mixs/detec_type,https://w3id.org/mixs/0000084,,https://rs.gbif.org/vocabulary/dna/detec_type.xml,,,,false
+sequencing,https://w3id.org/mixs/otu_class_appr,https://w3id.org/mixs/0000085,,,,,,false
+sequencing,https://w3id.org/mixs/otu_seq_comp_appr,https://w3id.org/mixs/0000086,,,,,,false
+sequencing,https://w3id.org/mixs/otu_db,https://w3id.org/mixs/0000087,,,,,,false
+sequencing,https://w3id.org/mixs/host_pred_appr,https://w3id.org/mixs/0000088,,https://rs.gbif.org/vocabulary/dna/host_pred_appr.xml,,,,false
+sequencing,https://w3id.org/mixs/host_pred_est_acc,https://w3id.org/mixs/0000089,,,,,,false
+sequencing,https://w3id.org/mixs/associated_resource,https://w3id.org/mixs/0000091,uri,,,,,false
+sequencing,https://w3id.org/mixs/sop,https://w3id.org/mixs/0000090,uri,,,,,false
+sequencing,http://rs.gbif.org/terms/pcr_primer_forward,,,,,,,false
+sequencing,http://rs.gbif.org/terms/pcr_primer_reverse,,,,,,,false
+sequencing,http://rs.gbif.org/terms/pcr_primer_name_forward,,,,,,,false
+sequencing,http://rs.gbif.org/terms/pcr_primer_name_reverse,,,,,,,false
+sequencing,http://rs.gbif.org/terms/pcr_primer_reference,,,,,,,false
+sequencing,http://rs.gbif.org/terms/DNA_sequence,http://rs.gbif.org/terms/dna_sequence,,,,,,false
+MaterialSample,http://data.ggbn.org/schemas/ggbn/terms/concentration,,decimal,,,,,false
+MaterialSample,http://data.ggbn.org/schemas/ggbn/terms/concentrationUnit,,,,,,,false
+MaterialSample,http://data.ggbn.org/schemas/ggbn/terms/methodDeterminationConcentrationAndRatios,,,,,,,false
+MaterialSample,http://data.ggbn.org/schemas/ggbn/terms/ratioOfAbsorbance260_230,,decimal,,,,,false
+MaterialSample,http://data.ggbn.org/schemas/ggbn/terms/ratioOfAbsorbance260_280,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/annealingTemp,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/annealingTempUnit,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/probeReporter,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/probeQuencher,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/ampliconSize,,integer,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/thresholdQuantificationCycle,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/baselineValue,,integer,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/quantificationCycle,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/automaticThresholdQuantificationCycle,,boolean,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/automaticBaselineValue,,boolean,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/contaminationAssessment,,boolean,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/partitionVolume,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/partitionVolumeUnit,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/estimatedNumberOfCopies,,integer,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/amplificationReactionVolume,,decimal,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/amplificationReactionVolumeUnit,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/pcr_analysis_software,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/experimentalVariance,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/pcr_primer_lod,,,,,,,false
+nucleic acid sequence source,http://rs.gbif.org/terms/miqe/pcr_primer_loq,,,,,,,false
