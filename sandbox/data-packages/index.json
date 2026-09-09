@@ -218,6 +218,7 @@
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp",
       "url": "https://rs.gbif.org/sandbox/experimental/data-packages/dwc-dp/1.0_DEV/index.json",
+      "profile": "https://dwc-prerelease.rs.tdwg.org/dwc-dp/1.0_DEV/dwc-dp-profile.json",
       "name": "dwc-dp",
       "version": "1.0_DEV",
       "tableSchemas": [
@@ -1163,7 +1164,7 @@
       "title": "Darwin Core Data Package",
       "shortTitle": "dwc-dp",
       "description": "A data package for sharing biodiversity data using Darwin Core.",
-      "issued": "2026-07-09",
+      "issued": "2026-09-01",
       "isLatest": true
     }
   ]
