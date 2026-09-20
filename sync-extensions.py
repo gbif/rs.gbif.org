@@ -252,6 +252,7 @@ def parseUrl(url):
      relative to this script."""
   try:
     latestUrl = url.replace('http://rs.gbif.org/', "file://"+RS_BASE)
+    latestUrl = latestUrl.replace('https://rs.gbif.org/', "file://"+RS_BASE)
     tree = ElementTree()
     with urllib.request.urlopen(latestUrl) as response:
       tree.parse(response)
@@ -330,11 +331,16 @@ if __name__ ==  "__main__":
   urlsVoc = listVocabularies(RS_BASE+"vocabulary/","http://rs.gbif.org/vocabulary/")
   writeVocabs(PRODUCTION, RS_BASE, urlsVoc)
 
+  # Testing HTTPS in UAT
+  urlsCoreHttps = listExtensions(RS_BASE+"core/","https://rs.gbif.org/core/")
+  urlsExtHttps = listExtensions(RS_BASE+"extension/","https://rs.gbif.org/extension/")
+  urlsVocHttps = listVocabularies(RS_BASE+"vocabulary/","https://rs.gbif.org/vocabulary/")
+
   print("UPDATE SANDBOX EXTENSION FILE")
   externalDev=listExternal(RS_BASE+"sandbox/extension/")
-  urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","http://rs.gbif.org/sandbox/extension/")
-  urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","http://rs.gbif.org/sandbox/core/")
-  writeExtensions(SANDBOX, RS_BASE+"sandbox/", urlsCore+urlsExt+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
+  urlsSandbox = listExtensions(RS_BASE+"sandbox/extension/","https://rs.gbif.org/sandbox/extension/")
+  urlsSandboxCore = listExtensions(RS_BASE+"sandbox/core/","https://rs.gbif.org/sandbox/core/")
+  writeExtensions(SANDBOX, RS_BASE+"sandbox/", urlsCoreHttps+urlsExtHttps+urlsSandbox+externalProd+externalDev+urlsSandboxCore)
   print("UPDATE SANDBOX VOCABULARY FILE")
-  urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/")
-  writeVocabs(SANDBOX, RS_BASE+"sandbox/", urlsVoc+urlsVoc2)
+  urlsVocSandbox = listVocabularies(RS_BASE+"sandbox/vocabulary/","https://rs.gbif.org/sandbox/vocabulary/")
+  writeVocabs(SANDBOX, RS_BASE+"sandbox/", urlsVocHttps+urlsVocSandbox)
