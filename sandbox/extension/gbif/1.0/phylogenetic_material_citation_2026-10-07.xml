@@ -14,18 +14,18 @@
     dc:subject="dwc:Occurrence"
     dc:description="An extension to link a specimen (Material) to a particular tip on a phylogenetic tree as evidence.">
 
-    <property name='phyloTreeTipLabel'
-        namespace='http://rs.gbif.org/terms/1.0/'
-        qualName='http://rs.gbif.org/terms/1.0/phyloTreeTipLabel'
-        dc:description='The label of the tip on the phylogenetic tree.'
-        examples='Fabales_Fabaceae_Paramacrolobium_coeruleum'
-        required='true'/>
+    <property name="phyloTreeTipLabel"
+        namespace="http://rs.gbif.org/terms/1.0/"
+        qualName="http://rs.gbif.org/terms/1.0/phyloTreeTipLabel"
+        dc:description="The label of the tip on the phylogenetic tree."
+        examples="Fabales_Fabaceae_Paramacrolobium_coeruleum"
+        required="true"/>
 
-    <property name='phyloTreeFileName'
-        namespace='http://rs.gbif.org/terms/1.0/'
-        qualName='http://rs.gbif.org/terms/1.0/phyloTreeFileName'
-        dc:description='The filename of the phylogenetic tree.'
-        examples='global_tree.nex'
-        required='true'/>
+    <property name="phyloTreeFileName"
+        namespace="http://rs.gbif.org/terms/1.0/"
+        qualName="http://rs.gbif.org/terms/1.0/phyloTreeFileName"
+        dc:description="The filename of the phylogenetic tree."
+        examples="global_tree.nex"
+        required="true"/>
 
 </extension>
