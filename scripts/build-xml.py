@@ -61,8 +61,13 @@ opts = [opt for opt in arg_vals if opt.startswith('-')]
 args = [arg for arg in arg_vals if not arg.startswith('-')]
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-if '--rs-path' in opts:
-    rsPath = args[opts.index('--rs-path')]
+# Read the value that follows --rs-path in the raw argument list. (Indexing args by the
+# position of the flag within opts only worked when --rs-path was the first flag given.)
+if '--rs-path' in arg_vals:
+    rsPathIndex = arg_vals.index('--rs-path') + 1
+    if rsPathIndex >= len(arg_vals):
+        raise SystemExit('--rs-path requires a path argument')
+    rsPath = arg_vals[rsPathIndex]
 else:
     rsPath = None
 
@@ -159,8 +164,18 @@ class DwcaXml:
 
                 # Get the term name, namespace etc
                 qualName = ext_item['iri']
-                name = term_data['term_localName']
                 namespace = term_data['pref_ns_uri']
+
+                # The Darwin Core Archive column heading normally is the term's local
+                # name. Some namespaces mint IRIs that do not contain the heading - MIxS
+                # identifies samp_name as https://w3id.org/mixs/0001107, and GBIF mints
+                # DNA_sequence as http://rs.gbif.org/terms/dna_sequence - so those terms
+                # supply the heading in the optional 'name' column of the term list file.
+                name = ext_item['name'] if 'name' in ext_item.index else ''
+                if is_missing(name) or not str(name).strip():
+                    name = term_data['term_localName']
+                else:
+                    name = str(name).strip()
 
                 # The datatype, if it is other than 'string' must come from the type field
                 # in the Extension term list file
@@ -194,6 +209,19 @@ class DwcaXml:
                 elif namespace == 'http://rs.tdwg.org/eco/terms/':
                     # Example: https://eco.tdwg.org/terms/#eco:samplingPerformedBy
                     dc_relation = f'https://eco.tdwg.org/terms/#eco:{name}'
+                elif namespace == 'https://w3id.org/mixs/':
+                    # MIxS term pages are keyed by the numeric identifier, which is the
+                    # term's local name rather than the column heading. Example for
+                    # samp_name, MIXS:0001107:
+                    # https://genomicsstandardsconsortium.github.io/mixs/0001107/
+                    mixs_id = str(term_data['term_localName']).strip()
+                    dc_relation = f'https://genomicsstandardsconsortium.github.io/mixs/{mixs_id}/'
+                elif namespace == 'http://data.ggbn.org/schemas/ggbn/terms/':
+                    # Example: https://terms.tdwg.org/wiki/ggbn:concentration
+                    dc_relation = f'https://terms.tdwg.org/wiki/ggbn:{name}'
+                elif namespace in ('http://rs.gbif.org/terms/', 'http://rs.gbif.org/terms/miqe/'):
+                    # GBIF-minted terms have no separate quick reference guide page.
+                    dc_relation = ''
                 # Different for the AC documentation
                 if ac:
                     prefix = term_data['pref_ns_prefix']
@@ -513,6 +541,23 @@ em_xml = DwcaXml(
     xmlTemplate = "xml/pathway.tmpl",
     gbifAlternatives = "https://api.gbif.org/v1/vocabularies/Pathway/concepts/%s/alternativeLabels")
 em_xml.create_vocabulary_xml(languages, 'vocabulary/dwc/pathway_')
+
+
+# DNA derived data
+# NOTE: this block must stay ABOVE the Audiovisual Core section. The module-global 'ac'
+# is used both as a DwcTerms object and as a boolean flag consulted when building
+# dc:relation, so anything added after it is built would silently get AC-style values.
+dna = dwcterms.DwcTerms(
+    termLists = ['terms', 'mixs-for-dna', 'miqe-for-dna', 'gbif-for-dna', 'ggbn-for-dna'],
+    docMetadataFilePath = 'dwc_doc_dna/',
+    rsPath = rsPath)
+# DNA derived data Extension
+dna_xml = DwcaXml(
+    terms = dna,
+    xmlTemplate = "xml/dna_derived_data.tmpl",
+    xmlTerms = "xml/dna_derived_data_list.csv"
+    )
+dna_xml.create_extension_xml(languages, 'sandbox/extension/gbif/1.0/dna_derived_data_')
 
 
 # Audiovisual Core
