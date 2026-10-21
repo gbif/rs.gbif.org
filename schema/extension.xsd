@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/terms/" xmlns:ext="http://rs.gbif.org/extension/"
-    targetNamespace="http://rs.gbif.org/extension/" elementFormDefault="qualified"
-    attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:dc="http://purl.org/dc/terms/"
+           xmlns:ext="http://rs.gbif.org/extension/"
+           xmlns:xml="http://www.w3.org/XML/1998/namespace"
+           targetNamespace="http://rs.gbif.org/extension/"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
     <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dc.xsd"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
     <xs:element name="extension">
         <xs:complexType>
             <xs:sequence>

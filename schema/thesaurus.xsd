@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://rs.gbif.org/thesaurus/"
-	xmlns:dc="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-	xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://rs.gbif.org/thesaurus/"
+<xs:schema xmlns="http://rs.gbif.org/thesaurus/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:dc="http://purl.org/dc/terms/"
+	xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	targetNamespace="http://rs.gbif.org/thesaurus/"
 	elementFormDefault="qualified">
 	<xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dc.xsd"/>
-	<xs:import namespace="http://www.w3.org/XML/1998/namespace"
-		schemaLocation="http://rs.gbif.org/schema/xml.xsd"/>
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<xs:element name="thesaurus">
 		<xs:complexType>
 			<xs:sequence>
