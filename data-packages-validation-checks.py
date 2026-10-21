@@ -211,6 +211,7 @@ def check_table_schemas(package_file_path, package_data):
 
 
 def check_valid_frictionless(index_file_str):
+    global error_found
     table_schema_files = find_package_table_schemas(index_file_str)
 
     for file in table_schema_files:
@@ -218,7 +219,8 @@ def check_valid_frictionless(index_file_str):
             Schema.from_descriptor(file)
             # print(f"{file}: Valid frictionless")
         except Exception as e:
-            print(f"{file}: Error - {str(e)}")
+            print(f"Error: Invalid frictionless table schema {file}: {str(e)}")
+            error_found = True
 
 
 def find_package_files(directories):
@@ -301,6 +303,131 @@ def check_foreign_keys(package_file, package_data):
                 error_found = True
 
 
+def find_package_versions(directories):
+    # Version index files are laid out as <base>/<package name>/<version>/index.json
+    package_versions = {}
+    for base_dir in directories:
+        for index_file in sorted(Path(base_dir).glob('*/*/index.json')):
+            # Invalid index files are already reported by check_valid_json
+            try:
+                with open(index_file, 'r') as f:
+                    index_data = json.load(f)
+            except json.JSONDecodeError:
+                continue
+
+            version_file = index_file.parent / 'version.json'
+            version_data = None
+            version_invalid = False
+            if version_file.exists():
+                if check_valid_json(version_file):
+                    with open(version_file, 'r') as f:
+                        version_data = json.load(f)
+                else:
+                    version_invalid = True
+
+            package_versions.setdefault(index_file.parent.parent.name, []).append(
+                {'path': str(index_file), 'index': index_data, 'version': version_data,
+                 'version_invalid': version_invalid})
+    return package_versions
+
+
+def check_package_versions(registry_file, directories):
+    global error_found
+
+    print(f"Checking package versions: {registry_file}")
+
+    # An invalid registry file is already reported by check_valid_json
+    try:
+        with open(registry_file, 'r') as f:
+            registry_data = json.load(f)
+    except json.JSONDecodeError:
+        return
+
+    registry_entries = {}
+    for entry in registry_data.get('dataPackages', []):
+        if 'name' not in entry:
+            print(f"Error: Registry entry without a name in {registry_file}: {entry.get('identifier')}")
+            error_found = True
+            continue
+        if entry['name'] in registry_entries:
+            print(f"Error: Duplicate registry entry for data package {entry['name']} in {registry_file}")
+            error_found = True
+        registry_entries[entry['name']] = entry
+
+    package_versions = find_package_versions(directories)
+
+    for name, versions in package_versions.items():
+        versions_by_number = {}
+        for v in versions:
+            index_version = v['index'].get('version')
+            dir_version = Path(v['path']).parent.name
+
+            if v['index'].get('name') != name:
+                print(f"Error: name {v['index'].get('name')} in {v['path']} does not match directory {name}")
+                error_found = True
+            if index_version != dir_version:
+                print(f"Error: version {index_version} in {v['path']} does not match directory {dir_version}")
+                error_found = True
+            if index_version in versions_by_number:
+                print(f"Error: Duplicate version {index_version} of data package {name}: "
+                      f"{versions_by_number[index_version]['path']}, {v['path']}")
+                error_found = True
+            versions_by_number[index_version] = v
+
+            if v['version_invalid']:
+                pass
+            elif v['version'] is None:
+                print(f"Error: Missing version.json for {v['path']}")
+                error_found = True
+            elif v['version'].get('version') != index_version:
+                print(f"Error: version.json version {v['version'].get('version')} does not match "
+                      f"index.json version {index_version} in {Path(v['path']).parent}")
+                error_found = True
+
+        # Exactly one version of a package is the latest
+        latest = [v for v in versions if v['index'].get('isLatest') is True]
+        if len(latest) != 1:
+            print(f"Error: Data package {name} must have exactly one version with isLatest=true, "
+                  f"found: {[v['path'] for v in latest]}")
+            error_found = True
+
+        # latestCompatibleVersion points to an existing version, which is its own latest compatible version
+        for v in versions:
+            if v['version'] is None:
+                continue
+            compatible = v['version'].get('latestCompatibleVersion')
+            if compatible not in versions_by_number:
+                print(f"Error: latestCompatibleVersion {compatible} of {name} {v['index'].get('version')} "
+                      f"is not a known version of {name}")
+                error_found = True
+                continue
+            compatible_version = versions_by_number[compatible]['version'] or {}
+            if compatible_version.get('latestCompatibleVersion') != compatible:
+                print(f"Error: latestCompatibleVersion of {name} {v['index'].get('version')} points to {compatible}, "
+                      f"which itself points to {compatible_version.get('latestCompatibleVersion')}")
+                error_found = True
+
+        # The registry lists the latest version, identical to its index.json
+        if name not in registry_entries:
+            print(f"Error: Data package {name} is missing from {registry_file}")
+            error_found = True
+        elif len(latest) == 1 and registry_entries[name] != latest[0]['index']:
+            print(f"Error: Registry entry for {name} in {registry_file} differs from {latest[0]['path']}")
+            error_found = True
+
+        for v in versions:
+            url = v['index'].get('url', '')
+            if url.startswith('http://'):
+                print(f"Warning: Data package url uses http: {url}")
+            if not url.endswith('/index.json'):
+                print(f"Warning: Data package url does not point to index.json: {url}")
+
+    for name in registry_entries:
+        if name not in package_versions:
+            print(f"Error: Registry entry {name} in {registry_file} has no version directories")
+            error_found = True
+
+
 # Validation: Check all package files and their schemas
 all_package_files_sandbox = find_package_files(directories_to_scan_sandbox)
 all_package_files_prod = find_package_files(directories_to_scan_prod)
@@ -332,6 +459,9 @@ for package_file in all_package_files_prod:
     check_table_schemas(package_file, package_data)
     check_valid_frictionless(package_file)
     check_foreign_keys(package_file, package_data)
+
+check_package_versions('sandbox/data-packages/index.json', directories_to_scan_sandbox)
+check_package_versions('data-packages/index.json', directories_to_scan_prod)
 
 if error_found:
     print("Validation failed. Please fix the issues above.")
