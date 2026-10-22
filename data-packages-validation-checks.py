@@ -5,10 +5,13 @@
 # Checks are:
 # 1. Index and table schema files are valid JSON
 # 2. All URLs are resolvable
-# 3. Table schemas declarations are valid, all actual files are present
+# 3. Table schemas declarations are valid, all actual files are present. Table schemas maintained elsewhere
+#    (DwC-DP, without a local table-schemas folder) are downloaded from their urls
 # 4. Valid frictionless schema
-# 4. No duplicate nodes in index.json
-# 5. Compares primary properties (identifier, url, name) between index.json and table schema file
+# 5. No duplicate nodes in index.json
+# 6. Compares primary properties (identifier, url, name) between index.json and table schema file
+# 7. Foreign keys refer to existing table schemas and fields
+# 8. Package versions: folder names, version.json, isLatest, latestCompatibleVersion and the registries
 #
 
 import json
@@ -39,7 +42,7 @@ def check_valid_json(file_path):
         return False
 
 
-def check_urls_are_resolvable(package_data):
+def check_urls_are_resolvable(package_data, skip_urls=()):
     global error_found
 
     def resolve_url(url):
@@ -62,7 +65,7 @@ def check_urls_are_resolvable(package_data):
     def find_and_resolve_urls(data):
         if isinstance(data, dict):
             for key, value in data.items():
-                if key == "url" and isinstance(value, str):
+                if key == "url" and isinstance(value, str) and value not in skip_urls:
                     resolve_url(value)
                 elif isinstance(value, (dict, list)):
                     find_and_resolve_urls(value)
@@ -73,24 +76,53 @@ def check_urls_are_resolvable(package_data):
     find_and_resolve_urls(package_data)
 
 
-def check_table_schemas(package_file_path, package_data):
+def load_table_schemas(package_file_path, package_data):
+    """
+    Returns the table schemas of a package version by file name (e.g. agent.json), None for invalid ones, and whether
+    they are local. They are read from the version's table-schemas folder or, for packages maintained elsewhere such
+    as DwC-DP, downloaded from their urls.
+    """
     global error_found
 
-    # Skip a directory with the main index.json file
-    if package_file_path == 'sandbox/data-packages/index.json' or package_file_path == 'data-packages/index.json':
-        return
+    table_schemas_dir = os.path.join(os.path.dirname(package_file_path), 'table-schemas')
+    table_schemas = {}
+
+    if os.path.exists(table_schemas_dir):
+        for schema_file in sorted(f for f in os.listdir(table_schemas_dir) if f.endswith('.json')):
+            schema_file_path = os.path.join(table_schemas_dir, schema_file)
+            # check_valid_json reports invalid files
+            if check_valid_json(schema_file_path):
+                with open(schema_file_path, 'r') as f:
+                    table_schemas[schema_file] = json.load(f)
+            else:
+                table_schemas[schema_file] = None
+        return table_schemas, True
+
+    for schema in package_data.get('tableSchemas', []):
+        url = schema.get('url')
+        if not isinstance(url, str) or not is_absolute_url(url):
+            print(f"Error: Table schemas directory missing and table schema url is not absolute: {url}")
+            error_found = True
+            continue
+        try:
+            response = requests.get(url, timeout=30)
+            response.raise_for_status()
+            table_schemas[os.path.basename(url)] = response.json()
+        except (requests.RequestException, ValueError) as e:
+            print(f"Error: Can't download table schema {url}: {e}")
+            table_schemas[os.path.basename(url)] = None
+            error_found = True
+    return table_schemas, False
+
+
+def is_absolute_url(url):
+    return re.match(r'^https?://', url) is not None
+
+
+def check_table_schemas(package_file_path, package_data, table_schemas, local):
+    global error_found
 
     print(f"Checking file: {package_file_path}")
-
-    package_dir = os.path.dirname(package_file_path)
-    table_schemas_dir = os.path.join(package_dir, 'table-schemas')
-
-    if not os.path.exists(table_schemas_dir):
-        print(f"Error: Table schemas directory missing: {table_schemas_dir}")
-        error_found = True
-        return False
-    # else:
-    #     print(f"Table schemas directory present: {table_schemas_dir}")
 
     declared_schemas = []
     declared_schemas_map = {}
@@ -155,71 +187,77 @@ def check_table_schemas(package_file_path, package_data):
                 print(f"Error: Missing 'url' for table schema: {schema}")
                 error_found = True
 
-    actual_schemas = [f for f in os.listdir(table_schemas_dir) if f.endswith('.json')]
+    if local:
+        actual_schemas = list(table_schemas)
+        missing_files = [schema for schema in declared_schemas if schema not in actual_schemas]
+        extra_files = [schema for schema in actual_schemas if schema not in declared_schemas]
 
-    missing_files = [schema for schema in declared_schemas if schema not in actual_schemas]
-    extra_files = [schema for schema in actual_schemas if schema not in declared_schemas]
-
-    if missing_files:
-        print(f"Error: Missing table schema files: {missing_files}")
-        error_found = True
-    if extra_files:
-        print(f"Warning: Extra table schema files in directory: {extra_files}")
-
-    for schema_file in actual_schemas:
-        schema_file_path = os.path.join(table_schemas_dir, schema_file)
-        if not check_valid_json(schema_file_path):
-            print(f"Error: Invalid table schema JSON: {schema_file_path}")
+        if missing_files:
+            print(f"Error: Missing table schema files: {missing_files}")
             error_found = True
+        if extra_files:
+            print(f"Warning: Extra table schema files in directory: {extra_files}")
+
+    for schema_file, table_schema in table_schemas.items():
+        if table_schema is None:
+            error_found = True
+            continue
+
+        # check table schema file properties
+        missing_keys = [key for key in ('identifier', 'url', 'name') if key not in table_schema]
+        if missing_keys:
+            print(f"Error: Missing {missing_keys} in table schema {schema_file} of {package_file_path}")
+            error_found = True
+            continue
+
+        table_schema_name = table_schema['name']
+
+        # Compare URLs from index.json and table-schema.json
+        if table_schema_name in declared_schemas_map:
+            declared_table_schema_url = declared_schemas_map[table_schema_name]['url']
+            actual_table_schema_url = table_schema['url']
         else:
-            # check table schema file properties
-            with open(schema_file_path, 'r') as f:
-                table_schema = json.load(f)
-                table_schema_name = table_schema['name']
+            print(f"Error: couldn't find table schema {table_schema_name}")
+            error_found = True
+            continue
 
-                # Compare URLs from index.json and table-schema.json
-                if table_schema_name in declared_schemas_map:
-                    declared_table_schema_url = declared_schemas_map[table_schema_name]['url']
-                    actual_table_schema_url = table_schema['url']
-                else:
-                    print(f"Error: couldn't find table schema {table_schema_name}")
-                    error_found = True
-                    return
+        # Downloaded table schemas may have a relative url (DwC-DP), which the IPT replaces with the declared one
+        if local or is_absolute_url(actual_table_schema_url):
+            if declared_table_schema_url != actual_table_schema_url:
+                print(f"Error: urls do not match for table schema {table_schema_name}. "
+                      f"Declared: {declared_table_schema_url}, actual: {actual_table_schema_url}")
+                error_found = True
 
-                if declared_table_schema_url != actual_table_schema_url:
-                    print(f"Error: urls do not match for table schema {table_schema_name}. "
-                          f"Declared: {declared_table_schema_url}, actual: {actual_table_schema_url}")
-                    error_found = True
+        # Compare identifiers from index.json and table-schema.json
+        declared_table_schema_identifier = declared_schemas_map[table_schema_name]['identifier']
+        actual_table_schema_identifier = table_schema['identifier']
 
-                # Compare identifiers from index.json and table-schema.json
-                declared_table_schema_identifier = declared_schemas_map[table_schema_name]['identifier']
-                actual_table_schema_identifier = table_schema['identifier']
+        if declared_table_schema_identifier != actual_table_schema_identifier:
+            print(f"Error: identifiers do not match for table schema {table_schema_name}. "
+                  f"Declared: {declared_table_schema_identifier}, actual: {actual_table_schema_identifier}")
+            error_found = True
 
-                if declared_table_schema_identifier != actual_table_schema_identifier:
-                    print(f"Error: identifiers do not match for table schema {table_schema_name}. "
-                          f"Declared: {declared_table_schema_identifier}, actual: {actual_table_schema_identifier}")
-                    error_found = True
+        # Compare names from index.json and table-schema.json
+        declared_table_schema_name = declared_schemas_map[table_schema_name]['name']
+        actual_table_schema_name = table_schema['name']
 
-                # Compare names from index.json and table-schema.json
-                declared_table_schema_name = declared_schemas_map[table_schema_name]['name']
-                actual_table_schema_name = table_schema['name']
-
-                if declared_table_schema_name != actual_table_schema_name:
-                    print(f"Error: names do not match for table schema {table_schema_name}. "
-                          f"Declared: {declared_table_schema_name}, actual: {actual_table_schema_name}")
-                    error_found = True
+        if declared_table_schema_name != actual_table_schema_name:
+            print(f"Error: names do not match for table schema {table_schema_name}. "
+                  f"Declared: {declared_table_schema_name}, actual: {actual_table_schema_name}")
+            error_found = True
 
 
-def check_valid_frictionless(index_file_str):
+def check_valid_frictionless(package_file_path, table_schemas):
     global error_found
-    table_schema_files = find_package_table_schemas(index_file_str)
 
-    for file in table_schema_files:
+    for schema_file, table_schema in table_schemas.items():
+        if table_schema is None:
+            continue
         try:
-            Schema.from_descriptor(file)
-            # print(f"{file}: Valid frictionless")
+            Schema.from_descriptor(table_schema)
+            # print(f"{schema_file}: Valid frictionless")
         except Exception as e:
-            print(f"Error: Invalid frictionless table schema {file}: {str(e)}")
+            print(f"Error: Invalid frictionless table schema {schema_file} of {package_file_path}: {str(e)}")
             error_found = True
 
 
@@ -233,74 +271,50 @@ def find_package_files(directories):
     return package_files
 
 
-def find_package_table_schemas(index_file_str):
-    index_path_parent = Path(index_file_str).parent
-    table_schemas_dir = index_path_parent / 'table-schemas'
-    table_schemas = [tsf for tsf in table_schemas_dir.rglob('*') if tsf.is_file()]
-
-    return table_schemas
-
-
-def check_foreign_keys(package_file, package_data):
+def check_foreign_keys(package_file, table_schemas):
     global error_found
 
     # print(f"Checking foreign keys for {package_file}")
 
-    if package_file == 'sandbox/data-packages/index.json' or package_file == 'data-packages/index.json':
-        # print("Skipping foreign keys check")
-        return
+    for schema_file, table_schema_json in table_schemas.items():
+        # Invalid table schemas and missing names are reported by check_table_schemas
+        if table_schema_json is None or 'name' not in table_schema_json:
+            continue
+        table_schema_name = table_schema_json['name']
+        # print(f"Checking table schema {table_schema_name}")
 
-    if "tableSchemas" in package_data:
-        for schema in package_data['tableSchemas']:
-            table_schema_name = schema['name']
-            table_schema_file = package_file.replace("index.json", "table-schemas/" + schema['name'] + ".json")
-            # print(f"Checking table schema {table_schema_name}")
+        if "foreignKeys" in table_schema_json:
+            for foreign_key in table_schema_json['foreignKeys']:
+                fk_field = foreign_key['fields']
+                fk_reference_resource = foreign_key['reference']['resource']
+                fk_reference_field = foreign_key['reference']['fields']
 
-            try:
-                with open(table_schema_file, 'r') as f:
-                    table_schema_json = json.load(f)
+                # empty resource is a self-reference
+                if fk_reference_resource == '':
+                    fk_reference_resource = table_schema_name
 
-                if "foreignKeys" in table_schema_json:
-                    for foreign_key in table_schema_json['foreignKeys']:
-                        fk_field = foreign_key['fields']
-                        fk_reference_resource = foreign_key['reference']['resource']
-                        fk_reference_field = foreign_key['reference']['fields']
+                # print(f"Foreign key: {fk_field} references "
+                #       f"to {fk_reference_resource}/{fk_reference_field}")
 
-                        # empty resource is a self-reference
-                        if fk_reference_resource == '':
-                            fk_reference_resource = table_schema_name
+                is_field_present = any(field['name'] == fk_field for field in table_schema_json['fields'])
 
-                        # print(f"Foreign key: {fk_field} references "
-                        #       f"to {fk_reference_resource}/{fk_reference_field}")
+                if not is_field_present:
+                    print(f"Error: There is no field {fk_field} in the table schema {schema_file} of {package_file}")
+                    error_found = True
 
-                        is_field_present = any(field['name'] == fk_field for field in table_schema_json['fields'])
+                reference_table_schema_json = table_schemas.get(fk_reference_resource + ".json")
 
-                        if not is_field_present:
-                            print(f"Error: There is no field {fk_field} in the table schema file {table_schema_file}")
-                            error_found = True
+                if reference_table_schema_json is not None:
+                    is_fk_reference_field_present = (any(field['name'] == fk_reference_field for field in reference_table_schema_json['fields']))
 
-                        reference_table_schema_file = (
-                            package_file.replace("index.json", "table-schemas/" + fk_reference_resource + ".json"))
-
-                        reference_table_schema_file_path = Path(reference_table_schema_file)
-
-                        if reference_table_schema_file_path.exists():
-                            with open(reference_table_schema_file, 'r') as f:
-                                reference_table_schema_json = json.load(f)
-
-                            is_fk_reference_field_present = (any(field['name'] == fk_reference_field for field in reference_table_schema_json['fields']))
-
-                            if not is_fk_reference_field_present:
-                                print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
-                                      f"field {fk_reference_resource}/{fk_reference_field}")
-                                error_found = True
-                        else:
-                            print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
-                                  f"table schema {fk_reference_resource}")
-                            error_found = True
-            except (json.JSONDecodeError, FileNotFoundError) as e:
-                print(f"Error: {type(e).__name__} occurred. Missing or invalid file: {table_schema_file}")
-                error_found = True
+                    if not is_fk_reference_field_present:
+                        print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
+                              f"field {fk_reference_resource}/{fk_reference_field}")
+                        error_found = True
+                elif fk_reference_resource + ".json" not in table_schemas:
+                    print(f"Error: Foreign key {table_schema_name}/{fk_field} references non existing "
+                          f"table schema {fk_reference_resource}")
+                    error_found = True
 
 
 def find_package_versions(directories):
@@ -374,12 +388,11 @@ def check_package_versions(registry_file, directories):
                 error_found = True
             versions_by_number[index_version] = v
 
-            if v['version_invalid']:
-                pass
-            elif v['version'] is None:
+            # An invalid version.json is already reported by check_valid_json
+            if v['version'] is None and not v['version_invalid']:
                 print(f"Error: Missing version.json for {v['path']}")
                 error_found = True
-            elif v['version'].get('version') != index_version:
+            elif v['version'] is not None and v['version'].get('version') != index_version:
                 print(f"Error: version.json version {v['version'].get('version')} does not match "
                       f"index.json version {index_version} in {Path(v['path']).parent}")
                 error_found = True
@@ -429,10 +442,10 @@ def check_package_versions(registry_file, directories):
 
 
 # Validation: Check all package files and their schemas
-all_package_files_sandbox = find_package_files(directories_to_scan_sandbox)
-all_package_files_prod = find_package_files(directories_to_scan_prod)
+registry_files = ['sandbox/data-packages/index.json', 'data-packages/index.json']
+all_package_files = find_package_files(directories_to_scan_sandbox) + find_package_files(directories_to_scan_prod)
 
-for package_file in all_package_files_sandbox:
+for package_file in all_package_files:
     # First, validate the JSON structure
     if not check_valid_json(package_file):
         continue  # Skip further checks for invalid JSON files
@@ -441,24 +454,18 @@ for package_file in all_package_files_sandbox:
     with open(package_file, 'r') as f:
         package_data = json.load(f)
 
-    check_urls_are_resolvable(package_data)
-    check_table_schemas(package_file, package_data)
-    check_valid_frictionless(package_file)
-    check_foreign_keys(package_file, package_data)
+    # Registries are checked in check_package_versions: each entry must be identical to the index.json of the latest
+    # version, whose urls are checked here
+    if package_file in registry_files:
+        continue
 
-for package_file in all_package_files_prod:
-    # First, validate the JSON structure
-    if not check_valid_json(package_file):
-        continue  # Skip further checks for invalid JSON files
-
-    # If JSON is valid, load and perform the remaining checks
-    with open(package_file, 'r') as f:
-        package_data = json.load(f)
-
-    check_urls_are_resolvable(package_data)
-    check_table_schemas(package_file, package_data)
-    check_valid_frictionless(package_file)
-    check_foreign_keys(package_file, package_data)
+    table_schemas, local = load_table_schemas(package_file, package_data)
+    # Downloaded table schemas don't need their urls checked again
+    downloaded_urls = [] if local else [schema.get('url') for schema in package_data.get('tableSchemas', [])]
+    check_urls_are_resolvable(package_data, downloaded_urls)
+    check_table_schemas(package_file, package_data, table_schemas, local)
+    check_valid_frictionless(package_file, table_schemas)
+    check_foreign_keys(package_file, table_schemas)
 
 check_package_versions('sandbox/data-packages/index.json', directories_to_scan_sandbox)
 check_package_versions('data-packages/index.json', directories_to_scan_prod)
