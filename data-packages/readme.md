@@ -13,7 +13,7 @@ The schemas are presented using [Frictionless Table Schema](https://specs.fricti
 
 New versions go into the sandbox and are copied to production once they have been tested in the IPT.
 
-[`sandbox/experimental/data-packages`](../sandbox/experimental/data-packages) has been used occasionally for packages whose model was still being worked out, such as DwC-DP 0.1. The DwC-DP 1.0_DEV pre-release is also there, for historical reasons. They are listed in the sandbox registry like any other sandbox package. New packages and versions should normally go into `sandbox/data-packages`.
+[`sandbox/experimental/data-packages`](../sandbox/experimental/data-packages) has been used occasionally for packages whose model was still being worked out. The DwC-DP 1.0_DEV pre-release is there, for historical reasons. It is listed in the sandbox registry like any other sandbox package. New packages and versions should normally go into `sandbox/data-packages`.
 
 The `frictionless` folder holds a copy of the Frictionless Data Package JSON schema.
 
