@@ -230,7 +230,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/agent.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/agent.json",
           "name": "agent",
           "title": "Agent",
           "description": "A resource that acts or has the power to act.",
@@ -242,7 +242,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/agent-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/agent-agent-role.json",
           "name": "agent-agent-role",
           "title": "Agent Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to another dcterms:Agent.",
@@ -254,7 +254,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/agent-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/agent-identifier.json",
           "name": "agent-identifier",
           "title": "Agent Identifier",
           "description": "An adms:Identifier for a dcterms:Agent.",
@@ -266,7 +266,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/agent-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/agent-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/agent-media.json",
           "name": "agent-media",
           "title": "Agent Media",
           "description": "A dcterms:Agent as content in an ac:Media entity.",
@@ -278,7 +278,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/bibliographic-resource",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/bibliographic-resource.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/bibliographic-resource.json",
           "name": "bibliographic-resource",
           "title": "Bibliographic Resource",
           "description": "A book, article, or other documentary resource.",
@@ -290,7 +290,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age.json",
           "name": "chronometric-age",
           "title": "Chronometric Age",
           "description": "An approximation of temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported via evidence.",
@@ -302,7 +302,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age-agent-role.json",
           "name": "chronometric-age-agent-role",
           "title": "Chronometric Age Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a chrono:ChronometricAge.",
@@ -314,7 +314,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age-assertion.json",
           "name": "chronometric-age-assertion",
           "title": "Chronometric Age Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a chrono:ChronometricAge.",
@@ -326,7 +326,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age-media.json",
           "name": "chronometric-age-media",
           "title": "Chronometric Age Media",
           "description": "A chrono:ChronometricAge as content in an ac:Media entity.",
@@ -338,7 +338,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age-protocol.json",
           "name": "chronometric-age-protocol",
           "title": "Chronometric Age Protocol",
           "description": "A dwc:Protocol used for a chrono:ChronometricAge.",
@@ -350,7 +350,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/chronometric-age-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/chronometric-age-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/chronometric-age-reference.json",
           "name": "chronometric-age-reference",
           "title": "Chronometric Age Reference",
           "description": "A dcterms:BibliographicResource related to a chrono:ChronometricAge.",
@@ -362,7 +362,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event.json",
           "name": "event",
           "title": "Event",
           "description": "An action, process, or set of circumstances occurring at a dcterms:Location during a period of time.",
@@ -374,7 +374,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-agent-role.json",
           "name": "event-agent-role",
           "title": "Event Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:Event.",
@@ -386,7 +386,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-assertion.json",
           "name": "event-assertion",
           "title": "Event Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:Event.",
@@ -398,7 +398,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-identifier.json",
           "name": "event-identifier",
           "title": "Event Identifier",
           "description": "An adms:Identifier for a dwc:Event.",
@@ -410,7 +410,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-media.json",
           "name": "event-media",
           "title": "Event Media",
           "description": "A dwc:Event as content in an ac:Media entity.",
@@ -422,7 +422,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-protocol.json",
           "name": "event-protocol",
           "title": "Event Protocol",
           "description": "A dwc:Protocol used for a dwc:Event.",
@@ -434,7 +434,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-provenance",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-provenance.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-provenance.json",
           "name": "event-provenance",
           "title": "Event Provenance",
           "description": "A dwc:Provenance for a dwc:Event.",
@@ -446,7 +446,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-reference.json",
           "name": "event-reference",
           "title": "Event Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:Event.",
@@ -458,7 +458,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/event-usage-policy",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/event-usage-policy.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/event-usage-policy.json",
           "name": "event-usage-policy",
           "title": "Event Usage Policy",
           "description": "Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.",
@@ -470,7 +470,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-context",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/geological-context.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/geological-context.json",
           "name": "geological-context",
           "title": "Geological Context",
           "description": "A set of geological designations, such as stratigraphy, that qualify a dcterms:Location or source of a dwc:MaterialEntity.",
@@ -482,7 +482,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-context-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/geological-context-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/geological-context-media.json",
           "name": "geological-context-media",
           "title": "Geological Context Media",
           "description": "A dwc:GeologicalContext as content in an ac:Media entity.",
@@ -494,7 +494,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/geological-material",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/geological-material.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/geological-material.json",
           "name": "geological-material",
           "title": "Geological Material",
           "description": "A dwc:MaterialEntity that is geological in nature.",
@@ -506,7 +506,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/identification.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/identification.json",
           "name": "identification",
           "title": "Identification",
           "description": "A classification of a resource according to a classification scheme.",
@@ -518,7 +518,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/identification-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/identification-agent-role.json",
           "name": "identification-agent-role",
           "title": "Identification Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:Identification.",
@@ -530,7 +530,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/identification-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/identification-reference.json",
           "name": "identification-reference",
           "title": "Identification Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:Identification.",
@@ -542,7 +542,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/identification-taxon",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/identification-taxon.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/identification-taxon.json",
           "name": "identification-taxon",
           "title": "Identification Taxon",
           "description": "A construct of components and positions of dwc:Taxa in a dwc:Identification.",
@@ -554,7 +554,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material.json",
           "name": "material",
           "title": "Material",
           "description": "An entity that can be identified, exist for some period of time, and consist in whole or in part of physical matter while it exists.",
@@ -566,7 +566,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-agent-role.json",
           "name": "material-agent-role",
           "title": "Material Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:MaterialEntity.",
@@ -578,7 +578,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-assertion.json",
           "name": "material-assertion",
           "title": "Material Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:MaterialEntity.",
@@ -590,7 +590,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-geological-context",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-geological-context.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-geological-context.json",
           "name": "material-geological-context",
           "title": "Material Geological Context",
           "description": "A dwc:GeologicalContext from which a dwc:MaterialEntify was derived.",
@@ -602,7 +602,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-identifier.json",
           "name": "material-identifier",
           "title": "Material Identifier",
           "description": "An adms:Identifier for a dwc:MaterialEntity.",
@@ -614,7 +614,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-media.json",
           "name": "material-media",
           "title": "Material Media",
           "description": "A dwc:MaterialEntity as content in an ac:Media entity.",
@@ -626,7 +626,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-protocol.json",
           "name": "material-protocol",
           "title": "Material Protocol",
           "description": "A dwc:Protocol used for a dwc:MaterialEntity.",
@@ -638,7 +638,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-provenance",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-provenance.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-provenance.json",
           "name": "material-provenance",
           "title": "Material Provenance",
           "description": "A dwc:Provenance for a dwc:MaterialEntity.",
@@ -650,7 +650,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-reference.json",
           "name": "material-reference",
           "title": "Material Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:MaterialEntity.",
@@ -662,7 +662,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/material-usage-policy",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/material-usage-policy.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/material-usage-policy.json",
           "name": "material-usage-policy",
           "title": "Material Usage Policy",
           "description": "Rights, usage, and attribution statements applicable to a dwc:MaterialEntity.",
@@ -674,7 +674,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media.json",
           "name": "media",
           "title": "Media",
           "description": "A digital or physical media resource.",
@@ -686,7 +686,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media-agent-role.json",
           "name": "media-agent-role",
           "title": "Media Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to an ac:Media entity.",
@@ -698,7 +698,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media-assertion.json",
           "name": "media-assertion",
           "title": "Media Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about an ac:Media entity.",
@@ -710,7 +710,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media-identifier.json",
           "name": "media-identifier",
           "title": "Media Identifier",
           "description": "An adms:Identifier for an ac:Media entity.",
@@ -722,7 +722,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-provenance",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media-provenance.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media-provenance.json",
           "name": "media-provenance",
           "title": "Media Provenance",
           "description": "A dwc:Provenance for an ac:Media entity.",
@@ -734,7 +734,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/media-usage-policy",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/media-usage-policy.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/media-usage-policy.json",
           "name": "media-usage-policy",
           "title": "Media Usage Policy",
           "description": "Rights, usage, and attribution statements applicable to an ac:Media entity.",
@@ -746,7 +746,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/molecular-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/molecular-protocol.json",
           "name": "molecular-protocol",
           "title": "Molecular Protocol",
           "description": "A protocol used to perform a dwc:NucleotideAnalysis and potentially derive a dwc:NucleotideSequence from a dwc:MaterialEntity.",
@@ -758,7 +758,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/molecular-protocol-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/molecular-protocol-agent-role.json",
           "name": "molecular-protocol-agent-role",
           "title": "Molecular Protocol Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:MolecularProtocol.",
@@ -770,7 +770,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/molecular-protocol-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/molecular-protocol-assertion.json",
           "name": "molecular-protocol-assertion",
           "title": "Molecular Protocol Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:MolecularProtocol.",
@@ -782,7 +782,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/molecular-protocol-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/molecular-protocol-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/molecular-protocol-reference.json",
           "name": "molecular-protocol-reference",
           "title": "Molecular Protocol Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:MolecularProtocol.",
@@ -794,7 +794,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-analysis",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/nucleotide-analysis.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/nucleotide-analysis.json",
           "name": "nucleotide-analysis",
           "title": "Nucleotide Analysis",
           "description": "A link between a dwc:NucleotideSequence and a dwc:Event and a dwc:MaterialEntity from which it was derived, using a specified dwc:Protocol.",
@@ -806,7 +806,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-analysis-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/nucleotide-analysis-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/nucleotide-analysis-assertion.json",
           "name": "nucleotide-analysis-assertion",
           "title": "Nucleotide Analysis Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:NucleotideSequence.",
@@ -818,7 +818,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/nucleotide-sequence",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/nucleotide-sequence.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/nucleotide-sequence.json",
           "name": "nucleotide-sequence",
           "title": "Nucleotide Sequence",
           "description": "A digital representation of a nucleotide sequence.",
@@ -830,7 +830,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence.json",
           "name": "occurrence",
           "title": "Occurrence",
           "description": "A dwc:Event that establishes the state of a dwc:Organism at a particular place and time.",
@@ -842,7 +842,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-agent-role.json",
           "name": "occurrence-agent-role",
           "title": "Occurrence Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:Occurrence.",
@@ -854,7 +854,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-assertion.json",
           "name": "occurrence-assertion",
           "title": "Occurrence Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:Occurrence.",
@@ -866,7 +866,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-identifier.json",
           "name": "occurrence-identifier",
           "title": "Occurrence Identifier",
           "description": "An adms:Identifier for a dwc:Occurrence.",
@@ -878,7 +878,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-media.json",
           "name": "occurrence-media",
           "title": "Occurrence Media",
           "description": "A dwc:Occurrence as content in an ac:Media entity.",
@@ -890,7 +890,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-protocol.json",
           "name": "occurrence-protocol",
           "title": "Occurrence Protocol",
           "description": "A dwc:Protocol used for a dwc:Occurrence.",
@@ -902,7 +902,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/occurrence-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/occurrence-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/occurrence-reference.json",
           "name": "occurrence-reference",
           "title": "Occurrence Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:Occurrence.",
@@ -914,7 +914,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism.json",
           "name": "organism",
           "title": "Organism",
           "description": "A particular organism or defined group of organisms considered to be taxonomically homogeneous.",
@@ -926,7 +926,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-assertion.json",
           "name": "organism-assertion",
           "title": "Organism Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:Organism.",
@@ -938,7 +938,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-identifier.json",
           "name": "organism-identifier",
           "title": "Organism Identifier",
           "description": "An adms:Identifier for a dwc:Organism.",
@@ -950,7 +950,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-interaction.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-interaction.json",
           "name": "organism-interaction",
           "title": "Organism Interaction",
           "description": "An interaction between two dwc:Organisms during a dwc:Event.",
@@ -962,7 +962,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-interaction-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-interaction-agent-role.json",
           "name": "organism-interaction-agent-role",
           "title": "Organism Interaction Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to a dwc:OrganismInteraction.",
@@ -974,7 +974,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-interaction-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-interaction-assertion.json",
           "name": "organism-interaction-assertion",
           "title": "Organism Interaction Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about a dwc:OrganismInteraction.",
@@ -986,7 +986,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-media",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-interaction-media.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-interaction-media.json",
           "name": "organism-interaction-media",
           "title": "Organism Interaction Media",
           "description": "A dwc:OrganismInteraction as content in an ac:Media entity.",
@@ -998,7 +998,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-interaction-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-interaction-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-interaction-reference.json",
           "name": "organism-interaction-reference",
           "title": "Organism Interaction Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:OrganismInteraction.",
@@ -1010,7 +1010,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-reference.json",
           "name": "organism-reference",
           "title": "Organism Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:Organism.",
@@ -1022,7 +1022,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/organism-relationship",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/organism-relationship.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/organism-relationship.json",
           "name": "organism-relationship",
           "title": "Organism Relationship",
           "description": "A dwc:ResourceRelationship of one dwc:Organism to another dwc:Organism.",
@@ -1034,7 +1034,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/protocol.json",
           "name": "protocol",
           "title": "Protocol",
           "description": "A method used during an action.",
@@ -1046,7 +1046,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/protocol-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/protocol-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/protocol-reference.json",
           "name": "protocol-reference",
           "title": "Protocol Reference",
           "description": "A dcterms:BibliographicResource related to a dwc:Protocol.",
@@ -1058,7 +1058,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/provenance",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/provenance.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/provenance.json",
           "name": "provenance",
           "title": "Provenance",
           "description": "Information about an entity\u2019s origins.",
@@ -1070,7 +1070,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/resource-relationship",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/resource-relationship.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/resource-relationship.json",
           "name": "resource-relationship",
           "title": "Resource Relationship",
           "description": "A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.",
@@ -1082,7 +1082,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey.json",
           "name": "survey",
           "title": "Survey",
           "description": "A dwc:Event intentionally designed to characterize a defined biotic target or domain in such a way that the resulting dwc:Occurrences can be interpreted collectively to support ecological and monitoring inference (such as detectability, abundance, species co-occurence, spatial distribution, or temporal trends), rather than merely documenting individual observations or gathered material.",
@@ -1094,7 +1094,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-agent-role",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-agent-role.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-agent-role.json",
           "name": "survey-agent-role",
           "title": "Survey Agent Role",
           "description": "A role filled by a dcterms:Agent with respect to an eco:Survey.",
@@ -1106,7 +1106,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-assertion",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-assertion.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-assertion.json",
           "name": "survey-assertion",
           "title": "Survey Assertion",
           "description": "A dwc:Assertion made by a dcterms:Agent about an eco:Survey.",
@@ -1118,7 +1118,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-identifier",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-identifier.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-identifier.json",
           "name": "survey-identifier",
           "title": "Survey Identifier",
           "description": "An adms:Identifier for an eco:Survey.",
@@ -1130,7 +1130,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-protocol",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-protocol.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-protocol.json",
           "name": "survey-protocol",
           "title": "Survey Protocol",
           "description": "A dwc:Protocol used for an eco:Survey.",
@@ -1142,7 +1142,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-reference",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-reference.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-reference.json",
           "name": "survey-reference",
           "title": "Survey Reference",
           "description": "A dcterms:BibliographicResource related to an eco:Survey.",
@@ -1154,7 +1154,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-survey-target",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-survey-target.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-survey-target.json",
           "name": "survey-survey-target",
           "title": "Survey Survey Target",
           "description": "An eco:SurveyTarget used for an eco:Survey.",
@@ -1166,7 +1166,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-target",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-target.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-target.json",
           "name": "survey-target",
           "title": "Survey Target",
           "description": "One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.",
@@ -1178,7 +1178,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/survey-target-descriptor",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/survey-target-descriptor.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/survey-target-descriptor.json",
           "name": "survey-target-descriptor",
           "title": "Survey Target Descriptor",
           "description": "A combination of a survey target value and a survey target type for a given eco:SurveyTarget.",
@@ -1190,7 +1190,7 @@
         {
           "identifier": "http://rs.tdwg.org/dwc-dp/1.0/usage-policy",
           "dcterms:isPartOf": "http://www.tdwg.org/standards/450",
-          "url": "https://rs.gbif.org/sandbox/data-packages/dwc-dp/1.0/table-schemas/usage-policy.json",
+          "url": "https://rs.tdwg.org/dwc-dp/1.0/table-schemas/usage-policy.json",
           "name": "usage-policy",
           "title": "Usage Policy",
           "description": "Information about rights, usage, and attribution statements applicable to an entity.",
