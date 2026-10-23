@@ -8,7 +8,7 @@
   "shortTitle": "dwc-dp",
   "description": "A data package for sharing biodiversity data using Darwin Core.",
   "issued": "2026-09-01",
-  "isLatest": true,
+  "isLatest": false,
   "tableSchemas": [
     {
       "identifier": "http://rs.tdwg.org/dwc/dwc-dp/agent",

@@ -106,9 +106,8 @@ def parse_args():
         epilog=__doc__,
     )
     p.add_argument("schema_dir", type=Path, help="Directory containing the schema JSON files")
-    p.add_argument("-o", "--output", type=Path, default=Path(
-        "sandbox/experimental/data-packages/dwc-dp/1.0_DEV/index.json"),
-                   help="Path to write the resulting index.json (default: ./index.json)")
+    p.add_argument("-o", "--output", type=Path, required=True,
+                   help="Path to write the resulting index.json")
     p.add_argument("--pattern", default="*.json",
                    help="Glob pattern (relative to schema_dir) for schema files (default: *.json)")
     p.add_argument("--exclude", nargs="*", default=[],
