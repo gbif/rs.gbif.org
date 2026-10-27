@@ -14,10 +14,10 @@
     dc:subject="dwc:Occurrence"
     dc:description="An extension to link a specimen (Material) to a particular tip on a phylogenetic tree as evidence.">
 
-    <property name="phylogeneticTreeTipLabel"
+    <property name="phylogeneticTreeTipID"
         namespace="http://rs.gbif.org/terms/1.0/"
-        qualName="http://rs.gbif.org/terms/1.0/phylogeneticTreeTipLabel"
-        dc:description="The label of the tip on the phylogenetic tree."
+        qualName="http://rs.gbif.org/terms/1.0/phylogeneticTreeTipID"
+        dc:description="The identifier of the tip on the phylogenetic tree."
         examples="Fabales_Fabaceae_Paramacrolobium_coeruleum"
         required="true"/>
 
