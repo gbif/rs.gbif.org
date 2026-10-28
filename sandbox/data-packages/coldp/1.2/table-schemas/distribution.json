@@ -50,6 +50,7 @@
           "wdpa",
           "iho",
           "mrgid",
+          "gi",
           "text"
         ]
       }
@@ -80,7 +81,7 @@
     },
     {
         "name": "year",
-        "type": "string",
+        "type": "integer",
         "format": "default",
         "title": "year"
     },

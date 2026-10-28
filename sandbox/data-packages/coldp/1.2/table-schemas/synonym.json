@@ -71,12 +71,9 @@
       "description": "The kind of synonym. One of synonym, ambiguous synonym or misapplied. Defaults to synonym.",
       "constraints": {
         "enum": [
-          "accepted",
-          "provisionally accepted",
           "synonym",
           "ambiguous synonym",
-          "misapplied",
-          "bare name"
+          "misapplied"
         ]
       }
     },
