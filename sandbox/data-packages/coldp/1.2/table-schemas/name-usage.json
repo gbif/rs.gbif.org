@@ -320,22 +320,22 @@
       "title": "nameReferenceID"
     },
     {
-      "name": "publishedInYear",
+      "name": "namePublishedInYear",
       "type": "year",
       "format": "default",
-      "title": "publishedInYear"
+      "title": "namePublishedInYear"
     },
     {
-      "name": "publishedInPage",
+      "name": "namePublishedInPage",
       "type": "string",
       "format": "default",
-      "title": "publishedInPage"
+      "title": "namePublishedInPage"
     },
     {
-      "name": "publishedInPageLink",
+      "name": "namePublishedInPageLink",
       "type": "string",
       "format": "default",
-      "title": "publishedInPageLink"
+      "title": "namePublishedInPageLink"
     },
     {
       "name": "gender",
@@ -387,7 +387,8 @@
           "rejected",
           "doubtful",
           "manuscript",
-          "chresonym"
+          "chresonym",
+          "orthographic variant"
         ]
       }
     },
@@ -595,7 +596,7 @@
     },
     {
       "name": "modified",
-      "type": "date",
+      "type": "datetime",
       "format": "default",
       "title": "modified"
     },

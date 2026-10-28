@@ -42,7 +42,7 @@
     },
     {
       "name": "modified",
-      "type": "date",
+      "type": "datetime",
       "format": "default",
       "title": "modified"
     },
