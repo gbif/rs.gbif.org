@@ -234,7 +234,14 @@
       "name": "gender",
       "type": "string",
       "format": "default",
-      "title": "gender"
+      "title": "gender",
+      "constraints": {
+        "enum": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      }
     },
     {
       "name": "genderAgreement",

@@ -267,7 +267,14 @@
       "type": "string",
       "format": "default",
       "title": "gender",
-      "description": "Gender of the name, i.e. the genus in case of bi/trinomials. Values for the gender field should be one of masculine, feminine or neuter."
+      "description": "Gender of the name, i.e. the genus in case of bi/trinomials. Values for the gender field should be one of masculine, feminine or neuter.",
+      "constraints": {
+        "enum": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      }
     },
     {
       "name": "genderAgreement",

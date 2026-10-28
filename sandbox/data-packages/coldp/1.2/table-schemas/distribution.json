@@ -89,7 +89,17 @@
         "name": "season",
         "type": "string",
         "format": "default",
-        "title": "season"
+        "title": "season",
+        "constraints": {
+          "enum": [
+            "spring",
+            "summer",
+            "autumn",
+            "winter",
+            "wet",
+            "dry"
+          ]
+        }
     },
     {
         "name": "lifeStage",
