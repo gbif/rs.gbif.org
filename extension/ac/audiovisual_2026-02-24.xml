@@ -7,7 +7,7 @@
     dc:title='Audiovisual Media Description'
     name="Multimedia" namespace='http://rs.tdwg.org/ac/terms/'
     rowType='http://rs.tdwg.org/ac/terms/Multimedia'
-    dc:issued='2026-09-09'
+    dc:issued='2026-10-29'
     dc:relation='http://rs.tdwg.org/ac/doc/termlist/'
     dc:description='The Audiovisual Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them.'>
 
@@ -67,9 +67,11 @@
     </property>
     <property group='Management Vocabulary' name='reviewerLiteral' namespace='http://rs.tdwg.org/ac/terms/' qualName='http://rs.tdwg.org/ac/terms/reviewerLiteral' label='Reviewer' dc:relation='http://rs.tdwg.org/ac/doc/termlist/#ac_reviewerLiteral' dc:description='String providing the name of a reviewer.' comments='Provider is asserting they accept this review as competent. See also ac:reviewer and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.' required='false'>
       <translation xml:lang='cs' label='Recenzent' dc:description='Řetězec obsahující jméno recenzenta.'/>
+      <translation xml:lang='zh' label='審查者' dc:description='提供審查者姓名的字串。'/>
     </property>
     <property group='Management Vocabulary' name='reviewer' namespace='http://rs.tdwg.org/ac/terms/' qualName='http://rs.tdwg.org/ac/terms/reviewer' label='Reviewer' dc:relation='http://rs.tdwg.org/ac/doc/termlist/#ac_reviewer' dc:description='URI for a reviewer.' comments='Provider is asserting they accept this review as competent. See also ac:reviewerLiteral and the section Namespaces, Prefixes and Term Names in the Audiovisual Core Term List document for discussion of the rationale for separate terms taking URI values from those taking Literal values where both are possible. Normal practice is to use the same Label if both are provided. Labels have no effect on information discovery and are only suggestions.' required='false'>
       <translation xml:lang='cs' label='Recenzent'/>
+      <translation xml:lang='zh' label='審查者'/>
     </property>
     <property group='Management Vocabulary' name='reviewerComments' namespace='http://rs.tdwg.org/ac/terms/' qualName='http://rs.tdwg.org/ac/terms/reviewerComments' label='Reviewer Comments' dc:relation='http://rs.tdwg.org/ac/doc/termlist/#ac_reviewerComments' dc:description='Any comment provided by a reviewer with expertise in the subject, as free-form text.' comments='Reviewer Comments may refer to the resource itself (e.g., asserting a taxon name or location of a biological subject in an image), or to the relation between resource and associated metadata (e.g., asserting that the taxon name given in the metadata is wrong, without asserting a positive identification). There is a separate item &quot;Comments&quot; for text from commenters of unrecorded expertise.' required='false'>
       <translation xml:lang='cs' label='Komentář hodnotitele'/>
