@@ -31,10 +31,7 @@
       "type": "string",
       "format": "default",
       "title": "type",
-      "description": "The MIME-type of the media item the url identifies. Preferably the full type/subtype combination, e.g image/jpeg, but the primary type alone is sufficient (image, video, audio).",
-      "constraints": {
-        "pattern": "^(image|video|audio)(/[A-Za-z0-9.+-]+)?$"
-      }
+      "description": "The MIME-type of the media item the url identifies. Preferably the full type/subtype combination, e.g image/jpeg, but the primary type alone is sufficient (image, video, audio)."
     },
     {
       "name": "title",
