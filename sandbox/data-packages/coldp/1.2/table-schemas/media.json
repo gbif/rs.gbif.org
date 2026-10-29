@@ -31,31 +31,7 @@
       "type": "string",
       "format": "default",
       "title": "type",
-      "description": "The MIME-type of the media item the url identifies. Preferably the full type/subtype combination, e.g image/jpeg, but the primary type alone is sufficient (image, video, audio).",
-      "constraints": {
-        "enum": [
-          "image",
-          "video",
-          "audio"
-        ]
-      }
-    },
-    {
-      "name": "format",
-      "type": "string",
-      "format": "default",
-      "title": "format",
-      "constraints": {
-        "enum": [
-          "plain text",
-          "markdown",
-          "xml",
-          "html",
-          "tax pub",
-          "taxon x",
-          "rdf"
-        ]
-      }
+      "description": "The MIME-type of the media item the url identifies. Preferably the full type/subtype combination, e.g image/jpeg, but the primary type alone is sufficient (image, video, audio)."
     },
     {
       "name": "title",
@@ -99,7 +75,7 @@
     },
     {
       "name": "modified",
-      "type": "date",
+      "type": "datetime",
       "format": "default",
       "title": "modified",
       "description": "UTC timestamp in ISO format to represent the time the record was last modified."

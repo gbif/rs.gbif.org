@@ -43,11 +43,14 @@
         "enum": [
           "tdwg",
           "iso",
+          "realm",
           "fao",
           "longhurst",
           "teow",
+          "wdpa",
           "iho",
           "mrgid",
+          "gi",
           "text"
         ]
       }
@@ -78,7 +81,7 @@
     },
     {
         "name": "year",
-        "type": "string",
+        "type": "integer",
         "format": "default",
         "title": "year"
     },
@@ -86,7 +89,17 @@
         "name": "season",
         "type": "string",
         "format": "default",
-        "title": "season"
+        "title": "season",
+        "constraints": {
+          "enum": [
+            "spring",
+            "summer",
+            "autumn",
+            "winter",
+            "wet",
+            "dry"
+          ]
+        }
     },
     {
         "name": "lifeStage",
@@ -110,7 +123,7 @@
     },
     {
       "name": "modified",
-      "type": "date",
+      "type": "datetime",
       "format": "default",
       "title": "modified",
       "description": "UTC timestamp in ISO format to represent the time the record was last modified."

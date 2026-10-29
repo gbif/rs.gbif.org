@@ -53,6 +53,7 @@
           "broadcast",
           "chapter",
           "dataset",
+          "document",
           "entry",
           "entry dictionary",
           "entry encyclopedia",
@@ -68,14 +69,18 @@
           "pamphlet",
           "paper conference",
           "patent",
+          "performance",
+          "periodical",
           "personal communication",
           "post",
           "post weblog",
           "report",
           "review",
           "review book",
+          "software",
           "song",
           "speech",
+          "standard",
           "thesis",
           "treaty",
           "webpage"
@@ -90,11 +95,25 @@
       "description": "The author(s) of the work. If multiple authors use a style that can safely be parsed. Recommended are 2 common forms:"
     },
     {
+      "name": "authorID",
+      "type": "string",
+      "format": "default",
+      "title": "authorID",
+      "description": "List of Author.ID identifiers separated by a comma that act as authors for this reference. Authors must exist in the local data package."
+    },
+    {
       "name": "editor",
       "type": "string",
       "format": "default",
       "title": "editor",
       "description": "The editor(s) of the work. See author for recommendations how to supply person names."
+    },
+    {
+      "name": "editorID",
+      "type": "string",
+      "format": "default",
+      "title": "editorID",
+      "description": "List of Author.ID identifiers separated by a comma that act as editors for this reference. Authors must exist in the local data package."
     },
     {
       "name": "title",
@@ -118,6 +137,13 @@
       "description": "Author(s) of the container holding the item, e.g. the book author for a book chapter. See author for recommendations how to supply person names."
     },
     {
+      "name": "containerAuthorID",
+      "type": "string",
+      "format": "default",
+      "title": "containerAuthorID",
+      "description": "List of Author.ID identifiers separated by a comma that act as the container authors for this reference. Authors must exist in the local data package."
+    },
+    {
       "name": "containerTitle",
       "type": "string",
       "format": "default",
@@ -133,15 +159,23 @@
     },
     {
       "name": "issued",
-      "type": "date",
+      "type": "string",
       "format": "default",
-      "title": "issued"
+      "title": "issued",
+      "description": "Date the work was issued/published. Use ISO dates that can be truncated to represent a year, year & month or exact date, e.g. 1998, 1998-05 or 1998-05-21",
+      "constraints": {
+        "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+      }
     },
     {
       "name": "accessed",
-      "type": "date",
+      "type": "string",
       "format": "default",
-      "title": "accessed"
+      "title": "accessed",
+      "description": "Date the item has been accessed. Use ISO dates that can be truncated to represent a year, year & month or exact date, e.g. 1998, 1998-05 or 1998-05-21",
+      "constraints": {
+        "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+      }
     },
     {
       "name": "collectionTitle",
@@ -156,6 +190,13 @@
       "format": "default",
       "title": "collectionEditor",
       "description": "Editor(s) of the collection holding the item, e.g. the series editor for a book."
+    },
+    {
+      "name": "collectionEditorID",
+      "type": "string",
+      "format": "default",
+      "title": "collectionEditorID",
+      "description": "List of Author.ID identifiers separated by a comma that act as collection editors for this reference. Authors must exist in the local data package."
     },
     {
       "name": "volume",
@@ -240,7 +281,7 @@
     },
     {
       "name": "modified",
-      "type": "date",
+      "type": "datetime",
       "format": "default",
       "title": "modified",
       "description": "UTC timestamp in ISO format to represent the time the record was last modified."
