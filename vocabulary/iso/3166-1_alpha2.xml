@@ -5,7 +5,7 @@
 	dc:relation="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"
 	dc:description="ISO 3166-1 alpha-2 codes are two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), to represent countries, dependent territories, and special areas of geographical interest. They are the most widely used of the country codes published by ISO (the others being alpha-3 and numeric), and are used most prominently for the Internet's country code top-level domains (with a few exceptions). They were first included as part of the ISO 3166 standard in its first edition in 1974.  XK for Kosovo has been added here."
 	dc:title="ISO 3166-1 Alpha2 Country Codes"
-  dc:issued="2018-01-22"
+  dc:issued="2026-11-02"
   xmlns="http://rs.gbif.org/thesaurus/"
 	xmlns:dc="http://purl.org/dc/terms/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -262,7 +262,7 @@
  </concept>
  <concept dc:identifier="BL" dc:URI="http://iso.org/iso3166-1/alpha2#BL">
   <preferred>
-   <term dc:title="SAINT BARTHELEMY" xml:lang="en"/>
+   <term dc:title="SAINT BARTHÉLEMY" xml:lang="en"/>
    <term dc:title="SAN BARTOLOMÉ" xml:lang="es"/>
   </preferred>
   <alternative>
@@ -442,7 +442,7 @@
  </concept>
  <concept dc:identifier="CI" dc:URI="http://iso.org/iso3166-1/alpha2#CI">
   <preferred>
-   <term dc:title="CÔTE D’IVOIRE" xml:lang="en"/>
+   <term dc:title="CÔTE D'IVOIRE" xml:lang="en"/>
    <term dc:title="COSTA DE MARFIL" xml:lang="es"/>
   </preferred>
   <alternative>
@@ -567,6 +567,7 @@
   </preferred>
   <alternative>
    <term dc:title="CZE" xml:lang="en"/>
+   <term dc:title="CZ" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="DE" dc:URI="http://iso.org/iso3166-1/alpha2#DE">
@@ -627,6 +628,7 @@
   </preferred>
   <alternative>
    <term dc:title="DZA" xml:lang="en"/>
+   <term dc:title="DZ" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="EC" dc:URI="http://iso.org/iso3166-1/alpha2#EC">
@@ -1045,7 +1047,7 @@
    <term dc:title="ISLA DE MAN" xml:lang="es"/>
   </preferred>
   <alternative>
-   <term dc:title="IMM" xml:lang="en"/>
+   <term dc:title="IMN" xml:lang="en"/>
    <term dc:title="IM" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1211,7 +1213,7 @@
  </concept>
  <concept dc:identifier="KP" dc:URI="http://iso.org/iso3166-1/alpha2#KP">
   <preferred>
-   <term dc:title="KOREA, DEMOCRATIC PEOPLE’S REPUBLIC OF" xml:lang="en"/>
+   <term dc:title="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF" xml:lang="en"/>
    <term dc:title="COREA, REPÚBLICA POPULAR DEMOCRÁTICA DE" xml:lang="es"/>
   </preferred>
   <alternative>
@@ -1261,7 +1263,7 @@
  </concept>
  <concept dc:identifier="LA" dc:URI="http://iso.org/iso3166-1/alpha2#LA">
   <preferred>
-   <term dc:title="LAO PEOPLE’S DEMOCRATIC REPUBLIC" xml:lang="en"/>
+   <term dc:title="LAO PEOPLE'S DEMOCRATIC REPUBLIC" xml:lang="en"/>
    <term dc:title="LAO, REPÚBLICA DEMOCRÁTICA POPULAR" xml:lang="es"/>
   </preferred>
   <alternative>
@@ -1441,12 +1443,14 @@
  </concept>
  <concept dc:identifier="MK" dc:URI="http://iso.org/iso3166-1/alpha2#MK">
   <preferred>
-   <term dc:title="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF" xml:lang="en"/>
-   <term dc:title="MACEDONIA, EX REPÚBLICA YUGOSLAVA DE" xml:lang="es"/>
+   <term dc:title="NORTH MACEDONIA" xml:lang="en"/>
+   <term dc:title="MACEDONIA DEL NORTE" xml:lang="es"/>
   </preferred>
   <alternative>
    <term dc:title="MKD" xml:lang="en"/>
    <term dc:title="MK" xml:lang="en"/>
+   <term dc:title="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF" xml:lang="en"/>
+   <term dc:title="MACEDONIA, EX REPÚBLICA YUGOSLAVA DE" xml:lang="es"/>
   </alternative>
  </concept>
  <concept dc:identifier="ML" dc:URI="http://iso.org/iso3166-1/alpha2#ML">
@@ -1536,9 +1540,7 @@
   </preferred>
   <alternative>
    <term dc:title="MT" xml:lang="en"/>
-   <term dc:title="MT" xml:lang="en"/>
    <term dc:title="MLT" xml:lang="en"/>
-   <term dc:title="MAF" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="MU" dc:URI="http://iso.org/iso3166-1/alpha2#MU">
@@ -1693,12 +1695,13 @@
  </concept>
  <concept dc:identifier="NR" dc:URI="http://iso.org/iso3166-1/alpha2#NR">
   <preferred>
-   <term dc:title="NAURU" xml:lang="en"/>
+   <term dc:title="NAOERO" xml:lang="en"/>
    <term dc:title="NAURU" xml:lang="es"/>
   </preferred>
   <alternative>
    <term dc:title="NR" xml:lang="en"/>
    <term dc:title="NRU" xml:lang="en"/>
+   <term dc:title="NAURU" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="NU" dc:URI="http://iso.org/iso3166-1/alpha2#NU">
@@ -1883,7 +1886,7 @@
  </concept>
  <concept dc:identifier="RE" dc:URI="http://iso.org/iso3166-1/alpha2#RE">
   <preferred>
-   <term dc:title="REUNION" xml:lang="en"/>
+   <term dc:title="RÉUNION" xml:lang="en"/>
    <term dc:title="REUNIÓN" xml:lang="es"/>
   </preferred>
   <alternative>
@@ -1993,12 +1996,13 @@
  </concept>
  <concept dc:identifier="SH" dc:URI="http://iso.org/iso3166-1/alpha2#SH">
   <preferred>
-   <term dc:title="SAINT HELENA" xml:lang="en"/>
+   <term dc:title="SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA" xml:lang="en"/>
    <term dc:title="SANTA ELENA" xml:lang="es"/>
   </preferred>
   <alternative>
    <term dc:title="SH" xml:lang="en"/>
    <term dc:title="SHN" xml:lang="en"/>
+   <term dc:title="SAINT HELENA" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="SI" dc:URI="http://iso.org/iso3166-1/alpha2#SI">
@@ -2133,12 +2137,14 @@
  </concept>
  <concept dc:identifier="SZ" dc:URI="http://iso.org/iso3166-1/alpha2#SZ">
   <preferred>
-   <term dc:title="SWAZILAND" xml:lang="en"/>
-   <term dc:title="SUAZILANDIA" xml:lang="es"/>
+   <term dc:title="ESWATINI" xml:lang="en"/>
+   <term dc:title="ESUATINI" xml:lang="es"/>
   </preferred>
   <alternative>
    <term dc:title="SZ" xml:lang="en"/>
    <term dc:title="SWZ" xml:lang="en"/>
+   <term dc:title="SWAZILAND" xml:lang="en"/>
+   <term dc:title="SUAZILANDIA" xml:lang="es"/>
   </alternative>
  </concept>
  <concept dc:identifier="TC" dc:URI="http://iso.org/iso3166-1/alpha2#TC">
@@ -2253,12 +2259,13 @@
  </concept>
  <concept dc:identifier="TR" dc:URI="http://iso.org/iso3166-1/alpha2#TR">
   <preferred>
-   <term dc:title="TURKEY" xml:lang="en"/>
+   <term dc:title="TÜRKIYE" xml:lang="en"/>
    <term dc:title="TURQUÍA" xml:lang="es"/>
   </preferred>
   <alternative>
    <term dc:title="TR" xml:lang="en"/>
    <term dc:title="TUR" xml:lang="en"/>
+   <term dc:title="TURKEY" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="TT" dc:URI="http://iso.org/iso3166-1/alpha2#TT">
@@ -2357,7 +2364,8 @@
    <term dc:title="UZBEKISTÁN" xml:lang="es"/>
   </preferred>
   <alternative>
-   <term dc:title="UZB" />
+   <term dc:title="UZB" xml:lang="en"/>
+   <term dc:title="UZ" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="VA" dc:URI="http://iso.org/iso3166-1/alpha2#VA">
@@ -2450,7 +2458,7 @@
    <term dc:title="WS" xml:lang="en"/>
   </alternative>
  </concept>
- <concept dc:identifier="XK" dc:URI="http://iso.org/iso3166-1/alpha2#XKX">
+ <concept dc:identifier="XK" dc:URI="http://iso.org/iso3166-1/alpha2#XK">
   <preferred>
    <term dc:title="KOSOVO" xml:lang="en"/>
    <term dc:title="KOSOVO" xml:lang="es"/>
