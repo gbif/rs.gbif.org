@@ -3,9 +3,9 @@
 <thesaurus 
 	dc:URI="http://iso.org/639-1"
 	dc:relation="http://en.wikipedia.org/wiki/ISO_639-1"
-	dc:description="Codes for the representation of names of languages — Part 1: Alpha-2 code, is the first part of the ISO 639 series of international standards for language codes. Part 1 covers the registration of two-letter codes. There are 136 two-letter codes registered. The registered codes cover the world's major languages." 
+	dc:description="Codes for the representation of names of languages — Part 1: Alpha-2 code, is the first part of the ISO 639 series of international standards for language codes. Part 1 covers the registration of two-letter codes. There are 183 two-letter codes registered. The registered codes cover the world's major languages." 
 	dc:title="ISO 639-1 Language Codes"
-	dc:issued="2008-12-18"
+	dc:issued="2026-11-03"
   xmlns="http://rs.gbif.org/thesaurus/"
 	xmlns:dc="http://purl.org/dc/terms/" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -17,7 +17,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="aar" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="aa" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="aar" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ab" dc:URI="http://iso.org/639-1#ab"  dc:issued="2008-12-18">
@@ -26,7 +25,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="abk" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="abk" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ab" xml:lang="en"/>
   </alternative>
  </concept>
@@ -37,7 +35,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ae" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ave" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ave" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="af" dc:URI="http://iso.org/639-1#af"  dc:issued="2008-12-18">
@@ -46,7 +43,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="afr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="afr" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="af" xml:lang="en"/>
   </alternative>
  </concept>
@@ -57,7 +53,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="aka" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ak" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="aka" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="am" dc:URI="http://iso.org/639-1#am"  dc:issued="2008-12-18">
@@ -67,7 +62,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="amh" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="am" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="amh" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="an" dc:URI="http://iso.org/639-1#an"  dc:issued="2008-12-18">
@@ -76,7 +70,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="arg" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="arg" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="an" xml:lang="en"/>
   </alternative>
  </concept>
@@ -87,7 +80,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ara" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ar" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ara" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="as" dc:URI="http://iso.org/639-1#as"  dc:issued="2008-12-18">
@@ -97,7 +89,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="as" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="asm" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="asm" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="av" dc:URI="http://iso.org/639-1#av"  dc:issued="2008-12-18">
@@ -107,7 +98,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ava" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="av" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ava" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ay" dc:URI="http://iso.org/639-1#ay"  dc:issued="2008-12-18">
@@ -117,7 +107,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="aym" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ay" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="aym" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="az" dc:URI="http://iso.org/639-1#az"  dc:issued="2008-12-18">
@@ -127,7 +116,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="aze" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="az" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="aze" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ba" dc:URI="http://iso.org/639-1#ba"  dc:issued="2008-12-18">
@@ -136,7 +124,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bak" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bak" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ba" xml:lang="en"/>
   </alternative>
  </concept>
@@ -146,7 +133,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bel" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bel" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="be" xml:lang="en"/>
   </alternative>
  </concept>
@@ -156,7 +142,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bul" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bul" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="bg" xml:lang="en"/>
   </alternative>
  </concept>
@@ -167,7 +152,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="bi" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bis" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bis" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="bm" dc:URI="http://iso.org/639-1#bm"  dc:issued="2008-12-18">
@@ -177,7 +161,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="bm" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bam" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bam" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="bn" dc:URI="http://iso.org/639-1#bn"  dc:issued="2008-12-18">
@@ -186,7 +169,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ben" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ben" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="bn" xml:lang="en"/>
   </alternative>
  </concept>
@@ -207,7 +189,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bre" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="br" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bre" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="bs" dc:URI="http://iso.org/639-1#bs"  dc:issued="2008-12-18">
@@ -217,7 +198,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="bs" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="bos" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="bos" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ca" dc:URI="http://iso.org/639-1#ca"  dc:issued="2008-12-18">
@@ -227,7 +207,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ca" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="cat" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="cat" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ce" dc:URI="http://iso.org/639-1#ce"  dc:issued="2008-12-18">
@@ -236,7 +215,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="che" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="che" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ce" xml:lang="en"/>
   </alternative>
  </concept>
@@ -246,7 +224,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="cha" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="cha" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ch" xml:lang="en"/>
   </alternative>
  </concept>
@@ -256,7 +233,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="cos" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="cos" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="co" xml:lang="en"/>
   </alternative>
  </concept>
@@ -267,7 +243,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="cr" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="cre" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="cre" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="cs" dc:URI="http://iso.org/639-1#cs"  dc:issued="2008-12-18">
@@ -287,7 +262,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="cu" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="chu" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="chu" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="cv" dc:URI="http://iso.org/639-1#cv"  dc:issued="2008-12-18">
@@ -297,7 +271,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="cv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="chv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="chv" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="cy" dc:URI="http://iso.org/639-1#cy"  dc:issued="2008-12-18">
@@ -317,7 +290,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="da" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="dan" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="dan" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="de" dc:URI="http://iso.org/639-1#de"  dc:issued="2008-12-18">
@@ -337,7 +309,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="div" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="dv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="div" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="dz" dc:URI="http://iso.org/639-1#dz"  dc:issued="2008-12-18">
@@ -347,7 +318,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="dzo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="dz" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="dzo" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ee" dc:URI="http://iso.org/639-1#ee"  dc:issued="2008-12-18">
@@ -357,7 +327,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ee" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ewe" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ewe" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="el" dc:URI="http://iso.org/639-1#el"  dc:issued="2008-12-18">
@@ -377,7 +346,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="eng" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="en" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="eng" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="eo" dc:URI="http://iso.org/639-1#eo"  dc:issued="2008-12-18">
@@ -387,7 +355,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="eo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="epo" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="epo" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="es" dc:URI="http://iso.org/639-1#es"  dc:issued="2008-12-18">
@@ -397,7 +364,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="es" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="spa" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="spa" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="et" dc:URI="http://iso.org/639-1#et"  dc:issued="2008-12-18">
@@ -407,7 +373,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="et" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="est" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="est" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="eu" dc:URI="http://iso.org/639-1#eu"  dc:issued="2008-12-18">
@@ -437,7 +402,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ff" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ful" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ful" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="fi" dc:URI="http://iso.org/639-1#fi"  dc:issued="2008-12-18">
@@ -446,7 +410,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="fin" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="fin" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="fi" xml:lang="en"/>
   </alternative>
  </concept>
@@ -457,7 +420,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="fj" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="fij" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="fij" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="fo" dc:URI="http://iso.org/639-1#fo"  dc:issued="2008-12-18">
@@ -467,7 +429,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="fo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="fao" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="fao" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="fr" dc:URI="http://iso.org/639-1#fr"  dc:issued="2008-12-18">
@@ -487,7 +448,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="fry" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="fy" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="fry" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ga" dc:URI="http://iso.org/639-1#ga"  dc:issued="2008-12-18">
@@ -497,7 +457,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ga" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="gle" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="gle" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="gd" dc:URI="http://iso.org/639-1#gd"  dc:issued="2008-12-18">
@@ -507,7 +466,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="gd" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="gla" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="gla" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="gl" dc:URI="http://iso.org/639-1#gl"  dc:issued="2008-12-18">
@@ -516,7 +474,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="glg" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="glg" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="gl" xml:lang="en"/>
   </alternative>
  </concept>
@@ -527,7 +484,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="gn" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="grn" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="grn" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="gu" dc:URI="http://iso.org/639-1#gu"  dc:issued="2008-12-18">
@@ -537,7 +493,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="gu" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="guj" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="guj" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="gv" dc:URI="http://iso.org/639-1#gv"  dc:issued="2008-12-18">
@@ -547,7 +502,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="gv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="glv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="glv" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ha" dc:URI="http://iso.org/639-1#ha"  dc:issued="2008-12-18">
@@ -557,7 +511,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ha" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hau" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="hau" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="he" dc:URI="http://iso.org/639-1#he"  dc:issued="2008-12-18">
@@ -566,7 +519,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="heb" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="heb" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="he" xml:lang="en"/>
   </alternative>
  </concept>
@@ -577,7 +529,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="hin" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="hi" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hin" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ho" dc:URI="http://iso.org/639-1#ho"  dc:issued="2008-12-18">
@@ -586,7 +537,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hmo" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="hmo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ho" xml:lang="en"/>
   </alternative>
  </concept>
@@ -595,7 +545,6 @@
    <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Croatian" xml:lang="en"/>
   </preferred>
   <alternative>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="scr" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hrv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="hr" xml:lang="en"/>
   </alternative>
@@ -607,7 +556,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ht" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hat" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="hat" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="hu" dc:URI="http://iso.org/639-1#hu"  dc:issued="2008-12-18">
@@ -617,7 +565,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="hu" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="hun" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="hun" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="hy" dc:URI="http://iso.org/639-1#hy"  dc:issued="2008-12-18">
@@ -637,7 +584,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="hz" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="her" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="her" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ia" dc:URI="http://iso.org/639-1#ia"  dc:issued="2008-12-18">
@@ -647,7 +593,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ia" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ina" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ina" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="id" dc:URI="http://iso.org/639-1#id"  dc:issued="2008-12-18">
@@ -656,7 +601,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ind" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ind" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="id" xml:lang="en"/>
   </alternative>
  </concept>
@@ -667,7 +611,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ile" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ie" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ile" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ig" dc:URI="http://iso.org/639-1#ig"  dc:issued="2008-12-18">
@@ -676,7 +619,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ibo" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ibo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ig" xml:lang="en"/>
   </alternative>
  </concept>
@@ -687,7 +629,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ii" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="iii" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="iii" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ik" dc:URI="http://iso.org/639-1#ik"  dc:issued="2008-12-18">
@@ -696,7 +637,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ipk" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ipk" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ik" xml:lang="en"/>
   </alternative>
  </concept>
@@ -707,7 +647,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="io" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ido" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ido" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="is" dc:URI="http://iso.org/639-1#is"  dc:issued="2008-12-18">
@@ -727,7 +666,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ita" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="it" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ita" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="iu" dc:URI="http://iso.org/639-1#iu"  dc:issued="2008-12-18">
@@ -736,7 +674,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="iku" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="iku" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="iu" xml:lang="en"/>
   </alternative>
  </concept>
@@ -747,7 +684,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="jpn" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ja" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="jpn" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="jv" dc:URI="http://iso.org/639-1#jv"  dc:issued="2008-12-18">
@@ -757,7 +693,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="jv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="jav" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="jav" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ka" dc:URI="http://iso.org/639-1#ka"  dc:issued="2008-12-18">
@@ -777,7 +712,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kon" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kg" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kon" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ki" dc:URI="http://iso.org/639-1#ki"  dc:issued="2008-12-18">
@@ -786,7 +720,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kik" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kik" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ki" xml:lang="en"/>
   </alternative>
  </concept>
@@ -796,7 +729,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kua" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kua" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kj" xml:lang="en"/>
   </alternative>
  </concept>
@@ -806,7 +738,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kaz" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kaz" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kk" xml:lang="en"/>
   </alternative>
  </concept>
@@ -817,7 +748,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kal" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kl" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kal" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="km" dc:URI="http://iso.org/639-1#km"  dc:issued="2008-12-18">
@@ -826,7 +756,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="khm" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="khm" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="km" xml:lang="en"/>
   </alternative>
  </concept>
@@ -837,7 +766,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kan" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kn" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kan" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ko" dc:URI="http://iso.org/639-1#ko"  dc:issued="2008-12-18">
@@ -846,7 +774,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kor" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kor" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ko" xml:lang="en"/>
   </alternative>
  </concept>
@@ -857,7 +784,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kau" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kau" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ks" dc:URI="http://iso.org/639-1#ks"  dc:issued="2008-12-18">
@@ -867,7 +793,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ks" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kas" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kas" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ku" dc:URI="http://iso.org/639-1#ku"  dc:issued="2008-12-18">
@@ -877,7 +802,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ku" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kur" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kur" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="kv" dc:URI="http://iso.org/639-1#kv"  dc:issued="2008-12-18">
@@ -887,7 +811,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kom" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kom" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="kw" dc:URI="http://iso.org/639-1#kw"  dc:issued="2008-12-18">
@@ -897,7 +820,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="cor" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="kw" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="cor" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ky" dc:URI="http://iso.org/639-1#ky"  dc:issued="2008-12-18">
@@ -906,7 +828,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kir" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kir" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ky" xml:lang="en"/>
   </alternative>
  </concept>
@@ -916,7 +837,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lat" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lat" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="la" xml:lang="en"/>
   </alternative>
  </concept>
@@ -927,7 +847,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ltz" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lb" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ltz" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="lg" dc:URI="http://iso.org/639-1#lg"  dc:issued="2008-12-18">
@@ -936,7 +855,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lug" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lug" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lg" xml:lang="en"/>
   </alternative>
  </concept>
@@ -947,7 +865,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="li" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lim" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lim" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ln" dc:URI="http://iso.org/639-1#ln"  dc:issued="2008-12-18">
@@ -957,7 +874,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lin" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ln" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lin" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="lo" dc:URI="http://iso.org/639-1#lo"  dc:issued="2008-12-18">
@@ -967,7 +883,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lao" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lao" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="lt" dc:URI="http://iso.org/639-1#lt"  dc:issued="2008-12-18">
@@ -976,7 +891,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lit" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lit" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lt" xml:lang="en"/>
   </alternative>
  </concept>
@@ -987,7 +901,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lu" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lub" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lub" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="lv" dc:URI="http://iso.org/639-1#lv"  dc:issued="2008-12-18">
@@ -997,7 +910,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="lav" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="lv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="lav" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="mg" dc:URI="http://iso.org/639-1#mg"  dc:issued="2008-12-18">
@@ -1006,7 +918,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mlg" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mlg" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="mg" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1017,7 +928,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="mh" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mah" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mah" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="mi" dc:URI="http://iso.org/639-1#mi"  dc:issued="2008-12-18">
@@ -1047,7 +957,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ml" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mal" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mal" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="mn" dc:URI="http://iso.org/639-1#mn"  dc:issued="2008-12-18">
@@ -1057,7 +966,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="mn" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mon" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mon" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="mr" dc:URI="http://iso.org/639-1#mr"  dc:issued="2008-12-18">
@@ -1067,7 +975,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mar" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="mr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mar" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ms" dc:URI="http://iso.org/639-1#ms"  dc:issued="2008-12-18">
@@ -1087,7 +994,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="mt" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="mlt" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="mlt" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="my" dc:URI="http://iso.org/639-1#my"  dc:issued="2008-12-18">
@@ -1106,18 +1012,16 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nau" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nau" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="na" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="nb" dc:URI="http://iso.org/639-1#nb"  dc:issued="2008-12-18">
   <preferred>
-   <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Norwegian Bokm√•l" xml:lang="en"/>
+   <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Norwegian Bokmål" xml:lang="en"/>
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="nb" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nob" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nob" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="nd" dc:URI="http://iso.org/639-1#nd"  dc:issued="2008-12-18">
@@ -1127,7 +1031,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="nd" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nde" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nde" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ne" dc:URI="http://iso.org/639-1#ne"  dc:issued="2008-12-18">
@@ -1137,7 +1040,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nep" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ne" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nep" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ng" dc:URI="http://iso.org/639-1#ng"  dc:issued="2008-12-18">
@@ -1147,7 +1049,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ndo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ng" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ndo" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="nl" dc:URI="http://iso.org/639-1#nl"  dc:issued="2008-12-18">
@@ -1166,7 +1067,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nno" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nno" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="nn" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1177,7 +1077,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nor" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="no" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nor" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="nr" dc:URI="http://iso.org/639-1#nr"  dc:issued="2008-12-18">
@@ -1187,7 +1086,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nbl" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="nr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nbl" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="nv" dc:URI="http://iso.org/639-1#nv"  dc:issued="2008-12-18">
@@ -1197,7 +1095,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="nv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nav" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nav" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ny" dc:URI="http://iso.org/639-1#ny"  dc:issued="2008-12-18">
@@ -1207,7 +1104,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="nya" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ny" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="nya" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="oc" dc:URI="http://iso.org/639-1#oc"  dc:issued="2008-12-18">
@@ -1217,7 +1113,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="oc" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="oci" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="oci" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="oj" dc:URI="http://iso.org/639-1#oj"  dc:issued="2008-12-18">
@@ -1227,7 +1122,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="oj" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="oji" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="oji" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="om" dc:URI="http://iso.org/639-1#om"  dc:issued="2008-12-18">
@@ -1237,7 +1131,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="orm" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="om" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="orm" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="or" dc:URI="http://iso.org/639-1#or"  dc:issued="2008-12-18">
@@ -1247,7 +1140,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="or" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ori" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ori" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="os" dc:URI="http://iso.org/639-1#os"  dc:issued="2008-12-18">
@@ -1257,7 +1149,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="oss" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="os" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="oss" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="pa" dc:URI="http://iso.org/639-1#pa"  dc:issued="2008-12-18">
@@ -1267,7 +1158,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="pa" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="pan" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="pan" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="pi" dc:URI="http://iso.org/639-1#pi"  dc:issued="2008-12-18">
@@ -1277,7 +1167,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="pli" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="pi" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="pli" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="pl" dc:URI="http://iso.org/639-1#pl"  dc:issued="2008-12-18">
@@ -1286,7 +1175,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="pol" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="pol" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="pl" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1297,7 +1185,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ps" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="pus" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="pus" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="pt" dc:URI="http://iso.org/639-1#pt"  dc:issued="2008-12-18">
@@ -1307,7 +1194,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="por" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="pt" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="por" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="qu" dc:URI="http://iso.org/639-1#qu"  dc:issued="2008-12-18">
@@ -1317,7 +1203,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="qu" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="que" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="que" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="rm" dc:URI="http://iso.org/639-1#rm"  dc:issued="2008-12-18">
@@ -1327,7 +1212,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="roh" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="rm" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="roh" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="rn" dc:URI="http://iso.org/639-1#rn"  dc:issued="2008-12-18">
@@ -1337,7 +1221,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="rn" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="run" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="run" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ro" dc:URI="http://iso.org/639-1#ro"  dc:issued="2008-12-18">
@@ -1357,7 +1240,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="rus" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ru" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="rus" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="rw" dc:URI="http://iso.org/639-1#rw"  dc:issued="2008-12-18">
@@ -1367,7 +1249,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="kin" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="rw" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="kin" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sa" dc:URI="http://iso.org/639-1#sa"  dc:issued="2008-12-18">
@@ -1377,7 +1258,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="san" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sa" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="san" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sc" dc:URI="http://iso.org/639-1#sc"  dc:issued="2008-12-18">
@@ -1387,7 +1267,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="srd" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sc" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="srd" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sd" dc:URI="http://iso.org/639-1#sd"  dc:issued="2008-12-18">
@@ -1397,7 +1276,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sd" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="snd" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="snd" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="se" dc:URI="http://iso.org/639-1#se"  dc:issued="2008-12-18">
@@ -1407,7 +1285,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sme" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="se" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sme" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sg" dc:URI="http://iso.org/639-1#sg"  dc:issued="2008-12-18">
@@ -1417,10 +1294,9 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sg" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sag" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sag" xml:lang="en"/>
   </alternative>
  </concept>
- <concept dc:identifier="sh" dc:URI="http://iso.org/639-1#sh"  dc:issued="2008-12-18">
+ <concept dc:identifier="sh" dc:URI="http://iso.org/639-1#sh"  dc:issued="2008-12-18" dc:description="Deprecated in ISO 639-1. Use hr (Croatian), sr (Serbian) or bs (Bosnian) instead. Kept so existing data still validates.">
   <preferred>
    <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Serbo-Croatian" xml:lang="en"/>
   </preferred>
@@ -1436,7 +1312,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sin" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="si" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sin" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sk" dc:URI="http://iso.org/639-1#sk"  dc:issued="2008-12-18">
@@ -1455,7 +1330,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="slv" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="slv" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sl" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1465,7 +1339,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="smo" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="smo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sm" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1476,7 +1349,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sna" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sn" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sna" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="so" dc:URI="http://iso.org/639-1#so"  dc:issued="2008-12-18">
@@ -1486,7 +1358,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="so" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="som" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="som" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sq" dc:URI="http://iso.org/639-1#sq"  dc:issued="2008-12-18">
@@ -1505,7 +1376,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="scc" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="srp" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1516,7 +1386,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ss" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ssw" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ssw" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="st" dc:URI="http://iso.org/639-1#st"  dc:issued="2008-12-18">
@@ -1526,7 +1395,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sot" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="st" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sot" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="su" dc:URI="http://iso.org/639-1#su"  dc:issued="2008-12-18">
@@ -1536,7 +1404,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="su" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="sun" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="sun" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="sv" dc:URI="http://iso.org/639-1#sv"  dc:issued="2008-12-18">
@@ -1545,7 +1412,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="swe" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="swe" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sv" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1556,7 +1422,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="swa" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="sw" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="swa" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ta" dc:URI="http://iso.org/639-1#ta"  dc:issued="2008-12-18">
@@ -1565,7 +1430,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tam" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tam" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ta" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1576,7 +1440,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="te" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tel" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tel" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="tg" dc:URI="http://iso.org/639-1#tg"  dc:issued="2008-12-18">
@@ -1585,7 +1448,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tgk" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tgk" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tg" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1596,7 +1458,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tha" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="th" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tha" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ti" dc:URI="http://iso.org/639-1#ti"  dc:issued="2008-12-18">
@@ -1606,7 +1467,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ti" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tir" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tir" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="tk" dc:URI="http://iso.org/639-1#tk"  dc:issued="2008-12-18">
@@ -1616,7 +1476,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tuk" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tk" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tuk" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="tl" dc:URI="http://iso.org/639-1#tl"  dc:issued="2008-12-18">
@@ -1626,7 +1485,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tl" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tgl" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tgl" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="tn" dc:URI="http://iso.org/639-1#tn"  dc:issued="2008-12-18">
@@ -1636,7 +1494,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tsn" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tn" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tsn" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="to" dc:URI="http://iso.org/639-1#to"  dc:issued="2008-12-18">
@@ -1645,7 +1502,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ton" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ton" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="to" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1656,7 +1512,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tur" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tur" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ts" dc:URI="http://iso.org/639-1#ts"  dc:issued="2008-12-18">
@@ -1666,7 +1521,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tso" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ts" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tso" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="tt" dc:URI="http://iso.org/639-1#tt"  dc:issued="2008-12-18">
@@ -1675,7 +1529,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tat" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tat" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tt" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1686,7 +1539,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="tw" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="twi" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="twi" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ty" dc:URI="http://iso.org/639-1#ty"  dc:issued="2008-12-18">
@@ -1696,7 +1548,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ty" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="tah" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="tah" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ug" dc:URI="http://iso.org/639-1#ug"  dc:issued="2008-12-18">
@@ -1706,7 +1557,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ug" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="uig" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="uig" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="uk" dc:URI="http://iso.org/639-1#uk"  dc:issued="2008-12-18">
@@ -1716,7 +1566,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="uk" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ukr" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ukr" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="ur" dc:URI="http://iso.org/639-1#ur"  dc:issued="2008-12-18">
@@ -1726,7 +1575,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="urd" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ur" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="urd" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="uz" dc:URI="http://iso.org/639-1#uz"  dc:issued="2008-12-18">
@@ -1735,7 +1583,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="uzb" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="uzb" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="uz" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1746,7 +1593,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="ven" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="ve" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="ven" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="vi" dc:URI="http://iso.org/639-1#vi"  dc:issued="2008-12-18">
@@ -1756,17 +1602,15 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="vi" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="vie" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="vie" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="vo" dc:URI="http://iso.org/639-1#vo"  dc:issued="2008-12-18">
   <preferred>
-   <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Volap√ºk" xml:lang="en"/>
+   <term dc:modified="2008-12-18T04:55:56+00:00" dc:source="" dc:title="Volapük" xml:lang="en"/>
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="vo" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="vol" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="vol" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="wa" dc:URI="http://iso.org/639-1#wa"  dc:issued="2008-12-18">
@@ -1775,7 +1619,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="wln" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="wln" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="wa" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1785,7 +1628,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="wol" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="wol" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="wo" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1796,7 +1638,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="xh" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="xho" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="xho" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="yi" dc:URI="http://iso.org/639-1#yi"  dc:issued="2008-12-18">
@@ -1805,7 +1646,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="yid" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="yid" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="yi" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1816,7 +1656,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="yor" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="yo" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="yor" xml:lang="en"/>
   </alternative>
  </concept>
  <concept dc:identifier="za" dc:URI="http://iso.org/639-1#za"  dc:issued="2008-12-18">
@@ -1825,7 +1664,6 @@
   </preferred>
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="zha" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="zha" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="za" xml:lang="en"/>
   </alternative>
  </concept>
@@ -1846,7 +1684,6 @@
   <alternative>
    <term dc:modified="2008-12-18T04:55:27+00:00" dc:source="" dc:title="zul" xml:lang="en"/>
    <term dc:modified="2008-12-18T04:55:45+00:00" dc:source="" dc:title="zu" xml:lang="en"/>
-   <term dc:modified="2008-12-18T04:55:31+00:00" dc:source="" dc:title="zul" xml:lang="en"/>
   </alternative>
  </concept>
 </thesaurus>
