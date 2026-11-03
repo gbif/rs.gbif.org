@@ -3,9 +3,9 @@
 <thesaurus 
     dc:URI="http://iso.org/639-2"
     dc:relation="http://en.wikipedia.org/wiki/ISO_639-2"
-    dc:description="Codes for the representation of names of languages — Part 2: Alpha-3 code, is the second part of the ISO 639 standard, which lists codes for the representation of the names of languages. The three-letter codes given for each language in this part of the standard are referred to as &quot;Alpha-3&quot; codes. There are 464 entries in the list of ISO 639-2 codes." 
+    dc:description="Codes for the representation of names of languages — Part 2: Alpha-3 code, is the second part of the ISO 639 standard, which lists codes for the representation of the names of languages. The three-letter codes given for each language in this part of the standard are referred to as &quot;Alpha-3&quot; codes. There are 487 entries in the list of ISO 639-2 codes, including the qaa-qtz range reserved for local use." 
     dc:title="ISO 639-2 Language Codes"
-		dc:issued="2015-02-13"
+		dc:issued="2026-11-03"
 		xmlns="http://rs.gbif.org/thesaurus/"
     xmlns:dc="http://purl.org/dc/terms/" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -520,7 +520,6 @@
 <term dc:title="Bihari, lenguas" xml:lang="es"/>
 </preferred>
 <alternative>
-<term dc:title="bh" />
 </alternative>
 </concept>
 <concept dc:identifier="bik" dc:URI="http://iso.org/iso639-2/alpha3#bik">
@@ -564,11 +563,13 @@
 </concept>
 <concept dc:identifier="bnt" dc:URI="http://iso.org/iso639-2/alpha3#bnt">
 <preferred>
-<term dc:title="Bantu (Other)" xml:lang="en"/>
-<term dc:title="bantoues, autres langues" xml:lang="fr"/>
+<term dc:title="Bantu languages" xml:lang="en"/>
+<term dc:title="bantou, langues" xml:lang="fr"/>
 <term dc:title="Bantúes" xml:lang="es"/>
 </preferred>
 <alternative>
+	<term dc:title="Bantu (Other)" xml:lang="en"/>
+	<term dc:title="bantoues, autres langues" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="bos" dc:URI="http://iso.org/iso639-2/alpha3#bos">
@@ -877,6 +878,14 @@
 <alternative>
 </alternative>
 </concept>
+<concept dc:identifier="cnr" dc:URI="http://iso.org/iso639-2/alpha3#cnr">
+<preferred>
+<term dc:title="Montenegrin" xml:lang="en"/>
+<term dc:title="monténégrin" xml:lang="fr"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
 <concept dc:identifier="cop" dc:URI="http://iso.org/iso639-2/alpha3#cop">
 <preferred>
 <term dc:title="Coptic" xml:lang="en"/>
@@ -917,7 +926,7 @@
 </concept>
 <concept dc:identifier="cpf" dc:URI="http://iso.org/iso639-2/alpha3#cpf">
 <preferred>
-<term dc:title="Creoles and pidgins, French-based " xml:lang="en"/>
+<term dc:title="Creoles and pidgins, French-based" xml:lang="en"/>
 <term dc:title="créoles et pidgins basés sur le français" xml:lang="fr"/>
 <term dc:title="Criollo y Pidgin Francés" xml:lang="es"/>
 </preferred>
@@ -926,7 +935,7 @@
 </concept>
 <concept dc:identifier="cpp" dc:URI="http://iso.org/iso639-2/alpha3#cpp">
 <preferred>
-<term dc:title="Creoles and pidgins, Portuguese-based " xml:lang="en"/>
+<term dc:title="Creoles and pidgins, Portuguese-based" xml:lang="en"/>
 <term dc:title="créoles et pidgins basés sur le portugais" xml:lang="fr"/>
 <term dc:title="Criollo y Pidgin Portugués" xml:lang="es"/>
 </preferred>
@@ -956,7 +965,7 @@
 </concept>
 <concept dc:identifier="crp" dc:URI="http://iso.org/iso639-2/alpha3#crp">
 <preferred>
-<term dc:title="Creoles and pidgins " xml:lang="en"/>
+<term dc:title="Creoles and pidgins" xml:lang="en"/>
 <term dc:title="créoles et pidgins" xml:lang="fr"/>
 <term dc:title="Criollo y Pidgin" xml:lang="es"/>
 </preferred>
@@ -1049,11 +1058,13 @@
 </concept>
 <concept dc:identifier="dgr" dc:URI="http://iso.org/iso639-2/alpha3#dgr">
 <preferred>
-<term dc:title="Dogrib" xml:lang="en"/>
-<term dc:title="dogrib" xml:lang="fr"/>
+<term dc:title="Tlicho" xml:lang="en"/>
+<term dc:title="tlicho" xml:lang="fr"/>
 <term dc:title="Dogrib" xml:lang="es"/>
 </preferred>
 <alternative>
+	<term dc:title="Dogrib" xml:lang="en"/>
+	<term dc:title="dogrib" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="din" dc:URI="http://iso.org/iso639-2/alpha3#din">
@@ -1578,7 +1589,7 @@
 <concept dc:identifier="grc" dc:URI="http://iso.org/iso639-2/alpha3#grc">
 <preferred>
 <term dc:title="Greek, Ancient (to 1453)" xml:lang="en"/>
-<term dc:title="grec ancien (jusqu'�  1453)" xml:lang="fr"/>
+<term dc:title="grec ancien (jusqu'à 1453)" xml:lang="fr"/>
 <term dc:title="Griego Antiguo (a 1453)" xml:lang="es"/>
 </preferred>
 <alternative>
@@ -1586,13 +1597,15 @@
 </concept>
 <concept dc:identifier="gre" dc:URI="http://iso.org/iso639-2/alpha3#gre">
 <preferred>
-<term dc:title="Greek, Modern (1453-)" xml:lang="en"/>
-<term dc:title="grec moderne (après 1453)" xml:lang="fr"/>
+<term dc:title="Modern Greek (1453-)" xml:lang="en"/>
+<term dc:title="grec moderne (1453-)" xml:lang="fr"/>
 <term dc:title="Griego Moderno (1453-)" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="ell" />
 <term dc:title="el" />
+	<term dc:title="Greek, Modern (1453-)" xml:lang="en"/>
+	<term dc:title="grec moderne (après 1453)" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="grn" dc:URI="http://iso.org/iso639-2/alpha3#grn">
@@ -2176,12 +2189,12 @@
 <concept dc:identifier="kik" dc:URI="http://iso.org/iso639-2/alpha3#kik">
 <preferred>
 <term dc:title="Kikuyu" xml:lang="en"/>
-<term dc:title="Gikuyu" xml:lang="en"/>
 <term dc:title="kikuyu" xml:lang="fr"/>
 <term dc:title="Kikuyu" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="ki" />
+	<term dc:title="Gikuyu" xml:lang="en"/>
 </alternative>
 </concept>
 <concept dc:identifier="kin" dc:URI="http://iso.org/iso639-2/alpha3#kin">
@@ -2572,7 +2585,7 @@
 <preferred>
 <term dc:title="Marshallese" xml:lang="en"/>
 <term dc:title="marshall" xml:lang="fr"/>
-<term dc:title="Marshalés " xml:lang="es"/>
+<term dc:title="Marshalés" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="mh" />
@@ -2928,24 +2941,24 @@
 </concept>
 <concept dc:identifier="nbl" dc:URI="http://iso.org/iso639-2/alpha3#nbl">
 <preferred>
-<term dc:title="Ndebele, South" xml:lang="en"/>
+<term dc:title="South Ndebele" xml:lang="en"/>
 <term dc:title="ndébélé du Sud" xml:lang="fr"/>
 <term dc:title="Ndebele del Sur" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="nr" />
-	<term dc:title="South Ndebele" xml:lang="en"/>
+	<term dc:title="Ndebele, South" xml:lang="en"/>
 </alternative>
 </concept>
 <concept dc:identifier="nde" dc:URI="http://iso.org/iso639-2/alpha3#nde">
 <preferred>
-<term dc:title="Ndebele, North" xml:lang="en"/>
+<term dc:title="North Ndebele" xml:lang="en"/>
 <term dc:title="ndébélé du Nord" xml:lang="fr"/>
 <term dc:title="Ndebele del Norte" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="nd" />
-	<term dc:title="North Ndebele" xml:lang="en"/>
+	<term dc:title="Ndebele, North" xml:lang="en"/>
 </alternative>
 </concept>
 <concept dc:identifier="ndo" dc:URI="http://iso.org/iso639-2/alpha3#ndo">
@@ -3035,23 +3048,23 @@
 </concept>
 <concept dc:identifier="nob" dc:URI="http://iso.org/iso639-2/alpha3#nob">
 <preferred>
-<term dc:title="Bokmål, Norwegian" xml:lang="en"/>
+<term dc:title="Norwegian Bokmål" xml:lang="en"/>
 <term dc:title="norvégien bokmål" xml:lang="fr"/>
 <term dc:title="Noruego Bokmål" xml:lang="es"/>
 </preferred>
 <alternative>
 <term dc:title="nb" />
-	<term dc:title="Norwegian Bokmål" xml:lang="en"/>
+	<term dc:title="Bokmål, Norwegian" xml:lang="en"/>
 </alternative>
 </concept>
 <concept dc:identifier="nog" dc:URI="http://iso.org/iso639-2/alpha3#nog">
 <preferred>
 <term dc:title="Nogai" xml:lang="en"/>
-<term dc:title="nogay" xml:lang="fr"/>
+<term dc:title="nogaï" xml:lang="fr"/>
 <term dc:title="Nogai" xml:lang="es"/>
 </preferred>
 <alternative>
-	<term dc:title="nogaï" xml:lang="fr"/>
+	<term dc:title="nogay" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="non" dc:URI="http://iso.org/iso639-2/alpha3#non">
@@ -3400,7 +3413,7 @@
 <concept dc:identifier="pro" dc:URI="http://iso.org/iso639-2/alpha3#pro">
 <preferred>
 <term dc:title="Provençal, Old (to 1500)" xml:lang="en"/>
-<term dc:title="provençal ancien (jusqu'�  1500)" xml:lang="fr"/>
+<term dc:title="provençal ancien (jusqu'à 1500)" xml:lang="fr"/>
 <term dc:title="Provenzal Antiguo (hasta 1500)" xml:lang="es"/>
 </preferred>
 <alternative>
@@ -3420,7 +3433,7 @@
 <concept dc:identifier="qaa-qtz" dc:URI="http://iso.org/iso639-2/alpha3#qaa-qtz">
 <preferred>
 <term dc:title="Reserved for local use" xml:lang="en"/>
-<term dc:title="réservée �  l'usage local" xml:lang="fr"/>
+<term dc:title="réservée à l'usage local" xml:lang="fr"/>
 <term dc:title="Reservado para uso local" xml:lang="es"/>
 </preferred>
 <alternative>
@@ -3569,11 +3582,13 @@
 </concept>
 <concept dc:identifier="sai" dc:URI="http://iso.org/iso639-2/alpha3#sai">
 <preferred>
-<term dc:title="South American Indian (Other)" xml:lang="en"/>
-<term dc:title="indiennes d'Amérique du Sud, autres langues" xml:lang="fr"/>
+<term dc:title="South American Indian languages" xml:lang="en"/>
+<term dc:title="sud-amérindiennes, langues" xml:lang="fr"/>
 <term dc:title="Indígenas de América del Sur, lenguas" xml:lang="es"/>
 </preferred>
 <alternative>
+	<term dc:title="South American Indian (Other)" xml:lang="en"/>
+	<term dc:title="indiennes d'Amérique du Sud, autres langues" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="sal" dc:URI="http://iso.org/iso639-2/alpha3#sal">
@@ -3661,7 +3676,7 @@
 <concept dc:identifier="sga" dc:URI="http://iso.org/iso639-2/alpha3#sga">
 <preferred>
 <term dc:title="Irish, Old (to 900)" xml:lang="en"/>
-<term dc:title="irlandais ancien (jusqu'�  900)" xml:lang="fr"/>
+<term dc:title="irlandais ancien (jusqu'à 900)" xml:lang="fr"/>
 <term dc:title="Irlandés arcaico (hasta 900)" xml:lang="es"/>
 </preferred>
 <alternative>
@@ -4187,11 +4202,11 @@
 <concept dc:identifier="tlh" dc:URI="http://iso.org/iso639-2/alpha3#tlh">
 <preferred>
 <term dc:title="Klingon" xml:lang="en"/>
-<term dc:title="tlhIngan-Hol" xml:lang="en"/>
 <term dc:title="klingon" xml:lang="fr"/>
 <term dc:title="Klingon" xml:lang="es"/>
 </preferred>
 <alternative>
+	<term dc:title="tlhIngan-Hol" xml:lang="en"/>
 </alternative>
 </concept>
 <concept dc:identifier="tli" dc:URI="http://iso.org/iso639-2/alpha3#tli">
@@ -4480,11 +4495,15 @@
 </concept>
 <concept dc:identifier="wal" dc:URI="http://iso.org/iso639-2/alpha3#wal">
 <preferred>
-<term dc:title="Walamo" xml:lang="en"/>
-<term dc:title="walamo" xml:lang="fr"/>
+<term dc:title="Wolaitta" xml:lang="en"/>
+<term dc:title="wolaitta" xml:lang="fr"/>
 <term dc:title="Welayta" xml:lang="es"/>
 </preferred>
 <alternative>
+	<term dc:title="Wolaytta" xml:lang="en"/>
+	<term dc:title="wolaytta" xml:lang="fr"/>
+	<term dc:title="Walamo" xml:lang="en"/>
+	<term dc:title="walamo" xml:lang="fr"/>
 </alternative>
 </concept>
 <concept dc:identifier="war" dc:URI="http://iso.org/iso639-2/alpha3#war">
@@ -4639,6 +4658,14 @@
 <term dc:title="Zenaga" xml:lang="en"/>
 <term dc:title="zenaga" xml:lang="fr"/>
 <term dc:title="Zenaga" xml:lang="es"/>
+</preferred>
+<alternative>
+</alternative>
+</concept>
+<concept dc:identifier="zgh" dc:URI="http://iso.org/iso639-2/alpha3#zgh">
+<preferred>
+<term dc:title="Standard Moroccan Tamazight" xml:lang="en"/>
+<term dc:title="amazighe standard marocain" xml:lang="fr"/>
 </preferred>
 <alternative>
 </alternative>
