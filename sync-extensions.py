@@ -106,6 +106,10 @@ Content-Type: $contentType
 See <a href="$location">$location</a>.
 """)
 
+XSLT_POLYFILL = """    <!-- The following line is present for web browser compatibility.  It is only included when the HTTP Accept header includes "text/html". -->
+    <script xmlns="http://www.w3.org/1999/xhtml" src="https://cdn.jsdelivr.net/npm/xslt-polyfill@1.0.31/xslt-polyfill.min.js"/>
+"""
+
 class Extension:
   def __init__(self):
     self.identifier = None
@@ -318,6 +322,92 @@ def listVocabularies(basedir, baseurl):
         urls.append(url)
   return urls
 
+def findRootStartTagEnd(text):
+  """Return the index just after the '>' closing the root element's start tag,
+     or -1 if there is no root element or it is self-closing (<root/>).
+     Skips the XML declaration, processing instructions, comments and DOCTYPE,
+     and ignores '>' characters inside quoted attribute values."""
+  i = 0
+  n = len(text)
+  while i < n:
+    lt = text.find('<', i)
+    if lt == -1:
+      return -1
+    if text.startswith('<?', lt):
+      end = text.find('?>', lt)
+      if end == -1: return -1
+      i = end + 2
+    elif text.startswith('<!--', lt):
+      end = text.find('-->', lt)
+      if end == -1: return -1
+      i = end + 3
+    elif text.startswith('<!', lt):
+      # DOCTYPE, possibly with an internal subset in [...]
+      depth = 0
+      j = lt + 2
+      while j < n:
+        c = text[j]
+        if c == '[': depth += 1
+        elif c == ']': depth -= 1
+        elif c == '>' and depth == 0: break
+        j += 1
+      i = j + 1
+    else:
+      # Root element start tag
+      quote = None
+      j = lt + 1
+      while j < n:
+        c = text[j]
+        if quote:
+          if c == quote: quote = None
+        elif c in ('"', "'"):
+          quote = c
+        elif c == '>':
+          if text[j-1] == '/':
+            return -1
+          return j + 1
+        j += 1
+      return -1
+  return -1
+
+def generateXsltCompatibilityFiles(basedir):
+  xmlFiles = []
+  localXmlFiles = []
+  for fn in os.listdir(basedir):
+    if fn.startswith("."):
+      continue
+    p = os.path.join(basedir,fn)
+    if os.path.isdir(p):
+      xmlFiles.extend( generateXsltCompatibilityFiles(basedir+fn+"/") )
+    else:
+      if (fn.lower().endswith(".xml")):
+        localXmlFiles.append(p)
+
+  # Only process files in this directory; subdirectories were handled by the recursive calls.
+  for xmlFile in localXmlFiles:
+    # If the XML file contains a stylesheet declaration, add XSLT_POLYFILL as the first child of the root element
+    # and save this into a new file with -html appended to the name
+    #
+    # These files are served using an Apache RewriteRule.
+    with open(xmlFile, 'r', encoding='utf-8') as f:
+      content = f.read()
+
+    if '<?xml-stylesheet' not in content:
+      continue
+
+    insertAt = findRootStartTagEnd(content)
+    if insertAt == -1:
+      print("Could not find root element (or it is empty) in "+xmlFile+", skipping")
+      continue
+
+    htmlFile = xmlFile + "-html"
+    with open(htmlFile, 'w', encoding='utf-8') as f:
+      f.write(content[:insertAt] + "\n" + XSLT_POLYFILL + content[insertAt:])
+    print("Wrote "+htmlFile)
+
+  xmlFiles.extend(localXmlFiles)
+  return xmlFiles
+
 if __name__ ==  "__main__":
   print("LOCATED RS.GBIF.ORG FILESYSTEM AT: "+RS_BASE)
 
@@ -338,3 +428,6 @@ if __name__ ==  "__main__":
   print("UPDATE SANDBOX VOCABULARY FILE")
   urlsVoc2 = listVocabularies(RS_BASE+"sandbox/vocabulary/","http://rs.gbif.org/sandbox/vocabulary/")
   writeVocabs(SANDBOX, RS_BASE+"sandbox/", urlsVoc+urlsVoc2)
+
+  print("GENERATE XSLT COMPATIBILITY FILES")
+  generateXsltCompatibilityFiles(RS_BASE)

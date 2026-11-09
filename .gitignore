@@ -1,5 +1,6 @@
 .DS_Store
 *.asis
+*.xml-html
 extensions.html
 extensions.json
 sandbox/extensions.html
