@@ -403,6 +403,9 @@ def generateXsltCompatibilityFiles(basedir):
     htmlFile = xmlFile + "-html"
     with open(htmlFile, 'w', encoding='utf-8') as f:
       f.write(content[:insertAt] + "\n" + XSLT_POLYFILL + content[insertAt:])
+    # Copy timestamp from source file
+    xmlFileTime = os.stat(xmlFile).st_mtime_ns
+    os.utime(htmlFile, ns=(xmlFileTime, xmlFileTime))
     print("Wrote "+htmlFile)
 
   xmlFiles.extend(localXmlFiles)
