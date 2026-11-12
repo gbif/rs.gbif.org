@@ -9,7 +9,7 @@
     name="phylogeneticMaterialCitation"
     namespace="http://rs.gbif.org/terms/1.0/"
     rowType="http://rs.gbif.org/terms/1.0/PhylogeneticMaterialCitation"
-    dc:issued="2026-10-07"
+    dc:issued="2026-10-27"
     dc:relation=""
     dc:subject="dwc:Occurrence"
     dc:description="An extension to link a specimen (Material) to a particular tip on a phylogenetic tree as evidence.">
