@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/human.xsl"?>
+<extension xmlns="http://rs.gbif.org/extension/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xsi:schemaLocation="http://rs.gbif.org/extension/ http://rs.gbif.org/schema/extension.xsd"
+    name="Identifier" namespace="http://rs.gbif.org/terms/1.0" rowType="http://rs.gbif.org/terms/1.0/Identifier"
+    dc:issued="2026-11-27"
+    dc:title="Alternative Identifiers"
+    dc:relation="http://rs.gbif.org/extension/gbif/1.0/identifier.xml"
+    dc:subject="dwc:Taxon dwc:Event dwc:Occurrence"
+    dc:description="An alternative identifier for a taxon, event, or occurrence. Version 2026-11-27 adds identifierType, identifierTypeIRI, identifierTypeSource, and identifierLanguage.">
+
+    <property name="identifier"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/identifier"
+        dc:relation="http://purl.org/dc/terms/identifier"
+        dc:description="An unambiguous reference to a resource within a given context."
+        comments="Recommended best practice is to identify a resource by means of a string conforming to a formal identification system."
+        examples="`urn:lsid:ipni.org:names:692570-1:1.4`; `https://doi.org/10.7284/910072`"
+        required="true"/>
+
+    <property name="identifierType"
+        namespace="http://purl.org/dc/elements/1.1/"
+        qualName="http://purl.org/dc/elements/1.1/type"
+        dc:relation="http://purl.org/dc/elements/1.1/type"
+        dc:description="A category or system that best matches the nature of an identifier."
+        comments="Recommended best practice is to use a controlled vocabulary."
+        examples=""
+        required="false"/>
+
+    <property name="identifierTypeIRI"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/type"
+        dc:relation="http://purl.org/dc/terms/type"
+        dc:description="An IRI of a controlled vocabulary value for a type of identifier."
+        comments="Recommended best practice is to use an IRI for a term in a controlled vocabulary."
+        examples=""
+        required="false"/>
+
+    <property name="identifierTypeSource"
+        namespace="http://purl.org/dc/elements/1.1/"
+        qualName="http://purl.org/dc/elements/1.1/source"
+        dc:relation="http://purl.org/dc/elements/1.1/source"
+        dc:description="A reference to a controlled vocabulary in which the definition of a value in identifierType is given."
+        examples=""
+        required="false"/>
+
+    <property name="identifierLanguage"
+        namespace="http://purl.org/dc/elements/1.1/"
+        qualName="http://purl.org/dc/elements/1.1/language"
+        thesaurus="http://rs.gbif.org/vocabulary/iso/639-2.xml"
+        dc:relation="http://purl.org/dc/elements/1.1/language"
+        dc:description="A language in which an identifier is presented."
+        comments="Recommended best practice is to use an ISO639-2 three-letter language code."
+        examples="`eng`; `lat`"
+        required="false"/>
+
+    <property name="title"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/title"
+        dc:relation="http://purl.org/dc/terms/title"
+        dc:description="An optional display label for the URL that the publisher may prefer be displayed with the identifier or link"
+        examples="`COL Taxon LSID`; `Cruise SAV-23-06`"
+        required="false"/>
+
+    <property name="subject"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/subject"
+        dc:relation="http://purl.org/dc/terms/subject"
+        dc:description="keywords qualifying the identifier"
+        examples=""
+        required="false"/>
+
+    <property name="format"
+        namespace="http://purl.org/dc/terms/"
+        qualName="http://purl.org/dc/terms/format"
+        dc:relation="http://purl.org/dc/terms/format"
+        dc:description="mime type of content returned by identifier in case the identifier is resolvable. Plain UUIDs for example do not have a dc:format return type, as they are not resolvable on their own. For a list of MIME types see the list maintained by IANA: http://www.iana.org/assignments/media-types/index.html, in particular the text http://www.iana.org/assignments/media-types/text/ and application http://www.iana.org/assignments/media-types/application/ types. Frequently used values are text/html, text/xml, application/rdf+xml, application/json"
+        examples="`application/rdf+xml`"
+        required="false"/>
+
+    <property name="datasetID"
+        namespace="http://rs.tdwg.org/dwc/terms/"
+        qualName="http://rs.tdwg.org/dwc/terms/datasetID"
+        dc:relation="https://dwc.tdwg.org/terms/#dwc:datasetID"
+        dc:description="An identifier for a subset of data."
+        examples=""
+        required="false"/>
+</extension>
